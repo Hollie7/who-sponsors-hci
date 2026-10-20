@@ -1,0 +1,36 @@
+id,conference,years,tier,min_usd,basis,source
+1,CHI,2016–2026,Hero,50000,stated,https://chi2026.acm.org/wordpress/wp-content/uploads/2025/07/2025-07-09_sponsorship_CHI-2026.pdf
+2,CHI,2016–2026,Champion,25000,stated,https://chi2016.acm.org/wp/wp-content/uploads/docs/InvitationToSponsor.pdf
+3,CHI,2016–2026,Contributor,10000,stated,https://chi2016.acm.org/wp/wp-content/uploads/docs/InvitationToSponsor.pdf
+4,CHI,2026,Friend,1000,stated,https://chi2026.acm.org/wordpress/wp-content/uploads/2025/07/2025-07-09_sponsorship_CHI-2026.pdf
+5,CSCW,2016–2019,Champion,15000,stated,https://cscw.acm.org/2016/sponsors/
+6,CSCW,2016–2019,Benefactor,10000,stated,https://cscw.acm.org/2018/sponsors/benefits.html
+7,CSCW,2016–2019,Contributor,5000,stated,https://cscw.acm.org/2019/sponsors-benefits.html
+8,CSCW,2025,Platinum,13000,stated (135k NOK),https://cscw.acm.org/2025/index.php/sponsors/
+9,CSCW,2025,Gold,6250,stated (65k NOK),https://cscw.acm.org/2025/index.php/sponsors/
+10,CSCW,2025,Silver,3000,stated (30k NOK),https://cscw.acm.org/2025/index.php/sponsors/
+11,CSCW,2025,Bronze,1500,stated (15k NOK),https://cscw.acm.org/2025/index.php/sponsors/
+12,CSCW,2026,Platinum,15000,stated,https://cscw.acm.org/2026/sponsorship.html
+13,CSCW,2026,Gold,10000,stated,https://cscw.acm.org/2026/sponsorship.html
+14,CSCW,2026,Silver,5000,stated,https://cscw.acm.org/2026/sponsorship.html
+15,CSCW,2026,Bronze,3000,stated,https://cscw.acm.org/2026/sponsorship.html
+16,UIST,2007,Anniversary Champion,20000,stated,https://uist.acm.org/uist2007/sponsors/
+17,UIST,2008,Platinum,20000,stated,https://uist.acm.org/uist2008/sponsors/
+18,UIST,2015,Platinum,15000,stated,https://uist.acm.org/uist2015/sponsorship
+19,UIST,2015,Gold,10000,stated,https://uist.acm.org/uist2015/sponsorship
+20,UIST,2015,Silver,5000,stated,https://uist.acm.org/uist2015/sponsorship
+21,UIST,2015,Bronze,2500,stated,https://uist.acm.org/uist2015/sponsorship
+22,UIST,2017–2025,Platinum,20000,stated,https://uist.acm.org/2025/sponsors/
+23,UIST,2017–2025,Gold,15000,stated,https://uist.acm.org/2025/sponsors/
+24,UIST,2017–2025,Silver,10000,stated,https://uist.acm.org/2025/sponsors/
+25,UIST,2017–2025,Bronze,5000,stated,https://uist.acm.org/2025/sponsors/
+26,UIST,2026,Platinum,25000,stated,https://uist.acm.org/2026/sponsors/
+27,UbiComp,2014,Gold,12000,stated,https://ubicomp.org/ubicomp2014/calls/sponsors.php
+28,UbiComp,2015–2018,Platinum,15000,stated,https://iswc.net/iswc15/calls/sponsors.html
+29,UbiComp,2015–2018,Gold,10000,stated,https://iswc.net/iswc17/sponsors.html
+30,UbiComp,2015–2018,Silver,5000,stated,https://iswc.net/iswc17/sponsors.html
+31,UbiComp,2015–2018,Bronze,3000,stated,https://iswc.net/iswc17/sponsors.html
+32,UbiComp,2019,Platinum,20000,stated,https://iswc.net/iswc19/sponsors.html
+33,UbiComp,2019,Silver,10000,stated,https://iswc.net/iswc19/sponsors.html
+34,UbiComp,2022–2023,Platinum,15000,stated,https://iswc.net/iswc22/sponsors
+35,UbiComp,2022–2023,Bronze,2500,stated,https://ubicomp.hosting.acm.org/ubicompiswc2023_wp/wp-content/uploads/2023/03/UbiComp-ISWC-2023_Sponsors.pdf

@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HCI Conference Sponsorship</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<style>
+:root{
+  --font-anthropic-sans: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Noto Sans SC", sans-serif;
+  --font-anthropic-serif: Georgia, "Songti SC", "Noto Serif SC", serif;
+  --color-fg:#1f1e1d; --color-fg-muted:#6b6a66; --color-bg:#faf9f5; --color-panel:#ffffff; --color-border-line:#e5e3dc;
+  --color-ok:#2e7d32; --color-warn:#b26a00; --color-bad:#c62828;
+  --cds-chart-grid:#ecebe6; --cds-chart-axis:#c9c7bf; --cds-chart-reference:#9a988f; --cds-chart-muted:#c9c7bf;
+  --cds-surface-popover:#ffffff; --cds-border:#e5e3dc; --cds-shadow-popover:0 4px 16px rgba(0,0,0,.12); --cds-text-secondary:#6b6a66;
+  --cds-radius:8px; --cds-pad-xs:4px; --cds-pad-sm:8px; --cds-pad-md:12px; --cds-pad-lg:16px; --cds-pad-xl:24px;
+  --cds-gap-xs:4px; --cds-gap-sm:8px; --cds-gap-md:16px; --cds-gap-lg:24px; --cds-gap-xl:32px;
+  --cds-font-size-caption:12px; --cds-font-size-body:14px; --cds-font-size-heading:16px; --cds-font-size-title:28px;
+  --cds-font-weight-medium:600;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --color-fg:#ecebe6; --color-fg-muted:#a3a19a; --color-bg:#1d1c1a; --color-panel:#262523; --color-border-line:#3a3936;
+    --cds-chart-grid:#33322f; --cds-chart-axis:#55534e; --cds-surface-popover:#2d2c2a; --cds-border:#3a3936; --cds-text-secondary:#a3a19a; }
+}
+body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(--font-anthropic-sans);font-size:var(--cds-font-size-body)}
+#dash-root{max-width:1200px;margin:0 auto;padding:24px 16px}
+a{color:inherit}
+.dash-skeleton{color:transparent;background:var(--cds-chart-grid);border-radius:4px}
+</style>
+<script>
+window.dash = (() => {
+  const files = {listings: '../data/sponsor_listings.csv', pcy: '../data/per_conference_year.csv', prices: '../data/tier_prices.csv'};
+  const store = {}; const calcs = {}; const subs = [];
+  Object.keys(files).forEach(id => { store[id] = {status: 'loading', data: []}; });
+  const run = () => {
+    Object.entries(calcs).forEach(([id, c]) => {
+      const ins = c.inputs.map(i => store[i]);
+      store[id] = ins.every(s => s && s.status === 'ok') ? {status: 'ok', data: c.fn(...ins.map(s => s.data))} : {status: 'loading', data: []};
+    });
+    subs.forEach(fn => { try { fn(); } catch (e) { console.error(e); } });
+  };
+  Promise.all(Object.entries(files).map(([id, url]) => d3.csv(url)
+    .then(rows => { store[id] = {status: 'ok', data: rows, columns: rows.columns}; })
+    .catch(e => { store[id] = {status: 'error', data: [], message: String(e)}; })))
+    .then(run);
+  let t; window.addEventListener('resize', () => { clearTimeout(t); t = setTimeout(run, 150); });
+  return {
+    data: id => store[id] || {status: 'missing', data: []},
+    onData: fn => { subs.push(fn); try { fn(); } catch (e) { console.error(e); } },
+    calc: (id, c) => { calcs[id] = c; store[id] = {status: 'loading', data: []}; },
+    colors: ['#2f6f9f', '#d1793f', '#3f9a6b', '#8b5fb0', '#c7a33a', '#5aa1b8', '#b5565a', '#7a7a72'],
+    refresh: () => {}, params: () => ({}), setParams: () => {}, resetParams: () => {}, setLink: () => {},
+  };
+})();
+</script>
+</head>
+<body>
+<div id="dash-root">
+<style>
+.hx{font-family:var(--font-anthropic-sans);display:flex;flex-direction:column;gap:var(--cds-gap-lg)}
+.hx h1{font-family:var(--font-anthropic-serif);font-weight:400;font-size:var(--cds-font-size-title);margin:0}
+.hx h2{font-size:var(--cds-font-size-heading);font-weight:var(--cds-font-weight-medium);margin:0 0 var(--cds-gap-xs)}
+.hx .lede{color:var(--color-fg-muted);margin:var(--cds-gap-xs) 0 0;max-width:62rem;line-height:1.5}
+.hx .note{color:var(--color-fg-muted);font-size:var(--cds-font-size-caption);margin:0 0 var(--cds-gap-sm);line-height:1.45}
+.hx .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,11rem),1fr));gap:var(--cds-gap-md)}
+.hx .card{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-lg);position:relative;min-width:0}
+.hx .tile .v{font-family:var(--font-anthropic-serif);font-size:var(--cds-font-size-title);font-variant-numeric:tabular-nums;min-height:1.3em}
+.hx .tile .l{color:var(--color-fg-muted);font-size:var(--cds-font-size-caption)}
+.hx .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,28rem),1fr));gap:var(--cds-gap-md)}
+.hx .multi{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,16rem),1fr));gap:var(--cds-gap-md)}
+.hx .tri{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,19rem),1fr));gap:var(--cds-gap-md);margin-top:var(--cds-gap-md)}
+.hx .sub{font-weight:var(--cds-font-weight-medium);margin-bottom:4px}
+.hx .tip{position:absolute;background:var(--cds-surface-popover);border:1px solid var(--cds-border);border-radius:var(--cds-radius);box-shadow:var(--cds-shadow-popover);padding:var(--cds-pad-xs) var(--cds-pad-sm);font-size:var(--cds-font-size-caption);pointer-events:none;display:none;z-index:5;max-width:18rem;line-height:1.45}
+.hx .tip .t{color:var(--cds-text-secondary)}
+.hx .legend{display:flex;flex-wrap:wrap;gap:var(--cds-gap-sm) var(--cds-gap-md);font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);margin-bottom:var(--cds-gap-sm)}
+.hx .legend i{display:inline-block;width:.7rem;height:.7rem;border-radius:2px;margin-right:.35rem;vertical-align:-1px}
+.hx .tbox{max-height:28rem;overflow:auto}
+.hx table{border-collapse:collapse;width:100%;font-size:var(--cds-font-size-caption);font-variant-numeric:tabular-nums}
+.hx th{position:sticky;top:0;background:var(--color-panel);text-align:left;padding:var(--cds-pad-xs) var(--cds-pad-sm);border-bottom:1px solid var(--color-border-line);white-space:nowrap}
+.hx th button{all:unset;cursor:pointer;font-weight:var(--cds-font-weight-medium)}
+.hx td{padding:var(--cds-pad-xs) var(--cds-pad-sm);border-bottom:1px solid var(--color-border-line);vertical-align:top}
+.hx td.num,.hx th.num{text-align:right}
+.hx input.search,.hx select{font:inherit;font-size:var(--cds-font-size-caption);padding:var(--cds-pad-xs) var(--cds-pad-sm);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);background:var(--color-bg);color:var(--color-fg)}
+.hx input.search{width:min(100%,18rem);margin-bottom:var(--cds-gap-sm)}
+.hx .fail{display:flex;align-items:center;justify-content:center;gap:.4rem;color:var(--color-fg-muted);font-size:var(--cds-font-size-caption);min-height:inherit}
+.hx .fail::before{content:"";width:.375rem;height:.375rem;border-radius:50%;background:var(--color-bad)}
+.hx [data-dash-source-state=refreshing]{opacity:.5}
+.hx [data-dash-source-state=empty]{color:transparent}
+.hx ul.caveats{margin:0;padding-left:1.1rem;color:var(--color-fg-muted);font-size:var(--cds-font-size-caption);line-height:1.6}
+.hx .ctrls{display:flex;flex-wrap:wrap;align-items:center;gap:var(--cds-gap-sm) var(--cds-gap-md)}
+.hx .seg{display:inline-flex;border:1px solid var(--color-border-line);border-radius:var(--cds-radius);overflow:hidden}
+.hx .seg button{font:inherit;font-size:var(--cds-font-size-caption);background:transparent;color:var(--color-fg-muted);border:0;padding:var(--cds-pad-xs) var(--cds-pad-sm);cursor:pointer}
+.hx .seg button+button{border-left:1px solid var(--color-border-line)}
+.hx .seg button[aria-pressed=true]{background:var(--color-bg);color:var(--color-fg);font-weight:var(--cds-font-weight-medium)}
+.hx .chk,.hx .lbl{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);display:inline-flex;align-items:center;gap:.35rem}
+.hx .tlbox{overflow-x:auto}
+.hx .bar{position:sticky;top:0;z-index:4;background:var(--color-bg);padding:var(--cds-pad-sm) 0;border-bottom:1px solid var(--color-border-line)}
+.hx .bar .rng{font-size:var(--cds-font-size-caption);color:var(--color-fg)}
+</style>
+
+<div class="hx">
+  <header>
+    <h1 id="top">CHI / CSCW / UIST / UbiComp 赞助商版图</h1>
+    <p class="lede" id="takeaway">赞助几乎集中在少数大科技公司：全部年份里 Google 出现 <b data-source="kpis" data-field="value" data-where="metric=google" class="dash-skeleton">—</b> 届、Microsoft <b data-source="kpis" data-field="value" data-where="metric=microsoft" class="dash-skeleton">—</b> 届、Meta <b data-source="kpis" data-field="value" data-where="metric=meta" class="dash-skeleton">—</b> 届。CSCW 的企业赞助明显萎缩——按公开等级价估算，2013–2017 年平均每届约 <b data-source="cscw_trend" data-field="value" data-where="period=2013%E2%80%932017" class="dash-skeleton">—</b>，2023–2026 年降到约 <b data-source="cscw_trend" data-field="value" data-where="period=2023%E2%80%932026" class="dash-skeleton">—</b>。</p>
+  </header>
+
+  <section class="tiles" aria-label="Headline figures (all years)">
+    <div class="card tile"><div class="v dash-skeleton" data-source="kpis" data-field="value" data-where="metric=listings">—</div><div class="l">赞助条目（全部年份）</div></div>
+    <div class="card tile"><div class="v dash-skeleton" data-source="kpis" data-field="value" data-where="metric=orgs">—</div><div class="l">不同的赞助机构</div></div>
+    <div class="card tile"><div class="v dash-skeleton" data-source="kpis" data-field="value" data-where="metric=confyears">—</div><div class="l">已覆盖的会议届次</div></div>
+    <div class="card tile"><div class="v dash-skeleton" data-source="kpis" data-field="value" data-where="metric=countries">—</div><div class="l">涉及的国家 / 地区</div></div>
+  </section>
+
+  <div class="bar ctrls" id="filters" role="group" aria-label="Filters">
+    <span class="lbl">年份 <select id="f-from" aria-label="From year"></select> – <select id="f-to" aria-label="To year"></select></span>
+    <div class="seg" id="f-preset" role="group" aria-label="Year presets">
+      <button data-v="all" aria-pressed="true">全部</button><button data-v="2006">2006 起</button><button data-v="2013">2013 起</button><button data-v="2020">2020 起</button>
+    </div>
+    <label class="chk"><input type="checkbox" id="f-flags" class="flag-toggle" checked> 显示国旗</label>
+    <span class="lbl">国家归属</span><div class="seg" id="f-cmode" role="group" aria-label="Country attribution"><button data-v="hq" aria-pressed="true">总部所在地</button><button data-v="parent" aria-pressed="false">母公司国籍</button></div>
+    <span class="rng" id="f-label"></span>
+  </div>
+
+  <section class="card">
+    <h2 id="by-conference">各会议的 top sponsor</h2>
+    <p class="note">所选年份内，每个会议按赞助届数排序的前 10 名（同一机构在一届会议计 1 次）；右侧是届数和年份跨度。悬停查看各等级次数和估算金额。</p>
+    <div id="c-ct-chi" data-source="listings" style="min-height:290px"></div>
+    <div id="c-ct-rest" data-source="listings" style="min-height:290px;display:flex;flex-direction:column;gap:var(--cds-gap-lg);margin-top:var(--cds-gap-lg)"></div>
+  </section>
+
+  <section class="card" id="timeline-card">
+    <h2 id="timeline">赞助商的进出时间线</h2>
+    <p class="note">每行一家机构，每列一年；有色格子表示当年赞助，颜色越深等级越高（按等级起步价：≥$20k / $5k–20k / &lt;$5k / 价格未知）。灰色列是没拿到名单的年份——那里空着不代表没赞助。按“最后出现年份”排序时，靠上的是早早停止的机构。</p>
+    <div class="ctrls" style="margin-bottom:var(--cds-gap-sm)">
+      <div class="seg" id="tl-conf" role="group" aria-label="Conference"></div>
+      <div class="seg" id="tl-sort" role="group" aria-label="Sort">
+        <button data-v="last" aria-pressed="true">按最后出现</button><button data-v="first" aria-pressed="false">按首次出现</button><button data-v="count" aria-pressed="false">按届数</button>
+      </div>
+      <label class="chk"><input type="checkbox" id="tl-all"> 包括只出现过 1 届的机构</label>
+      <label class="chk"><input type="checkbox" class="flag-toggle" checked> 显示国旗</label>
+    </div>
+    <div class="legend" id="lg-tl"></div>
+    <div class="tlbox"><div id="c-tl" data-source="listings" style="min-height:320px"></div></div>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h2 id="countries">按国家 / 地区</h2>
+      <p class="note">所选年份内，按机构所属国家/地区（顶部可切换“总部所在地 / 母公司国籍”）统计的“机构 × 届次”数，按会议分色。日本、韩国、德国等的机构多在会议于本国举办时出现。</p>
+      <div class="legend" id="lg-cty"></div>
+      <div id="c-cty" data-source="listings" style="min-height:360px"></div>
+    </div>
+    <div class="card">
+      <h2 id="top-sponsors">四会议合计 top 15</h2>
+      <p class="note">所选年份内，四个会议合计的赞助届数。颜色区分企业与非企业机构。</p>
+      <div class="legend" id="lg-top"></div>
+      <div id="c-top" data-source="listings" style="min-height:420px"></div>
+    </div>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h2 id="sectors">赞助方构成</h2>
+      <p class="note">所选年份内，各会议赞助条目按机构类型的占比。</p>
+      <div class="legend" id="lg-sector"></div>
+      <div id="c-sector" data-source="listings" style="min-height:170px"></div>
+    </div>
+    <div class="card">
+      <h2 id="per-attendee">每位参会者对应的赞助额</h2>
+      <p class="note">估算赞助额 ÷ 当届注册人数。只有同时有价格与人数的届次才有点。</p>
+      <div class="legend" id="lg-conf"></div>
+      <div id="c-pa" data-source="pcy" style="min-height:240px"></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 id="money">每届估算赞助额（下限）</h2>
+    <p class="note">每家赞助商按其等级的公开最低价计，加总得到每届的估算下限；大多数赞助方没有等级的届次不画。每个会议使用各自的纵轴刻度。</p>
+    <div class="multi" id="c-money" data-source="pcy" style="min-height:200px"></div>
+  </section>
+
+  <section class="card">
+    <h2 id="listings">全部赞助条目</h2>
+    <p class="note">所选年份内的每条官网/存档页赞助记录；“来源”列是抓取的网页。可搜索、点表头排序。</p>
+    <input class="search" id="q" type="search" placeholder="搜索机构、会议、国家、年份…" aria-label="Search listings">
+    <div class="tbox">
+      <table id="t-list" data-source="listings" data-row-key="id">
+        <thead><tr>
+          <th data-field="id" class="num"><button data-k="id">#</button></th>
+          <th data-field="conference"><button data-k="conference">会议</button></th>
+          <th data-field="year" class="num"><button data-k="year">年份</button></th>
+          <th data-field="tier"><button data-k="tier">等级</button></th>
+          <th data-field="org"><button data-k="org">机构</button></th>
+          <th data-field="country"><button data-k="country">国家/地区</button></th>
+          <th data-field="sector"><button data-k="sector">类型</button></th>
+          <th data-field="est_usd" class="num"><button data-k="est_usd">估算 USD</button></th>
+          <th data-field="price_basis"><button data-k="price_basis">价格依据</button></th>
+          <th data-field="source">来源</th>
+        </tr></thead><tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h2 id="prices">公开的赞助等级价格</h2>
+      <p class="note">只列官网/招商书上能找到的价目；每个等级是“起步价”，实际金额可能更高。</p>
+      <div class="tbox" style="max-height:22rem">
+        <table id="t-price" data-source="prices" data-row-key="id">
+          <thead><tr><th data-field="id" class="num">#</th><th data-field="conference">会议</th><th data-field="years">年份</th><th data-field="tier">等级</th><th data-field="min_usd" class="num">起步价 USD</th><th data-field="basis">依据</th></tr></thead><tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <h2 id="caveats">口径与缺口</h2>
+      <ul class="caveats">
+        <li>数据来自各届官网赞助页、招商书和 SIGCHI 历史存档，只收录网页上能识别出名字的 logo；部分 logo 只有文件名，机构名为推断。</li>
+        <li>覆盖不全：CHI 1999–2005、CSCW 2012 年以前未取得名单（CSCW 早年官网已失效）；CHI 2012 的 Contributor 只以图片呈现，未收录；UbiComp 2020–2024 的名单没有标等级，所以无法估算金额；地方学会/政府“Supporter”计入名单但不计金额。</li>
+        <li>国家/地区有两种口径，可在顶部切换：“总部所在地”按赞助实体自身的总部（Toyota Research Institute、FXPAL、MERL、Megagon Labs、Nokia Bell Labs 都在美国）；“母公司国籍”按集团母公司（前四家计为日本，Nokia Bell Labs 计为芬兰）。少数小公司无法确定所在地。顶部“涉及的国家/地区”卡片按总部口径计。</li>
+        <li>金额是下限估算：等级价只是起步价，忽略主题赞助、展位、招聘等额外付费；未公布价格的年份沿用相邻年份价目；“Friend/Supporter”一律按 1,000 美元计。</li>
+        <li>Meta/Facebook/Oculus、Yahoo/Verizon Media/Oath、Tableau/Salesforce 等已合并为同一机构；ACM、SIGCHI 等主办方不计为赞助商。</li>
+        <li>国旗图形来自开源的 flag-icons 图标库；西班牙国旗省略了国徽。</li>
+      </ul>
+    </div>
+  </section>
+  <div class="tip" id="tip"></div>
+</div>
+
+<script src="flags.js"></script>
+
+<script>(() => {
+const CONF = ['CHI','CSCW','UIST','UbiComp'];
+const SECT = ['Industry','Government / foundation','University / academic','Publisher','Unknown'];
+const SECT_ZH = {'Industry':'企业','Government / foundation':'政府 / 基金会','University / academic':'高校 / 学术机构','Publisher':'出版社','Unknown':'未识别'};
+const CTY_ZH = {US:'美国',JP:'日本',KR:'韩国',CA:'加拿大',GB:'英国',DE:'德国',FR:'法国',FI:'芬兰',CN:'中国大陆',TW:'台湾地区',AU:'澳大利亚',NL:'荷兰',DK:'丹麦',AE:'阿联酋',CH:'瑞士',IN:'印度',NO:'挪威',SE:'瑞典',IT:'意大利',SG:'新加坡',ES:'西班牙',EU:'欧盟项目','':'未知'};
+const fmtUSD = v => (v==null||isNaN(v)) ? '—' : '$' + d3.format(',')(Math.round(v));
+const fmtK = v => (v==null||isNaN(v)) ? '—' : (v>=1000 ? '$' + d3.format(',.0f')(v/1000) + 'k' : '$' + d3.format(',.0f')(v));
+const flag = cc => (!cc || cc.length !== 2) ? '' : String.fromCodePoint(...[...cc.toUpperCase()].map(c => 0x1F1E6 + c.charCodeAt(0) - 65));
+const state = {from: null, to: null, flags: true, cmode: 'hq'};
+const cc = r => state.cmode === 'parent' ? (r.parent_country ?? r.country) : r.country;
+const redraws = [];
+const label = (org, cc) => org;
+const FW = 18, FH = 13.5, FPAD = 6;
+const flagSrc = cc => (window.HX_FLAGS || {})[cc] || null;
+const flagSvg = (sel, cc, x, yMid) => { const s = flagSrc(cc); if (s) sel.append('image').attr('href', s).attr('x', x).attr('y', yMid - FH / 2).attr('width', FW).attr('height', FH).attr('preserveAspectRatio', 'none').append('title').text(CTY_ZH[cc] || cc); else sel.append('rect').attr('x', x).attr('y', yMid - FH / 2).attr('width', FW).attr('height', FH).attr('rx', 2).attr('fill', 'var(--cds-chart-grid)').append('title').text('未知'); };
+const flagGap = () => state.flags ? FW + FPAD : 0;
+const inRange = y => (state.from == null || +y >= state.from) && (state.to == null || +y <= state.to);
+window.HX = {cc, CONF, SECT, SECT_ZH, CTY_ZH, fmtUSD, fmtK, flag, state, redraws, label, inRange, flagSvg, flagGap, flagSrc, FW};
+
+dash.calc('kpis', {
+  inputs: ['listings'], title: 'Headline counts (all years)',
+  description: 'Counts listings, distinct organisations, conference-years, HQ countries and top-3 appearances over all years.',
+  fn: (listings) => {
+    const cnt = o => new Set(listings.filter(r => r.org === o).map(r => r.conference + '-' + r.year)).size;
+    return [
+      {metric:'listings', value: String(listings.length)},
+      {metric:'orgs', value: String(new Set(listings.map(r => r.org)).size)},
+      {metric:'confyears', value: String(new Set(listings.map(r => r.conference + '-' + r.year)).size)},
+      {metric:'countries', value: String(new Set(listings.map(r => r.country).filter(c => c && c !== 'EU')).size)},
+      {metric:'google', value: String(cnt('Google'))},
+      {metric:'microsoft', value: String(cnt('Microsoft'))},
+      {metric:'meta', value: String(cnt('Meta/Facebook'))},
+    ];
+  }
+});
+
+dash.calc('cscw_trend', {
+  inputs: ['pcy'], title: 'CSCW estimated sponsorship by period',
+  description: 'Mean estimated sponsorship per CSCW edition, 2013–2017 vs 2023–2026 (priced editions only).',
+  fn: (pcy) => {
+    const avg = (a, b) => {
+      const v = pcy.filter(r => r.conference === 'CSCW' && +r.year >= a && +r.year <= b && r.est_usd !== '').map(r => +r.est_usd);
+      return '$' + Math.round(v.reduce((s, x) => s + x, 0) / v.length / 1000) + 'k';
+    };
+    return [{period:'2013–2017', value: avg(2013, 2017)}, {period:'2023–2026', value: avg(2023, 2026)}];
+  }
+});
+})();</script>
+
+<script>(() => {
+const H = window.HX;
+const {state, redraws} = H;
+const tip = document.getElementById('tip');
+const root = document.querySelector('.hx');
+H.showTip = (ev, lines) => {
+  tip.replaceChildren(); lines.forEach(([cls, text]) => { const d = document.createElement('div'); if (cls) d.className = cls; d.textContent = text; tip.append(d); });
+  tip.style.display = 'block';
+  const r = root.getBoundingClientRect(), w = tip.offsetWidth;
+  let x = ev.clientX - r.left + 12; if (x + w > r.width) x = ev.clientX - r.left - w - 12; if (x < 0) x = 0;
+  tip.style.left = x + 'px'; tip.style.top = (ev.clientY - r.top + 12) + 'px';
+};
+H.hideTip = () => { tip.style.display = 'none'; };
+H.failOrWait = (el, st) => {
+  el.replaceChildren();
+  if (st.status === 'ok') { el.classList.remove('dash-skeleton'); return false; }
+  if (st.status === 'loading') el.classList.add('dash-skeleton');
+  else { el.classList.remove('dash-skeleton'); const f = document.createElement('div'); f.className = 'fail'; f.textContent = 'Failed to load'; el.append(f); }
+  return true;
+};
+H.rows = () => { const st = dash.data('listings'); return st.status === 'ok' ? st.data.filter(r => H.inRange(r.year)) : []; };
+H.legend = (box, items) => { box.replaceChildren(); items.forEach(([c, t]) => { const s = document.createElement('span'); const i = document.createElement('i'); i.style.background = c; s.append(i, t); box.append(s); }); };
+H.measure = (svg, texts, size) => { const g = svg.append('g'); const w = d3.max(texts, t => g.append('text').attr('font-size', size).text(t).node().getComputedTextLength()) || 0; g.remove(); return w; };
+H.on = fn => { redraws.push(fn); dash.onData(fn); };
+
+// filters
+(() => {
+  const fs = document.getElementById('f-from'), ts = document.getElementById('f-to'), lab = document.getElementById('f-label');
+  let built = false;
+  const sync = () => {
+    lab.textContent = state.from == null ? '当前：全部年份' : `当前：${state.from}–${state.to}`;
+    document.querySelectorAll('#f-preset button').forEach(b => b.setAttribute('aria-pressed', String(
+      (b.dataset.v === 'all' && state.from == null) || (state.from != null && +b.dataset.v === state.from && state.to === +ts.options[ts.options.length - 1].value))));
+  };
+  const apply = () => { sync(); redraws.forEach(f => f()); };
+  dash.onData(() => {
+    const st = dash.data('listings'); if (st.status !== 'ok' || built) return;
+    const ys = d3.range(d3.min(st.data, r => +r.year), d3.max(st.data, r => +r.year) + 1);
+    ys.forEach(y => { fs.add(new Option(y, y)); ts.add(new Option(y, y)); });
+    fs.value = ys[0]; ts.value = ys[ys.length - 1]; built = true; sync();
+  });
+  const fromSel = () => { let a = +fs.value, b = +ts.value; if (a > b) [a, b] = [b, a];
+    const all = a === +fs.options[0].value && b === +ts.options[ts.options.length - 1].value;
+    state.from = all ? null : a; state.to = all ? null : b; apply(); };
+  fs.addEventListener('change', fromSel); ts.addEventListener('change', fromSel);
+  document.querySelectorAll('#f-preset button').forEach(b => b.addEventListener('click', () => {
+    if (!built) return;
+    if (b.dataset.v === 'all') { fs.value = fs.options[0].value; ts.value = ts.options[ts.options.length - 1].value; }
+    else { fs.value = b.dataset.v; ts.value = ts.options[ts.options.length - 1].value; }
+    fromSel();
+  }));
+  document.querySelectorAll('#f-cmode button').forEach(b => b.addEventListener('click', () => { state.cmode = b.dataset.v; document.querySelectorAll('#f-cmode button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); apply(); }));
+  document.querySelectorAll('.flag-toggle').forEach(cb => cb.addEventListener('change', e => { state.flags = e.target.checked; document.querySelectorAll('.flag-toggle').forEach(o => { o.checked = state.flags; }); apply(); }));
+})();
+
+// headline marks
+dash.onData(() => {
+  ['kpis','cscw_trend'].forEach(id => {
+    const st = dash.data(id); const k = id === 'kpis' ? 'metric' : 'period';
+    document.querySelectorAll(`[data-source="${id}"]`).forEach(el => {
+      const key = decodeURIComponent((el.dataset.where || '').split('=')[1] || '');
+      if (st.status !== 'ok') { el.textContent = '—'; el.classList.toggle('dash-skeleton', st.status === 'loading'); return; }
+      el.classList.remove('dash-skeleton');
+      const row = st.data.find(r => r[k] === key); el.textContent = row ? row.value : '—';
+    });
+  });
+});
+})();</script>
+
+<script>(() => {
+// horizontal ranked bars, shared by top-10 per conference and top-15 overall
+window.HX.rankBars = (box, items, color, tipFn) => {
+  const H = window.HX;
+  const W = box.clientWidth || 300, rowH = 24, H0 = items.length * rowH + 4;
+  const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${Math.max(H0, 20)}`);
+  if (!items.length) { svg.append('text').attr('x', 0).attr('y', 14).attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text('所选年份内没有记录'); return; }
+  const names = items.map(d => H.label(d.org, d.country));
+  const lw = H.measure(svg, names, 12) + 10 + H.flagGap();
+  const rw = H.measure(svg, items.map(d => d.right), 11) + 10;
+  const max = d3.max(items, d => d.n);
+  const Wv = Math.max(W, lw + rw + 60); svg.attr('viewBox', `0 0 ${Wv} ${Math.max(H0, 20)}`);
+  const x = d3.scaleLinear([0, max], [lw, Wv - rw]);
+  const y = d3.scaleBand(items.map(d => d.org), [0, H0 - 4]).padding(0.28);
+  const g = svg.append('g').selectAll('g').data(items).join('g');
+  g.append('text').attr('x', lw - 8 - H.flagGap()).attr('y', d => y(d.org) + y.bandwidth() / 2).attr('dy', '.35em').attr('text-anchor', 'end').attr('font-size', 12).attr('fill', 'var(--color-fg)').text((d, i) => names[i]);
+  if (H.state.flags) g.each(function (d) { H.flagSvg(d3.select(this), d.country, lw - 6 - H.FW, y(d.org) + y.bandwidth() / 2); });
+  g.append('rect').attr('x', lw).attr('y', d => y(d.org)).attr('height', y.bandwidth()).attr('width', d => Math.max(2, x(d.n) - lw)).attr('rx', 4).attr('fill', d => typeof color === 'function' ? color(d) : color);
+  g.append('text').attr('x', d => x(d.n) + 6).attr('y', d => y(d.org) + y.bandwidth() / 2).attr('dy', '.35em').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(d => d.right);
+  g.append('rect').attr('x', 0).attr('width', Wv).attr('y', d => y(d.org) - 2).attr('height', y.bandwidth() + 4).attr('fill', 'transparent')
+    .on('mousemove', (ev, d) => H.showTip(ev, tipFn(d))).on('mouseleave', H.hideTip);
+};
+window.HX.aggregate = (rows) => d3.rollups(rows, v => {
+    const yrs = new Set(v.map(r => +r.year)); const tiers = d3.rollups(v, a => a.length, r => r.tier).map(([t, n]) => `${t}×${n}`).join(', ');
+    return {n: new Set(v.map(r => r.conference + '-' + r.year)).size, first: d3.min(yrs), last: d3.max(yrs), tiers, est: d3.sum(v, r => r.est_usd === '' ? 0 : +r.est_usd),
+      country: window.HX.cc(v[0]), sector: v[0].sector, confs: [...new Set(v.map(r => r.conference))].join(', ')};
+  }, r => r.org).map(([org, o]) => ({org, ...o}))
+  .sort((a, b) => b.n - a.n || b.est - a.est || a.org.localeCompare(b.org));
+
+// top 10 per conference
+window.HX.on(() => {
+  const H = window.HX;
+  const a = document.getElementById('c-ct-chi'), b = document.getElementById('c-ct-rest'); const st = dash.data('listings');
+  if (H.failOrWait(a, st)) { H.failOrWait(b, st); return; } H.failOrWait(b, st);
+  const rows = H.rows();
+  H.CONF.forEach((c, ci) => {
+    const box = document.createElement('div'); (c === 'CHI' ? a : b).append(box);
+    const h = document.createElement('div'); h.className = 'sub'; h.textContent = c; box.append(h);
+    const inner = document.createElement('div'); box.append(inner);
+    const items = H.aggregate(rows.filter(r => r.conference === c)).slice(0, 10).map(d => ({...d, right: `${d.n} 届 · ${d.first}–${d.last}`}));
+    H.rankBars(inner, items, dash.colors[ci], d => [['t', `${c} · ${d.org}`], ['', `${H.CTY_ZH[d.country] || d.country}`], ['', `赞助 ${d.n} 届（${d.first}–${d.last}）`], ['', `等级：${d.tiers}`], ['', `估算下限合计：${H.fmtUSD(d.est)}`]]);
+  });
+});
+
+// top 15 overall
+window.HX.on(() => {
+  const H = window.HX;
+  const el = document.getElementById('c-top'); const st = dash.data('listings');
+  if (H.failOrWait(el, st)) return;
+  const items = H.aggregate(H.rows()).slice(0, 15).map(d => ({...d, right: String(d.n)}));
+  H.legend(document.getElementById('lg-top'), [[dash.colors[0], '企业'], [dash.colors[1], '非企业']]);
+  H.rankBars(el, items, d => d.sector === 'Industry' ? dash.colors[0] : dash.colors[1],
+    d => [['t', d.org], ['', `${H.CTY_ZH[d.country] || d.country} · ${H.SECT_ZH[d.sector] || d.sector}`], ['', `${d.n} 届 · ${d.first}–${d.last}`], ['', `会议：${d.confs}`], ['', `估算下限合计：${H.fmtUSD(d.est)}`]]);
+});
+
+// countries, stacked by conference
+window.HX.on(() => {
+  const H = window.HX;
+  const el = document.getElementById('c-cty'); const st = dash.data('listings');
+  H.legend(document.getElementById('lg-cty'), H.CONF.map((c, i) => [dash.colors[i], c]));
+  if (H.failOrWait(el, st)) return;
+  const rows = H.rows();
+  const uniq = d3.rollups(rows, v => v[0], r => `${r.conference}|${r.year}|${r.org}`).map(([, r]) => r);
+  const by = d3.rollups(uniq, v => ({total: v.length, per: H.CONF.map(c => v.filter(r => r.conference === c).length)}), r => H.cc(r))
+    .map(([cc, o]) => ({cc, ...o})).sort((a, b) => b.total - a.total);
+  const top = by.slice(0, 14);
+  const W = el.clientWidth || 400, rowH = 24, Ht = top.length * rowH + 4;
+  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${Math.max(Ht, 20)}`);
+  if (!top.length) return;
+  const names = top.map(d => H.CTY_ZH[d.cc] || d.cc);
+  const lw = H.measure(svg, names, 12) + 10 + H.flagGap(), rw = H.measure(svg, top.map(d => `${d.total}（${d3.format('.0%')(d.total / uniq.length)}）`), 11) + 10;
+  const Wv = Math.max(W, lw + rw + 60); svg.attr('viewBox', `0 0 ${Wv} ${Math.max(Ht, 20)}`);
+  const x = d3.scaleLinear([0, d3.max(top, d => d.total)], [lw, Wv - rw]);
+  const y = d3.scaleBand(top.map(d => d.cc), [0, Ht - 4]).padding(0.28);
+  const g = svg.append('g').selectAll('g').data(top).join('g');
+  g.append('text').attr('x', lw - 8 - H.flagGap()).attr('y', d => y(d.cc) + y.bandwidth() / 2).attr('dy', '.35em').attr('text-anchor', 'end').attr('font-size', 12).attr('fill', 'var(--color-fg)').text((d, i) => names[i]);
+  if (H.state.flags) g.each(function (d) { H.flagSvg(d3.select(this), d.cc, lw - 6 - H.FW, y(d.cc) + y.bandwidth() / 2); });
+  g.each(function (d) {
+    let acc = 0; const s = d3.select(this);
+    d.per.forEach((n, i) => { if (!n) return; const x0 = x(acc); acc += n;
+      s.append('rect').attr('x', x0 + (acc - n > 0 ? 1 : 0)).attr('y', y(d.cc)).attr('height', y.bandwidth()).attr('width', Math.max(1, x(acc) - x0 - (acc - n > 0 ? 1 : 0))).attr('rx', 3).attr('fill', dash.colors[i]); });
+  });
+  g.append('text').attr('x', d => x(d.total) + 6).attr('y', d => y(d.cc) + y.bandwidth() / 2).attr('dy', '.35em').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(d => `${d.total}（${d3.format('.0%')(d.total / uniq.length)}）`);
+  g.append('rect').attr('x', 0).attr('width', Wv).attr('y', d => y(d.cc) - 2).attr('height', y.bandwidth() + 4).attr('fill', 'transparent')
+    .on('mousemove', (ev, d) => {
+      const orgs = d3.rollups(uniq.filter(r => H.cc(r) === d.cc), v => v.length, r => r.org).sort((a, b) => b[1] - a[1]).slice(0, 6).map(([o, n]) => `${o} ${n}`).join('、');
+      H.showTip(ev, [['t', H.CTY_ZH[d.cc] || d.cc], ...H.CONF.map((c, i) => ['', `${c}：${d.per[i]}`]), ['', `主要：${orgs}`]]);
+    }).on('mouseleave', H.hideTip);
+});
+
+// sector mix
+window.HX.on(() => {
+  const H = window.HX;
+  const el = document.getElementById('c-sector'); const st = dash.data('listings');
+  if (H.failOrWait(el, st)) return;
+  const rows = H.rows();
+  const present = H.SECT.filter(s => rows.some(r => r.sector === s));
+  const col = s => dash.colors[H.SECT.indexOf(s)];
+  H.legend(document.getElementById('lg-sector'), present.map(s => [col(s), H.SECT_ZH[s]]));
+  const W = el.clientWidth || 400, rowH = 34, Ht = H.CONF.length * rowH + 8, lw = 70;
+  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${Ht}`);
+  const y = d3.scaleBand(H.CONF, [0, Ht - 8]).padding(0.3); const x = d3.scaleLinear([0, 1], [lw, W - 4]);
+  H.CONF.forEach(c => {
+    const rs = rows.filter(r => r.conference === c); const tot = rs.length; let acc = 0;
+    svg.append('text').attr('x', 0).attr('y', y(c) + y.bandwidth() / 2).attr('dy', '.35em').attr('font-size', 12).attr('fill', 'var(--color-fg)').text(c);
+    if (!tot) return;
+    present.forEach(s => {
+      const n = rs.filter(r => r.sector === s).length; if (!n) return; const v = n / tot; const x0 = x(acc); acc += v;
+      svg.append('rect').attr('x', x0 + 1).attr('y', y(c)).attr('height', y.bandwidth()).attr('width', Math.max(0, x(acc) - x0 - 2)).attr('rx', 3).attr('fill', col(s))
+        .on('mousemove', ev => H.showTip(ev, [['t', `${c} · ${H.SECT_ZH[s]}`], ['', `${n} 条（${d3.format('.0%')(v)}）`]])).on('mouseleave', H.hideTip);
+    });
+  });
+});
+
+// small multiples of estimated $
+window.HX.on(() => {
+  const H = window.HX;
+  const el = document.getElementById('c-money'); const st = dash.data('pcy');
+  if (H.failOrWait(el, st)) return;
+  H.CONF.forEach((c, ci) => {
+    const rows = st.data.filter(r => r.conference === c && r.est_usd !== '' && H.inRange(r.year)).map(r => ({...r, y: +r.year, v: +r.est_usd}));
+    const box = document.createElement('div'); el.append(box);
+    const h = document.createElement('div'); h.className = 'sub'; h.textContent = c; box.append(h);
+    const W = box.clientWidth || 260, Ht = 170, m = {l: 44, r: 6, t: 6, b: 22};
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${Ht}`);
+    if (!rows.length) { svg.append('text').attr('x', 0).attr('y', 14).attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text('所选年份内没有可估算的届次'); return; }
+    const years = d3.range(d3.min(rows, r => r.y), d3.max(rows, r => r.y) + 1);
+    const x = d3.scaleBand(years, [m.l, W - m.r]).padding(0.2);
+    const y = d3.scaleLinear([0, d3.max(rows, r => r.v) * 1.08], [Ht - m.b, m.t]).nice();
+    svg.append('g').selectAll('line').data(y.ticks(4)).join('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', d => y(d)).attr('y2', d => y(d)).attr('stroke', 'var(--cds-chart-grid)');
+    svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(4).tickSize(0).tickFormat(H.fmtK)).attr('font-size', null).attr('font-family', null)
+      .call(g => { g.select('.domain').remove(); g.selectAll('text').attr('fill', 'var(--color-fg-muted)').attr('font-size', 10); });
+    const step = Math.ceil(years.length / Math.max(2, Math.floor((W - m.l) / 34)));
+    svg.append('g').attr('transform', `translate(0,${Ht - m.b})`).call(d3.axisBottom(x).tickSize(0).tickValues(years.filter((d, i) => i % step === 0)).tickFormat(d => "'" + String(d).slice(2))).attr('font-size', null).attr('font-family', null)
+      .call(g => { g.select('.domain').attr('stroke', 'var(--cds-chart-axis)'); g.selectAll('text').attr('fill', 'var(--color-fg-muted)').attr('font-size', 10).attr('dy', '1em'); });
+    svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', d => x(d.y)).attr('width', x.bandwidth()).attr('y', d => y(d.v)).attr('height', d => Math.max(0, y(0) - y(d.v))).attr('rx', 3).attr('fill', dash.colors[ci])
+      .on('mousemove', (ev, d) => H.showTip(ev, [['t', `${c} ${d.year}`], ['', `估算下限 ${H.fmtUSD(d.v)}`], ['', `${d.n_sponsors} 家赞助方（企业 ${d.n_industry}）`], ['', d.attendance ? `注册 ${d3.format(',')(+d.attendance)} 人` : '注册人数未公开']]))
+      .on('mouseleave', H.hideTip);
+  });
+});
+
+// per attendee
+window.HX.on(() => {
+  const H = window.HX;
+  const el = document.getElementById('c-pa'), lg = document.getElementById('lg-conf'); const st = dash.data('pcy');
+  lg.replaceChildren(); if (H.failOrWait(el, st)) return;
+  const rows = st.data.filter(r => r.usd_per_attendee !== '' && +r.usd_per_attendee > 0 && H.inRange(r.year)).map(r => ({...r, y: +r.year, v: +r.usd_per_attendee}));
+  const confs = H.CONF.filter(c => rows.some(r => r.conference === c));
+  H.legend(lg, confs.map(c => [dash.colors[H.CONF.indexOf(c)], c]));
+  const W = el.clientWidth || 500, Ht = 240, m = {l: 44, r: 64, t: 10, b: 24};
+  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${Ht}`);
+  if (!rows.length) { svg.append('text').attr('x', 0).attr('y', 14).attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text('所选年份内没有同时有价格和人数的届次'); return; }
+  const ext = d3.extent(rows, r => r.y); if (ext[0] === ext[1]) { ext[0] -= 1; ext[1] += 1; }
+  const x = d3.scaleLinear(ext, [m.l, W - m.r]);
+  const y = d3.scaleLinear([0, d3.max(rows, r => r.v) * 1.08], [Ht - m.b, m.t]).nice();
+  svg.append('g').selectAll('line').data(y.ticks(5)).join('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', d => y(d)).attr('y2', d => y(d)).attr('stroke', 'var(--cds-chart-grid)');
+  svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickSize(0).tickFormat(d => '$' + d)).attr('font-size', null).attr('font-family', null)
+    .call(g => { g.select('.domain').remove(); g.selectAll('text').attr('fill', 'var(--color-fg-muted)').attr('font-size', 10); });
+  svg.append('g').attr('transform', `translate(0,${Ht - m.b})`).call(d3.axisBottom(x).ticks(Math.min(8, Math.floor(W / 60))).tickFormat(d3.format('d')).tickSize(0)).attr('font-size', null).attr('font-family', null)
+    .call(g => { g.select('.domain').attr('stroke', 'var(--cds-chart-axis)'); g.selectAll('text').attr('fill', 'var(--color-fg-muted)').attr('font-size', 10).attr('dy', '1em'); });
+  confs.forEach(c => {
+    const col = dash.colors[H.CONF.indexOf(c)]; const s = rows.filter(r => r.conference === c).sort((a, b) => a.y - b.y);
+    svg.append('path').datum(s).attr('fill', 'none').attr('stroke', col).attr('stroke-width', 2).attr('stroke-linejoin', 'round').attr('stroke-linecap', 'round').attr('d', d3.line(d => x(d.y), d => y(d.v)));
+    svg.append('g').selectAll('circle').data(s).join('circle').attr('cx', d => x(d.y)).attr('cy', d => y(d.v)).attr('r', 4).attr('fill', col).attr('stroke', 'var(--color-panel)').attr('stroke-width', 2)
+      .on('mousemove', (ev, d) => H.showTip(ev, [['t', `${c} ${d.year}`], ['', `人均 ${H.fmtUSD(d.v)}`], ['', `估算 ${H.fmtUSD(+d.est_usd)} ÷ ${d3.format(',')(+d.attendance)} 人`]]))
+      .on('mouseleave', H.hideTip);
+    const last = s[s.length - 1]; svg.append('text').attr('x', x(last.y) + 7).attr('y', y(last.v)).attr('dy', '.35em').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(c);
+  });
+});
+})();</script>
+
+<script>(() => {
+// timeline
+(() => {
+  const H = window.HX;
+  const LEVELS = [['high', '≥ $20k', 1], ['mid', '$5k–20k', 0.6], ['low', '< $5k', 0.3], ['unknown', '价格未知', 0]];
+  let conf = 'CSCW', sort = 'last', all = false;
+  const confBox = document.getElementById('tl-conf');
+  H.CONF.forEach(c => { const b = document.createElement('button'); b.dataset.v = c; b.textContent = c; b.setAttribute('aria-pressed', String(c === conf)); confBox.append(b); });
+  const wire = (box, set) => box.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+    box.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); set(b.dataset.v); draw();
+  }));
+  wire(confBox, v => conf = v); wire(document.getElementById('tl-sort'), v => sort = v);
+  document.getElementById('tl-all').addEventListener('change', e => { all = e.target.checked; draw(); });
+  const level = r => r.est_usd === '' ? 'unknown' : +r.est_usd >= 20000 ? 'high' : +r.est_usd >= 5000 ? 'mid' : 'low';
+
+  function draw() {
+    const el = document.getElementById('c-tl'), lg = document.getElementById('lg-tl'); const st = dash.data('listings');
+    lg.replaceChildren(); if (H.failOrWait(el, st)) return;
+    const ci = H.CONF.indexOf(conf), col = dash.colors[ci];
+    const allConf = st.data.filter(r => r.conference === conf);
+    const covered = new Set(allConf.map(r => +r.year));
+    const rows = allConf.filter(r => H.inRange(r.year)).map(r => ({...r, year: +r.year, level: level(r)}));
+    const lastCovered = d3.max([...covered]);
+    LEVELS.forEach(([k, lab, op]) => {
+      const sp = document.createElement('span'); const i = document.createElement('i');
+      if (op) { i.style.background = col; i.style.opacity = op; } else { i.style.border = `1.5px solid ${col}`; i.style.boxSizing = 'border-box'; }
+      sp.append(i, lab); lg.append(sp);
+    });
+    const sp = document.createElement('span'); const i = document.createElement('i'); i.style.background = 'var(--cds-chart-grid)'; sp.append(i, '无名单数据的年份'); lg.append(sp);
+    if (!rows.length) { const p = document.createElement('div'); p.className = 'note'; p.textContent = '所选年份内这个会议没有记录。'; el.append(p); return; }
+    const y0 = Math.max(H.state.from ?? -Infinity, d3.min(allConf, r => +r.year)), y1 = Math.min(H.state.to ?? Infinity, d3.max(allConf, r => +r.year));
+    const years = d3.range(y0, y1 + 1);
+    const orgs = d3.rollups(rows, v => ({first: d3.min(v, r => r.year), last: d3.max(v, r => r.year), n: v.length, country: H.cc(v[0]), cells: new Map(v.map(r => [r.year, r]))}), r => r.org)
+      .map(([org, o]) => ({org, ...o})).filter(o => all || o.n >= 2);
+    const cmp = {last: (a, b) => a.last - b.last || a.first - b.first || b.n - a.n, first: (a, b) => a.first - b.first || a.last - b.last || b.n - a.n, count: (a, b) => b.n - a.n || b.last - a.last}[sort];
+    orgs.sort((a, b) => cmp(a, b) || a.org.localeCompare(b.org));
+    if (!orgs.length) { const p = document.createElement('div'); p.className = 'note'; p.textContent = '所选年份内没有赞助过两届及以上的机构；勾选“包括只出现过 1 届的机构”查看全部。'; el.append(p); return; }
+    const boxW = el.parentElement.clientWidth || 600;
+    const svg = d3.select(el).append('svg');
+    const names = orgs.map(o => H.label(o.org, o.country));
+    const lw = H.measure(svg, names, 11) + 10 + H.flagGap();
+    const rlab = d => `${d.n} 届${d.last < lastCovered - 2 ? ' · 停于 ' + d.last : ''}`;
+    const rw = H.measure(svg, orgs.map(rlab), 10) + 16, top = 22, rowH = 18;
+    const cell = Math.max(10, Math.min(26, Math.floor((boxW - lw - rw) / years.length)));
+    const W = lw + cell * years.length + rw, Ht = top + orgs.length * rowH + 4;
+    svg.attr('width', '100%').attr('viewBox', `0 0 ${W} ${Ht}`);
+    const x = yr => lw + (yr - y0) * cell;
+    svg.append('g').selectAll('rect').data(years.filter(yr => !covered.has(yr))).join('rect')
+      .attr('x', d => x(d)).attr('y', top).attr('width', cell).attr('height', Ht - top - 4).attr('fill', 'var(--cds-chart-grid)').attr('opacity', 0.55)
+      .on('mousemove', (ev, d) => H.showTip(ev, [['t', `${conf} ${d}`], ['', '这一年没有拿到赞助名单']])).on('mouseleave', H.hideTip);
+    const every = cell >= 22 ? 2 : 5;
+    svg.append('g').selectAll('text').data(years.filter(yr => yr % every === 0 || yr === y0)).join('text')
+      .attr('x', d => x(d) + cell / 2).attr('y', top - 8).attr('text-anchor', 'middle').attr('font-size', 10).attr('fill', 'var(--color-fg-muted)').text(d => "'" + String(d).slice(2));
+    const g = svg.append('g').selectAll('g').data(orgs).join('g').attr('transform', (d, i) => `translate(0,${top + i * rowH})`);
+    g.append('line').attr('x1', lw).attr('x2', lw + cell * years.length).attr('y1', rowH / 2).attr('y2', rowH / 2).attr('stroke', 'var(--cds-chart-grid)');
+    g.append('line').attr('x1', d => x(d.first) + cell / 2).attr('x2', d => x(d.last) + cell / 2).attr('y1', rowH / 2).attr('y2', rowH / 2).attr('stroke', col).attr('stroke-opacity', 0.35).attr('stroke-width', 2);
+    g.append('text').attr('x', lw - 8 - H.flagGap()).attr('y', rowH / 2).attr('dy', '.35em').attr('text-anchor', 'end').attr('font-size', 11).attr('fill', 'var(--color-fg)').text((d, i) => names[i]);
+    if (H.state.flags) g.each(function (d) { H.flagSvg(d3.select(this), d.country, lw - 6 - H.FW, rowH / 2); });
+    g.each(function (o) {
+      d3.select(this).selectAll('rect.c').data([...o.cells.values()]).join('rect').attr('class', 'c')
+        .attr('x', d => x(d.year) + 1.5).attr('y', 2).attr('width', cell - 3).attr('height', rowH - 4).attr('rx', 3)
+        .attr('fill', d => d.level === 'unknown' ? 'var(--color-panel)' : col)
+        .attr('fill-opacity', d => ({high: 1, mid: 0.6, low: 0.3, unknown: 1})[d.level])
+        .attr('stroke', d => d.level === 'unknown' ? col : 'none').attr('stroke-width', 1.5)
+        .on('mousemove', (ev, d) => H.showTip(ev, [['t', `${conf} ${d.year}`], ['', d.org], ['', H.CTY_ZH[H.cc(d)] || H.cc(d)], ['', `等级：${d.tier}`], ['', d.est_usd === '' ? '价格未知' : `起步价 ${H.fmtUSD(+d.est_usd)}`]]))
+        .on('mouseleave', H.hideTip);
+    });
+    g.append('text').attr('x', lw + cell * years.length + 8).attr('y', rowH / 2).attr('dy', '.35em').attr('font-size', 10)
+      .attr('fill', d => d.last < lastCovered - 2 ? 'var(--color-fg-muted)' : 'var(--color-fg)')
+      .text(rlab);
+  }
+  H.on(draw);
+})();
+
+// listings table
+(() => {
+  const H = window.HX;
+  let sortK = 'year', sortDir = -1;
+  const draw = () => {
+    const st = dash.data('listings'); const tb = document.querySelector('#t-list tbody'); tb.replaceChildren();
+    if (st.status !== 'ok') return;
+    const q = document.getElementById('q').value.trim().toLowerCase();
+    const numK = ['id','year','est_usd'].includes(sortK);
+    let rows = H.rows().filter(r => !q || [r.conference, r.year, r.tier, r.org, r.sponsor, r.sector, H.cc(r), H.CTY_ZH[H.cc(r)]].join(' ').toLowerCase().includes(q));
+    rows = rows.slice().sort((a, b) => { const A = numK ? (+a[sortK] || 0) : String(a[sortK]); const B = numK ? (+b[sortK] || 0) : String(b[sortK]); return (A > B ? 1 : A < B ? -1 : 0) * sortDir || (+a.id - +b.id); });
+    rows.forEach(r => {
+      const tr = document.createElement('tr');
+      const td = (t, cls) => { const c = document.createElement('td'); c.textContent = t; if (cls) c.className = cls; tr.append(c); return c; };
+      td(r.id, 'num'); td(r.conference); td(r.year, 'num'); td(r.tier); td(r.org);
+      { const k = H.cc(r); const c = td(k ? (H.CTY_ZH[k] || k) : '—'); const s = H.flagSrc(k); if (H.state.flags && s) { const im = document.createElement('img'); im.src = s; im.alt = ''; im.width = 16; im.height = 12; im.style.marginRight = '6px'; im.style.verticalAlign = '-1px'; c.prepend(im); } }
+      td(H.SECT_ZH[r.sector] || r.sector);
+      td(r.est_usd === '' ? '—' : H.fmtUSD(+r.est_usd), 'num'); td(r.price_basis);
+      const c = td(''); const a = document.createElement('a'); a.href = r.source; a.textContent = r.source.replace(/^https?:\/\//, '').slice(0, 40); a.target = '_blank'; a.rel = 'noopener'; c.append(a);
+      tb.append(tr);
+    });
+    document.querySelectorAll('#t-list th').forEach(th => { const b = th.querySelector('button'); th.setAttribute('aria-sort', b && b.dataset.k === sortK ? (sortDir > 0 ? 'ascending' : 'descending') : 'none'); });
+  };
+  document.querySelectorAll('#t-list th button').forEach(b => b.addEventListener('click', () => { if (sortK === b.dataset.k) sortDir *= -1; else { sortK = b.dataset.k; sortDir = 1; } draw(); }));
+  document.getElementById('q').addEventListener('input', draw);
+  H.on(draw);
+})();
+
+// prices table
+dash.onData(() => {
+  const H = window.HX;
+  const st = dash.data('prices'); const tb = document.querySelector('#t-price tbody'); tb.replaceChildren();
+  if (st.status !== 'ok') return;
+  st.data.forEach(r => {
+    const tr = document.createElement('tr');
+    [[r.id,'num'],[r.conference],[r.years],[r.tier],[H.fmtUSD(+r.min_usd),'num'],[r.basis]].forEach(([t, cls]) => { const c = document.createElement('td'); c.textContent = t; if (cls) c.className = cls; tr.append(c); });
+    tb.append(tr);
+  });
+});
+})();</script>
+
+</div>
+</body>
+</html>
