@@ -102,7 +102,7 @@ dashboard/ai/                            # AI 会议 dashboard（含与 HCI 的�
 1. **规模差一个数量级**：NeurIPS 2025 估算赞助下限约 $5.8M、148 家赞助方；同年 CHI 约 $0.43M、21 家。
 2. **金融/量化是第二大赞助群体**：约 22% 的赞助条目、约 28% 的可估算金额来自 Citadel、Jane Street、Jump、D. E. Shaw、Two Sigma、HRT、Optiver、G-Research 等，比例多年稳定；HCI 会议几乎没有。
 3. **同一批大厂两边分配不同**：Google、Microsoft、Meta 两边都长期赞助；Adobe、Autodesk 主要在 HCI；Amazon、Baidu、ByteDance 几乎只在 AI。
-4. **中国机构占比更高**：AI 会议约 9% 的“机构 × 届次”来自中国大陆（百度、字节、阿里、蚂蚁、腾讯、华为、幻方类量化等），HCI 不到 3%。
+4. **中国机构占比更高**：AI 会议约 9% 的“机构 × 届次”来自中国大陆（百度、字节、阿里、蚂蚁、腾讯、华为、宽德、明汯、聚宽等量化机构），HCI 不到 3%。
 5. **新进入者是 AI 基础设施与数据公司**：Lambda、Together AI、Nebius、Cerebras、Scale AI、Toloka、Turing、Handshake 等 2023 年后大量出现，一半以上机构只出现过一届。
 
 ## 许可
