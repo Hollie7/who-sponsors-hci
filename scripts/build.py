@@ -20,14 +20,21 @@ gov = {'NSF','NICT','ETRI','CSIRO Data61','Région Île-de-France','City of Yoko
        'Seoul Metropolitan Government','Korea Tourism Organization','VisitScotland','Singapore Tourism Board','GRAND NCE',
        'Digiteo','Inria','SICSA','KIPFA','work2future (San Jose)','Kayamori Foundation','Wellcome Trust',
        'TSV (Technology Industries of Finland Centennial Foundation)','Underwood Institute','Chen Institute','Language Grid',
-       'MediaFutures (UiB)','Busan Tourism Organization','ERMES','Holden','GreenSense','EPSRC','CRA-W','User-Centric Networking (EU project)','TAF (Telecommunications Advancement Foundation)','SCAT','Osaka Convention & Tourism Bureau','IPSJ','Kansai METI','MIC Kinki Bureau of Telecommunications','Telecom Engineering Center Kinki','CKP (Ubiquitous Forum)','Human Interface Society','VRSJ','ZAI'}
+       'MediaFutures (UiB)','Busan Tourism Organization','ERMES','Holden','GreenSense','EPSRC','CRA-W','User-Centric Networking (EU project)','TAF (Telecommunications Advancement Foundation)','SCAT','Osaka Convention & Tourism Bureau','IPSJ','Kansai METI','MIC Kinki Bureau of Telecommunications','Telecom Engineering Center Kinki','CKP (Ubiquitous Forum)','Human Interface Society','VRSJ','ZAI',
+       # added with DIS / IUI / FAccT
+       'Knight Foundation','MacArthur Foundation','Ford Foundation','Rockefeller Foundation','Sloan Foundation','Open Society Foundations','Schmidt Futures','Schmidt Sciences',
+       'Luminate','Ethics and Governance of AI Initiative','Silicon Valley Community Foundation','Survival and Flourishing Fund','Athena Research Center','Tourisme Montréal',
+       'Gesellschaft für Informatik (GI)','Cyprus Tourism Organisation','Business Events Sydney','Singapore Exhibition & Convention Bureau','Visit Brisbane','Visit Madeira',
+       'Funchal City Council','HFESA','Australian Design Alliance','ANAT','Media Architecture Institute','Media Architecture Biennale'}
 acad = {'University of Glasgow','University of Miami','Monash University','Yonsei University','Yonsei University ICS',
         'University of Toronto','Newcastle University','UMBC','UC Irvine','University of Maryland','Virginia Tech',
         'Université Paris-Dauphine','Telecom ParisTech','University of Michigan','University of Bari','University of Copenhagen DIKU',
         'IT University of Copenhagen','Northwestern University','Simon Fraser University','Drexel University','UCL',
         'University of Hawaii (HICHI)','University of Cambridge','Stevens Institute of Technology','MBZUAI',
-        'Samsung Art and Design Institute','Hasso Plattner Institute','Georgia Tech','University of Cambridge','University of Toronto','UC San Diego','Dong-eui University','University of Virginia','UC San Diego (Qualcomm Institute)','University of Rochester','UNC Charlotte','Carnegie Mellon University','SAT (Société des arts technologiques)'}
-pub = {'Elsevier','Springer','Frontiers','eLearn Magazine (ACM)','ACM Interactions'}
+        'Samsung Art and Design Institute','Hasso Plattner Institute','Georgia Tech','University of Cambridge','University of Toronto','UC San Diego','Dong-eui University','University of Virginia','UC San Diego (Qualcomm Institute)','University of Rochester','UNC Charlotte','Carnegie Mellon University','SAT (Société des arts technologiques)',
+        'Vector Institute','RC Trust','Archimedes (Athena RC)','Texas A&M University','University of Cyprus','Rochester Institute of Technology','Deakin University',
+        'Queensland University of Technology','ITI / LARSyS','NUS Division of Industrial Design'}
+pub = {'Elsevier','Springer','Frontiers','eLearn Magazine (ACM)','ACM Interactions','MIT Press','Morgan & Claypool','MDPI','Science Robotics (AAAS)','AI Journal (AIJ)'}
 def sector(o):
     if o in gov: return 'Government / foundation'
     if o in acad: return 'University / academic'
@@ -74,6 +81,21 @@ def price(row):
         if y == 2019: tbl={'Platinum':20000,'Gold':15000,'Silver':10000,'Bronze':5000}; return tbl.get(t),'stated'
         tbl={'Platinum':15000,'Gold':10000,'Silver':5000,'Bronze':2500,'Startup':1000}
         return tbl.get(t), 'stated' if y in (2022,2023) else 'assumed (UbiComp 2022–23 schedule)'
+    if c == 'IUI':
+        if t not in ('Platinum','Gold','Silver','Bronze'): return None, 'tier not listed'
+        if y in (2015, 2016): tbl = {'Platinum':8000,'Gold':5000,'Silver':2500,'Bronze':1000}; return tbl[t], 'stated' if y == 2016 else 'assumed (IUI 2016 schedule)'
+        if y == 2017: tbl = {'Platinum':7900,'Gold':4500,'Silver':2250,'Bronze':1100}; return tbl[t], 'stated in EUR (7k/4k/2k/1k), ×1.13'
+        if y == 2021: tbl = {'Platinum':5000,'Gold':2500,'Silver':1000}; return tbl.get(t), 'stated'
+        tbl = {'Platinum':10000,'Gold':5000,'Silver':2500,'Bronze':1000}
+        return tbl[t], 'stated' if y in (2018,2019,2020,2022,2023,2024,2025) else 'assumed (IUI 2025 schedule)'
+    if c == 'DIS':
+        if y == 2019:
+            tbl = {'Platinum':10000,'Silver':5000,'Friend':1000}; return tbl.get(t), 'stated'
+        return None, 'no price info'
+    if c == 'FAccT':
+        if t != 'Unspecified': return None, 'n/a'
+        if y >= 2023: return 10000, 'assumed floor (lowest published tier $10k; tiers not shown)'
+        return 5000, 'assumed floor (lowest published tier $5k; tiers not shown)'
     return None, 'n/a'
 
 pp = d.apply(price, axis=1, result_type='expand'); d['est_usd'] = pp[0]; d['price_basis'] = pp[1]

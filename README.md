@@ -1,12 +1,15 @@
-# 学术会议赞助商数据集：HCI（CHI / CSCW / UIST / UbiComp）与 AI（NeurIPS / ICML / ICLR）
+# 学术会议赞助商数据集：HCI（CHI / CSCW / UIST / UbiComp / DIS / IUI / FAccT）与 AI（NeurIPS / ICML / ICLR）
 
 收集四个 ACM HCI 会议历年官网上公开的赞助商名单、赞助等级与公开价目，并做了整理、估算和可视化，用于讨论学术会议与产业界的关系。
 
-- **覆盖**：737 条赞助记录，216 家机构，69 个会议届次
+- **覆盖**：919 条赞助记录，282 家机构，96 个会议届次
   - CHI：1996、1998、2006–2026
   - CSCW：2013–2026
   - UIST：2007–2025（缺 2008 年以前和少数年份）
   - UbiComp / ISWC：2013–2025
+  - DIS：2016、2019、2022、2024–2026（2014、2017、2018 旧官网失效或域名被占用；2020–2021 线上会议未见赞助名单）
+  - IUI：2015–2026（缺 2013–2014）
+  - FAccT：2018–2026（官网只列名单、不分等级）
 - **数据整理时间**：2026 年 10 月
 
 ## 目录
@@ -61,6 +64,13 @@ python -m http.server 8000         # 然后打开 http://localhost:8000/dashboar
 - **主办方不计为赞助商**：ACM、SIGCHI、SIGGRAPH、SIGMOBILE。
 - **注册人数**：CHI 来自 SIGCHI 存档与 Wikipedia（2024、2025）；CSCW 仅到 2018，UIST、UbiComp 仅到 2019。
 
+### DIS / IUI / FAccT 的口径
+
+- **IUI** 每年公开等级价（2016：$8k / $5k / $2.5k / $1k；2018 年起：$10k / $5k / $2.5k / $1k；2021 线上：$5k / $2.5k / $1k；2017 为欧元价，按 1.13 折算）。
+- **DIS** 只有 2019 年公开价目（$10k / $5k / $1k），其他年份不估算金额。
+- **FAccT** 的赞助政策公开了 5 档价格（2021–2022：$5k–$75k；2023 年起：$10k–$75k），但赞助商页面不标等级，所以每家按当年最低一档估算，是“下限的下限”。2018–2020 年按 $5k 计。
+- 主办学会（ACM、SIGCHI、SIGAI）不计；承办高校标为 `Supporter (host)`，计入名单但不计金额。
+
 ## 已知缺口
 
 - CHI 1997、1999–2005；CHI 2012 的 Contributor 只以图片呈现，未收录。
@@ -74,6 +84,13 @@ python -m http.server 8000         # 然后打开 http://localhost:8000/dashboar
 3. **CHI 规模扩大但赞助没跟上**：人均赞助从 2013–2019 年约 $70–94 降到 2020–2024 年约 $36–57。
 4. **赞助方换血**：IBM、Yahoo、Bloomberg 退出；Apple、Toyota Research Institute、Meta Reality Labs、Huawei 进入，偏向 XR / 硬件 / AI 产品方向。
 5. **以美国机构为主，非美国赞助多为东道主效应**：非美国的“机构 × 届次”约 40% 出现在会议恰好在该国举办的年份。
+
+### 补充：DIS / IUI / FAccT
+
+- 三个会议的赞助规模都很小：IUI 每届估算约 $6k–$29k，通常 3–8 家；DIS 的名单常常只有 1–5 家，且很多是当地旅游局、市政府和承办高校。
+- **FAccT 的资金结构很特别**：约 40% 的赞助条目来自基金会（MacArthur 8 届、Ford、Sloan、Luminate、Schmidt、Rockefeller、Open Society 等），这在其他 HCI 会议里很少见；企业方面 Google（含 DeepMind）每届都在，Microsoft 7 届，OpenAI 从 2021 年起 5 届，近两年还有 TikTok。
+- **Google 是唯一在七个会议里都出现的企业**，并且是 IUI（10 届）和 FAccT（9 届）的头号赞助方。
+- IUI 2023 年起企业赞助明显减少，NSF、MDPI、MBZUAI 等非企业机构成为主要支持方。
 
 ## AI 会议部分（NeurIPS / ICML / ICLR，2013–2026）
 

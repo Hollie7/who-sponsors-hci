@@ -686,7 +686,7 @@ window.HX.on(() => {
   const st = a.status !== 'ok' ? a : b; lg.replaceChildren();
   if (H.failOrWait(el, st)) return;
   const ai = a.data.filter(r => H.inRange(r.year) && r.sector !== 'Publisher' && r.sector !== 'Government / academic / non-profit');
-  const hc = b.data.filter(r => H.inRange(r.year) && r.sector === 'Industry').map(r => ({...r, org: ALIAS[r.org] || r.org}));
+  const hc = b.data.filter(r => H.inRange(r.year) && r.sector === 'Industry' && H.HCONF.includes(r.conference)).map(r => ({...r, org: ALIAS[r.org] || r.org}));
   const cnt = rows => d3.rollup(rows, v => new Set(v.map(r => r.conference + '-' + r.year)).size, r => r.org);
   const A = cnt(ai), Hm = cnt(hc);
   const ctry = new Map(ai.map(r => [r.org, H.cc(r)]));

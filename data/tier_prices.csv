@@ -34,3 +34,23 @@ id,conference,years,tier,min_usd,basis,source
 33,UbiComp,2019,Silver,10000,stated,https://iswc.net/iswc19/sponsors.html
 34,UbiComp,2022–2023,Platinum,15000,stated,https://iswc.net/iswc22/sponsors
 35,UbiComp,2022–2023,Bronze,2500,stated,https://ubicomp.hosting.acm.org/ubicompiswc2023_wp/wp-content/uploads/2023/03/UbiComp-ISWC-2023_Sponsors.pdf
+36,IUI,2016,Platinum,8000,stated,https://iui.acm.org/2016/sponsors.html
+37,IUI,2016,Gold,5000,stated,https://iui.acm.org/2016/sponsors.html
+38,IUI,2016,Silver,2500,stated,https://iui.acm.org/2016/sponsors.html
+39,IUI,2016,Bronze,1000,stated,https://iui.acm.org/2016/sponsors.html
+40,IUI,2017,Platinum,7900,"stated €7,000 (×1.13)",https://iui.acm.org/2017/sponsors.html
+41,IUI,2017,Gold,4500,"stated €4,000 (×1.13)",https://iui.acm.org/2017/sponsors.html
+42,IUI,2017,Silver,2250,"stated €2,000 (×1.13)",https://iui.acm.org/2017/sponsors.html
+43,IUI,2017,Bronze,1100,"stated €1,000 (×1.13)",https://iui.acm.org/2017/sponsors.html
+44,IUI,"2018–2020, 2022–2025",Platinum,10000,stated,https://iui.acm.org/2025/sponsorship.html
+45,IUI,"2018–2020, 2022–2025",Gold,5000,stated,https://iui.acm.org/2025/sponsorship.html
+46,IUI,"2018–2020, 2022–2025",Silver,2500,stated,https://iui.acm.org/2025/sponsorship.html
+47,IUI,"2018–2020, 2022–2025",Bronze,1000,stated,https://iui.acm.org/2025/sponsorship.html
+48,IUI,2021,Platinum,5000,stated,https://iui.acm.org/2021/sponsors.html
+49,IUI,2021,Gold,2500,stated,https://iui.acm.org/2021/sponsors.html
+50,IUI,2021,Silver,1000,stated,https://iui.acm.org/2021/sponsors.html
+51,DIS,2019,Platinum,10000,stated,https://dis2019.com/sponsor
+52,DIS,2019,Silver,5000,stated,https://dis2019.com/sponsor
+53,DIS,2019,Friend,1000,stated,https://dis2019.com/sponsor
+54,FAccT,2021–2022,lowest of 5 tiers ($5k–$75k),5000,stated,https://facctconference.org/2022/sponsorship_policy.html
+55,FAccT,2023–2026,lowest of 5 tiers ($10k–$75k),10000,stated,https://facctconference.org/sponsorship.html

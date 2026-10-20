@@ -736,3 +736,185 @@ id,conference,year,tier,sponsor,org,sector,est_usd,price_basis,source,country,pa
 735,CHI,2006,Contributor,Nokia,Nokia,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://www.chi2006.org/sponsors.php,FI,FI
 736,CHI,2006,Contributor,Pitney Bowes,Pitney Bowes,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://www.chi2006.org/sponsors.php,US,US
 737,CHI,2006,Friend,VMware,VMware,Industry,1000.0,assumed (CHI 2016–2026 schedule),http://www.chi2006.org/sponsors.php,US,US
+738,FAccT,2018,Unspecified,Knight Foundation,Knight Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2018/,US,US
+739,FAccT,2018,Unspecified,MacArthur Foundation,MacArthur Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2018/,US,US
+740,FAccT,2018,Unspecified,Google,Google,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2018/,US,US
+741,FAccT,2018,Unspecified,Meta/Facebook,Meta/Facebook,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2018/,US,US
+742,FAccT,2018,Unspecified,H2O.ai,H2O.ai,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2018/,US,US
+743,FAccT,2019,Unspecified,Google,Google,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2019/sponsors.html,US,US
+744,FAccT,2019,Unspecified,Microsoft,Microsoft,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2019/sponsors.html,US,US
+745,FAccT,2019,Unspecified,Spotify,Spotify,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2019/sponsors.html,SE,SE
+746,FAccT,2019,Unspecified,Twitter,Twitter,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2019/sponsors.html,US,US
+747,FAccT,2019,Unspecified,Ethics and Governance of AI Initiative,Ethics and Governance of AI Initiative,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2019/sponsors.html,US,US
+748,FAccT,2019,Unspecified,Ford Foundation,Ford Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2019/sponsors.html,US,US
+749,FAccT,2019,Unspecified,Luminate,Luminate,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2019/sponsors.html,GB,GB
+750,FAccT,2019,Unspecified,MacArthur Foundation,MacArthur Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2019/sponsors.html,US,US
+751,FAccT,2019,Unspecified,Open Society Foundations,Open Society Foundations,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2019/sponsors.html,US,US
+752,FAccT,2019,Unspecified,Schmidt Futures,Schmidt Futures,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2019/sponsors.html,US,US
+753,FAccT,2020,Unspecified,Meta/Facebook,Meta/Facebook,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2020/sponsorship.html,US,US
+754,FAccT,2020,Unspecified,Google,Google,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2020/sponsorship.html,US,US
+755,FAccT,2020,Unspecified,Sloan Foundation,Sloan Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2020/sponsorship.html,US,US
+756,FAccT,2020,Unspecified,Twitter,Twitter,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2020/sponsorship.html,US,US
+757,FAccT,2020,Unspecified,IBM,IBM,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2020/sponsorship.html,US,US
+758,FAccT,2020,Unspecified,MacArthur Foundation,MacArthur Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2020/sponsorship.html,US,US
+759,FAccT,2020,Unspecified,Ford Foundation,Ford Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2020/sponsorship.html,US,US
+760,FAccT,2020,Unspecified,Rockefeller Foundation,Rockefeller Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2020/sponsorship.html,US,US
+761,FAccT,2020,Unspecified,Luminate,Luminate,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2020/sponsorship.html,GB,GB
+762,FAccT,2021,Unspecified,Google,Google,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2021/sponsorship.html,US,US
+763,FAccT,2021,Unspecified,Meta/Facebook,Meta/Facebook,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2021/sponsorship.html,US,US
+764,FAccT,2021,Unspecified,Sloan Foundation,Sloan Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2021/sponsorship.html,US,US
+765,FAccT,2021,Unspecified,Twitter,Twitter,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2021/sponsorship.html,US,US
+766,FAccT,2021,Unspecified,IBM,IBM,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2021/sponsorship.html,US,US
+767,FAccT,2021,Unspecified,Microsoft,Microsoft,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2021/sponsorship.html,US,US
+768,FAccT,2021,Unspecified,Vector Institute,Vector Institute,University / academic,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2021/sponsorship.html,CA,CA
+769,FAccT,2021,Unspecified,MacArthur Foundation,MacArthur Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2021/sponsorship.html,US,US
+770,FAccT,2021,Unspecified,Ford Foundation,Ford Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2021/sponsorship.html,US,US
+771,FAccT,2021,Unspecified,OpenAI,OpenAI,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2021/sponsorship.html,US,US
+772,FAccT,2021,Unspecified,Luminate,Luminate,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2021/sponsorship.html,GB,GB
+773,FAccT,2022,Unspecified,Google,Google,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2022/sponsors.html,US,US
+774,FAccT,2022,Unspecified,Sony,Sony,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2022/sponsors.html,JP,JP
+775,FAccT,2022,Unspecified,Naver,Naver,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2022/sponsors.html,KR,KR
+776,FAccT,2022,Unspecified,LG,LG,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2022/sponsors.html,KR,KR
+777,FAccT,2022,Unspecified,Microsoft,Microsoft,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2022/sponsors.html,US,US
+778,FAccT,2022,Unspecified,Twitter,Twitter,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2022/sponsors.html,US,US
+779,FAccT,2022,Unspecified,MacArthur Foundation,MacArthur Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2022/sponsors.html,US,US
+780,FAccT,2022,Unspecified,Sloan Foundation,Sloan Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2022/sponsors.html,US,US
+781,FAccT,2022,Unspecified,Amazon,Amazon,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2022/sponsors.html,US,US
+782,FAccT,2022,Unspecified,Luminate,Luminate,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2022/sponsors.html,GB,GB
+783,FAccT,2023,Unspecified,Luminate,Luminate,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2023/sponsors.html,GB,GB
+784,FAccT,2023,Unspecified,Google,Google,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2023/sponsors.html,US,US
+785,FAccT,2023,Unspecified,Apple,Apple,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2023/sponsors.html,US,US
+786,FAccT,2023,Unspecified,Microsoft,Microsoft,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2023/sponsors.html,US,US
+787,FAccT,2023,Unspecified,MacArthur Foundation,MacArthur Foundation,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2023/sponsors.html,US,US
+788,FAccT,2023,Unspecified,Sony,Sony,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2023/sponsors.html,JP,JP
+789,FAccT,2023,Unspecified,Schmidt Futures,Schmidt Futures,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2023/sponsors.html,US,US
+790,FAccT,2023,Unspecified,Ford Foundation,Ford Foundation,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2023/sponsors.html,US,US
+791,FAccT,2023,Unspecified,OpenAI,OpenAI,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2023/sponsors.html,US,US
+792,FAccT,2023,Unspecified,Holistic AI,Holistic AI,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2023/sponsors.html,GB,GB
+793,FAccT,2023,Unspecified,Amazon,Amazon,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2023/sponsors.html,US,US
+794,FAccT,2024,Unspecified,Survival and Flourishing Fund,Survival and Flourishing Fund,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2024/sponsors.html,US,US
+795,FAccT,2024,Unspecified,Amazon,Amazon,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2024/sponsors.html,US,US
+796,FAccT,2024,Unspecified,Google,Google,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2024/sponsors.html,US,US
+797,FAccT,2024,Unspecified,MacArthur Foundation,MacArthur Foundation,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2024/sponsors.html,US,US
+798,FAccT,2024,Unspecified,Sony,Sony,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2024/sponsors.html,JP,JP
+799,FAccT,2024,Unspecified,Schmidt Futures,Schmidt Futures,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2024/sponsors.html,US,US
+800,FAccT,2024,Unspecified,Ford Foundation,Ford Foundation,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2024/sponsors.html,US,US
+801,FAccT,2024,Unspecified,OpenAI,OpenAI,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2024/sponsors.html,US,US
+802,FAccT,2024,Unspecified,Microsoft,Microsoft,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2024/sponsors.html,US,US
+803,FAccT,2025,Unspecified,Amazon,Amazon,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2025/sponsors.html,US,US
+804,FAccT,2025,Unspecified,Google,Google,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2025/sponsors.html,US,US
+805,FAccT,2025,Unspecified,Silicon Valley Community Foundation,Silicon Valley Community Foundation,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2025/sponsors.html,US,US
+806,FAccT,2025,Unspecified,Meta/Facebook,Meta/Facebook,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2025/sponsors.html,US,US
+807,FAccT,2025,Unspecified,OpenAI,OpenAI,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2025/sponsors.html,US,US
+808,FAccT,2025,Unspecified,Schmidt Sciences,Schmidt Sciences,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2025/sponsors.html,US,US
+809,FAccT,2025,Unspecified,TikTok,TikTok,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2025/sponsors.html,SG,CN
+810,FAccT,2025,Unspecified,Microsoft,Microsoft,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2025/sponsors.html,US,US
+811,FAccT,2025,Unspecified,Sony,Sony,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2025/sponsors.html,JP,JP
+812,FAccT,2025,Unspecified,RC Trust,RC Trust,University / academic,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2025/sponsors.html,DE,DE
+813,FAccT,2025,Supporter (host),Archimedes (Athena RC),Archimedes (Athena RC),University / academic,,n/a,https://facctconference.org/2025/sponsors.html,GR,GR
+814,FAccT,2025,Supporter (host),Athena Research Center,Athena Research Center,Government / foundation,,n/a,https://facctconference.org/2025/sponsors.html,GR,GR
+815,FAccT,2026,Unspecified,Google,Google,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2026/sponsors.html,US,US
+816,FAccT,2026,Unspecified,MacArthur Foundation,MacArthur Foundation,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2026/sponsors.html,US,US
+817,FAccT,2026,Unspecified,TikTok,TikTok,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2026/sponsors.html,SG,CN
+818,FAccT,2026,Unspecified,OpenAI,OpenAI,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2026/sponsors.html,US,US
+819,FAccT,2026,Unspecified,Meta/Facebook,Meta/Facebook,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2026/sponsors.html,US,US
+820,FAccT,2026,Unspecified,Microsoft,Microsoft,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2026/sponsors.html,US,US
+821,FAccT,2026,Unspecified,Tourisme Montréal,Tourisme Montréal,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2026/sponsors.html,CA,CA
+822,IUI,2015,Silver,Google,Google,Industry,2500.0,assumed (IUI 2016 schedule),https://iui.acm.org/2015/,US,US
+823,IUI,2015,Silver,Microsoft,Microsoft,Industry,2500.0,assumed (IUI 2016 schedule),https://iui.acm.org/2015/,US,US
+824,IUI,2015,Silver,Yahoo/Verizon Media,Yahoo/Verizon Media,Industry,2500.0,assumed (IUI 2016 schedule),https://iui.acm.org/2015/,US,US
+825,IUI,2015,Bronze,eBay/PayPal,eBay/PayPal,Industry,1000.0,assumed (IUI 2016 schedule),https://iui.acm.org/2015/,US,US
+826,IUI,2015,Bronze,Symantec,Symantec,Industry,1000.0,assumed (IUI 2016 schedule),https://iui.acm.org/2015/,US,US
+827,IUI,2015,Bronze,HPCC Systems (LexisNexis),HPCC Systems (LexisNexis),Industry,1000.0,assumed (IUI 2016 schedule),https://iui.acm.org/2015/,US,US
+828,IUI,2015,Special,GSG (Graphic Solutions Group),GSG (Graphic Solutions Group),Industry,,tier not listed,https://iui.acm.org/2015/,US,US
+829,IUI,2015,Special,Georgia Tech,Georgia Tech,University / academic,,tier not listed,https://iui.acm.org/2015/,US,US
+830,IUI,2016,Gold,Microsoft,Microsoft,Industry,5000.0,stated,https://iui.acm.org/2016/,US,US
+831,IUI,2016,Silver,Google,Google,Industry,2500.0,stated,https://iui.acm.org/2016/,US,US
+832,IUI,2016,Silver,IBM,IBM,Industry,2500.0,stated,https://iui.acm.org/2016/,US,US
+833,IUI,2016,Bronze,Tableau/Salesforce,Tableau/Salesforce,Industry,1000.0,stated,https://iui.acm.org/2016/,US,US
+834,IUI,2017,Unspecified,Google,Google,Industry,,tier not listed,https://iui.acm.org/2017/sponsors.html,US,US
+835,IUI,2017,Unspecified,Gesellschaft für Informatik (GI),Gesellschaft für Informatik (GI),Government / foundation,,tier not listed,https://iui.acm.org/2017/sponsors.html,DE,DE
+836,IUI,2017,Unspecified,Cyprus Tourism Organisation,Cyprus Tourism Organisation,Government / foundation,,tier not listed,https://iui.acm.org/2017/sponsors.html,CY,CY
+837,IUI,2017,Supporter (host),University of Cyprus,University of Cyprus,University / academic,,tier not listed,https://iui.acm.org/2017/sponsors.html,CY,CY
+838,IUI,2018,Silver,Adobe,Adobe,Industry,2500.0,stated,https://iui.acm.org/2018/,US,US
+839,IUI,2018,Silver,DAYPLA,DAYPLA,Industry,2500.0,stated,https://iui.acm.org/2018/,JP,JP
+840,IUI,2018,Silver,LIFULL,LIFULL,Industry,2500.0,stated,https://iui.acm.org/2018/,JP,JP
+841,IUI,2018,Silver,IBM,IBM,Industry,2500.0,stated,https://iui.acm.org/2018/,US,US
+842,IUI,2018,Silver,Google,Google,Industry,2500.0,stated,https://iui.acm.org/2018/,US,US
+843,IUI,2018,Bronze,Yahoo Japan,Yahoo Japan,Industry,1000.0,stated,https://iui.acm.org/2018/,JP,JP
+844,IUI,2018,Bronze,Rochester Institute of Technology,Rochester Institute of Technology,University / academic,1000.0,stated,https://iui.acm.org/2018/,US,US
+845,IUI,2019,Gold,IBM,IBM,Industry,5000.0,stated,https://iui.acm.org/2019/sponsors.html,US,US
+846,IUI,2019,Gold,Ruyi.ai,Ruyi.ai,Industry,5000.0,stated,https://iui.acm.org/2019/sponsors.html,CN,CN
+847,IUI,2019,Silver,Adobe,Adobe,Industry,2500.0,stated,https://iui.acm.org/2019/sponsors.html,US,US
+848,IUI,2019,Silver,FXPAL,FXPAL,Industry,2500.0,stated,https://iui.acm.org/2019/sponsors.html,US,JP
+849,IUI,2019,Silver,Google,Google,Industry,2500.0,stated,https://iui.acm.org/2019/sponsors.html,US,US
+850,IUI,2019,Bronze,Tableau/Salesforce,Tableau/Salesforce,Industry,1000.0,stated,https://iui.acm.org/2019/sponsors.html,US,US
+851,IUI,2019,Bronze,Instabase,Instabase,Industry,1000.0,stated,https://iui.acm.org/2019/sponsors.html,US,US
+852,IUI,2020,Silver,Microsoft,Microsoft,Industry,2500.0,stated,https://iui.acm.org/2020/sponsors.html,US,US
+853,IUI,2020,Silver,Google,Google,Industry,2500.0,stated,https://iui.acm.org/2020/sponsors.html,US,US
+854,IUI,2020,Bronze,Science Robotics (AAAS),Science Robotics (AAAS),Publisher,1000.0,stated,https://iui.acm.org/2020/sponsors.html,US,US
+855,IUI,2021,Platinum,Texas A&M University,Texas A&M University,University / academic,5000.0,stated,https://iui.acm.org/2021/sponsors.html,US,US
+856,IUI,2021,Gold,Google,Google,Industry,2500.0,stated,https://iui.acm.org/2021/sponsors.html,US,US
+857,IUI,2021,Gold,Microsoft,Microsoft,Industry,2500.0,stated,https://iui.acm.org/2021/sponsors.html,US,US
+858,IUI,2021,Silver,MDPI,MDPI,Publisher,1000.0,stated,https://iui.acm.org/2021/sponsors.html,CH,CH
+859,IUI,2021,Silver,Science Robotics (AAAS),Science Robotics (AAAS),Publisher,1000.0,stated,https://iui.acm.org/2021/sponsors.html,US,US
+860,IUI,2022,Platinum,Meta/Facebook,Meta/Facebook,Industry,10000.0,stated,https://iui.acm.org/2022/sponsorship.html,US,US
+861,IUI,2022,Gold,Google,Google,Industry,5000.0,stated,https://iui.acm.org/2022/sponsorship.html,US,US
+862,IUI,2022,Silver,Goldman Sachs,Goldman Sachs,Industry,2500.0,stated,https://iui.acm.org/2022/sponsorship.html,US,US
+863,IUI,2022,Silver,Nokia Bell Labs,Nokia Bell Labs,Industry,2500.0,stated,https://iui.acm.org/2022/sponsorship.html,US,FI
+864,IUI,2022,Silver,Toyota Research Institute,Toyota Research Institute,Industry,2500.0,stated,https://iui.acm.org/2022/sponsorship.html,US,JP
+865,IUI,2022,Bronze,Apple,Apple,Industry,1000.0,stated,https://iui.acm.org/2022/sponsorship.html,US,US
+866,IUI,2022,Bronze,NVIDIA,NVIDIA,Industry,1000.0,stated,https://iui.acm.org/2022/sponsorship.html,US,US
+867,IUI,2022,Bronze,Silo AI,Silo AI,Industry,1000.0,stated,https://iui.acm.org/2022/sponsorship.html,FI,FI
+868,IUI,2023,Platinum,NSF,NSF,Government / foundation,10000.0,stated,https://iui.acm.org/2023/sponsorship.html,US,US
+869,IUI,2023,Platinum,Business Events Sydney,Business Events Sydney,Government / foundation,10000.0,stated,https://iui.acm.org/2023/sponsorship.html,AU,AU
+870,IUI,2023,Gold,Google,Google,Industry,5000.0,stated,https://iui.acm.org/2023/sponsorship.html,US,US
+871,IUI,2023,Silver,CSIRO Data61,CSIRO Data61,Government / foundation,2500.0,stated,https://iui.acm.org/2023/sponsorship.html,AU,AU
+872,IUI,2023,Bronze,MDPI,MDPI,Publisher,1000.0,stated,https://iui.acm.org/2023/sponsorship.html,CH,CH
+873,IUI,2024,Platinum,NSF,NSF,Government / foundation,10000.0,stated,https://iui.acm.org/2024/sponsorship.html,US,US
+874,IUI,2024,Gold,Google,Google,Industry,5000.0,stated,https://iui.acm.org/2024/sponsorship.html,US,US
+875,IUI,2024,Bronze,Michelin,Michelin,Industry,1000.0,stated,https://iui.acm.org/2024/sponsorship.html,FR,FR
+876,IUI,2024,Bronze,Adobe,Adobe,Industry,1000.0,stated,https://iui.acm.org/2024/sponsorship.html,US,US
+877,IUI,2025,Platinum,NSF,NSF,Government / foundation,10000.0,stated,https://iui.acm.org/2025/sponsorship.html,US,US
+878,IUI,2025,Gold,MBZUAI,MBZUAI,University / academic,5000.0,stated,https://iui.acm.org/2025/sponsorship.html,AE,AE
+879,IUI,2025,Silver,AI Journal (AIJ),AI Journal (AIJ),Publisher,2500.0,stated,https://iui.acm.org/2025/sponsorship.html,US,US
+880,IUI,2025,Silver,MDPI,MDPI,Publisher,2500.0,stated,https://iui.acm.org/2025/sponsorship.html,CH,CH
+881,IUI,2025,Silver,Apple,Apple,Industry,2500.0,stated,https://iui.acm.org/2025/sponsorship.html,US,US
+882,IUI,2026,Platinum,Pienso,Pienso,Industry,10000.0,assumed (IUI 2025 schedule),https://iui.acm.org/2026/,US,US
+883,IUI,2026,Gold,MDPI,MDPI,Publisher,5000.0,assumed (IUI 2025 schedule),https://iui.acm.org/2026/,CH,CH
+884,IUI,2026,Gold,Gesellschaft für Informatik (GI),Gesellschaft für Informatik (GI),Government / foundation,5000.0,assumed (IUI 2025 schedule),https://iui.acm.org/2026/,DE,DE
+885,IUI,2026,Gold,NSF,NSF,Government / foundation,5000.0,assumed (IUI 2025 schedule),https://iui.acm.org/2026/,US,US
+886,IUI,2026,Supporter (host),University of Cyprus,University of Cyprus,University / academic,,tier not listed,https://iui.acm.org/2026/,CY,CY
+887,DIS,2016,Unspecified,Roames (Fugro),Roames (Fugro),Industry,,no price info,https://dis.acm.org/2016/,AU,NL
+888,DIS,2016,Unspecified,HFESA,HFESA,Government / foundation,,no price info,https://dis.acm.org/2016/,AU,AU
+889,DIS,2016,Unspecified,Brisbane BMW,Brisbane BMW,Industry,,no price info,https://dis.acm.org/2016/,AU,AU
+890,DIS,2016,Unspecified,Go Digi (Australia Post),Go Digi (Australia Post),Industry,,no price info,https://dis.acm.org/2016/,AU,AU
+891,DIS,2016,Unspecified,Uber,Uber,Industry,,no price info,https://dis.acm.org/2016/,US,US
+892,DIS,2016,Unspecified,Greater Springfield,Greater Springfield,Industry,,no price info,https://dis.acm.org/2016/,AU,AU
+893,DIS,2016,Unspecified,Australian Design Alliance,Australian Design Alliance,Government / foundation,,no price info,https://dis.acm.org/2016/,AU,AU
+894,DIS,2016,Unspecified,MIT Press,MIT Press,Publisher,,no price info,https://dis.acm.org/2016/,US,US
+895,DIS,2016,Unspecified,Morgan & Claypool,Morgan & Claypool,Publisher,,no price info,https://dis.acm.org/2016/,US,US
+896,DIS,2016,Unspecified,ANAT,ANAT,Government / foundation,,no price info,https://dis.acm.org/2016/,AU,AU
+897,DIS,2016,Unspecified,Media Architecture Biennale,Media Architecture Biennale,Government / foundation,,no price info,https://dis.acm.org/2016/,AU,AU
+898,DIS,2016,Unspecified,Airtrain,Airtrain,Industry,,no price info,https://dis.acm.org/2016/,AU,AU
+899,DIS,2016,Unspecified,Media Architecture Institute,Media Architecture Institute,Government / foundation,,no price info,https://dis.acm.org/2016/,AT,AT
+900,DIS,2016,Unspecified,Visit Brisbane,Visit Brisbane,Government / foundation,,no price info,https://dis.acm.org/2016/,AU,AU
+901,DIS,2016,Supporter (host),Queensland University of Technology,Queensland University of Technology,University / academic,,no price info,https://dis.acm.org/2016/,AU,AU
+902,DIS,2019,Silver,UC San Diego (Qualcomm Institute),UC San Diego (Qualcomm Institute),University / academic,5000.0,stated,https://dis2019.com/sponsor,US,US
+903,DIS,2019,Silver,Adobe,Adobe,Industry,5000.0,stated,https://dis2019.com/sponsor,US,US
+904,DIS,2019,Silver,Google,Google,Industry,5000.0,stated,https://dis2019.com/sponsor,US,US
+905,DIS,2019,Silver,UC San Diego,UC San Diego,University / academic,5000.0,stated,https://dis2019.com/sponsor,US,US
+906,DIS,2019,Silver,Virginia Tech,Virginia Tech,University / academic,5000.0,stated,https://dis2019.com/sponsor,US,US
+907,DIS,2019,Friend,Sketch,Sketch,Industry,1000.0,stated,https://dis2019.com/sponsor,US,US
+908,DIS,2022,Unspecified,Monash University,Monash University,University / academic,,no price info,https://dis.acm.org/2022/,AU,AU
+909,DIS,2022,Unspecified,Deakin University,Deakin University,University / academic,,no price info,https://dis.acm.org/2022/,AU,AU
+910,DIS,2024,Unspecified,Autodesk,Autodesk,Industry,,no price info,https://dis.acm.org/2024/,US,US
+911,DIS,2025,Unspecified,Adobe,Adobe,Industry,,no price info,https://dis.acm.org/2025/,US,US
+912,DIS,2025,Unspecified,Funchal City Council,Funchal City Council,Government / foundation,,no price info,https://dis.acm.org/2025/,PT,PT
+913,DIS,2025,Unspecified,Visit Madeira,Visit Madeira,Government / foundation,,no price info,https://dis.acm.org/2025/,PT,PT
+914,DIS,2025,Supporter (host),ITI / LARSyS,ITI / LARSyS,University / academic,,no price info,https://dis.acm.org/2025/,PT,PT
+915,DIS,2026,Unspecified,Adobe,Adobe,Industry,,no price info,https://dis.acm.org/2026/dis26-industry-events/,US,US
+916,DIS,2026,Unspecified,Apple,Apple,Industry,,no price info,https://dis.acm.org/2026/dis26-industry-events/,US,US
+917,DIS,2026,Unspecified,Grab,Grab,Industry,,no price info,https://dis.acm.org/2026/dis26-industry-events/,SG,SG
+918,DIS,2026,Unspecified,Singapore Exhibition & Convention Bureau,Singapore Exhibition & Convention Bureau,Government / foundation,,no price info,https://dis.acm.org/2026/dis26-industry-events/,SG,SG
+919,DIS,2026,Supporter (host),NUS Division of Industrial Design,NUS Division of Industrial Design,University / academic,,no price info,https://dis.acm.org/2026/dis26-industry-events/,SG,SG

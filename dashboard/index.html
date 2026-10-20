@@ -42,7 +42,7 @@
 
 <div class="hx">
   <header>
-    <h1 id="top">CHI / CSCW / UIST / UbiComp 赞助商版图</h1>
+    <h1 id="top">CHI / CSCW / UIST / UbiComp / DIS / IUI / FAccT 赞助商版图</h1>
     <p class="lede" id="takeaway">赞助几乎集中在少数大科技公司：全部年份里 Google 出现 <b data-source="kpis" data-field="value" data-where="metric=google" class="dash-skeleton">—</b> 届、Microsoft <b data-source="kpis" data-field="value" data-where="metric=microsoft" class="dash-skeleton">—</b> 届、Meta <b data-source="kpis" data-field="value" data-where="metric=meta" class="dash-skeleton">—</b> 届。CSCW 的企业赞助明显萎缩——按公开等级价估算，2013–2017 年平均每届约 <b data-source="cscw_trend" data-field="value" data-where="period=2013%E2%80%932017" class="dash-skeleton">—</b>，2023–2026 年降到约 <b data-source="cscw_trend" data-field="value" data-where="period=2023%E2%80%932026" class="dash-skeleton">—</b>。</p>
   </header>
 
@@ -93,8 +93,8 @@
       <div id="c-cty" data-source="listings" style="min-height:360px"></div>
     </div>
     <div class="card">
-      <h2 id="top-sponsors">四会议合计 top 15</h2>
-      <p class="note">所选年份内，四个会议合计的赞助届数。颜色区分企业与非企业机构。</p>
+      <h2 id="top-sponsors">七个会议合计 top 15</h2>
+      <p class="note">所选年份内，七个会议合计的赞助届数。颜色区分企业与非企业机构。</p>
       <div class="legend" id="lg-top"></div>
       <div id="c-top" data-source="listings" style="min-height:420px"></div>
     </div>
@@ -157,9 +157,10 @@
       <h2 id="caveats">口径与缺口</h2>
       <ul class="caveats">
         <li>数据来自各届官网赞助页、招商书和 SIGCHI 历史存档，只收录网页上能识别出名字的 logo；部分 logo 只有文件名，机构名为推断。</li>
-        <li>覆盖不全：CHI 1999–2005、CSCW 2012 年以前未取得名单（CSCW 早年官网已失效）；CHI 2012 的 Contributor 只以图片呈现，未收录；UbiComp 2020–2024 的名单没有标等级，所以无法估算金额；地方学会/政府“Supporter”计入名单但不计金额。</li>
+        <li>覆盖不全（CHI / CSCW / UIST / UbiComp）：CHI 1999–2005、CSCW 2012 年以前未取得名单（CSCW 早年官网已失效）；CHI 2012 的 Contributor 只以图片呈现，未收录；UbiComp 2020–2024 的名单没有标等级，所以无法估算金额；地方学会/政府“Supporter”计入名单但不计金额。</li>
         <li>国家/地区有两种口径，可在顶部切换：“总部所在地”按赞助实体自身的总部（Toyota Research Institute、FXPAL、MERL、Megagon Labs、Nokia Bell Labs 都在美国）；“母公司国籍”按集团母公司（前四家计为日本，Nokia Bell Labs 计为芬兰）。少数小公司无法确定所在地。顶部“涉及的国家/地区”卡片按总部口径计。</li>
         <li>金额是下限估算：等级价只是起步价，忽略主题赞助、展位、招聘等额外付费；未公布价格的年份沿用相邻年份价目；“Friend/Supporter”一律按 1,000 美元计。</li>
+        <li>DIS、IUI、FAccT 是后补的：DIS 只取得 2016、2019、2022、2024–2026 的名单（2014、2017、2018 的旧官网已失效或被占用，2020–2021 为线上会议、未见赞助），只有 2019 年有公开价目；IUI 取得 2015–2026（缺 2013–2014），每年都有公开价目，2017 年为欧元价、按 1.13 折算；FAccT 取得 2018–2026，官网只列名单不分等级，金额按当年最低一档（2022 年前 $5k，2023 年起 $10k）估算，所以是下限中的下限。FAccT 的赞助方约四成是基金会（MacArthur、Ford、Sloan、Luminate、Schmidt 等）。</li>
         <li>Meta/Facebook/Oculus、Yahoo/Verizon Media/Oath、Tableau/Salesforce 等已合并为同一机构；ACM、SIGCHI 等主办方不计为赞助商。</li>
         <li>国旗图形来自开源的 flag-icons 图标库；西班牙国旗省略了国徽。</li>
       </ul>
@@ -171,10 +172,10 @@
 <script src="flags.js"></script>
 
 <script>
-const CONF = ['CHI','CSCW','UIST','UbiComp'];
+const CONF = ['CHI','CSCW','UIST','UbiComp','DIS','IUI','FAccT'];
 const SECT = ['Industry','Government / foundation','University / academic','Publisher','Unknown'];
 const SECT_ZH = {'Industry':'企业','Government / foundation':'政府 / 基金会','University / academic':'高校 / 学术机构','Publisher':'出版社','Unknown':'未识别'};
-const CTY_ZH = {US:'美国',JP:'日本',KR:'韩国',CA:'加拿大',GB:'英国',DE:'德国',FR:'法国',FI:'芬兰',CN:'中国大陆',TW:'台湾地区',AU:'澳大利亚',NL:'荷兰',DK:'丹麦',AE:'阿联酋',CH:'瑞士',IN:'印度',NO:'挪威',SE:'瑞典',IT:'意大利',SG:'新加坡',ES:'西班牙',EU:'欧盟项目','':'未知'};
+const CTY_ZH = {US:'美国',JP:'日本',KR:'韩国',CA:'加拿大',GB:'英国',DE:'德国',FR:'法国',FI:'芬兰',CN:'中国大陆',TW:'台湾地区',AU:'澳大利亚',NL:'荷兰',DK:'丹麦',AE:'阿联酋',CH:'瑞士',IN:'印度',NO:'挪威',SE:'瑞典',IT:'意大利',SG:'新加坡',ES:'西班牙',EU:'欧盟项目',CY:'塞浦路斯',GR:'希腊',PT:'葡萄牙',AT:'奥地利','':'未知'};
 const fmtUSD = v => (v==null||isNaN(v)) ? '—' : '$' + d3.format(',')(Math.round(v));
 const fmtK = v => (v==null||isNaN(v)) ? '—' : (v>=1000 ? '$' + d3.format(',.0f')(v/1000) + 'k' : '$' + d3.format(',.0f')(v));
 const flag = cc => (!cc || cc.length !== 2) ? '' : String.fromCodePoint(...[...cc.toUpperCase()].map(c => 0x1F1E6 + c.charCodeAt(0) - 65));

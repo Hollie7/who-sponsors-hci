@@ -22,7 +22,15 @@ put('EU',['ERMES','Holden'])
 put('FI',['GreenSense'])
 put('DE',['Bergsonne Labs'])
 put('',['Sustain','One Ring','SparQi Lab','SCI','Eventburn','Marvin','Rent-a-Computer'])
+# added with DIS / IUI / FAccT
+put('DE',['Gesellschaft für Informatik (GI)','RC Trust']); put('CY',['University of Cyprus','Cyprus Tourism Organisation'])
+put('JP',['DAYPLA','LIFULL','Sony']); put('CN',['Ruyi.ai']); put('FI',['Silo AI']); put('CH',['MDPI']); put('FR',['Michelin'])
+put('KR',['LG']); put('CA',['Vector Institute','Tourisme Montréal']); put('GB',['Holistic AI','Luminate'])
+put('GR',['Archimedes (Athena RC)','Athena Research Center']); put('SG',['TikTok','Grab','Singapore Exhibition & Convention Bureau','NUS Division of Industrial Design'])
+put('AU',['Business Events Sydney','Roames (Fugro)','HFESA','Brisbane BMW','Go Digi (Australia Post)','Greater Springfield','Australian Design Alliance','ANAT',
+          'Media Architecture Biennale','Airtrain','Visit Brisbane','Queensland University of Technology','Deakin University'])
+put('AT',['Media Architecture Institute']); put('PT',['Funchal City Council','Visit Madeira','ITI / LARSyS'])
 def country(o): return C.get(o, 'US')
 
-PARENT = {'Toyota Research Institute':'JP','FXPAL':'JP','MERL':'JP','Megagon Labs':'JP','Nokia Bell Labs':'FI'}
+PARENT = {'TikTok':'CN','Roames (Fugro)':'NL','Toyota Research Institute':'JP','FXPAL':'JP','MERL':'JP','Megagon Labs':'JP','Nokia Bell Labs':'FI'}
 def parent_country(o): return PARENT.get(o, country(o))
