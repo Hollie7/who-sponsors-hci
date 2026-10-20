@@ -1,4 +1,4 @@
-# HCI 会议赞助商数据集：CHI / CSCW / UIST / UbiComp
+# 学术会议赞助商数据集：HCI（CHI / CSCW / UIST / UbiComp）与 AI（NeurIPS / ICML / ICLR）
 
 收集四个 ACM HCI 会议历年官网上公开的赞助商名单、赞助等级与公开价目，并做了整理、估算和可视化，用于讨论学术会议与产业界的关系。
 
@@ -74,6 +74,36 @@ python -m http.server 8000         # 然后打开 http://localhost:8000/dashboar
 3. **CHI 规模扩大但赞助没跟上**：人均赞助从 2013–2019 年约 $70–94 降到 2020–2024 年约 $36–57。
 4. **赞助方换血**：IBM、Yahoo、Bloomberg 退出；Apple、Toyota Research Institute、Meta Reality Labs、Huawei 进入，偏向 XR / 硬件 / AI 产品方向。
 5. **以美国机构为主，非美国赞助多为东道主效应**：非美国的“机构 × 届次”约 40% 出现在会议恰好在该国举办的年份。
+
+## AI 会议部分（NeurIPS / ICML / ICLR，2013–2026）
+
+```
+data/ai/raw/{neurips,icml,iclr}_raw.tsv   # 原始名单：年份、举办地、等级、机构名、链接（EMPTY = 当年没取得名单）
+data/ai/ai_sponsor_listings.csv          # 清洗后明细（同一机构在一届只保留最高等级）
+data/ai/ai_per_conference_year.csv       # 每届汇总：赞助方数、金融机构数、估算金额、注册人数
+data/ai/ai_top_sponsors.csv              # 机构排名
+data/ai/ai_tier_prices.csv               # 找到的两份公开价目
+scripts/ai/build_ai.py                   # 由 raw 生成以上文件（python scripts/ai/build_ai.py）
+scripts/ai/normalize.py, ai_meta.py      # 机构名归一化；行业类型与国家归属
+dashboard/ai/                            # AI 会议 dashboard（含与 HCI 的对比）
+```
+
+- **覆盖**：1,907 条赞助记录，578 家机构，33 个会议届次。NeurIPS 2013–2026（2021 年没有设赞助）、ICML 2015–2026、ICLR 2017、2020–2026。
+- **来源**：2015 年起来自 neurips.cc / icml.cc / iclr.cc 的公开赞助接口 `/sponsors/api/sponsors/public/?year=Y`；NeurIPS 2013–2014 来自会议手册 PDF；ICML 2015–2016、ICLR 2017 来自旧官网存档；ICLR 2026 来自其赞助商列表页。
+- **缺口**：ICML 2013–2014、ICLR 2013–2016 与 2018–2019。
+- **机构合并**：DeepMind / Google Research / Kaggle → Google；LinkedIn → Microsoft；Habana、Nervana → Intel；Xilinx → AMD；TikTok → ByteDance；Borealis AI → RBC；MosaicML → Databricks；TRI → Toyota。
+- **行业类型**：科技及其他企业 / 金融·量化（对冲基金、做市商、银行、金融数据、VC）/ 政府·学术·非营利 / 出版社。
+- **金额**：只找到 NeurIPS 2024 与 ICML 2026 的公开价目，只给相邻年份（NeurIPS 2023–2025、ICML 2025–2026）估算；Silver Pavilion、Startup 等无价等级不计。参照：NeurIPS 官方预算说明中 2019 年赞助收入为 $3.7M。
+- **注册人数**：NeurIPS fact sheet、ICML 官方统计、ICLR 来自 Wikipedia。
+- **国家**：按赞助实体总部；约 40 家小公司无法确定，标为 `??`。
+
+### 主要发现（与 HCI 对比）
+
+1. **规模差一个数量级**：NeurIPS 2025 估算赞助下限约 $5.8M、148 家赞助方；同年 CHI 约 $0.43M、21 家。
+2. **金融/量化是第二大赞助群体**：约 22% 的赞助条目、约 28% 的可估算金额来自 Citadel、Jane Street、Jump、D. E. Shaw、Two Sigma、HRT、Optiver、G-Research 等，比例多年稳定；HCI 会议几乎没有。
+3. **同一批大厂两边分配不同**：Google、Microsoft、Meta 两边都长期赞助；Adobe、Autodesk 主要在 HCI；Amazon、Baidu、ByteDance 几乎只在 AI。
+4. **中国机构占比更高**：AI 会议约 9% 的“机构 × 届次”来自中国大陆（百度、字节、阿里、蚂蚁、腾讯、华为、幻方类量化等），HCI 不到 3%。
+5. **新进入者是 AI 基础设施与数据公司**：Lambda、Together AI、Nebius、Cerebras、Scale AI、Toloka、Turing、Handshake 等 2023 年后大量出现，一半以上机构只出现过一届。
 
 ## 许可
 

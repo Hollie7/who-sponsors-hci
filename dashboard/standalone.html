@@ -29,7 +29,7 @@ a{color:inherit}
 </style>
 <script>
 window.dash = (() => {
-  const files = {listings: '../data/sponsor_listings.csv', pcy: '../data/per_conference_year.csv', prices: '../data/tier_prices.csv'};
+  const files = {"listings": "../data/sponsor_listings.csv", "pcy": "../data/per_conference_year.csv", "prices": "../data/tier_prices.csv"};
   const store = {}; const calcs = {}; const subs = [];
   Object.keys(files).forEach(id => { store[id] = {status: 'loading', data: []}; });
   const run = () => {

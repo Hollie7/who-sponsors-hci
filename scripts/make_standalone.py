@@ -40,7 +40,7 @@ a{color:inherit}
 </style>
 <script>
 window.dash = (() => {
-  const files = {listings: '../data/sponsor_listings.csv', pcy: '../data/per_conference_year.csv', prices: '../data/tier_prices.csv'};
+  const files = __FILES__;
   const store = {}; const calcs = {}; const subs = [];
   Object.keys(files).forEach(id => { store[id] = {status: 'loading', data: []}; });
   const run = () => {
@@ -75,9 +75,20 @@ TAIL = '''
 </html>
 '''
 
+import json
+PAGES = {
+    # dashboard folder -> (title, dataset id -> CSV path relative to that folder)
+    '': ('HCI Conference Sponsorship', {'listings': '../data/sponsor_listings.csv', 'pcy': '../data/per_conference_year.csv', 'prices': '../data/tier_prices.csv'}),
+    'ai': ('AI Conference Sponsorship', {'listings': '../../data/ai/ai_sponsor_listings.csv', 'pcy': '../../data/ai/ai_per_conference_year.csv',
+            'prices': '../../data/ai/ai_tier_prices.csv', 'hci_listings': '../../data/sponsor_listings.csv', 'hci_pcy': '../../data/per_conference_year.csv'}),
+}
+
 if __name__ == '__main__':
-    body = open(os.path.join(DASH, 'index.html'), encoding='utf-8').read()
-    # the artifact runtime gives each <script> its own scope; emulate that
-    body = re.sub(r'<script>(.*?)</script>', lambda m: '<script>(() => {' + m.group(1) + '})();</script>', body, flags=re.S)
-    open(os.path.join(DASH, 'standalone.html'), 'w', encoding='utf-8').write(HEAD + body + TAIL)
-    print('wrote dashboard/standalone.html')
+    for sub, (title, files) in PAGES.items():
+        d = os.path.join(DASH, sub)
+        body = open(os.path.join(d, 'index.html'), encoding='utf-8').read()
+        # the artifact runtime gives each <script> its own scope; emulate that
+        body = re.sub(r'<script>(.*?)</script>', lambda m: '<script>(() => {' + m.group(1) + '})();</script>', body, flags=re.S)
+        head = HEAD.replace('__FILES__', json.dumps(files)).replace('<title>HCI Conference Sponsorship</title>', f'<title>{title}</title>')
+        open(os.path.join(d, 'standalone.html'), 'w', encoding='utf-8').write(head + body + TAIL)
+        print('wrote', os.path.join('dashboard', sub, 'standalone.html'))
