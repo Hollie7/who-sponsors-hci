@@ -29,9 +29,9 @@ def footer(bilingual, page_rel_root):
     if cfg.get('email'): who.append(f'<span class="mail">{e(cfg["email"])}</span>')
     if repo: who.append(f'<a href="https://github.com/{e(repo)}" target="_blank" rel="noopener">{L("Source and data on GitHub", "GitHub 上的代码和数据")}</a>')
     other = (f'<a href="{page_rel_root}ai/">{L("AI conferences (NeurIPS / ICML / ICLR)", "AI 会议（NeurIPS / ICML / ICLR）")}</a>' if bilingual
-             else f'<a href="{page_rel_root}">HCI 与 AI 伦理会议</a>')
+             else f'<a href="{page_rel_root}">谁在赞助 HCI 会议</a>')
     cite_who = e(cfg.get('author') or 'the author')
-    cite = f'{cite_who} ({year}). <i>Who Sponsors HCI and AI-Ethics Conferences</i>.' + (f' {e(site_url)}' if site_url else '')
+    cite = f'{cite_who} ({year}). <i>Who Sponsors HCI Conferences</i>.' + (f' {e(site_url)}' if site_url else '')
     issues = f'https://github.com/{e(repo)}/issues' if repo else ''
     fix = (L(f'Corrections are welcome as a <a href="{issues}" target="_blank" rel="noopener">GitHub issue</a>.', f'欢迎在 <a href="{issues}" target="_blank" rel="noopener">GitHub issue</a> 里指出错误。') if issues
            else L('Corrections are welcome.', '欢迎指出错误。'))
@@ -74,7 +74,7 @@ FOOT_CSS = '''<style>
 
 PAGES = [
     # (source page, output, title, datasets relative to the output page, bilingual, path back to site root)
-    ('dashboard/index.html', 'index.html', 'Who Sponsors HCI and AI-Ethics Conferences',
+    ('dashboard/index.html', 'index.html', 'Who Sponsors HCI Conferences',
      {'listings': 'data/sponsor_listings.csv', 'pcy': 'data/per_conference_year.csv', 'prices': 'data/tier_prices.csv'}, True, ''),
     ('dashboard/ai/index.html', 'ai/index.html', 'Who Sponsors NeurIPS, ICML and ICLR',
      {'listings': '../data/ai/ai_sponsor_listings.csv', 'pcy': '../data/ai/ai_per_conference_year.csv', 'prices': '../data/ai/ai_tier_prices.csv',

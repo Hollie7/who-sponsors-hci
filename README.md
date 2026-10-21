@@ -1,4 +1,4 @@
-# Who Sponsors HCI and AI-Ethics Conferences
+# Who Sponsors HCI Conferences
 
 **Live site:** https://who-sponsors-hci.pages.dev/
 
@@ -133,6 +133,6 @@ Page views are counted with [GoatCounter](https://www.goatcounter.com/), which u
 
 The data in `data/` are released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) and the code under the MIT License (see `LICENSE` and `data/LICENSE`). You may reuse and adapt them, including commercially, with credit. Suggested citation:
 
-> Holly Tianqi Song (2026). *Who Sponsors HCI and AI-Ethics Conferences*. https://who-sponsors-hci.pages.dev/
+> Holly Tianqi Song (2026). *Who Sponsors HCI Conferences*. https://who-sponsors-hci.pages.dev/
 
 This is an independent project, not affiliated with or endorsed by ACM, SIGCHI, AAAI, any of the conferences or any organization listed. The lists were compiled by hand from public pages and may be incomplete or contain errors; corrections are welcome as GitHub issues. Organization names and logos belong to their owners. Flag icons are from [flag-icons](https://github.com/lipis/flag-icons) (MIT).

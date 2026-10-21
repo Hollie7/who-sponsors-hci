@@ -58,6 +58,16 @@
 .hx table.cov td{vertical-align:top;line-height:1.45}
 .hx table.cov td:first-child{font-weight:var(--cds-font-weight-medium);white-space:nowrap}
 .hx table.cov th{position:static}
+.hx .hx-head{position:relative}
+.hx .set-wrap{position:absolute;top:0;right:0;z-index:6}
+.hx .set-btn{display:inline-flex;align-items:center;gap:6px;font:inherit;font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);background:transparent;border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:4px 10px;cursor:pointer}
+.hx .set-btn:hover,.hx .set-btn[aria-expanded="true"]{color:var(--color-fg);border-color:var(--color-fg-muted)}
+.hx .set-btn:focus-visible{outline:2px solid var(--color-fg);outline-offset:2px}
+.hx .set-pop{position:absolute;right:0;top:calc(100% + 6px);min-width:16rem;background:var(--cds-surface-popover);border:1px solid var(--cds-border);border-radius:var(--cds-radius);box-shadow:var(--cds-shadow-popover);padding:var(--cds-pad-md);display:flex;flex-direction:column;gap:var(--cds-gap-sm)}
+.hx .set-pop[hidden]{display:none}
+.hx .set-row{display:flex;align-items:center;justify-content:space-between;gap:var(--cds-gap-md)}
+.hx .set-k{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.hx .hx-head h1{padding-right:7.5rem}
 .hx .hm{overflow-x:auto}
 .hx .xbtn{font:inherit;font-size:var(--cds-font-size-caption);padding:3px 10px;border:1px solid var(--color-border-line);border-radius:var(--cds-radius);background:var(--color-bg);color:var(--color-fg);cursor:pointer;margin-left:6px}
 .hx .xbtn:hover{border-color:var(--color-fg-muted)}
@@ -94,8 +104,20 @@
     </ol>
   </nav>
 <div class="hx">
-  <header>
-    <h1 id="top"><span lang="en">Who Sponsors HCI and AI-Ethics Conferences</span><span lang="zh">HCI 与 AI 伦理会议赞助商版图</span></h1>
+  <header class="hx-head">
+    <div class="set-wrap">
+      <button class="set-btn" id="set-btn" aria-haspopup="true" aria-expanded="false" aria-controls="set-pop">
+        <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="2.6"/><path d="M10 1.8v2.1M10 16.1v2.1M18.2 10h-2.1M3.9 10H1.8M15.8 4.2l-1.5 1.5M5.7 14.3l-1.5 1.5M15.8 15.8l-1.5-1.5M5.7 5.7L4.2 4.2"/></svg>
+        <span lang="en">Settings</span><span lang="zh">设置</span>
+      </button>
+      <div class="set-pop" id="set-pop" role="dialog" aria-label="Settings" hidden>
+        <div class="set-row"><span class="set-k"><span lang="en">Language</span><span lang="zh">语言</span></span>
+          <div class="seg" id="f-lang" role="group" aria-label="Language"><button data-v="en" aria-pressed="true">English</button><button data-v="zh" aria-pressed="false">中文</button></div></div>
+        <div class="set-row"><span class="set-k"><span lang="en">Flags</span><span lang="zh">国旗</span></span>
+          <label class="chk"><input type="checkbox" id="f-flags" class="flag-toggle" checked> <span lang="en">Show next to names</span><span lang="zh">在机构名旁显示</span></label></div>
+      </div>
+    </div>
+    <h1 id="top"><span lang="en">Who Sponsors HCI Conferences</span><span lang="zh">谁在赞助 HCI 会议</span></h1>
     <p class="note" style="margin:var(--cds-gap-xs) 0 0">CHI · CSCW · UIST · UbiComp · DIS · IUI · FAccT · AIES</p>
     <p class="lede" id="takeaway" lang="en">Sponsorship is concentrated in a few big tech companies: across all years Google appears in <b data-source="kpis" data-field="value" data-where="metric=google" class="dash-skeleton">—</b> editions, Microsoft in <b data-source="kpis" data-field="value" data-where="metric=microsoft" class="dash-skeleton">—</b> and Meta in <b data-source="kpis" data-field="value" data-where="metric=meta" class="dash-skeleton">—</b>. Corporate sponsorship of CSCW has shrunk sharply: at published tier prices, the average per edition fell from about <b data-source="cscw_trend" data-field="value" data-where="period=2013%E2%80%932017" class="dash-skeleton">—</b> in 2013–2017 to about <b data-source="cscw_trend" data-field="value" data-where="period=2023%E2%80%932026" class="dash-skeleton">—</b> in 2023–2026.</p>
     <p class="lede" lang="zh">赞助几乎集中在少数大科技公司：全部年份里 Google 出现 <b data-source="kpis" data-field="value" data-where="metric=google" class="dash-skeleton">—</b> 届、Microsoft <b data-source="kpis" data-field="value" data-where="metric=microsoft" class="dash-skeleton">—</b> 届、Meta <b data-source="kpis" data-field="value" data-where="metric=meta" class="dash-skeleton">—</b> 届。CSCW 的企业赞助明显萎缩——按公开等级价估算，2013–2017 年平均每届约 <b data-source="cscw_trend" data-field="value" data-where="period=2013%E2%80%932017" class="dash-skeleton">—</b>，2023–2026 年降到约 <b data-source="cscw_trend" data-field="value" data-where="period=2023%E2%80%932026" class="dash-skeleton">—</b>。</p>
@@ -114,12 +136,10 @@
   </section>
 
   <div class="bar ctrls" id="filters" role="group" aria-label="Filters">
-    <div class="seg" id="f-lang" role="group" aria-label="Language"><button data-v="en" aria-pressed="true">English</button><button data-v="zh" aria-pressed="false">中文</button></div>
     <span class="lbl"><span lang="en">Years</span><span lang="zh">年份</span> <select id="f-from" aria-label="From year"></select> – <select id="f-to" aria-label="To year"></select></span>
     <div class="seg" id="f-preset" role="group" aria-label="Year presets">
       <button data-v="all" aria-pressed="true"><span lang="en">All</span><span lang="zh">全部</span></button><button data-v="2006"><span lang="en">2006+</span><span lang="zh">2006 起</span></button><button data-v="2013"><span lang="en">2013+</span><span lang="zh">2013 起</span></button><button data-v="2020"><span lang="en">2020+</span><span lang="zh">2020 起</span></button>
     </div>
-    <label class="chk"><input type="checkbox" id="f-flags" class="flag-toggle" checked> <span lang="en">Show flags</span><span lang="zh">显示国旗</span></label>
     <span class="lbl"><span lang="en">Country by</span><span lang="zh">国家归属</span></span><div class="seg" id="f-cmode" role="group" aria-label="Country attribution"><button data-v="hq" aria-pressed="true"><span lang="en">Headquarters</span><span lang="zh">总部所在地</span></button><button data-v="parent" aria-pressed="false"><span lang="en">Parent company</span><span lang="zh">母公司国籍</span></button></div>
     <span class="rng" id="f-label"></span>
   </div>
@@ -391,6 +411,11 @@ H.on = fn => { redraws.push(fn); dash.onData(fn); };
     document.querySelectorAll('#f-lang button').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.v === v)));
     document.getElementById('q').placeholder = H.T('Search organization, conference, country, year…', '搜索机构、会议、国家、年份…'); apply(); };
   document.querySelectorAll('#f-lang button').forEach(b => b.addEventListener('click', () => setLang(b.dataset.v)));
+  const setBtn = document.getElementById('set-btn'), setPop = document.getElementById('set-pop');
+  const openSet = v => { setPop.hidden = !v; setBtn.setAttribute('aria-expanded', String(v)); };
+  setBtn.addEventListener('click', ev => { ev.stopPropagation(); openSet(setPop.hidden); });
+  document.addEventListener('click', ev => { if (!setPop.hidden && !setPop.contains(ev.target) && ev.target !== setBtn) openSet(false); });
+  document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && !setPop.hidden) { openSet(false); setBtn.focus(); } });
   document.querySelectorAll('#f-cmode button').forEach(b => b.addEventListener('click', () => { state.cmode = b.dataset.v; document.querySelectorAll('#f-cmode button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); apply(); }));
   document.querySelectorAll('.flag-toggle').forEach(cb => cb.addEventListener('change', e => { state.flags = e.target.checked; document.querySelectorAll('.flag-toggle').forEach(o => { o.checked = state.flags; }); apply(); }));
 })();
