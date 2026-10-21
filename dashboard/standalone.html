@@ -131,7 +131,7 @@ window.dash = (() => {
 
   <section class="card" id="timeline-card">
     <h2 id="timeline">赞助商的进出时间线</h2>
-    <p class="note">每行一家机构，每列一年；有色格子表示当年赞助，颜色越深等级越高（按等级起步价：≥$20k / $5k–20k / &lt;$5k / 价格未知）。灰色列是没拿到名单的年份——那里空着不代表没赞助。按“最后出现年份”排序时，靠上的是早早停止的机构。</p>
+    <p class="note">每行一家机构，每列一年；有色格子表示当年赞助，颜色越深等级越高（按等级起步价：≥$20k / $5k–20k / &lt;$5k / 价格未知）。灰色列是没拿到名单的年份——那里空着不代表没赞助。按“最后出现”排序时，最近仍在赞助的机构排在最上面，越往下停得越早。</p>
     <div class="ctrls" style="margin-bottom:var(--cds-gap-sm)">
       <div class="seg" id="tl-conf" role="group" aria-label="Conference"></div>
       <div class="seg" id="tl-sort" role="group" aria-label="Sort">
@@ -555,7 +555,7 @@ window.HX.on(() => {
     const years = d3.range(y0, y1 + 1);
     const orgs = d3.rollups(rows, v => ({first: d3.min(v, r => r.year), last: d3.max(v, r => r.year), n: v.length, country: H.cc(v[0]), cells: new Map(v.map(r => [r.year, r]))}), r => r.org)
       .map(([org, o]) => ({org, ...o})).filter(o => all || o.n >= 2);
-    const cmp = {last: (a, b) => a.last - b.last || a.first - b.first || b.n - a.n, first: (a, b) => a.first - b.first || a.last - b.last || b.n - a.n, count: (a, b) => b.n - a.n || b.last - a.last}[sort];
+    const cmp = {last: (a, b) => b.last - a.last || a.first - b.first || b.n - a.n, first: (a, b) => a.first - b.first || a.last - b.last || b.n - a.n, count: (a, b) => b.n - a.n || b.last - a.last}[sort];
     orgs.sort((a, b) => cmp(a, b) || a.org.localeCompare(b.org));
     if (!orgs.length) { const p = document.createElement('div'); p.className = 'note'; p.textContent = '所选年份内没有赞助过两届及以上的机构；勾选“包括只出现过 1 届的机构”查看全部。'; el.append(p); return; }
     const boxW = el.parentElement.clientWidth || 600;
