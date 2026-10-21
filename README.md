@@ -27,7 +27,7 @@ scripts/
   countries.py                # 机构 → 总部所在国家/地区、母公司国籍
   make_standalone.py          # 生成可直接在浏览器打开的 dashboard/standalone.html
 dashboard/
-  index.html, flags.js        # 交互式 dashboard（原为 Claude Dashboard artifact 编写）
+  index.html, flags.js        # 交互式 dashboard（原为 Claude Dashboard artifact 编写；英文 / 中文可切换，默认英文）
   standalone.html             # 独立版本，可用 GitHub Pages 或本地 http 服务打开
 ```
 
@@ -63,6 +63,7 @@ python -m http.server 8000         # 然后打开 http://localhost:8000/dashboar
 - **每届估算只在至少一半赞助条目有价格时才给出**；UbiComp 2020–2024、CSCW 2014/2020、CHI 1996/1998 因等级缺失不给金额。
 - **非货币支持**（UbiComp 2015 的日本学会/政府 Supporter、UIST 2025 的 Special Support 等）计入名单，不计入金额。
 - **主办方不计为赞助商**：ACM、SIGCHI、SIGGRAPH、SIGMOBILE。
+- **Google DeepMind / DeepMind 计入 Google**：同一届两者都出现时只计一次。FAccT 和 AIES 的官网常把两个 logo 并列，录入时合并成一条 Google，因此这两个会议看不出哪一届是 DeepMind 出资（待补“子品牌”一列）。
 - **注册人数**：CHI 来自 SIGCHI 存档与 Wikipedia（2024、2025）；CSCW 仅到 2018，UIST、UbiComp 仅到 2019。
 
 ### DIS / IUI / FAccT 的口径
