@@ -25,7 +25,9 @@ gov = {'NSF','NICT','ETRI','CSIRO Data61','Région Île-de-France','City of Yoko
        'Knight Foundation','MacArthur Foundation','Ford Foundation','Rockefeller Foundation','Sloan Foundation','Open Society Foundations','Schmidt Futures','Schmidt Sciences',
        'Luminate','Ethics and Governance of AI Initiative','Silicon Valley Community Foundation','Survival and Flourishing Fund','Athena Research Center','Tourisme Montréal',
        'Gesellschaft für Informatik (GI)','Cyprus Tourism Organisation','Business Events Sydney','Singapore Exhibition & Convention Bureau','Visit Brisbane','Visit Madeira',
-       'Funchal City Council','HFESA','Australian Design Alliance','ANAT','Media Architecture Institute','Media Architecture Biennale'}
+       'Funchal City Council','HFESA','Australian Design Alliance','ANAT','Media Architecture Institute','Media Architecture Biennale',
+       # added with AIES
+       'Berkeley Existential Risk Initiative','Future of Life Institute','Partnership on AI','Founders Pledge','Data & Society'}
 acad = {'University of Glasgow','University of Miami','Monash University','Yonsei University','Yonsei University ICS',
         'University of Toronto','Newcastle University','UMBC','UC Irvine','University of Maryland','Virginia Tech',
         'Université Paris-Dauphine','Telecom ParisTech','University of Michigan','University of Bari','University of Copenhagen DIKU',
@@ -33,7 +35,9 @@ acad = {'University of Glasgow','University of Miami','Monash University','Yonse
         'University of Hawaii (HICHI)','University of Cambridge','Stevens Institute of Technology','MBZUAI',
         'Samsung Art and Design Institute','Hasso Plattner Institute','Georgia Tech','University of Cambridge','University of Toronto','UC San Diego','Dong-eui University','University of Virginia','UC San Diego (Qualcomm Institute)','University of Rochester','UNC Charlotte','Carnegie Mellon University','SAT (Société des arts technologiques)',
         'Vector Institute','RC Trust','Archimedes (Athena RC)','Texas A&M University','University of Cyprus','Rochester Institute of Technology','Deakin University',
-        'Queensland University of Technology','ITI / LARSyS','NUS Division of Industrial Design'}
+        'Queensland University of Technology','ITI / LARSyS','NUS Division of Industrial Design',
+        'Tulane University','University of Hawaii at Mānoa','New York University','Markkula Center (Santa Clara University)','IE University',
+        'AI Policy Lab (Umeå University)','Tech Policy Lab'}
 pub = {'Elsevier','Springer','Frontiers','eLearn Magazine (ACM)','ACM Interactions','MIT Press','Morgan & Claypool','MDPI','Science Robotics (AAAS)','AI Journal (AIJ)'}
 def sector(o):
     if o in gov: return 'Government / foundation'
@@ -96,6 +100,10 @@ def price(row):
         if t != 'Unspecified': return None, 'n/a'
         if y >= 2023: return 10000, 'assumed floor (lowest published tier $10k; tiers not shown)'
         return 5000, 'assumed floor (lowest published tier $5k; tiers not shown)'
+    if c == 'AIES':
+        tbl = {'Platinum':30000,'Gold':20000,'Silver':10000,'Bronze':5000}
+        if t not in tbl: return None, 'tier not listed'
+        return tbl[t], 'stated' if y >= 2023 else 'assumed (AIES 2023–2026 schedule)'
     return None, 'n/a'
 
 pp = d.apply(price, axis=1, result_type='expand'); d['est_usd'] = pp[0]; d['price_basis'] = pp[1]

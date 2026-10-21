@@ -100,7 +100,8 @@ window.dash = (() => {
 
 <div class="hx">
   <header>
-    <h1 id="top">CHI / CSCW / UIST / UbiComp / DIS / IUI / FAccT 赞助商版图</h1>
+    <h1 id="top">HCI 与 AI 伦理会议赞助商版图</h1>
+    <p class="note" style="margin:var(--cds-gap-xs) 0 0">CHI · CSCW · UIST · UbiComp · DIS · IUI · FAccT · AIES</p>
     <p class="lede" id="takeaway">赞助几乎集中在少数大科技公司：全部年份里 Google 出现 <b data-source="kpis" data-field="value" data-where="metric=google" class="dash-skeleton">—</b> 届、Microsoft <b data-source="kpis" data-field="value" data-where="metric=microsoft" class="dash-skeleton">—</b> 届、Meta <b data-source="kpis" data-field="value" data-where="metric=meta" class="dash-skeleton">—</b> 届。CSCW 的企业赞助明显萎缩——按公开等级价估算，2013–2017 年平均每届约 <b data-source="cscw_trend" data-field="value" data-where="period=2013%E2%80%932017" class="dash-skeleton">—</b>，2023–2026 年降到约 <b data-source="cscw_trend" data-field="value" data-where="period=2023%E2%80%932026" class="dash-skeleton">—</b>。</p>
   </header>
 
@@ -151,8 +152,8 @@ window.dash = (() => {
       <div id="c-cty" data-source="listings" style="min-height:360px"></div>
     </div>
     <div class="card">
-      <h2 id="top-sponsors">七个会议合计 top 15</h2>
-      <p class="note">所选年份内，七个会议合计的赞助届数。颜色区分企业与非企业机构。</p>
+      <h2 id="top-sponsors">八个会议合计 top 15</h2>
+      <p class="note">所选年份内，八个会议合计的赞助届数。颜色区分企业与非企业机构。</p>
       <div class="legend" id="lg-top"></div>
       <div id="c-top" data-source="listings" style="min-height:420px"></div>
     </div>
@@ -219,6 +220,7 @@ window.dash = (() => {
         <li>国家/地区有两种口径，可在顶部切换：“总部所在地”按赞助实体自身的总部（Toyota Research Institute、FXPAL、MERL、Megagon Labs、Nokia Bell Labs 都在美国）；“母公司国籍”按集团母公司（前四家计为日本，Nokia Bell Labs 计为芬兰）。少数小公司无法确定所在地。顶部“涉及的国家/地区”卡片按总部口径计。</li>
         <li>金额是下限估算：等级价只是起步价，忽略主题赞助、展位、招聘等额外付费；未公布价格的年份沿用相邻年份价目；“Friend/Supporter”一律按 1,000 美元计。</li>
         <li>DIS、IUI、FAccT 是后补的：DIS 只取得 2016、2019、2022、2024–2026 的名单（2014、2017、2018 的旧官网已失效或被占用，2020–2021 为线上会议、未见赞助），只有 2019 年有公开价目；IUI 取得 2015–2026（缺 2013–2014），每年都有公开价目，2017 年为欧元价、按 1.13 折算；FAccT 取得 2018–2026，官网只列名单不分等级，金额按当年最低一档（2022 年前 $5k，2023 年起 $10k）估算，所以是下限中的下限。FAccT 的赞助方约四成是基金会（MacArthur、Ford、Sloan、Luminate、Schmidt 等）。</li>
+        <li>AIES（AAAI/ACM AI、伦理与社会会议）取得 2018–2026 全部名单。2023–2026 年公开价目为 Platinum $30k / Gold $20k / Silver $10k / Bronze $5k；2020–2022 年有等级但没找到价目，沿用这一价目；2018–2019 年不分等级，不估算。2026 年的 AI Policy Lab 和 Tech Policy Lab 只有 logo，所属机构是推断的。主办方 AAAI、ACM、SIGAI 不计。</li>
         <li>Meta/Facebook/Oculus、Yahoo/Verizon Media/Oath、Tableau/Salesforce 等已合并为同一机构；ACM、SIGCHI 等主办方不计为赞助商。</li>
         <li>国旗图形来自开源的 flag-icons 图标库；西班牙国旗省略了国徽。</li>
       </ul>
@@ -230,7 +232,7 @@ window.dash = (() => {
 <script src="flags.js"></script>
 
 <script>(() => {
-const CONF = ['CHI','CSCW','UIST','UbiComp','DIS','IUI','FAccT'];
+const CONF = ['CHI','CSCW','UIST','UbiComp','DIS','IUI','FAccT','AIES'];
 const SECT = ['Industry','Government / foundation','University / academic','Publisher','Unknown'];
 const SECT_ZH = {'Industry':'企业','Government / foundation':'政府 / 基金会','University / academic':'高校 / 学术机构','Publisher':'出版社','Unknown':'未识别'};
 const CTY_ZH = {US:'美国',JP:'日本',KR:'韩国',CA:'加拿大',GB:'英国',DE:'德国',FR:'法国',FI:'芬兰',CN:'中国大陆',TW:'台湾地区',AU:'澳大利亚',NL:'荷兰',DK:'丹麦',AE:'阿联酋',CH:'瑞士',IN:'印度',NO:'挪威',SE:'瑞典',IT:'意大利',SG:'新加坡',ES:'西班牙',EU:'欧盟项目',CY:'塞浦路斯',GR:'希腊',PT:'葡萄牙',AT:'奥地利','':'未知'};
@@ -466,9 +468,10 @@ window.HX.on(() => {
   const H = window.HX;
   const el = document.getElementById('c-money'); const st = dash.data('pcy');
   if (H.failOrWait(el, st)) return;
+  const boxes = H.CONF.map(() => { const bx = document.createElement('div'); el.append(bx); return bx; });
   H.CONF.forEach((c, ci) => {
     const rows = st.data.filter(r => r.conference === c && r.est_usd !== '' && H.inRange(r.year)).map(r => ({...r, y: +r.year, v: +r.est_usd}));
-    const box = document.createElement('div'); el.append(box);
+    const box = boxes[ci];
     const h = document.createElement('div'); h.className = 'sub'; h.textContent = c; box.append(h);
     const W = box.clientWidth || 260, Ht = 170, m = {l: 44, r: 6, t: 6, b: 22};
     const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${Ht}`);

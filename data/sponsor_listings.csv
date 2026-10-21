@@ -918,3 +918,67 @@ id,conference,year,tier,sponsor,org,sector,est_usd,price_basis,source,country,pa
 917,DIS,2026,Unspecified,Grab,Grab,Industry,,no price info,https://dis.acm.org/2026/dis26-industry-events/,SG,SG
 918,DIS,2026,Unspecified,Singapore Exhibition & Convention Bureau,Singapore Exhibition & Convention Bureau,Government / foundation,,no price info,https://dis.acm.org/2026/dis26-industry-events/,SG,SG
 919,DIS,2026,Supporter (host),NUS Division of Industrial Design,NUS Division of Industrial Design,University / academic,,no price info,https://dis.acm.org/2026/dis26-industry-events/,SG,SG
+920,AIES,2018,Unspecified,Google,Google,Industry,,tier not listed,https://www.aies-conference.com/2018/sponsors/,US,US
+921,AIES,2018,Unspecified,IBM,IBM,Industry,,tier not listed,https://www.aies-conference.com/2018/sponsors/,US,US
+922,AIES,2018,Unspecified,Berkeley Existential Risk Initiative,Berkeley Existential Risk Initiative,Government / foundation,,tier not listed,https://www.aies-conference.com/2018/sponsors/,US,US
+923,AIES,2018,Unspecified,Future of Life Institute,Future of Life Institute,Government / foundation,,tier not listed,https://www.aies-conference.com/2018/sponsors/,US,US
+924,AIES,2018,Unspecified,PwC,PwC,Industry,,tier not listed,https://www.aies-conference.com/2018/sponsors/,GB,GB
+925,AIES,2018,Unspecified,Partnership on AI,Partnership on AI,Government / foundation,,tier not listed,https://www.aies-conference.com/2018/sponsors/,US,US
+926,AIES,2018,Supporter (host),Tulane University,Tulane University,University / academic,,tier not listed,https://www.aies-conference.com/2018/sponsors/,US,US
+927,AIES,2019,Unspecified,Berkeley Existential Risk Initiative,Berkeley Existential Risk Initiative,Government / foundation,,tier not listed,https://www.aies-conference.com/2019/sponsors/index.html,US,US
+928,AIES,2019,Unspecified,Google,Google,Industry,,tier not listed,https://www.aies-conference.com/2019/sponsors/index.html,US,US
+929,AIES,2019,Unspecified,NSF,NSF,Government / foundation,,tier not listed,https://www.aies-conference.com/2019/sponsors/index.html,US,US
+930,AIES,2019,Unspecified,IBM,IBM,Industry,,tier not listed,https://www.aies-conference.com/2019/sponsors/index.html,US,US
+931,AIES,2019,Unspecified,Meta/Facebook,Meta/Facebook,Industry,,tier not listed,https://www.aies-conference.com/2019/sponsors/index.html,US,US
+932,AIES,2019,Unspecified,Amazon,Amazon,Industry,,tier not listed,https://www.aies-conference.com/2019/sponsors/index.html,US,US
+933,AIES,2019,Unspecified,PwC,PwC,Industry,,tier not listed,https://www.aies-conference.com/2019/sponsors/index.html,GB,GB
+934,AIES,2019,Unspecified,Future of Life Institute,Future of Life Institute,Government / foundation,,tier not listed,https://www.aies-conference.com/2019/sponsors/index.html,US,US
+935,AIES,2019,Unspecified,Partnership on AI,Partnership on AI,Government / foundation,,tier not listed,https://www.aies-conference.com/2019/sponsors/index.html,US,US
+936,AIES,2019,Supporter (host),University of Hawaii at Mānoa,University of Hawaii at Mānoa,University / academic,,tier not listed,https://www.aies-conference.com/2019/sponsors/index.html,US,US
+937,AIES,2020,Gold,Google,Google,Industry,20000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2020/sponsors/index.html,US,US
+938,AIES,2020,Gold,Survival and Flourishing Fund,Survival and Flourishing Fund,Government / foundation,20000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2020/sponsors/index.html,US,US
+939,AIES,2020,Silver,Founders Pledge,Founders Pledge,Government / foundation,10000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2020/sponsors/index.html,GB,GB
+940,AIES,2020,Silver,New York University,New York University,University / academic,10000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2020/sponsors/index.html,US,US
+941,AIES,2020,Bronze,Amazon,Amazon,Industry,5000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2020/sponsors/index.html,US,US
+942,AIES,2020,Bronze,Data & Society,Data & Society,Government / foundation,5000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2020/sponsors/index.html,US,US
+943,AIES,2020,Bronze,Meta/Facebook,Meta/Facebook,Industry,5000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2020/sponsors/index.html,US,US
+944,AIES,2020,Bronze,Partnership on AI,Partnership on AI,Government / foundation,5000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2020/sponsors/index.html,US,US
+945,AIES,2021,Gold,Google,Google,Industry,20000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2021/sponsors/index.html,US,US
+946,AIES,2021,Gold,Founders Pledge,Founders Pledge,Government / foundation,20000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2021/sponsors/index.html,GB,GB
+947,AIES,2021,Bronze,Meta/Facebook,Meta/Facebook,Industry,5000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2021/sponsors/index.html,US,US
+948,AIES,2022,Platinum,Founders Pledge,Founders Pledge,Government / foundation,30000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2022/sponsors/index.html,GB,GB
+949,AIES,2022,Platinum,Google,Google,Industry,30000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2022/sponsors/index.html,US,US
+950,AIES,2022,Platinum,Sony,Sony,Industry,30000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2022/sponsors/index.html,JP,JP
+951,AIES,2022,Silver,NSF,NSF,Government / foundation,10000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2022/sponsors/index.html,US,US
+952,AIES,2022,Silver,IBM,IBM,Industry,10000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2022/sponsors/index.html,US,US
+953,AIES,2022,Bronze,Meta/Facebook,Meta/Facebook,Industry,5000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2022/sponsors/index.html,US,US
+954,AIES,2023,Platinum,Google,Google,Industry,30000.0,stated,https://www.aies-conference.com/2023/sponsors/,US,US
+955,AIES,2023,Platinum,PwC,PwC,Industry,30000.0,stated,https://www.aies-conference.com/2023/sponsors/,GB,GB
+956,AIES,2023,Platinum,Schmidt Futures,Schmidt Futures,Government / foundation,30000.0,stated,https://www.aies-conference.com/2023/sponsors/,US,US
+957,AIES,2023,Gold,Sony,Sony,Industry,20000.0,stated,https://www.aies-conference.com/2023/sponsors/,JP,JP
+958,AIES,2023,Gold,Future of Life Institute,Future of Life Institute,Government / foundation,20000.0,stated,https://www.aies-conference.com/2023/sponsors/,US,US
+959,AIES,2023,Silver,IBM,IBM,Industry,10000.0,stated,https://www.aies-conference.com/2023/sponsors/,US,US
+960,AIES,2023,Silver,JPMorgan Chase,JPMorgan Chase,Industry,10000.0,stated,https://www.aies-conference.com/2023/sponsors/,US,US
+961,AIES,2023,Silver,NSF,NSF,Government / foundation,10000.0,stated,https://www.aies-conference.com/2023/sponsors/,US,US
+962,AIES,2024,Platinum,Google,Google,Industry,30000.0,stated,https://www.aies-conference.com/2024/sponsorship-opportunities/,US,US
+963,AIES,2024,Platinum,Tableau/Salesforce,Tableau/Salesforce,Industry,30000.0,stated,https://www.aies-conference.com/2024/sponsorship-opportunities/,US,US
+964,AIES,2024,Silver,Sony,Sony,Industry,10000.0,stated,https://www.aies-conference.com/2024/sponsorship-opportunities/,JP,JP
+965,AIES,2024,Silver,IBM,IBM,Industry,10000.0,stated,https://www.aies-conference.com/2024/sponsorship-opportunities/,US,US
+966,AIES,2024,Bronze,eBay/PayPal,eBay/PayPal,Industry,5000.0,stated,https://www.aies-conference.com/2024/sponsorship-opportunities/,US,US
+967,AIES,2024,Bronze,JPMorgan Chase,JPMorgan Chase,Industry,5000.0,stated,https://www.aies-conference.com/2024/sponsorship-opportunities/,US,US
+968,AIES,2024,Bronze,NSF,NSF,Government / foundation,5000.0,stated,https://www.aies-conference.com/2024/sponsorship-opportunities/,US,US
+969,AIES,2024,Supporter (host),Markkula Center (Santa Clara University),Markkula Center (Santa Clara University),University / academic,,tier not listed,https://www.aies-conference.com/2024/sponsorship-opportunities/,US,US
+970,AIES,2025,Platinum,Google,Google,Industry,30000.0,stated,https://www.aies-conference.com/2025/sponsorship-opportunities/,US,US
+971,AIES,2025,Gold,Lenovo,Lenovo,Industry,20000.0,stated,https://www.aies-conference.com/2025/sponsorship-opportunities/,CN,CN
+972,AIES,2025,Silver,IBM,IBM,Industry,10000.0,stated,https://www.aies-conference.com/2025/sponsorship-opportunities/,US,US
+973,AIES,2025,Silver,Ericsson,Ericsson,Industry,10000.0,stated,https://www.aies-conference.com/2025/sponsorship-opportunities/,SE,SE
+974,AIES,2025,Bronze,AE Studio,AE Studio,Industry,5000.0,stated,https://www.aies-conference.com/2025/sponsorship-opportunities/,US,US
+975,AIES,2025,Bronze,AI Journal (AIJ),AI Journal (AIJ),Publisher,5000.0,stated,https://www.aies-conference.com/2025/sponsorship-opportunities/,US,US
+976,AIES,2025,Bronze,JPMorgan Chase,JPMorgan Chase,Industry,5000.0,stated,https://www.aies-conference.com/2025/sponsorship-opportunities/,US,US
+977,AIES,2025,Bronze,NSF,NSF,Government / foundation,5000.0,stated,https://www.aies-conference.com/2025/sponsorship-opportunities/,US,US
+978,AIES,2025,Supporter (host),IE University,IE University,University / academic,,tier not listed,https://www.aies-conference.com/2025/sponsorship-opportunities/,ES,ES
+979,AIES,2026,Gold,Google,Google,Industry,20000.0,stated,https://www.aies-conference.com/2026/sponsorship-opportunities/,US,US
+980,AIES,2026,Silver,IBM,IBM,Industry,10000.0,stated,https://www.aies-conference.com/2026/sponsorship-opportunities/,US,US
+981,AIES,2026,Bronze,AI Policy Lab (Umeå University),AI Policy Lab (Umeå University),University / academic,5000.0,stated,https://www.aies-conference.com/2026/sponsorship-opportunities/,SE,SE
+982,AIES,2026,Bronze,Tech Policy Lab,Tech Policy Lab,University / academic,5000.0,stated,https://www.aies-conference.com/2026/sponsorship-opportunities/,US,US
+983,AIES,2026,Bronze,Ericsson,Ericsson,Industry,5000.0,stated,https://www.aies-conference.com/2026/sponsorship-opportunities/,SE,SE

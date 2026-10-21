@@ -30,6 +30,8 @@ put('GR',['Archimedes (Athena RC)','Athena Research Center']); put('SG',['TikTok
 put('AU',['Business Events Sydney','Roames (Fugro)','HFESA','Brisbane BMW','Go Digi (Australia Post)','Greater Springfield','Australian Design Alliance','ANAT',
           'Media Architecture Biennale','Airtrain','Visit Brisbane','Queensland University of Technology','Deakin University'])
 put('AT',['Media Architecture Institute']); put('PT',['Funchal City Council','Visit Madeira','ITI / LARSyS'])
+# added with AIES
+put('GB',['PwC','Founders Pledge']); put('CN',['Lenovo']); put('SE',['Ericsson','AI Policy Lab (Umeå University)']); put('ES',['IE University'])
 def country(o): return C.get(o, 'US')
 
 PARENT = {'TikTok':'CN','Roames (Fugro)':'NL','Toyota Research Institute':'JP','FXPAL':'JP','MERL':'JP','Megagon Labs':'JP','Nokia Bell Labs':'FI'}
