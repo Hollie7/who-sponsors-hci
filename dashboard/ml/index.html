@@ -1,74 +1,3 @@
-<!doctype html>
-<html lang="zh">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Who Sponsors AI Conferences</title>
-<script src="../vendor/d3.min.js"></script>
-<style>
-:root{
-  --font-anthropic-sans: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Noto Sans SC", sans-serif;
-  --font-anthropic-serif: Georgia, "Songti SC", "Noto Serif SC", serif;
-  --color-fg:#1f1e1d; --color-fg-muted:#6b6a66; --color-bg:#faf9f5; --color-panel:#ffffff; --color-border-line:#e5e3dc;
-  --color-ok:#2e7d32; --color-warn:#b26a00; --color-bad:#c62828;
-  --cds-chart-grid:#ecebe6; --cds-chart-axis:#c9c7bf; --cds-chart-reference:#9a988f; --cds-chart-muted:#c9c7bf;
-  --cds-surface-popover:#ffffff; --cds-border:#e5e3dc; --cds-shadow-popover:0 4px 16px rgba(0,0,0,.12); --cds-text-secondary:#6b6a66;
-  --cds-radius:8px; --cds-pad-xs:4px; --cds-pad-sm:8px; --cds-pad-md:12px; --cds-pad-lg:16px; --cds-pad-xl:24px;
-  --cds-gap-xs:4px; --cds-gap-sm:8px; --cds-gap-md:16px; --cds-gap-lg:24px; --cds-gap-xl:32px;
-  --cds-font-size-caption:12px; --cds-font-size-body:14px; --cds-font-size-heading:16px; --cds-font-size-title:28px;
-  --cds-font-weight-medium:600;
-}
-@media (prefers-color-scheme: dark){
-  :root{ --color-fg:#ecebe6; --color-fg-muted:#a3a19a; --color-bg:#1d1c1a; --color-panel:#262523; --color-border-line:#3a3936;
-    --cds-chart-grid:#33322f; --cds-chart-axis:#55534e; --cds-surface-popover:#2d2c2a; --cds-border:#3a3936; --cds-text-secondary:#a3a19a; }
-}
-body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(--font-anthropic-sans);font-size:var(--cds-font-size-body)}
-#dash-root{max-width:1200px;margin:0 auto;padding:24px 16px}
-a{color:inherit}
-.dash-skeleton{color:transparent;background:var(--cds-chart-grid);border-radius:4px}
-</style>
-<script>
-// outside Claude: a plain browser download for the page's export button
-window.claude = window.claude || {use: async n => n !== 'downloads' ? null : {save: async ({filename, data}) => {
-  const url = URL.createObjectURL(data instanceof Blob ? data : new Blob([data], {type: 'text/csv;charset=utf-8'}));
-  const a = document.createElement('a'); a.href = url; a.download = filename; document.body.append(a); a.click(); a.remove();
-  setTimeout(() => URL.revokeObjectURL(url), 1000); return {status: 'saved'}; }}};
-window.dash = (() => {
-  const files = {"listings": "../data/ai/ai_sponsor_listings.csv", "pcy": "../data/ai/ai_per_conference_year.csv", "prices": "../data/ai/ai_tier_prices.csv", "hci_listings": "../data/sponsor_listings.csv", "hci_pcy": "../data/per_conference_year.csv"};
-  const store = {}; const calcs = {}; const subs = [];
-  Object.keys(files).forEach(id => { store[id] = {status: 'loading', data: []}; });
-  const run = () => {
-    Object.entries(calcs).forEach(([id, c]) => {
-      const ins = c.inputs.map(i => store[i]);
-      store[id] = ins.every(s => s && s.status === 'ok') ? {status: 'ok', data: c.fn(...ins.map(s => s.data))} : {status: 'loading', data: []};
-    });
-    subs.forEach(fn => { try { fn(); } catch (e) { console.error(e); } });
-  };
-  Promise.all(Object.entries(files).map(([id, url]) => d3.csv(url)
-    .then(rows => { store[id] = {status: 'ok', data: rows, columns: rows.columns}; })
-    .catch(e => { store[id] = {status: 'error', data: [], message: String(e)}; })))
-    .then(run);
-  let t; window.addEventListener('resize', () => { clearTimeout(t); t = setTimeout(run, 150); });
-  return {
-    data: id => store[id] || {status: 'missing', data: []},
-    onData: fn => { subs.push(fn); try { fn(); } catch (e) { console.error(e); } },
-    calc: (id, c) => { calcs[id] = c; store[id] = {status: 'loading', data: []}; },
-    colors: ['#2f6f9f', '#d1793f', '#3f9a6b', '#8b5fb0', '#c7a33a', '#5aa1b8', '#b5565a', '#7a7a72'],
-    refresh: () => {}, params: () => ({}), setParams: () => {}, resetParams: () => {}, setLink: () => {},
-  };
-})();
-</script>
-<style>
-.site-foot{border-top:1px solid var(--color-border-line);margin-top:1rem;padding-top:1.5rem;color:var(--color-fg-muted);font-size:13px;line-height:1.7;display:flex;flex-direction:column;gap:var(--cds-gap-sm)}
-.site-foot p{margin:0;max-width:52rem}
-.site-foot b{color:var(--color-fg);font-weight:600;margin-right:.35em}
-.site-foot a{color:var(--color-fg);text-underline-offset:2px}
-.site-foot .mail{user-select:all}
-.site-foot .views{opacity:.75;font-variant-numeric:tabular-nums}
-</style>
-</head>
-<body>
-<div id="dash-root">
 <style>
 .hx{font-family:var(--font-anthropic-sans);display:flex;flex-direction:column;gap:var(--cds-gap-lg)}
 .hx h1{font-family:var(--font-anthropic-serif);font-weight:400;font-size:var(--cds-font-size-title);margin:0}
@@ -226,7 +155,7 @@ window.dash = (() => {
           <label class="chk"><input type="checkbox" id="f-flags" class="flag-toggle" checked> <span lang="en">Show next to names</span><span lang="zh">在机构名旁显示</span></label></div>
       </div>
     </div>
-    <h1 id="top"><span lang="en">Who Sponsors AI Conferences</span><span lang="zh">谁在赞助 AI 会议</span></h1>
+    <h1 id="top"><span lang="en">Who Sponsors ML Conferences</span><span lang="zh">谁在赞助机器学习会议</span></h1>
     <p class="note" style="margin:var(--cds-gap-xs) 0 0">NeurIPS · ICML · ICLR</p>
     <p class="lede"><span lang="en">Who pays for the three largest machine-learning conferences, and how that compares with HCI. The sponsor lists come from each conference’s public sponsor pages and archives.</span><span lang="zh">谁在为三大机器学习会议出钱，以及和 HCI 会议相比有何不同。赞助商名单来自各会议公开的赞助页和存档。</span></p>
     <div class="ctrls" style="margin-top:1rem" data-source="listings">
@@ -310,7 +239,7 @@ window.dash = (() => {
 
   <section class="card" id="vs-card">
     <h2 id="vs-hci"><span lang="en">Compared with HCI</span><span lang="zh">和 HCI 会议比</span></h2>
-    <p class="note"><span lang="en">Left: sponsors per edition (each organization once), solid lines for AI conferences and dashed lines for CHI, CSCW, UIST and UbiComp. Right: companies that sponsored both fields, and how many editions of each they sponsored in the selected years.</span><span lang="zh">左：每届赞助方数量（同一机构在一届只计 1 次），实线是 AI 会议，虚线是 CHI、CSCW、UIST、UbiComp。右：两边都赞助过的企业，在所选年份内分别赞助了多少届 AI 会议和 HCI 会议。</span></p>
+    <p class="note"><span lang="en">Left: sponsors per edition (each organization once), solid lines for ML conferences and dashed lines for CHI, CSCW, UIST and UbiComp. Right: companies that sponsored both fields, and how many editions of each they sponsored in the selected years.</span><span lang="zh">左：每届赞助方数量（同一机构在一届只计 1 次），实线是机器学习会议，虚线是 CHI、CSCW、UIST、UbiComp。右：两边都赞助过的企业，在所选年份内分别赞助了多少届机器学习会议和 HCI 会议。</span></p>
     <div class="grid" style="gap:2.5rem">
       <div><div class="legend" id="lg-cmp"></div><div id="c-cmp" data-source="pcy hci_pcy" style="min-height:260px"></div></div>
       <div><div class="legend" id="lg-ov"></div><div id="c-ov" data-source="listings hci_listings" style="min-height:420px"></div></div>
@@ -327,7 +256,7 @@ window.dash = (() => {
     <ul class="summary" lang="zh">
         <li><strong>赞助规模比 HCI 大一个数量级。</strong>按公开等级价估算，NeurIPS 2025 的赞助至少 <b data-source="money_cmp" data-field="value" data-where="metric=neurips2025" class="dash-skeleton">—</b>，同年 CHI 约 <b data-source="money_cmp" data-field="value" data-where="metric=chi2025" class="dash-skeleton">—</b>。</li>
         <li><strong>金融机构是第二大赞助群体。</strong>全部赞助条目中 <b data-source="kpis" data-field="value" data-where="metric=finshare" class="dash-skeleton">—</b> 来自对冲基金、做市商和银行，如 Citadel、Jane Street、Jump、D. E. Shaw、Two Sigma；它们在 HCI 会议里几乎看不到。</li>
-        <li><strong>同一批公司，侧重不同。</strong>Google、Microsoft、Meta 两边都赞助；Adobe、Autodesk 主要在 HCI；Amazon、百度、字节几乎只在 AI。2023 年后，Lambda、Together AI、Nebius、Scale AI 等 AI 基础设施和数据公司大量进入。</li>
+        <li><strong>同一批公司，侧重不同。</strong>Google、Microsoft、Meta 两边都赞助；Adobe、Autodesk 主要在 HCI；Amazon、百度、字节几乎只在机器学习会议。2023 年后，Lambda、Together AI、Nebius、Scale AI 等 AI 基础设施和数据公司大量进入。</li>
     </ul>
   </section>
 
@@ -417,31 +346,13 @@ window.dash = (() => {
       </div>
     </details>
   </section>
-  
-<footer class="site-foot">
-  <p><b>Holly Tianqi Song</b> · <a href="https://hollysong.site" target="_blank" rel="noopener"><span lang="en">Homepage</span><span lang="zh">个人主页</span></a> · <span class="mail">tianqi_song@u.nus.edu</span> · <a href="https://github.com/Hollie7/who-sponsors-hci" target="_blank" rel="noopener"><span lang="en">Source and data on GitHub</span><span lang="zh">GitHub 上的代码和数据</span></a> · <a href="../"><span lang="en">HCI conferences</span><span lang="zh">HCI 会议</span></a></p>
-  <p><span lang="en">Data <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>, code MIT: free to reuse with credit.</span><span lang="zh">数据 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>，代码 MIT：注明出处即可转载使用。</span> <span lang="en">Independent project, not affiliated with ACM, SIGCHI, AAAI or any organization listed. Compiled by hand from public pages; amounts are lower-bound estimates.</span><span lang="zh">独立项目，与 ACM、SIGCHI、AAAI 及所列机构无关。名单根据公开网页手工整理，金额为估算下限。</span> <span lang="en">Spot an error? <a href="https://github.com/Hollie7/who-sponsors-hci/issues" target="_blank" rel="noopener">Open an issue</a>.</span><span lang="zh">发现错误？欢迎<a href="https://github.com/Hollie7/who-sponsors-hci/issues" target="_blank" rel="noopener">提 issue</a>。</span></p>
-  <p class="views" id="views" hidden></p>
-<script>window.goatcounter = {path: p => location.host + p};</script>
-<script data-goatcounter="https://holly.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
-<script>
-(() => {
-  const el = document.getElementById('views');
-  fetch('https://holly.goatcounter.com/counter/' + encodeURIComponent(location.host + location.pathname) + '.json')
-    .then(r => r.ok ? r.json() : null).then(d => { if (!d || !d.count) return;
-      const n = document.createElement('span'); n.textContent = d.count;
-      el.append(n, document.createTextNode(' ')); const t = document.createElement('span'); t.className = 'vt';
-      t.innerHTML = "<span lang=\"en\">views</span><span lang=\"zh\">\u6b21\u6d4f\u89c8</span>"; el.append(t); el.hidden = false; }).catch(() => {});
-})();
-</script>
-</footer>
   <div class="tip" id="tip"></div>
 </div>
 </div>
 
 <script src="flags.js"></script>
 
-<script>(() => {
+<script>
 const CONF = ['NeurIPS','ICML','ICLR'];
 const HCONF = ['CHI','CSCW','UIST','UbiComp'];
 const SECT = ['Tech & other industry','Finance / quant','Government / academic / non-profit','Publisher'];
@@ -488,9 +399,9 @@ dash.calc('money_cmp', {
     return [{metric:'neurips2025', value: f(v(pcy, 'NeurIPS'))}, {metric:'chi2025', value: f(v(hci_pcy, 'CHI'))}];
   }
 });
-})();</script>
+</script>
 
-<script>(() => {
+<script>
 const H = window.HX;
 const {state, redraws} = H;
 const tip = document.getElementById('tip');
@@ -585,9 +496,9 @@ dash.onData(() => {
     });
   });
 });
-})();</script>
+</script>
 
-<script>(() => {
+<script>
 // horizontal ranked bars, shared by top-10 per conference and top-15 overall
 window.HX.rankBars = (box, items, color, tipFn) => {
   const H = window.HX;
@@ -775,9 +686,9 @@ window.HX.on(() => {
     const last = s[s.length - 1]; svg.append('text').attr('x', x(last.y) + 7).attr('y', y(last.v)).attr('dy', '.35em').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(c);
   });
 });
-})();</script>
+</script>
 
-<script>(() => {
+<script>
 // timeline
 (() => {
   const H = window.HX;
@@ -890,9 +801,9 @@ dash.onData(() => {
     tb.append(tr);
   });
 });
-})();</script>
+</script>
 
-<script>(() => {
+<script>
 // export: the raw sponsor listings as one CSV
 (() => {
   const H = window.HX;
@@ -916,10 +827,10 @@ dash.onData(() => {
     catch (e) { ta.hidden = false; ta.value = text; ta.focus(); ta.select(); status.textContent = H.T('Download isn’t available here. The CSV is selected below; copy it with your keyboard.', '这里不能下载。CSV 已在下方选中，请用键盘复制。'); }
   });
 })();
-})();</script>
+</script>
 
-<script>(() => {
-// AI vs HCI: sponsors per edition
+<script>
+// ML vs HCI: sponsors per edition
 window.HX.on(() => {
   const H = window.HX;
   const el = document.getElementById('c-cmp'), lg = document.getElementById('lg-cmp');
@@ -975,7 +886,7 @@ window.HX.on(() => {
   const items = [...A.keys()].filter(o => Hm.has(o)).map(o => ({org: o, ai: A.get(o), hci: Hm.get(o), country: ctry.get(o)}))
     .sort((p, q) => (q.ai + q.hci) - (p.ai + p.hci) || p.org.localeCompare(q.org)).slice(0, 16);
   const cA = H.C[0], cH = H.C[3];
-  H.legend(lg, [[cA, H.T('AI conference editions', 'AI 会议届次')], [cH, H.T('HCI conference editions', 'HCI 会议届次')]]);
+  H.legend(lg, [[cA, H.T('ML conference editions', '机器学习会议届次')], [cH, H.T('HCI conference editions', 'HCI 会议届次')]]);
   const W = el.clientWidth || 400, rowH = 26, Ht = items.length * rowH + 22;
   const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${Math.max(Ht, 30)}`);
   if (!items.length) { svg.append('text').attr('y', 14).attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text(H.T('No company sponsored both fields in the selected years', '所选年份内没有两边都赞助的企业')); return; }
@@ -992,10 +903,6 @@ window.HX.on(() => {
   g.append('text').attr('x', d => x(d.ai) + 4).attr('y', d => y(d.org) + bh / 2).attr('dy', '.35em').attr('font-size', 10).attr('fill', 'var(--color-fg-muted)').text(d => d.ai);
   g.append('text').attr('x', d => x(d.hci) + 4).attr('y', d => y(d.org) + bh * 1.5 + 2).attr('dy', '.35em').attr('font-size', 10).attr('fill', 'var(--color-fg-muted)').text(d => d.hci);
   g.append('rect').attr('x', 0).attr('width', W).attr('y', d => y(d.org)).attr('height', y.bandwidth()).attr('fill', 'transparent')
-    .on('mousemove', (ev, d) => H.showTip(ev, [['t', d.org], ['', H.T(`AI conferences: ${d.ai} editions`, `AI 会议：${d.ai} 届`)], ['', H.T(`HCI conferences: ${d.hci} editions`, `HCI 会议：${d.hci} 届`)]])).on('mouseleave', H.hideTip);
+    .on('mousemove', (ev, d) => H.showTip(ev, [['t', d.org], ['', H.T(`ML conferences: ${d.ai} editions`, `机器学习会议：${d.ai} 届`)], ['', H.T(`HCI conferences: ${d.hci} editions`, `HCI 会议：${d.hci} 届`)]])).on('mouseleave', H.hideTip);
 });
-})();</script>
-
-</div>
-</body>
-</html>
+</script>

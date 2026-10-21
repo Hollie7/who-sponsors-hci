@@ -5,7 +5,7 @@
 Reads site.config.json (author, homepage, email, github_repo "owner/repo",
 site_url where the site is published, goatcounter code) and writes:
     docs/index.html        HCI and AI-ethics conferences (English / 中文)
-    docs/ai/index.html     NeurIPS / ICML / ICLR
+    docs/ml/index.html     NeurIPS / ICML / ICLR (docs/_redirects sends the old /ai/ there)
     docs/data/...          the CSV files both pages load
 Empty config fields are simply left out of the footer.
 """
@@ -28,7 +28,7 @@ def footer(bilingual, page_rel_root):
     if cfg.get('homepage'): who.append(f'<a href="{e(cfg["homepage"])}" target="_blank" rel="noopener">{L("Homepage", "个人主页")}</a>')
     if cfg.get('email'): who.append(f'<span class="mail">{e(cfg["email"])}</span>')
     if repo: who.append(f'<a href="https://github.com/{e(repo)}" target="_blank" rel="noopener">{L("Source and data on GitHub", "GitHub 上的代码和数据")}</a>')
-    other = (f'<a href="{page_rel_root}ai/">{L("AI conferences (NeurIPS / ICML / ICLR)", "AI 会议（NeurIPS / ICML / ICLR）")}</a>' if not page_rel_root
+    other = (f'<a href="{page_rel_root}ml/">{L("ML conferences (NeurIPS / ICML / ICLR)", "机器学习会议（NeurIPS / ICML / ICLR）")}</a>' if not page_rel_root
              else f'<a href="{page_rel_root}">{L("HCI conferences", "HCI 会议")}</a>')
     cite_who = e(cfg.get('author') or 'the author')
     cite = f'{cite_who} ({year}). <i>Who Sponsors HCI Conferences</i>.' + (f' {e(site_url)}' if site_url else '')
@@ -77,7 +77,7 @@ PAGES = [
     # (source page, output, title, datasets relative to the output page, bilingual, path back to site root)
     ('dashboard/index.html', 'index.html', 'Who Sponsors HCI Conferences',
      {'listings': 'data/sponsor_listings.csv', 'pcy': 'data/per_conference_year.csv', 'prices': 'data/tier_prices.csv'}, True, ''),
-    ('dashboard/ai/index.html', 'ai/index.html', 'Who Sponsors AI Conferences',
+    ('dashboard/ml/index.html', 'ml/index.html', 'Who Sponsors ML Conferences',
      {'listings': '../data/ai/ai_sponsor_listings.csv', 'pcy': '../data/ai/ai_per_conference_year.csv', 'prices': '../data/ai/ai_tier_prices.csv',
       'hci_listings': '../data/sponsor_listings.csv', 'hci_pcy': '../data/per_conference_year.csv'}, True, '../'),
 ]
@@ -103,3 +103,5 @@ if __name__ == '__main__':
         shutil.copy(flags_src, os.path.join(os.path.dirname(dest), 'flags.js'))
         print('wrote', os.path.relpath(dest, ROOT))
     open(os.path.join(DOCS, '.nojekyll'), 'w').close()
+    # the ML page used to live at /ai/
+    open(os.path.join(DOCS, '_redirects'), 'w').write('/ai /ml/ 301\n/ai/ /ml/ 301\n/ai/* /ml/:splat 301\n')

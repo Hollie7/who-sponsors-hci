@@ -84,7 +84,7 @@ import json
 PAGES = {
     # dashboard folder -> (title, dataset id -> CSV path relative to that folder)
     '': ('HCI Conference Sponsorship', {'listings': '../data/sponsor_listings.csv', 'pcy': '../data/per_conference_year.csv', 'prices': '../data/tier_prices.csv'}),
-    'ai': ('AI Conference Sponsorship', {'listings': '../../data/ai/ai_sponsor_listings.csv', 'pcy': '../../data/ai/ai_per_conference_year.csv',
+    'ml': ('ML Conference Sponsorship', {'listings': '../../data/ai/ai_sponsor_listings.csv', 'pcy': '../../data/ai/ai_per_conference_year.csv',
             'prices': '../../data/ai/ai_tier_prices.csv', 'hci_listings': '../../data/sponsor_listings.csv', 'hci_pcy': '../../data/per_conference_year.csv'}),
 }
 

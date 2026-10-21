@@ -1,16 +1,16 @@
-"""Generate dashboard/ai/index.html (NeurIPS / ICML / ICLR) from the HCI page,
+"""Generate dashboard/ml/index.html (NeurIPS / ICML / ICLR) from the HCI page,
 so both pages share one layout, style and set of controls.
 
     python scripts/make_ai_page.py
 
-It swaps in the AI conferences, sectors, headline numbers, notes, summary and
-method text, and adds a section comparing AI and HCI sponsorship.
+It swaps in the ML conferences, sectors, headline numbers, notes, summary and
+method text, and adds a section comparing ML and HCI sponsorship.
 """
 import os, re
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 SRC = os.path.join(ROOT, 'dashboard', 'index.html')
-OUT = os.path.join(ROOT, 'dashboard', 'ai', 'index.html')
+OUT = os.path.join(ROOT, 'dashboard', 'ml', 'index.html')
 L = lambda en, zh: f'<span lang="en">{en}</span><span lang="zh">{zh}</span>'
 
 s = open(SRC, encoding='utf-8').read()
@@ -39,7 +39,7 @@ def note(section_id, en, zh):
 
 
 # ---- header -----------------------------------------------------------------
-rep(L('Who Sponsors HCI Conferences', '谁在赞助 HCI 会议'), L('Who Sponsors AI Conferences', '谁在赞助 AI 会议'))
+rep(L('Who Sponsors HCI Conferences', '谁在赞助 HCI 会议'), L('Who Sponsors ML Conferences', '谁在赞助机器学习会议'))
 rep('CHI · CSCW · UIST · UbiComp · DIS · IUI · FAccT · AIES</p>', 'NeurIPS · ICML · ICLR</p>')
 rep(L('Who pays for the main HCI conferences, and how that has changed over the years. The sponsor lists were compiled by hand from each conference’s website.',
       '谁在为主要的 HCI 会议出钱，以及这些年的变化。赞助商名单根据各会议官网手工整理。'),
@@ -144,7 +144,7 @@ summary = f'''    <ul class="summary" lang="en">
     <ul class="summary" lang="zh">
         <li><strong>赞助规模比 HCI 大一个数量级。</strong>按公开等级价估算，NeurIPS 2025 的赞助至少 {m_("neurips2025")}，同年 CHI 约 {m_("chi2025")}。</li>
         <li><strong>金融机构是第二大赞助群体。</strong>全部赞助条目中 {k_("finshare")} 来自对冲基金、做市商和银行，如 Citadel、Jane Street、Jump、D. E. Shaw、Two Sigma；它们在 HCI 会议里几乎看不到。</li>
-        <li><strong>同一批公司，侧重不同。</strong>Google、Microsoft、Meta 两边都赞助；Adobe、Autodesk 主要在 HCI；Amazon、百度、字节几乎只在 AI。2023 年后，Lambda、Together AI、Nebius、Scale AI 等 AI 基础设施和数据公司大量进入。</li>
+        <li><strong>同一批公司，侧重不同。</strong>Google、Microsoft、Meta 两边都赞助；Adobe、Autodesk 主要在 HCI；Amazon、百度、字节几乎只在机器学习会议。2023 年后，Lambda、Together AI、Nebius、Scale AI 等 AI 基础设施和数据公司大量进入。</li>
     </ul>
 '''
 s = s[:m.start(2)] + summary + s[m.end(2):]
@@ -152,8 +152,8 @@ s = s[:m.start(2)] + summary + s[m.end(2):]
 # ---- comparison section, before the summary ------------------------------------------------------
 cmp = f'''  <section class="card" id="vs-card">
     <h2 id="vs-hci">{L('Compared with HCI', '和 HCI 会议比')}</h2>
-    <p class="note">{L('Left: sponsors per edition (each organization once), solid lines for AI conferences and dashed lines for CHI, CSCW, UIST and UbiComp. Right: companies that sponsored both fields, and how many editions of each they sponsored in the selected years.',
-                       '左：每届赞助方数量（同一机构在一届只计 1 次），实线是 AI 会议，虚线是 CHI、CSCW、UIST、UbiComp。右：两边都赞助过的企业，在所选年份内分别赞助了多少届 AI 会议和 HCI 会议。')}</p>
+    <p class="note">{L('Left: sponsors per edition (each organization once), solid lines for ML conferences and dashed lines for CHI, CSCW, UIST and UbiComp. Right: companies that sponsored both fields, and how many editions of each they sponsored in the selected years.',
+                       '左：每届赞助方数量（同一机构在一届只计 1 次），实线是机器学习会议，虚线是 CHI、CSCW、UIST、UbiComp。右：两边都赞助过的企业，在所选年份内分别赞助了多少届机器学习会议和 HCI 会议。')}</p>
     <div class="grid" style="gap:2.5rem">
       <div><div class="legend" id="lg-cmp"></div><div id="c-cmp" data-source="pcy hci_pcy" style="min-height:260px"></div></div>
       <div><div class="legend" id="lg-ov"></div><div id="c-ov" data-source="listings hci_listings" style="min-height:420px"></div></div>
@@ -165,7 +165,7 @@ rep('  <section class="card" id="summary-card">', cmp + '  <section class="card"
 
 CMP_JS = r'''
 <script>
-// AI vs HCI: sponsors per edition
+// ML vs HCI: sponsors per edition
 window.HX.on(() => {
   const H = window.HX;
   const el = document.getElementById('c-cmp'), lg = document.getElementById('lg-cmp');
@@ -221,7 +221,7 @@ window.HX.on(() => {
   const items = [...A.keys()].filter(o => Hm.has(o)).map(o => ({org: o, ai: A.get(o), hci: Hm.get(o), country: ctry.get(o)}))
     .sort((p, q) => (q.ai + q.hci) - (p.ai + p.hci) || p.org.localeCompare(q.org)).slice(0, 16);
   const cA = H.C[0], cH = H.C[3];
-  H.legend(lg, [[cA, H.T('AI conference editions', 'AI 会议届次')], [cH, H.T('HCI conference editions', 'HCI 会议届次')]]);
+  H.legend(lg, [[cA, H.T('ML conference editions', '机器学习会议届次')], [cH, H.T('HCI conference editions', 'HCI 会议届次')]]);
   const W = el.clientWidth || 400, rowH = 26, Ht = items.length * rowH + 22;
   const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${Math.max(Ht, 30)}`);
   if (!items.length) { svg.append('text').attr('y', 14).attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text(H.T('No company sponsored both fields in the selected years', '所选年份内没有两边都赞助的企业')); return; }
@@ -238,7 +238,7 @@ window.HX.on(() => {
   g.append('text').attr('x', d => x(d.ai) + 4).attr('y', d => y(d.org) + bh / 2).attr('dy', '.35em').attr('font-size', 10).attr('fill', 'var(--color-fg-muted)').text(d => d.ai);
   g.append('text').attr('x', d => x(d.hci) + 4).attr('y', d => y(d.org) + bh * 1.5 + 2).attr('dy', '.35em').attr('font-size', 10).attr('fill', 'var(--color-fg-muted)').text(d => d.hci);
   g.append('rect').attr('x', 0).attr('width', W).attr('y', d => y(d.org)).attr('height', y.bandwidth()).attr('fill', 'transparent')
-    .on('mousemove', (ev, d) => H.showTip(ev, [['t', d.org], ['', H.T(`AI conferences: ${d.ai} editions`, `AI 会议：${d.ai} 届`)], ['', H.T(`HCI conferences: ${d.hci} editions`, `HCI 会议：${d.hci} 届`)]])).on('mouseleave', H.hideTip);
+    .on('mousemove', (ev, d) => H.showTip(ev, [['t', d.org], ['', H.T(`ML conferences: ${d.ai} editions`, `机器学习会议：${d.ai} 届`)], ['', H.T(`HCI conferences: ${d.hci} editions`, `HCI 会议：${d.hci} 届`)]])).on('mouseleave', H.hideTip);
 });
 </script>
 '''

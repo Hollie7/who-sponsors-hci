@@ -1,0 +1,3 @@
+/ai /ml/ 301
+/ai/ /ml/ 301
+/ai/* /ml/:splat 301

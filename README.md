@@ -5,7 +5,7 @@
 Sponsor lists, sponsorship tiers and published tier prices for academic conferences, compiled from their public websites, cleaned up, estimated and visualized. The aim is to give some data to the ongoing debate about industry's role in academic HCI.
 
 - **HCI and AI ethics:** CHI, CSCW, UIST, UbiComp, DIS, IUI, FAccT, AIES. 983 sponsor listings, 298 organizations, 105 conference editions.
-- **AI:** NeurIPS, ICML, ICLR. 1,907 listings, 578 organizations, 33 editions.
+- **Machine learning:** NeurIPS, ICML, ICLR. 1,907 listings, 578 organizations, 33 editions.
 - **Compiled:** October 2026, by Holly Tianqi Song ([hollysong.site](https://hollysong.site)).
 
 ## Repository layout
@@ -17,17 +17,17 @@ data/
   per_conference_year.csv       totals per edition: sponsors, companies, estimated amount, attendance (generated)
   top_sponsors.csv              organizations ranked by editions sponsored (generated)
   tier_prices.csv               published sponsorship tier prices
-  ai/raw/{neurips,icml,iclr}_raw.tsv  raw AI conference lists (EMPTY = no list found that year)
-  ai/ai_*.csv                   cleaned AI tables (generated)
+  ai/raw/{neurips,icml,iclr}_raw.tsv  raw ML conference lists (EMPTY = no list found that year)
+  ai/ai_*.csv                   cleaned ML tables (generated)
 scripts/
   build.py, countries.py        build the HCI tables; organization → country
-  ai/build_ai.py, normalize.py, ai_meta.py   build the AI tables; name merging, sector, country
-  make_ai_page.py               build dashboard/ai/index.html from the HCI page, so both share one layout
+  ai/build_ai.py, normalize.py, ai_meta.py   build the ML tables; name merging, sector, country
+  make_ai_page.py               build dashboard/ml/index.html from the HCI page, so both share one layout
   make_standalone.py            local preview of the dashboards (dashboard/**/standalone.html)
   build_site.py                 build the public website into docs/
 dashboard/
   index.html, flags.js          HCI and AI-ethics dashboard (English / Chinese)
-  ai/index.html                 AI conference dashboard (generated from index.html by scripts/make_ai_page.py)
+  ml/index.html                 ML conference dashboard (generated from index.html by scripts/make_ai_page.py)
 docs/                           the public website (generated)
 site.config.json                author, links and analytics settings for the website
 ```
@@ -37,7 +37,7 @@ site.config.json                author, links and analytics settings for the web
 ```bash
 pip install pandas
 python scripts/build.py            # HCI tables in data/
-python scripts/ai/build_ai.py      # AI tables in data/ai/
+python scripts/ai/build_ai.py      # ML tables in data/ai/
 python scripts/build_site.py       # website in docs/
 python -m http.server 8000         # then open http://localhost:8000/docs/
 ```
@@ -65,7 +65,7 @@ python -m http.server 8000         # then open http://localhost:8000/docs/
 - An organization counts once per edition, whatever its tier.
 - Organizers are not sponsors: ACM, SIGCHI, SIGAI, SIGGRAPH, SIGMOBILE and AAAI are left out.
 - Host universities and local government or society supporters are listed (`Supporter (host)`, `Special`) but not counted in amounts.
-- Brands of one company are merged: Meta/Facebook/Oculus, Yahoo/Verizon Media/Oath, Tableau/Salesforce, Google with DeepMind. In the AI data also LinkedIn → Microsoft, Habana and Nervana → Intel, Xilinx → AMD, TikTok → ByteDance, Borealis AI → RBC, MosaicML → Databricks, TRI → Toyota.
+- Brands of one company are merged: Meta/Facebook/Oculus, Yahoo/Verizon Media/Oath, Tableau/Salesforce, Google with DeepMind. In the ML data also LinkedIn → Microsoft, Habana and Nervana → Intel, Xilinx → AMD, TikTok → ByteDance, Borealis AI → RBC, MosaicML → Databricks, TRI → Toyota.
 - FAccT and AIES often show Google and DeepMind logos side by side; these were entered as one Google listing, so for those two conferences the data cannot tell which editions DeepMind paid for.
 
 **Estimated amounts.**
@@ -73,9 +73,9 @@ python -m http.server 8000         # then open http://localhost:8000/docs/
 - Years without published prices reuse the nearest year's prices (`price_basis` says which). Friend and Supporter tiers count as $1,000.
 - An edition gets an estimate only when at least half of its paying sponsors have a known price.
 - FAccT publishes tier prices but not who is in which tier, so every FAccT sponsor counts at the lowest tier ($5k before 2023, $10k from 2023).
-- For the AI conferences only two price lists were found (NeurIPS 2024, ICML 2026), so only NeurIPS 2023–2025 and ICML 2025–2026 are estimated. For reference, NeurIPS's budget statement reports $3.7M in sponsor income for 2019.
+- For the ML conferences only two price lists were found (NeurIPS 2024, ICML 2026), so only NeurIPS 2023–2025 and ICML 2025–2026 are estimated. For reference, NeurIPS's budget statement reports $3.7M in sponsor income for 2019.
 
-**Countries.** Two attributions: the sponsoring entity's headquarters, or its parent company. About 40 small companies (mostly in the AI data) could not be located.
+**Countries.** Two attributions: the sponsoring entity's headquarters, or its parent company. About 40 small companies (mostly in the ML data) could not be located.
 
 ## Coverage and gaps
 
@@ -110,17 +110,17 @@ python -m http.server 8000         # then open http://localhost:8000/docs/
 - **AIES has a different mix.** Companies make up a similar share (about 58%), but its foundations are AI-safety and longtermist funders (Future of Life Institute, BERI, Founders Pledge, Survival and Flourishing Fund), and its companies lean toward enterprise and regulated firms: IBM (7 editions), PwC, JPMorgan Chase (2023–2025), Salesforce, Lenovo, Ericsson.
 - **Google is the only organization that sponsored all eight conferences.**
 
-**AI conferences compared with HCI**
+**ML conferences compared with HCI**
 
 1. **An order of magnitude larger.** NeurIPS 2025 is estimated at $5.8M or more from 148 sponsors; CHI 2025 at about $0.43M from 21.
-2. **Finance is the second-largest group.** About 22% of AI listings and 28% of the estimated money come from trading and quant firms (Citadel, Jane Street, Jump, D. E. Shaw, Two Sigma, HRT, Optiver, G-Research). HCI conferences have almost none.
-3. **The same companies split differently.** Google, Microsoft and Meta sponsor both sides; Adobe and Autodesk mostly HCI; Amazon, Baidu and ByteDance almost only AI.
-4. **More Chinese sponsors.** About 9% of AI organization-editions are from mainland China, versus under 3% for HCI.
+2. **Finance is the second-largest group.** About 22% of ML listings and 28% of the estimated money come from trading and quant firms (Citadel, Jane Street, Jump, D. E. Shaw, Two Sigma, HRT, Optiver, G-Research). HCI conferences have almost none.
+3. **The same companies split differently.** Google, Microsoft and Meta sponsor both sides; Adobe and Autodesk mostly HCI; Amazon, Baidu and ByteDance almost only ML.
+4. **More Chinese sponsors.** About 9% of ML organization-editions are from mainland China, versus under 3% for HCI.
 5. **New entrants are AI infrastructure and data companies** (Lambda, Together AI, Nebius, Cerebras, Scale AI, Toloka, Turing, Handshake), mostly since 2023.
 
 ## Website
 
-`docs/` is a static site: `docs/index.html` (HCI and AI ethics, English / Chinese) and `docs/ai/index.html` (AI conferences).
+`docs/` is a static site: `docs/index.html` (HCI and AI ethics, English / Chinese) and `docs/ml/index.html` (ML conferences: NeurIPS, ICML, ICLR; the old `/ai/` address redirects there).
 
 1. Fill in `site.config.json`: `author`, `homepage`, `email` (optional), `github_repo`, `site_url` and `goatcounter` (optional).
 2. Run `python scripts/build_site.py`.
