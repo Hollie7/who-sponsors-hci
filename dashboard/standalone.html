@@ -102,6 +102,10 @@ window.dash = (() => {
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .hx-shell{--hx-c0:#8aa6c6;--hx-c1:#d99b7e;--hx-c2:#93b89d;--hx-c3:#d6bb7f;--hx-c4:#c49dba;--hx-c5:#8fbac4;--hx-c6:#a9a0cb;--hx-c7:#b5ab98;--hx-heat:#e6dccd}}
 :root[data-theme="dark"] .hx-shell{--hx-c0:#8aa6c6;--hx-c1:#d99b7e;--hx-c2:#93b89d;--hx-c3:#d6bb7f;--hx-c4:#c49dba;--hx-c5:#8fbac4;--hx-c6:#a9a0cb;--hx-c7:#b5ab98;--hx-heat:#e6dccd}
 .hx .hm{overflow-x:auto}
+.hx .xbtn{font:inherit;font-size:var(--cds-font-size-caption);padding:3px 10px;border:1px solid var(--color-border-line);border-radius:var(--cds-radius);background:var(--color-bg);color:var(--color-fg);cursor:pointer;margin-left:6px}
+.hx .xbtn:hover{border-color:var(--color-fg-muted)}
+.hx .xbtn:focus-visible{outline:2px solid var(--color-fg);outline-offset:1px}
+#t-export td:last-child{text-align:right;white-space:nowrap}
 .hx-toc{display:none}
 .hx h1,.hx h2{scroll-margin-top:7rem}
 @media (min-width:1100px){
@@ -123,13 +127,13 @@ window.dash = (() => {
     <ol>
       <li><a href="#top" data-target="top"><span lang="en">Overview</span><span lang="zh">概览</span></a></li>
       <li><a href="#timeline" data-target="timeline"><span lang="en">When sponsors joined and left</span><span lang="zh">赞助商的进出时间线</span></a></li>
-      <li><a href="#by-conference" data-target="by-conference"><span lang="en">Top sponsors by conference</span><span lang="zh">各会议的 top sponsor</span></a></li>
+      <li><a href="#by-conference" data-target="by-conference"><span lang="en">Top sponsors</span><span lang="zh">Top sponsors</span></a></li>
       <li><a href="#countries" data-target="countries"><span lang="en">By country or region</span><span lang="zh">按国家 / 地区</span></a></li>
-      <li><a href="#top-sponsors" data-target="top-sponsors"><span lang="en">Top 15 overall</span><span lang="zh">合计 top 15</span></a></li>
       <li><a href="#sectors" data-target="sectors"><span lang="en">Who the sponsors are</span><span lang="zh">赞助方构成</span></a></li>
       <li><a href="#per-attendee" data-target="per-attendee"><span lang="en">Per attendee</span><span lang="zh">人均赞助额</span></a></li>
       <li><a href="#money" data-target="money"><span lang="en">Estimated sponsorship</span><span lang="zh">估算赞助额</span></a></li>
       <li><a href="#listings" data-target="listings"><span lang="en">All listings</span><span lang="zh">全部赞助条目</span></a></li>
+      <li><a href="#export" data-target="export"><span lang="en">Export data</span><span lang="zh">导出数据</span></a></li>
       <li><a href="#prices" data-target="prices"><span lang="en">Tier prices</span><span lang="zh">等级价格</span></a></li>
       <li><a href="#caveats" data-target="caveats"><span lang="en">Method and gaps</span><span lang="zh">口径与缺口</span></a></li>
     </ol>
@@ -175,11 +179,15 @@ window.dash = (() => {
     <div class="tlbox"><div id="c-tl" data-source="listings" style="min-height:320px"></div></div>
   </section>
 
-  <section class="card">
-    <h2 id="by-conference"><span lang="en">Top sponsors by conference</span><span lang="zh">各会议的 top sponsor</span></h2>
-    <p class="note"><span lang="en">For the selected years, the 10 organizations that sponsored each conference most often (one count per organization per edition). The label shows editions and the year span; hover for tiers and estimated totals.</span><span lang="zh">所选年份内，每个会议按赞助届数排序的前 10 名（同一机构在一届会议计 1 次）；右侧是届数和年份跨度。悬停查看各等级次数和估算金额。</span></p>
-    <div id="c-ct-chi" data-source="listings" style="min-height:290px"></div>
-    <div id="c-ct-rest" data-source="listings" style="min-height:290px;display:flex;flex-direction:column;gap:var(--cds-gap-lg);margin-top:var(--cds-gap-lg)"></div>
+  <section class="card" id="top-card">
+    <h2 id="by-conference"><span lang="en">Top sponsors</span><span lang="zh">Top sponsors</span></h2>
+    <p class="note"><span lang="en">For the selected years, organizations ranked by how many editions they sponsored (one count per organization per edition). Pick a conference or all eight together, and how many to show. The label shows editions and the year span; hover for tiers and estimated totals.</span><span lang="zh">所选年份内，按赞助届数给机构排名（同一机构在一届会议计 1 次）。可以选单个会议或八个会议合计，以及显示前几名。右侧是届数和年份跨度，悬停查看各等级次数和估算金额。</span></p>
+    <div class="ctrls" style="margin-bottom:var(--cds-gap-sm)">
+      <div class="seg" id="ts-conf" role="group" aria-label="Conference"></div>
+      <div class="seg" id="ts-n" role="group" aria-label="How many"><button data-v="10" aria-pressed="true"><span lang="en">Top 10</span><span lang="zh">前 10</span></button><button data-v="15" aria-pressed="false"><span lang="en">Top 15</span><span lang="zh">前 15</span></button><button data-v="20" aria-pressed="false"><span lang="en">Top 20</span><span lang="zh">前 20</span></button><button data-v="30" aria-pressed="false"><span lang="en">Top 30</span><span lang="zh">前 30</span></button></div>
+    </div>
+    <div class="legend" id="lg-top"></div>
+    <div id="c-top" data-source="listings" style="min-height:290px"></div>
   </section>
 
 
@@ -189,12 +197,6 @@ window.dash = (() => {
       <p class="note"><span lang="en">Each cell is the share of a conference’s sponsors (organization × edition, selected years) that come from that country; the number is the count. Darker means a larger share. Reading down a column shows host effects: Japanese sponsors cluster at UIST and UbiComp, Australian ones at DIS.</span><span lang="zh">每格是该会议（所选年份内的“机构 × 届次”）中来自该国家/地区的比例，格内数字是条数，颜色越深占比越高。顺着一列往下看能看到东道主效应：日本机构集中在 UIST 和 UbiComp，澳大利亚机构集中在 DIS。</span></p>
       <div class="legend" id="lg-cty"></div>
       <div class="hm"><div id="c-cty" data-source="listings" style="min-height:360px"></div></div>
-    </div>
-    <div class="card">
-      <h2 id="top-sponsors"><span lang="en">Top 15 across all eight conferences</span><span lang="zh">八个会议合计 top 15</span></h2>
-      <p class="note"><span lang="en">Editions sponsored across all eight conferences in the selected years. Color separates companies from other organizations.</span><span lang="zh">所选年份内，八个会议合计的赞助届数。颜色区分企业与非企业机构。</span></p>
-      <div class="legend" id="lg-top"></div>
-      <div id="c-top" data-source="listings" style="min-height:420px"></div>
     </div>
   </section>
 
@@ -239,6 +241,16 @@ window.dash = (() => {
         </tr></thead><tbody></tbody>
       </table>
     </div>
+  </section>
+
+  <section class="card" id="export-card">
+    <h2 id="export"><span lang="en">Export data</span><span lang="zh">导出数据</span></h2>
+    <p class="note"><span lang="en">Each file is a CSV. “Selected years” files follow the year filter at the top; the two views follow the current settings of those charts. Download asks you to confirm; if it is unavailable here, Copy puts the CSV on your clipboard.</span><span lang="zh">每个文件都是 CSV。带“所选年份”的文件跟随顶部的年份筛选；两个“当前视图”跟随对应图表的当前设置。下载时会先请你确认；如果这里不能下载，可以用“复制”把 CSV 复制到剪贴板。</span></p>
+    <div class="tbox" style="max-height:none" data-source="listings pcy prices">
+      <table id="t-export"><thead><tr><th><span lang="en">Data</span><span lang="zh">数据</span></th><th class="num"><span lang="en">Rows</span><span lang="zh">行数</span></th><th></th></tr></thead><tbody></tbody></table>
+    </div>
+    <p class="note" id="ex-status" role="status" style="margin-top:var(--cds-gap-sm)"></p>
+    <textarea id="ex-fallback" aria-label="CSV" hidden readonly style="width:100%;min-height:8rem;font:12px/1.4 ui-monospace,monospace;background:var(--color-bg);color:var(--color-fg);border:1px solid var(--color-border-line);border-radius:var(--cds-radius)"></textarea>
   </section>
 
   <section class="grid">
@@ -459,31 +471,32 @@ window.HX.aggregate = (rows) => d3.rollups(rows, v => {
   }, r => r.org).map(([org, o]) => ({org, ...o}))
   .sort((a, b) => b.n - a.n || b.est - a.est || a.org.localeCompare(b.org));
 
-// top 10 per conference
-window.HX.on(() => {
+// top sponsors: one chart, conference tabs + top-N
+(() => {
   const H = window.HX;
-  const a = document.getElementById('c-ct-chi'), b = document.getElementById('c-ct-rest'); const st = dash.data('listings');
-  if (H.failOrWait(a, st)) { H.failOrWait(b, st); return; } H.failOrWait(b, st);
-  const rows = H.rows();
-  H.CONF.forEach((c, ci) => {
-    const box = document.createElement('div'); (c === 'CHI' ? a : b).append(box);
-    const h = document.createElement('div'); h.className = 'sub'; h.textContent = c; box.append(h);
-    const inner = document.createElement('div'); box.append(inner);
-    const items = H.aggregate(rows.filter(r => r.conference === c)).slice(0, 10).map(d => ({...d, right: H.T(`${d.n} editions · ${d.first}–${d.last}`, `${d.n} 届 · ${d.first}–${d.last}`)}));
-    H.rankBars(inner, items, H.C[ci], d => [['t', `${c} · ${d.org}`], ['', `${H.CTY_ZH[d.country] || d.country}`], ['', H.T(`${d.n} editions (${d.first}–${d.last})`, `赞助 ${d.n} 届（${d.first}–${d.last}）`)], ['', H.T(`Tiers: ${d.tiers}`, `等级：${d.tiers}`)], ['', H.T(`Estimated total (lower bound): ${H.fmtUSD(d.est)}`, `估算下限合计：${H.fmtUSD(d.est)}`)]]);
-  });
-});
-
-// top 15 overall
-window.HX.on(() => {
-  const H = window.HX;
-  const el = document.getElementById('c-top'); const st = dash.data('listings');
-  if (H.failOrWait(el, st)) return;
-  const items = H.aggregate(H.rows()).slice(0, 15).map(d => ({...d, right: String(d.n)}));
-  H.legend(document.getElementById('lg-top'), [[H.C[0], H.T('Company', '企业')], [H.C[1], H.T('Other organization', '非企业')]]);
-  H.rankBars(el, items, d => d.sector === 'Industry' ? H.C[0] : H.C[1],
-    d => [['t', d.org], ['', `${H.CTY_ZH[d.country] || d.country} · ${H.SECT_ZH[d.sector] || d.sector}`], ['', H.T(`${d.n} editions · ${d.first}–${d.last}`, `${d.n} 届 · ${d.first}–${d.last}`)], ['', H.T(`Conferences: ${d.confs}`, `会议：${d.confs}`)], ['', H.T(`Estimated total (lower bound): ${H.fmtUSD(d.est)}`, `估算下限合计：${H.fmtUSD(d.est)}`)]]);
-});
+  H.topView = {conf: 'ALL', n: 10};
+  const box = document.getElementById('ts-conf');
+  ['ALL', ...H.CONF].forEach(c => { const b = document.createElement('button'); b.dataset.v = c; b.setAttribute('aria-pressed', String(c === 'ALL'));
+    if (c === 'ALL') { const e = document.createElement('span'); e.lang = 'en'; e.textContent = 'All eight'; const z = document.createElement('span'); z.lang = 'zh'; z.textContent = '八个会议合计'; b.append(e, z); } else b.textContent = c;
+    box.append(b); });
+  const wire = (el, set) => el.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+    el.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); set(b.dataset.v); draw(); }));
+  wire(box, v => { H.topView.conf = v; }); wire(document.getElementById('ts-n'), v => { H.topView.n = +v; });
+  H.topItems = () => { const {conf, n} = H.topView; const rows = H.rows().filter(r => conf === 'ALL' || r.conference === conf); return H.aggregate(rows).slice(0, n); };
+  function draw() {
+    const el = document.getElementById('c-top'), lg = document.getElementById('lg-top'); const st = dash.data('listings');
+    lg.replaceChildren(); if (H.failOrWait(el, st)) return;
+    const {conf} = H.topView, all = conf === 'ALL';
+    const items = H.topItems().map(d => ({...d, right: all ? H.T(`${d.n} edition${d.n === 1 ? '' : 's'} · ${d.confs.split(', ').length} conf.`, `${d.n} 届 · ${d.confs.split(', ').length} 个会议`) : H.T(`${d.n} edition${d.n === 1 ? '' : 's'} · ${d.first}–${d.last}`, `${d.n} 届 · ${d.first}–${d.last}`)}));
+    const sectCol = s => H.C[Math.max(0, H.SECT.indexOf(s))];
+    if (all) H.legend(lg, H.SECT.filter(s => items.some(d => d.sector === s)).map(s => [sectCol(s), H.SECT_ZH[s]]));
+    H.rankBars(el, items, all ? (d => sectCol(d.sector)) : H.C[H.CONF.indexOf(conf)],
+      d => [['t', all ? d.org : `${conf} · ${d.org}`], ['', `${H.CTY_ZH[d.country] || d.country || H.T('Unknown', '未知')} · ${H.SECT_ZH[d.sector] || d.sector}`],
+        ['', H.T(`${d.n} edition${d.n === 1 ? '' : 's'} (${d.first}–${d.last})`, `赞助 ${d.n} 届（${d.first}–${d.last}）`)], ...(all ? [['', H.T(`Conferences: ${d.confs}`, `会议：${d.confs}`)]] : [['', H.T(`Tiers: ${d.tiers}`, `等级：${d.tiers}`)]]),
+        ['', H.T(`Estimated total (lower bound): ${H.fmtUSD(d.est)}`, `估算下限合计：${H.fmtUSD(d.est)}`)]]);
+  }
+  H.on(draw);
+})();
 
 // countries × conference heatmap (share of each conference's listings)
 window.HX.on(() => {
@@ -497,6 +510,7 @@ window.HX.on(() => {
   const tot = new Map(cols.map(c => [c, c === 'ALL' ? uniq.length : uniq.filter(r => r.conference === c).length]));
   const by = d3.rollups(uniq, v => v, r => H.cc(r)).map(([cc, v]) => ({cc, v, n: v.length})).sort((a, b) => b.n - a.n);
   const top = by.slice(0, 16);
+  H.ctyTable = by.map(d => { const o = {country_code: d.cc, country: H.CTY_ZH[d.cc] || d.cc || H.T('Unknown', '未知')}; cols.forEach(c => { o[c === 'ALL' ? 'all' : c] = c === 'ALL' ? d.n : d.v.filter(r => r.conference === c).length; }); return o; });
   const W0 = el.parentElement.clientWidth || 600;
   const svg = d3.select(el).append('svg');
   if (!top.length) { svg.attr('width', '100%').attr('viewBox', '0 0 300 20'); svg.append('text').attr('y', 14).attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text(H.T('No records in the selected years', '所选年份内没有记录')); return; }
@@ -726,6 +740,57 @@ dash.onData(() => {
     tb.append(tr);
   });
 });
+})();</script>
+
+<script>(() => {
+// export: CSV files of the data behind the page
+(() => {
+  const H = window.HX;
+  const esc = v => { const t = v == null ? '' : String(v); return /[",\n\r]/.test(t) ? '"' + t.replace(/"/g, '""') + '"' : t; };
+  const csv = (rows, cols) => { cols = cols || (rows[0] ? Object.keys(rows[0]) : []); return '﻿' + [cols.join(','), ...rows.map(r => cols.map(c => esc(r[c])).join(','))].join('\r\n') + '\r\n'; };
+  const yrs = () => H.state.from == null ? 'all-years' : `${H.state.from}-${H.state.to}`;
+  const LIST_COLS = ['id','conference','year','tier','sponsor','org','sector','country','parent_country','est_usd','price_basis','source'];
+  const items = [
+    {id: 'listings', en: 'Sponsor listings, all years', zh: '赞助条目（全部年份）', file: () => 'sponsor_listings.csv', rows: () => dash.data('listings').data, cols: LIST_COLS},
+    {id: 'listings_sel', en: 'Sponsor listings, selected years', zh: '赞助条目（所选年份）', file: () => `sponsor_listings_${yrs()}.csv`, rows: () => H.rows(), cols: LIST_COLS},
+    {id: 'pcy', en: 'Totals per conference edition', zh: '每届汇总', file: () => 'per_conference_year.csv', rows: () => dash.data('pcy').data, cols: null},
+    {id: 'prices', en: 'Published tier prices', zh: '公开的等级价格', file: () => 'tier_prices.csv', rows: () => dash.data('prices').data, cols: null},
+    {id: 'top', en: 'Current view: top sponsors', zh: '当前视图：Top sponsors', file: () => `top_sponsors_${H.topView.conf === 'ALL' ? 'all' : H.topView.conf}_top${H.topView.n}_${yrs()}.csv`,
+      rows: () => (H.topItems ? H.topItems() : []).map((d, i) => ({rank: i + 1, org: d.org, editions: d.n, first: d.first, last: d.last, conferences: d.confs, tiers: d.tiers, est_usd_lower_bound: d.est, sector: d.sector, country: d.country})), cols: null},
+    {id: 'cty', en: 'Current view: country × conference', zh: '当前视图：国家 × 会议', file: () => `country_by_conference_${yrs()}.csv`, rows: () => H.ctyTable || [], cols: null},
+  ];
+  let dl = null;
+  (async () => { try { dl = window.claude && window.claude.use ? await window.claude.use('downloads') : null; } catch (e) { dl = null; } draw(); })();
+  const status = t => { document.getElementById('ex-status').textContent = t; };
+  const ta = document.getElementById('ex-fallback');
+  async function copy(text) {
+    try { await navigator.clipboard.writeText(text); ta.hidden = true; return true; }
+    catch (e) { ta.hidden = false; ta.value = text; ta.focus(); ta.select(); return false; }
+  }
+  function draw() {
+    const tb = document.querySelector('#t-export tbody'); if (!tb) return; tb.replaceChildren();
+    const ok = ['listings', 'pcy', 'prices'].every(id => dash.data(id).status === 'ok');
+    items.forEach(it => {
+      const tr = document.createElement('tr');
+      const a = document.createElement('td'); a.textContent = H.T(it.en, it.zh);
+      const f = document.createElement('div'); f.className = 'note'; f.style.margin = '2px 0 0'; f.textContent = ok ? it.file() : ''; a.append(f);
+      const n = document.createElement('td'); n.className = 'num'; n.textContent = ok ? String(it.rows().length) : '—';
+      const c = document.createElement('td');
+      if (dl) { const b = document.createElement('button'); b.className = 'xbtn'; b.textContent = H.T('Download', '下载'); b.disabled = !ok;
+        b.addEventListener('click', async () => { const name = it.file();
+          try { await dl.save({filename: name, data: csv(it.rows(), it.cols)}); status(H.T(`Saved ${name}.`, `已保存 ${name}。`)); }
+          catch (e) { const code = e && e.code; status(code === 'declined' ? H.T('Download cancelled.', '已取消下载。') : code === 'rate_limited' ? H.T('Another download is waiting for confirmation. Try again in a moment.', '还有一个下载在等待确认，请稍后再试。') : H.T('Download is not available here. Use Copy instead.', '这里不能下载，请改用“复制”。')); } });
+        c.append(b); }
+      const b2 = document.createElement('button'); b2.className = 'xbtn'; b2.textContent = H.T('Copy', '复制'); b2.disabled = !ok;
+      b2.addEventListener('click', async () => { const okc = await copy(csv(it.rows(), it.cols).replace(/^﻿/, ''));
+        status(okc ? H.T(`Copied ${it.file()} to the clipboard.`, `已把 ${it.file()} 复制到剪贴板。`) : H.T('Copying is blocked here. The CSV is selected in the box below; copy it with your keyboard.', '这里不能直接复制。CSV 已在下方文本框中选中，请用键盘复制。')); });
+      c.append(b2);
+      tr.append(a, n, c); tb.append(tr);
+    });
+  }
+  H.on(draw);
+  document.querySelectorAll('#ts-conf, #ts-n').forEach(el => el.addEventListener('click', () => setTimeout(draw, 0)));
+})();
 })();</script>
 
 </div>
