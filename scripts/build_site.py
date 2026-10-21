@@ -80,6 +80,8 @@ PAGES = [
 if __name__ == '__main__':
     if os.path.isdir(DOCS): shutil.rmtree(DOCS)
     shutil.copytree(os.path.join(ROOT, 'data'), os.path.join(DOCS, 'data'))
+    # d3 is served from the site itself so the pages load without a third-party CDN
+    shutil.copytree(os.path.join(ROOT, 'vendor'), os.path.join(DOCS, 'vendor'))
     for src, out, title, files, bi, back in PAGES:
         body = open(os.path.join(ROOT, src), encoding='utf-8').read()
         body = re.sub(r'<script>(.*?)</script>', lambda m: '<script>(() => {' + m.group(1) + '})();</script>', body, flags=re.S)
@@ -88,7 +90,8 @@ if __name__ == '__main__':
         assert anchor in body, src
         body = body.replace(anchor, foot + '\n  ' + anchor, 1)
         flags_src = os.path.join(ROOT, os.path.dirname(src), 'flags.js')
-        head = (HEAD.replace('__FILES__', json.dumps(files)).replace('<title>HCI Conference Sponsorship</title>', f'<title>{e(title)}</title>')
+        head = (HEAD.replace('__FILES__', json.dumps(files))
+                .replace('https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js', back + 'vendor/d3.min.js').replace('<title>HCI Conference Sponsorship</title>', f'<title>{e(title)}</title>')
                 .replace('</head>', FOOT_CSS + '</head>'))
         dest = os.path.join(DOCS, out); os.makedirs(os.path.dirname(dest), exist_ok=True)
         open(dest, 'w', encoding='utf-8').write(head + body + TAIL)

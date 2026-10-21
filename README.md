@@ -121,7 +121,9 @@ python -m http.server 8000         # then open http://localhost:8000/docs/
 
 1. Fill in `site.config.json`: `author`, `homepage`, `email` (optional), `github_repo`, `site_url` and `goatcounter` (optional).
 2. Run `python scripts/build_site.py`.
-3. Deploy: import the repository in Vercel (`vercel.json` already serves `docs/` with no build step), or use GitHub Pages, Netlify or Cloudflare Pages.
+3. Deploy with Cloudflare Pages (build command empty, build output directory `docs`), or Vercel (`vercel.json` already serves `docs/`), GitHub Pages or Netlify.
+
+d3 is served from `docs/vendor/` (ISC license, see `vendor/D3-LICENSE`) so the pages do not depend on a third-party CDN.
 
 Page views are counted with [GoatCounter](https://www.goatcounter.com/), which uses no cookies. Tick "Allow adding visitor counts on your website" in its settings so the footer can show the count.
 
