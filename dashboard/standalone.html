@@ -111,7 +111,6 @@ window.dash = (() => {
 .hx .xbtn{font:inherit;font-size:var(--cds-font-size-caption);padding:3px 10px;border:1px solid var(--color-border-line);border-radius:var(--cds-radius);background:var(--color-bg);color:var(--color-fg);cursor:pointer;margin-left:6px}
 .hx .xbtn:hover{border-color:var(--color-fg-muted)}
 .hx .xbtn:focus-visible{outline:2px solid var(--color-fg);outline-offset:1px}
-#t-export td:last-child{text-align:right;white-space:nowrap}
 .hx-toc{display:none}
 .hx h1,.hx h2{scroll-margin-top:7rem}
 @media (min-width:1100px){
@@ -139,7 +138,6 @@ window.dash = (() => {
       <li><a href="#per-attendee" data-target="per-attendee"><span lang="en">Per attendee</span><span lang="zh">人均赞助额</span></a></li>
       <li><a href="#money" data-target="money"><span lang="en">Estimated sponsorship</span><span lang="zh">估算赞助额</span></a></li>
       <li><a href="#listings" data-target="listings"><span lang="en">All listings</span><span lang="zh">全部赞助条目</span></a></li>
-      <li><a href="#export" data-target="export"><span lang="en">Export data</span><span lang="zh">导出数据</span></a></li>
       <li><a href="#prices" data-target="prices"><span lang="en">Tier prices</span><span lang="zh">等级价格</span></a></li>
       <li><a href="#caveats" data-target="caveats"><span lang="en">Method and gaps</span><span lang="zh">口径与缺口</span></a></li>
     </ol>
@@ -150,6 +148,11 @@ window.dash = (() => {
     <p class="note" style="margin:var(--cds-gap-xs) 0 0">CHI · CSCW · UIST · UbiComp · DIS · IUI · FAccT · AIES</p>
     <p class="lede" id="takeaway" lang="en">Sponsorship is concentrated in a few big tech companies: across all years Google appears in <b data-source="kpis" data-field="value" data-where="metric=google" class="dash-skeleton">—</b> editions, Microsoft in <b data-source="kpis" data-field="value" data-where="metric=microsoft" class="dash-skeleton">—</b> and Meta in <b data-source="kpis" data-field="value" data-where="metric=meta" class="dash-skeleton">—</b>. Corporate sponsorship of CSCW has shrunk sharply: at published tier prices, the average per edition fell from about <b data-source="cscw_trend" data-field="value" data-where="period=2013%E2%80%932017" class="dash-skeleton">—</b> in 2013–2017 to about <b data-source="cscw_trend" data-field="value" data-where="period=2023%E2%80%932026" class="dash-skeleton">—</b> in 2023–2026.</p>
     <p class="lede" lang="zh">赞助几乎集中在少数大科技公司：全部年份里 Google 出现 <b data-source="kpis" data-field="value" data-where="metric=google" class="dash-skeleton">—</b> 届、Microsoft <b data-source="kpis" data-field="value" data-where="metric=microsoft" class="dash-skeleton">—</b> 届、Meta <b data-source="kpis" data-field="value" data-where="metric=meta" class="dash-skeleton">—</b> 届。CSCW 的企业赞助明显萎缩——按公开等级价估算，2013–2017 年平均每届约 <b data-source="cscw_trend" data-field="value" data-where="period=2013%E2%80%932017" class="dash-skeleton">—</b>，2023–2026 年降到约 <b data-source="cscw_trend" data-field="value" data-where="period=2023%E2%80%932026" class="dash-skeleton">—</b>。</p>
+    <div class="ctrls" style="margin-top:var(--cds-gap-sm)" data-source="listings">
+      <button class="xbtn" id="ex-btn" style="margin-left:0"><span lang="en">Export raw data (CSV)</span><span lang="zh">导出原始数据（CSV）</span></button>
+      <span class="note" id="ex-status" role="status" style="margin:0"></span>
+    </div>
+    <textarea id="ex-fallback" aria-label="CSV" hidden readonly style="width:100%;min-height:8rem;margin-top:var(--cds-gap-sm);font:12px/1.4 ui-monospace,monospace;background:var(--color-bg);color:var(--color-fg);border:1px solid var(--color-border-line);border-radius:var(--cds-radius)"></textarea>
   </header>
 
   <section class="tiles" aria-label="Headline figures (all years)">
@@ -248,15 +251,6 @@ window.dash = (() => {
     </div>
   </section>
 
-  <section class="card" id="export-card">
-    <h2 id="export"><span lang="en">Export data</span><span lang="zh">导出数据</span></h2>
-    <p class="note"><span lang="en">Each file is a CSV. “Selected years” files follow the year filter at the top; the two views follow the current settings of those charts. Download asks you to confirm; if it is unavailable here, Copy puts the CSV on your clipboard.</span><span lang="zh">每个文件都是 CSV。带“所选年份”的文件跟随顶部的年份筛选；两个“当前视图”跟随对应图表的当前设置。下载时会先请你确认；如果这里不能下载，可以用“复制”把 CSV 复制到剪贴板。</span></p>
-    <div class="tbox" style="max-height:none" data-source="listings pcy prices">
-      <table id="t-export"><thead><tr><th><span lang="en">Data</span><span lang="zh">数据</span></th><th class="num"><span lang="en">Rows</span><span lang="zh">行数</span></th><th></th></tr></thead><tbody></tbody></table>
-    </div>
-    <p class="note" id="ex-status" role="status" style="margin-top:var(--cds-gap-sm)"></p>
-    <textarea id="ex-fallback" aria-label="CSV" hidden readonly style="width:100%;min-height:8rem;font:12px/1.4 ui-monospace,monospace;background:var(--color-bg);color:var(--color-fg);border:1px solid var(--color-border-line);border-radius:var(--cds-radius)"></textarea>
-  </section>
 
   <section class="grid">
     <div class="card">
@@ -778,53 +772,28 @@ dash.onData(() => {
 })();</script>
 
 <script>(() => {
-// export: CSV files of the data behind the page
+// export: the raw sponsor listings as one CSV
 (() => {
   const H = window.HX;
+  const COLS = ['id','conference','year','tier','sponsor','org','sector','country','parent_country','est_usd','price_basis','source'];
   const esc = v => { const t = v == null ? '' : String(v); return /[",\n\r]/.test(t) ? '"' + t.replace(/"/g, '""') + '"' : t; };
-  const csv = (rows, cols) => { cols = cols || (rows[0] ? Object.keys(rows[0]) : []); return '﻿' + [cols.join(','), ...rows.map(r => cols.map(c => esc(r[c])).join(','))].join('\r\n') + '\r\n'; };
-  const yrs = () => H.state.from == null ? 'all-years' : `${H.state.from}-${H.state.to}`;
-  const LIST_COLS = ['id','conference','year','tier','sponsor','org','sector','country','parent_country','est_usd','price_basis','source'];
-  const items = [
-    {id: 'listings', en: 'Sponsor listings, all years', zh: '赞助条目（全部年份）', file: () => 'sponsor_listings.csv', rows: () => dash.data('listings').data, cols: LIST_COLS},
-    {id: 'listings_sel', en: 'Sponsor listings, selected years', zh: '赞助条目（所选年份）', file: () => `sponsor_listings_${yrs()}.csv`, rows: () => H.rows(), cols: LIST_COLS},
-    {id: 'pcy', en: 'Totals per conference edition', zh: '每届汇总', file: () => 'per_conference_year.csv', rows: () => dash.data('pcy').data, cols: null},
-    {id: 'prices', en: 'Published tier prices', zh: '公开的等级价格', file: () => 'tier_prices.csv', rows: () => dash.data('prices').data, cols: null},
-    {id: 'top', en: 'Current view: top sponsors', zh: '当前视图：Top sponsors', file: () => `top_sponsors_${H.topView.conf === 'ALL' ? 'all' : H.topView.conf}_top${H.topView.n}_${yrs()}.csv`,
-      rows: () => (H.topItems ? H.topItems() : []).map((d, i) => ({rank: i + 1, org: d.org, editions: d.n, first: d.first, last: d.last, conferences: d.confs, tiers: d.tiers, est_usd_lower_bound: d.est, sector: d.sector, country: d.country})), cols: null},
-    {id: 'cty', en: 'Current view: country × conference', zh: '当前视图：国家 × 会议', file: () => `country_by_conference_${yrs()}.csv`, rows: () => H.ctyTable || [], cols: null},
-  ];
+  const csv = rows => [COLS.join(','), ...rows.map(r => COLS.map(c => esc(r[c])).join(','))].join('\r\n') + '\r\n';
+  const btn = document.getElementById('ex-btn'), status = document.getElementById('ex-status'), ta = document.getElementById('ex-fallback');
   let dl = null;
-  (async () => { try { dl = window.claude && window.claude.use ? await window.claude.use('downloads') : null; } catch (e) { dl = null; } draw(); })();
-  const status = t => { document.getElementById('ex-status').textContent = t; };
-  const ta = document.getElementById('ex-fallback');
-  async function copy(text) {
-    try { await navigator.clipboard.writeText(text); ta.hidden = true; return true; }
-    catch (e) { ta.hidden = false; ta.value = text; ta.focus(); ta.select(); return false; }
-  }
-  function draw() {
-    const tb = document.querySelector('#t-export tbody'); if (!tb) return; tb.replaceChildren();
-    const ok = ['listings', 'pcy', 'prices'].every(id => dash.data(id).status === 'ok');
-    items.forEach(it => {
-      const tr = document.createElement('tr');
-      const a = document.createElement('td'); a.textContent = H.T(it.en, it.zh);
-      const f = document.createElement('div'); f.className = 'note'; f.style.margin = '2px 0 0'; f.textContent = ok ? it.file() : ''; a.append(f);
-      const n = document.createElement('td'); n.className = 'num'; n.textContent = ok ? String(it.rows().length) : '—';
-      const c = document.createElement('td');
-      if (dl) { const b = document.createElement('button'); b.className = 'xbtn'; b.textContent = H.T('Download', '下载'); b.disabled = !ok;
-        b.addEventListener('click', async () => { const name = it.file();
-          try { await dl.save({filename: name, data: csv(it.rows(), it.cols)}); status(H.T(`Saved ${name}.`, `已保存 ${name}。`)); }
-          catch (e) { const code = e && e.code; status(code === 'declined' ? H.T('Download cancelled.', '已取消下载。') : code === 'rate_limited' ? H.T('Another download is waiting for confirmation. Try again in a moment.', '还有一个下载在等待确认，请稍后再试。') : H.T('Download is not available here. Use Copy instead.', '这里不能下载，请改用“复制”。')); } });
-        c.append(b); }
-      const b2 = document.createElement('button'); b2.className = 'xbtn'; b2.textContent = H.T('Copy', '复制'); b2.disabled = !ok;
-      b2.addEventListener('click', async () => { const okc = await copy(csv(it.rows(), it.cols).replace(/^﻿/, ''));
-        status(okc ? H.T(`Copied ${it.file()} to the clipboard.`, `已把 ${it.file()} 复制到剪贴板。`) : H.T('Copying is blocked here. The CSV is selected in the box below; copy it with your keyboard.', '这里不能直接复制。CSV 已在下方文本框中选中，请用键盘复制。')); });
-      c.append(b2);
-      tr.append(a, n, c); tb.append(tr);
-    });
-  }
-  H.on(draw);
-  document.querySelectorAll('#ts-conf, #ts-n').forEach(el => el.addEventListener('click', () => setTimeout(draw, 0)));
+  (async () => { try { dl = window.claude && window.claude.use ? await window.claude.use('downloads') : null; } catch (e) { dl = null; } })();
+  dash.onData(() => { btn.disabled = dash.data('listings').status !== 'ok'; });
+  btn.addEventListener('click', async () => {
+    const st = dash.data('listings'); if (st.status !== 'ok') return;
+    const text = csv(st.data), name = 'conference_sponsor_listings.csv';
+    status.textContent = ''; ta.hidden = true;
+    if (dl) {
+      try { await dl.save({filename: name, data: '﻿' + text}); status.textContent = H.T(`Saved ${name}.`, `已保存 ${name}。`); return; }
+      catch (e) { if (e && e.code === 'declined') { status.textContent = H.T('Download cancelled.', '已取消下载。'); return; }
+        if (e && e.code === 'rate_limited') { status.textContent = H.T('Another download is waiting for confirmation.', '还有一个下载在等待确认。'); return; } }
+    }
+    try { await navigator.clipboard.writeText(text); status.textContent = H.T(`Download isn’t available here, so the CSV (${st.data.length} rows) was copied to your clipboard.`, `这里不能下载，已把 CSV（${st.data.length} 行）复制到剪贴板。`); }
+    catch (e) { ta.hidden = false; ta.value = text; ta.focus(); ta.select(); status.textContent = H.T('Download isn’t available here. The CSV is selected below; copy it with your keyboard.', '这里不能下载。CSV 已在下方选中，请用键盘复制。'); }
+  });
 })();
 })();</script>
 
