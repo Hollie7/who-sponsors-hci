@@ -28,6 +28,11 @@ a{color:inherit}
 .dash-skeleton{color:transparent;background:var(--cds-chart-grid);border-radius:4px}
 </style>
 <script>
+// outside Claude: a plain browser download for the page's export button
+window.claude = window.claude || {use: async n => n !== 'downloads' ? null : {save: async ({filename, data}) => {
+  const url = URL.createObjectURL(data instanceof Blob ? data : new Blob([data], {type: 'text/csv;charset=utf-8'}));
+  const a = document.createElement('a'); a.href = url; a.download = filename; document.body.append(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000); return {status: 'saved'}; }}};
 window.dash = (() => {
   const files = {"listings": "../data/sponsor_listings.csv", "pcy": "../data/per_conference_year.csv", "prices": "../data/tier_prices.csv"};
   const store = {}; const calcs = {}; const subs = [];
@@ -101,8 +106,17 @@ window.dash = (() => {
 .hx-shell{--hx-c0:#5f7fa3;--hx-c1:#c27c5c;--hx-c2:#6f9a7c;--hx-c3:#c2a15e;--hx-c4:#a87d9b;--hx-c5:#6b9aa6;--hx-c6:#8a7fae;--hx-c7:#968b78;--hx-heat:#5c5348}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .hx-shell{--hx-c0:#8aa6c6;--hx-c1:#d99b7e;--hx-c2:#93b89d;--hx-c3:#d6bb7f;--hx-c4:#c49dba;--hx-c5:#8fbac4;--hx-c6:#a9a0cb;--hx-c7:#b5ab98;--hx-heat:#e6dccd}}
 :root[data-theme="dark"] .hx-shell{--hx-c0:#8aa6c6;--hx-c1:#d99b7e;--hx-c2:#93b89d;--hx-c3:#d6bb7f;--hx-c4:#c49dba;--hx-c5:#8fbac4;--hx-c6:#a9a0cb;--hx-c7:#b5ab98;--hx-heat:#e6dccd}
-.hx .method h3{font-size:var(--cds-font-size-body);font-weight:var(--cds-font-weight-medium);margin:var(--cds-gap-lg) 0 var(--cds-gap-xs)}
-.hx .method h3:first-of-type{margin-top:var(--cds-gap-sm)}
+.hx .method details{border-top:1px solid var(--color-border-line)}
+.hx .method details:last-of-type{border-bottom:1px solid var(--color-border-line)}
+.hx .method summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:.5rem;padding:10px 2px;font-weight:var(--cds-font-weight-medium)}
+.hx .method summary::-webkit-details-marker{display:none}
+.hx .method summary::before{content:"";width:.45rem;height:.45rem;border-right:1.5px solid var(--color-fg-muted);border-bottom:1.5px solid var(--color-fg-muted);transform:rotate(-45deg);transition:transform .15s ease;flex:none}
+.hx .method details[open]>summary::before{transform:rotate(45deg)}
+.hx .method summary:hover{color:var(--color-fg)}
+.hx .method summary:focus-visible{outline:2px solid var(--color-fg);outline-offset:2px}
+.hx .method .dbody{padding:0 2px var(--cds-gap-md) 1.2rem}
+.hx .method ul.caveats{list-style:disc;margin:0}
+@media (prefers-reduced-motion: reduce){.hx .method summary::before{transition:none}}
 .hx .method ul.caveats{font-size:var(--cds-font-size-caption)}
 .hx table.cov td{vertical-align:top;line-height:1.45}
 .hx table.cov td:first-child{font-weight:var(--cds-font-weight-medium);white-space:nowrap}
@@ -266,15 +280,18 @@ window.dash = (() => {
 
   <section class="card method">
     <h2 id="caveats"><span lang="en">Method and gaps</span><span lang="zh">口径与缺口</span></h2>
-
-    <h3><span lang="en">Where the data come from</span><span lang="zh">数据来源</span></h3>
-    <ul class="caveats">
+    <p class="note"><span lang="en">Click a heading to expand it.</span><span lang="zh">点击标题展开。</span></p>
+    <details>
+      <summary><span lang="en">Where the data come from</span><span lang="zh">数据来源</span></summary>
+      <div class="dbody"><ul class="caveats">
         <li><span lang="en">Each edition’s official sponsor page, archived copies of it, and sponsor prospectuses (“call for sponsors”). Attendance comes from the SIGCHI conference history archive, and from Wikipedia for CHI 2024–2025.</span><span lang="zh">各届官网的赞助页及其存档、招商书（call for sponsors）。注册人数来自 SIGCHI 的会议历史存档，CHI 2024–2025 来自 Wikipedia。</span></li>
         <li><span lang="en">Only logos whose organization could be identified are included. Some names are inferred from image file names or link targets.</span><span lang="zh">只收录能识别出机构的 logo；部分机构名是根据图片文件名或链接推断的。</span></li>
       </ul>
-
-    <h3><span lang="en">Coverage by conference</span><span lang="zh">各会议的覆盖范围</span></h3>
-    <div class="tbox" style="max-height:none">
+      </div>
+    </details>
+    <details>
+      <summary><span lang="en">Coverage by conference</span><span lang="zh">各会议的覆盖范围</span></summary>
+      <div class="dbody"><div class="tbox" style="max-height:none">
       <table class="cov">
         <thead><tr><th><span lang="en">Conference</span><span lang="zh">会议</span></th><th><span lang="en">Sponsor lists</span><span lang="zh">有名单的年份</span></th><th><span lang="en">Missing</span><span lang="zh">缺失</span></th><th><span lang="en">Tier prices</span><span lang="zh">等级价格</span></th><th><span lang="en">Attendance</span><span lang="zh">注册人数</span></th></tr></thead>
         <tbody>
@@ -289,29 +306,37 @@ window.dash = (() => {
         </tbody>
       </table>
     </div>
-
-    <h3><span lang="en">How sponsors are counted</span><span lang="zh">怎么计数</span></h3>
-    <ul class="caveats">
+      </div>
+    </details>
+    <details>
+      <summary><span lang="en">How sponsors are counted</span><span lang="zh">怎么计数</span></summary>
+      <div class="dbody"><ul class="caveats">
         <li><span lang="en">An organization counts once per conference edition, whatever its tier.</span><span lang="zh">同一机构在一届会议只计 1 次，不论等级。</span></li>
         <li><span lang="en">Organizers are not sponsors: ACM, SIGCHI, SIGAI, SIGGRAPH, SIGMOBILE and AAAI are left out.</span><span lang="zh">主办方不算赞助商：ACM、SIGCHI、SIGAI、SIGGRAPH、SIGMOBILE、AAAI 都不计入。</span></li>
         <li><span lang="en">Host universities and local government or society supporters are listed (tier “Supporter (host)” or “Special”) but not counted in amounts.</span><span lang="zh">承办高校和当地政府、学会的支持计入名单（等级为 “Supporter (host)” 或 “Special”），但不计金额。</span></li>
         <li><span lang="en">Brands of one company are merged: Meta/Facebook/Oculus, Yahoo/Verizon Media/Oath, Tableau/Salesforce, and Google with DeepMind. FAccT and AIES often show Google and DeepMind side by side; these were entered as a single Google listing, so for those two conferences you cannot tell which editions DeepMind paid for.</span><span lang="zh">同一公司的不同品牌已合并：Meta/Facebook/Oculus、Yahoo/Verizon Media/Oath、Tableau/Salesforce，以及 Google 与 DeepMind。FAccT 和 AIES 常把 Google 和 DeepMind 两个 logo 并列，录入时合并成一条 Google，所以这两个会议看不出哪一届是 DeepMind 出资。</span></li>
       </ul>
-
-    <h3><span lang="en">Estimated amounts</span><span lang="zh">估算金额</span></h3>
-    <ul class="caveats">
+      </div>
+    </details>
+    <details>
+      <summary><span lang="en">Estimated amounts</span><span lang="zh">估算金额</span></summary>
+      <div class="dbody"><ul class="caveats">
         <li><span lang="en">Every amount is a lower bound: each sponsor counts at the published floor price of its tier. Themed sponsorships, booths, recruiting and other extras are ignored.</span><span lang="zh">所有金额都是下限：每家赞助商按其等级的公开起步价计，忽略主题赞助、展位、招聘等额外付费。</span></li>
         <li><span lang="en">Years without a published price list reuse the nearest year’s prices (the price basis column in the listings table says which). Friend and Supporter tiers count as $1,000.</span><span lang="zh">没有公开价目的年份沿用最近一年的价目（赞助条目表的“价格依据”一列有标注）。Friend 和 Supporter 等级按 $1,000 计。</span></li>
         <li><span lang="en">An edition gets an estimate only when at least half of its paying sponsors have a known price; otherwise it is left out of the charts.</span><span lang="zh">只有一届中至少一半的出资赞助方有已知价格，才给出这一届的估算；否则图中不画。</span></li>
         <li><span lang="en">FAccT is the weakest estimate: its tiers are unknown, so the lowest tier is assumed for every sponsor.</span><span lang="zh">FAccT 的估算最弱：等级未知，所有赞助方都按最低一档计。</span></li>
       </ul>
-
-    <h3><span lang="en">Countries</span><span lang="zh">国家 / 地区</span></h3>
-    <ul class="caveats">
+      </div>
+    </details>
+    <details>
+      <summary><span lang="en">Countries</span><span lang="zh">国家 / 地区</span></summary>
+      <div class="dbody"><ul class="caveats">
         <li><span lang="en">Two modes, switchable at the top. Headquarters uses the sponsoring entity’s own location: Toyota Research Institute, FXPAL, MERL, Megagon Labs and Nokia Bell Labs are in the US. Parent company uses the group’s home: Japan for the first four, Finland for Nokia Bell Labs, China for TikTok.</span><span lang="zh">两种口径，可在顶部切换。“总部所在地”按赞助实体自身所在地：Toyota Research Institute、FXPAL、MERL、Megagon Labs、Nokia Bell Labs 都在美国。“母公司国籍”按集团所在国：前四家计为日本，Nokia Bell Labs 计为芬兰，TikTok 计为中国。</span></li>
         <li><span lang="en">A few small companies could not be located; they stay in the lists but get no country row. The countries tile at the top uses headquarters.</span><span lang="zh">少数小公司无法确定所在地，仍计入名单，但不单列国家。顶部“涉及的国家/地区”卡片按总部口径计。</span></li>
         <li><span lang="en">Flags come from the open-source flag-icons set; the Spanish flag omits the coat of arms.</span><span lang="zh">国旗图形来自开源的 flag-icons 图标库；西班牙国旗省略了国徽。</span></li>
       </ul>
+      </div>
+    </details>
   </section>
   <div class="tip" id="tip"></div>
 </div>

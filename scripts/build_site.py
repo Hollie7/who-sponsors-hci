@@ -50,11 +50,15 @@ def footer(bilingual, page_rel_root):
       t.innerHTML = {json.dumps(L('views', '次浏览'))}; el.append(t); el.hidden = false; }}).catch(() => {{}});
 }})();
 </script>'''
+    lic = L('Data <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>, code MIT: free to reuse with credit.',
+            '数据 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>，代码 MIT：注明出处即可转载使用。')
+    disc = L('Independent project, not affiliated with ACM, SIGCHI, AAAI or any organization listed. Compiled by hand from public pages; amounts are lower-bound estimates.',
+             '独立项目，与 ACM、SIGCHI、AAAI 及所列机构无关。名单根据公开网页手工整理，金额为估算下限。')
+    fixl = (L(f'Spot an error? <a href="{issues}" target="_blank" rel="noopener">Open an issue</a>.', f'发现错误？欢迎<a href="{issues}" target="_blank" rel="noopener">提 issue</a>。') if issues else '')
     return f'''
 <footer class="site-foot">
   <p>{" · ".join([*who, other])}</p>
-  <p><b>{L("Reuse", "转载与引用")}</b> {L('The data are released under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> and the code under the MIT License: you may copy, adapt and republish them, including commercially, as long as you credit the source. Suggested citation:', '数据以 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> 发布，代码以 MIT 许可发布：可以复制、改编和再发布（包括商业用途），但需注明出处。建议引用：')} {cite}</p>
-  <p><b>{L("Disclaimer", "免责声明")}</b> {L('This is an independent project, not affiliated with or endorsed by ACM, SIGCHI, AAAI, any of the conferences, or any organization listed. Sponsor lists were compiled by hand from public conference websites and archives and may be incomplete or contain errors. Dollar amounts are lower-bound estimates from published tier prices, not what any conference actually received. Organization names and logos belong to their owners.', '这是一个独立项目，与 ACM、SIGCHI、AAAI、各会议及页面中列出的任何机构均无关联，也未获其认可。赞助名单根据公开的会议官网和存档手工整理，可能不完整或有错误。金额是按公开等级价估算的下限，并非会议的实际收入。机构名称和 logo 归其各自所有者。')} {fix}</p>
+  <p>{lic} {disc} {fixl}</p>
   {views}
 </footer>'''
 
