@@ -420,7 +420,7 @@ const SECT = ['Industry','Government / foundation','University / academic','Publ
 const SECT_ZH0 = {'Industry':'企业','Government / foundation':'政府 / 基金会','University / academic':'高校 / 学术机构','Publisher':'出版社','Unknown':'未识别'};
 const CTY_ZH0 = {US:'美国',JP:'日本',KR:'韩国',CA:'加拿大',GB:'英国',DE:'德国',FR:'法国',FI:'芬兰',CN:'中国大陆',TW:'台湾地区',AU:'澳大利亚',NL:'荷兰',DK:'丹麦',AE:'阿联酋',CH:'瑞士',IN:'印度',NO:'挪威',SE:'瑞典',IT:'意大利',SG:'新加坡',ES:'西班牙',EU:'欧盟项目',CY:'塞浦路斯',GR:'希腊',PT:'葡萄牙',AT:'奥地利','':'未知'};
 const fmtUSD = v => (v==null||isNaN(v)) ? '—' : '$' + d3.format(',')(Math.round(v));
-const fmtK = v => (v==null||isNaN(v)) ? '—' : (v>=1000 ? '$' + d3.format(',.0f')(v/1000) + 'k' : '$' + d3.format(',.0f')(v));
+const fmtK = v => (v==null||isNaN(v)) ? '—' : v>=1e6 ? '$' + d3.format(',.1~f')(v/1e6) + 'M' : (v>=1000 ? '$' + d3.format(',.0f')(v/1000) + 'k' : '$' + d3.format(',.0f')(v));
 const flag = cc => (!cc || cc.length !== 2) ? '' : String.fromCodePoint(...[...cc.toUpperCase()].map(c => 0x1F1E6 + c.charCodeAt(0) - 65));
 const state = {from: null, to: null, flags: true, cmode: 'hq', lang: 'en'};
 const T = (en, zh) => state.lang === 'zh' ? zh : en;
@@ -642,9 +642,9 @@ window.HX.on(() => {
   if (!top.length) { svg.attr('width', '100%').attr('viewBox', '0 0 300 20'); svg.append('text').attr('y', 14).attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text(H.T('No records in the selected years', '所选年份内没有记录')); return; }
   const names = top.map(d => H.CTY_ZH[d.cc] || d.cc || H.T('Unknown', '未知'));
   const lw = H.measure(svg, names, 12) + 10 + H.flagGap();
-  const head = 34, rowH = 26, cw = Math.max(44, Math.min(78, Math.floor((W0 - lw - 8) / cols.length)));
+  const head = 34, rowH = 26, cw = Math.max(44, Math.min(88, Math.floor((W0 - lw - 8) / cols.length)));
   const W = lw + cw * cols.length + 4, Ht = head + top.length * rowH + 4;
-  svg.attr('width', W > W0 ? W : '100%').attr('viewBox', `0 0 ${W} ${Ht}`);
+  svg.attr('width', W).attr('viewBox', `0 0 ${W} ${Ht}`).style('max-width', 'none');
   const op = d3.scaleSqrt([0, 1], [0, 0.92]);
   cols.forEach((c, j) => svg.append('text').attr('x', lw + j * cw + cw / 2).attr('y', head - 12).attr('text-anchor', 'middle').attr('font-size', 11)
     .attr('font-weight', c === 'ALL' ? 600 : 400).attr('fill', 'var(--color-fg-muted)').text(c === 'ALL' ? H.T('All', '合计') : c));
@@ -743,7 +743,7 @@ window.HX.on(() => {
   svg.append('g').selectAll('line').data(y.ticks(5)).join('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', d => y(d)).attr('y2', d => y(d)).attr('stroke', 'var(--cds-chart-grid)');
   svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickSize(0).tickFormat(d => '$' + d)).attr('font-size', null).attr('font-family', null)
     .call(g => { g.select('.domain').remove(); g.selectAll('text').attr('fill', 'var(--color-fg-muted)').attr('font-size', 10); });
-  svg.append('g').attr('transform', `translate(0,${Ht - m.b})`).call(d3.axisBottom(x).ticks(Math.min(8, Math.floor(W / 60))).tickFormat(d3.format('d')).tickSize(0)).attr('font-size', null).attr('font-family', null)
+  svg.append('g').attr('transform', `translate(0,${Ht - m.b})`).call(d3.axisBottom(x).tickValues(x.ticks(Math.min(8, Math.floor(W / 60))).filter(Number.isInteger)).tickFormat(d3.format('d')).tickSize(0)).attr('font-size', null).attr('font-family', null)
     .call(g => { g.select('.domain').attr('stroke', 'var(--cds-chart-axis)'); g.selectAll('text').attr('fill', 'var(--color-fg-muted)').attr('font-size', 10).attr('dy', '1em'); });
   confs.forEach(c => {
     const col = H.C[H.CONF.indexOf(c)]; const s = rows.filter(r => r.conference === c).sort((a, b) => a.y - b.y);

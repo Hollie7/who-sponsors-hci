@@ -37,144 +37,317 @@
 .hx .chk,.hx .lbl{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);display:inline-flex;align-items:center;gap:.35rem}
 .hx .tlbox{overflow-x:auto}
 .hx .bar{position:sticky;top:0;z-index:4;background:var(--color-bg);padding:var(--cds-pad-sm) 0;border-bottom:1px solid var(--color-border-line)}
+.hx-shell[data-lang="en"] [lang="zh"],.hx-shell[data-lang="zh"] [lang="en"]{display:none!important}
+/* reading layout: one centered column; on wide screens a contents rail on the left */
+.hx-shell{font-family:var(--font-anthropic-sans);display:grid;grid-template-columns:minmax(0,52rem);justify-content:center;gap:var(--cds-gap-xl)}
+.hx-shell{--hx-c0:#5f7fa3;--hx-c1:#c27c5c;--hx-c2:#6f9a7c;--hx-c3:#c2a15e;--hx-c4:#a87d9b;--hx-c5:#6b9aa6;--hx-c6:#8a7fae;--hx-c7:#968b78;--hx-heat:#5c5348}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .hx-shell{--hx-c0:#8aa6c6;--hx-c1:#d99b7e;--hx-c2:#93b89d;--hx-c3:#d6bb7f;--hx-c4:#c49dba;--hx-c5:#8fbac4;--hx-c6:#a9a0cb;--hx-c7:#b5ab98;--hx-heat:#e6dccd}}
+:root[data-theme="dark"] .hx-shell{--hx-c0:#8aa6c6;--hx-c1:#d99b7e;--hx-c2:#93b89d;--hx-c3:#d6bb7f;--hx-c4:#c49dba;--hx-c5:#8fbac4;--hx-c6:#a9a0cb;--hx-c7:#b5ab98;--hx-heat:#e6dccd}
+.hx .method details{border-top:1px solid var(--color-border-line)}
+.hx .method details:last-of-type{border-bottom:1px solid var(--color-border-line)}
+.hx .method summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:.5rem;padding:10px 2px;font-weight:var(--cds-font-weight-medium)}
+.hx .method summary::-webkit-details-marker{display:none}
+.hx .method summary::before{content:"";width:.45rem;height:.45rem;border-right:1.5px solid var(--color-fg-muted);border-bottom:1.5px solid var(--color-fg-muted);transform:rotate(-45deg);transition:transform .15s ease;flex:none}
+.hx .method details[open]>summary::before{transform:rotate(45deg)}
+.hx .method summary:hover{color:var(--color-fg)}
+.hx .method summary:focus-visible{outline:2px solid var(--color-fg);outline-offset:2px}
+.hx .method .dbody{padding:0 2px var(--cds-gap-md) 1.2rem}
+.hx .method ul.caveats{list-style:disc;margin:0}
+@media (prefers-reduced-motion: reduce){.hx .method summary::before{transition:none}}
+.hx .method ul.caveats{font-size:var(--cds-font-size-caption)}
+.hx table.cov td{vertical-align:top;line-height:1.45}
+.hx table.cov td:first-child{font-weight:var(--cds-font-weight-medium);white-space:nowrap}
+.hx table.cov th{position:static}
+.hx .hx-head{position:relative}
+.hx .set-wrap{position:absolute;top:0;right:0;z-index:6}
+.hx .set-btn{display:inline-flex;align-items:center;gap:6px;font:inherit;font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);background:transparent;border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:4px 10px;cursor:pointer}
+.hx .set-btn:hover,.hx .set-btn[aria-expanded="true"]{color:var(--color-fg);border-color:var(--color-fg-muted)}
+.hx .set-btn:focus-visible{outline:2px solid var(--color-fg);outline-offset:2px}
+.hx .set-pop{position:absolute;right:0;top:calc(100% + 6px);min-width:16rem;background:var(--cds-surface-popover);border:1px solid var(--cds-border);border-radius:var(--cds-radius);box-shadow:var(--cds-shadow-popover);padding:var(--cds-pad-md);display:flex;flex-direction:column;gap:var(--cds-gap-sm)}
+.hx .set-pop[hidden]{display:none}
+.hx .set-row{display:flex;align-items:center;justify-content:space-between;gap:var(--cds-gap-md)}
+.hx .set-k{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.hx .hx-head h1{padding-right:7.5rem}
+.hx .hm{overflow-x:auto}
+.hx .xbtn{font:inherit;font-size:var(--cds-font-size-caption);padding:3px 10px;border:1px solid var(--color-border-line);border-radius:var(--cds-radius);background:var(--color-bg);color:var(--color-fg);cursor:pointer;margin-left:6px}
+.hx .xbtn:hover{border-color:var(--color-fg-muted)}
+.hx .xbtn:focus-visible{outline:2px solid var(--color-fg);outline-offset:1px}
+.hx-toc{display:none}
+.hx h1,.hx h2{scroll-margin-top:7rem}
+@media (min-width:1100px){
+  .hx-shell{grid-template-columns:13rem minmax(0,52rem)}
+  .hx-toc{display:block;position:sticky;top:var(--cds-gap-lg);align-self:start;max-height:calc(100vh - 3rem);overflow-y:auto;padding-top:.4rem}
+}
+.hx-toc .t{font-size:var(--cds-font-size-caption);text-transform:uppercase;letter-spacing:.06em;color:var(--color-fg-muted);margin:0 0 var(--cds-gap-sm)}
+.hx-toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px;border-left:1px solid var(--color-border-line)}
+.hx-toc a{display:block;padding:4px 0 4px 12px;margin-left:-1px;border-left:2px solid transparent;color:var(--color-fg-muted);text-decoration:none;font-size:var(--cds-font-size-caption);line-height:1.4}
+.hx-toc a:hover{color:var(--color-fg)}
+.hx-toc a:focus-visible{outline:2px solid var(--color-fg);outline-offset:2px}
+.hx-toc a[aria-current="true"]{color:var(--color-fg);border-left-color:var(--color-fg);font-weight:var(--cds-font-weight-medium)}
 .hx .bar .rng{font-size:var(--cds-font-size-caption);color:var(--color-fg)}
+/* blog-style reading: no boxes around sections, larger type, more air */
+.hx{gap:4.5rem}
+.hx .card{background:none;border:0;border-radius:0;padding:0}
+.hx > .tiles,.hx > .bar{margin-top:-2rem}
+.hx .grid{gap:4.5rem}
+.hx .multi{gap:2rem 2.5rem}
+.hx h1{font-size:2.4rem;line-height:1.15;letter-spacing:-.01em;text-wrap:balance}
+.hx h2{font-family:var(--font-anthropic-serif);font-weight:400;font-size:1.65rem;line-height:1.25;margin:0 0 .6rem;text-wrap:balance}
+.hx header .note{font-size:14px;margin-top:.5rem}
+.hx .lede{font-size:17px;line-height:1.75;color:var(--color-fg);margin-top:1.1rem;max-width:44rem}
+.hx .note{font-size:15px;line-height:1.7;margin:0 0 1.25rem;max-width:44rem}
+.hx .sub{font-size:15px;margin:0 0 .5rem}
+.hx .tiles{gap:1.5rem}
+.hx .tile{padding:.15rem 0 .15rem 1rem;border-left:2px solid var(--color-border-line)}
+.hx .tile .v{font-size:2.1rem;line-height:1.15}
+.hx .tile .l{font-size:13px;line-height:1.45;margin-top:.25rem}
+.hx .legend{font-size:13px;gap:.5rem 1.1rem;margin-bottom:.9rem}
+.hx .ctrls{gap:.6rem 1rem}
+.hx .seg button{font-size:13px;padding:5px 11px}
+.hx .chk,.hx .lbl,.hx .bar .rng{font-size:13px}
+.hx input.search,.hx select{font-size:13px;padding:5px 9px}
+.hx .bar{padding:.75rem 0}
+.hx table{font-size:13px}
+.hx th{background:var(--color-bg);padding:7px 9px}
+.hx td{padding:7px 9px;line-height:1.5}
+.hx ul.caveats,.hx .method ul.caveats{font-size:15px;line-height:1.7;color:var(--color-fg-muted)}
+.hx ul.caveats li+li{margin-top:.45rem}
+.hx .method summary{font-size:16px;padding:14px 2px}
+.hx .method .dbody{padding:.25rem 2px 1.5rem 1.2rem}
+.hx .xbtn{font-size:13px;padding:5px 12px}
+.hx .set-btn{font-size:13px;padding:5px 11px}
+.hx-toc a{font-size:13px;padding:5px 0 5px 12px}
+.hx h1,.hx h2{scroll-margin-top:8rem}
+.hx ul.summary{margin:0;padding-left:1.2rem;font-size:16px;line-height:1.75;max-width:44rem;color:var(--color-fg)}
+.hx ul.summary li+li{margin-top:.6rem}
+.hx ul.summary strong{font-weight:600}
 </style>
 
+<div class="hx-shell" data-lang="en">
+  <nav class="hx-toc" aria-label="Contents">
+    <p class="t"><span lang="en">Contents</span><span lang="zh">目录</span></p>
+    <ol>
+      <li><a href="#top" data-target="top"><span lang="en">Overview</span><span lang="zh">概览</span></a></li>
+      <li><a href="#timeline" data-target="timeline"><span lang="en">When sponsors joined and left</span><span lang="zh">赞助商的进出时间线</span></a></li>
+      <li><a href="#by-conference" data-target="by-conference"><span lang="en">Top sponsors</span><span lang="zh">Top sponsors</span></a></li>
+      <li><a href="#countries" data-target="countries"><span lang="en">By country or region</span><span lang="zh">按国家 / 地区</span></a></li>
+      <li><a href="#sectors" data-target="sectors"><span lang="en">Who the sponsors are</span><span lang="zh">赞助方构成</span></a></li>
+      <li><a href="#per-attendee" data-target="per-attendee"><span lang="en">Per attendee</span><span lang="zh">人均赞助额</span></a></li>
+      <li><a href="#money" data-target="money"><span lang="en">Estimated sponsorship</span><span lang="zh">估算赞助额</span></a></li>
+      <li><a href="#vs-hci" data-target="vs-hci"><span lang="en">Compared with HCI</span><span lang="zh">和 HCI 会议比</span></a></li>
+      <li><a href="#summary" data-target="summary"><span lang="en">Summary</span><span lang="zh">总结</span></a></li>
+      <li><a href="#listings" data-target="listings"><span lang="en">All listings</span><span lang="zh">全部赞助条目</span></a></li>
+      <li><a href="#prices" data-target="prices"><span lang="en">Tier prices</span><span lang="zh">等级价格</span></a></li>
+      <li><a href="#caveats" data-target="caveats"><span lang="en">Method and gaps</span><span lang="zh">口径与缺口</span></a></li>
+    </ol>
+  </nav>
 <div class="hx">
-  <header>
-    <h1 id="top">NeurIPS / ICML / ICLR 赞助商版图</h1>
-    <p class="lede" id="takeaway">AI 会议的赞助规模比 HCI 会议大一个数量级：按公开等级价估算，NeurIPS 2025 的赞助下限约 <b data-source="money_cmp" data-field="value" data-where="metric=neurips2025" class="dash-skeleton">—</b>，同年 CHI 约 <b data-source="money_cmp" data-field="value" data-where="metric=chi2025" class="dash-skeleton">—</b>。全部赞助条目里 <b data-source="kpis" data-field="value" data-where="metric=finshare" class="dash-skeleton">—</b> 来自对冲基金、做市商和银行，这在 HCI 会议里几乎看不到。</p>
+  <header class="hx-head">
+    <div class="set-wrap">
+      <button class="set-btn" id="set-btn" aria-haspopup="true" aria-expanded="false" aria-controls="set-pop">
+        <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="2.6"/><path d="M10 1.8v2.1M10 16.1v2.1M18.2 10h-2.1M3.9 10H1.8M15.8 4.2l-1.5 1.5M5.7 14.3l-1.5 1.5M15.8 15.8l-1.5-1.5M5.7 5.7L4.2 4.2"/></svg>
+        <span lang="en">Settings</span><span lang="zh">设置</span>
+      </button>
+      <div class="set-pop" id="set-pop" role="dialog" aria-label="Settings" hidden>
+        <div class="set-row"><span class="set-k"><span lang="en">Language</span><span lang="zh">语言</span></span>
+          <div class="seg" id="f-lang" role="group" aria-label="Language"><button data-v="en" aria-pressed="true">English</button><button data-v="zh" aria-pressed="false">中文</button></div></div>
+        <div class="set-row"><span class="set-k"><span lang="en">Flags</span><span lang="zh">国旗</span></span>
+          <label class="chk"><input type="checkbox" id="f-flags" class="flag-toggle" checked> <span lang="en">Show next to names</span><span lang="zh">在机构名旁显示</span></label></div>
+      </div>
+    </div>
+    <h1 id="top"><span lang="en">Who Sponsors AI Conferences</span><span lang="zh">谁在赞助 AI 会议</span></h1>
+    <p class="note" style="margin:var(--cds-gap-xs) 0 0">NeurIPS · ICML · ICLR</p>
+    <p class="lede"><span lang="en">Who pays for the three largest machine-learning conferences, and how that compares with HCI. The sponsor lists come from each conference’s public sponsor pages and archives.</span><span lang="zh">谁在为三大机器学习会议出钱，以及和 HCI 会议相比有何不同。赞助商名单来自各会议公开的赞助页和存档。</span></p>
+    <div class="ctrls" style="margin-top:1rem" data-source="listings">
+      <button class="xbtn" id="ex-btn" style="margin-left:0"><span lang="en">Export raw data (CSV)</span><span lang="zh">导出原始数据（CSV）</span></button>
+      <span class="note" id="ex-status" role="status" style="margin:0"></span>
+    </div>
+    <textarea id="ex-fallback" aria-label="CSV" hidden readonly style="width:100%;min-height:8rem;margin-top:var(--cds-gap-sm);font:12px/1.4 ui-monospace,monospace;background:var(--color-bg);color:var(--color-fg);border:1px solid var(--color-border-line);border-radius:var(--cds-radius)"></textarea>
   </header>
 
   <section class="tiles" aria-label="Headline figures (all years)">
-    <div class="card tile"><div class="v dash-skeleton" data-source="kpis" data-field="value" data-where="metric=listings">—</div><div class="l">赞助条目（全部年份）</div></div>
-    <div class="card tile"><div class="v dash-skeleton" data-source="kpis" data-field="value" data-where="metric=orgs">—</div><div class="l">不同的赞助机构</div></div>
-    <div class="card tile"><div class="v dash-skeleton" data-source="kpis" data-field="value" data-where="metric=confyears">—</div><div class="l">已覆盖的会议届次</div></div>
-    <div class="card tile"><div class="v dash-skeleton" data-source="kpis" data-field="value" data-where="metric=countries">—</div><div class="l">涉及的国家 / 地区</div></div>
+    <div class="card tile"><div class="v dash-skeleton" data-source="kpis" data-field="value" data-where="metric=listings">—</div><div class="l"><span lang="en">Sponsor listings (all years)</span><span lang="zh">赞助条目（全部年份）</span></div></div>
+    <div class="card tile"><div class="v dash-skeleton" data-source="kpis" data-field="value" data-where="metric=orgs">—</div><div class="l"><span lang="en">Distinct sponsoring organizations</span><span lang="zh">不同的赞助机构</span></div></div>
+    <div class="card tile"><div class="v dash-skeleton" data-source="kpis" data-field="value" data-where="metric=confyears">—</div><div class="l"><span lang="en">Conference editions covered</span><span lang="zh">已覆盖的会议届次</span></div></div>
+    <div class="card tile"><div class="v dash-skeleton" data-source="kpis" data-field="value" data-where="metric=countries">—</div><div class="l"><span lang="en">Countries and regions</span><span lang="zh">涉及的国家 / 地区</span></div></div>
   </section>
 
   <div class="bar ctrls" id="filters" role="group" aria-label="Filters">
-    <span class="lbl">年份 <select id="f-from" aria-label="From year"></select> – <select id="f-to" aria-label="To year"></select></span>
+    <span class="lbl"><span lang="en">Years</span><span lang="zh">年份</span> <select id="f-from" aria-label="From year"></select> – <select id="f-to" aria-label="To year"></select></span>
     <div class="seg" id="f-preset" role="group" aria-label="Year presets">
-      <button data-v="all" aria-pressed="true">全部</button><button data-v="2017">2017 起</button><button data-v="2020">2020 起</button><button data-v="2023">2023 起</button>
+      <button data-v="all" aria-pressed="true"><span lang="en">All</span><span lang="zh">全部</span></button><button data-v="2006"><span lang="en">2006+</span><span lang="zh">2006 起</span></button><button data-v="2013"><span lang="en">2013+</span><span lang="zh">2013 起</span></button><button data-v="2020"><span lang="en">2020+</span><span lang="zh">2020 起</span></button>
     </div>
-    <label class="chk"><input type="checkbox" id="f-flags" class="flag-toggle" checked> 显示国旗</label>
-    <span class="lbl">国家归属</span><div class="seg" id="f-cmode" role="group" aria-label="Country attribution"><button data-v="hq" aria-pressed="true">总部所在地</button><button data-v="parent" aria-pressed="false">母公司国籍</button></div>
+    <span class="lbl"><span lang="en">Country by</span><span lang="zh">国家归属</span></span><div class="seg" id="f-cmode" role="group" aria-label="Country attribution"><button data-v="hq" aria-pressed="true"><span lang="en">Headquarters</span><span lang="zh">总部所在地</span></button><button data-v="parent" aria-pressed="false"><span lang="en">Parent company</span><span lang="zh">母公司国籍</span></button></div>
     <span class="rng" id="f-label"></span>
   </div>
 
-  <section class="card">
-    <h2 id="by-conference">各会议的 top sponsor</h2>
-    <p class="note">所选年份内，每个会议按赞助届数排序的前 10 名（同一机构在一届会议计 1 次）；右侧是届数和年份跨度。悬停查看各等级次数。</p>
-    <div id="c-ct-chi" data-source="listings" style="min-height:290px"></div>
-    <div id="c-ct-rest" data-source="listings" style="min-height:290px;display:flex;flex-direction:column;gap:var(--cds-gap-lg);margin-top:var(--cds-gap-lg)"></div>
-  </section>
-
   <section class="card" id="timeline-card">
-    <h2 id="timeline">赞助商的进出时间线</h2>
-    <p class="note">每行一家机构，每列一年；有色格子表示当年赞助，颜色越深等级越高（按等级名称：Diamond/Platinum、Gold/Silver、Bronze 及其他；NeurIPS 2013–2014 的名单没有等级）。灰色列是没拿到名单的年份，那里空着不代表没赞助；NeurIPS 2021 当年没有设赞助。按“最后出现”排序时，最近仍在赞助的机构排在最上面，越往下停得越早。</p>
+    <h2 id="timeline"><span lang="en">When sponsors joined and left</span><span lang="zh">赞助商的进出时间线</span></h2>
+    <p class="note"><span lang="en">One row per organization, one column per year. A filled cell means the organization sponsored that year; darker means a higher tier (Diamond or Platinum / Gold or Silver / Bronze and others; NeurIPS 2013–2014 lists have no tiers). Grey columns are years with no sponsor list; NeurIPS 2021 had no sponsorship. Sorting by last appearance puts current sponsors at the top; further down stopped earlier.</span><span lang="zh">每行一家机构，每列一年；有色格子表示当年赞助，颜色越深等级越高（Diamond/Platinum、Gold/Silver、Bronze 及其他；NeurIPS 2013–2014 的名单没有等级）。灰色列是没拿到名单的年份；NeurIPS 2021 没有设赞助。按“最后出现”排序时，最近仍在赞助的机构排在最上面，越往下停得越早。</span></p>
     <div class="ctrls" style="margin-bottom:var(--cds-gap-sm)">
       <div class="seg" id="tl-conf" role="group" aria-label="Conference"></div>
       <div class="seg" id="tl-sort" role="group" aria-label="Sort">
-        <button data-v="last" aria-pressed="true">按最后出现</button><button data-v="first" aria-pressed="false">按首次出现</button><button data-v="count" aria-pressed="false">按届数</button>
+        <button data-v="last" aria-pressed="true"><span lang="en">Last seen</span><span lang="zh">按最后出现</span></button><button data-v="first" aria-pressed="false"><span lang="en">First seen</span><span lang="zh">按首次出现</span></button><button data-v="count" aria-pressed="false"><span lang="en">Editions</span><span lang="zh">按届数</span></button>
       </div>
-      <label class="chk"><input type="checkbox" id="tl-all"> 包括只出现过 1 届的机构</label>
-      <label class="chk"><input type="checkbox" class="flag-toggle" checked> 显示国旗</label>
+      <label class="chk"><input type="checkbox" id="tl-all"> <span lang="en">Include one-time sponsors</span><span lang="zh">包括只出现过 1 届的机构</span></label>
     </div>
     <div class="legend" id="lg-tl"></div>
-    <div class="tlbox"><div id="c-tl" data-source="listings" style="min-height:320px"></div></div>
+    <div class="tlbox" style="max-height:44rem;overflow:auto"><div id="c-tl" data-source="listings" style="min-height:320px"></div></div>
   </section>
+
+  <section class="card" id="top-card">
+    <h2 id="by-conference"><span lang="en">Top sponsors</span><span lang="zh">Top sponsors</span></h2>
+    <p class="note"><span lang="en">For the selected years, organizations ranked by how many editions they sponsored (one count per organization per edition). Pick a conference or all three together, and how many to show. The label shows editions and the year span; hover for tiers and estimated totals.</span><span lang="zh">所选年份内，按赞助届数给机构排名（同一机构在一届会议计 1 次）。可以选单个会议或三个会议合计，以及显示前几名。右侧是届数和年份跨度，悬停查看各等级次数和估算金额。</span></p>
+    <div class="ctrls" style="margin-bottom:var(--cds-gap-sm)">
+      <div class="seg" id="ts-conf" role="group" aria-label="Conference"></div>
+      <div class="seg" id="ts-n" role="group" aria-label="How many"><button data-v="10" aria-pressed="true"><span lang="en">Top 10</span><span lang="zh">前 10</span></button><button data-v="15" aria-pressed="false"><span lang="en">Top 15</span><span lang="zh">前 15</span></button><button data-v="20" aria-pressed="false"><span lang="en">Top 20</span><span lang="zh">前 20</span></button><button data-v="30" aria-pressed="false"><span lang="en">Top 30</span><span lang="zh">前 30</span></button></div>
+    </div>
+    <div class="legend" id="lg-top"></div>
+    <div id="c-top" data-source="listings" style="min-height:290px"></div>
+  </section>
+
 
   <section class="grid">
     <div class="card">
-      <h2 id="countries">按国家 / 地区</h2>
-      <p class="note">所选年份内，按机构所属国家/地区（顶部可切换“总部所在地 / 母公司国籍”）统计的“机构 × 届次”数，按会议分色。</p>
+      <h2 id="countries"><span lang="en">By country or region</span><span lang="zh">按国家 / 地区</span></h2>
+      <p class="note"><span lang="en">Each cell is the share of a conference’s sponsors (organization × edition, selected years) that come from that country; the number is the count. Darker means a larger share.</span><span lang="zh">每格是该会议（所选年份内的“机构 × 届次”）中来自该国家/地区的比例，格内数字是条数，颜色越深占比越高。</span></p>
       <div class="legend" id="lg-cty"></div>
-      <div id="c-cty" data-source="listings" style="min-height:360px"></div>
-    </div>
-    <div class="card">
-      <h2 id="top-sponsors">三会议合计 top 15</h2>
-      <p class="note">所选年份内，三个会议合计的赞助届数。颜色区分机构类型。</p>
-      <div class="legend" id="lg-top"></div>
-      <div id="c-top" data-source="listings" style="min-height:420px"></div>
+      <div class="hm"><div id="c-cty" data-source="listings" style="min-height:360px"></div></div>
     </div>
   </section>
 
   <section class="grid">
     <div class="card">
-      <h2 id="sectors">赞助方构成</h2>
-      <p class="note">所选年份内，各会议赞助条目按机构类型的占比。“金融 / 量化”包括对冲基金、做市商、银行和金融数据公司。</p>
+      <h2 id="sectors"><span lang="en">Who the sponsors are</span><span lang="zh">赞助方构成</span></h2>
+      <p class="note"><span lang="en">Share of each conference’s sponsor listings by type of organization, for the selected years. Finance includes hedge funds, trading firms, banks, financial data companies and venture capital.</span><span lang="zh">所选年份内，各会议赞助条目按机构类型的占比。“金融 / 量化”包括对冲基金、做市商、银行、金融数据公司和风险投资。</span></p>
       <div class="legend" id="lg-sector"></div>
       <div id="c-sector" data-source="listings" style="min-height:170px"></div>
     </div>
     <div class="card">
-      <h2 id="per-attendee">每位参会者对应的赞助额</h2>
-      <p class="note">估算赞助额 ÷ 当届注册人数。只找到 NeurIPS 2024 和 ICML 2026 的价目，所以只有 NeurIPS 2023–2025 有点。</p>
+      <h2 id="per-attendee"><span lang="en">Sponsorship per attendee</span><span lang="zh">每位参会者对应的赞助额</span></h2>
+      <p class="note"><span lang="en">Estimated sponsorship divided by registrations. Prices were found only for NeurIPS 2024 and ICML 2026, so only NeurIPS 2023–2025 can be plotted.</span><span lang="zh">估算赞助额 ÷ 当届注册人数。只找到 NeurIPS 2024 和 ICML 2026 的价目，所以只有 NeurIPS 2023–2025 有点。</span></p>
       <div class="legend" id="lg-conf"></div>
       <div id="c-pa" data-source="pcy" style="min-height:240px"></div>
     </div>
   </section>
 
   <section class="card">
-    <h2 id="money">每届估算赞助额（下限）</h2>
-    <p class="note">每家赞助商按其等级的公开价计，加总得到每届的估算下限；只用了相邻年份的价目（NeurIPS 2023–2025 用 2024 价目，ICML 2025–2026 用 2026 价目），其他届次不画。作为参照，NeurIPS 官方预算说明里 2019 年的赞助收入是 $3.7M。</p>
+    <h2 id="money"><span lang="en">Estimated sponsorship per edition (lower bound)</span><span lang="zh">每届估算赞助额（下限）</span></h2>
+    <p class="note"><span lang="en">Each sponsor is counted at its tier’s published price and summed per edition, so these are lower bounds. Only nearby years are estimated (NeurIPS 2023–2025 with 2024 prices, ICML 2025–2026 with 2026 prices). For reference, NeurIPS reported $3.7M in sponsor income for 2019.</span><span lang="zh">每家赞助商按其等级的公开价计，加总得到每届的估算下限；只估算相邻年份（NeurIPS 2023–2025 用 2024 价目，ICML 2025–2026 用 2026 价目）。作为参照，NeurIPS 官方预算说明中 2019 年的赞助收入为 $3.7M。</span></p>
     <div class="multi" id="c-money" data-source="pcy" style="min-height:200px"></div>
   </section>
 
-  <section class="card">
-    <h2 id="vs-hci">和 HCI 会议比</h2>
-    <p class="note">左：每届赞助方数量（同一机构在一届只计 1 次），实线是 AI 会议，虚线是 HCI 会议。右：两边都赞助过的企业，在所选年份内分别赞助了多少届 AI 会议与 HCI 会议（HCI = CHI、CSCW、UIST、UbiComp）。</p>
-    <div class="grid">
+  <section class="card" id="vs-card">
+    <h2 id="vs-hci"><span lang="en">Compared with HCI</span><span lang="zh">和 HCI 会议比</span></h2>
+    <p class="note"><span lang="en">Left: sponsors per edition (each organization once), solid lines for AI conferences and dashed lines for CHI, CSCW, UIST and UbiComp. Right: companies that sponsored both fields, and how many editions of each they sponsored in the selected years.</span><span lang="zh">左：每届赞助方数量（同一机构在一届只计 1 次），实线是 AI 会议，虚线是 CHI、CSCW、UIST、UbiComp。右：两边都赞助过的企业，在所选年份内分别赞助了多少届 AI 会议和 HCI 会议。</span></p>
+    <div class="grid" style="gap:2.5rem">
       <div><div class="legend" id="lg-cmp"></div><div id="c-cmp" data-source="pcy hci_pcy" style="min-height:260px"></div></div>
       <div><div class="legend" id="lg-ov"></div><div id="c-ov" data-source="listings hci_listings" style="min-height:420px"></div></div>
     </div>
   </section>
 
+  <section class="card" id="summary-card">
+    <h2 id="summary"><span lang="en">Summary</span><span lang="zh">总结</span></h2>
+    <ul class="summary" lang="en">
+        <li><strong>An order of magnitude more money than HCI.</strong> At published tier prices, NeurIPS 2025 drew at least <b data-source="money_cmp" data-field="value" data-where="metric=neurips2025" class="dash-skeleton">—</b> from sponsors, against about <b data-source="money_cmp" data-field="value" data-where="metric=chi2025" class="dash-skeleton">—</b> for CHI 2025.</li>
+        <li><strong>Finance is the second-largest group.</strong> <b data-source="kpis" data-field="value" data-where="metric=finshare" class="dash-skeleton">—</b> of all listings come from hedge funds, trading firms and banks such as Citadel, Jane Street, Jump, D. E. Shaw and Two Sigma. They hardly appear at HCI conferences.</li>
+        <li><strong>Same companies, different priorities.</strong> Google, Microsoft and Meta sponsor both fields; Adobe and Autodesk mostly HCI; Amazon, Baidu and ByteDance almost only AI. Since 2023, AI infrastructure and data companies (Lambda, Together AI, Nebius, Scale AI) have poured in.</li>
+    </ul>
+    <ul class="summary" lang="zh">
+        <li><strong>赞助规模比 HCI 大一个数量级。</strong>按公开等级价估算，NeurIPS 2025 的赞助至少 <b data-source="money_cmp" data-field="value" data-where="metric=neurips2025" class="dash-skeleton">—</b>，同年 CHI 约 <b data-source="money_cmp" data-field="value" data-where="metric=chi2025" class="dash-skeleton">—</b>。</li>
+        <li><strong>金融机构是第二大赞助群体。</strong>全部赞助条目中 <b data-source="kpis" data-field="value" data-where="metric=finshare" class="dash-skeleton">—</b> 来自对冲基金、做市商和银行，如 Citadel、Jane Street、Jump、D. E. Shaw、Two Sigma；它们在 HCI 会议里几乎看不到。</li>
+        <li><strong>同一批公司，侧重不同。</strong>Google、Microsoft、Meta 两边都赞助；Adobe、Autodesk 主要在 HCI；Amazon、百度、字节几乎只在 AI。2023 年后，Lambda、Together AI、Nebius、Scale AI 等 AI 基础设施和数据公司大量进入。</li>
+    </ul>
+  </section>
+
   <section class="card">
-    <h2 id="listings">全部赞助条目</h2>
-    <p class="note">所选年份内的每条官网/存档页赞助记录；“来源”列是抓取的网页。可搜索、点表头排序。</p>
-    <input class="search" id="q" type="search" placeholder="搜索机构、会议、国家、年份…" aria-label="Search listings">
+    <h2 id="listings"><span lang="en">All sponsor listings</span><span lang="zh">全部赞助条目</span></h2>
+    <p class="note"><span lang="en">Every sponsor listing from official or archived pages in the selected years. Source is the page it came from. Search, or click a header to sort.</span><span lang="zh">所选年份内的每条官网/存档页赞助记录；“来源”列是抓取的网页。可搜索、点表头排序。</span></p>
+    <input class="search" id="q" type="search" placeholder="Search organization, conference, country, year…" aria-label="Search listings">
     <div class="tbox">
       <table id="t-list" data-source="listings" data-row-key="id">
         <thead><tr>
           <th data-field="id" class="num"><button data-k="id">#</button></th>
-          <th data-field="conference"><button data-k="conference">会议</button></th>
-          <th data-field="year" class="num"><button data-k="year">年份</button></th>
-          <th data-field="tier"><button data-k="tier">等级</button></th>
-          <th data-field="org"><button data-k="org">机构</button></th>
-          <th data-field="country"><button data-k="country">国家/地区</button></th>
-          <th data-field="sector"><button data-k="sector">类型</button></th>
-          <th data-field="est_usd" class="num"><button data-k="est_usd">估算 USD</button></th>
-          <th data-field="price_basis"><button data-k="price_basis">价格依据</button></th>
-          <th data-field="source">来源</th>
+          <th data-field="conference"><button data-k="conference"><span lang="en">Conference</span><span lang="zh">会议</span></button></th>
+          <th data-field="year" class="num"><button data-k="year"><span lang="en">Year</span><span lang="zh">年份</span></button></th>
+          <th data-field="tier"><button data-k="tier"><span lang="en">Tier</span><span lang="zh">等级</span></button></th>
+          <th data-field="org"><button data-k="org"><span lang="en">Organization</span><span lang="zh">机构</span></button></th>
+          <th data-field="country"><button data-k="country"><span lang="en">Country</span><span lang="zh">国家/地区</span></button></th>
+          <th data-field="sector"><button data-k="sector"><span lang="en">Type</span><span lang="zh">类型</span></button></th>
+          <th data-field="est_usd" class="num"><button data-k="est_usd"><span lang="en">Est. USD</span><span lang="zh">估算 USD</span></button></th>
+          <th data-field="price_basis"><button data-k="price_basis"><span lang="en">Price basis</span><span lang="zh">价格依据</span></button></th>
+          <th data-field="source"><span lang="en">Source</span><span lang="zh">来源</span></th>
         </tr></thead><tbody></tbody>
       </table>
     </div>
   </section>
 
+
   <section class="grid">
     <div class="card">
-      <h2 id="prices">公开的赞助等级价格</h2>
-      <p class="note">三个会议的赞助页都不公开价目，只在招商页的存档里找到这两份；实际成交价可能有折扣或附加项。</p>
+      <h2 id="prices"><span lang="en">Published tier prices</span><span lang="zh">公开的赞助等级价格</span></h2>
+      <p class="note"><span lang="en">The three conferences do not publish prices on their sponsor pages; these two lists come from archived exhibitor pages. Actual deals may include discounts or extras.</span><span lang="zh">三个会议的赞助页都不公开价目，只在招商页存档里找到这两份；实际成交价可能有折扣或附加项。</span></p>
       <div class="tbox" style="max-height:22rem">
         <table id="t-price" data-source="prices" data-row-key="id">
-          <thead><tr><th data-field="id" class="num">#</th><th data-field="conference">会议</th><th data-field="years">年份</th><th data-field="tier">等级</th><th data-field="min_usd" class="num">起步价 USD</th><th data-field="basis">依据</th></tr></thead><tbody></tbody>
+          <thead><tr><th data-field="id" class="num">#</th><th data-field="conference"><span lang="en">Conference</span><span lang="zh">会议</span></th><th data-field="years"><span lang="en">Years</span><span lang="zh">年份</span></th><th data-field="tier"><span lang="en">Tier</span><span lang="zh">等级</span></th><th data-field="min_usd" class="num"><span lang="en">Floor USD</span><span lang="zh">起步价 USD</span></th><th data-field="basis"><span lang="en">Basis</span><span lang="zh">依据</span></th></tr></thead><tbody></tbody>
         </table>
       </div>
     </div>
-    <div class="card">
-      <h2 id="caveats">口径与缺口</h2>
-      <ul class="caveats">
-        <li>名单来自 neurips.cc / icml.cc / iclr.cc 的公开赞助接口（2015 年起）、NeurIPS 2013–2014 会议手册、ICML 2015–2016 与 ICLR 2017 的旧官网存档；ICLR 2026 来自其赞助商列表页。</li>
-        <li>缺口：ICML 2013–2014、ICLR 2013–2016 和 2018–2019 没有取得名单；NeurIPS 2021 没有设赞助（只有招聘页）。NeurIPS 2026 有多个举办地，同一机构按最高等级计一次。</li>
-        <li>机构名做了合并：DeepMind、Google Research、Kaggle 计入 Google；LinkedIn 计入 Microsoft；Habana、Nervana 计入 Intel；Xilinx 计入 AMD；TikTok 计入 ByteDance；Borealis AI 计入 RBC；MosaicML 计入 Databricks；TRI 计入 Toyota。DEI 基金类赞助与普通赞助合并。</li>
-        <li>金额只是粗略下限：只有 NeurIPS 2024（Diamond $90k、Platinum $50k、Gold $35k、Silver $22k、Bronze $12k）和 ICML 2026（Diamond $100k … Bronze $20k）两份公开价目；Silver Pavilion、Startup 等等级没有价格，不计入。ICLR 没有找到价目。</li>
-        <li>注册人数：NeurIPS 来自官方 fact sheet（2020–2021 为线上会议；2025 为含线上的总人数），ICML 来自官方统计，ICLR 来自 Wikipedia。</li>
-        <li>国家/地区按赞助实体的总部计；四十余家小公司无法确定所在地，标为未知。“母公司国籍”只对少数机构不同（如 Mercedes-Benz 北美研发计为德国）。</li>
+  </section>
+
+  <section class="card method">
+    <h2 id="caveats"><span lang="en">Method and gaps</span><span lang="zh">口径与缺口</span></h2>
+    <p class="note"><span lang="en">Click a heading to expand it.</span><span lang="zh">点击标题展开。</span></p>
+    <details>
+      <summary><span lang="en">Where the data come from</span><span lang="zh">数据来源</span></summary>
+      <div class="dbody"><ul class="caveats">
+        <li><span lang="en">From 2015 on, each conference’s public sponsor API (neurips.cc, icml.cc, iclr.cc). NeurIPS 2013–2014 come from the printed conference books, ICML 2015–2016 and ICLR 2017 from archived conference sites, ICLR 2026 from its sponsor list page.</span><span lang="zh">2015 年起来自各会议公开的赞助接口（neurips.cc、icml.cc、iclr.cc）。NeurIPS 2013–2014 来自会议手册，ICML 2015–2016 和 ICLR 2017 来自旧官网存档，ICLR 2026 来自其赞助商列表页。</span></li>
+        <li><span lang="en">Attendance: the NeurIPS fact sheet (2020–2021 were virtual; 2025 includes online attendees), ICML’s published statistics, and Wikipedia for ICLR.</span><span lang="zh">注册人数：NeurIPS 官方 fact sheet（2020–2021 为线上；2025 含线上），ICML 官方统计，ICLR 来自 Wikipedia。</span></li>
       </ul>
+      </div>
+    </details>
+    <details>
+      <summary><span lang="en">Coverage by conference</span><span lang="zh">各会议的覆盖范围</span></summary>
+      <div class="dbody"><div class="tbox" style="max-height:none">
+      <table class="cov">
+        <thead><tr><th><span lang="en">Conference</span><span lang="zh">会议</span></th><th><span lang="en">Sponsor lists</span><span lang="zh">有名单的年份</span></th><th><span lang="en">Missing</span><span lang="zh">缺失</span></th><th><span lang="en">Tier prices</span><span lang="zh">等级价格</span></th><th><span lang="en">Attendance</span><span lang="zh">注册人数</span></th></tr></thead>
+        <tbody>
+            <tr><td>NeurIPS</td><td>2013–2026</td><td><span lang="en">NeurIPS 2021 had no sponsorship (careers page only)</span><span lang="zh">NeurIPS 2021 没有设赞助（只有招聘页）</span></td><td><span lang="en">2024 (2023 and 2025 reuse it)</span><span lang="zh">2024 年（2023、2025 年沿用）</span></td><td>2013–2025</td></tr>
+            <tr><td>ICML</td><td>2015–2026</td><td><span lang="en">2013–2014</span><span lang="zh">2013–2014</span></td><td><span lang="en">2026 (2025 reuses it)</span><span lang="zh">2026 年（2025 年沿用）</span></td><td>2017–2024</td></tr>
+            <tr><td>ICLR</td><td>2017, 2020–2026</td><td><span lang="en">2013–2016, 2018–2019</span><span lang="zh">2013–2016、2018–2019</span></td><td><span lang="en">none found</span><span lang="zh">未找到</span></td><td>2018–2025</td></tr>
+        </tbody>
+      </table>
     </div>
+      </div>
+    </details>
+    <details>
+      <summary><span lang="en">How sponsors are counted</span><span lang="zh">怎么计数</span></summary>
+      <div class="dbody"><ul class="caveats">
+        <li><span lang="en">An organization counts once per conference edition, at its highest tier. NeurIPS 2026 was held in several places; an organization present at more than one counts once.</span><span lang="zh">同一机构在一届会议只计 1 次，取最高等级。NeurIPS 2026 有多个举办地，同一机构只计一次。</span></li>
+        <li><span lang="en">Brands of one company are merged: DeepMind, Google Research and Kaggle into Google; LinkedIn into Microsoft; Habana and Nervana into Intel; Xilinx into AMD; TikTok into ByteDance; Borealis AI into RBC; MosaicML into Databricks; Toyota Research Institute into Toyota. Diversity-fund sponsorships are merged with regular ones.</span><span lang="zh">同一公司的品牌已合并：DeepMind、Google Research、Kaggle 计入 Google；LinkedIn 计入 Microsoft；Habana、Nervana 计入 Intel；Xilinx 计入 AMD；TikTok 计入 ByteDance；Borealis AI 计入 RBC；MosaicML 计入 Databricks；TRI 计入 Toyota。DEI 基金类赞助与普通赞助合并。</span></li>
+        <li><span lang="en">Finance / quant covers hedge funds, trading firms, banks, financial data companies and venture capital.</span><span lang="zh">“金融 / 量化”包括对冲基金、做市商、银行、金融数据公司和风险投资。</span></li>
+      </ul>
+      </div>
+    </details>
+    <details>
+      <summary><span lang="en">Estimated amounts</span><span lang="zh">估算金额</span></summary>
+      <div class="dbody"><ul class="caveats">
+        <li><span lang="en">Only two price lists were found: NeurIPS 2024 (Diamond $90k, Platinum $50k, Gold $35k, Silver $22k, Bronze $12k) and ICML 2026 (Diamond $100k, Platinum $80k, Gold $45k, Silver $30k, Bronze $20k). Only nearby years are estimated; ICLR is not.</span><span lang="zh">只找到两份价目：NeurIPS 2024（Diamond $90k、Platinum $50k、Gold $35k、Silver $22k、Bronze $12k）和 ICML 2026（Diamond $100k、Platinum $80k、Gold $45k、Silver $30k、Bronze $20k）。只估算相邻年份；ICLR 不估算。</span></li>
+        <li><span lang="en">Tiers without a published price (Silver Pavilion, Startup and similar) are not counted, so every amount is a lower bound. For reference, NeurIPS reported $3.7M in sponsor income for 2019.</span><span lang="zh">Silver Pavilion、Startup 等没有价格的等级不计入，所以所有金额都是下限。作为参照，NeurIPS 官方预算说明中 2019 年的赞助收入为 $3.7M。</span></li>
+      </ul>
+      </div>
+    </details>
+    <details>
+      <summary><span lang="en">Countries</span><span lang="zh">国家 / 地区</span></summary>
+      <div class="dbody"><ul class="caveats">
+        <li><span lang="en">Two modes, switchable at the top: the sponsoring entity’s headquarters, or its parent company. About 40 small companies could not be located; they stay in the lists but get no country row.</span><span lang="zh">两种口径，可在顶部切换：赞助实体总部所在地，或母公司国籍。约 40 家小公司无法确定所在地，仍计入名单，但不单列国家。</span></li>
+        <li><span lang="en">Flags come from the open-source flag-icons set.</span><span lang="zh">国旗图形来自开源的 flag-icons 图标库。</span></li>
+      </ul>
+      </div>
+    </details>
   </section>
   <div class="tip" id="tip"></div>
+</div>
 </div>
 
 <script src="flags.js"></script>
@@ -183,21 +356,27 @@
 const CONF = ['NeurIPS','ICML','ICLR'];
 const HCONF = ['CHI','CSCW','UIST','UbiComp'];
 const SECT = ['Tech & other industry','Finance / quant','Government / academic / non-profit','Publisher'];
-const SECT_ZH = {'Tech & other industry':'科技及其他企业','Finance / quant':'金融 / 量化','Government / academic / non-profit':'政府 / 学术 / 非营利','Publisher':'出版社'};
-const CTY_ZH = {US:'美国',JP:'日本',KR:'韩国',CA:'加拿大',GB:'英国',DE:'德国',FR:'法国',FI:'芬兰',CN:'中国大陆',TW:'台湾地区',AU:'澳大利亚',NL:'荷兰',DK:'丹麦',AE:'阿联酋',CH:'瑞士',IN:'印度',NO:'挪威',SE:'瑞典',IT:'意大利',SG:'新加坡',ES:'西班牙',EU:'欧盟项目',RU:'俄罗斯',SA:'沙特阿拉伯',IL:'以色列',VN:'越南',TH:'泰国',BR:'巴西',MX:'墨西哥',BG:'保加利亚',AT:'奥地利',BE:'比利时',ZA:'南非',CZ:'捷克',IE:'爱尔兰','??':'未知','':'未知'};
+const SECT_ZH0 = {'Tech & other industry':'科技及其他企业','Finance / quant':'金融 / 量化','Government / academic / non-profit':'政府 / 学术 / 非营利','Publisher':'出版社'};
+const CTY_ZH0 = {RU:'俄罗斯',SA:'沙特阿拉伯',IL:'以色列',VN:'越南',TH:'泰国',BR:'巴西',MX:'墨西哥',BG:'保加利亚',BE:'比利时',ZA:'南非',CZ:'捷克',IE:'爱尔兰','??':'未知',US:'美国',JP:'日本',KR:'韩国',CA:'加拿大',GB:'英国',DE:'德国',FR:'法国',FI:'芬兰',CN:'中国大陆',TW:'台湾地区',AU:'澳大利亚',NL:'荷兰',DK:'丹麦',AE:'阿联酋',CH:'瑞士',IN:'印度',NO:'挪威',SE:'瑞典',IT:'意大利',SG:'新加坡',ES:'西班牙',EU:'欧盟项目',CY:'塞浦路斯',GR:'希腊',PT:'葡萄牙',AT:'奥地利','':'未知'};
 const fmtUSD = v => (v==null||isNaN(v)) ? '—' : '$' + d3.format(',')(Math.round(v));
 const fmtK = v => (v==null||isNaN(v)) ? '—' : v>=1e6 ? '$' + d3.format(',.1~f')(v/1e6) + 'M' : (v>=1000 ? '$' + d3.format(',.0f')(v/1000) + 'k' : '$' + d3.format(',.0f')(v));
 const flag = cc => (!cc || cc.length !== 2) ? '' : String.fromCodePoint(...[...cc.toUpperCase()].map(c => 0x1F1E6 + c.charCodeAt(0) - 65));
-const state = {from: null, to: null, flags: true, cmode: 'hq'};
-const cc = r => state.cmode === 'parent' ? (r.parent_country ?? r.country) : r.country;
+const state = {from: null, to: null, flags: true, cmode: 'hq', lang: 'en'};
+const T = (en, zh) => state.lang === 'zh' ? zh : en;
+const CTY_EN0 = {RU:'Russia',SA:'Saudi Arabia',IL:'Israel',VN:'Vietnam',TH:'Thailand',BR:'Brazil',MX:'Mexico',BG:'Bulgaria',BE:'Belgium',ZA:'South Africa',CZ:'Czechia',IE:'Ireland','??':'Unknown',US:'United States',JP:'Japan',KR:'South Korea',CA:'Canada',GB:'United Kingdom',DE:'Germany',FR:'France',FI:'Finland',CN:'Mainland China',TW:'Taiwan',AU:'Australia',NL:'Netherlands',DK:'Denmark',AE:'UAE',CH:'Switzerland',IN:'India',NO:'Norway',SE:'Sweden',IT:'Italy',SG:'Singapore',ES:'Spain',EU:'EU project',CY:'Cyprus',GR:'Greece',PT:'Portugal',AT:'Austria','':'Unknown'};
+const SECT_EN0 = {'Tech & other industry':'Tech and other companies','Finance / quant':'Finance / quant','Government / academic / non-profit':'Government / academic / non-profit','Publisher':'Publisher'};
+const CTY_ZH = new Proxy({}, {get: (_, k) => (state.lang === 'zh' ? CTY_ZH0 : CTY_EN0)[k]});
+const SECT_ZH = new Proxy({}, {get: (_, k) => (state.lang === 'zh' ? SECT_ZH0 : SECT_EN0)[k]});
+const cc = r => (state.cmode === 'parent' ? (r.parent_country || r.country) : r.country) || '';
 const redraws = [];
 const label = (org, cc) => org;
 const FW = 18, FH = 13.5, FPAD = 6;
 const flagSrc = cc => (window.HX_FLAGS || {})[cc] || null;
-const flagSvg = (sel, cc, x, yMid) => { const s = flagSrc(cc); if (s) sel.append('image').attr('href', s).attr('x', x).attr('y', yMid - FH / 2).attr('width', FW).attr('height', FH).attr('preserveAspectRatio', 'none').append('title').text(CTY_ZH[cc] || cc); else sel.append('rect').attr('x', x).attr('y', yMid - FH / 2).attr('width', FW).attr('height', FH).attr('rx', 2).attr('fill', 'var(--cds-chart-grid)').append('title').text('未知'); };
+const flagSvg = (sel, cc, x, yMid) => { const s = flagSrc(cc); if (s) sel.append('image').attr('href', s).attr('x', x).attr('y', yMid - FH / 2).attr('width', FW).attr('height', FH).attr('preserveAspectRatio', 'none').append('title').text(CTY_ZH[cc] || cc); else sel.append('rect').attr('x', x).attr('y', yMid - FH / 2).attr('width', FW).attr('height', FH).attr('rx', 2).attr('fill', 'var(--cds-chart-grid)').append('title').text(T('Unknown', '未知')); };
 const flagGap = () => state.flags ? FW + FPAD : 0;
 const inRange = y => (state.from == null || +y >= state.from) && (state.to == null || +y <= state.to);
-window.HX = {cc, CONF, HCONF, SECT, SECT_ZH, CTY_ZH, fmtUSD, fmtK, flag, state, redraws, label, inRange, flagSvg, flagGap, flagSrc, FW};
+const C = [0,1,2,3,4,5,6,7].map(i => `var(--hx-c${i})`);
+window.HX = {C, T, cc, CONF, HCONF, SECT, SECT_ZH, CTY_ZH, fmtUSD, fmtK, flag, state, redraws, label, inRange, flagSvg, flagGap, flagSrc, FW};
 
 dash.calc('kpis', {
   inputs: ['listings'], title: 'Headline counts (all years)',
@@ -252,7 +431,7 @@ H.on = fn => { redraws.push(fn); dash.onData(fn); };
   const fs = document.getElementById('f-from'), ts = document.getElementById('f-to'), lab = document.getElementById('f-label');
   let built = false;
   const sync = () => {
-    lab.textContent = state.from == null ? '当前：全部年份' : `当前：${state.from}–${state.to}`;
+    lab.textContent = state.from == null ? H.T('Showing: all years', '当前：全部年份') : H.T(`Showing: ${state.from}–${state.to}`, `当前：${state.from}–${state.to}`);
     document.querySelectorAll('#f-preset button').forEach(b => b.setAttribute('aria-pressed', String(
       (b.dataset.v === 'all' && state.from == null) || (state.from != null && +b.dataset.v === state.from && state.to === +ts.options[ts.options.length - 1].value))));
   };
@@ -273,8 +452,36 @@ H.on = fn => { redraws.push(fn); dash.onData(fn); };
     else { fs.value = b.dataset.v; ts.value = ts.options[ts.options.length - 1].value; }
     fromSel();
   }));
+  const setLang = v => { state.lang = v; document.querySelector('.hx-shell').dataset.lang = v; document.documentElement.lang = v === 'zh' ? 'zh' : 'en';
+    document.querySelectorAll('#f-lang button').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.v === v)));
+    document.getElementById('q').placeholder = H.T('Search organization, conference, country, year…', '搜索机构、会议、国家、年份…'); apply(); };
+  document.querySelectorAll('#f-lang button').forEach(b => b.addEventListener('click', () => setLang(b.dataset.v)));
+  const setBtn = document.getElementById('set-btn'), setPop = document.getElementById('set-pop');
+  const openSet = v => { setPop.hidden = !v; setBtn.setAttribute('aria-expanded', String(v)); };
+  setBtn.addEventListener('click', ev => { ev.stopPropagation(); openSet(setPop.hidden); });
+  document.addEventListener('click', ev => { if (!setPop.hidden && !setPop.contains(ev.target) && ev.target !== setBtn) openSet(false); });
+  document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && !setPop.hidden) { openSet(false); setBtn.focus(); } });
   document.querySelectorAll('#f-cmode button').forEach(b => b.addEventListener('click', () => { state.cmode = b.dataset.v; document.querySelectorAll('#f-cmode button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); apply(); }));
   document.querySelectorAll('.flag-toggle').forEach(cb => cb.addEventListener('change', e => { state.flags = e.target.checked; document.querySelectorAll('.flag-toggle').forEach(o => { o.checked = state.flags; }); apply(); }));
+})();
+
+// contents rail: scroll to a section, and mark the one being read
+(() => {
+  const links = [...document.querySelectorAll('.hx-toc a')];
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  links.forEach(a => a.addEventListener('click', ev => {
+    const t = document.getElementById(a.dataset.target); if (!t) return;
+    ev.preventDefault(); t.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block: 'start'});
+  }));
+  const mark = id => links.forEach(a => a.setAttribute('aria-current', String(a.dataset.target === id)));
+  const heads = links.map(a => document.getElementById(a.dataset.target)).filter(Boolean);
+  let ticking = false;
+  const spy = () => { ticking = false; const y = 140; let cur = heads[0];
+    heads.forEach(h => { if (h.getBoundingClientRect().top <= y) cur = h; });
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) cur = heads[heads.length - 1];
+    if (cur) mark(cur.id); };
+  document.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(spy); } }, {passive: true, capture: true});
+  spy();
 })();
 
 // headline marks
@@ -297,7 +504,7 @@ window.HX.rankBars = (box, items, color, tipFn) => {
   const H = window.HX;
   const W = box.clientWidth || 300, rowH = 24, H0 = items.length * rowH + 4;
   const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${Math.max(H0, 20)}`);
-  if (!items.length) { svg.append('text').attr('x', 0).attr('y', 14).attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text('所选年份内没有记录'); return; }
+  if (!items.length) { svg.append('text').attr('x', 0).attr('y', 14).attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text(H.T('No records in the selected years', '所选年份内没有记录')); return; }
   const names = items.map(d => H.label(d.org, d.country));
   const lw = H.measure(svg, names, 12) + 10 + H.flagGap();
   const rw = H.measure(svg, items.map(d => d.right), 11) + 10;
@@ -320,65 +527,83 @@ window.HX.aggregate = (rows) => d3.rollups(rows, v => {
   }, r => r.org).map(([org, o]) => ({org, ...o}))
   .sort((a, b) => b.n - a.n || b.est - a.est || a.org.localeCompare(b.org));
 
-// top 10 per conference
-window.HX.on(() => {
+// top sponsors: one chart, conference tabs + top-N
+(() => {
   const H = window.HX;
-  const a = document.getElementById('c-ct-chi'), b = document.getElementById('c-ct-rest'); const st = dash.data('listings');
-  if (H.failOrWait(a, st)) { H.failOrWait(b, st); return; } H.failOrWait(b, st);
-  const rows = H.rows();
-  H.CONF.forEach((c, ci) => {
-    const box = document.createElement('div'); (ci === 0 ? a : b).append(box);
-    const h = document.createElement('div'); h.className = 'sub'; h.textContent = c; box.append(h);
-    const inner = document.createElement('div'); box.append(inner);
-    const items = H.aggregate(rows.filter(r => r.conference === c)).slice(0, 10).map(d => ({...d, right: `${d.n} 届 · ${d.first}–${d.last}`}));
-    H.rankBars(inner, items, dash.colors[ci], d => [['t', `${c} · ${d.org}`], ['', `${H.CTY_ZH[d.country] || d.country}`], ['', `赞助 ${d.n} 届（${d.first}–${d.last}）`], ['', `等级：${d.tiers}`]]);
-  });
-});
+  H.topView = {conf: 'ALL', n: 10};
+  const box = document.getElementById('ts-conf');
+  ['ALL', ...H.CONF].forEach(c => { const b = document.createElement('button'); b.dataset.v = c; b.setAttribute('aria-pressed', String(c === 'ALL'));
+    if (c === 'ALL') { const e = document.createElement('span'); e.lang = 'en'; e.textContent = 'All three'; const z = document.createElement('span'); z.lang = 'zh'; z.textContent = '三个会议合计'; b.append(e, z); } else b.textContent = c;
+    box.append(b); });
+  const wire = (el, set) => el.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+    el.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); set(b.dataset.v); draw(); }));
+  wire(box, v => { H.topView.conf = v; }); wire(document.getElementById('ts-n'), v => { H.topView.n = +v; });
+  H.topItems = () => { const {conf, n} = H.topView; const rows = H.rows().filter(r => conf === 'ALL' || r.conference === conf); return H.aggregate(rows).slice(0, n); };
+  function draw() {
+    const el = document.getElementById('c-top'), lg = document.getElementById('lg-top'); const st = dash.data('listings');
+    lg.replaceChildren(); if (H.failOrWait(el, st)) return;
+    const {conf} = H.topView, all = conf === 'ALL';
+    const items = H.topItems().map(d => ({...d, right: all ? H.T(`${d.n} edition${d.n === 1 ? '' : 's'} · ${d.confs.split(', ').length} conf.`, `${d.n} 届 · ${d.confs.split(', ').length} 个会议`) : H.T(`${d.n} edition${d.n === 1 ? '' : 's'} · ${d.first}–${d.last}`, `${d.n} 届 · ${d.first}–${d.last}`)}));
+    const sectCol = s => H.C[Math.max(0, H.SECT.indexOf(s))];
+    if (all) H.legend(lg, H.SECT.filter(s => items.some(d => d.sector === s)).map(s => [sectCol(s), H.SECT_ZH[s]]));
+    H.rankBars(el, items, all ? (d => sectCol(d.sector)) : H.C[H.CONF.indexOf(conf)],
+      d => [['t', all ? d.org : `${conf} · ${d.org}`], ['', `${H.CTY_ZH[d.country] || d.country || H.T('Unknown', '未知')} · ${H.SECT_ZH[d.sector] || d.sector}`],
+        ['', H.T(`${d.n} edition${d.n === 1 ? '' : 's'} (${d.first}–${d.last})`, `赞助 ${d.n} 届（${d.first}–${d.last}）`)], ...(all ? [['', H.T(`Conferences: ${d.confs}`, `会议：${d.confs}`)]] : [['', H.T(`Tiers: ${d.tiers}`, `等级：${d.tiers}`)]]),
+        ['', H.T(`Estimated total (lower bound): ${H.fmtUSD(d.est)}`, `估算下限合计：${H.fmtUSD(d.est)}`)]]);
+  }
+  H.on(draw);
+})();
 
-// top 15 overall
+// countries × conference heatmap (share of each conference's listings)
 window.HX.on(() => {
   const H = window.HX;
-  const el = document.getElementById('c-top'); const st = dash.data('listings');
-  if (H.failOrWait(el, st)) return;
-  const items = H.aggregate(H.rows()).slice(0, 15).map(d => ({...d, right: String(d.n)}));
-  H.legend(document.getElementById('lg-top'), H.SECT.filter(s => items.some(d => d.sector === s)).map(s => [dash.colors[H.SECT.indexOf(s)], H.SECT_ZH[s]]));
-  H.rankBars(el, items, d => dash.colors[H.SECT.indexOf(d.sector)],
-    d => [['t', d.org], ['', `${H.CTY_ZH[d.country] || d.country} · ${H.SECT_ZH[d.sector] || d.sector}`], ['', `${d.n} 届 · ${d.first}–${d.last}`], ['', `会议：${d.confs}`], ['', `估算下限合计：${H.fmtUSD(d.est)}`]]);
-});
-
-// countries, stacked by conference
-window.HX.on(() => {
-  const H = window.HX;
-  const el = document.getElementById('c-cty'); const st = dash.data('listings');
-  H.legend(document.getElementById('lg-cty'), H.CONF.map((c, i) => [dash.colors[i], c]));
-  if (H.failOrWait(el, st)) return;
+  const el = document.getElementById('c-cty'), lg = document.getElementById('lg-cty'); const st = dash.data('listings');
+  lg.replaceChildren(); if (H.failOrWait(el, st)) return;
   const rows = H.rows();
   const uniq = d3.rollups(rows, v => v[0], r => `${r.conference}|${r.year}|${r.org}`).map(([, r]) => r);
-  const by = d3.rollups(uniq, v => ({total: v.length, per: H.CONF.map(c => v.filter(r => r.conference === c).length)}), r => H.cc(r))
-    .map(([cc, o]) => ({cc, ...o})).sort((a, b) => b.total - a.total);
-  const top = by.slice(0, 14);
-  const W = el.clientWidth || 400, rowH = 24, Ht = top.length * rowH + 4;
-  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${Math.max(Ht, 20)}`);
-  if (!top.length) return;
-  const names = top.map(d => H.CTY_ZH[d.cc] || d.cc);
-  const lw = H.measure(svg, names, 12) + 10 + H.flagGap(), rw = H.measure(svg, top.map(d => `${d.total}（${d3.format('.0%')(d.total / uniq.length)}）`), 11) + 10;
-  const Wv = Math.max(W, lw + rw + 60); svg.attr('viewBox', `0 0 ${Wv} ${Math.max(Ht, 20)}`);
-  const x = d3.scaleLinear([0, d3.max(top, d => d.total)], [lw, Wv - rw]);
-  const y = d3.scaleBand(top.map(d => d.cc), [0, Ht - 4]).padding(0.28);
-  const g = svg.append('g').selectAll('g').data(top).join('g');
-  g.append('text').attr('x', lw - 8 - H.flagGap()).attr('y', d => y(d.cc) + y.bandwidth() / 2).attr('dy', '.35em').attr('text-anchor', 'end').attr('font-size', 12).attr('fill', 'var(--color-fg)').text((d, i) => names[i]);
-  if (H.state.flags) g.each(function (d) { H.flagSvg(d3.select(this), d.cc, lw - 6 - H.FW, y(d.cc) + y.bandwidth() / 2); });
-  g.each(function (d) {
-    let acc = 0; const s = d3.select(this);
-    d.per.forEach((n, i) => { if (!n) return; const x0 = x(acc); acc += n;
-      s.append('rect').attr('x', x0 + (acc - n > 0 ? 1 : 0)).attr('y', y(d.cc)).attr('height', y.bandwidth()).attr('width', Math.max(1, x(acc) - x0 - (acc - n > 0 ? 1 : 0))).attr('rx', 3).attr('fill', dash.colors[i]); });
+  const confs = H.CONF.filter(c => uniq.some(r => r.conference === c));
+  const cols = [...confs, 'ALL'];
+  const tot = new Map(cols.map(c => [c, c === 'ALL' ? uniq.length : uniq.filter(r => r.conference === c).length]));
+  const by = d3.rollups(uniq, v => v, r => H.cc(r)).map(([cc, v]) => ({cc, v, n: v.length})).sort((a, b) => b.n - a.n);
+  const unknown = by.find(d => !d.cc || d.cc === '??');
+  const known = by.filter(d => d.cc && d.cc !== '??');
+  const top = known.slice(0, 16);
+  H.ctyTable = by.map(d => { const o = {country_code: d.cc, country: H.CTY_ZH[d.cc] || d.cc || H.T('Unknown', '未知')}; cols.forEach(c => { o[c === 'ALL' ? 'all' : c] = c === 'ALL' ? d.n : d.v.filter(r => r.conference === c).length; }); return o; });
+  const W0 = el.parentElement.clientWidth || 600;
+  const svg = d3.select(el).append('svg');
+  if (!top.length) { svg.attr('width', '100%').attr('viewBox', '0 0 300 20'); svg.append('text').attr('y', 14).attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text(H.T('No records in the selected years', '所选年份内没有记录')); return; }
+  const names = top.map(d => H.CTY_ZH[d.cc] || d.cc || H.T('Unknown', '未知'));
+  const lw = H.measure(svg, names, 12) + 10 + H.flagGap();
+  const head = 34, rowH = 26, cw = Math.max(44, Math.min(88, Math.floor((W0 - lw - 8) / cols.length)));
+  const W = lw + cw * cols.length + 4, Ht = head + top.length * rowH + 4;
+  svg.attr('width', W).attr('viewBox', `0 0 ${W} ${Ht}`).style('max-width', 'none');
+  const op = d3.scaleSqrt([0, 1], [0, 0.92]);
+  cols.forEach((c, j) => svg.append('text').attr('x', lw + j * cw + cw / 2).attr('y', head - 12).attr('text-anchor', 'middle').attr('font-size', 11)
+    .attr('font-weight', c === 'ALL' ? 600 : 400).attr('fill', 'var(--color-fg-muted)').text(c === 'ALL' ? H.T('All', '合计') : c));
+  svg.append('line').attr('x1', lw + (cols.length - 1) * cw).attr('x2', lw + (cols.length - 1) * cw).attr('y1', head - 4).attr('y2', Ht - 2).attr('stroke', 'var(--color-border-line)');
+  top.forEach((d, i) => {
+    const y = head + i * rowH, g = svg.append('g');
+    g.append('text').attr('x', lw - 8 - H.flagGap()).attr('y', y + rowH / 2).attr('dy', '.35em').attr('text-anchor', 'end').attr('font-size', 12).attr('fill', 'var(--color-fg)').text(names[i]);
+    if (H.state.flags) H.flagSvg(g, d.cc, lw - 6 - H.FW, y + rowH / 2);
+    cols.forEach((c, j) => {
+      const n = c === 'ALL' ? d.n : d.v.filter(r => r.conference === c).length, t = tot.get(c), share = t ? n / t : 0;
+      const x = lw + j * cw;
+      g.append('rect').attr('x', x + 1.5).attr('y', y + 1.5).attr('width', cw - 3).attr('height', rowH - 3).attr('rx', 3)
+        .attr('fill', n ? 'var(--hx-heat)' : 'var(--cds-chart-grid)').attr('fill-opacity', n ? Math.max(0.06, op(share)) : 0.35)
+        .on('mousemove', ev => {
+          const v = c === 'ALL' ? d.v : d.v.filter(r => r.conference === c);
+          const orgs = d3.rollups(v, a => a.length, r => r.org).sort((a, b) => b[1] - a[1]).slice(0, 5).map(([o, k]) => `${o} ${k}`).join(', ');
+          H.showTip(ev, [['t', `${names[i]} · ${c === 'ALL' ? H.T('All conferences', '全部会议') : c}`],
+            ['', H.T(`${n} of ${t} listings (${d3.format('.0%')(share)})`, `${t} 条中的 ${n} 条（${d3.format('.0%')(share)}）`)], ...(orgs ? [['', orgs]] : [])]);
+        }).on('mouseleave', H.hideTip);
+      if (n) g.append('text').attr('x', x + cw / 2).attr('y', y + rowH / 2).attr('dy', '.35em').attr('text-anchor', 'middle').attr('font-size', 11)
+        .attr('pointer-events', 'none').attr('fill', op(share) > 0.5 ? 'var(--color-bg)' : 'var(--color-fg)').text(n);
+    });
   });
-  g.append('text').attr('x', d => x(d.total) + 6).attr('y', d => y(d.cc) + y.bandwidth() / 2).attr('dy', '.35em').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(d => `${d.total}（${d3.format('.0%')(d.total / uniq.length)}）`);
-  g.append('rect').attr('x', 0).attr('width', Wv).attr('y', d => y(d.cc) - 2).attr('height', y.bandwidth() + 4).attr('fill', 'transparent')
-    .on('mousemove', (ev, d) => {
-      const orgs = d3.rollups(uniq.filter(r => H.cc(r) === d.cc), v => v.length, r => r.org).sort((a, b) => b[1] - a[1]).slice(0, 6).map(([o, n]) => `${o} ${n}`).join('、');
-      H.showTip(ev, [['t', H.CTY_ZH[d.cc] || d.cc], ...H.CONF.map((c, i) => ['', `${c}：${d.per[i]}`]), ['', `主要：${orgs}`]]);
-    }).on('mouseleave', H.hideTip);
+  const notes = [];
+  if (known.length > top.length) notes.push(H.T(`${known.length - top.length} more countries or regions with fewer listings are not shown.`, `另有 ${known.length - top.length} 个条数更少的国家/地区未显示。`));
+  if (unknown) notes.push(H.T(`${unknown.n} listings from organizations whose location could not be identified are left out of the rows but still count in each conference’s total.`, `另有 ${unknown.n} 条来自无法确定所在地的机构，不单列一行，但仍计入各会议的总数。`));
+  if (notes.length) { const p = document.createElement('div'); p.className = 'note'; p.style.marginTop = '6px'; p.textContent = notes.join(' '); el.append(p); }
 });
 
 // sector mix
@@ -388,9 +613,9 @@ window.HX.on(() => {
   if (H.failOrWait(el, st)) return;
   const rows = H.rows();
   const present = H.SECT.filter(s => rows.some(r => r.sector === s));
-  const col = s => dash.colors[H.SECT.indexOf(s)];
+  const col = s => H.C[H.SECT.indexOf(s)];
   H.legend(document.getElementById('lg-sector'), present.map(s => [col(s), H.SECT_ZH[s]]));
-  const W = el.clientWidth || 400, rowH = 34, Ht = H.CONF.length * rowH + 8, lw = 64;
+  const W = el.clientWidth || 400, rowH = 34, Ht = H.CONF.length * rowH + 8, lw = 70;
   const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${Ht}`);
   const y = d3.scaleBand(H.CONF, [0, Ht - 8]).padding(0.3); const x = d3.scaleLinear([0, 1], [lw, W - 4]);
   H.CONF.forEach(c => {
@@ -400,7 +625,7 @@ window.HX.on(() => {
     present.forEach(s => {
       const n = rs.filter(r => r.sector === s).length; if (!n) return; const v = n / tot; const x0 = x(acc); acc += v;
       svg.append('rect').attr('x', x0 + 1).attr('y', y(c)).attr('height', y.bandwidth()).attr('width', Math.max(0, x(acc) - x0 - 2)).attr('rx', 3).attr('fill', col(s))
-        .on('mousemove', ev => H.showTip(ev, [['t', `${c} · ${H.SECT_ZH[s]}`], ['', `${n} 条（${d3.format('.0%')(v)}）`]])).on('mouseleave', H.hideTip);
+        .on('mousemove', ev => H.showTip(ev, [['t', `${c} · ${H.SECT_ZH[s]}`], ['', H.T(`${n} listings (${d3.format('.0%')(v)})`, `${n} 条（${d3.format('.0%')(v)}）`)]])).on('mouseleave', H.hideTip);
     });
   });
 });
@@ -417,7 +642,7 @@ window.HX.on(() => {
     const h = document.createElement('div'); h.className = 'sub'; h.textContent = c; box.append(h);
     const W = box.clientWidth || 260, Ht = 170, m = {l: 44, r: 6, t: 6, b: 22};
     const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${Ht}`);
-    if (!rows.length) { svg.append('text').attr('x', 0).attr('y', 14).attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text('所选年份内没有可估算的届次'); return; }
+    if (!rows.length) { svg.append('text').attr('x', 0).attr('y', 14).attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text(H.T('No editions with estimates in the selected years', '所选年份内没有可估算的届次')); return; }
     const years = d3.range(d3.min(rows, r => r.y), d3.max(rows, r => r.y) + 1);
     const x = d3.scaleBand(years, [m.l, W - m.r]).padding(0.2);
     const y = d3.scaleLinear([0, d3.max(rows, r => r.v) * 1.08], [Ht - m.b, m.t]).nice();
@@ -427,8 +652,8 @@ window.HX.on(() => {
     const step = Math.ceil(years.length / Math.max(2, Math.floor((W - m.l) / 34)));
     svg.append('g').attr('transform', `translate(0,${Ht - m.b})`).call(d3.axisBottom(x).tickSize(0).tickValues(years.filter((d, i) => i % step === 0)).tickFormat(d => "'" + String(d).slice(2))).attr('font-size', null).attr('font-family', null)
       .call(g => { g.select('.domain').attr('stroke', 'var(--cds-chart-axis)'); g.selectAll('text').attr('fill', 'var(--color-fg-muted)').attr('font-size', 10).attr('dy', '1em'); });
-    svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', d => x(d.y)).attr('width', x.bandwidth()).attr('y', d => y(d.v)).attr('height', d => Math.max(0, y(0) - y(d.v))).attr('rx', 3).attr('fill', dash.colors[ci])
-      .on('mousemove', (ev, d) => H.showTip(ev, [['t', `${c} ${d.year}`], ['', `估算下限 ${H.fmtUSD(d.v)}`], ['', `${d.n_sponsors} 家赞助方（企业 ${d.n_industry}）`], ['', d.attendance ? `注册 ${d3.format(',')(+d.attendance)} 人` : '注册人数未公开']]))
+    svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', d => x(d.y)).attr('width', x.bandwidth()).attr('y', d => y(d.v)).attr('height', d => Math.max(0, y(0) - y(d.v))).attr('rx', 3).attr('fill', H.C[ci])
+      .on('mousemove', (ev, d) => H.showTip(ev, [['t', `${c} ${d.year}`], ['', H.T(`Estimate (lower bound): ${H.fmtUSD(d.v)}`, `估算下限 ${H.fmtUSD(d.v)}`)], ['', H.T(`${d.n_sponsors} sponsors (${d.n_industry} companies)`, `${d.n_sponsors} 家赞助方（企业 ${d.n_industry}）`)], ['', d.attendance ? H.T(`${d3.format(',')(+d.attendance)} registrations`, `注册 ${d3.format(',')(+d.attendance)} 人`) : H.T('Registrations not published', '注册人数未公开')]]))
       .on('mouseleave', H.hideTip);
   });
 });
@@ -440,10 +665,10 @@ window.HX.on(() => {
   lg.replaceChildren(); if (H.failOrWait(el, st)) return;
   const rows = st.data.filter(r => r.usd_per_attendee !== '' && +r.usd_per_attendee > 0 && H.inRange(r.year)).map(r => ({...r, y: +r.year, v: +r.usd_per_attendee}));
   const confs = H.CONF.filter(c => rows.some(r => r.conference === c));
-  H.legend(lg, confs.map(c => [dash.colors[H.CONF.indexOf(c)], c]));
+  H.legend(lg, confs.map(c => [H.C[H.CONF.indexOf(c)], c]));
   const W = el.clientWidth || 500, Ht = 240, m = {l: 44, r: 64, t: 10, b: 24};
   const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${Ht}`);
-  if (!rows.length) { svg.append('text').attr('x', 0).attr('y', 14).attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text('所选年份内没有同时有价格和人数的届次'); return; }
+  if (!rows.length) { svg.append('text').attr('x', 0).attr('y', 14).attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text(H.T('No editions with both prices and attendance in the selected years', '所选年份内没有同时有价格和人数的届次')); return; }
   const ext = d3.extent(rows, r => r.y); if (ext[0] === ext[1]) { ext[0] -= 1; ext[1] += 1; }
   const x = d3.scaleLinear(ext, [m.l, W - m.r]);
   const y = d3.scaleLinear([0, d3.max(rows, r => r.v) * 1.08], [Ht - m.b, m.t]).nice();
@@ -453,10 +678,10 @@ window.HX.on(() => {
   svg.append('g').attr('transform', `translate(0,${Ht - m.b})`).call(d3.axisBottom(x).tickValues(x.ticks(Math.min(8, Math.floor(W / 60))).filter(Number.isInteger)).tickFormat(d3.format('d')).tickSize(0)).attr('font-size', null).attr('font-family', null)
     .call(g => { g.select('.domain').attr('stroke', 'var(--cds-chart-axis)'); g.selectAll('text').attr('fill', 'var(--color-fg-muted)').attr('font-size', 10).attr('dy', '1em'); });
   confs.forEach(c => {
-    const col = dash.colors[H.CONF.indexOf(c)]; const s = rows.filter(r => r.conference === c).sort((a, b) => a.y - b.y);
+    const col = H.C[H.CONF.indexOf(c)]; const s = rows.filter(r => r.conference === c).sort((a, b) => a.y - b.y);
     svg.append('path').datum(s).attr('fill', 'none').attr('stroke', col).attr('stroke-width', 2).attr('stroke-linejoin', 'round').attr('stroke-linecap', 'round').attr('d', d3.line(d => x(d.y), d => y(d.v)));
     svg.append('g').selectAll('circle').data(s).join('circle').attr('cx', d => x(d.y)).attr('cy', d => y(d.v)).attr('r', 4).attr('fill', col).attr('stroke', 'var(--color-panel)').attr('stroke-width', 2)
-      .on('mousemove', (ev, d) => H.showTip(ev, [['t', `${c} ${d.year}`], ['', `人均 ${H.fmtUSD(d.v)}`], ['', `估算 ${H.fmtUSD(+d.est_usd)} ÷ ${d3.format(',')(+d.attendance)} 人`]]))
+      .on('mousemove', (ev, d) => H.showTip(ev, [['t', `${c} ${d.year}`], ['', H.T(`Per attendee: ${H.fmtUSD(d.v)}`, `人均 ${H.fmtUSD(d.v)}`)], ['', H.T(`Estimate ${H.fmtUSD(+d.est_usd)} ÷ ${d3.format(',')(+d.attendance)} attendees`, `估算 ${H.fmtUSD(+d.est_usd)} ÷ ${d3.format(',')(+d.attendance)} 人`)]]))
       .on('mouseleave', H.hideTip);
     const last = s[s.length - 1]; svg.append('text').attr('x', x(last.y) + 7).attr('y', y(last.v)).attr('dy', '.35em').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(c);
   });
@@ -467,7 +692,7 @@ window.HX.on(() => {
 // timeline
 (() => {
   const H = window.HX;
-  const LEVELS = [['high', 'Diamond / Platinum', 1], ['mid', 'Gold / Silver', 0.6], ['low', 'Bronze 及其他', 0.3], ['unknown', '未标等级', 0]];
+  const LEVELS = [['high', 'Diamond / Platinum', 1], ['mid', 'Gold / Silver', 0.6], ['low', null, 0.3], ['unknown', null, 0]];
   let conf = 'NeurIPS', sort = 'last', all = false;
   const confBox = document.getElementById('tl-conf');
   H.CONF.forEach(c => { const b = document.createElement('button'); b.dataset.v = c; b.textContent = c; b.setAttribute('aria-pressed', String(c === conf)); confBox.append(b); });
@@ -481,7 +706,7 @@ window.HX.on(() => {
   function draw() {
     const el = document.getElementById('c-tl'), lg = document.getElementById('lg-tl'); const st = dash.data('listings');
     lg.replaceChildren(); if (H.failOrWait(el, st)) return;
-    const ci = H.CONF.indexOf(conf), col = dash.colors[ci];
+    const ci = H.CONF.indexOf(conf), col = H.C[ci];
     const allConf = st.data.filter(r => r.conference === conf);
     const covered = new Set(allConf.map(r => +r.year));
     const rows = allConf.filter(r => H.inRange(r.year)).map(r => ({...r, year: +r.year, level: level(r)}));
@@ -489,22 +714,22 @@ window.HX.on(() => {
     LEVELS.forEach(([k, lab, op]) => {
       const sp = document.createElement('span'); const i = document.createElement('i');
       if (op) { i.style.background = col; i.style.opacity = op; } else { i.style.border = `1.5px solid ${col}`; i.style.boxSizing = 'border-box'; }
-      sp.append(i, lab); lg.append(sp);
+      sp.append(i, lab || (k === 'low' ? H.T('Bronze and others', 'Bronze 及其他') : H.T('No tier listed', '未标等级'))); lg.append(sp);
     });
-    const sp = document.createElement('span'); const i = document.createElement('i'); i.style.background = 'var(--cds-chart-grid)'; sp.append(i, '无名单数据的年份'); lg.append(sp);
-    if (!rows.length) { const p = document.createElement('div'); p.className = 'note'; p.textContent = '所选年份内这个会议没有记录。'; el.append(p); return; }
+    const sp = document.createElement('span'); const i = document.createElement('i'); i.style.background = 'var(--cds-chart-grid)'; sp.append(i, H.T('No sponsor list that year', '无名单数据的年份')); lg.append(sp);
+    if (!rows.length) { const p = document.createElement('div'); p.className = 'note'; p.textContent = H.T('No records for this conference in the selected years.', '所选年份内这个会议没有记录。'); el.append(p); return; }
     const y0 = Math.max(H.state.from ?? -Infinity, d3.min(allConf, r => +r.year)), y1 = Math.min(H.state.to ?? Infinity, d3.max(allConf, r => +r.year));
     const years = d3.range(y0, y1 + 1);
     const orgs = d3.rollups(rows, v => ({first: d3.min(v, r => r.year), last: d3.max(v, r => r.year), n: v.length, country: H.cc(v[0]), cells: new Map(v.map(r => [r.year, r]))}), r => r.org)
       .map(([org, o]) => ({org, ...o})).filter(o => all || o.n >= 2);
     const cmp = {last: (a, b) => b.last - a.last || a.first - b.first || b.n - a.n, first: (a, b) => a.first - b.first || a.last - b.last || b.n - a.n, count: (a, b) => b.n - a.n || b.last - a.last}[sort];
     orgs.sort((a, b) => cmp(a, b) || a.org.localeCompare(b.org));
-    if (!orgs.length) { const p = document.createElement('div'); p.className = 'note'; p.textContent = '所选年份内没有赞助过两届及以上的机构；勾选“包括只出现过 1 届的机构”查看全部。'; el.append(p); return; }
+    if (!orgs.length) { const p = document.createElement('div'); p.className = 'note'; p.textContent = H.T('No organization sponsored two or more editions in the selected years. Tick “Include one-time sponsors” to see all.', '所选年份内没有赞助过两届及以上的机构；勾选“包括只出现过 1 届的机构”查看全部。'); el.append(p); return; }
     const boxW = el.parentElement.clientWidth || 600;
     const svg = d3.select(el).append('svg');
     const names = orgs.map(o => H.label(o.org, o.country));
     const lw = H.measure(svg, names, 11) + 10 + H.flagGap();
-    const rlab = d => `${d.n} 届${d.last < lastCovered - 2 ? ' · 停于 ' + d.last : ''}`;
+    const rlab = d => H.T(`${d.n} eds${d.last < lastCovered - 2 ? ' · last ' + d.last : ''}`, `${d.n} 届${d.last < lastCovered - 2 ? ' · 停于 ' + d.last : ''}`);
     const rw = H.measure(svg, orgs.map(rlab), 10) + 16, top = 22, rowH = 18;
     const cell = Math.max(10, Math.min(26, Math.floor((boxW - lw - rw) / years.length)));
     const W = lw + cell * years.length + rw, Ht = top + orgs.length * rowH + 4;
@@ -512,7 +737,7 @@ window.HX.on(() => {
     const x = yr => lw + (yr - y0) * cell;
     svg.append('g').selectAll('rect').data(years.filter(yr => !covered.has(yr))).join('rect')
       .attr('x', d => x(d)).attr('y', top).attr('width', cell).attr('height', Ht - top - 4).attr('fill', 'var(--cds-chart-grid)').attr('opacity', 0.55)
-      .on('mousemove', (ev, d) => H.showTip(ev, [['t', `${conf} ${d}`], ['', '这一年没有拿到赞助名单']])).on('mouseleave', H.hideTip);
+      .on('mousemove', (ev, d) => H.showTip(ev, [['t', `${conf} ${d}`], ['', H.T('No sponsor list found for this year', '这一年没有拿到赞助名单')]])).on('mouseleave', H.hideTip);
     const every = cell >= 22 ? 2 : 5;
     svg.append('g').selectAll('text').data(years.filter(yr => yr % every === 0 || yr === y0)).join('text')
       .attr('x', d => x(d) + cell / 2).attr('y', top - 8).attr('text-anchor', 'middle').attr('font-size', 10).attr('fill', 'var(--color-fg-muted)').text(d => "'" + String(d).slice(2));
@@ -527,7 +752,7 @@ window.HX.on(() => {
         .attr('fill', d => d.level === 'unknown' ? 'var(--color-panel)' : col)
         .attr('fill-opacity', d => ({high: 1, mid: 0.6, low: 0.3, unknown: 1})[d.level])
         .attr('stroke', d => d.level === 'unknown' ? col : 'none').attr('stroke-width', 1.5)
-        .on('mousemove', (ev, d) => H.showTip(ev, [['t', `${conf} ${d.year}`], ['', d.org], ['', H.CTY_ZH[H.cc(d)] || H.cc(d)], ['', `等级：${d.tier}`], ['', d.est_usd === '' ? '没有当年价目' : `估算 ${H.fmtUSD(+d.est_usd)}`]]))
+        .on('mousemove', (ev, d) => H.showTip(ev, [['t', `${conf} ${d.year}`], ['', d.org], ['', H.CTY_ZH[H.cc(d)] || H.cc(d)], ['', H.T(`Tier: ${d.tier}`, `等级：${d.tier}`)], ['', d.est_usd === '' ? H.T('No price for that year', '没有当年价目') : H.T(`Estimate ${H.fmtUSD(+d.est_usd)}`, `估算 ${H.fmtUSD(+d.est_usd)}`)]]))
         .on('mouseleave', H.hideTip);
     });
     g.append('text').attr('x', lw + cell * years.length + 8).attr('y', rowH / 2).attr('dy', '.35em').attr('font-size', 10)
@@ -579,6 +804,32 @@ dash.onData(() => {
 </script>
 
 <script>
+// export: the raw sponsor listings as one CSV
+(() => {
+  const H = window.HX;
+  const COLS = ['id','conference','year','tier','sponsor','org','sector','country','parent_country','est_usd','price_basis','source'];
+  const esc = v => { const t = v == null ? '' : String(v); return /[",\n\r]/.test(t) ? '"' + t.replace(/"/g, '""') + '"' : t; };
+  const csv = rows => [COLS.join(','), ...rows.map(r => COLS.map(c => esc(r[c])).join(','))].join('\r\n') + '\r\n';
+  const btn = document.getElementById('ex-btn'), status = document.getElementById('ex-status'), ta = document.getElementById('ex-fallback');
+  let dl = null;
+  (async () => { try { dl = window.claude && window.claude.use ? await window.claude.use('downloads') : null; } catch (e) { dl = null; } })();
+  dash.onData(() => { btn.disabled = dash.data('listings').status !== 'ok'; });
+  btn.addEventListener('click', async () => {
+    const st = dash.data('listings'); if (st.status !== 'ok') return;
+    const text = csv(st.data), name = 'conference_sponsor_listings.csv';
+    status.textContent = ''; ta.hidden = true;
+    if (dl) {
+      try { await dl.save({filename: name, data: '﻿' + text}); status.textContent = H.T(`Saved ${name}.`, `已保存 ${name}。`); return; }
+      catch (e) { if (e && e.code === 'declined') { status.textContent = H.T('Download cancelled.', '已取消下载。'); return; }
+        if (e && e.code === 'rate_limited') { status.textContent = H.T('Another download is waiting for confirmation.', '还有一个下载在等待确认。'); return; } }
+    }
+    try { await navigator.clipboard.writeText(text); status.textContent = H.T(`Download isn’t available here, so the CSV (${st.data.length} rows) was copied to your clipboard.`, `这里不能下载，已把 CSV（${st.data.length} 行）复制到剪贴板。`); }
+    catch (e) { ta.hidden = false; ta.value = text; ta.focus(); ta.select(); status.textContent = H.T('Download isn’t available here. The CSV is selected below; copy it with your keyboard.', '这里不能下载。CSV 已在下方选中，请用键盘复制。'); }
+  });
+})();
+</script>
+
+<script>
 // AI vs HCI: sponsors per edition
 window.HX.on(() => {
   const H = window.HX;
@@ -587,12 +838,12 @@ window.HX.on(() => {
   const st = a.status !== 'ok' ? a : b; lg.replaceChildren();
   if (H.failOrWait(el, st)) return;
   const ALL = [...H.CONF, ...H.HCONF];
-  const col = c => dash.colors[ALL.indexOf(c)];
+  const col = c => H.C[ALL.indexOf(c)];
   const rows = [...a.data, ...b.data].filter(r => ALL.includes(r.conference) && +r.year >= 2013 && H.inRange(r.year)).map(r => ({c: r.conference, y: +r.year, v: +r.n_sponsors}));
   H.legend(lg, ALL.filter(c => rows.some(r => r.c === c)).map(c => [col(c), c]));
   const W = el.clientWidth || 500, Ht = 260, m = {l: 34, r: 64, t: 10, b: 24};
   const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${Ht}`);
-  if (!rows.length) { svg.append('text').attr('y', 14).attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text('所选年份内没有数据'); return; }
+  if (!rows.length) { svg.append('text').attr('y', 14).attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text(H.T('No data in the selected years', '所选年份内没有数据')); return; }
   const ext = d3.extent(rows, r => r.y); if (ext[0] === ext[1]) { ext[0] -= 1; ext[1] += 1; }
   const x = d3.scaleLinear(ext, [m.l, W - m.r]);
   const y = d3.scaleLinear([0, d3.max(rows, r => r.v) * 1.08], [Ht - m.b, m.t]).nice();
@@ -606,9 +857,9 @@ window.HX.on(() => {
     const s = rows.filter(r => r.c === c).sort((p, q) => p.y - q.y); if (!s.length) return;
     const hci = H.HCONF.includes(c);
     svg.append('path').datum(s).attr('fill', 'none').attr('stroke', col(c)).attr('stroke-width', hci ? 1.5 : 2).attr('stroke-dasharray', hci ? '4 3' : null)
-      .attr('d', d3.line(d => x(d.y), d => y(d.v)).defined((d, i) => i === 0 || d.y - s[i - 1].y === 1).curve(d3.curveLinear));
-    svg.append('g').selectAll('circle').data(s).join('circle').attr('cx', d => x(d.y)).attr('cy', d => y(d.v)).attr('r', 3).attr('fill', col(c)).attr('stroke', 'var(--color-panel)').attr('stroke-width', 1.5)
-      .on('mousemove', (ev, d) => H.showTip(ev, [['t', `${c} ${d.y}`], ['', `${d.v} 家赞助方`]])).on('mouseleave', H.hideTip);
+      .attr('d', d3.line(d => x(d.y), d => y(d.v)).defined((d, i) => i === 0 || d.y - s[i - 1].y === 1));
+    svg.append('g').selectAll('circle').data(s).join('circle').attr('cx', d => x(d.y)).attr('cy', d => y(d.v)).attr('r', 3).attr('fill', col(c)).attr('stroke', 'var(--color-bg)').attr('stroke-width', 1.5)
+      .on('mousemove', (ev, d) => H.showTip(ev, [['t', `${c} ${d.y}`], ['', H.T(`${d.v} sponsors`, `${d.v} 家赞助方`)]])).on('mouseleave', H.hideTip);
     const last = s[s.length - 1]; ends.push({c, x: x(last.y) + 7, y: y(last.v)});
   });
   ends.sort((p, q) => p.y - q.y); for (let i = 1; i < ends.length; i++) if (ends[i].y - ends[i - 1].y < 11) ends[i].y = ends[i - 1].y + 11;
@@ -634,11 +885,11 @@ window.HX.on(() => {
   const ctry = new Map(ai.map(r => [r.org, H.cc(r)]));
   const items = [...A.keys()].filter(o => Hm.has(o)).map(o => ({org: o, ai: A.get(o), hci: Hm.get(o), country: ctry.get(o)}))
     .sort((p, q) => (q.ai + q.hci) - (p.ai + p.hci) || p.org.localeCompare(q.org)).slice(0, 16);
-  const cA = dash.colors[0], cH = dash.colors[4];
-  H.legend(lg, [[cA, 'AI 会议届次'], [cH, 'HCI 会议届次']]);
+  const cA = H.C[0], cH = H.C[3];
+  H.legend(lg, [[cA, H.T('AI conference editions', 'AI 会议届次')], [cH, H.T('HCI conference editions', 'HCI 会议届次')]]);
   const W = el.clientWidth || 400, rowH = 26, Ht = items.length * rowH + 22;
   const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${Math.max(Ht, 30)}`);
-  if (!items.length) { svg.append('text').attr('y', 14).attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text('所选年份内没有两边都赞助的企业'); return; }
+  if (!items.length) { svg.append('text').attr('y', 14).attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text(H.T('No company sponsored both fields in the selected years', '所选年份内没有两边都赞助的企业')); return; }
   const lw = H.measure(svg, items.map(d => d.org), 12) + 10 + H.flagGap();
   const x = d3.scaleLinear([0, d3.max(items, d => Math.max(d.ai, d.hci))], [lw, W - 28]);
   const y = d3.scaleBand(items.map(d => d.org), [18, Ht]).padding(0.2);
@@ -652,6 +903,6 @@ window.HX.on(() => {
   g.append('text').attr('x', d => x(d.ai) + 4).attr('y', d => y(d.org) + bh / 2).attr('dy', '.35em').attr('font-size', 10).attr('fill', 'var(--color-fg-muted)').text(d => d.ai);
   g.append('text').attr('x', d => x(d.hci) + 4).attr('y', d => y(d.org) + bh * 1.5 + 2).attr('dy', '.35em').attr('font-size', 10).attr('fill', 'var(--color-fg-muted)').text(d => d.hci);
   g.append('rect').attr('x', 0).attr('width', W).attr('y', d => y(d.org)).attr('height', y.bandwidth()).attr('fill', 'transparent')
-    .on('mousemove', (ev, d) => H.showTip(ev, [['t', d.org], ['', `AI 会议：${d.ai} 届`], ['', `HCI 会议：${d.hci} 届`]])).on('mouseleave', H.hideTip);
+    .on('mousemove', (ev, d) => H.showTip(ev, [['t', d.org], ['', H.T(`AI conferences: ${d.ai} editions`, `AI 会议：${d.ai} 届`)], ['', H.T(`HCI conferences: ${d.hci} editions`, `HCI 会议：${d.hci} 届`)]])).on('mouseleave', H.hideTip);
 });
 </script>

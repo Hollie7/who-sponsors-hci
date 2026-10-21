@@ -22,11 +22,12 @@ data/
 scripts/
   build.py, countries.py        build the HCI tables; organization → country
   ai/build_ai.py, normalize.py, ai_meta.py   build the AI tables; name merging, sector, country
+  make_ai_page.py               build dashboard/ai/index.html from the HCI page, so both share one layout
   make_standalone.py            local preview of the dashboards (dashboard/**/standalone.html)
   build_site.py                 build the public website into docs/
 dashboard/
   index.html, flags.js          HCI and AI-ethics dashboard (English / Chinese)
-  ai/index.html                 AI conference dashboard
+  ai/index.html                 AI conference dashboard (generated from index.html by scripts/make_ai_page.py)
 docs/                           the public website (generated)
 site.config.json                author, links and analytics settings for the website
 ```
