@@ -1,0 +1,984 @@
+conference,year,tier,sponsor,source
+CHI,2019,Champion,Alibaba,https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2019,Champion,Baidu,https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2019,Champion,Bloomberg,https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2019,Champion,Meta/Facebook,https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2019,Champion,Google,https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2019,Champion,Microsoft,https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2019,Champion,NSF,https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2019,Champion,Yahoo/Verizon Media,https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2019,Contributor,Autodesk,https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2019,Contributor,Huawei,https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2019,Contributor,IBM,https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2019,Contributor,Mozilla,https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2019,Contributor,SICSA,https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2019,Contributor,University of Glasgow,https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2019,Friend,Adobe,https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2019,Friend,Elsevier,https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2019,Friend,Uber,https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2022,Hero,Google,https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/
+CHI,2022,Champion,Bloomberg,https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/
+CHI,2022,Champion,Meta/Facebook,https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/
+CHI,2022,Champion,Microsoft,https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/
+CHI,2022,Champion,NSF,https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/
+CHI,2022,Champion,Yahoo/Verizon Media,https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/
+CHI,2022,Contributor,Adobe,https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/
+CHI,2022,Contributor,Apple,https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/
+CHI,2022,Contributor,Autodesk,https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/
+CHI,2022,Contributor,Tableau/Salesforce,https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/
+CHI,2022,Contributor,Toyota Research Institute,https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/
+CHI,2022,Friend,Megagon Labs,https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/
+CHI,2022,Friend,University of Miami,https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/
+CHI,2023,Hero,Google,https://chi2023.acm.org/for-sponsors-exhibitors-and-recruiters/sponsoring/chi-2023-sponsors/
+CHI,2023,Hero,Siemens,https://chi2023.acm.org/for-sponsors-exhibitors-and-recruiters/sponsoring/chi-2023-sponsors/
+CHI,2023,Champion,Apple,https://chi2023.acm.org/for-sponsors-exhibitors-and-recruiters/sponsoring/chi-2023-sponsors/
+CHI,2023,Champion,Bloomberg,https://chi2023.acm.org/for-sponsors-exhibitors-and-recruiters/sponsoring/chi-2023-sponsors/
+CHI,2023,Champion,NSF,https://chi2023.acm.org/for-sponsors-exhibitors-and-recruiters/sponsoring/chi-2023-sponsors/
+CHI,2023,Contributor,Adobe,https://chi2023.acm.org/for-sponsors-exhibitors-and-recruiters/sponsoring/chi-2023-sponsors/
+CHI,2023,Contributor,Autodesk,https://chi2023.acm.org/for-sponsors-exhibitors-and-recruiters/sponsoring/chi-2023-sponsors/
+CHI,2023,Contributor,Toyota Research Institute,https://chi2023.acm.org/for-sponsors-exhibitors-and-recruiters/sponsoring/chi-2023-sponsors/
+CHI,2024,Champion,Apple,https://chi2024.acm.org/category/uncategorized/
+CHI,2024,Champion,Google,https://chi2024.acm.org/category/uncategorized/
+CHI,2024,Champion,NSF,https://chi2024.acm.org/category/uncategorized/
+CHI,2024,Champion,Chen Institute,https://chi2024.acm.org/category/uncategorized/
+CHI,2024,Contributor,Adobe,https://chi2024.acm.org/category/uncategorized/
+CHI,2024,Contributor,Autodesk,https://chi2024.acm.org/category/uncategorized/
+CHI,2024,Contributor,Meta/Facebook,https://chi2024.acm.org/category/uncategorized/
+CHI,2024,Contributor,Microsoft,https://chi2024.acm.org/category/uncategorized/
+CHI,2024,Contributor,Toyota Research Institute,https://chi2024.acm.org/category/uncategorized/
+CHI,2026,Hero,Google,https://chi2026.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2026,Champion,Adobe,https://chi2026.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2026,Champion,Apple,https://chi2026.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2026,Champion,Meta/Facebook,https://chi2026.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2026,Champion,Microsoft,https://chi2026.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2026,Champion,MBZUAI,https://chi2026.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2026,Champion,Toyota Research Institute,https://chi2026.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2026,Contributor,Autodesk,https://chi2026.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+UbiComp,2025,Gold,TSV (Technology Industries of Finland Centennial Foundation),https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/
+UbiComp,2025,Gold,Huawei,https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/
+UbiComp,2025,Silver,City of Espoo,https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/
+UbiComp,2025,Silver,Nokia Bell Labs,https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/
+UbiComp,2025,Bronze,Wellcome Trust,https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/
+UbiComp,2025,Startup,ERMES,https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/
+UbiComp,2025,Startup,Holden,https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/
+UbiComp,2025,Startup,One Ring,https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/
+UbiComp,2025,Startup,Sustain,https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/
+UbiComp,2025,Startup,SparQi Lab,https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/
+UbiComp,2025,Startup,Frontiers,https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/
+UbiComp,2025,Startup,Bergsonne Labs,https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/
+UbiComp,2025,Startup,GreenSense,https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/
+CHI,2025,Hero,Google,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2025,Hero,City of Yokohama,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2025,Hero,Science Council of Japan,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2025,Champion,Recruit,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2025,Champion,Apple,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2025,Champion,H2L,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2025,Champion,Microsoft,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2025,Champion,Toyota Research Institute,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2025,Champion,Fairy Devices,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2025,Champion,NTT,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2025,Champion,Mercari,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2025,Contributor,Commonwealth Bank of Australia,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2025,Contributor,OMRON SINIC X,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2025,Contributor,Autodesk,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2025,Contributor,NICT,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2025,Contributor,Adobe,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2025,Contributor,NEC,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2025,Contributor,Huawei,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2025,Contributor,Meta/Facebook,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2025,Friend,CyberAgent,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2025,Friend,LY Corporation,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/
+CHI,2018,Champion,Alibaba,https://chi2018.acm.org/?p=110
+CHI,2018,Champion,Bloomberg,https://chi2018.acm.org/?p=110
+CHI,2018,Champion,Meta/Facebook,https://chi2018.acm.org/?p=110
+CHI,2018,Champion,Google,https://chi2018.acm.org/?p=110
+CHI,2018,Champion,IBM,https://chi2018.acm.org/?p=110
+CHI,2018,Champion,Microsoft,https://chi2018.acm.org/?p=110
+CHI,2018,Champion,Yahoo/Verizon Media,https://chi2018.acm.org/?p=110
+CHI,2018,Contributor,Disney Research,https://chi2018.acm.org/?p=110
+CHI,2018,Contributor,NSF,https://chi2018.acm.org/?p=110
+CHI,2018,Contributor,Salesforce,https://chi2018.acm.org/?p=110
+CHI,2018,Contributor,SAT (Société des arts technologiques),https://chi2018.acm.org/?p=110
+CHI,2018,Friend,Adobe,https://chi2018.acm.org/?p=110
+CHI,2020,Champion,Meta/Facebook,https://chi2020.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2020,Champion,Google,https://chi2020.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2020,Champion,Microsoft,https://chi2020.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2020,Champion,Monash University,https://chi2020.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2020,Champion,Yahoo/Verizon Media,https://chi2020.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2020,Contributor,Apple,https://chi2020.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2020,Contributor,Autodesk,https://chi2020.acm.org/for-industry-sponsors/list-of-sponsors/
+CHI,2021,Champion,Bloomberg,https://chi2021.acm.org/
+CHI,2021,Champion,Meta/Facebook,https://chi2021.acm.org/
+CHI,2021,Champion,Google,https://chi2021.acm.org/
+CHI,2021,Champion,Kyocera,https://chi2021.acm.org/
+CHI,2021,Champion,Microsoft,https://chi2021.acm.org/
+CHI,2021,Champion,Monash University,https://chi2021.acm.org/
+CHI,2021,Champion,Yahoo/Verizon Media,https://chi2021.acm.org/
+CHI,2021,Contributor,Adobe,https://chi2021.acm.org/
+CHI,2021,Contributor,Apple,https://chi2021.acm.org/
+CHI,2021,Contributor,Autodesk,https://chi2021.acm.org/
+CHI,2021,Contributor,IBM,https://chi2021.acm.org/
+CHI,2021,Contributor,LY Corporation,https://chi2021.acm.org/
+CHI,2021,Contributor,Mercari,https://chi2021.acm.org/
+CHI,2021,Contributor,Yahoo Japan,https://chi2021.acm.org/
+CHI,2016,Hero,Infosys,https://chi2016.acm.org/wp/list-of-sponsors/
+CHI,2016,Champion,Bloomberg,https://chi2016.acm.org/wp/list-of-sponsors/
+CHI,2016,Champion,Meta/Facebook,https://chi2016.acm.org/wp/list-of-sponsors/
+CHI,2016,Champion,Google,https://chi2016.acm.org/wp/list-of-sponsors/
+CHI,2016,Champion,HP,https://chi2016.acm.org/wp/list-of-sponsors/
+CHI,2016,Champion,IBM,https://chi2016.acm.org/wp/list-of-sponsors/
+CHI,2016,Champion,Microsoft,https://chi2016.acm.org/wp/list-of-sponsors/
+CHI,2016,Champion,Yahoo/Verizon Media,https://chi2016.acm.org/wp/list-of-sponsors/
+CHI,2016,Contributor,Autodesk,https://chi2016.acm.org/wp/list-of-sponsors/
+CHI,2016,Contributor,GE,https://chi2016.acm.org/wp/list-of-sponsors/
+CHI,2016,Contributor,JD Lab,https://chi2016.acm.org/wp/list-of-sponsors/
+CHI,2016,Contributor,Naver,https://chi2016.acm.org/wp/list-of-sponsors/
+CHI,2016,Contributor,NSF,https://chi2016.acm.org/wp/list-of-sponsors/
+CHI,2016,Contributor,Salesforce,https://chi2016.acm.org/wp/list-of-sponsors/
+CHI,2016,Contributor,Splunk,https://chi2016.acm.org/wp/list-of-sponsors/
+CHI,2016,Contributor,work2future (San Jose),https://chi2016.acm.org/wp/list-of-sponsors/
+CHI,2016,Friend,Adobe,https://chi2016.acm.org/wp/list-of-sponsors/
+CHI,2016,Friend,Disney Research,https://chi2016.acm.org/wp/list-of-sponsors/
+CHI,2015,Hero,Samsung,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/
+CHI,2015,Champion,GolfZon,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/
+CHI,2015,Champion,Google,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/
+CHI,2015,Champion,Microsoft,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/
+CHI,2015,Champion,Naver,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/
+CHI,2015,Champion,SK Planet,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/
+CHI,2015,Contributor,Autodesk,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/
+CHI,2015,Contributor,Kakao,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/
+CHI,2015,Contributor,Disney Research,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/
+CHI,2015,Contributor,Meta/Facebook,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/
+CHI,2015,Contributor,FuturePlay,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/
+CHI,2015,Contributor,Hyundai,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/
+CHI,2015,Contributor,LG,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/
+CHI,2015,Contributor,Language Grid,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/
+CHI,2015,Contributor,NSF,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/
+CHI,2015,Friend,Adobe,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/
+CHI,2015,Friend,H9Works,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/
+CHI,2015,Friend,Yonsei University,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/
+CHI,2015,Friend,Yonsei University ICS,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/
+CHI,2015,Friend,KIPFA,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/
+CHI,2015,Friend,Samsung Art and Design Institute,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/
+CHI,2015,Special,Seoul Metropolitan Government,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/
+CHI,2015,Special,Korea Tourism Organization,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/
+CHI,2014,Champion,Autodesk,https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014
+CHI,2014,Champion,Bloomberg,https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014
+CHI,2014,Champion,Google,https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014
+CHI,2014,Champion,GRAND NCE,https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014
+CHI,2014,Champion,Microsoft,https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014
+CHI,2014,Champion,Naver,https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014
+CHI,2014,Champion,University of Toronto,https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014
+CHI,2014,Contributor,Meta/Facebook,https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014
+CHI,2014,Contributor,NSF,https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014
+CHI,2014,Contributor,Yahoo/Verizon Media,https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014
+CHI,2014,Friend,Disney Research,https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014
+CHI,2014,Friend,Newcastle University,https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014
+CHI,2014,Friend,UMBC,https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014
+CHI,2014,Friend,UC Irvine,https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014
+CHI,2014,Friend,University of Maryland,https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014
+CHI,2014,Friend,Virginia Tech,https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014
+CHI,2013,Hero,JCDecaux,https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/
+CHI,2013,Champion,Bloomberg,https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/
+CHI,2013,Champion,Université Paris-Dauphine,https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/
+CHI,2013,Champion,eBay/PayPal,https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/
+CHI,2013,Champion,Google,https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/
+CHI,2013,Champion,Inria,https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/
+CHI,2013,Champion,Microsoft,https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/
+CHI,2013,Champion,Telecom ParisTech,https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/
+CHI,2013,Contributor,Autodesk,https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/
+CHI,2013,Contributor,Digiteo,https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/
+CHI,2013,Contributor,Meta/Facebook,https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/
+CHI,2013,Contributor,Région Île-de-France,https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/
+CHI,2013,Contributor,Nokia,https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/
+CHI,2013,Contributor,Yahoo/Verizon Media,https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/
+CHI,2013,Friend,GRAND NCE,https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/
+CHI,2012,Champion,Autodesk,https://chi2012.acm.org/sponsors.shtml
+CHI,2012,Champion,Bloomberg,https://chi2012.acm.org/sponsors.shtml
+CHI,2012,Champion,eBay/PayPal,https://chi2012.acm.org/sponsors.shtml
+CHI,2012,Champion,Google,https://chi2012.acm.org/sponsors.shtml
+CHI,2012,Champion,Microsoft,https://chi2012.acm.org/sponsors.shtml
+CHI,2012,Champion,NSF,https://chi2012.acm.org/sponsors.shtml
+CHI,2012,Champion,SAP,https://chi2012.acm.org/sponsors.shtml
+CHI,2012,Friend,Adobe,https://chi2012.acm.org/sponsors.shtml
+CHI,2012,Friend,Disney Research,https://chi2012.acm.org/sponsors.shtml
+CHI,2012,Friend,Samsung,https://chi2012.acm.org/sponsors.shtml
+CHI,2012,Friend,University of Michigan,https://chi2012.acm.org/sponsors.shtml
+CHI,1996,Corporate,Apple,https://chi1996.acm.org/proceedings/corpsp.html
+CHI,1996,Corporate,AT&T Bell Labs,https://chi1996.acm.org/proceedings/corpsp.html
+CHI,1996,Corporate,Bellcore,https://chi1996.acm.org/proceedings/corpsp.html
+CHI,1996,Corporate,Canon,https://chi1996.acm.org/proceedings/corpsp.html
+CHI,1996,Corporate,IBM,https://chi1996.acm.org/proceedings/corpsp.html
+CHI,1996,Corporate,Intel,https://chi1996.acm.org/proceedings/corpsp.html
+CHI,1996,Corporate,Microsoft,https://chi1996.acm.org/proceedings/corpsp.html
+CHI,1996,Corporate,Nortel/BNR,https://chi1996.acm.org/proceedings/corpsp.html
+CHI,1996,Corporate,NYNEX,https://chi1996.acm.org/proceedings/corpsp.html
+CHI,1996,Corporate,Oracle,https://chi1996.acm.org/proceedings/corpsp.html
+CHI,1996,Corporate,Philips,https://chi1996.acm.org/proceedings/corpsp.html
+CHI,1996,Corporate,Sun Microsystems,https://chi1996.acm.org/proceedings/corpsp.html
+CHI,1996,Corporate,U S WEST,https://chi1996.acm.org/proceedings/corpsp.html
+CSCW,2026,Gold,Notion,https://cscw.acm.org/2026/2026sponsors.html
+CSCW,2026,Silver,Google DeepMind,https://cscw.acm.org/2026/2026sponsors.html
+CSCW,2026,Friend,Underwood Institute,https://cscw.acm.org/2026/2026sponsors.html
+CSCW,2025,Silver,"MediaFutures (UiB) [logo 'MF', unverified]",https://cscw.acm.org/2025/index.php/confirmed-sponsors/
+CSCW,2025,Silver,NSF,https://cscw.acm.org/2025/index.php/confirmed-sponsors/
+CSCW,2025,Bronze,Google,https://cscw.acm.org/2025/index.php/confirmed-sponsors/
+CSCW,2025,Bronze,Underwood Institute,https://cscw.acm.org/2025/index.php/confirmed-sponsors/
+CSCW,2025,Bronze,Adobe,https://cscw.acm.org/2025/index.php/confirmed-sponsors/
+CSCW,2024,Supporter,NSF,https://cscw.acm.org/2024/
+CSCW,2024,Supporter,Google,https://cscw.acm.org/2024/
+CSCW,2024,Supporter,Underwood Institute,https://cscw.acm.org/2024/
+CSCW,2024,Supporter,Stevens Institute of Technology,https://cscw.acm.org/2024/
+CSCW,2023,Friend,Google,https://cscw.acm.org/2023/
+CSCW,2023,Friend,Underwood Institute,https://cscw.acm.org/2023/
+CSCW,2023,Friend,Infor,https://cscw.acm.org/2023/
+CSCW,2023,Friend,SCI [unidentified logo],https://cscw.acm.org/2023/
+CSCW,2023,DC Supporter,NSF,https://cscw.acm.org/2023/
+CSCW,2022,Champion,Meta/Facebook,https://cscw.acm.org/2022/
+CSCW,2022,Benefactor,Google,https://cscw.acm.org/2022/
+CSCW,2022,Benefactor,Adobe,https://cscw.acm.org/2022/
+CSCW,2022,Friend,Underwood Institute,https://cscw.acm.org/2022/
+CSCW,2022,Friend,CyberLink,https://cscw.acm.org/2022/
+CSCW,2022,Friend,Perfect Corp,https://cscw.acm.org/2022/
+CSCW,2021,Champion,Google,https://cscw.acm.org/2021/?p=807
+CSCW,2021,Champion,Meta/Facebook,https://cscw.acm.org/2021/?p=807
+CSCW,2021,Benefactor,Marvin,https://cscw.acm.org/2021/?p=807
+CSCW,2021,Contributor,Microsoft,https://cscw.acm.org/2021/?p=807
+CSCW,2021,Contributor,Spotify,https://cscw.acm.org/2021/?p=807
+CSCW,2021,Contributor,Underwood Institute,https://cscw.acm.org/2021/?p=807
+CSCW,2021,Contributor,Adobe,https://cscw.acm.org/2021/?p=807
+CSCW,2021,DC Supporter,NSF,https://cscw.acm.org/2021/?p=807
+CSCW,2020,Unspecified,Meta/Facebook,https://cscw.acm.org/2020/?p=573
+CSCW,2020,Unspecified,Microsoft,https://cscw.acm.org/2020/?p=573
+CSCW,2020,Unspecified,Underwood Institute,https://cscw.acm.org/2020/?p=573
+CSCW,2020,Unspecified,NSF,https://cscw.acm.org/2020/?p=573
+CSCW,2018,Champion,Meta/Facebook,https://cscw.acm.org/2018/
+CSCW,2018,Contributor,IBM,https://cscw.acm.org/2018/
+CSCW,2018,Contributor,Snap,https://cscw.acm.org/2018/
+CSCW,2018,Friend,Underwood Institute,https://cscw.acm.org/2018/
+CSCW,2017,Champion,Meta/Facebook,https://cscw.acm.org/2017
+CSCW,2017,Champion,NSF,https://cscw.acm.org/2017
+CSCW,2017,Benefactor,IBM,https://cscw.acm.org/2017
+CSCW,2017,Benefactor,Microsoft,https://cscw.acm.org/2017
+CSCW,2017,Contributor,HP,https://cscw.acm.org/2017
+CSCW,2017,Contributor,Mozilla,https://cscw.acm.org/2017
+CSCW,2017,Friend,Google,https://cscw.acm.org/2017
+CSCW,2016,Champion,Intel,https://cscw.acm.org/2016/sponsors/
+CSCW,2016,Champion,Meta/Facebook,https://cscw.acm.org/2016/sponsors/
+CSCW,2016,Benefactor,Microsoft,https://cscw.acm.org/2016/sponsors/
+CSCW,2016,Contributor,FXPAL,https://cscw.acm.org/2016/sponsors/
+CSCW,2016,Contributor,IBM,https://cscw.acm.org/2016/sponsors/
+CSCW,2016,Contributor,Google,https://cscw.acm.org/2016/sponsors/
+CSCW,2016,Friend,University of Copenhagen DIKU,https://cscw.acm.org/2016/sponsors/
+CSCW,2016,Friend,SAP,https://cscw.acm.org/2016/sponsors/
+CSCW,2016,Friend,IT University of Copenhagen,https://cscw.acm.org/2016/sponsors/
+CSCW,2016,Friend,Kitchen Cabinet Kings,https://cscw.acm.org/2016/sponsors/
+CSCW,2015,Champion,NSF,https://cscw.acm.org/2015
+CSCW,2015,Champion,Meta/Facebook,https://cscw.acm.org/2015
+CSCW,2015,Benefactor,GRAND NCE,https://cscw.acm.org/2015
+CSCW,2015,Benefactor,Microsoft,https://cscw.acm.org/2015
+CSCW,2015,Benefactor,Bloomberg,https://cscw.acm.org/2015
+CSCW,2015,Contributor,Northwestern University,https://cscw.acm.org/2015
+CSCW,2015,Contributor,IBM,https://cscw.acm.org/2015
+CSCW,2015,Friend,Google,https://cscw.acm.org/2015
+CSCW,2015,Friend,Simon Fraser University,https://cscw.acm.org/2015
+CSCW,2014,Unspecified,Meta/Facebook,https://cscw.acm.org/2014/cscw2014_program.pdf
+CSCW,2014,Unspecified,Microsoft,https://cscw.acm.org/2014/cscw2014_program.pdf
+CSCW,2014,Unspecified,NSF,https://cscw.acm.org/2014/cscw2014_program.pdf
+CSCW,2014,Unspecified,GRAND NCE,https://cscw.acm.org/2014/cscw2014_program.pdf
+CSCW,2014,Unspecified,IBM,https://cscw.acm.org/2014/cscw2014_program.pdf
+CSCW,2014,Unspecified,Drexel University,https://cscw.acm.org/2014/cscw2014_program.pdf
+CSCW,2014,Unspecified,Google,https://cscw.acm.org/2014/cscw2014_program.pdf
+CSCW,2014,Unspecified,UMBC,https://cscw.acm.org/2014/cscw2014_program.pdf
+CSCW,2013,Hero,NSF,https://cscw.acm.org/2013/
+CSCW,2013,Benefactor,Meta/Facebook,https://cscw.acm.org/2013/
+CSCW,2013,Benefactor,Microsoft,https://cscw.acm.org/2013/
+CSCW,2013,Contributor,GRAND NCE,https://cscw.acm.org/2013/
+CSCW,2013,Contributor,IBM,https://cscw.acm.org/2013/
+CSCW,2013,Contributor,Yahoo/Verizon Media,https://cscw.acm.org/2013/
+CSCW,2013,Friend,Google,https://cscw.acm.org/2013/
+CHI,2008,Hero,Microsoft,https://chi2008.acm.org/sponsors.html
+CHI,2008,Champion,Autodesk,https://chi2008.acm.org/sponsors.html
+CHI,2008,Champion,Google,https://chi2008.acm.org/sponsors.html
+CHI,2008,Champion,NSF,https://chi2008.acm.org/sponsors.html
+CHI,2008,Champion,Oracle,https://chi2008.acm.org/sponsors.html
+CHI,2008,Champion,SAP,https://chi2008.acm.org/sponsors.html
+CHI,2008,Champion,SourceForge,https://chi2008.acm.org/sponsors.html
+CHI,2008,Contributor,eLearn Magazine (ACM),https://chi2008.acm.org/sponsors.html
+CHI,2008,Contributor,ACM Interactions,https://chi2008.acm.org/sponsors.html
+CHI,2008,Contributor,Nokia,https://chi2008.acm.org/sponsors.html
+CHI,2008,Friend,Adobe,https://chi2008.acm.org/sponsors.html
+CHI,2008,Friend,Intel,https://chi2008.acm.org/sponsors.html
+CHI,2008,Friend,VMware,https://chi2008.acm.org/sponsors.html
+CHI,2008,Friend,University of Bari,https://chi2008.acm.org/sponsors.html
+CHI,2007,Hero,Intel,https://chi2007.acm.org/sponsor/sponsors.html
+CHI,2007,Champion,Cisco,https://chi2007.acm.org/sponsor/sponsors.html
+CHI,2007,Champion,Cooper,https://chi2007.acm.org/sponsor/sponsors.html
+CHI,2007,Champion,Google,https://chi2007.acm.org/sponsor/sponsors.html
+CHI,2007,Champion,Intuit,https://chi2007.acm.org/sponsor/sponsors.html
+CHI,2007,Champion,Microsoft,https://chi2007.acm.org/sponsor/sponsors.html
+CHI,2007,Champion,NSF,https://chi2007.acm.org/sponsor/sponsors.html
+CHI,2007,Champion,SAP,https://chi2007.acm.org/sponsor/sponsors.html
+CHI,2007,Champion,Sun Microsystems,https://chi2007.acm.org/sponsor/sponsors.html
+CHI,2007,Champion,Yahoo/Verizon Media,https://chi2007.acm.org/sponsor/sponsors.html
+CHI,2007,Champion,SourceForge,https://chi2007.acm.org/sponsor/sponsors.html
+CHI,2007,Contributor,Adobe,https://chi2007.acm.org/sponsor/sponsors.html
+CHI,2007,Contributor,Autodesk,https://chi2007.acm.org/sponsor/sponsors.html
+CHI,2007,Contributor,eBay/PayPal,https://chi2007.acm.org/sponsor/sponsors.html
+CHI,2007,Contributor,eLearn Magazine (ACM),https://chi2007.acm.org/sponsor/sponsors.html
+CHI,2007,Contributor,Nokia,https://chi2007.acm.org/sponsor/sponsors.html
+CHI,2007,Contributor,Pitney Bowes,https://chi2007.acm.org/sponsor/sponsors.html
+CHI,2007,Friend,FXPAL,https://chi2007.acm.org/sponsor/sponsors.html
+CHI,2007,Friend,VMware,https://chi2007.acm.org/sponsor/sponsors.html
+CHI,1998,Champion,Citibank,https://chi1998.acm.org/sponsors/index.html
+CHI,1998,Champion,Nokia,https://chi1998.acm.org/sponsors/index.html
+CHI,1998,Champion,IBM,https://chi1998.acm.org/sponsors/index.html
+CHI,1998,Champion,Sun Microsystems,https://chi1998.acm.org/sponsors/index.html
+CHI,1998,Champion,Microsoft,https://chi1998.acm.org/sponsors/index.html
+CHI,1998,Champion,Unisys,https://chi1998.acm.org/sponsors/index.html
+CHI,1998,Contributor,Andersen Consulting,https://chi1998.acm.org/sponsors/index.html
+CHI,1998,Contributor,AT&T,https://chi1998.acm.org/sponsors/index.html
+CHI,1998,Contributor,Bellcore,https://chi1998.acm.org/sponsors/index.html
+CHI,1998,Contributor,FXPAL,https://chi1998.acm.org/sponsors/index.html
+CHI,1998,Contributor,HP,https://chi1998.acm.org/sponsors/index.html
+CHI,1998,Contributor,Intel,https://chi1998.acm.org/sponsors/index.html
+CHI,1998,Contributor,Lucent Technologies,https://chi1998.acm.org/sponsors/index.html
+CHI,1998,Contributor,Oracle,https://chi1998.acm.org/sponsors/index.html
+CHI,1998,Contributor,Philips,https://chi1998.acm.org/sponsors/index.html
+CHI,1998,Contributor,Rent-a-Computer,https://chi1998.acm.org/sponsors/index.html
+CHI,1998,Contributor,Trilogy,https://chi1998.acm.org/sponsors/index.html
+UIST,2024,Platinum,Meta/Facebook,https://uist.acm.org/2024/sponsors/
+UIST,2024,Silver,Adobe,https://uist.acm.org/2024/sponsors/
+UIST,2024,Silver,Apple,https://uist.acm.org/2024/sponsors/
+UIST,2024,Silver,Google,https://uist.acm.org/2024/sponsors/
+UIST,2024,Silver,Autodesk,https://uist.acm.org/2024/sponsors/
+UIST,2023,Platinum,Meta/Facebook,https://uist.acm.org/2023/sponsors/
+UIST,2023,Silver,Adobe,https://uist.acm.org/2023/sponsors/
+UIST,2023,Silver,Apple,https://uist.acm.org/2023/sponsors/
+UIST,2023,Silver,Autodesk,https://uist.acm.org/2023/sponsors/
+UIST,2023,Silver,Google,https://uist.acm.org/2023/sponsors/
+UIST,2023,Bronze,Toyota Research Institute,https://uist.acm.org/2023/sponsors/
+UIST,2023,Bronze,JPMorgan Chase,https://uist.acm.org/2023/sponsors/
+UIST,2023,Bronze,CSIRO Data61,https://uist.acm.org/2023/sponsors/
+UIST,2022,Platinum,Meta/Facebook,https://uist.acm.org/uist2022/sponsors.html
+UIST,2022,Silver,Adobe,https://uist.acm.org/uist2022/sponsors.html
+UIST,2022,Silver,Autodesk,https://uist.acm.org/uist2022/sponsors.html
+UIST,2022,Bronze,Google,https://uist.acm.org/uist2022/sponsors.html
+UIST,2022,Bronze,Intel,https://uist.acm.org/uist2022/sponsors.html
+UIST,2022,Bronze,UCL,https://uist.acm.org/uist2022/sponsors.html
+UIST,2022,Bronze,Tableau/Salesforce,https://uist.acm.org/uist2022/sponsors.html
+UIST,2022,Bronze,Intuitive Surgical,https://uist.acm.org/uist2022/sponsors.html
+UIST,2022,Bronze,Toyota Research Institute,https://uist.acm.org/uist2022/sponsors.html
+UIST,2021,Platinum,Meta/Facebook,https://uist.acm.org/uist2021/
+UIST,2021,Silver,Autodesk,https://uist.acm.org/uist2021/
+UIST,2021,Silver,Apple,https://uist.acm.org/uist2021/
+UIST,2021,Silver,Adobe,https://uist.acm.org/uist2021/
+UIST,2021,Bronze,Intel,https://uist.acm.org/uist2021/
+UIST,2021,Bronze,Toyota Research Institute,https://uist.acm.org/uist2021/
+UIST,2021,Bronze,Intuitive Surgical,https://uist.acm.org/uist2021/
+UIST,2021,Bronze,Microsoft,https://uist.acm.org/uist2021/
+UIST,2019,Platinum,Chatham Labs,https://uist.acm.org/uist2019/
+UIST,2019,Silver,Adobe,https://uist.acm.org/uist2019/
+UIST,2019,Silver,Autodesk,https://uist.acm.org/uist2019/
+UIST,2019,Silver,Meta/Facebook,https://uist.acm.org/uist2019/
+UIST,2019,Bronze,Apple,https://uist.acm.org/uist2019/
+UIST,2019,Bronze,Google,https://uist.acm.org/uist2019/
+UIST,2019,Bronze,Microsoft,https://uist.acm.org/uist2019/
+UIST,2019,Bronze,Mozilla,https://uist.acm.org/uist2019/
+UIST,2019,Bronze,Synaptics,https://uist.acm.org/uist2019/
+UIST,2019,Bronze,Tactual Labs,https://uist.acm.org/uist2019/
+UIST,2016,Platinum,Autodesk,https://uist.acm.org/uist2016/
+UIST,2016,Platinum,Recruit,https://uist.acm.org/uist2016/
+UIST,2016,Gold,Google,https://uist.acm.org/uist2016/
+UIST,2016,Gold,Microsoft,https://uist.acm.org/uist2016/
+UIST,2016,Silver,FXPAL,https://uist.acm.org/uist2016/
+UIST,2016,Silver,Adobe,https://uist.acm.org/uist2016/
+UIST,2016,Silver,Sony CSL,https://uist.acm.org/uist2016/
+UIST,2016,Silver,Innolab (Japan),https://uist.acm.org/uist2016/
+UIST,2016,Bronze,Sensel,https://uist.acm.org/uist2016/
+UIST,2016,Bronze,Unity,https://uist.acm.org/uist2016/
+UIST,2016,Bronze,Yahoo Japan,https://uist.acm.org/uist2016/
+UIST,2016,Bronze,UX-XU,https://uist.acm.org/uist2016/
+UIST,2016,Bronze,Wacom,https://uist.acm.org/uist2016/
+UIST,2016,Bronze,University of Toronto,https://uist.acm.org/uist2016/
+UIST,2016,Bronze,Tactual Labs,https://uist.acm.org/uist2016/
+UIST,2016,Bronze,Synaptics,https://uist.acm.org/uist2016/
+UIST,2016,Bronze,Meta/Facebook,https://uist.acm.org/uist2016/
+UIST,2016,Institution,NICT,https://uist.acm.org/uist2016/
+UIST,2016,Institution,Kayamori Foundation,https://uist.acm.org/uist2016/
+UIST,2014,Platinum,Autodesk,https://uist.acm.org/uist2014/
+UIST,2014,Platinum,Microsoft,https://uist.acm.org/uist2014/
+UIST,2014,Gold,Marvell,https://uist.acm.org/uist2014/
+UIST,2014,Gold,Synaptics,https://uist.acm.org/uist2014/
+UIST,2014,Silver,GRAND NCE,https://uist.acm.org/uist2014/
+UIST,2014,Silver,Wacom,https://uist.acm.org/uist2014/
+UIST,2014,Silver,Adobe,https://uist.acm.org/uist2014/
+UIST,2014,Bronze,FXPAL,https://uist.acm.org/uist2014/
+UIST,2014,Bronze,Google,https://uist.acm.org/uist2014/
+UIST,2014,Bronze,IBM,https://uist.acm.org/uist2014/
+UIST,2014,Bronze,Tactual Labs,https://uist.acm.org/uist2014/
+UIST,2014,Bronze,Yahoo/Verizon Media,https://uist.acm.org/uist2014/
+UIST,2014,Bronze,University of Hawaii (HICHI),https://uist.acm.org/uist2014/
+UIST,2014,Friend,Disney Research,https://uist.acm.org/uist2014/
+UIST,2013,Champion,Microsoft,https://uist.acm.org/uist2013/
+UIST,2013,Platinum,Autodesk,https://uist.acm.org/uist2013/
+UIST,2013,Gold,Disney Research,https://uist.acm.org/uist2013/
+UIST,2013,Gold,Synaptics,https://uist.acm.org/uist2013/
+UIST,2013,Gold,VisitScotland,https://uist.acm.org/uist2013/
+UIST,2013,Silver,3M,https://uist.acm.org/uist2013/
+UIST,2013,Silver,Google,https://uist.acm.org/uist2013/
+UIST,2013,Silver,GRAND NCE,https://uist.acm.org/uist2013/
+UIST,2013,Silver,MultiTouch Ltd,https://uist.acm.org/uist2013/
+UIST,2013,Silver,SICSA,https://uist.acm.org/uist2013/
+UIST,2013,Silver,SMART Technologies,https://uist.acm.org/uist2013/
+UIST,2013,Silver,Wacom,https://uist.acm.org/uist2013/
+UIST,2013,Bronze,Adobe,https://uist.acm.org/uist2013/
+UIST,2013,Bronze,FXPAL,https://uist.acm.org/uist2013/
+UIST,2013,Bronze,IBM,https://uist.acm.org/uist2013/
+UIST,2013,Bronze,Nokia,https://uist.acm.org/uist2013/
+UIST,2013,Bronze,Samsung,https://uist.acm.org/uist2013/
+UIST,2013,Bronze,Tactual Labs,https://uist.acm.org/uist2013/
+UIST,2013,Bronze,Technicolor,https://uist.acm.org/uist2013/
+UIST,2009,Platinum,Autodesk,https://uist.acm.org/uist2009/
+UIST,2009,Platinum,Microsoft,https://uist.acm.org/uist2009/
+UIST,2009,Gold,SMART Technologies,https://uist.acm.org/uist2009/
+UIST,2009,Silver,Perceptive Pixel,https://uist.acm.org/uist2009/
+UIST,2009,Silver,Wacom,https://uist.acm.org/uist2009/
+UIST,2009,Bronze,Adobe,https://uist.acm.org/uist2009/
+UIST,2009,Bronze,Disney Research,https://uist.acm.org/uist2009/
+UIST,2009,Bronze,FXPAL,https://uist.acm.org/uist2009/
+UIST,2009,Bronze,Google,https://uist.acm.org/uist2009/
+UIST,2009,Bronze,IBM,https://uist.acm.org/uist2009/
+UIST,2009,Bronze,Nokia,https://uist.acm.org/uist2009/
+UIST,2009,Bronze,Ricoh,https://uist.acm.org/uist2009/
+UIST,2008,Gold,Microsoft,https://uist.acm.org/uist2008/sponsors/
+UIST,2008,Gold,Autodesk,https://uist.acm.org/uist2008/sponsors/
+UIST,2008,Gold,IBM,https://uist.acm.org/uist2008/sponsors/
+UIST,2008,Gold,SMART Technologies,https://uist.acm.org/uist2008/sponsors/
+UIST,2008,Silver,Intel,https://uist.acm.org/uist2008/sponsors/
+UIST,2008,Silver,Perceptive Pixel,https://uist.acm.org/uist2008/sponsors/
+UIST,2007,Anniversary Champion,Microsoft,https://uist.acm.org/uist2007/sponsors/
+UIST,2007,Champion,Google,https://uist.acm.org/uist2007/sponsors/
+UIST,2007,Champion,SMART Technologies,https://uist.acm.org/uist2007/sponsors/
+UIST,2007,Champion,SAP,https://uist.acm.org/uist2007/sponsors/
+UIST,2007,Champion,MERL,https://uist.acm.org/uist2007/sponsors/
+UIST,2007,Benefactor,Intel,https://uist.acm.org/uist2007/sponsors/
+UIST,2007,Benefactor,Adobe,https://uist.acm.org/uist2007/sponsors/
+UIST,2007,Donor,IBM,https://uist.acm.org/uist2007/sponsors/
+UIST,2007,Donor,Nokia,https://uist.acm.org/uist2007/sponsors/
+UIST,2007,Donor,FXPAL,https://uist.acm.org/uist2007/sponsors/
+UIST,2007,Donor,Philips,https://uist.acm.org/uist2007/sponsors/
+UIST,2007,Donor,Autodesk,https://uist.acm.org/uist2007/sponsors/
+UbiComp,2024,Unspecified,Google,https://ubicomp.hosting.acm.org/ubicompiswc2024_wp/
+UbiComp,2024,Unspecified,NextSense,https://ubicomp.hosting.acm.org/ubicompiswc2024_wp/
+UbiComp,2024,Unspecified,Frontiers,https://ubicomp.hosting.acm.org/ubicompiswc2024_wp/
+UbiComp,2023,Unspecified,NSF,https://ubicomp.org/ubicomp-iswc-2023/
+UbiComp,2023,Unspecified,Google,https://ubicomp.org/ubicomp-iswc-2023/
+UbiComp,2023,Unspecified,Intel,https://ubicomp.org/ubicomp-iswc-2023/
+UbiComp,2023,Unspecified,Microsoft,https://ubicomp.org/ubicomp-iswc-2023/
+UbiComp,2023,Unspecified,Springer,https://ubicomp.org/ubicomp-iswc-2023/
+UbiComp,2023,Unspecified,Frontiers,https://ubicomp.org/ubicomp-iswc-2023/
+UbiComp,2022,Unspecified,Optum,https://iswc.net/iswc22/sponsors
+UbiComp,2022,Unspecified,Google,https://iswc.net/iswc22/sponsors
+UbiComp,2022,Unspecified,Nokia Bell Labs,https://iswc.net/iswc22/sponsors
+UbiComp,2022,Unspecified,Samsung,https://iswc.net/iswc22/sponsors
+UbiComp,2019,Silver,Nokia Bell Labs,https://iswc.net/iswc19/sponsors.html
+UbiComp,2019,Silver,Google,https://iswc.net/iswc19/sponsors.html
+UbiComp,2019,Silver,Huawei,https://iswc.net/iswc19/sponsors.html
+UbiComp,2019,Bronze,Emteq,https://iswc.net/iswc19/sponsors.html
+UbiComp,2019,Bronze,Meta/Facebook,https://iswc.net/iswc19/sponsors.html
+UbiComp,2019,Bronze,Snap,https://iswc.net/iswc19/sponsors.html
+UbiComp,2019,Bronze,University of Cambridge,https://iswc.net/iswc19/sponsors.html
+UbiComp,2019,Unspecified,Springer,https://iswc.net/iswc19/sponsors.html
+UbiComp,2018,Gold,Nokia Bell Labs,https://iswc.net/iswc18/sponsors.html
+UbiComp,2018,Special,Singapore Tourism Board,https://iswc.net/iswc18/sponsors.html
+UbiComp,2018,Silver,Intel,https://iswc.net/iswc18/sponsors.html
+UbiComp,2018,Silver,Microsoft,https://iswc.net/iswc18/sponsors.html
+UbiComp,2018,Silver,Naver,https://iswc.net/iswc18/sponsors.html
+UbiComp,2018,Silver,Huawei,https://iswc.net/iswc18/sponsors.html
+UbiComp,2018,Silver,Google,https://iswc.net/iswc18/sponsors.html
+UbiComp,2017,Platinum,NSF,https://iswc.net/iswc17/sponsors.html
+UbiComp,2017,Gold,Flybits,https://iswc.net/iswc17/sponsors.html
+UbiComp,2017,Silver,Intel,https://iswc.net/iswc17/sponsors.html
+UbiComp,2017,Silver,Samsung,https://iswc.net/iswc17/sponsors.html
+UbiComp,2017,Silver,Industrial Holographics,https://iswc.net/iswc17/sponsors.html
+UbiComp,2017,Silver,Thalmic Labs,https://iswc.net/iswc17/sponsors.html
+UbiComp,2017,Silver,Disney Research,https://iswc.net/iswc17/sponsors.html
+UbiComp,2017,Bronze,Google,https://iswc.net/iswc17/sponsors.html
+UbiComp,2017,Bronze,HP,https://iswc.net/iswc17/sponsors.html
+UbiComp,2017,Bronze,ETRI,https://iswc.net/iswc17/sponsors.html
+UbiComp,2017,Bronze,Microsoft,https://iswc.net/iswc17/sponsors.html
+UbiComp,2016,Silver,Microsoft,https://ubicomp.org/ubicomp2016/index.php
+UbiComp,2016,Silver,TekGear,https://ubicomp.org/ubicomp2016/index.php
+UbiComp,2016,Silver,Intel,https://ubicomp.org/ubicomp2016/index.php
+UbiComp,2016,Silver,SAP,https://ubicomp.org/ubicomp2016/index.php
+UbiComp,2016,Silver,Deutsche Telekom,https://ubicomp.org/ubicomp2016/index.php
+UbiComp,2016,Bronze,Ubimax,https://ubicomp.org/ubicomp2016/index.php
+UbiComp,2016,Bronze,Frontiers,https://ubicomp.org/ubicomp2016/index.php
+UbiComp,2016,Bronze,JINS,https://ubicomp.org/ubicomp2016/index.php
+UbiComp,2016,Bronze,Google,https://ubicomp.org/ubicomp2016/index.php
+UbiComp,2013,Gold,Microsoft,https://iswc.net/iswc13/sponsors.html
+UbiComp,2013,Gold,Google,https://iswc.net/iswc13/sponsors.html
+UbiComp,2013,Silver,Intel,https://iswc.net/iswc13/sponsors.html
+UbiComp,2013,Bronze,Nokia,https://iswc.net/iswc13/sponsors.html
+CHI,2017,Champion,Bloomberg,https://chi2017.acm.org/list-of-sponsors.html
+CHI,2017,Champion,Meta/Facebook,https://chi2017.acm.org/list-of-sponsors.html
+CHI,2017,Champion,Google,https://chi2017.acm.org/list-of-sponsors.html
+CHI,2017,Champion,IBM,https://chi2017.acm.org/list-of-sponsors.html
+CHI,2017,Champion,Microsoft,https://chi2017.acm.org/list-of-sponsors.html
+CHI,2017,Champion,NSF,https://chi2017.acm.org/list-of-sponsors.html
+CHI,2017,Champion,Yahoo/Verizon Media,https://chi2017.acm.org/list-of-sponsors.html
+CHI,2017,Contributor,Autodesk,https://chi2017.acm.org/list-of-sponsors.html
+CHI,2017,Contributor,University of Toronto,https://chi2017.acm.org/list-of-sponsors.html
+CHI,2017,Contributor,Toyota Research Institute,https://chi2017.acm.org/list-of-sponsors.html
+CHI,2017,Friend,Adobe,https://chi2017.acm.org/list-of-sponsors.html
+CHI,2017,Friend,Disney Research,https://chi2017.acm.org/list-of-sponsors.html
+CSCW,2019,Champion,Meta/Facebook,https://cscw.acm.org/2019/index.html
+CSCW,2019,Contributor,Microsoft,https://cscw.acm.org/2019/index.html
+CSCW,2019,Contributor,Amazon,https://cscw.acm.org/2019/index.html
+CSCW,2019,Contributor,Snap,https://cscw.acm.org/2019/index.html
+CSCW,2019,Contributor,IBM,https://cscw.acm.org/2019/index.html
+CSCW,2019,Contributor,Adobe,https://cscw.acm.org/2019/index.html
+CSCW,2019,Friend,FXPAL,https://cscw.acm.org/2019/index.html
+CSCW,2019,Friend,Underwood Institute,https://cscw.acm.org/2019/index.html
+CSCW,2019,Friend,Google,https://cscw.acm.org/2019/index.html
+CSCW,2019,Friend,Mozilla,https://cscw.acm.org/2019/index.html
+UIST,2020,Platinum,Meta/Facebook,https://uist.acm.org/uist2020/sponsors.html
+UIST,2020,Silver,Autodesk,https://uist.acm.org/uist2020/sponsors.html
+UIST,2020,Silver,Adobe,https://uist.acm.org/uist2020/sponsors.html
+UIST,2020,Bronze,Microsoft,https://uist.acm.org/uist2020/sponsors.html
+UIST,2018,Gold,Hasso Plattner Institute,https://uist.acm.org/uist2018/sponsors
+UIST,2018,Silver,Adobe,https://uist.acm.org/uist2018/sponsors
+UIST,2018,Silver,Autodesk,https://uist.acm.org/uist2018/sponsors
+UIST,2018,Silver,Snap,https://uist.acm.org/uist2018/sponsors
+UIST,2018,Bronze,Meta/Facebook,https://uist.acm.org/uist2018/sponsors
+UIST,2018,Bronze,Makeblock,https://uist.acm.org/uist2018/sponsors
+UIST,2018,Bronze,Microsoft,https://uist.acm.org/uist2018/sponsors
+UIST,2018,Bronze,Mozilla,https://uist.acm.org/uist2018/sponsors
+UIST,2018,Bronze,Nureva,https://uist.acm.org/uist2018/sponsors
+UIST,2018,Friend,Google,https://uist.acm.org/uist2018/sponsors
+UIST,2017,Platinum,Autodesk,https://uist.acm.org/uist2017/sponsor/
+UIST,2017,Silver,Adobe,https://uist.acm.org/uist2017/sponsor/
+UIST,2017,Silver,Disney Research,https://uist.acm.org/uist2017/sponsor/
+UIST,2017,Silver,Microsoft,https://uist.acm.org/uist2017/sponsor/
+UIST,2017,Silver,Nureva,https://uist.acm.org/uist2017/sponsor/
+UIST,2017,Silver,Snap,https://uist.acm.org/uist2017/sponsor/
+UIST,2017,Bronze,Oculus (Facebook),https://uist.acm.org/uist2017/sponsor/
+UIST,2017,Bronze,Synaptics,https://uist.acm.org/uist2017/sponsor/
+UIST,2017,Bronze,Tactual Labs,https://uist.acm.org/uist2017/sponsor/
+UIST,2017,Friend,Google,https://uist.acm.org/uist2017/sponsor/
+UIST,2015,Platinum,Autodesk,https://uist.acm.org/uist2015/sponsorship
+UIST,2015,Platinum,Microsoft,https://uist.acm.org/uist2015/sponsorship
+UIST,2015,Gold,Synaptics,https://uist.acm.org/uist2015/sponsorship
+UIST,2015,Silver,FXPAL,https://uist.acm.org/uist2015/sponsorship
+UIST,2015,Silver,UNC Charlotte,https://uist.acm.org/uist2015/sponsorship
+UIST,2015,Silver,SMART Technologies,https://uist.acm.org/uist2015/sponsorship
+UIST,2015,Bronze,Adobe,https://uist.acm.org/uist2015/sponsorship
+UIST,2015,Bronze,Wacom,https://uist.acm.org/uist2015/sponsorship
+UIST,2015,Bronze,Google,https://uist.acm.org/uist2015/sponsorship
+UIST,2015,Bronze,NVIDIA,https://uist.acm.org/uist2015/sponsorship
+UIST,2015,Bronze,Tactual Labs,https://uist.acm.org/uist2015/sponsorship
+UIST,2015,Friend,Disney Research,https://uist.acm.org/uist2015/sponsorship
+UIST,2015,Friend,Carnegie Mellon University,https://uist.acm.org/uist2015/sponsorship
+UIST,2012,Platinum,Autodesk,https://uist.acm.org/uist2012/sponsors.html
+UIST,2012,Gold,Synaptics,https://uist.acm.org/uist2012/sponsors.html
+UIST,2012,Gold,Microsoft,https://uist.acm.org/uist2012/sponsors.html
+UIST,2012,Gold,Perceptive Pixel,https://uist.acm.org/uist2012/sponsors.html
+UIST,2012,Silver,Nokia,https://uist.acm.org/uist2012/sponsors.html
+UIST,2012,Silver,Wacom,https://uist.acm.org/uist2012/sponsors.html
+UIST,2012,Silver,Google,https://uist.acm.org/uist2012/sponsors.html
+UIST,2012,Silver,GRAND NCE,https://uist.acm.org/uist2012/sponsors.html
+UIST,2012,Bronze,Disney Research,https://uist.acm.org/uist2012/sponsors.html
+UIST,2012,Bronze,Adobe,https://uist.acm.org/uist2012/sponsors.html
+UIST,2012,Bronze,FXPAL,https://uist.acm.org/uist2012/sponsors.html
+UIST,2012,Bronze,IBM,https://uist.acm.org/uist2012/sponsors.html
+UIST,2012,Bronze,United Technologies Research Center,https://uist.acm.org/uist2012/sponsors.html
+UIST,2012,Bronze,Circle Twelve,https://uist.acm.org/uist2012/sponsors.html
+UIST,2012,Bronze,University of Rochester,https://uist.acm.org/uist2012/sponsors.html
+UIST,2011,Platinum,Autodesk,https://uist.acm.org/uist2011/sponsors.html
+UIST,2011,Platinum,Bloomberg,https://uist.acm.org/uist2011/sponsors.html
+UIST,2011,Platinum,Microsoft,https://uist.acm.org/uist2011/sponsors.html
+UIST,2011,Gold,Perceptive Pixel,https://uist.acm.org/uist2011/sponsors.html
+UIST,2011,Silver,Google,https://uist.acm.org/uist2011/sponsors.html
+UIST,2011,Silver,GRAND NCE,https://uist.acm.org/uist2011/sponsors.html
+UIST,2011,Silver,Synaptics,https://uist.acm.org/uist2011/sponsors.html
+UIST,2011,Silver,Wacom,https://uist.acm.org/uist2011/sponsors.html
+UIST,2011,Bronze,Adobe,https://uist.acm.org/uist2011/sponsors.html
+UIST,2011,Bronze,Disney Research,https://uist.acm.org/uist2011/sponsors.html
+UIST,2011,Bronze,FXPAL,https://uist.acm.org/uist2011/sponsors.html
+UIST,2011,Bronze,IBM,https://uist.acm.org/uist2011/sponsors.html
+UIST,2011,Bronze,Nokia,https://uist.acm.org/uist2011/sponsors.html
+UIST,2010,Platinum,Autodesk,https://uist.acm.org/uist2010/
+UIST,2010,Platinum,Microsoft,https://uist.acm.org/uist2010/
+UIST,2010,Platinum,Bloomberg,https://uist.acm.org/uist2010/
+UIST,2010,Gold,SMART Technologies,https://uist.acm.org/uist2010/
+UIST,2010,Silver,Wacom,https://uist.acm.org/uist2010/
+UIST,2010,Silver,Intel,https://uist.acm.org/uist2010/
+UIST,2010,Silver,Google,https://uist.acm.org/uist2010/
+UIST,2010,Bronze,Adobe,https://uist.acm.org/uist2010/
+UIST,2010,Bronze,Disney Research,https://uist.acm.org/uist2010/
+UIST,2010,Bronze,FXPAL,https://uist.acm.org/uist2010/
+UIST,2010,Bronze,IBM,https://uist.acm.org/uist2010/
+UIST,2010,Bronze,Nokia,https://uist.acm.org/uist2010/
+UIST,2025,Platinum,Huawei,https://uist.acm.org/2025/
+UIST,2025,Platinum,Meta/Facebook,https://uist.acm.org/2025/
+UIST,2025,Silver,Adobe,https://uist.acm.org/2025/
+UIST,2025,Silver,Apple,https://uist.acm.org/2025/
+UIST,2025,Silver,Autodesk,https://uist.acm.org/2025/
+UIST,2025,Silver,Google,https://uist.acm.org/2025/
+UIST,2025,Exhibitor,Bergsonne Labs,https://uist.acm.org/2025/
+UIST,2025,Contest Sponsor,DataFeel,https://uist.acm.org/2025/
+UIST,2025,Special,Busan Tourism Organization,https://uist.acm.org/2025/
+UIST,2025,Special,Dong-eui University,https://uist.acm.org/2025/
+UbiComp,2021,Unspecified,Bosch,https://www.ubicomp.org/ubicomp2021/
+UbiComp,2021,Unspecified,Google,https://www.ubicomp.org/ubicomp2021/
+UbiComp,2021,Unspecified,Intel,https://www.ubicomp.org/ubicomp2021/
+UbiComp,2021,Unspecified,Microsoft,https://www.ubicomp.org/ubicomp2021/
+UbiComp,2021,Unspecified,Stabilo,https://www.ubicomp.org/ubicomp2021/
+UbiComp,2021,Unspecified,University of Virginia,https://www.ubicomp.org/ubicomp2021/
+UbiComp,2021,Unspecified,Springer,https://www.ubicomp.org/ubicomp2021/
+UbiComp,2020,Silver,Google,https://ubicomp.org/ubicomp2020/
+UbiComp,2020,Unspecified,Intel,https://ubicomp.org/ubicomp2020/
+UbiComp,2020,Unspecified,Microsoft,https://ubicomp.org/ubicomp2020/
+UbiComp,2020,Unspecified,Stabilo,https://ubicomp.org/ubicomp2020/
+UbiComp,2020,Unspecified,Springer,https://ubicomp.org/ubicomp2020/
+UbiComp,2020,Supporter (host),UC San Diego (Qualcomm Institute),https://ubicomp.org/ubicomp2020/
+CHI,2009,Champion,Autodesk,https://chi2009.acm.org/sponsoring/OurSponsors.html
+CHI,2009,Champion,Google,https://chi2009.acm.org/sponsoring/OurSponsors.html
+CHI,2009,Champion,Microsoft,https://chi2009.acm.org/sponsoring/OurSponsors.html
+CHI,2009,Champion,NSF,https://chi2009.acm.org/sponsoring/OurSponsors.html
+CHI,2009,Contributor,eLearn Magazine (ACM),https://chi2009.acm.org/sponsoring/OurSponsors.html
+CHI,2009,Contributor,HP,https://chi2009.acm.org/sponsoring/OurSponsors.html
+CHI,2009,Contributor,ACM Interactions,https://chi2009.acm.org/sponsoring/OurSponsors.html
+CHI,2009,Contributor,Yahoo/Verizon Media,https://chi2009.acm.org/sponsoring/OurSponsors.html
+CHI,2009,Friend,EPSRC,https://chi2009.acm.org/sponsoring/OurSponsors.html
+CHI,2009,Friend,FXPAL,https://chi2009.acm.org/sponsoring/OurSponsors.html
+CHI,2009,Friend,IBM,https://chi2009.acm.org/sponsoring/OurSponsors.html
+CHI,2009,Friend,Nokia,https://chi2009.acm.org/sponsoring/OurSponsors.html
+CHI,2010,Champion,Google,http://chi2010.org/sponsors/sponsors.html
+CHI,2010,Champion,Microsoft,http://chi2010.org/sponsors/sponsors.html
+CHI,2010,Champion,NSF,http://chi2010.org/sponsors/sponsors.html
+CHI,2010,Champion,Yahoo/Verizon Media,http://chi2010.org/sponsors/sponsors.html
+CHI,2010,Contributor,Autodesk,http://chi2010.org/sponsors/sponsors.html
+CHI,2010,Contributor,Bloomberg,http://chi2010.org/sponsors/sponsors.html
+CHI,2010,Contributor,IBM,http://chi2010.org/sponsors/sponsors.html
+CHI,2010,Contributor,Intel,http://chi2010.org/sponsors/sponsors.html
+CHI,2010,Contributor,Nokia,http://chi2010.org/sponsors/sponsors.html
+CHI,2010,Contributor,SAP,http://chi2010.org/sponsors/sponsors.html
+CHI,2010,Friend,EPSRC,http://chi2010.org/sponsors/sponsors.html
+CHI,2010,Friend,FXPAL,http://chi2010.org/sponsors/sponsors.html
+CHI,2010,Friend,Georgia Tech,http://chi2010.org/sponsors/sponsors.html
+CHI,2010,Friend,University of Michigan,http://chi2010.org/sponsors/sponsors.html
+CHI,2011,Champion,Bloomberg,http://chi2011.org/sponsors/sponsors.html
+CHI,2011,Champion,eBay/PayPal,http://chi2011.org/sponsors/sponsors.html
+CHI,2011,Champion,Google,http://chi2011.org/sponsors/sponsors.html
+CHI,2011,Champion,Microsoft,http://chi2011.org/sponsors/sponsors.html
+CHI,2011,Champion,NSF,http://chi2011.org/sponsors/sponsors.html
+CHI,2011,Champion,SAP,http://chi2011.org/sponsors/sponsors.html
+CHI,2011,Contributor,Autodesk,http://chi2011.org/sponsors/sponsors.html
+CHI,2011,Contributor,Eventburn,http://chi2011.org/sponsors/sponsors.html
+CHI,2011,Contributor,GRAND NCE,http://chi2011.org/sponsors/sponsors.html
+CHI,2011,Contributor,IBM,http://chi2011.org/sponsors/sponsors.html
+CHI,2011,Contributor,Nokia,http://chi2011.org/sponsors/sponsors.html
+CHI,2011,Friend,Adobe,http://chi2011.org/sponsors/sponsors.html
+CHI,2011,Friend,Disney Research,http://chi2011.org/sponsors/sponsors.html
+CHI,2011,Friend,FXPAL,http://chi2011.org/sponsors/sponsors.html
+CHI,2011,Friend,University of Maryland,http://chi2011.org/sponsors/sponsors.html
+CHI,2011,Friend,University of Michigan,http://chi2011.org/sponsors/sponsors.html
+CHI,2011,Friend,Yahoo/Verizon Media,http://chi2011.org/sponsors/sponsors.html
+UbiComp,2014,Gold,Microsoft,https://www.ubicomp.org/ubicomp2014/sponsors.php
+UbiComp,2014,Gold,Google,https://www.ubicomp.org/ubicomp2014/sponsors.php
+UbiComp,2014,Gold,Siemens,https://www.ubicomp.org/ubicomp2014/sponsors.php
+UbiComp,2014,Silver,Intel ISTC-PC,https://www.ubicomp.org/ubicomp2014/sponsors.php
+UbiComp,2014,Silver,Yahoo Labs,https://www.ubicomp.org/ubicomp2014/sponsors.php
+UbiComp,2014,Silver,Bell Labs,https://www.ubicomp.org/ubicomp2014/sponsors.php
+UbiComp,2014,Supporter,CRA-W,https://www.ubicomp.org/ubicomp2014/sponsors.php
+UbiComp,2014,Supporter,University of Cambridge,https://www.ubicomp.org/ubicomp2014/sponsors.php
+UbiComp,2014,Supporter,University of Toronto,https://www.ubicomp.org/ubicomp2014/sponsors.php
+UbiComp,2014,Supporter,User-Centric Networking (EU project),https://www.ubicomp.org/ubicomp2014/sponsors.php
+UbiComp,2014,Supporter,NSF,https://www.ubicomp.org/ubicomp2014/sponsors.php
+UbiComp,2015,Platinum,Panasonic,https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Gold,Bell Labs,https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Gold,Microsoft,https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Silver,Google,https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Silver,Yahoo Japan,https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Silver,KDDI,https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Silver,FXPAL,https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Silver,Rakuten,https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Silver,Intel ISTC-PC,https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Silver,NTT Docomo,https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Bronze,Telefonica,https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Supporter,ZAI,https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Supporter,TAF (Telecommunications Advancement Foundation),https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Supporter,SCAT,https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Supporter,NICT,https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Supporter,Kayamori Foundation,https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Supporter,Osaka Convention & Tourism Bureau,https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Supporter,IPSJ,https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Supporter,Kansai METI,https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Supporter,MIC Kinki Bureau of Telecommunications,https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Supporter,Telecom Engineering Center Kinki,https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Supporter,Aruba Networks,https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Supporter,CKP (Ubiquitous Forum),https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Supporter,Human Interface Society,https://ubicomp.org/ubicomp2015/sponsors.html
+UbiComp,2015,Supporter,VRSJ,https://ubicomp.org/ubicomp2015/sponsors.html
+CHI,2006,Champion,Google,http://www.chi2006.org/sponsors.php
+CHI,2006,Champion,Intel,http://www.chi2006.org/sponsors.php
+CHI,2006,Champion,Intuit,http://www.chi2006.org/sponsors.php
+CHI,2006,Champion,Microsoft,http://www.chi2006.org/sponsors.php
+CHI,2006,Champion,NSF,http://www.chi2006.org/sponsors.php
+CHI,2006,Champion,SourceForge,http://www.chi2006.org/sponsors.php
+CHI,2006,Champion,SAP,http://www.chi2006.org/sponsors.php
+CHI,2006,Champion,Yahoo/Verizon Media,http://www.chi2006.org/sponsors.php
+CHI,2006,Contributor,Cisco,http://www.chi2006.org/sponsors.php
+CHI,2006,Contributor,eBay/PayPal,http://www.chi2006.org/sponsors.php
+CHI,2006,Contributor,IBM,http://www.chi2006.org/sponsors.php
+CHI,2006,Contributor,Nokia,http://www.chi2006.org/sponsors.php
+CHI,2006,Contributor,Pitney Bowes,http://www.chi2006.org/sponsors.php
+CHI,2006,Friend,VMware,http://www.chi2006.org/sponsors.php
+FAccT,2018,Unspecified,Knight Foundation,https://facctconference.org/2018/
+FAccT,2018,Unspecified,MacArthur Foundation,https://facctconference.org/2018/
+FAccT,2018,Unspecified,Google,https://facctconference.org/2018/
+FAccT,2018,Unspecified,Meta/Facebook,https://facctconference.org/2018/
+FAccT,2018,Unspecified,H2O.ai,https://facctconference.org/2018/
+FAccT,2019,Unspecified,Google,https://facctconference.org/2019/sponsors.html
+FAccT,2019,Unspecified,Microsoft,https://facctconference.org/2019/sponsors.html
+FAccT,2019,Unspecified,Spotify,https://facctconference.org/2019/sponsors.html
+FAccT,2019,Unspecified,Twitter,https://facctconference.org/2019/sponsors.html
+FAccT,2019,Unspecified,Ethics and Governance of AI Initiative,https://facctconference.org/2019/sponsors.html
+FAccT,2019,Unspecified,Ford Foundation,https://facctconference.org/2019/sponsors.html
+FAccT,2019,Unspecified,Luminate,https://facctconference.org/2019/sponsors.html
+FAccT,2019,Unspecified,MacArthur Foundation,https://facctconference.org/2019/sponsors.html
+FAccT,2019,Unspecified,Open Society Foundations,https://facctconference.org/2019/sponsors.html
+FAccT,2019,Unspecified,Schmidt Futures,https://facctconference.org/2019/sponsors.html
+FAccT,2020,Unspecified,Meta/Facebook,https://facctconference.org/2020/sponsorship.html
+FAccT,2020,Unspecified,Google,https://facctconference.org/2020/sponsorship.html
+FAccT,2020,Unspecified,Sloan Foundation,https://facctconference.org/2020/sponsorship.html
+FAccT,2020,Unspecified,Twitter,https://facctconference.org/2020/sponsorship.html
+FAccT,2020,Unspecified,IBM,https://facctconference.org/2020/sponsorship.html
+FAccT,2020,Unspecified,MacArthur Foundation,https://facctconference.org/2020/sponsorship.html
+FAccT,2020,Unspecified,Ford Foundation,https://facctconference.org/2020/sponsorship.html
+FAccT,2020,Unspecified,Rockefeller Foundation,https://facctconference.org/2020/sponsorship.html
+FAccT,2020,Unspecified,Luminate,https://facctconference.org/2020/sponsorship.html
+FAccT,2021,Unspecified,Google,https://facctconference.org/2021/sponsorship.html
+FAccT,2021,Unspecified,Meta/Facebook,https://facctconference.org/2021/sponsorship.html
+FAccT,2021,Unspecified,Sloan Foundation,https://facctconference.org/2021/sponsorship.html
+FAccT,2021,Unspecified,Twitter,https://facctconference.org/2021/sponsorship.html
+FAccT,2021,Unspecified,IBM,https://facctconference.org/2021/sponsorship.html
+FAccT,2021,Unspecified,Microsoft,https://facctconference.org/2021/sponsorship.html
+FAccT,2021,Unspecified,Vector Institute,https://facctconference.org/2021/sponsorship.html
+FAccT,2021,Unspecified,MacArthur Foundation,https://facctconference.org/2021/sponsorship.html
+FAccT,2021,Unspecified,Ford Foundation,https://facctconference.org/2021/sponsorship.html
+FAccT,2021,Unspecified,OpenAI,https://facctconference.org/2021/sponsorship.html
+FAccT,2021,Unspecified,Luminate,https://facctconference.org/2021/sponsorship.html
+FAccT,2022,Unspecified,Google,https://facctconference.org/2022/sponsors.html
+FAccT,2022,Unspecified,Sony,https://facctconference.org/2022/sponsors.html
+FAccT,2022,Unspecified,Naver,https://facctconference.org/2022/sponsors.html
+FAccT,2022,Unspecified,LG,https://facctconference.org/2022/sponsors.html
+FAccT,2022,Unspecified,Microsoft,https://facctconference.org/2022/sponsors.html
+FAccT,2022,Unspecified,Twitter,https://facctconference.org/2022/sponsors.html
+FAccT,2022,Unspecified,MacArthur Foundation,https://facctconference.org/2022/sponsors.html
+FAccT,2022,Unspecified,Sloan Foundation,https://facctconference.org/2022/sponsors.html
+FAccT,2022,Unspecified,Amazon,https://facctconference.org/2022/sponsors.html
+FAccT,2022,Unspecified,Luminate,https://facctconference.org/2022/sponsors.html
+FAccT,2023,Unspecified,Luminate,https://facctconference.org/2023/sponsors.html
+FAccT,2023,Unspecified,Google,https://facctconference.org/2023/sponsors.html
+FAccT,2023,Unspecified,Apple,https://facctconference.org/2023/sponsors.html
+FAccT,2023,Unspecified,Microsoft,https://facctconference.org/2023/sponsors.html
+FAccT,2023,Unspecified,MacArthur Foundation,https://facctconference.org/2023/sponsors.html
+FAccT,2023,Unspecified,Sony,https://facctconference.org/2023/sponsors.html
+FAccT,2023,Unspecified,Schmidt Futures,https://facctconference.org/2023/sponsors.html
+FAccT,2023,Unspecified,Ford Foundation,https://facctconference.org/2023/sponsors.html
+FAccT,2023,Unspecified,OpenAI,https://facctconference.org/2023/sponsors.html
+FAccT,2023,Unspecified,Holistic AI,https://facctconference.org/2023/sponsors.html
+FAccT,2023,Unspecified,Amazon,https://facctconference.org/2023/sponsors.html
+FAccT,2024,Unspecified,Survival and Flourishing Fund,https://facctconference.org/2024/sponsors.html
+FAccT,2024,Unspecified,Amazon,https://facctconference.org/2024/sponsors.html
+FAccT,2024,Unspecified,Google,https://facctconference.org/2024/sponsors.html
+FAccT,2024,Unspecified,MacArthur Foundation,https://facctconference.org/2024/sponsors.html
+FAccT,2024,Unspecified,Sony,https://facctconference.org/2024/sponsors.html
+FAccT,2024,Unspecified,Schmidt Futures,https://facctconference.org/2024/sponsors.html
+FAccT,2024,Unspecified,Ford Foundation,https://facctconference.org/2024/sponsors.html
+FAccT,2024,Unspecified,OpenAI,https://facctconference.org/2024/sponsors.html
+FAccT,2024,Unspecified,Microsoft,https://facctconference.org/2024/sponsors.html
+FAccT,2025,Unspecified,Amazon,https://facctconference.org/2025/sponsors.html
+FAccT,2025,Unspecified,Google,https://facctconference.org/2025/sponsors.html
+FAccT,2025,Unspecified,Silicon Valley Community Foundation,https://facctconference.org/2025/sponsors.html
+FAccT,2025,Unspecified,Meta/Facebook,https://facctconference.org/2025/sponsors.html
+FAccT,2025,Unspecified,OpenAI,https://facctconference.org/2025/sponsors.html
+FAccT,2025,Unspecified,Schmidt Sciences,https://facctconference.org/2025/sponsors.html
+FAccT,2025,Unspecified,TikTok,https://facctconference.org/2025/sponsors.html
+FAccT,2025,Unspecified,Microsoft,https://facctconference.org/2025/sponsors.html
+FAccT,2025,Unspecified,Sony,https://facctconference.org/2025/sponsors.html
+FAccT,2025,Unspecified,RC Trust,https://facctconference.org/2025/sponsors.html
+FAccT,2025,Supporter (host),Archimedes (Athena RC),https://facctconference.org/2025/sponsors.html
+FAccT,2025,Supporter (host),Athena Research Center,https://facctconference.org/2025/sponsors.html
+FAccT,2026,Unspecified,Google,https://facctconference.org/2026/sponsors.html
+FAccT,2026,Unspecified,MacArthur Foundation,https://facctconference.org/2026/sponsors.html
+FAccT,2026,Unspecified,TikTok,https://facctconference.org/2026/sponsors.html
+FAccT,2026,Unspecified,OpenAI,https://facctconference.org/2026/sponsors.html
+FAccT,2026,Unspecified,Meta/Facebook,https://facctconference.org/2026/sponsors.html
+FAccT,2026,Unspecified,Microsoft,https://facctconference.org/2026/sponsors.html
+FAccT,2026,Unspecified,Tourisme Montréal,https://facctconference.org/2026/sponsors.html
+IUI,2015,Silver,Google,https://iui.acm.org/2015/
+IUI,2015,Silver,Microsoft,https://iui.acm.org/2015/
+IUI,2015,Silver,Yahoo/Verizon Media,https://iui.acm.org/2015/
+IUI,2015,Bronze,eBay/PayPal,https://iui.acm.org/2015/
+IUI,2015,Bronze,Symantec,https://iui.acm.org/2015/
+IUI,2015,Bronze,HPCC Systems (LexisNexis),https://iui.acm.org/2015/
+IUI,2015,Special,GSG (Graphic Solutions Group),https://iui.acm.org/2015/
+IUI,2015,Special,Georgia Tech,https://iui.acm.org/2015/
+IUI,2016,Gold,Microsoft,https://iui.acm.org/2016/
+IUI,2016,Silver,Google,https://iui.acm.org/2016/
+IUI,2016,Silver,IBM,https://iui.acm.org/2016/
+IUI,2016,Bronze,Tableau/Salesforce,https://iui.acm.org/2016/
+IUI,2017,Unspecified,Google,https://iui.acm.org/2017/sponsors.html
+IUI,2017,Unspecified,Gesellschaft für Informatik (GI),https://iui.acm.org/2017/sponsors.html
+IUI,2017,Unspecified,Cyprus Tourism Organisation,https://iui.acm.org/2017/sponsors.html
+IUI,2017,Supporter (host),University of Cyprus,https://iui.acm.org/2017/sponsors.html
+IUI,2018,Silver,Adobe,https://iui.acm.org/2018/
+IUI,2018,Silver,DAYPLA,https://iui.acm.org/2018/
+IUI,2018,Silver,LIFULL,https://iui.acm.org/2018/
+IUI,2018,Silver,IBM,https://iui.acm.org/2018/
+IUI,2018,Silver,Google,https://iui.acm.org/2018/
+IUI,2018,Bronze,Yahoo Japan,https://iui.acm.org/2018/
+IUI,2018,Bronze,Rochester Institute of Technology,https://iui.acm.org/2018/
+IUI,2019,Gold,IBM,https://iui.acm.org/2019/sponsors.html
+IUI,2019,Gold,Ruyi.ai,https://iui.acm.org/2019/sponsors.html
+IUI,2019,Silver,Adobe,https://iui.acm.org/2019/sponsors.html
+IUI,2019,Silver,FXPAL,https://iui.acm.org/2019/sponsors.html
+IUI,2019,Silver,Google,https://iui.acm.org/2019/sponsors.html
+IUI,2019,Bronze,Tableau/Salesforce,https://iui.acm.org/2019/sponsors.html
+IUI,2019,Bronze,Instabase,https://iui.acm.org/2019/sponsors.html
+IUI,2020,Silver,Microsoft,https://iui.acm.org/2020/sponsors.html
+IUI,2020,Silver,Google,https://iui.acm.org/2020/sponsors.html
+IUI,2020,Bronze,Science Robotics (AAAS),https://iui.acm.org/2020/sponsors.html
+IUI,2021,Platinum,Texas A&M University,https://iui.acm.org/2021/sponsors.html
+IUI,2021,Gold,Google,https://iui.acm.org/2021/sponsors.html
+IUI,2021,Gold,Microsoft,https://iui.acm.org/2021/sponsors.html
+IUI,2021,Silver,MDPI,https://iui.acm.org/2021/sponsors.html
+IUI,2021,Silver,Science Robotics (AAAS),https://iui.acm.org/2021/sponsors.html
+IUI,2022,Platinum,Meta/Facebook,https://iui.acm.org/2022/sponsorship.html
+IUI,2022,Gold,Google,https://iui.acm.org/2022/sponsorship.html
+IUI,2022,Silver,Goldman Sachs,https://iui.acm.org/2022/sponsorship.html
+IUI,2022,Silver,Nokia Bell Labs,https://iui.acm.org/2022/sponsorship.html
+IUI,2022,Silver,Toyota Research Institute,https://iui.acm.org/2022/sponsorship.html
+IUI,2022,Bronze,Apple,https://iui.acm.org/2022/sponsorship.html
+IUI,2022,Bronze,NVIDIA,https://iui.acm.org/2022/sponsorship.html
+IUI,2022,Bronze,Silo AI,https://iui.acm.org/2022/sponsorship.html
+IUI,2023,Platinum,NSF,https://iui.acm.org/2023/sponsorship.html
+IUI,2023,Platinum,Business Events Sydney,https://iui.acm.org/2023/sponsorship.html
+IUI,2023,Gold,Google,https://iui.acm.org/2023/sponsorship.html
+IUI,2023,Silver,CSIRO Data61,https://iui.acm.org/2023/sponsorship.html
+IUI,2023,Bronze,MDPI,https://iui.acm.org/2023/sponsorship.html
+IUI,2024,Platinum,NSF,https://iui.acm.org/2024/sponsorship.html
+IUI,2024,Gold,Google,https://iui.acm.org/2024/sponsorship.html
+IUI,2024,Bronze,Michelin,https://iui.acm.org/2024/sponsorship.html
+IUI,2024,Bronze,Adobe,https://iui.acm.org/2024/sponsorship.html
+IUI,2025,Platinum,NSF,https://iui.acm.org/2025/sponsorship.html
+IUI,2025,Gold,MBZUAI,https://iui.acm.org/2025/sponsorship.html
+IUI,2025,Silver,AI Journal (AIJ),https://iui.acm.org/2025/sponsorship.html
+IUI,2025,Silver,MDPI,https://iui.acm.org/2025/sponsorship.html
+IUI,2025,Silver,Apple,https://iui.acm.org/2025/sponsorship.html
+IUI,2026,Platinum,Pienso,https://iui.acm.org/2026/
+IUI,2026,Gold,MDPI,https://iui.acm.org/2026/
+IUI,2026,Gold,Gesellschaft für Informatik (GI),https://iui.acm.org/2026/
+IUI,2026,Gold,NSF,https://iui.acm.org/2026/
+IUI,2026,Supporter (host),University of Cyprus,https://iui.acm.org/2026/
+DIS,2016,Unspecified,Roames (Fugro),https://dis.acm.org/2016/
+DIS,2016,Unspecified,HFESA,https://dis.acm.org/2016/
+DIS,2016,Unspecified,Brisbane BMW,https://dis.acm.org/2016/
+DIS,2016,Unspecified,Go Digi (Australia Post),https://dis.acm.org/2016/
+DIS,2016,Unspecified,Uber,https://dis.acm.org/2016/
+DIS,2016,Unspecified,Greater Springfield,https://dis.acm.org/2016/
+DIS,2016,Unspecified,Australian Design Alliance,https://dis.acm.org/2016/
+DIS,2016,Unspecified,MIT Press,https://dis.acm.org/2016/
+DIS,2016,Unspecified,Morgan & Claypool,https://dis.acm.org/2016/
+DIS,2016,Unspecified,ANAT,https://dis.acm.org/2016/
+DIS,2016,Unspecified,Media Architecture Biennale,https://dis.acm.org/2016/
+DIS,2016,Unspecified,Airtrain,https://dis.acm.org/2016/
+DIS,2016,Unspecified,Media Architecture Institute,https://dis.acm.org/2016/
+DIS,2016,Unspecified,Visit Brisbane,https://dis.acm.org/2016/
+DIS,2016,Supporter (host),Queensland University of Technology,https://dis.acm.org/2016/
+DIS,2019,Silver,UC San Diego (Qualcomm Institute),https://dis2019.com/sponsor
+DIS,2019,Silver,Adobe,https://dis2019.com/sponsor
+DIS,2019,Silver,Google,https://dis2019.com/sponsor
+DIS,2019,Silver,UC San Diego,https://dis2019.com/sponsor
+DIS,2019,Silver,Virginia Tech,https://dis2019.com/sponsor
+DIS,2019,Friend,Sketch,https://dis2019.com/sponsor
+DIS,2022,Unspecified,Monash University,https://dis.acm.org/2022/
+DIS,2022,Unspecified,Deakin University,https://dis.acm.org/2022/
+DIS,2024,Unspecified,Autodesk,https://dis.acm.org/2024/
+DIS,2025,Unspecified,Adobe,https://dis.acm.org/2025/
+DIS,2025,Unspecified,Funchal City Council,https://dis.acm.org/2025/
+DIS,2025,Unspecified,Visit Madeira,https://dis.acm.org/2025/
+DIS,2025,Supporter (host),ITI / LARSyS,https://dis.acm.org/2025/
+DIS,2026,Unspecified,Adobe,https://dis.acm.org/2026/dis26-industry-events/
+DIS,2026,Unspecified,Apple,https://dis.acm.org/2026/dis26-industry-events/
+DIS,2026,Unspecified,Grab,https://dis.acm.org/2026/dis26-industry-events/
+DIS,2026,Unspecified,Singapore Exhibition & Convention Bureau,https://dis.acm.org/2026/dis26-industry-events/
+DIS,2026,Supporter (host),NUS Division of Industrial Design,https://dis.acm.org/2026/dis26-industry-events/
+AIES,2018,Unspecified,Google,https://www.aies-conference.com/2018/sponsors/
+AIES,2018,Unspecified,IBM,https://www.aies-conference.com/2018/sponsors/
+AIES,2018,Unspecified,Berkeley Existential Risk Initiative,https://www.aies-conference.com/2018/sponsors/
+AIES,2018,Unspecified,Future of Life Institute,https://www.aies-conference.com/2018/sponsors/
+AIES,2018,Unspecified,PwC,https://www.aies-conference.com/2018/sponsors/
+AIES,2018,Unspecified,Partnership on AI,https://www.aies-conference.com/2018/sponsors/
+AIES,2018,Supporter (host),Tulane University,https://www.aies-conference.com/2018/sponsors/
+AIES,2019,Unspecified,Berkeley Existential Risk Initiative,https://www.aies-conference.com/2019/sponsors/index.html
+AIES,2019,Unspecified,Google,https://www.aies-conference.com/2019/sponsors/index.html
+AIES,2019,Unspecified,NSF,https://www.aies-conference.com/2019/sponsors/index.html
+AIES,2019,Unspecified,IBM,https://www.aies-conference.com/2019/sponsors/index.html
+AIES,2019,Unspecified,Meta/Facebook,https://www.aies-conference.com/2019/sponsors/index.html
+AIES,2019,Unspecified,Amazon,https://www.aies-conference.com/2019/sponsors/index.html
+AIES,2019,Unspecified,PwC,https://www.aies-conference.com/2019/sponsors/index.html
+AIES,2019,Unspecified,Future of Life Institute,https://www.aies-conference.com/2019/sponsors/index.html
+AIES,2019,Unspecified,Partnership on AI,https://www.aies-conference.com/2019/sponsors/index.html
+AIES,2019,Supporter (host),University of Hawaii at Mānoa,https://www.aies-conference.com/2019/sponsors/index.html
+AIES,2020,Gold,Google,https://www.aies-conference.com/2020/sponsors/index.html
+AIES,2020,Gold,Survival and Flourishing Fund,https://www.aies-conference.com/2020/sponsors/index.html
+AIES,2020,Silver,Founders Pledge,https://www.aies-conference.com/2020/sponsors/index.html
+AIES,2020,Silver,New York University,https://www.aies-conference.com/2020/sponsors/index.html
+AIES,2020,Bronze,Amazon,https://www.aies-conference.com/2020/sponsors/index.html
+AIES,2020,Bronze,Data & Society,https://www.aies-conference.com/2020/sponsors/index.html
+AIES,2020,Bronze,Meta/Facebook,https://www.aies-conference.com/2020/sponsors/index.html
+AIES,2020,Bronze,Partnership on AI,https://www.aies-conference.com/2020/sponsors/index.html
+AIES,2021,Gold,Google,https://www.aies-conference.com/2021/sponsors/index.html
+AIES,2021,Gold,Founders Pledge,https://www.aies-conference.com/2021/sponsors/index.html
+AIES,2021,Bronze,Meta/Facebook,https://www.aies-conference.com/2021/sponsors/index.html
+AIES,2022,Platinum,Founders Pledge,https://www.aies-conference.com/2022/sponsors/index.html
+AIES,2022,Platinum,Google,https://www.aies-conference.com/2022/sponsors/index.html
+AIES,2022,Platinum,Sony,https://www.aies-conference.com/2022/sponsors/index.html
+AIES,2022,Silver,NSF,https://www.aies-conference.com/2022/sponsors/index.html
+AIES,2022,Silver,IBM,https://www.aies-conference.com/2022/sponsors/index.html
+AIES,2022,Bronze,Meta/Facebook,https://www.aies-conference.com/2022/sponsors/index.html
+AIES,2023,Platinum,Google,https://www.aies-conference.com/2023/sponsors/
+AIES,2023,Platinum,PwC,https://www.aies-conference.com/2023/sponsors/
+AIES,2023,Platinum,Schmidt Futures,https://www.aies-conference.com/2023/sponsors/
+AIES,2023,Gold,Sony,https://www.aies-conference.com/2023/sponsors/
+AIES,2023,Gold,Future of Life Institute,https://www.aies-conference.com/2023/sponsors/
+AIES,2023,Silver,IBM,https://www.aies-conference.com/2023/sponsors/
+AIES,2023,Silver,JPMorgan Chase,https://www.aies-conference.com/2023/sponsors/
+AIES,2023,Silver,NSF,https://www.aies-conference.com/2023/sponsors/
+AIES,2024,Platinum,Google,https://www.aies-conference.com/2024/sponsorship-opportunities/
+AIES,2024,Platinum,Tableau/Salesforce,https://www.aies-conference.com/2024/sponsorship-opportunities/
+AIES,2024,Silver,Sony,https://www.aies-conference.com/2024/sponsorship-opportunities/
+AIES,2024,Silver,IBM,https://www.aies-conference.com/2024/sponsorship-opportunities/
+AIES,2024,Bronze,eBay/PayPal,https://www.aies-conference.com/2024/sponsorship-opportunities/
+AIES,2024,Bronze,JPMorgan Chase,https://www.aies-conference.com/2024/sponsorship-opportunities/
+AIES,2024,Bronze,NSF,https://www.aies-conference.com/2024/sponsorship-opportunities/
+AIES,2024,Supporter (host),Markkula Center (Santa Clara University),https://www.aies-conference.com/2024/sponsorship-opportunities/
+AIES,2025,Platinum,Google,https://www.aies-conference.com/2025/sponsorship-opportunities/
+AIES,2025,Gold,Lenovo,https://www.aies-conference.com/2025/sponsorship-opportunities/
+AIES,2025,Silver,IBM,https://www.aies-conference.com/2025/sponsorship-opportunities/
+AIES,2025,Silver,Ericsson,https://www.aies-conference.com/2025/sponsorship-opportunities/
+AIES,2025,Bronze,AE Studio,https://www.aies-conference.com/2025/sponsorship-opportunities/
+AIES,2025,Bronze,AI Journal (AIJ),https://www.aies-conference.com/2025/sponsorship-opportunities/
+AIES,2025,Bronze,JPMorgan Chase,https://www.aies-conference.com/2025/sponsorship-opportunities/
+AIES,2025,Bronze,NSF,https://www.aies-conference.com/2025/sponsorship-opportunities/
+AIES,2025,Supporter (host),IE University,https://www.aies-conference.com/2025/sponsorship-opportunities/
+AIES,2026,Gold,Google,https://www.aies-conference.com/2026/sponsorship-opportunities/
+AIES,2026,Silver,IBM,https://www.aies-conference.com/2026/sponsorship-opportunities/
+AIES,2026,Bronze,AI Policy Lab (Umeå University),https://www.aies-conference.com/2026/sponsorship-opportunities/
+AIES,2026,Bronze,Tech Policy Lab,https://www.aies-conference.com/2026/sponsorship-opportunities/
+AIES,2026,Bronze,Ericsson,https://www.aies-conference.com/2026/sponsorship-opportunities/

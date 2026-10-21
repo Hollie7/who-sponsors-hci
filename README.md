@@ -125,6 +125,16 @@ dashboard/ai/                            # AI 会议 dashboard（含与 HCI 的�
 4. **中国机构占比更高**：AI 会议约 9% 的“机构 × 届次”来自中国大陆（百度、字节、阿里、蚂蚁、腾讯、华为、宽德、明汯、聚宽等量化机构），HCI 不到 3%。
 5. **新进入者是 AI 基础设施与数据公司**：Lambda、Together AI、Nebius、Cerebras、Scale AI、Toloka、Turing、Handshake 等 2023 年后大量出现，一半以上机构只出现过一届。
 
+## 公开网页（GitHub Pages）
+
+`docs/` 是可直接发布的静态网站：`docs/index.html`（HCI 与 AI 伦理会议，英文/中文可切换）和 `docs/ai/index.html`（AI 会议）。
+
+1. 在 `site.config.json` 填写 `author`、`homepage`、`email`（可留空）、`github_repo`（`owner/repo`）和 `goatcounter`（GoatCounter 站点代码，可留空）。
+2. 运行 `python scripts/build_site.py` 重新生成 `docs/`。
+3. 在 GitHub 仓库 Settings → Pages 中选择 “Deploy from a branch”，分支 `main`、目录 `/docs`。
+
+浏览量统计用 [GoatCounter](https://www.goatcounter.com/)：注册后得到站点代码；需要在 GoatCounter 的 Settings 里勾选 “Allow adding visitor counts on your website”，页脚才能显示浏览次数。它不使用 cookie。
+
 ## 许可
 
-数据整理自公开网页，仅供研究使用；各机构名称与 logo 归其所有者。国旗图标来自 [flag-icons](https://github.com/lipis/flag-icons)（MIT）。
+数据（`data/`）以 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 发布，代码以 MIT 许可发布（见 `LICENSE`、`data/LICENSE`）。数据整理自公开网页；各机构名称与 logo 归其所有者。本项目与 ACM、SIGCHI、AAAI 及各会议无关联。国旗图标来自 [flag-icons](https://github.com/lipis/flag-icons)（MIT）。

@@ -1,0 +1,579 @@
+org,sector,country,appearances,conferences,first,last,est_usd
+Google,Tech & other industry,US,33,"ICLR, ICML, NeurIPS",2013,2026,470000.0
+Amazon,Tech & other industry,US,33,"ICLR, ICML, NeurIPS",2013,2026,410000.0
+Microsoft,Tech & other industry,US,31,"ICLR, ICML, NeurIPS",2013,2026,450000.0
+Meta/Facebook,Tech & other industry,US,30,"ICLR, ICML, NeurIPS",2013,2026,260000.0
+Two Sigma,Finance / quant,US,30,"ICLR, ICML, NeurIPS",2013,2026,182000.0
+D. E. Shaw,Finance / quant,US,29,"ICLR, ICML, NeurIPS",2013,2026,430000.0
+Baidu,Tech & other industry,CN,29,"ICLR, ICML, NeurIPS",2014,2026,64000.0
+Apple,Tech & other industry,US,26,"ICLR, ICML, NeurIPS",2015,2026,430000.0
+IBM,Tech & other industry,US,23,"ICLR, ICML, NeurIPS",2013,2026,310000.0
+Citadel,Finance / quant,US,22,"ICLR, ICML, NeurIPS",2015,2026,470000.0
+ByteDance,Tech & other industry,CN,22,"ICLR, ICML, NeurIPS",2017,2026,362000.0
+Point72 / Cubist,Finance / quant,US,22,"ICLR, ICML, NeurIPS",2015,2026,169000.0
+Qualcomm,Tech & other industry,US,21,"ICLR, ICML, NeurIPS",2014,2026,230000.0
+Netflix,Tech & other industry,US,20,"ICML, NeurIPS",2015,2026,180000.0
+PDT Partners,Finance / quant,US,19,"ICML, NeurIPS",2013,2026,114000.0
+Hudson River Trading,Finance / quant,US,17,"ICLR, ICML, NeurIPS",2017,2026,340000.0
+Bloomberg,Finance / quant,US,17,"ICLR, ICML, NeurIPS",2015,2025,150000.0
+Bosch,Tech & other industry,DE,17,"ICLR, ICML, NeurIPS",2014,2024,22000.0
+Jane Street,Finance / quant,US,16,"ICLR, ICML, NeurIPS",2018,2026,470000.0
+Jump Trading,Finance / quant,US,16,"ICLR, ICML, NeurIPS",2016,2026,430000.0
+Capital One,Finance / quant,US,16,"ICLR, ICML, NeurIPS",2017,2026,247000.0
+Salesforce,Tech & other industry,US,16,"ICLR, ICML, NeurIPS",2016,2026,150000.0
+Intel,Tech & other industry,US,16,"ICLR, ICML, NeurIPS",2015,2025,135000.0
+Springer Nature,Publisher,DE,16,"ICLR, ICML, NeurIPS",2013,2026,4300.0
+G-Research,Finance / quant,GB,15,"ICLR, ICML, NeurIPS",2015,2026,330000.0
+Alibaba,Tech & other industry,CN,15,"ICLR, ICML, NeurIPS",2015,2026,200000.0
+Yokogawa,Tech & other industry,JP,15,"ICML, NeurIPS",2019,2026,129000.0
+NVIDIA,Tech & other industry,US,14,"ICLR, ICML, NeurIPS",2014,2026,50000.0
+Scale AI,Tech & other industry,US,13,"ICLR, ICML, NeurIPS",2018,2026,267000.0
+Ant Group,Tech & other industry,CN,13,"ICLR, ICML, NeurIPS",2018,2026,190000.0
+Tencent,Tech & other industry,CN,13,"ICLR, ICML, NeurIPS",2016,2026,110000.0
+Huawei,Tech & other industry,CN,13,"ICLR, ICML, NeurIPS",2017,2026,97000.0
+Science Partner Journals,Publisher,US,12,"ICLR, ICML, NeurIPS",2022,2026,2100.0
+Lambda,Tech & other industry,US,11,"ICLR, ICML, NeurIPS",2017,2026,315000.0
+XTX Markets,Finance / quant,GB,11,"ICML, NeurIPS",2019,2026,150000.0
+NAVER,Tech & other industry,KR,11,"ICLR, ICML, NeurIPS",2017,2026,130000.0
+Toloka,Tech & other industry,NL,11,"ICLR, ICML, NeurIPS",2021,2026,102000.0
+Squarepoint,Finance / quant,GB,11,"ICML, NeurIPS",2018,2024,44000.0
+Translated,Tech & other industry,IT,11,"ICLR, ICML, NeurIPS",2023,2026,5300.0
+Criteo,Tech & other industry,FR,11,"ICLR, ICML, NeurIPS",2013,2024,0.0
+Together AI,Tech & other industry,US,10,"ICLR, ICML, NeurIPS",2023,2026,167000.0
+Sony,Tech & other industry,JP,10,"ICLR, ICML, NeurIPS",2015,2026,150000.0
+RBC,Finance / quant,CA,10,"ICLR, ICML, NeurIPS",2016,2025,124000.0
+Disney,Tech & other industry,US,10,"ICML, NeurIPS",2014,2023,22000.0
+Uber,Tech & other industry,US,10,"ICML, NeurIPS",2015,2025,12000.0
+Cambridge University Press,Publisher,GB,10,"ICLR, ICML, NeurIPS",2015,2025,3300.0
+MIT Press,Publisher,US,10,"ICML, NeurIPS",2015,2026,2200.0
+Yandex,Tech & other industry,RU,10,"ICLR, ICML, NeurIPS",2015,2019,0.0
+Liquid AI,Tech & other industry,US,9,"ICLR, ICML, NeurIPS",2024,2026,147000.0
+Cerebras,Tech & other industry,US,9,"ICML, NeurIPS",2019,2026,124000.0
+OpenAI,Tech & other industry,US,9,"ICLR, ICML, NeurIPS",2019,2026,124000.0
+Oracle,Tech & other industry,US,9,"ICLR, ICML, NeurIPS",2014,2026,100000.0
+Waymo,Tech & other industry,US,9,"ICML, NeurIPS",2018,2026,100000.0
+McKinsey (QuantumBlack),Tech & other industry,GB,9,"ICML, NeurIPS",2016,2022,0.0
+Voleon,Finance / quant,US,9,"ICML, NeurIPS",2015,2019,0.0
+Optiver,Finance / quant,NL,8,"ICLR, ICML, NeurIPS",2016,2026,340000.0
+Nebius,Tech & other industry,NL,8,"ICLR, ICML, NeurIPS",2024,2026,215000.0
+Toyota,Tech & other industry,JP,8,"ICLR, ICML, NeurIPS",2013,2024,34000.0
+Adobe,Tech & other industry,US,8,"ICLR, ICML, NeurIPS",2015,2025,0.0
+Susquehanna (SIG),Finance / quant,US,7,"ICLR, ICML, NeurIPS",2017,2026,302000.0
+Shopify,Tech & other industry,CA,7,"ICLR, ICML, NeurIPS",2024,2026,300000.0
+Turing,Tech & other industry,US,7,"ICLR, ICML, NeurIPS",2024,2026,300000.0
+Databricks,Tech & other industry,US,7,"ICML, NeurIPS",2022,2025,195000.0
+MathWorks,Tech & other industry,US,7,NeurIPS,2018,2025,135000.0
+WorldQuant,Finance / quant,US,7,"ICLR, ICML, NeurIPS",2016,2026,115000.0
+Lightning AI,Tech & other industry,US,7,"ICLR, ICML, NeurIPS",2022,2025,69000.0
+Arm,Tech & other industry,GB,7,"ICML, NeurIPS",2015,2026,50000.0
+Morgan Stanley,Finance / quant,US,7,"ICLR, ICML, NeurIPS",2018,2025,20000.0
+CoCalc,Tech & other industry,US,7,"ICLR, ICML, NeurIPS",2023,2026,3100.0
+BenevolentAI,Tech & other industry,GB,7,"ICLR, ICML, NeurIPS",2016,2020,0.0
+Element AI,Tech & other industry,CA,7,"ICLR, ICML, NeurIPS",2017,2020,0.0
+Sber,Tech & other industry,RU,7,"ICML, NeurIPS",2017,2021,0.0
+SigOpt,Tech & other industry,US,7,"ICML, NeurIPS",2016,2019,0.0
+MBZUAI,Government / academic / non-profit,AE,6,"ICLR, ICML, NeurIPS",2022,2026,215000.0
+ADIA,Finance / quant,AE,6,"ICLR, ICML, NeurIPS",2024,2026,180000.0
+IMC,Finance / quant,NL,6,"ICML, NeurIPS",2019,2026,162000.0
+Cohere,Tech & other industry,CA,6,"ICLR, NeurIPS",2022,2026,150000.0
+DatologyAI,Tech & other industry,US,6,"ICML, NeurIPS",2024,2026,145000.0
+Weights & Biases,Tech & other industry,US,6,"ICML, NeurIPS",2019,2025,135000.0
+Mistral AI,Tech & other industry,FR,6,"ICLR, ICML, NeurIPS",2018,2026,115000.0
+AstraZeneca,Tech & other industry,GB,6,"ICML, NeurIPS",2020,2024,62000.0
+Tower Research,Finance / quant,US,6,"ICML, NeurIPS",2020,2026,45000.0
+ServiceNow,Tech & other industry,US,6,"ICLR, ICML, NeurIPS",2021,2025,44000.0
+Graphcore,Tech & other industry,GB,6,"ICML, NeurIPS",2017,2020,0.0
+Invenia Labs,Tech & other industry,GB,6,"ICML, NeurIPS",2016,2022,0.0
+JPMorgan Chase,Finance / quant,US,6,"ICML, NeurIPS",2017,2026,0.0
+Yahoo,Tech & other industry,US,6,"ICML, NeurIPS",2013,2022,0.0
+Handshake,Tech & other industry,US,5,"ICLR, ICML, NeurIPS",2025,2026,250000.0
+Eqvilent,Finance / quant,??,5,"ICLR, ICML, NeurIPS",2023,2026,150000.0
+RunPod,Tech & other industry,US,5,"ICLR, ICML, NeurIPS",2024,2026,122000.0
+DRW,Finance / quant,US,5,"ICML, NeurIPS",2013,2026,117000.0
+AMD,Tech & other industry,US,5,"ICML, NeurIPS",2015,2026,100000.0
+Neural Magic,Tech & other industry,US,5,NeurIPS,2019,2024,70000.0
+SuperAnnotate,Tech & other industry,US,5,"ICLR, ICML, NeurIPS",2023,2025,44000.0
+Vector Institute,Government / academic / non-profit,CA,5,"ICML, NeurIPS",2022,2026,44000.0
+KAUST,Government / academic / non-profit,SA,5,"ICLR, ICML, NeurIPS",2019,2024,0.0
+Man Group,Finance / quant,GB,5,"ICML, NeurIPS",2015,2018,0.0
+Samsung,Tech & other industry,KR,5,"ICML, NeurIPS",2018,2022,0.0
+Winton,Finance / quant,GB,5,"ICML, NeurIPS",2014,2017,0.0
+eBay,Tech & other industry,US,5,"ICML, NeurIPS",2015,2024,0.0
+HPC-AI Tech,Tech & other industry,SG,4,"ICML, NeurIPS",2022,2026,190000.0
+JoinQuant,Finance / quant,CN,4,"ICLR, ICML, NeurIPS",2025,2026,155000.0
+Writer,Tech & other industry,US,4,"ICLR, ICML, NeurIPS",2024,2025,145000.0
+Comet,Tech & other industry,US,4,"ICML, NeurIPS",2023,2025,115000.0
+Cartesia,Tech & other industry,US,4,"ICML, NeurIPS",2025,2026,110000.0
+Encord,Tech & other industry,GB,4,"ICLR, NeurIPS",2024,2026,100000.0
+LG,Tech & other industry,KR,4,"ICLR, ICML, NeurIPS",2022,2026,95000.0
+Cruise (GM),Tech & other industry,US,4,NeurIPS,2019,2025,90000.0
+Qube RT,Finance / quant,GB,4,"ICLR, ICML, NeurIPS",2025,2026,80000.0
+Mila,Government / academic / non-profit,CA,4,NeurIPS,2023,2026,79000.0
+Chen Institute,Government / academic / non-profit,US,4,"ICLR, ICML, NeurIPS",2023,2024,70000.0
+Commonwealth Bank,Finance / quant,AU,4,"ICLR, NeurIPS",2024,2026,47000.0
+Cognizant,Tech & other industry,US,4,"ICLR, ICML, NeurIPS",2024,2025,32000.0
+Meituan,Tech & other industry,CN,4,"ICLR, ICML",2024,2026,30000.0
+Modal,Tech & other industry,US,4,"ICLR, ICML, NeurIPS",2025,2026,30000.0
+SIAM,Government / academic / non-profit,US,4,NeurIPS,2022,2026,2200.0
+AIG,Finance / quant,US,4,"ICML, NeurIPS",2016,2018,0.0
+DiDi,Tech & other industry,CN,4,NeurIPS,2016,2019,0.0
+Expedia,Tech & other industry,US,4,"ICML, NeurIPS",2018,2019,0.0
+Maluuba,Tech & other industry,CA,4,"ICLR, ICML, NeurIPS",2015,2017,0.0
+Panasonic,Tech & other industry,JP,4,"ICML, NeurIPS",2015,2017,0.0
+Petuum,Tech & other industry,US,4,"ICML, NeurIPS",2017,2019,0.0
+Preferred Networks,Tech & other industry,JP,4,"ICML, NeurIPS",2017,2019,0.0
+SAP,Tech & other industry,DE,4,"ICLR, NeurIPS",2016,2026,0.0
+Sea,Tech & other industry,SG,4,"ICLR, ICML",2021,2025,0.0
+Spotify,Tech & other industry,US,4,"ICML, NeurIPS",2018,2025,0.0
+Twitter,Tech & other industry,US,4,"ICML, NeurIPS",2015,2019,0.0
+UTRC (RTX),Tech & other industry,US,4,NeurIPS,2013,2016,0.0
+TD Bank,Finance / quant,CA,3,"ICML, NeurIPS",2025,2026,150000.0
+Voxel51,Tech & other industry,US,3,"ICML, NeurIPS",2023,2026,145000.0
+Tesla,Tech & other industry,US,3,"ICML, NeurIPS",2019,2025,140000.0
+Snowflake,Tech & other industry,US,3,"ICML, NeurIPS",2024,2025,100000.0
+Kuaishou,Tech & other industry,CN,3,"ICML, NeurIPS",2020,2026,80000.0
+Revelo,Tech & other industry,US,3,"ICML, NeurIPS",2025,2026,68000.0
+FriendliAI,Tech & other industry,KR,3,"ICML, NeurIPS",2023,2026,67000.0
+Figma,Tech & other industry,US,3,NeurIPS,2024,2026,57000.0
+Virtu,Finance / quant,US,3,"ICML, NeurIPS",2024,2025,57000.0
+Virtue AI,Tech & other industry,US,3,"ICML, NeurIPS",2024,2025,54000.0
+DataOcean AI,Tech & other industry,CN,3,"ICML, NeurIPS",2024,2026,52000.0
+Pryon,Tech & other industry,US,3,NeurIPS,2018,2023,50000.0
+neptune.ai,Tech & other industry,US,3,"ICML, NeurIPS",2024,2025,50000.0
+Baseten,Tech & other industry,US,3,"ICLR, ICML, NeurIPS",2026,2026,45000.0
+MATS,Government / academic / non-profit,US,3,"ICLR, ICML, NeurIPS",2025,2026,45000.0
+Appen,Tech & other industry,AU,3,"ICLR, NeurIPS",2025,2026,35000.0
+Wayve,Tech & other industry,GB,3,"ICML, NeurIPS",2024,2025,35000.0
+NEC,Tech & other industry,JP,3,NeurIPS,2022,2025,34000.0
+Simular,Tech & other industry,US,3,"ICLR, ICML, NeurIPS",2025,2026,30000.0
+WizardQuant,Finance / quant,CN,3,"ICLR, ICML",2025,2026,30000.0
+Booster Robotics,Tech & other industry,CN,3,"ICLR, NeurIPS",2024,2026,22000.0
+Determined AI,Tech & other industry,US,3,"ICML, NeurIPS",2023,2024,22000.0
+Imperial College London,Government / academic / non-profit,GB,3,"ICML, NeurIPS",2023,2024,22000.0
+Thomson Reuters,Tech & other industry,US,3,NeurIPS,2024,2026,22000.0
+Unitree,Tech & other industry,CN,3,"ICLR, NeurIPS",2024,2026,22000.0
+Vatic Labs,Finance / quant,US,3,NeurIPS,2015,2024,22000.0
+Abaka AI,Tech & other industry,??,3,"ICLR, NeurIPS",2025,2026,12000.0
+Deep Genomics,Tech & other industry,CA,3,NeurIPS,2015,2025,12000.0
+Alegion,Tech & other industry,US,3,"ICML, NeurIPS",2019,2022,0.0
+Cisco,Tech & other industry,US,3,"ICML, NeurIPS",2016,2019,0.0
+Cylance,Tech & other industry,US,3,"ICML, NeurIPS",2017,2019,0.0
+Edgestream,Finance / quant,US,3,"ICML, NeurIPS",2018,2022,0.0
+Insilico Medicine,Tech & other industry,US,3,"ICML, NeurIPS",2018,2019,0.0
+Inspur,Tech & other industry,CN,3,"ICML, NeurIPS",2018,2019,0.0
+Lyft,Tech & other industry,US,3,"ICML, NeurIPS",2018,2019,0.0
+Montréal International,Government / academic / non-profit,CA,3,"ICML, NeurIPS",2017,2019,0.0
+NSA,Government / academic / non-profit,US,3,"ICML, NeurIPS",2019,2020,0.0
+NextAI,Government / academic / non-profit,CA,3,NeurIPS,2016,2019,0.0
+Obsidian Security,Tech & other industry,US,3,"ICML, NeurIPS",2017,2019,0.0
+Recursion,Tech & other industry,US,3,"ICML, NeurIPS",2016,2023,0.0
+SK Group,Tech & other industry,KR,3,"ICML, NeurIPS",2018,2019,0.0
+Secondmind,Tech & other industry,GB,3,NeurIPS,2019,2022,0.0
+VinAI,Tech & other industry,VN,3,"ICML, NeurIPS",2019,2020,0.0
+Wadhwani AI,Government / academic / non-profit,IN,3,"ICML, NeurIPS",2018,2020,0.0
+Wayfair,Tech & other industry,US,3,"ICML, NeurIPS",2018,2019,0.0
+XPRIZE,Government / academic / non-profit,US,3,NeurIPS,2017,2019,0.0
+Zillow,Tech & other industry,US,3,"ICLR, ICML, NeurIPS",2019,2026,0.0
+doc.ai,Tech & other industry,US,3,"ICML, NeurIPS",2018,2019,0.0
+now publishers,Publisher,US,3,"ICML, NeurIPS",2018,2022,0.0
+Cogs & Marvel,Tech & other industry,??,2,"ICML, NeurIPS",2025,2025,190000.0
+Ollama,Tech & other industry,US,2,"ICML, NeurIPS",2025,2025,170000.0
+Akash Network,Tech & other industry,US,2,"ICML, NeurIPS",2024,2025,130000.0
+Biohub,Government / academic / non-profit,US,2,NeurIPS,2025,2026,90000.0
+Cloud Native Computing Foundation/PyTorch Foundation,Government / academic / non-profit,US,2,NeurIPS,2025,2026,90000.0
+Reflection AI,Tech & other industry,US,2,NeurIPS,2025,2026,90000.0
+Centific,Tech & other industry,US,2,"ICML, NeurIPS",2025,2026,80000.0
+Minghong Investment,Finance / quant,CN,2,"ICML, NeurIPS",2024,2026,80000.0
+Trexquant,Finance / quant,US,2,ICML,2025,2026,65000.0
+Exa,Tech & other industry,US,2,"ICML, NeurIPS",2024,2026,52000.0
+Crusoe,Tech & other industry,US,2,"ICML, NeurIPS",2023,2024,50000.0
+Groq,Tech & other industry,US,2,NeurIPS,2018,2025,50000.0
+Intuit,Tech & other industry,US,2,"ICML, NeurIPS",2018,2025,50000.0
+JetBrains,Tech & other industry,CZ,2,"ICLR, NeurIPS",2025,2026,50000.0
+Abridge,Tech & other industry,US,2,"ICML, NeurIPS",2026,2026,45000.0
+AfterQuery,Tech & other industry,US,2,"ICLR, ICML",2026,2026,45000.0
+BAAI,Government / academic / non-profit,CN,2,"ICML, NeurIPS",2026,2026,45000.0
+LawZero,Government / academic / non-profit,US,2,"ICML, NeurIPS",2026,2026,45000.0
+Imbue,Tech & other industry,US,2,NeurIPS,2023,2024,44000.0
+Ahrefs,Tech & other industry,SG,2,"ICLR, NeurIPS",2024,2024,35000.0
+Atlassian,Tech & other industry,AU,2,NeurIPS,2025,2026,35000.0
+BlackRock,Finance / quant,US,2,NeurIPS,2025,2026,35000.0
+Datadog,Tech & other industry,US,2,"ICLR, NeurIPS",2025,2026,35000.0
+Novartis,Tech & other industry,US,2,NeurIPS,2019,2025,35000.0
+Upwork,Tech & other industry,US,2,"ICLR, NeurIPS",2025,2025,35000.0
+WaveForms AI,Tech & other industry,US,2,"ICML, NeurIPS",2024,2025,35000.0
+Bagel,Tech & other industry,US,2,"ICML, NeurIPS",2025,2025,32000.0
+SonicJobs,Tech & other industry,GB,2,"ICML, NeurIPS",2025,2025,32000.0
+Prior Labs,Tech & other industry,DE,2,"ICML, NeurIPS",2026,2026,30000.0
+Quadrillion,Tech & other industry,??,2,"ICML, NeurIPS",2026,2026,30000.0
+Snorkel AI,Tech & other industry,US,2,"ICML, NeurIPS",2026,2026,30000.0
+Basis,Government / academic / non-profit,US,2,NeurIPS,2024,2025,24000.0
+ELLIS,Government / academic / non-profit,DE,2,NeurIPS,2024,2026,22000.0
+FedML,Tech & other industry,US,2,"ICML, NeurIPS",2023,2023,22000.0
+Helm.ai,Tech & other industry,US,2,NeurIPS,2020,2024,22000.0
+SambaNova,Tech & other industry,US,2,NeurIPS,2024,2026,22000.0
+Zhipu,Tech & other industry,CN,2,"ICLR, NeurIPS",2023,2023,22000.0
+ElevenLabs,Tech & other industry,GB,2,"ICML, NeurIPS",2026,2026,20000.0
+Shanghai AI Lab,Government / academic / non-profit,CN,2,"ICLR, ICML",2025,2026,18000.0
+NatWest,Finance / quant,GB,2,NeurIPS,2024,2025,12000.0
+Roblox,Tech & other industry,US,2,"ICML, NeurIPS",2022,2023,12000.0
+SandboxAQ,Tech & other industry,US,2,NeurIPS,2022,2023,12000.0
+ACM,Government / academic / non-profit,US,2,"ICML, NeurIPS",2025,2026,2100.0
+Frontiers,Publisher,US,2,ICML,2019,2025,1000.0
+42,Government / academic / non-profit,FR,2,"ICLR, NeurIPS",2026,2026,0.0
+AI Journal (AIJ),Publisher,US,2,NeurIPS,2014,2015,0.0
+AITRICS,Tech & other industry,KR,2,"ICML, NeurIPS",2017,2018,0.0
+Absci,Tech & other industry,US,2,"ICLR, ICML",2021,2022,0.0
+AdRoll,Tech & other industry,US,2,NeurIPS,2014,2015,0.0
+Audi,Tech & other industry,DE,2,NeurIPS,2016,2017,0.0
+BioMind,Tech & other industry,US,2,NeurIPS,2018,2019,0.0
+Boltzbit,Tech & other industry,GB,2,ICML,2021,2022,0.0
+Cirrascale,Tech & other industry,US,2,NeurIPS,2017,2018,0.0
+Cogent Labs,Tech & other industry,JP,2,NeurIPS,2017,2018,0.0
+Deccan AI,Tech & other industry,US,2,"ICML, NeurIPS",2025,2025,0.0
+FeatureX,Tech & other industry,US,2,NeurIPS,2016,2017,0.0
+Flow Traders,Finance / quant,NL,2,NeurIPS,2025,2026,0.0
+GHELIA,Tech & other industry,JP,2,NeurIPS,2018,2019,0.0
+GSA Capital,Finance / quant,GB,2,NeurIPS,2018,2026,0.0
+HSBC,Finance / quant,GB,2,"ICML, NeurIPS",2018,2024,0.0
+Imagia,Tech & other industry,CA,2,NeurIPS,2015,2018,0.0
+Inception Institute of AI,Tech & other industry,AE,2,"ICML, NeurIPS",2018,2018,0.0
+Inria,Government / academic / non-profit,FR,2,"ICML, NeurIPS",2015,2026,0.0
+JD.com,Tech & other industry,CN,2,"ICML, NeurIPS",2017,2017,0.0
+KLA,Tech & other industry,US,2,NeurIPS,2016,2017,0.0
+Ketchum Trading,Finance / quant,US,2,NeurIPS,2014,2015,0.0
+Lab41 (In-Q-Tel),Government / academic / non-profit,US,2,NeurIPS,2018,2019,0.0
+Mayo Clinic,Government / academic / non-profit,US,2,"ICML, NeurIPS",2020,2021,0.0
+Nokia,Tech & other industry,FI,2,"ICML, NeurIPS",2015,2016,0.0
+Ouster,Tech & other industry,US,2,"ICML, NeurIPS",2018,2019,0.0
+Qihoo 360,Tech & other industry,CN,2,NeurIPS,2016,2018,0.0
+QuantCo,Tech & other industry,CH,2,ICML,2023,2024,0.0
+Ralph,Tech & other industry,US,2,"ICLR, NeurIPS",2020,2021,0.0
+Renaissance Technologies,Finance / quant,US,2,NeurIPS,2016,2017,0.0
+Research in Germany,Government / academic / non-profit,DE,2,"ICML, NeurIPS",2020,2021,0.0
+Rosetta Analytics,Finance / quant,US,2,NeurIPS,2016,2017,0.0
+SAS,Tech & other industry,US,2,"ICML, NeurIPS",2016,2018,0.0
+Sentient Technologies,Tech & other industry,US,2,NeurIPS,2016,2017,0.0
+Siemens,Tech & other industry,DE,2,NeurIPS,2018,2019,0.0
+Snap,Tech & other industry,US,2,NeurIPS,2017,2019,0.0
+Sportlogiq,Tech & other industry,CA,2,NeurIPS,2018,2019,0.0
+Unity,Tech & other industry,US,2,NeurIPS,2018,2019,0.0
+Wave Computing,Tech & other industry,US,2,NeurIPS,2017,2018,0.0
+Western Digital,Tech & other industry,US,2,ICML,2017,2018,0.0
+Xerox,Tech & other industry,US,2,NeurIPS,2013,2014,0.0
+Zalando,Tech & other industry,DE,2,NeurIPS,2016,2020,0.0
+Zeta Alpha,Tech & other industry,NL,2,"ICLR, NeurIPS",2020,2021,0.0
+causaLens,Tech & other industry,GB,2,"ICML, NeurIPS",2020,2021,0.0
+KAIST,Government / academic / non-profit,KR,1,ICML,2026,2026,100000.0
+IREN,Tech & other industry,US,1,NeurIPS,2024,2024,90000.0
+Lightwheel,Tech & other industry,US,1,NeurIPS,2025,2025,90000.0
+Renaissance Philanthropy,Government / academic / non-profit,US,1,NeurIPS,2025,2025,90000.0
+poolside,Tech & other industry,US,1,NeurIPS,2025,2025,90000.0
+Xiaomi,Tech & other industry,CN,1,ICML,2026,2026,80000.0
+Bittensor,Tech & other industry,US,1,NeurIPS,2024,2024,50000.0
+Emmi AI,Tech & other industry,AT,1,NeurIPS,2025,2025,50000.0
+Invisible Technologies,Tech & other industry,US,1,NeurIPS,2025,2025,50000.0
+Positron,Tech & other industry,US,1,NeurIPS,2023,2023,50000.0
+Recogni,Tech & other industry,US,1,NeurIPS,2024,2024,50000.0
+SoundPatrol,Tech & other industry,US,1,NeurIPS,2025,2025,50000.0
+Wells Fargo,Finance / quant,US,1,NeurIPS,2025,2025,50000.0
+General Intuition,Tech & other industry,US,1,ICML,2026,2026,45000.0
+Goodfire,Tech & other industry,US,1,ICML,2026,2026,45000.0
+Stripe,Finance / quant,US,1,ICML,2026,2026,45000.0
+VESSL AI,Tech & other industry,KR,1,ICML,2026,2026,45000.0
+Chan Zuckerberg Initiative,Government / academic / non-profit,US,1,NeurIPS,2024,2024,35000.0
+Cloudflare,Tech & other industry,US,1,NeurIPS,2024,2024,35000.0
+Datacurve AI,Tech & other industry,US,1,NeurIPS,2025,2025,35000.0
+Distyl AI,Tech & other industry,US,1,NeurIPS,2025,2025,35000.0
+Emergence AI,Tech & other industry,US,1,NeurIPS,2024,2024,35000.0
+Flagship Pioneering,Finance / quant,US,1,NeurIPS,2023,2023,35000.0
+Fundamental Technologies,Tech & other industry,??,1,NeurIPS,2025,2025,35000.0
+GSK,Tech & other industry,GB,1,NeurIPS,2024,2024,35000.0
+Genesis Molecular AI,Tech & other industry,US,1,NeurIPS,2025,2025,35000.0
+Genesis Therapeutics,Tech & other industry,US,1,NeurIPS,2024,2024,35000.0
+Gridmatic,Tech & other industry,US,1,NeurIPS,2024,2024,35000.0
+Labelbox,Tech & other industry,US,1,NeurIPS,2024,2024,35000.0
+Lighthouse,Tech & other industry,??,1,NeurIPS,2025,2025,35000.0
+Lightly,Tech & other industry,CH,1,NeurIPS,2025,2025,35000.0
+NXAI,Tech & other industry,AT,1,NeurIPS,2024,2024,35000.0
+Nexusflow,Tech & other industry,US,1,NeurIPS,2023,2023,35000.0
+Nomic AI,Tech & other industry,US,1,NeurIPS,2023,2023,35000.0
+Nutanix,Tech & other industry,US,1,NeurIPS,2024,2024,35000.0
+Perplexity AI,Tech & other industry,US,1,NeurIPS,2023,2023,35000.0
+Pydantic,Tech & other industry,US,1,NeurIPS,2025,2025,35000.0
+TELUS Digital,Tech & other industry,CA,1,NeurIPS,2025,2025,35000.0
+Twelve Labs,Tech & other industry,US,1,NeurIPS,2024,2024,35000.0
+Voloridge Investment Management,Finance / quant,US,1,NeurIPS,2025,2025,35000.0
+Voltage Park,Tech & other industry,US,1,NeurIPS,2025,2025,35000.0
+d-Matrix,Tech & other industry,US,1,NeurIPS,2024,2024,35000.0
+fireworks.ai,Tech & other industry,US,1,NeurIPS,2023,2023,35000.0
+HyperAccel,Tech & other industry,KR,1,ICML,2026,2026,30000.0
+JQ Investments,Finance / quant,CN,1,ICML,2026,2026,30000.0
+METR,Government / academic / non-profit,US,1,ICML,2026,2026,30000.0
+Nexdata,Tech & other industry,CN,1,ICML,2026,2026,30000.0
+Preference Model,Tech & other industry,US,1,ICML,2026,2026,30000.0
+Smart Nation Singapore,Government / academic / non-profit,SG,1,ICML,2026,2026,30000.0
+Tynapse,Tech & other industry,??,1,ICML,2026,2026,30000.0
+Anaconda,Tech & other industry,US,1,NeurIPS,2024,2024,22000.0
+CRA,Government / academic / non-profit,US,1,NeurIPS,2023,2023,22000.0
+DataForce,Tech & other industry,US,1,NeurIPS,2024,2024,22000.0
+DiffuseDrive,Tech & other industry,US,1,NeurIPS,2024,2024,22000.0
+Gatik AI,Tech & other industry,US,1,NeurIPS,2024,2024,22000.0
+INSAIT,Government / academic / non-profit,BG,1,NeurIPS,2024,2024,22000.0
+Iris.ai,Tech & other industry,NO,1,NeurIPS,2024,2024,22000.0
+Kolena,Tech & other industry,US,1,NeurIPS,2023,2023,22000.0
+Linkerbot Beijing Technology,Tech & other industry,CN,1,NeurIPS,2024,2024,22000.0
+Matic Robots,Tech & other industry,US,1,NeurIPS,2024,2024,22000.0
+National Reconnaissance Office,Government / academic / non-profit,US,1,NeurIPS,2023,2023,22000.0
+Spellbrush,Tech & other industry,US,1,NeurIPS,2024,2024,22000.0
+SqueezeBits,Tech & other industry,KR,1,NeurIPS,2023,2023,22000.0
+"The Regents of the University of California, San Diego/ NSF-ACCESS",Government / academic / non-profit,US,1,NeurIPS,2023,2023,22000.0
+VAST Data,Tech & other industry,US,1,NeurIPS,2023,2023,22000.0
+Vocareum,Tech & other industry,US,1,NeurIPS,2023,2023,22000.0
+Artificial Intelligence Talent Agency,Tech & other industry,US,1,ICML,2025,2025,20000.0
+Humanis,Tech & other industry,??,1,ICML,2026,2026,20000.0
+Luma,Tech & other industry,US,1,ICML,2026,2026,20000.0
+Nota AI,Tech & other industry,KR,1,ICML,2026,2026,20000.0
+Adyen,Finance / quant,NL,1,ICML,2026,2026,18000.0
+Contra Labs,Tech & other industry,US,1,ICML,2026,2026,18000.0
+Longqi Scientific Investments,Finance / quant,CN,1,ICML,2026,2026,18000.0
+RLWRLD,Tech & other industry,KR,1,ICML,2026,2026,18000.0
+hillclimb,Tech & other industry,??,1,ICML,2026,2026,18000.0
+Astrus,Tech & other industry,??,1,NeurIPS,2025,2025,12000.0
+Celonis,Tech & other industry,DE,1,NeurIPS,2023,2023,12000.0
+Clarifai,Tech & other industry,US,1,NeurIPS,2025,2025,12000.0
+Conway,Tech & other industry,??,1,NeurIPS,2025,2025,12000.0
+Duolingo,Tech & other industry,US,1,NeurIPS,2024,2024,12000.0
+Lenovo,Tech & other industry,CN,1,NeurIPS,2025,2025,12000.0
+MultiOn,Tech & other industry,US,1,NeurIPS,2023,2023,12000.0
+Sanctuary AI,Tech & other industry,CA,1,NeurIPS,2025,2025,12000.0
+Scaled Cognition,Tech & other industry,US,1,NeurIPS,2025,2025,12000.0
+Zoox,Tech & other industry,US,1,NeurIPS,2023,2023,12000.0
+IOP Publishing,Publisher,GB,1,NeurIPS,2025,2025,1100.0
+KeAi Publishing,Publisher,CN,1,NeurIPS,2023,2023,1100.0
+Skim AI,Tech & other industry,US,1,NeurIPS,2024,2024,1100.0
+MDPI,Publisher,US,1,ICML,2025,2025,1000.0
+ACCENTURE,Tech & other industry,IE,1,NeurIPS,2019,2019,0.0
+ACTAVA,Tech & other industry,??,1,NeurIPS,2026,2026,0.0
+AFOSR,Government / academic / non-profit,US,1,NeurIPS,2013,2013,0.0
+AXQ Capital,Finance / quant,US,1,NeurIPS,2026,2026,0.0
+Activeloop,Tech & other industry,US,1,NeurIPS,2022,2022,0.0
+Airbnb,Tech & other industry,US,1,NeurIPS,2017,2017,0.0
+Aleph Alpha,Tech & other industry,DE,1,ICLR,2025,2025,0.0
+Alice (formerly ActiveFence),Tech & other industry,IL,1,NeurIPS,2026,2026,0.0
+Analog Devices | Lyric Labs,Tech & other industry,US,1,NeurIPS,2015,2015,0.0
+Ansatz Capital,Finance / quant,US,1,ICML,2016,2016,0.0
+Anthem.ai,Tech & other industry,US,1,NeurIPS,2019,2019,0.0
+Anthropic,Tech & other industry,US,1,NeurIPS,2026,2026,0.0
+Aptiv,Tech & other industry,US,1,NeurIPS,2018,2018,0.0
+Arc Institute,Government / academic / non-profit,US,1,ICLR,2025,2025,0.0
+Argo AI,Tech & other industry,US,1,NeurIPS,2018,2018,0.0
+Ascent Robotics,Tech & other industry,JP,1,NeurIPS,2018,2018,0.0
+AtlaSense,Tech & other industry,??,1,NeurIPS,2016,2016,0.0
+Atmanity,Tech & other industry,JP,1,ICLR,2025,2025,0.0
+AutoX,Tech & other industry,US,1,NeurIPS,2017,2017,0.0
+Autodesk,Tech & other industry,US,1,ICML,2020,2020,0.0
+Automotive Safety Technologies,Tech & other industry,DE,1,NeurIPS,2016,2016,0.0
+Avira,Tech & other industry,DE,1,NeurIPS,2019,2019,0.0
+Balyasny Asset Management,Finance / quant,US,1,NeurIPS,2022,2022,0.0
+Base Compute,Tech & other industry,US,1,NeurIPS,2026,2026,0.0
+Beijing Institute of Big Data Research,Government / academic / non-profit,CN,1,NeurIPS,2016,2016,0.0
+Bespoke Labs,Tech & other industry,US,1,NeurIPS,2026,2026,0.0
+Bioptimus,Tech & other industry,FR,1,NeurIPS,2026,2026,0.0
+Black in AI,Government / academic / non-profit,US,1,ICLR,2023,2023,0.0
+Booking.com,Tech & other industry,NL,1,NeurIPS,2014,2014,0.0
+Booz Allen Hamilton,Tech & other industry,US,1,NeurIPS,2019,2019,0.0
+Boson AI,Tech & other industry,CA,1,NeurIPS,2025,2025,0.0
+Brain Corporation,Tech & other industry,US,1,ICML,2015,2015,0.0
+Bridgestone,Tech & other industry,JP,1,NeurIPS,2018,2018,0.0
+CNRS,Government / academic / non-profit,FR,1,NeurIPS,2026,2026,0.0
+CRIStAL,Government / academic / non-profit,FR,1,ICML,2015,2015,0.0
+Cantina Labs,Tech & other industry,??,1,NeurIPS,2026,2026,0.0
+Canva,Tech & other industry,AU,1,NeurIPS,2026,2026,0.0
+Capgemini,Tech & other industry,FR,1,NeurIPS,2020,2020,0.0
+Capital Fund Management,Finance / quant,FR,1,NeurIPS,2026,2026,0.0
+Capital Group,Finance / quant,US,1,NeurIPS,2019,2019,0.0
+CenturyLink Cognilytics,Tech & other industry,US,1,NeurIPS,2015,2015,0.0
+Cheetah Mobile America,Tech & other industry,CN,1,NeurIPS,2016,2016,0.0
+Cognition,Tech & other industry,US,1,ICLR,2024,2024,0.0
+Credit Suisse,Finance / quant,CH,1,ICML,2019,2019,0.0
+CrowdFlower,Tech & other industry,US,1,NeurIPS,2017,2017,0.0
+Crédit Agricole,Finance / quant,FR,1,ICML,2015,2015,0.0
+CuspAI,Tech & other industry,US,1,NeurIPS,2026,2026,0.0
+D-Wave,Tech & other industry,US,1,ICML,2016,2016,0.0
+DCVC,Finance / quant,US,1,NeurIPS,2016,2016,0.0
+DEEPHAWK,Tech & other industry,US,1,NeurIPS,2026,2026,0.0
+DVC,Tech & other industry,??,1,ICML,2023,2023,0.0
+Dandy,Tech & other industry,US,1,NeurIPS,2025,2025,0.0
+Data Collective,Finance / quant,US,1,NeurIPS,2017,2017,0.0
+Datatang Technology,Tech & other industry,CN,1,NeurIPS,2016,2016,0.0
+Datumo,Tech & other industry,KR,1,NeurIPS,2022,2022,0.0
+Deci,Tech & other industry,IL,1,NeurIPS,2020,2020,0.0
+DeePhi,Tech & other industry,US,1,ICLR,2017,2017,0.0
+Dropbox,Tech & other industry,US,1,ICML,2015,2015,0.0
+EG Manager UK,Finance / quant,GB,1,NeurIPS,2026,2026,0.0
+EY,Tech & other industry,US,1,NeurIPS,2019,2019,0.0
+Electric Power Research Institute,Government / academic / non-profit,US,1,NeurIPS,2020,2020,0.0
+Embo,Tech & other industry,??,1,NeurIPS,2026,2026,0.0
+Enigma,Tech & other industry,US,1,NeurIPS,2018,2018,0.0
+EnsoData,Tech & other industry,US,1,NeurIPS,2020,2020,0.0
+Etched,Tech & other industry,US,1,ICLR,2024,2024,0.0
+EuraTechnologies,Government / academic / non-profit,FR,1,ICML,2015,2015,0.0
+Firstsource,Tech & other industry,IN,1,NeurIPS,2025,2025,0.0
+Freenome Holdings,Tech & other industry,US,1,NeurIPS,2018,2018,0.0
+FuriosaAI,Tech & other industry,KR,1,NeurIPS,2025,2025,0.0
+Future of Life Institute,Government / academic / non-profit,US,1,ICML,2015,2015,0.0
+GBM,Finance / quant,MX,1,NeurIPS,2025,2025,0.0
+Generally Intelligent,Tech & other industry,US,1,NeurIPS,2022,2022,0.0
+Gensyn,Tech & other industry,US,1,NeurIPS,2022,2022,0.0
+Goaly AI,Tech & other industry,??,1,NeurIPS,2026,2026,0.0
+Grameen Research,Government / academic / non-profit,US,1,NeurIPS,2019,2019,0.0
+Graviti Technologies,Tech & other industry,CN,1,ICML,2021,2021,0.0
+Gray Swan,Tech & other industry,US,1,NeurIPS,2026,2026,0.0
+Gretel,Tech & other industry,US,1,ICLR,2021,2021,0.0
+Happy Elements,Tech & other industry,CN,1,NeurIPS,2019,2019,0.0
+Hearst,Tech & other industry,US,1,NeurIPS,2018,2018,0.0
+Hewlett Packard Enterprise,Tech & other industry,US,1,NeurIPS,2022,2022,0.0
+HeyGen,Tech & other industry,US,1,ICLR,2025,2025,0.0
+Hi! Paris,Government / academic / non-profit,FR,1,NeurIPS,2026,2026,0.0
+Hitachi,Tech & other industry,JP,1,ICML,2020,2020,0.0
+Horizon Robotics,Tech & other industry,CN,1,NeurIPS,2019,2019,0.0
+Hutchin Hill Capital,Finance / quant,US,1,NeurIPS,2016,2016,0.0
+IARAI,Government / academic / non-profit,AT,1,NeurIPS,2020,2020,0.0
+IEEE SA,Government / academic / non-profit,US,1,NeurIPS,2022,2022,0.0
+IMG Investset,Finance / quant,US,1,ICLR,2026,2026,0.0
+INFOCOMM Media Development Authority,Government / academic / non-profit,SG,1,ICLR,2025,2025,0.0
+INSTITUTO KUNUMI,Government / academic / non-profit,BR,1,ICLR,2026,2026,0.0
+ISEE AI,Tech & other industry,US,1,NeurIPS,2018,2018,0.0
+IVADO,Government / academic / non-profit,CA,1,NeurIPS,2018,2018,0.0
+Ideogram AI,Tech & other industry,US,1,NeurIPS,2025,2025,0.0
+Innodata,Tech & other industry,US,1,NeurIPS,2026,2026,0.0
+Institute of Advanced Research in Artificial Intelligence,Government / academic / non-profit,AT,1,ICML,2021,2021,0.0
+Jasper AI,Tech & other industry,US,1,NeurIPS,2022,2022,0.0
+Johnson & Johnson,Tech & other industry,US,1,NeurIPS,2019,2019,0.0
+Karavela,Tech & other industry,??,1,NeurIPS,2026,2026,0.0
+Khosla Ventures,Finance / quant,US,1,NeurIPS,2019,2019,0.0
+Knight Foundation,Government / academic / non-profit,US,1,NeurIPS,2018,2018,0.0
+Lila Sciences,Tech & other industry,US,1,ICLR,2026,2026,0.0
+Lionbridge,Tech & other industry,US,1,NeurIPS,2018,2018,0.0
+Lithosquare,Tech & other industry,FR,1,NeurIPS,2026,2026,0.0
+MDA,Tech & other industry,US,1,NeurIPS,2020,2020,0.0
+MFG Labs,Tech & other industry,FR,1,ICML,2015,2015,0.0
+MakerMaker.AI,Tech & other industry,US,1,NeurIPS,2026,2026,0.0
+Manteio Capital,Finance / quant,US,1,NeurIPS,2022,2022,0.0
+Mercedes-Benz Research and Development North America,Tech & other industry,US,1,NeurIPS,2017,2017,0.0
+Mercor,Tech & other industry,US,1,NeurIPS,2026,2026,0.0
+Meter,Tech & other industry,??,1,NeurIPS,2025,2025,0.0
+Micron,Tech & other industry,US,1,ICML,2022,2022,0.0
+Mipsology,Tech & other industry,US,1,NeurIPS,2019,2019,0.0
+Mirage,Tech & other industry,??,1,NeurIPS,2025,2025,0.0
+Miso Labs,Tech & other industry,??,1,NeurIPS,2026,2026,0.0
+Moqi Technology (Beijing),Tech & other industry,CN,1,NeurIPS,2019,2019,0.0
+Métropole Européenne de Lille,Government / academic / non-profit,FR,1,ICML,2015,2015,0.0
+NSF,Government / academic / non-profit,US,1,ICML,2015,2015,0.0
+NTT,Tech & other industry,JP,1,NeurIPS,2025,2025,0.0
+Naspers,Tech & other industry,ZA,1,NeurIPS,2018,2018,0.0
+Neara,Tech & other industry,AU,1,NeurIPS,2026,2026,0.0
+Neko Health,Tech & other industry,US,1,NeurIPS,2026,2026,0.0
+NetEase Fuxi Lab,Tech & other industry,CN,1,NeurIPS,2018,2018,0.0
+Normal Computing,Tech & other industry,US,1,ICLR,2026,2026,0.0
+Nubank,Finance / quant,BR,1,ICLR,2026,2026,0.0
+Numberly,Tech & other industry,FR,1,ICML,2015,2015,0.0
+OOO Sentium,Tech & other industry,RU,1,NeurIPS,2019,2019,0.0
+OmniML,Tech & other industry,US,1,NeurIPS,2022,2022,0.0
+OneSource Cloud,Tech & other industry,US,1,ICLR,2025,2025,0.0
+Optum Labs,Tech & other industry,US,1,NeurIPS,2022,2022,0.0
+Orby AI,Tech & other industry,US,1,ICLR,2025,2025,0.0
+Owkin,Tech & other industry,FR,1,NeurIPS,2022,2022,0.0
+PR[AI]RIE,Government / academic / non-profit,FR,1,NeurIPS,2026,2026,0.0
+Pachyderm,Tech & other industry,US,1,NeurIPS,2022,2022,0.0
+Palantir Technologies,Tech & other industry,US,1,NeurIPS,2016,2016,0.0
+ParallelM,Tech & other industry,US,1,NeurIPS,2018,2018,0.0
+Paris Region Entreprises,Government / academic / non-profit,FR,1,NeurIPS,2018,2018,0.0
+Peltarion,Tech & other industry,SE,1,ICML,2018,2018,0.0
+PolyU Academy for Artificial Intelligence,Government / academic / non-profit,CN,1,NeurIPS,2026,2026,0.0
+Pony.ai,Tech & other industry,US,1,NeurIPS,2018,2018,0.0
+Princeton University Press,Publisher,US,1,NeurIPS,2022,2022,0.0
+Probabl,Tech & other industry,FR,1,NeurIPS,2026,2026,0.0
+Prolific,Tech & other industry,GB,1,ICLR,2026,2026,0.0
+Pruna AI,Tech & other industry,DE,1,NeurIPS,2025,2025,0.0
+Pupil Labs,Tech & other industry,DE,1,NeurIPS,2018,2018,0.0
+Qifei International Development Co.,Tech & other industry,CN,1,NeurIPS,2017,2017,0.0
+Quadrature,Finance / quant,GB,1,NeurIPS,2018,2018,0.0
+Quora,Tech & other industry,US,1,NeurIPS,2017,2017,0.0
+Ramp,Finance / quant,US,1,NeurIPS,2026,2026,0.0
+Rapidata,Tech & other industry,CH,1,NeurIPS,2026,2026,0.0
+Recruit Communications,Tech & other industry,JP,1,ICML,2017,2017,0.0
+Relation Therapeutics,Tech & other industry,GB,1,NeurIPS,2022,2022,0.0
+Rise Data Labs,Tech & other industry,US,1,ICLR,2026,2026,0.0
+Roadstar.ai,Tech & other industry,US,1,NeurIPS,2018,2018,0.0
+Robinhood,Finance / quant,US,1,ICML,2024,2024,0.0
+Rora,Tech & other industry,??,1,ICML,2021,2021,0.0
+Région Nord-Pas de Calais,Government / academic / non-profit,FR,1,ICML,2015,2015,0.0
+SCAI,Tech & other industry,??,1,NeurIPS,2026,2026,0.0
+SEED Electronic Arts,Tech & other industry,US,1,ICML,2018,2018,0.0
+SPOC Biosciences,Tech & other industry,US,1,NeurIPS,2025,2025,0.0
+SSFAM,Tech & other industry,??,1,NeurIPS,2026,2026,0.0
+Schibsted Media Group,Tech & other industry,NO,1,NeurIPS,2016,2016,0.0
+SenseTime Group,Tech & other industry,CN,1,NeurIPS,2018,2018,0.0
+Seven Research,Tech & other industry,??,1,NeurIPS,2026,2026,0.0
+Sherlock Robotics,Tech & other industry,??,1,NeurIPS,2026,2026,0.0
+Sieve,Tech & other industry,US,1,NeurIPS,2026,2026,0.0
+Silicon Dreams,Tech & other industry,??,1,NeurIPS,2026,2026,0.0
+Simon Fraser University,Government / academic / non-profit,CA,1,NeurIPS,2019,2019,0.0
+Skytree,Tech & other industry,US,1,NeurIPS,2013,2013,0.0
+SoTALab,Tech & other industry,??,1,NeurIPS,2026,2026,0.0
+SoundHound,Tech & other industry,US,1,NeurIPS,2018,2018,0.0
+Sovrano AI,Tech & other industry,??,1,NeurIPS,2026,2026,0.0
+Splunk,Tech & other industry,US,1,NeurIPS,2019,2019,0.0
+Squirrel AI Learning,Tech & other industry,CN,1,NeurIPS,2018,2018,0.0
+Stradigi AI,Tech & other industry,CA,1,NeurIPS,2018,2018,0.0
+Subquadratic,Tech & other industry,US,1,NeurIPS,2026,2026,0.0
+Superfish,Tech & other industry,US,1,NeurIPS,2014,2014,0.0
+Swiss Data Science Center,Government / academic / non-profit,CH,1,NeurIPS,2017,2017,0.0
+Symantec,Tech & other industry,US,1,NeurIPS,2014,2014,0.0
+TESOLLO,Tech & other industry,KR,1,ICLR,2025,2025,0.0
+Talent Montréal,Government / academic / non-profit,CA,1,ICML,2018,2018,0.0
+Target,Tech & other industry,US,1,NeurIPS,2017,2017,0.0
+Taste Labs,Tech & other industry,??,1,NeurIPS,2026,2026,0.0
+Technicolor,Tech & other industry,FR,1,ICML,2015,2015,0.0
+Telefonca I+D,Tech & other industry,ES,1,NeurIPS,2016,2016,0.0
+Temasek,Finance / quant,SG,1,ICLR,2025,2025,0.0
+Tenstorrent,Tech & other industry,US,1,NeurIPS,2020,2020,0.0
+Teralytics,Tech & other industry,US,1,ICML,2016,2016,0.0
+TerraQuanta,Tech & other industry,??,1,NeurIPS,2019,2019,0.0
+The Alan Turing Institute,Government / academic / non-profit,GB,1,NeurIPS,2015,2015,0.0
+"The Chinese University of Hong Kong, Shenzhen",Government / academic / non-profit,CN,1,NeurIPS,2026,2026,0.0
+The Forecasting Company,Tech & other industry,US,1,NeurIPS,2026,2026,0.0
+The Home Depot,Tech & other industry,US,1,ICLR,2021,2021,0.0
+Theremia,Tech & other industry,??,1,NeurIPS,2026,2026,0.0
+Tibra Global Services Pty,Finance / quant,AU,1,ICML,2017,2017,0.0
+Tudor Investment,Finance / quant,US,1,NeurIPS,2017,2017,0.0
+Twenty Billion Neurons,Tech & other industry,DE,1,NeurIPS,2018,2018,0.0
+Typhoon l SCB 10X,Tech & other industry,TH,1,ICLR,2025,2025,0.0
+U.S. Bank National Association,Finance / quant,US,1,NeurIPS,2020,2020,0.0
+UNIPATAI,Tech & other industry,SG,1,NeurIPS,2026,2026,0.0
+Université de Lille,Government / academic / non-profit,FR,1,ICML,2015,2015,0.0
+V7,Tech & other industry,GB,1,NeurIPS,2018,2018,0.0
+VINTECH Technology Development Joint Stock Company,Tech & other industry,VN,1,ICML,2019,2019,0.0
+Vast.ai,Tech & other industry,US,1,ICML,2025,2025,0.0
+Vectra AI,Tech & other industry,US,1,NeurIPS,2019,2019,0.0
+Verda,Tech & other industry,US,1,NeurIPS,2026,2026,0.0
+Verisk,Tech & other industry,US,1,NeurIPS,2018,2018,0.0
+Vetto,Tech & other industry,??,1,ICLR,2026,2026,0.0
+WalmartLabs,Tech & other industry,US,1,NeurIPS,2019,2019,0.0
+Wecash Holding Limited Company,Finance / quant,CN,1,ICML,2018,2018,0.0
+Westbourne Partners,Finance / quant,GB,1,NeurIPS,2018,2018,0.0
+White Circle,Tech & other industry,FR,1,NeurIPS,2026,2026,0.0
+Wolfram,Tech & other industry,US,1,ICML,2019,2019,0.0
+Workday,Tech & other industry,US,1,NeurIPS,2026,2026,0.0
+Xyla,Tech & other industry,??,1,ICML,2022,2022,0.0
+Zhongguancun Academy,Government / academic / non-profit,CN,1,ICLR,2025,2025,0.0
+ai-coustics,Tech & other industry,DE,1,NeurIPS,2026,2026,0.0
+imec AI labs | imec France,Tech & other industry,US,1,NeurIPS,2026,2026,0.0
+io.net,Tech & other industry,US,1,NeurIPS,2025,2025,0.0
+maadaa.ai,Tech & other industry,CN,1,NeurIPS,2020,2020,0.0
+micro1,Tech & other industry,US,1,NeurIPS,2026,2026,0.0
+minds.ai,Tech & other industry,US,1,NeurIPS,2015,2015,0.0
+rednote,Tech & other industry,CN,1,NeurIPS,2026,2026,0.0
+xBrain,Tech & other industry,CA,1,NeurIPS,2018,2018,0.0

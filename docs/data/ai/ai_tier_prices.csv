@@ -1,0 +1,14 @@
+id,conference,years,tier,min_usd,basis
+1,NeurIPS,2024,Diamond,90000,stated · https://dev.neurips.cc/Exhibitors/exhibitorinfo
+2,NeurIPS,2024,Platinum,50000,stated · https://dev.neurips.cc/Exhibitors/exhibitorinfo
+3,NeurIPS,2024,Gold,35000,stated · https://dev.neurips.cc/Exhibitors/exhibitorinfo
+4,NeurIPS,2024,Silver,22000,stated · https://dev.neurips.cc/Exhibitors/exhibitorinfo
+5,NeurIPS,2024,Bronze,12000,stated · https://dev.neurips.cc/Exhibitors/exhibitorinfo
+6,NeurIPS,2024,Book Publisher,1100,stated · https://dev.neurips.cc/Exhibitors/exhibitorinfo
+7,ICML,2026,Diamond,100000,stated · https://icml.cc/sponsors/sponsorinfo
+8,ICML,2026,Platinum,80000,stated · https://icml.cc/sponsors/sponsorinfo
+9,ICML,2026,Gold,45000,stated · https://icml.cc/sponsors/sponsorinfo
+10,ICML,2026,Silver,30000,stated · https://icml.cc/sponsors/sponsorinfo
+11,ICML,2026,Bronze,20000,stated · https://icml.cc/sponsors/sponsorinfo
+12,ICML,2026,Ruby,18000,stated · https://icml.cc/sponsors/sponsorinfo
+13,ICML,2026,Book Publisher,1000,stated · https://icml.cc/sponsors/sponsorinfo

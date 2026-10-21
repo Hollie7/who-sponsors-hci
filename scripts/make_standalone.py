@@ -39,6 +39,11 @@ a{color:inherit}
 .dash-skeleton{color:transparent;background:var(--cds-chart-grid);border-radius:4px}
 </style>
 <script>
+// outside Claude: a plain browser download for the page's export button
+window.claude = window.claude || {use: async n => n !== 'downloads' ? null : {save: async ({filename, data}) => {
+  const url = URL.createObjectURL(data instanceof Blob ? data : new Blob([data], {type: 'text/csv;charset=utf-8'}));
+  const a = document.createElement('a'); a.href = url; a.download = filename; document.body.append(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000); return {status: 'saved'}; }}};
 window.dash = (() => {
   const files = __FILES__;
   const store = {}; const calcs = {}; const subs = [];

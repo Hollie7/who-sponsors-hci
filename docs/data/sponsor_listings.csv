@@ -1,0 +1,984 @@
+id,conference,year,tier,sponsor,org,sector,est_usd,price_basis,source,country,parent_country
+1,CHI,2019,Champion,Alibaba,Alibaba,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/,CN,CN
+2,CHI,2019,Champion,Baidu,Baidu,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/,CN,CN
+3,CHI,2019,Champion,Bloomberg,Bloomberg,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/,US,US
+4,CHI,2019,Champion,Meta/Facebook,Meta/Facebook,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/,US,US
+5,CHI,2019,Champion,Google,Google,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/,US,US
+6,CHI,2019,Champion,Microsoft,Microsoft,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/,US,US
+7,CHI,2019,Champion,NSF,NSF,Government / foundation,25000.0,assumed (CHI 2016–2026 schedule),https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/,US,US
+8,CHI,2019,Champion,Yahoo/Verizon Media,Yahoo/Verizon Media,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/,US,US
+9,CHI,2019,Contributor,Autodesk,Autodesk,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/,US,US
+10,CHI,2019,Contributor,Huawei,Huawei,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/,CN,CN
+11,CHI,2019,Contributor,IBM,IBM,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/,US,US
+12,CHI,2019,Contributor,Mozilla,Mozilla,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/,US,US
+13,CHI,2019,Contributor,SICSA,SICSA,Government / foundation,10000.0,assumed (CHI 2016–2026 schedule),https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/,GB,GB
+14,CHI,2019,Contributor,University of Glasgow,University of Glasgow,University / academic,10000.0,assumed (CHI 2016–2026 schedule),https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/,GB,GB
+15,CHI,2019,Friend,Adobe,Adobe,Industry,1000.0,assumed (CHI 2016–2026 schedule),https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/,US,US
+16,CHI,2019,Friend,Elsevier,Elsevier,Publisher,1000.0,assumed (CHI 2016–2026 schedule),https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/,NL,NL
+17,CHI,2019,Friend,Uber,Uber,Industry,1000.0,assumed (CHI 2016–2026 schedule),https://chi2019.acm.org/for-industry-sponsors/list-of-sponsors/,US,US
+18,CHI,2022,Hero,Google,Google,Industry,50000.0,assumed (CHI 2016–2026 schedule),https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/,US,US
+19,CHI,2022,Champion,Bloomberg,Bloomberg,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/,US,US
+20,CHI,2022,Champion,Meta/Facebook,Meta/Facebook,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/,US,US
+21,CHI,2022,Champion,Microsoft,Microsoft,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/,US,US
+22,CHI,2022,Champion,NSF,NSF,Government / foundation,25000.0,assumed (CHI 2016–2026 schedule),https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/,US,US
+23,CHI,2022,Champion,Yahoo/Verizon Media,Yahoo/Verizon Media,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/,US,US
+24,CHI,2022,Contributor,Adobe,Adobe,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/,US,US
+25,CHI,2022,Contributor,Apple,Apple,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/,US,US
+26,CHI,2022,Contributor,Autodesk,Autodesk,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/,US,US
+27,CHI,2022,Contributor,Tableau/Salesforce,Tableau/Salesforce,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/,US,US
+28,CHI,2022,Contributor,Toyota Research Institute,Toyota Research Institute,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/,US,JP
+29,CHI,2022,Friend,Megagon Labs,Megagon Labs,Industry,1000.0,assumed (CHI 2016–2026 schedule),https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/,US,JP
+30,CHI,2022,Friend,University of Miami,University of Miami,University / academic,1000.0,assumed (CHI 2016–2026 schedule),https://chi2022.acm.org/for-sponsors-exhibitors-and-recruiters/for-sponsors/chi-2022-sponsors/,US,US
+31,CHI,2023,Hero,Google,Google,Industry,50000.0,assumed (CHI 2016–2026 schedule),https://chi2023.acm.org/for-sponsors-exhibitors-and-recruiters/sponsoring/chi-2023-sponsors/,US,US
+32,CHI,2023,Hero,Siemens,Siemens,Industry,50000.0,assumed (CHI 2016–2026 schedule),https://chi2023.acm.org/for-sponsors-exhibitors-and-recruiters/sponsoring/chi-2023-sponsors/,DE,DE
+33,CHI,2023,Champion,Apple,Apple,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2023.acm.org/for-sponsors-exhibitors-and-recruiters/sponsoring/chi-2023-sponsors/,US,US
+34,CHI,2023,Champion,Bloomberg,Bloomberg,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2023.acm.org/for-sponsors-exhibitors-and-recruiters/sponsoring/chi-2023-sponsors/,US,US
+35,CHI,2023,Champion,NSF,NSF,Government / foundation,25000.0,assumed (CHI 2016–2026 schedule),https://chi2023.acm.org/for-sponsors-exhibitors-and-recruiters/sponsoring/chi-2023-sponsors/,US,US
+36,CHI,2023,Contributor,Adobe,Adobe,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2023.acm.org/for-sponsors-exhibitors-and-recruiters/sponsoring/chi-2023-sponsors/,US,US
+37,CHI,2023,Contributor,Autodesk,Autodesk,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2023.acm.org/for-sponsors-exhibitors-and-recruiters/sponsoring/chi-2023-sponsors/,US,US
+38,CHI,2023,Contributor,Toyota Research Institute,Toyota Research Institute,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2023.acm.org/for-sponsors-exhibitors-and-recruiters/sponsoring/chi-2023-sponsors/,US,JP
+39,CHI,2024,Champion,Apple,Apple,Industry,25000.0,stated,https://chi2024.acm.org/category/uncategorized/,US,US
+40,CHI,2024,Champion,Google,Google,Industry,25000.0,stated,https://chi2024.acm.org/category/uncategorized/,US,US
+41,CHI,2024,Champion,NSF,NSF,Government / foundation,25000.0,stated,https://chi2024.acm.org/category/uncategorized/,US,US
+42,CHI,2024,Champion,Chen Institute,Chen Institute,Government / foundation,25000.0,stated,https://chi2024.acm.org/category/uncategorized/,US,US
+43,CHI,2024,Contributor,Adobe,Adobe,Industry,10000.0,stated,https://chi2024.acm.org/category/uncategorized/,US,US
+44,CHI,2024,Contributor,Autodesk,Autodesk,Industry,10000.0,stated,https://chi2024.acm.org/category/uncategorized/,US,US
+45,CHI,2024,Contributor,Meta/Facebook,Meta/Facebook,Industry,10000.0,stated,https://chi2024.acm.org/category/uncategorized/,US,US
+46,CHI,2024,Contributor,Microsoft,Microsoft,Industry,10000.0,stated,https://chi2024.acm.org/category/uncategorized/,US,US
+47,CHI,2024,Contributor,Toyota Research Institute,Toyota Research Institute,Industry,10000.0,stated,https://chi2024.acm.org/category/uncategorized/,US,JP
+48,CHI,2026,Hero,Google,Google,Industry,50000.0,stated,https://chi2026.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,US,US
+49,CHI,2026,Champion,Adobe,Adobe,Industry,25000.0,stated,https://chi2026.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,US,US
+50,CHI,2026,Champion,Apple,Apple,Industry,25000.0,stated,https://chi2026.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,US,US
+51,CHI,2026,Champion,Meta/Facebook,Meta/Facebook,Industry,25000.0,stated,https://chi2026.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,US,US
+52,CHI,2026,Champion,Microsoft,Microsoft,Industry,25000.0,stated,https://chi2026.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,US,US
+53,CHI,2026,Champion,MBZUAI,MBZUAI,University / academic,25000.0,stated,https://chi2026.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,AE,AE
+54,CHI,2026,Champion,Toyota Research Institute,Toyota Research Institute,Industry,25000.0,stated,https://chi2026.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,US,JP
+55,CHI,2026,Contributor,Autodesk,Autodesk,Industry,10000.0,stated,https://chi2026.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,US,US
+56,UbiComp,2025,Gold,TSV (Technology Industries of Finland Centennial Foundation),TSV (Technology Industries of Finland Centennial Foundation),Government / foundation,10000.0,assumed (UbiComp 2022–23 schedule),https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/,FI,FI
+57,UbiComp,2025,Gold,Huawei,Huawei,Industry,10000.0,assumed (UbiComp 2022–23 schedule),https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/,CN,CN
+58,UbiComp,2025,Silver,City of Espoo,City of Espoo,Government / foundation,5000.0,assumed (UbiComp 2022–23 schedule),https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/,FI,FI
+59,UbiComp,2025,Silver,Nokia Bell Labs,Nokia Bell Labs,Industry,5000.0,assumed (UbiComp 2022–23 schedule),https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/,US,FI
+60,UbiComp,2025,Bronze,Wellcome Trust,Wellcome Trust,Government / foundation,2500.0,assumed (UbiComp 2022–23 schedule),https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/,GB,GB
+61,UbiComp,2025,Startup,ERMES,ERMES,Government / foundation,1000.0,assumed (UbiComp 2022–23 schedule),https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/,EU,EU
+62,UbiComp,2025,Startup,Holden,Holden,Government / foundation,1000.0,assumed (UbiComp 2022–23 schedule),https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/,EU,EU
+63,UbiComp,2025,Startup,One Ring,One Ring,Industry,1000.0,assumed (UbiComp 2022–23 schedule),https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/,,
+64,UbiComp,2025,Startup,Sustain,Sustain,Industry,1000.0,assumed (UbiComp 2022–23 schedule),https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/,,
+65,UbiComp,2025,Startup,SparQi Lab,SparQi Lab,Industry,1000.0,assumed (UbiComp 2022–23 schedule),https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/,,
+66,UbiComp,2025,Startup,Frontiers,Frontiers,Publisher,1000.0,assumed (UbiComp 2022–23 schedule),https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/,CH,CH
+67,UbiComp,2025,Startup,Bergsonne Labs,Bergsonne Labs,Industry,1000.0,assumed (UbiComp 2022–23 schedule),https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/,DE,DE
+68,UbiComp,2025,Startup,GreenSense,GreenSense,Government / foundation,1000.0,assumed (UbiComp 2022–23 schedule),https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/,FI,FI
+69,CHI,2025,Hero,Google,Google,Industry,50000.0,stated,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,US,US
+70,CHI,2025,Hero,City of Yokohama,City of Yokohama,Government / foundation,50000.0,stated,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,JP,JP
+71,CHI,2025,Hero,Science Council of Japan,Science Council of Japan,Government / foundation,50000.0,stated,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,JP,JP
+72,CHI,2025,Champion,Recruit,Recruit,Industry,25000.0,stated,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,JP,JP
+73,CHI,2025,Champion,Apple,Apple,Industry,25000.0,stated,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,US,US
+74,CHI,2025,Champion,H2L,H2L,Industry,25000.0,stated,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,JP,JP
+75,CHI,2025,Champion,Microsoft,Microsoft,Industry,25000.0,stated,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,US,US
+76,CHI,2025,Champion,Toyota Research Institute,Toyota Research Institute,Industry,25000.0,stated,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,US,JP
+77,CHI,2025,Champion,Fairy Devices,Fairy Devices,Industry,25000.0,stated,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,JP,JP
+78,CHI,2025,Champion,NTT,NTT,Industry,25000.0,stated,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,JP,JP
+79,CHI,2025,Champion,Mercari,Mercari,Industry,25000.0,stated,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,JP,JP
+80,CHI,2025,Contributor,Commonwealth Bank of Australia,Commonwealth Bank of Australia,Industry,10000.0,stated,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,AU,AU
+81,CHI,2025,Contributor,OMRON SINIC X,OMRON SINIC X,Industry,10000.0,stated,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,JP,JP
+82,CHI,2025,Contributor,Autodesk,Autodesk,Industry,10000.0,stated,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,US,US
+83,CHI,2025,Contributor,NICT,NICT,Government / foundation,10000.0,stated,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,JP,JP
+84,CHI,2025,Contributor,Adobe,Adobe,Industry,10000.0,stated,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,US,US
+85,CHI,2025,Contributor,NEC,NEC,Industry,10000.0,stated,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,JP,JP
+86,CHI,2025,Contributor,Huawei,Huawei,Industry,10000.0,stated,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,CN,CN
+87,CHI,2025,Contributor,Meta/Facebook,Meta/Facebook,Industry,10000.0,stated,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,US,US
+88,CHI,2025,Friend,CyberAgent,CyberAgent,Industry,1000.0,stated,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,JP,JP
+89,CHI,2025,Friend,LY Corporation,LY Corporation,Industry,1000.0,stated,https://chi2025.acm.org/sponsors-and-exhibitors/confirmed-sponsors/,JP,JP
+90,CHI,2018,Champion,Alibaba,Alibaba,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2018.acm.org/?p=110,CN,CN
+91,CHI,2018,Champion,Bloomberg,Bloomberg,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2018.acm.org/?p=110,US,US
+92,CHI,2018,Champion,Meta/Facebook,Meta/Facebook,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2018.acm.org/?p=110,US,US
+93,CHI,2018,Champion,Google,Google,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2018.acm.org/?p=110,US,US
+94,CHI,2018,Champion,IBM,IBM,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2018.acm.org/?p=110,US,US
+95,CHI,2018,Champion,Microsoft,Microsoft,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2018.acm.org/?p=110,US,US
+96,CHI,2018,Champion,Yahoo/Verizon Media,Yahoo/Verizon Media,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2018.acm.org/?p=110,US,US
+97,CHI,2018,Contributor,Disney Research,Disney Research,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2018.acm.org/?p=110,US,US
+98,CHI,2018,Contributor,NSF,NSF,Government / foundation,10000.0,assumed (CHI 2016–2026 schedule),https://chi2018.acm.org/?p=110,US,US
+99,CHI,2018,Contributor,Salesforce,Salesforce,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2018.acm.org/?p=110,US,US
+100,CHI,2018,Contributor,SAT (Société des arts technologiques),SAT (Société des arts technologiques),University / academic,10000.0,assumed (CHI 2016–2026 schedule),https://chi2018.acm.org/?p=110,CA,CA
+101,CHI,2018,Friend,Adobe,Adobe,Industry,1000.0,assumed (CHI 2016–2026 schedule),https://chi2018.acm.org/?p=110,US,US
+102,CHI,2020,Champion,Meta/Facebook,Meta/Facebook,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2020.acm.org/for-industry-sponsors/list-of-sponsors/,US,US
+103,CHI,2020,Champion,Google,Google,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2020.acm.org/for-industry-sponsors/list-of-sponsors/,US,US
+104,CHI,2020,Champion,Microsoft,Microsoft,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2020.acm.org/for-industry-sponsors/list-of-sponsors/,US,US
+105,CHI,2020,Champion,Monash University,Monash University,University / academic,25000.0,assumed (CHI 2016–2026 schedule),https://chi2020.acm.org/for-industry-sponsors/list-of-sponsors/,AU,AU
+106,CHI,2020,Champion,Yahoo/Verizon Media,Yahoo/Verizon Media,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2020.acm.org/for-industry-sponsors/list-of-sponsors/,US,US
+107,CHI,2020,Contributor,Apple,Apple,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2020.acm.org/for-industry-sponsors/list-of-sponsors/,US,US
+108,CHI,2020,Contributor,Autodesk,Autodesk,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2020.acm.org/for-industry-sponsors/list-of-sponsors/,US,US
+109,CHI,2021,Champion,Bloomberg,Bloomberg,Industry,25000.0,stated,https://chi2021.acm.org/,US,US
+110,CHI,2021,Champion,Meta/Facebook,Meta/Facebook,Industry,25000.0,stated,https://chi2021.acm.org/,US,US
+111,CHI,2021,Champion,Google,Google,Industry,25000.0,stated,https://chi2021.acm.org/,US,US
+112,CHI,2021,Champion,Kyocera,Kyocera,Industry,25000.0,stated,https://chi2021.acm.org/,JP,JP
+113,CHI,2021,Champion,Microsoft,Microsoft,Industry,25000.0,stated,https://chi2021.acm.org/,US,US
+114,CHI,2021,Champion,Monash University,Monash University,University / academic,25000.0,stated,https://chi2021.acm.org/,AU,AU
+115,CHI,2021,Champion,Yahoo/Verizon Media,Yahoo/Verizon Media,Industry,25000.0,stated,https://chi2021.acm.org/,US,US
+116,CHI,2021,Contributor,Adobe,Adobe,Industry,10000.0,stated,https://chi2021.acm.org/,US,US
+117,CHI,2021,Contributor,Apple,Apple,Industry,10000.0,stated,https://chi2021.acm.org/,US,US
+118,CHI,2021,Contributor,Autodesk,Autodesk,Industry,10000.0,stated,https://chi2021.acm.org/,US,US
+119,CHI,2021,Contributor,IBM,IBM,Industry,10000.0,stated,https://chi2021.acm.org/,US,US
+120,CHI,2021,Contributor,LY Corporation,LY Corporation,Industry,10000.0,stated,https://chi2021.acm.org/,JP,JP
+121,CHI,2021,Contributor,Mercari,Mercari,Industry,10000.0,stated,https://chi2021.acm.org/,JP,JP
+122,CHI,2021,Contributor,Yahoo Japan,Yahoo Japan,Industry,10000.0,stated,https://chi2021.acm.org/,JP,JP
+123,CHI,2016,Hero,Infosys,Infosys,Industry,50000.0,stated,https://chi2016.acm.org/wp/list-of-sponsors/,IN,IN
+124,CHI,2016,Champion,Bloomberg,Bloomberg,Industry,25000.0,stated,https://chi2016.acm.org/wp/list-of-sponsors/,US,US
+125,CHI,2016,Champion,Meta/Facebook,Meta/Facebook,Industry,25000.0,stated,https://chi2016.acm.org/wp/list-of-sponsors/,US,US
+126,CHI,2016,Champion,Google,Google,Industry,25000.0,stated,https://chi2016.acm.org/wp/list-of-sponsors/,US,US
+127,CHI,2016,Champion,HP,HP,Industry,25000.0,stated,https://chi2016.acm.org/wp/list-of-sponsors/,US,US
+128,CHI,2016,Champion,IBM,IBM,Industry,25000.0,stated,https://chi2016.acm.org/wp/list-of-sponsors/,US,US
+129,CHI,2016,Champion,Microsoft,Microsoft,Industry,25000.0,stated,https://chi2016.acm.org/wp/list-of-sponsors/,US,US
+130,CHI,2016,Champion,Yahoo/Verizon Media,Yahoo/Verizon Media,Industry,25000.0,stated,https://chi2016.acm.org/wp/list-of-sponsors/,US,US
+131,CHI,2016,Contributor,Autodesk,Autodesk,Industry,10000.0,stated,https://chi2016.acm.org/wp/list-of-sponsors/,US,US
+132,CHI,2016,Contributor,GE,GE,Industry,10000.0,stated,https://chi2016.acm.org/wp/list-of-sponsors/,US,US
+133,CHI,2016,Contributor,JD Lab,JD Lab,Industry,10000.0,stated,https://chi2016.acm.org/wp/list-of-sponsors/,KR,KR
+134,CHI,2016,Contributor,Naver,Naver,Industry,10000.0,stated,https://chi2016.acm.org/wp/list-of-sponsors/,KR,KR
+135,CHI,2016,Contributor,NSF,NSF,Government / foundation,10000.0,stated,https://chi2016.acm.org/wp/list-of-sponsors/,US,US
+136,CHI,2016,Contributor,Salesforce,Salesforce,Industry,10000.0,stated,https://chi2016.acm.org/wp/list-of-sponsors/,US,US
+137,CHI,2016,Contributor,Splunk,Splunk,Industry,10000.0,stated,https://chi2016.acm.org/wp/list-of-sponsors/,US,US
+138,CHI,2016,Contributor,work2future (San Jose),work2future (San Jose),Government / foundation,10000.0,stated,https://chi2016.acm.org/wp/list-of-sponsors/,US,US
+139,CHI,2016,Friend,Adobe,Adobe,Industry,1000.0,stated,https://chi2016.acm.org/wp/list-of-sponsors/,US,US
+140,CHI,2016,Friend,Disney Research,Disney Research,Industry,1000.0,stated,https://chi2016.acm.org/wp/list-of-sponsors/,US,US
+141,CHI,2015,Hero,Samsung,Samsung,Industry,50000.0,assumed (CHI 2016–2026 schedule),http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/,KR,KR
+142,CHI,2015,Champion,GolfZon,GolfZon,Industry,25000.0,assumed (CHI 2016–2026 schedule),http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/,KR,KR
+143,CHI,2015,Champion,Google,Google,Industry,25000.0,assumed (CHI 2016–2026 schedule),http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/,US,US
+144,CHI,2015,Champion,Microsoft,Microsoft,Industry,25000.0,assumed (CHI 2016–2026 schedule),http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/,US,US
+145,CHI,2015,Champion,Naver,Naver,Industry,25000.0,assumed (CHI 2016–2026 schedule),http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/,KR,KR
+146,CHI,2015,Champion,SK Planet,SK Planet,Industry,25000.0,assumed (CHI 2016–2026 schedule),http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/,KR,KR
+147,CHI,2015,Contributor,Autodesk,Autodesk,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/,US,US
+148,CHI,2015,Contributor,Kakao,Kakao,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/,KR,KR
+149,CHI,2015,Contributor,Disney Research,Disney Research,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/,US,US
+150,CHI,2015,Contributor,Meta/Facebook,Meta/Facebook,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/,US,US
+151,CHI,2015,Contributor,FuturePlay,FuturePlay,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/,KR,KR
+152,CHI,2015,Contributor,Hyundai,Hyundai,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/,KR,KR
+153,CHI,2015,Contributor,LG,LG,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/,KR,KR
+154,CHI,2015,Contributor,Language Grid,Language Grid,Government / foundation,10000.0,assumed (CHI 2016–2026 schedule),http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/,JP,JP
+155,CHI,2015,Contributor,NSF,NSF,Government / foundation,10000.0,assumed (CHI 2016–2026 schedule),http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/,US,US
+156,CHI,2015,Friend,Adobe,Adobe,Industry,1000.0,assumed (CHI 2016–2026 schedule),http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/,US,US
+157,CHI,2015,Friend,H9Works,H9Works,Industry,1000.0,assumed (CHI 2016–2026 schedule),http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/,KR,KR
+158,CHI,2015,Friend,Yonsei University,Yonsei University,University / academic,1000.0,assumed (CHI 2016–2026 schedule),http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/,KR,KR
+159,CHI,2015,Friend,Yonsei University ICS,Yonsei University ICS,University / academic,1000.0,assumed (CHI 2016–2026 schedule),http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/,KR,KR
+160,CHI,2015,Friend,KIPFA,KIPFA,Government / foundation,1000.0,assumed (CHI 2016–2026 schedule),http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/,KR,KR
+161,CHI,2015,Friend,Samsung Art and Design Institute,Samsung Art and Design Institute,University / academic,1000.0,assumed (CHI 2016–2026 schedule),http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/,KR,KR
+162,CHI,2015,Special,Seoul Metropolitan Government,Seoul Metropolitan Government,Government / foundation,,n/a,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/,KR,KR
+163,CHI,2015,Special,Korea Tourism Organization,Korea Tourism Organization,Government / foundation,,n/a,http://chi2015.acm.org/sponsoring/sponsors-of-chi2015/,KR,KR
+164,CHI,2014,Champion,Autodesk,Autodesk,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014,US,US
+165,CHI,2014,Champion,Bloomberg,Bloomberg,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014,US,US
+166,CHI,2014,Champion,Google,Google,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014,US,US
+167,CHI,2014,Champion,GRAND NCE,GRAND NCE,Government / foundation,25000.0,assumed (CHI 2016–2026 schedule),https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014,CA,CA
+168,CHI,2014,Champion,Microsoft,Microsoft,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014,US,US
+169,CHI,2014,Champion,Naver,Naver,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014,KR,KR
+170,CHI,2014,Champion,University of Toronto,University of Toronto,University / academic,25000.0,assumed (CHI 2016–2026 schedule),https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014,CA,CA
+171,CHI,2014,Contributor,Meta/Facebook,Meta/Facebook,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014,US,US
+172,CHI,2014,Contributor,NSF,NSF,Government / foundation,10000.0,assumed (CHI 2016–2026 schedule),https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014,US,US
+173,CHI,2014,Contributor,Yahoo/Verizon Media,Yahoo/Verizon Media,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014,US,US
+174,CHI,2014,Friend,Disney Research,Disney Research,Industry,1000.0,assumed (CHI 2016–2026 schedule),https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014,US,US
+175,CHI,2014,Friend,Newcastle University,Newcastle University,University / academic,1000.0,assumed (CHI 2016–2026 schedule),https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014,GB,GB
+176,CHI,2014,Friend,UMBC,UMBC,University / academic,1000.0,assumed (CHI 2016–2026 schedule),https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014,US,US
+177,CHI,2014,Friend,UC Irvine,UC Irvine,University / academic,1000.0,assumed (CHI 2016–2026 schedule),https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014,US,US
+178,CHI,2014,Friend,University of Maryland,University of Maryland,University / academic,1000.0,assumed (CHI 2016–2026 schedule),https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014,US,US
+179,CHI,2014,Friend,Virginia Tech,Virginia Tech,University / academic,1000.0,assumed (CHI 2016–2026 schedule),https://www.chi2014add.chi2014.hosting.acm.org/sponsorship/sponsors-of-chi2014,US,US
+180,CHI,2013,Hero,JCDecaux,JCDecaux,Industry,50000.0,assumed (CHI 2016–2026 schedule),https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/,FR,FR
+181,CHI,2013,Champion,Bloomberg,Bloomberg,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/,US,US
+182,CHI,2013,Champion,Université Paris-Dauphine,Université Paris-Dauphine,University / academic,25000.0,assumed (CHI 2016–2026 schedule),https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/,FR,FR
+183,CHI,2013,Champion,eBay/PayPal,eBay/PayPal,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/,US,US
+184,CHI,2013,Champion,Google,Google,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/,US,US
+185,CHI,2013,Champion,Inria,Inria,Government / foundation,25000.0,assumed (CHI 2016–2026 schedule),https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/,FR,FR
+186,CHI,2013,Champion,Microsoft,Microsoft,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/,US,US
+187,CHI,2013,Champion,Telecom ParisTech,Telecom ParisTech,University / academic,25000.0,assumed (CHI 2016–2026 schedule),https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/,FR,FR
+188,CHI,2013,Contributor,Autodesk,Autodesk,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/,US,US
+189,CHI,2013,Contributor,Digiteo,Digiteo,Government / foundation,10000.0,assumed (CHI 2016–2026 schedule),https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/,FR,FR
+190,CHI,2013,Contributor,Meta/Facebook,Meta/Facebook,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/,US,US
+191,CHI,2013,Contributor,Région Île-de-France,Région Île-de-France,Government / foundation,10000.0,assumed (CHI 2016–2026 schedule),https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/,FR,FR
+192,CHI,2013,Contributor,Nokia,Nokia,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/,FI,FI
+193,CHI,2013,Contributor,Yahoo/Verizon Media,Yahoo/Verizon Media,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/,US,US
+194,CHI,2013,Friend,GRAND NCE,GRAND NCE,Government / foundation,1000.0,assumed (CHI 2016–2026 schedule),https://chi2013.acm.org/sponsorship/sponsors-of-chi-2013/,CA,CA
+195,CHI,2012,Champion,Autodesk,Autodesk,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2012.acm.org/sponsors.shtml,US,US
+196,CHI,2012,Champion,Bloomberg,Bloomberg,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2012.acm.org/sponsors.shtml,US,US
+197,CHI,2012,Champion,eBay/PayPal,eBay/PayPal,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2012.acm.org/sponsors.shtml,US,US
+198,CHI,2012,Champion,Google,Google,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2012.acm.org/sponsors.shtml,US,US
+199,CHI,2012,Champion,Microsoft,Microsoft,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2012.acm.org/sponsors.shtml,US,US
+200,CHI,2012,Champion,NSF,NSF,Government / foundation,25000.0,assumed (CHI 2016–2026 schedule),https://chi2012.acm.org/sponsors.shtml,US,US
+201,CHI,2012,Champion,SAP,SAP,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2012.acm.org/sponsors.shtml,DE,DE
+202,CHI,2012,Friend,Adobe,Adobe,Industry,1000.0,assumed (CHI 2016–2026 schedule),https://chi2012.acm.org/sponsors.shtml,US,US
+203,CHI,2012,Friend,Disney Research,Disney Research,Industry,1000.0,assumed (CHI 2016–2026 schedule),https://chi2012.acm.org/sponsors.shtml,US,US
+204,CHI,2012,Friend,Samsung,Samsung,Industry,1000.0,assumed (CHI 2016–2026 schedule),https://chi2012.acm.org/sponsors.shtml,KR,KR
+205,CHI,2012,Friend,University of Michigan,University of Michigan,University / academic,1000.0,assumed (CHI 2016–2026 schedule),https://chi2012.acm.org/sponsors.shtml,US,US
+206,CHI,1996,Corporate,Apple,Apple,Industry,,no price info,https://chi1996.acm.org/proceedings/corpsp.html,US,US
+207,CHI,1996,Corporate,AT&T Bell Labs,AT&T Bell Labs,Industry,,no price info,https://chi1996.acm.org/proceedings/corpsp.html,US,US
+208,CHI,1996,Corporate,Bellcore,Bellcore,Industry,,no price info,https://chi1996.acm.org/proceedings/corpsp.html,US,US
+209,CHI,1996,Corporate,Canon,Canon,Industry,,no price info,https://chi1996.acm.org/proceedings/corpsp.html,JP,JP
+210,CHI,1996,Corporate,IBM,IBM,Industry,,no price info,https://chi1996.acm.org/proceedings/corpsp.html,US,US
+211,CHI,1996,Corporate,Intel,Intel,Industry,,no price info,https://chi1996.acm.org/proceedings/corpsp.html,US,US
+212,CHI,1996,Corporate,Microsoft,Microsoft,Industry,,no price info,https://chi1996.acm.org/proceedings/corpsp.html,US,US
+213,CHI,1996,Corporate,Nortel/BNR,Nortel/BNR,Industry,,no price info,https://chi1996.acm.org/proceedings/corpsp.html,CA,CA
+214,CHI,1996,Corporate,NYNEX,NYNEX,Industry,,no price info,https://chi1996.acm.org/proceedings/corpsp.html,US,US
+215,CHI,1996,Corporate,Oracle,Oracle,Industry,,no price info,https://chi1996.acm.org/proceedings/corpsp.html,US,US
+216,CHI,1996,Corporate,Philips,Philips,Industry,,no price info,https://chi1996.acm.org/proceedings/corpsp.html,NL,NL
+217,CHI,1996,Corporate,Sun Microsystems,Sun Microsystems,Industry,,no price info,https://chi1996.acm.org/proceedings/corpsp.html,US,US
+218,CHI,1996,Corporate,U S WEST,U S WEST,Industry,,no price info,https://chi1996.acm.org/proceedings/corpsp.html,US,US
+219,CSCW,2026,Gold,Notion,Notion,Industry,10000.0,stated,https://cscw.acm.org/2026/2026sponsors.html,US,US
+220,CSCW,2026,Silver,Google DeepMind,Google,Industry,5000.0,stated,https://cscw.acm.org/2026/2026sponsors.html,US,US
+221,CSCW,2026,Friend,Underwood Institute,Underwood Institute,Government / foundation,2000.0,stated,https://cscw.acm.org/2026/2026sponsors.html,US,US
+222,CSCW,2025,Silver,"MediaFutures (UiB) [logo 'MF', unverified]",MediaFutures (UiB),Government / foundation,3000.0,stated,https://cscw.acm.org/2025/index.php/confirmed-sponsors/,NO,NO
+223,CSCW,2025,Silver,NSF,NSF,Government / foundation,3000.0,stated,https://cscw.acm.org/2025/index.php/confirmed-sponsors/,US,US
+224,CSCW,2025,Bronze,Google,Google,Industry,1500.0,stated,https://cscw.acm.org/2025/index.php/confirmed-sponsors/,US,US
+225,CSCW,2025,Bronze,Underwood Institute,Underwood Institute,Government / foundation,1500.0,stated,https://cscw.acm.org/2025/index.php/confirmed-sponsors/,US,US
+226,CSCW,2025,Bronze,Adobe,Adobe,Industry,1500.0,stated,https://cscw.acm.org/2025/index.php/confirmed-sponsors/,US,US
+227,CSCW,2024,Supporter,NSF,NSF,Government / foundation,1000.0,assumed floor (no published price),https://cscw.acm.org/2024/,US,US
+228,CSCW,2024,Supporter,Google,Google,Industry,1000.0,assumed floor (no published price),https://cscw.acm.org/2024/,US,US
+229,CSCW,2024,Supporter,Underwood Institute,Underwood Institute,Government / foundation,1000.0,assumed floor (no published price),https://cscw.acm.org/2024/,US,US
+230,CSCW,2024,Supporter,Stevens Institute of Technology,Stevens Institute of Technology,University / academic,1000.0,assumed floor (no published price),https://cscw.acm.org/2024/,US,US
+231,CSCW,2023,Friend,Google,Google,Industry,1000.0,assumed floor (no published price),https://cscw.acm.org/2023/,US,US
+232,CSCW,2023,Friend,Underwood Institute,Underwood Institute,Government / foundation,1000.0,assumed floor (no published price),https://cscw.acm.org/2023/,US,US
+233,CSCW,2023,Friend,Infor,Infor,Industry,1000.0,assumed floor (no published price),https://cscw.acm.org/2023/,US,US
+234,CSCW,2023,Friend,SCI [unidentified logo],SCI,Unknown,1000.0,assumed floor (no published price),https://cscw.acm.org/2023/,,
+235,CSCW,2023,DC Supporter,NSF,NSF,Government / foundation,1000.0,assumed floor (no published price),https://cscw.acm.org/2023/,US,US
+236,CSCW,2022,Champion,Meta/Facebook,Meta/Facebook,Industry,15000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2022/,US,US
+237,CSCW,2022,Benefactor,Google,Google,Industry,10000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2022/,US,US
+238,CSCW,2022,Benefactor,Adobe,Adobe,Industry,10000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2022/,US,US
+239,CSCW,2022,Friend,Underwood Institute,Underwood Institute,Government / foundation,1000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2022/,US,US
+240,CSCW,2022,Friend,CyberLink,CyberLink,Industry,1000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2022/,TW,TW
+241,CSCW,2022,Friend,Perfect Corp,Perfect Corp,Industry,1000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2022/,TW,TW
+242,CSCW,2021,Champion,Google,Google,Industry,15000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2021/?p=807,US,US
+243,CSCW,2021,Champion,Meta/Facebook,Meta/Facebook,Industry,15000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2021/?p=807,US,US
+244,CSCW,2021,Benefactor,Marvin,Marvin,Industry,10000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2021/?p=807,,
+245,CSCW,2021,Contributor,Microsoft,Microsoft,Industry,5000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2021/?p=807,US,US
+246,CSCW,2021,Contributor,Spotify,Spotify,Industry,5000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2021/?p=807,SE,SE
+247,CSCW,2021,Contributor,Underwood Institute,Underwood Institute,Government / foundation,5000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2021/?p=807,US,US
+248,CSCW,2021,Contributor,Adobe,Adobe,Industry,5000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2021/?p=807,US,US
+249,CSCW,2021,DC Supporter,NSF,NSF,Government / foundation,1000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2021/?p=807,US,US
+250,CSCW,2020,Unspecified,Meta/Facebook,Meta/Facebook,Industry,,tier not listed,https://cscw.acm.org/2020/?p=573,US,US
+251,CSCW,2020,Unspecified,Microsoft,Microsoft,Industry,,tier not listed,https://cscw.acm.org/2020/?p=573,US,US
+252,CSCW,2020,Unspecified,Underwood Institute,Underwood Institute,Government / foundation,,tier not listed,https://cscw.acm.org/2020/?p=573,US,US
+253,CSCW,2020,Unspecified,NSF,NSF,Government / foundation,,tier not listed,https://cscw.acm.org/2020/?p=573,US,US
+254,CSCW,2018,Champion,Meta/Facebook,Meta/Facebook,Industry,15000.0,stated,https://cscw.acm.org/2018/,US,US
+255,CSCW,2018,Contributor,IBM,IBM,Industry,5000.0,stated,https://cscw.acm.org/2018/,US,US
+256,CSCW,2018,Contributor,Snap,Snap,Industry,5000.0,stated,https://cscw.acm.org/2018/,US,US
+257,CSCW,2018,Friend,Underwood Institute,Underwood Institute,Government / foundation,1000.0,stated,https://cscw.acm.org/2018/,US,US
+258,CSCW,2017,Champion,Meta/Facebook,Meta/Facebook,Industry,15000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2017,US,US
+259,CSCW,2017,Champion,NSF,NSF,Government / foundation,15000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2017,US,US
+260,CSCW,2017,Benefactor,IBM,IBM,Industry,10000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2017,US,US
+261,CSCW,2017,Benefactor,Microsoft,Microsoft,Industry,10000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2017,US,US
+262,CSCW,2017,Contributor,HP,HP,Industry,5000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2017,US,US
+263,CSCW,2017,Contributor,Mozilla,Mozilla,Industry,5000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2017,US,US
+264,CSCW,2017,Friend,Google,Google,Industry,1000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2017,US,US
+265,CSCW,2016,Champion,Intel,Intel,Industry,15000.0,stated,https://cscw.acm.org/2016/sponsors/,US,US
+266,CSCW,2016,Champion,Meta/Facebook,Meta/Facebook,Industry,15000.0,stated,https://cscw.acm.org/2016/sponsors/,US,US
+267,CSCW,2016,Benefactor,Microsoft,Microsoft,Industry,10000.0,stated,https://cscw.acm.org/2016/sponsors/,US,US
+268,CSCW,2016,Contributor,FXPAL,FXPAL,Industry,5000.0,stated,https://cscw.acm.org/2016/sponsors/,US,JP
+269,CSCW,2016,Contributor,IBM,IBM,Industry,5000.0,stated,https://cscw.acm.org/2016/sponsors/,US,US
+270,CSCW,2016,Contributor,Google,Google,Industry,5000.0,stated,https://cscw.acm.org/2016/sponsors/,US,US
+271,CSCW,2016,Friend,University of Copenhagen DIKU,University of Copenhagen DIKU,University / academic,1000.0,stated,https://cscw.acm.org/2016/sponsors/,DK,DK
+272,CSCW,2016,Friend,SAP,SAP,Industry,1000.0,stated,https://cscw.acm.org/2016/sponsors/,DE,DE
+273,CSCW,2016,Friend,IT University of Copenhagen,IT University of Copenhagen,University / academic,1000.0,stated,https://cscw.acm.org/2016/sponsors/,DK,DK
+274,CSCW,2016,Friend,Kitchen Cabinet Kings,Kitchen Cabinet Kings,Industry,1000.0,stated,https://cscw.acm.org/2016/sponsors/,US,US
+275,CSCW,2015,Champion,NSF,NSF,Government / foundation,15000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2015,US,US
+276,CSCW,2015,Champion,Meta/Facebook,Meta/Facebook,Industry,15000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2015,US,US
+277,CSCW,2015,Benefactor,GRAND NCE,GRAND NCE,Government / foundation,10000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2015,CA,CA
+278,CSCW,2015,Benefactor,Microsoft,Microsoft,Industry,10000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2015,US,US
+279,CSCW,2015,Benefactor,Bloomberg,Bloomberg,Industry,10000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2015,US,US
+280,CSCW,2015,Contributor,Northwestern University,Northwestern University,University / academic,5000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2015,US,US
+281,CSCW,2015,Contributor,IBM,IBM,Industry,5000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2015,US,US
+282,CSCW,2015,Friend,Google,Google,Industry,1000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2015,US,US
+283,CSCW,2015,Friend,Simon Fraser University,Simon Fraser University,University / academic,1000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2015,CA,CA
+284,CSCW,2014,Unspecified,Meta/Facebook,Meta/Facebook,Industry,,tier not listed,https://cscw.acm.org/2014/cscw2014_program.pdf,US,US
+285,CSCW,2014,Unspecified,Microsoft,Microsoft,Industry,,tier not listed,https://cscw.acm.org/2014/cscw2014_program.pdf,US,US
+286,CSCW,2014,Unspecified,NSF,NSF,Government / foundation,,tier not listed,https://cscw.acm.org/2014/cscw2014_program.pdf,US,US
+287,CSCW,2014,Unspecified,GRAND NCE,GRAND NCE,Government / foundation,,tier not listed,https://cscw.acm.org/2014/cscw2014_program.pdf,CA,CA
+288,CSCW,2014,Unspecified,IBM,IBM,Industry,,tier not listed,https://cscw.acm.org/2014/cscw2014_program.pdf,US,US
+289,CSCW,2014,Unspecified,Drexel University,Drexel University,University / academic,,tier not listed,https://cscw.acm.org/2014/cscw2014_program.pdf,US,US
+290,CSCW,2014,Unspecified,Google,Google,Industry,,tier not listed,https://cscw.acm.org/2014/cscw2014_program.pdf,US,US
+291,CSCW,2014,Unspecified,UMBC,UMBC,University / academic,,tier not listed,https://cscw.acm.org/2014/cscw2014_program.pdf,US,US
+292,CSCW,2013,Hero,NSF,NSF,Government / foundation,15000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2013/,US,US
+293,CSCW,2013,Benefactor,Meta/Facebook,Meta/Facebook,Industry,10000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2013/,US,US
+294,CSCW,2013,Benefactor,Microsoft,Microsoft,Industry,10000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2013/,US,US
+295,CSCW,2013,Contributor,GRAND NCE,GRAND NCE,Government / foundation,5000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2013/,CA,CA
+296,CSCW,2013,Contributor,IBM,IBM,Industry,5000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2013/,US,US
+297,CSCW,2013,Contributor,Yahoo/Verizon Media,Yahoo/Verizon Media,Industry,5000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2013/,US,US
+298,CSCW,2013,Friend,Google,Google,Industry,1000.0,assumed (CSCW 2016–2019 schedule),https://cscw.acm.org/2013/,US,US
+299,CHI,2008,Hero,Microsoft,Microsoft,Industry,50000.0,assumed (CHI 2016–2026 schedule),https://chi2008.acm.org/sponsors.html,US,US
+300,CHI,2008,Champion,Autodesk,Autodesk,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2008.acm.org/sponsors.html,US,US
+301,CHI,2008,Champion,Google,Google,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2008.acm.org/sponsors.html,US,US
+302,CHI,2008,Champion,NSF,NSF,Government / foundation,25000.0,assumed (CHI 2016–2026 schedule),https://chi2008.acm.org/sponsors.html,US,US
+303,CHI,2008,Champion,Oracle,Oracle,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2008.acm.org/sponsors.html,US,US
+304,CHI,2008,Champion,SAP,SAP,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2008.acm.org/sponsors.html,DE,DE
+305,CHI,2008,Champion,SourceForge,SourceForge,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2008.acm.org/sponsors.html,US,US
+306,CHI,2008,Contributor,eLearn Magazine (ACM),eLearn Magazine (ACM),Publisher,10000.0,assumed (CHI 2016–2026 schedule),https://chi2008.acm.org/sponsors.html,US,US
+307,CHI,2008,Contributor,ACM Interactions,ACM Interactions,Publisher,10000.0,assumed (CHI 2016–2026 schedule),https://chi2008.acm.org/sponsors.html,US,US
+308,CHI,2008,Contributor,Nokia,Nokia,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2008.acm.org/sponsors.html,FI,FI
+309,CHI,2008,Friend,Adobe,Adobe,Industry,1000.0,assumed (CHI 2016–2026 schedule),https://chi2008.acm.org/sponsors.html,US,US
+310,CHI,2008,Friend,Intel,Intel,Industry,1000.0,assumed (CHI 2016–2026 schedule),https://chi2008.acm.org/sponsors.html,US,US
+311,CHI,2008,Friend,VMware,VMware,Industry,1000.0,assumed (CHI 2016–2026 schedule),https://chi2008.acm.org/sponsors.html,US,US
+312,CHI,2008,Friend,University of Bari,University of Bari,University / academic,1000.0,assumed (CHI 2016–2026 schedule),https://chi2008.acm.org/sponsors.html,IT,IT
+313,CHI,2007,Hero,Intel,Intel,Industry,50000.0,assumed (CHI 2016–2026 schedule),https://chi2007.acm.org/sponsor/sponsors.html,US,US
+314,CHI,2007,Champion,Cisco,Cisco,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2007.acm.org/sponsor/sponsors.html,US,US
+315,CHI,2007,Champion,Cooper,Cooper,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2007.acm.org/sponsor/sponsors.html,US,US
+316,CHI,2007,Champion,Google,Google,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2007.acm.org/sponsor/sponsors.html,US,US
+317,CHI,2007,Champion,Intuit,Intuit,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2007.acm.org/sponsor/sponsors.html,US,US
+318,CHI,2007,Champion,Microsoft,Microsoft,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2007.acm.org/sponsor/sponsors.html,US,US
+319,CHI,2007,Champion,NSF,NSF,Government / foundation,25000.0,assumed (CHI 2016–2026 schedule),https://chi2007.acm.org/sponsor/sponsors.html,US,US
+320,CHI,2007,Champion,SAP,SAP,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2007.acm.org/sponsor/sponsors.html,DE,DE
+321,CHI,2007,Champion,Sun Microsystems,Sun Microsystems,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2007.acm.org/sponsor/sponsors.html,US,US
+322,CHI,2007,Champion,Yahoo/Verizon Media,Yahoo/Verizon Media,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2007.acm.org/sponsor/sponsors.html,US,US
+323,CHI,2007,Champion,SourceForge,SourceForge,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2007.acm.org/sponsor/sponsors.html,US,US
+324,CHI,2007,Contributor,Adobe,Adobe,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2007.acm.org/sponsor/sponsors.html,US,US
+325,CHI,2007,Contributor,Autodesk,Autodesk,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2007.acm.org/sponsor/sponsors.html,US,US
+326,CHI,2007,Contributor,eBay/PayPal,eBay/PayPal,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2007.acm.org/sponsor/sponsors.html,US,US
+327,CHI,2007,Contributor,eLearn Magazine (ACM),eLearn Magazine (ACM),Publisher,10000.0,assumed (CHI 2016–2026 schedule),https://chi2007.acm.org/sponsor/sponsors.html,US,US
+328,CHI,2007,Contributor,Nokia,Nokia,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2007.acm.org/sponsor/sponsors.html,FI,FI
+329,CHI,2007,Contributor,Pitney Bowes,Pitney Bowes,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2007.acm.org/sponsor/sponsors.html,US,US
+330,CHI,2007,Friend,FXPAL,FXPAL,Industry,1000.0,assumed (CHI 2016–2026 schedule),https://chi2007.acm.org/sponsor/sponsors.html,US,JP
+331,CHI,2007,Friend,VMware,VMware,Industry,1000.0,assumed (CHI 2016–2026 schedule),https://chi2007.acm.org/sponsor/sponsors.html,US,US
+332,CHI,1998,Champion,Citibank,Citibank,Industry,,no price info,https://chi1998.acm.org/sponsors/index.html,US,US
+333,CHI,1998,Champion,Nokia,Nokia,Industry,,no price info,https://chi1998.acm.org/sponsors/index.html,FI,FI
+334,CHI,1998,Champion,IBM,IBM,Industry,,no price info,https://chi1998.acm.org/sponsors/index.html,US,US
+335,CHI,1998,Champion,Sun Microsystems,Sun Microsystems,Industry,,no price info,https://chi1998.acm.org/sponsors/index.html,US,US
+336,CHI,1998,Champion,Microsoft,Microsoft,Industry,,no price info,https://chi1998.acm.org/sponsors/index.html,US,US
+337,CHI,1998,Champion,Unisys,Unisys,Industry,,no price info,https://chi1998.acm.org/sponsors/index.html,US,US
+338,CHI,1998,Contributor,Andersen Consulting,Andersen Consulting,Industry,,no price info,https://chi1998.acm.org/sponsors/index.html,US,US
+339,CHI,1998,Contributor,AT&T,AT&T,Industry,,no price info,https://chi1998.acm.org/sponsors/index.html,US,US
+340,CHI,1998,Contributor,Bellcore,Bellcore,Industry,,no price info,https://chi1998.acm.org/sponsors/index.html,US,US
+341,CHI,1998,Contributor,FXPAL,FXPAL,Industry,,no price info,https://chi1998.acm.org/sponsors/index.html,US,JP
+342,CHI,1998,Contributor,HP,HP,Industry,,no price info,https://chi1998.acm.org/sponsors/index.html,US,US
+343,CHI,1998,Contributor,Intel,Intel,Industry,,no price info,https://chi1998.acm.org/sponsors/index.html,US,US
+344,CHI,1998,Contributor,Lucent Technologies,Lucent Technologies,Industry,,no price info,https://chi1998.acm.org/sponsors/index.html,US,US
+345,CHI,1998,Contributor,Oracle,Oracle,Industry,,no price info,https://chi1998.acm.org/sponsors/index.html,US,US
+346,CHI,1998,Contributor,Philips,Philips,Industry,,no price info,https://chi1998.acm.org/sponsors/index.html,NL,NL
+347,CHI,1998,Contributor,Rent-a-Computer,Rent-a-Computer,Industry,,no price info,https://chi1998.acm.org/sponsors/index.html,,
+348,CHI,1998,Contributor,Trilogy,Trilogy,Industry,,no price info,https://chi1998.acm.org/sponsors/index.html,US,US
+349,UIST,2024,Platinum,Meta/Facebook,Meta/Facebook,Industry,20000.0,stated,https://uist.acm.org/2024/sponsors/,US,US
+350,UIST,2024,Silver,Adobe,Adobe,Industry,10000.0,stated,https://uist.acm.org/2024/sponsors/,US,US
+351,UIST,2024,Silver,Apple,Apple,Industry,10000.0,stated,https://uist.acm.org/2024/sponsors/,US,US
+352,UIST,2024,Silver,Google,Google,Industry,10000.0,stated,https://uist.acm.org/2024/sponsors/,US,US
+353,UIST,2024,Silver,Autodesk,Autodesk,Industry,10000.0,stated,https://uist.acm.org/2024/sponsors/,US,US
+354,UIST,2023,Platinum,Meta/Facebook,Meta/Facebook,Industry,20000.0,stated,https://uist.acm.org/2023/sponsors/,US,US
+355,UIST,2023,Silver,Adobe,Adobe,Industry,10000.0,stated,https://uist.acm.org/2023/sponsors/,US,US
+356,UIST,2023,Silver,Apple,Apple,Industry,10000.0,stated,https://uist.acm.org/2023/sponsors/,US,US
+357,UIST,2023,Silver,Autodesk,Autodesk,Industry,10000.0,stated,https://uist.acm.org/2023/sponsors/,US,US
+358,UIST,2023,Silver,Google,Google,Industry,10000.0,stated,https://uist.acm.org/2023/sponsors/,US,US
+359,UIST,2023,Bronze,Toyota Research Institute,Toyota Research Institute,Industry,5000.0,stated,https://uist.acm.org/2023/sponsors/,US,JP
+360,UIST,2023,Bronze,JPMorgan Chase,JPMorgan Chase,Industry,5000.0,stated,https://uist.acm.org/2023/sponsors/,US,US
+361,UIST,2023,Bronze,CSIRO Data61,CSIRO Data61,Government / foundation,5000.0,stated,https://uist.acm.org/2023/sponsors/,AU,AU
+362,UIST,2022,Platinum,Meta/Facebook,Meta/Facebook,Industry,20000.0,stated,https://uist.acm.org/uist2022/sponsors.html,US,US
+363,UIST,2022,Silver,Adobe,Adobe,Industry,10000.0,stated,https://uist.acm.org/uist2022/sponsors.html,US,US
+364,UIST,2022,Silver,Autodesk,Autodesk,Industry,10000.0,stated,https://uist.acm.org/uist2022/sponsors.html,US,US
+365,UIST,2022,Bronze,Google,Google,Industry,5000.0,stated,https://uist.acm.org/uist2022/sponsors.html,US,US
+366,UIST,2022,Bronze,Intel,Intel,Industry,5000.0,stated,https://uist.acm.org/uist2022/sponsors.html,US,US
+367,UIST,2022,Bronze,UCL,UCL,University / academic,5000.0,stated,https://uist.acm.org/uist2022/sponsors.html,GB,GB
+368,UIST,2022,Bronze,Tableau/Salesforce,Tableau/Salesforce,Industry,5000.0,stated,https://uist.acm.org/uist2022/sponsors.html,US,US
+369,UIST,2022,Bronze,Intuitive Surgical,Intuitive Surgical,Industry,5000.0,stated,https://uist.acm.org/uist2022/sponsors.html,US,US
+370,UIST,2022,Bronze,Toyota Research Institute,Toyota Research Institute,Industry,5000.0,stated,https://uist.acm.org/uist2022/sponsors.html,US,JP
+371,UIST,2021,Platinum,Meta/Facebook,Meta/Facebook,Industry,20000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2021/,US,US
+372,UIST,2021,Silver,Autodesk,Autodesk,Industry,10000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2021/,US,US
+373,UIST,2021,Silver,Apple,Apple,Industry,10000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2021/,US,US
+374,UIST,2021,Silver,Adobe,Adobe,Industry,10000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2021/,US,US
+375,UIST,2021,Bronze,Intel,Intel,Industry,5000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2021/,US,US
+376,UIST,2021,Bronze,Toyota Research Institute,Toyota Research Institute,Industry,5000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2021/,US,JP
+377,UIST,2021,Bronze,Intuitive Surgical,Intuitive Surgical,Industry,5000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2021/,US,US
+378,UIST,2021,Bronze,Microsoft,Microsoft,Industry,5000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2021/,US,US
+379,UIST,2019,Platinum,Chatham Labs,Chatham Labs,Industry,20000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2019/,CA,CA
+380,UIST,2019,Silver,Adobe,Adobe,Industry,10000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2019/,US,US
+381,UIST,2019,Silver,Autodesk,Autodesk,Industry,10000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2019/,US,US
+382,UIST,2019,Silver,Meta/Facebook,Meta/Facebook,Industry,10000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2019/,US,US
+383,UIST,2019,Bronze,Apple,Apple,Industry,5000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2019/,US,US
+384,UIST,2019,Bronze,Google,Google,Industry,5000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2019/,US,US
+385,UIST,2019,Bronze,Microsoft,Microsoft,Industry,5000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2019/,US,US
+386,UIST,2019,Bronze,Mozilla,Mozilla,Industry,5000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2019/,US,US
+387,UIST,2019,Bronze,Synaptics,Synaptics,Industry,5000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2019/,US,US
+388,UIST,2019,Bronze,Tactual Labs,Tactual Labs,Industry,5000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2019/,CA,CA
+389,UIST,2016,Platinum,Autodesk,Autodesk,Industry,15000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2016/,US,US
+390,UIST,2016,Platinum,Recruit,Recruit,Industry,15000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2016/,JP,JP
+391,UIST,2016,Gold,Google,Google,Industry,10000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2016/,US,US
+392,UIST,2016,Gold,Microsoft,Microsoft,Industry,10000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2016/,US,US
+393,UIST,2016,Silver,FXPAL,FXPAL,Industry,5000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2016/,US,JP
+394,UIST,2016,Silver,Adobe,Adobe,Industry,5000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2016/,US,US
+395,UIST,2016,Silver,Sony CSL,Sony CSL,Industry,5000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2016/,JP,JP
+396,UIST,2016,Silver,Innolab (Japan),Innolab (Japan),Industry,5000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2016/,JP,JP
+397,UIST,2016,Bronze,Sensel,Sensel,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2016/,US,US
+398,UIST,2016,Bronze,Unity,Unity,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2016/,US,US
+399,UIST,2016,Bronze,Yahoo Japan,Yahoo Japan,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2016/,JP,JP
+400,UIST,2016,Bronze,UX-XU,UX-XU,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2016/,JP,JP
+401,UIST,2016,Bronze,Wacom,Wacom,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2016/,JP,JP
+402,UIST,2016,Bronze,University of Toronto,University of Toronto,University / academic,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2016/,CA,CA
+403,UIST,2016,Bronze,Tactual Labs,Tactual Labs,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2016/,CA,CA
+404,UIST,2016,Bronze,Synaptics,Synaptics,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2016/,US,US
+405,UIST,2016,Bronze,Meta/Facebook,Meta/Facebook,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2016/,US,US
+406,UIST,2016,Institution,NICT,NICT,Government / foundation,1000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2016/,JP,JP
+407,UIST,2016,Institution,Kayamori Foundation,Kayamori Foundation,Government / foundation,1000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2016/,JP,JP
+408,UIST,2014,Platinum,Autodesk,Autodesk,Industry,15000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2014/,US,US
+409,UIST,2014,Platinum,Microsoft,Microsoft,Industry,15000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2014/,US,US
+410,UIST,2014,Gold,Marvell,Marvell,Industry,10000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2014/,US,US
+411,UIST,2014,Gold,Synaptics,Synaptics,Industry,10000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2014/,US,US
+412,UIST,2014,Silver,GRAND NCE,GRAND NCE,Government / foundation,5000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2014/,CA,CA
+413,UIST,2014,Silver,Wacom,Wacom,Industry,5000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2014/,JP,JP
+414,UIST,2014,Silver,Adobe,Adobe,Industry,5000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2014/,US,US
+415,UIST,2014,Bronze,FXPAL,FXPAL,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2014/,US,JP
+416,UIST,2014,Bronze,Google,Google,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2014/,US,US
+417,UIST,2014,Bronze,IBM,IBM,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2014/,US,US
+418,UIST,2014,Bronze,Tactual Labs,Tactual Labs,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2014/,CA,CA
+419,UIST,2014,Bronze,Yahoo/Verizon Media,Yahoo/Verizon Media,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2014/,US,US
+420,UIST,2014,Bronze,University of Hawaii (HICHI),University of Hawaii (HICHI),University / academic,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2014/,US,US
+421,UIST,2014,Friend,Disney Research,Disney Research,Industry,1000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2014/,US,US
+422,UIST,2013,Champion,Microsoft,Microsoft,Industry,20000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2013/,US,US
+423,UIST,2013,Platinum,Autodesk,Autodesk,Industry,15000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2013/,US,US
+424,UIST,2013,Gold,Disney Research,Disney Research,Industry,10000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2013/,US,US
+425,UIST,2013,Gold,Synaptics,Synaptics,Industry,10000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2013/,US,US
+426,UIST,2013,Gold,VisitScotland,VisitScotland,Government / foundation,10000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2013/,GB,GB
+427,UIST,2013,Silver,3M,3M,Industry,5000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2013/,US,US
+428,UIST,2013,Silver,Google,Google,Industry,5000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2013/,US,US
+429,UIST,2013,Silver,GRAND NCE,GRAND NCE,Government / foundation,5000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2013/,CA,CA
+430,UIST,2013,Silver,MultiTouch Ltd,MultiTouch Ltd,Industry,5000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2013/,FI,FI
+431,UIST,2013,Silver,SICSA,SICSA,Government / foundation,5000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2013/,GB,GB
+432,UIST,2013,Silver,SMART Technologies,SMART Technologies,Industry,5000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2013/,CA,CA
+433,UIST,2013,Silver,Wacom,Wacom,Industry,5000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2013/,JP,JP
+434,UIST,2013,Bronze,Adobe,Adobe,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2013/,US,US
+435,UIST,2013,Bronze,FXPAL,FXPAL,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2013/,US,JP
+436,UIST,2013,Bronze,IBM,IBM,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2013/,US,US
+437,UIST,2013,Bronze,Nokia,Nokia,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2013/,FI,FI
+438,UIST,2013,Bronze,Samsung,Samsung,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2013/,KR,KR
+439,UIST,2013,Bronze,Tactual Labs,Tactual Labs,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2013/,CA,CA
+440,UIST,2013,Bronze,Technicolor,Technicolor,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2013/,FR,FR
+441,UIST,2009,Platinum,Autodesk,Autodesk,Industry,15000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2009/,US,US
+442,UIST,2009,Platinum,Microsoft,Microsoft,Industry,15000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2009/,US,US
+443,UIST,2009,Gold,SMART Technologies,SMART Technologies,Industry,10000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2009/,CA,CA
+444,UIST,2009,Silver,Perceptive Pixel,Perceptive Pixel,Industry,5000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2009/,US,US
+445,UIST,2009,Silver,Wacom,Wacom,Industry,5000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2009/,JP,JP
+446,UIST,2009,Bronze,Adobe,Adobe,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2009/,US,US
+447,UIST,2009,Bronze,Disney Research,Disney Research,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2009/,US,US
+448,UIST,2009,Bronze,FXPAL,FXPAL,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2009/,US,JP
+449,UIST,2009,Bronze,Google,Google,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2009/,US,US
+450,UIST,2009,Bronze,IBM,IBM,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2009/,US,US
+451,UIST,2009,Bronze,Nokia,Nokia,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2009/,FI,FI
+452,UIST,2009,Bronze,Ricoh,Ricoh,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2009/,JP,JP
+453,UIST,2008,Gold,Microsoft,Microsoft,Industry,10000.0,stated,https://uist.acm.org/uist2008/sponsors/,US,US
+454,UIST,2008,Gold,Autodesk,Autodesk,Industry,10000.0,stated,https://uist.acm.org/uist2008/sponsors/,US,US
+455,UIST,2008,Gold,IBM,IBM,Industry,10000.0,stated,https://uist.acm.org/uist2008/sponsors/,US,US
+456,UIST,2008,Gold,SMART Technologies,SMART Technologies,Industry,10000.0,stated,https://uist.acm.org/uist2008/sponsors/,CA,CA
+457,UIST,2008,Silver,Intel,Intel,Industry,5000.0,stated,https://uist.acm.org/uist2008/sponsors/,US,US
+458,UIST,2008,Silver,Perceptive Pixel,Perceptive Pixel,Industry,5000.0,stated,https://uist.acm.org/uist2008/sponsors/,US,US
+459,UIST,2007,Anniversary Champion,Microsoft,Microsoft,Industry,20000.0,stated,https://uist.acm.org/uist2007/sponsors/,US,US
+460,UIST,2007,Champion,Google,Google,Industry,10000.0,stated,https://uist.acm.org/uist2007/sponsors/,US,US
+461,UIST,2007,Champion,SMART Technologies,SMART Technologies,Industry,10000.0,stated,https://uist.acm.org/uist2007/sponsors/,CA,CA
+462,UIST,2007,Champion,SAP,SAP,Industry,10000.0,stated,https://uist.acm.org/uist2007/sponsors/,DE,DE
+463,UIST,2007,Champion,MERL,MERL,Industry,10000.0,stated,https://uist.acm.org/uist2007/sponsors/,US,JP
+464,UIST,2007,Benefactor,Intel,Intel,Industry,5000.0,stated,https://uist.acm.org/uist2007/sponsors/,US,US
+465,UIST,2007,Benefactor,Adobe,Adobe,Industry,5000.0,stated,https://uist.acm.org/uist2007/sponsors/,US,US
+466,UIST,2007,Donor,IBM,IBM,Industry,2500.0,stated,https://uist.acm.org/uist2007/sponsors/,US,US
+467,UIST,2007,Donor,Nokia,Nokia,Industry,2500.0,stated,https://uist.acm.org/uist2007/sponsors/,FI,FI
+468,UIST,2007,Donor,FXPAL,FXPAL,Industry,2500.0,stated,https://uist.acm.org/uist2007/sponsors/,US,JP
+469,UIST,2007,Donor,Philips,Philips,Industry,2500.0,stated,https://uist.acm.org/uist2007/sponsors/,NL,NL
+470,UIST,2007,Donor,Autodesk,Autodesk,Industry,2500.0,stated,https://uist.acm.org/uist2007/sponsors/,US,US
+471,UbiComp,2024,Unspecified,Google,Google,Industry,,tier not listed,https://ubicomp.hosting.acm.org/ubicompiswc2024_wp/,US,US
+472,UbiComp,2024,Unspecified,NextSense,NextSense,Industry,,tier not listed,https://ubicomp.hosting.acm.org/ubicompiswc2024_wp/,US,US
+473,UbiComp,2024,Unspecified,Frontiers,Frontiers,Publisher,,tier not listed,https://ubicomp.hosting.acm.org/ubicompiswc2024_wp/,CH,CH
+474,UbiComp,2023,Unspecified,NSF,NSF,Government / foundation,,tier not listed,https://ubicomp.org/ubicomp-iswc-2023/,US,US
+475,UbiComp,2023,Unspecified,Google,Google,Industry,,tier not listed,https://ubicomp.org/ubicomp-iswc-2023/,US,US
+476,UbiComp,2023,Unspecified,Intel,Intel,Industry,,tier not listed,https://ubicomp.org/ubicomp-iswc-2023/,US,US
+477,UbiComp,2023,Unspecified,Microsoft,Microsoft,Industry,,tier not listed,https://ubicomp.org/ubicomp-iswc-2023/,US,US
+478,UbiComp,2023,Unspecified,Springer,Springer,Publisher,,tier not listed,https://ubicomp.org/ubicomp-iswc-2023/,DE,DE
+479,UbiComp,2023,Unspecified,Frontiers,Frontiers,Publisher,,tier not listed,https://ubicomp.org/ubicomp-iswc-2023/,CH,CH
+480,UbiComp,2022,Unspecified,Optum,Optum,Industry,,tier not listed,https://iswc.net/iswc22/sponsors,US,US
+481,UbiComp,2022,Unspecified,Google,Google,Industry,,tier not listed,https://iswc.net/iswc22/sponsors,US,US
+482,UbiComp,2022,Unspecified,Nokia Bell Labs,Nokia Bell Labs,Industry,,tier not listed,https://iswc.net/iswc22/sponsors,US,FI
+483,UbiComp,2022,Unspecified,Samsung,Samsung,Industry,,tier not listed,https://iswc.net/iswc22/sponsors,KR,KR
+484,UbiComp,2019,Silver,Nokia Bell Labs,Nokia Bell Labs,Industry,10000.0,stated,https://iswc.net/iswc19/sponsors.html,US,FI
+485,UbiComp,2019,Silver,Google,Google,Industry,10000.0,stated,https://iswc.net/iswc19/sponsors.html,US,US
+486,UbiComp,2019,Silver,Huawei,Huawei,Industry,10000.0,stated,https://iswc.net/iswc19/sponsors.html,CN,CN
+487,UbiComp,2019,Bronze,Emteq,Emteq,Industry,5000.0,stated,https://iswc.net/iswc19/sponsors.html,GB,GB
+488,UbiComp,2019,Bronze,Meta/Facebook,Meta/Facebook,Industry,5000.0,stated,https://iswc.net/iswc19/sponsors.html,US,US
+489,UbiComp,2019,Bronze,Snap,Snap,Industry,5000.0,stated,https://iswc.net/iswc19/sponsors.html,US,US
+490,UbiComp,2019,Bronze,University of Cambridge,University of Cambridge,University / academic,5000.0,stated,https://iswc.net/iswc19/sponsors.html,GB,GB
+491,UbiComp,2019,Unspecified,Springer,Springer,Publisher,,tier not listed,https://iswc.net/iswc19/sponsors.html,DE,DE
+492,UbiComp,2018,Gold,Nokia Bell Labs,Nokia Bell Labs,Industry,10000.0,stated,https://iswc.net/iswc18/sponsors.html,US,FI
+493,UbiComp,2018,Special,Singapore Tourism Board,Singapore Tourism Board,Government / foundation,,tier not listed,https://iswc.net/iswc18/sponsors.html,SG,SG
+494,UbiComp,2018,Silver,Intel,Intel,Industry,5000.0,stated,https://iswc.net/iswc18/sponsors.html,US,US
+495,UbiComp,2018,Silver,Microsoft,Microsoft,Industry,5000.0,stated,https://iswc.net/iswc18/sponsors.html,US,US
+496,UbiComp,2018,Silver,Naver,Naver,Industry,5000.0,stated,https://iswc.net/iswc18/sponsors.html,KR,KR
+497,UbiComp,2018,Silver,Huawei,Huawei,Industry,5000.0,stated,https://iswc.net/iswc18/sponsors.html,CN,CN
+498,UbiComp,2018,Silver,Google,Google,Industry,5000.0,stated,https://iswc.net/iswc18/sponsors.html,US,US
+499,UbiComp,2017,Platinum,NSF,NSF,Government / foundation,15000.0,stated,https://iswc.net/iswc17/sponsors.html,US,US
+500,UbiComp,2017,Gold,Flybits,Flybits,Industry,10000.0,stated,https://iswc.net/iswc17/sponsors.html,CA,CA
+501,UbiComp,2017,Silver,Intel,Intel,Industry,5000.0,stated,https://iswc.net/iswc17/sponsors.html,US,US
+502,UbiComp,2017,Silver,Samsung,Samsung,Industry,5000.0,stated,https://iswc.net/iswc17/sponsors.html,KR,KR
+503,UbiComp,2017,Silver,Industrial Holographics,Industrial Holographics,Industry,5000.0,stated,https://iswc.net/iswc17/sponsors.html,US,US
+504,UbiComp,2017,Silver,Thalmic Labs,Thalmic Labs,Industry,5000.0,stated,https://iswc.net/iswc17/sponsors.html,CA,CA
+505,UbiComp,2017,Silver,Disney Research,Disney Research,Industry,5000.0,stated,https://iswc.net/iswc17/sponsors.html,US,US
+506,UbiComp,2017,Bronze,Google,Google,Industry,3000.0,stated,https://iswc.net/iswc17/sponsors.html,US,US
+507,UbiComp,2017,Bronze,HP,HP,Industry,3000.0,stated,https://iswc.net/iswc17/sponsors.html,US,US
+508,UbiComp,2017,Bronze,ETRI,ETRI,Government / foundation,3000.0,stated,https://iswc.net/iswc17/sponsors.html,KR,KR
+509,UbiComp,2017,Bronze,Microsoft,Microsoft,Industry,3000.0,stated,https://iswc.net/iswc17/sponsors.html,US,US
+510,UbiComp,2016,Silver,Microsoft,Microsoft,Industry,5000.0,assumed (2015 schedule),https://ubicomp.org/ubicomp2016/index.php,US,US
+511,UbiComp,2016,Silver,TekGear,TekGear,Industry,5000.0,assumed (2015 schedule),https://ubicomp.org/ubicomp2016/index.php,CA,CA
+512,UbiComp,2016,Silver,Intel,Intel,Industry,5000.0,assumed (2015 schedule),https://ubicomp.org/ubicomp2016/index.php,US,US
+513,UbiComp,2016,Silver,SAP,SAP,Industry,5000.0,assumed (2015 schedule),https://ubicomp.org/ubicomp2016/index.php,DE,DE
+514,UbiComp,2016,Silver,Deutsche Telekom,Deutsche Telekom,Industry,5000.0,assumed (2015 schedule),https://ubicomp.org/ubicomp2016/index.php,DE,DE
+515,UbiComp,2016,Bronze,Ubimax,Ubimax,Industry,3000.0,assumed (2015 schedule),https://ubicomp.org/ubicomp2016/index.php,DE,DE
+516,UbiComp,2016,Bronze,Frontiers,Frontiers,Publisher,3000.0,assumed (2015 schedule),https://ubicomp.org/ubicomp2016/index.php,CH,CH
+517,UbiComp,2016,Bronze,JINS,JINS,Industry,3000.0,assumed (2015 schedule),https://ubicomp.org/ubicomp2016/index.php,JP,JP
+518,UbiComp,2016,Bronze,Google,Google,Industry,3000.0,assumed (2015 schedule),https://ubicomp.org/ubicomp2016/index.php,US,US
+519,UbiComp,2013,Gold,Microsoft,Microsoft,Industry,12000.0,assumed (UbiComp 2014 schedule),https://iswc.net/iswc13/sponsors.html,US,US
+520,UbiComp,2013,Gold,Google,Google,Industry,12000.0,assumed (UbiComp 2014 schedule),https://iswc.net/iswc13/sponsors.html,US,US
+521,UbiComp,2013,Silver,Intel,Intel,Industry,8000.0,assumed (UbiComp 2014 schedule),https://iswc.net/iswc13/sponsors.html,US,US
+522,UbiComp,2013,Bronze,Nokia,Nokia,Industry,4000.0,assumed (UbiComp 2014 schedule),https://iswc.net/iswc13/sponsors.html,FI,FI
+523,CHI,2017,Champion,Bloomberg,Bloomberg,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2017.acm.org/list-of-sponsors.html,US,US
+524,CHI,2017,Champion,Meta/Facebook,Meta/Facebook,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2017.acm.org/list-of-sponsors.html,US,US
+525,CHI,2017,Champion,Google,Google,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2017.acm.org/list-of-sponsors.html,US,US
+526,CHI,2017,Champion,IBM,IBM,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2017.acm.org/list-of-sponsors.html,US,US
+527,CHI,2017,Champion,Microsoft,Microsoft,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2017.acm.org/list-of-sponsors.html,US,US
+528,CHI,2017,Champion,NSF,NSF,Government / foundation,25000.0,assumed (CHI 2016–2026 schedule),https://chi2017.acm.org/list-of-sponsors.html,US,US
+529,CHI,2017,Champion,Yahoo/Verizon Media,Yahoo/Verizon Media,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2017.acm.org/list-of-sponsors.html,US,US
+530,CHI,2017,Contributor,Autodesk,Autodesk,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2017.acm.org/list-of-sponsors.html,US,US
+531,CHI,2017,Contributor,University of Toronto,University of Toronto,University / academic,10000.0,assumed (CHI 2016–2026 schedule),https://chi2017.acm.org/list-of-sponsors.html,CA,CA
+532,CHI,2017,Contributor,Toyota Research Institute,Toyota Research Institute,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2017.acm.org/list-of-sponsors.html,US,JP
+533,CHI,2017,Friend,Adobe,Adobe,Industry,1000.0,assumed (CHI 2016–2026 schedule),https://chi2017.acm.org/list-of-sponsors.html,US,US
+534,CHI,2017,Friend,Disney Research,Disney Research,Industry,1000.0,assumed (CHI 2016–2026 schedule),https://chi2017.acm.org/list-of-sponsors.html,US,US
+535,CSCW,2019,Champion,Meta/Facebook,Meta/Facebook,Industry,15000.0,stated,https://cscw.acm.org/2019/index.html,US,US
+536,CSCW,2019,Contributor,Microsoft,Microsoft,Industry,5000.0,stated,https://cscw.acm.org/2019/index.html,US,US
+537,CSCW,2019,Contributor,Amazon,Amazon,Industry,5000.0,stated,https://cscw.acm.org/2019/index.html,US,US
+538,CSCW,2019,Contributor,Snap,Snap,Industry,5000.0,stated,https://cscw.acm.org/2019/index.html,US,US
+539,CSCW,2019,Contributor,IBM,IBM,Industry,5000.0,stated,https://cscw.acm.org/2019/index.html,US,US
+540,CSCW,2019,Contributor,Adobe,Adobe,Industry,5000.0,stated,https://cscw.acm.org/2019/index.html,US,US
+541,CSCW,2019,Friend,FXPAL,FXPAL,Industry,1000.0,stated,https://cscw.acm.org/2019/index.html,US,JP
+542,CSCW,2019,Friend,Underwood Institute,Underwood Institute,Government / foundation,1000.0,stated,https://cscw.acm.org/2019/index.html,US,US
+543,CSCW,2019,Friend,Google,Google,Industry,1000.0,stated,https://cscw.acm.org/2019/index.html,US,US
+544,CSCW,2019,Friend,Mozilla,Mozilla,Industry,1000.0,stated,https://cscw.acm.org/2019/index.html,US,US
+545,UIST,2020,Platinum,Meta/Facebook,Meta/Facebook,Industry,20000.0,stated,https://uist.acm.org/uist2020/sponsors.html,US,US
+546,UIST,2020,Silver,Autodesk,Autodesk,Industry,10000.0,stated,https://uist.acm.org/uist2020/sponsors.html,US,US
+547,UIST,2020,Silver,Adobe,Adobe,Industry,10000.0,stated,https://uist.acm.org/uist2020/sponsors.html,US,US
+548,UIST,2020,Bronze,Microsoft,Microsoft,Industry,5000.0,stated,https://uist.acm.org/uist2020/sponsors.html,US,US
+549,UIST,2018,Gold,Hasso Plattner Institute,Hasso Plattner Institute,University / academic,15000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2018/sponsors,DE,DE
+550,UIST,2018,Silver,Adobe,Adobe,Industry,10000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2018/sponsors,US,US
+551,UIST,2018,Silver,Autodesk,Autodesk,Industry,10000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2018/sponsors,US,US
+552,UIST,2018,Silver,Snap,Snap,Industry,10000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2018/sponsors,US,US
+553,UIST,2018,Bronze,Meta/Facebook,Meta/Facebook,Industry,5000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2018/sponsors,US,US
+554,UIST,2018,Bronze,Makeblock,Makeblock,Industry,5000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2018/sponsors,CN,CN
+555,UIST,2018,Bronze,Microsoft,Microsoft,Industry,5000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2018/sponsors,US,US
+556,UIST,2018,Bronze,Mozilla,Mozilla,Industry,5000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2018/sponsors,US,US
+557,UIST,2018,Bronze,Nureva,Nureva,Industry,5000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2018/sponsors,CA,CA
+558,UIST,2018,Friend,Google,Google,Industry,1000.0,assumed (UIST 2017–2025 schedule),https://uist.acm.org/uist2018/sponsors,US,US
+559,UIST,2017,Platinum,Autodesk,Autodesk,Industry,20000.0,stated,https://uist.acm.org/uist2017/sponsor/,US,US
+560,UIST,2017,Silver,Adobe,Adobe,Industry,10000.0,stated,https://uist.acm.org/uist2017/sponsor/,US,US
+561,UIST,2017,Silver,Disney Research,Disney Research,Industry,10000.0,stated,https://uist.acm.org/uist2017/sponsor/,US,US
+562,UIST,2017,Silver,Microsoft,Microsoft,Industry,10000.0,stated,https://uist.acm.org/uist2017/sponsor/,US,US
+563,UIST,2017,Silver,Nureva,Nureva,Industry,10000.0,stated,https://uist.acm.org/uist2017/sponsor/,CA,CA
+564,UIST,2017,Silver,Snap,Snap,Industry,10000.0,stated,https://uist.acm.org/uist2017/sponsor/,US,US
+565,UIST,2017,Bronze,Oculus (Facebook),Meta/Facebook,Industry,5000.0,stated,https://uist.acm.org/uist2017/sponsor/,US,US
+566,UIST,2017,Bronze,Synaptics,Synaptics,Industry,5000.0,stated,https://uist.acm.org/uist2017/sponsor/,US,US
+567,UIST,2017,Bronze,Tactual Labs,Tactual Labs,Industry,5000.0,stated,https://uist.acm.org/uist2017/sponsor/,CA,CA
+568,UIST,2017,Friend,Google,Google,Industry,1000.0,stated,https://uist.acm.org/uist2017/sponsor/,US,US
+569,UIST,2015,Platinum,Autodesk,Autodesk,Industry,15000.0,stated,https://uist.acm.org/uist2015/sponsorship,US,US
+570,UIST,2015,Platinum,Microsoft,Microsoft,Industry,15000.0,stated,https://uist.acm.org/uist2015/sponsorship,US,US
+571,UIST,2015,Gold,Synaptics,Synaptics,Industry,10000.0,stated,https://uist.acm.org/uist2015/sponsorship,US,US
+572,UIST,2015,Silver,FXPAL,FXPAL,Industry,5000.0,stated,https://uist.acm.org/uist2015/sponsorship,US,JP
+573,UIST,2015,Silver,UNC Charlotte,UNC Charlotte,University / academic,5000.0,stated,https://uist.acm.org/uist2015/sponsorship,US,US
+574,UIST,2015,Silver,SMART Technologies,SMART Technologies,Industry,5000.0,stated,https://uist.acm.org/uist2015/sponsorship,CA,CA
+575,UIST,2015,Bronze,Adobe,Adobe,Industry,2500.0,stated,https://uist.acm.org/uist2015/sponsorship,US,US
+576,UIST,2015,Bronze,Wacom,Wacom,Industry,2500.0,stated,https://uist.acm.org/uist2015/sponsorship,JP,JP
+577,UIST,2015,Bronze,Google,Google,Industry,2500.0,stated,https://uist.acm.org/uist2015/sponsorship,US,US
+578,UIST,2015,Bronze,NVIDIA,NVIDIA,Industry,2500.0,stated,https://uist.acm.org/uist2015/sponsorship,US,US
+579,UIST,2015,Bronze,Tactual Labs,Tactual Labs,Industry,2500.0,stated,https://uist.acm.org/uist2015/sponsorship,CA,CA
+580,UIST,2015,Friend,Disney Research,Disney Research,Industry,1000.0,stated,https://uist.acm.org/uist2015/sponsorship,US,US
+581,UIST,2015,Friend,Carnegie Mellon University,Carnegie Mellon University,University / academic,1000.0,stated,https://uist.acm.org/uist2015/sponsorship,US,US
+582,UIST,2012,Platinum,Autodesk,Autodesk,Industry,15000.0,stated,https://uist.acm.org/uist2012/sponsors.html,US,US
+583,UIST,2012,Gold,Synaptics,Synaptics,Industry,10000.0,stated,https://uist.acm.org/uist2012/sponsors.html,US,US
+584,UIST,2012,Gold,Microsoft,Microsoft,Industry,10000.0,stated,https://uist.acm.org/uist2012/sponsors.html,US,US
+585,UIST,2012,Gold,Perceptive Pixel,Perceptive Pixel,Industry,10000.0,stated,https://uist.acm.org/uist2012/sponsors.html,US,US
+586,UIST,2012,Silver,Nokia,Nokia,Industry,5000.0,stated,https://uist.acm.org/uist2012/sponsors.html,FI,FI
+587,UIST,2012,Silver,Wacom,Wacom,Industry,5000.0,stated,https://uist.acm.org/uist2012/sponsors.html,JP,JP
+588,UIST,2012,Silver,Google,Google,Industry,5000.0,stated,https://uist.acm.org/uist2012/sponsors.html,US,US
+589,UIST,2012,Silver,GRAND NCE,GRAND NCE,Government / foundation,5000.0,stated,https://uist.acm.org/uist2012/sponsors.html,CA,CA
+590,UIST,2012,Bronze,Disney Research,Disney Research,Industry,2500.0,stated,https://uist.acm.org/uist2012/sponsors.html,US,US
+591,UIST,2012,Bronze,Adobe,Adobe,Industry,2500.0,stated,https://uist.acm.org/uist2012/sponsors.html,US,US
+592,UIST,2012,Bronze,FXPAL,FXPAL,Industry,2500.0,stated,https://uist.acm.org/uist2012/sponsors.html,US,JP
+593,UIST,2012,Bronze,IBM,IBM,Industry,2500.0,stated,https://uist.acm.org/uist2012/sponsors.html,US,US
+594,UIST,2012,Bronze,United Technologies Research Center,United Technologies Research Center,Industry,2500.0,stated,https://uist.acm.org/uist2012/sponsors.html,US,US
+595,UIST,2012,Bronze,Circle Twelve,Circle Twelve,Industry,2500.0,stated,https://uist.acm.org/uist2012/sponsors.html,US,US
+596,UIST,2012,Bronze,University of Rochester,University of Rochester,University / academic,2500.0,stated,https://uist.acm.org/uist2012/sponsors.html,US,US
+597,UIST,2011,Platinum,Autodesk,Autodesk,Industry,15000.0,stated,https://uist.acm.org/uist2011/sponsors.html,US,US
+598,UIST,2011,Platinum,Bloomberg,Bloomberg,Industry,15000.0,stated,https://uist.acm.org/uist2011/sponsors.html,US,US
+599,UIST,2011,Platinum,Microsoft,Microsoft,Industry,15000.0,stated,https://uist.acm.org/uist2011/sponsors.html,US,US
+600,UIST,2011,Gold,Perceptive Pixel,Perceptive Pixel,Industry,10000.0,stated,https://uist.acm.org/uist2011/sponsors.html,US,US
+601,UIST,2011,Silver,Google,Google,Industry,5000.0,stated,https://uist.acm.org/uist2011/sponsors.html,US,US
+602,UIST,2011,Silver,GRAND NCE,GRAND NCE,Government / foundation,5000.0,stated,https://uist.acm.org/uist2011/sponsors.html,CA,CA
+603,UIST,2011,Silver,Synaptics,Synaptics,Industry,5000.0,stated,https://uist.acm.org/uist2011/sponsors.html,US,US
+604,UIST,2011,Silver,Wacom,Wacom,Industry,5000.0,stated,https://uist.acm.org/uist2011/sponsors.html,JP,JP
+605,UIST,2011,Bronze,Adobe,Adobe,Industry,2500.0,stated,https://uist.acm.org/uist2011/sponsors.html,US,US
+606,UIST,2011,Bronze,Disney Research,Disney Research,Industry,2500.0,stated,https://uist.acm.org/uist2011/sponsors.html,US,US
+607,UIST,2011,Bronze,FXPAL,FXPAL,Industry,2500.0,stated,https://uist.acm.org/uist2011/sponsors.html,US,JP
+608,UIST,2011,Bronze,IBM,IBM,Industry,2500.0,stated,https://uist.acm.org/uist2011/sponsors.html,US,US
+609,UIST,2011,Bronze,Nokia,Nokia,Industry,2500.0,stated,https://uist.acm.org/uist2011/sponsors.html,FI,FI
+610,UIST,2010,Platinum,Autodesk,Autodesk,Industry,15000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2010/,US,US
+611,UIST,2010,Platinum,Microsoft,Microsoft,Industry,15000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2010/,US,US
+612,UIST,2010,Platinum,Bloomberg,Bloomberg,Industry,15000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2010/,US,US
+613,UIST,2010,Gold,SMART Technologies,SMART Technologies,Industry,10000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2010/,CA,CA
+614,UIST,2010,Silver,Wacom,Wacom,Industry,5000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2010/,JP,JP
+615,UIST,2010,Silver,Intel,Intel,Industry,5000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2010/,US,US
+616,UIST,2010,Silver,Google,Google,Industry,5000.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2010/,US,US
+617,UIST,2010,Bronze,Adobe,Adobe,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2010/,US,US
+618,UIST,2010,Bronze,Disney Research,Disney Research,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2010/,US,US
+619,UIST,2010,Bronze,FXPAL,FXPAL,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2010/,US,JP
+620,UIST,2010,Bronze,IBM,IBM,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2010/,US,US
+621,UIST,2010,Bronze,Nokia,Nokia,Industry,2500.0,assumed (UIST 2015 schedule),https://uist.acm.org/uist2010/,FI,FI
+622,UIST,2025,Platinum,Huawei,Huawei,Industry,20000.0,stated,https://uist.acm.org/2025/,CN,CN
+623,UIST,2025,Platinum,Meta/Facebook,Meta/Facebook,Industry,20000.0,stated,https://uist.acm.org/2025/,US,US
+624,UIST,2025,Silver,Adobe,Adobe,Industry,10000.0,stated,https://uist.acm.org/2025/,US,US
+625,UIST,2025,Silver,Apple,Apple,Industry,10000.0,stated,https://uist.acm.org/2025/,US,US
+626,UIST,2025,Silver,Autodesk,Autodesk,Industry,10000.0,stated,https://uist.acm.org/2025/,US,US
+627,UIST,2025,Silver,Google,Google,Industry,10000.0,stated,https://uist.acm.org/2025/,US,US
+628,UIST,2025,Exhibitor,Bergsonne Labs,Bergsonne Labs,Industry,3000.0,stated,https://uist.acm.org/2025/,DE,DE
+629,UIST,2025,Contest Sponsor,DataFeel,DataFeel,Industry,,stated,https://uist.acm.org/2025/,US,US
+630,UIST,2025,Special,Busan Tourism Organization,Busan Tourism Organization,Government / foundation,,stated,https://uist.acm.org/2025/,KR,KR
+631,UIST,2025,Special,Dong-eui University,Dong-eui University,University / academic,,stated,https://uist.acm.org/2025/,KR,KR
+632,UbiComp,2021,Unspecified,Bosch,Bosch,Industry,,tier not listed,https://www.ubicomp.org/ubicomp2021/,DE,DE
+633,UbiComp,2021,Unspecified,Google,Google,Industry,,tier not listed,https://www.ubicomp.org/ubicomp2021/,US,US
+634,UbiComp,2021,Unspecified,Intel,Intel,Industry,,tier not listed,https://www.ubicomp.org/ubicomp2021/,US,US
+635,UbiComp,2021,Unspecified,Microsoft,Microsoft,Industry,,tier not listed,https://www.ubicomp.org/ubicomp2021/,US,US
+636,UbiComp,2021,Unspecified,Stabilo,Stabilo,Industry,,tier not listed,https://www.ubicomp.org/ubicomp2021/,DE,DE
+637,UbiComp,2021,Unspecified,University of Virginia,University of Virginia,University / academic,,tier not listed,https://www.ubicomp.org/ubicomp2021/,US,US
+638,UbiComp,2021,Unspecified,Springer,Springer,Publisher,,tier not listed,https://www.ubicomp.org/ubicomp2021/,DE,DE
+639,UbiComp,2020,Silver,Google,Google,Industry,5000.0,assumed (UbiComp 2022–23 schedule),https://ubicomp.org/ubicomp2020/,US,US
+640,UbiComp,2020,Unspecified,Intel,Intel,Industry,,tier not listed,https://ubicomp.org/ubicomp2020/,US,US
+641,UbiComp,2020,Unspecified,Microsoft,Microsoft,Industry,,tier not listed,https://ubicomp.org/ubicomp2020/,US,US
+642,UbiComp,2020,Unspecified,Stabilo,Stabilo,Industry,,tier not listed,https://ubicomp.org/ubicomp2020/,DE,DE
+643,UbiComp,2020,Unspecified,Springer,Springer,Publisher,,tier not listed,https://ubicomp.org/ubicomp2020/,DE,DE
+644,UbiComp,2020,Supporter (host),UC San Diego (Qualcomm Institute),UC San Diego (Qualcomm Institute),University / academic,,assumed (UbiComp 2022–23 schedule),https://ubicomp.org/ubicomp2020/,US,US
+645,CHI,2009,Champion,Autodesk,Autodesk,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2009.acm.org/sponsoring/OurSponsors.html,US,US
+646,CHI,2009,Champion,Google,Google,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2009.acm.org/sponsoring/OurSponsors.html,US,US
+647,CHI,2009,Champion,Microsoft,Microsoft,Industry,25000.0,assumed (CHI 2016–2026 schedule),https://chi2009.acm.org/sponsoring/OurSponsors.html,US,US
+648,CHI,2009,Champion,NSF,NSF,Government / foundation,25000.0,assumed (CHI 2016–2026 schedule),https://chi2009.acm.org/sponsoring/OurSponsors.html,US,US
+649,CHI,2009,Contributor,eLearn Magazine (ACM),eLearn Magazine (ACM),Publisher,10000.0,assumed (CHI 2016–2026 schedule),https://chi2009.acm.org/sponsoring/OurSponsors.html,US,US
+650,CHI,2009,Contributor,HP,HP,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2009.acm.org/sponsoring/OurSponsors.html,US,US
+651,CHI,2009,Contributor,ACM Interactions,ACM Interactions,Publisher,10000.0,assumed (CHI 2016–2026 schedule),https://chi2009.acm.org/sponsoring/OurSponsors.html,US,US
+652,CHI,2009,Contributor,Yahoo/Verizon Media,Yahoo/Verizon Media,Industry,10000.0,assumed (CHI 2016–2026 schedule),https://chi2009.acm.org/sponsoring/OurSponsors.html,US,US
+653,CHI,2009,Friend,EPSRC,EPSRC,Government / foundation,1000.0,assumed (CHI 2016–2026 schedule),https://chi2009.acm.org/sponsoring/OurSponsors.html,GB,GB
+654,CHI,2009,Friend,FXPAL,FXPAL,Industry,1000.0,assumed (CHI 2016–2026 schedule),https://chi2009.acm.org/sponsoring/OurSponsors.html,US,JP
+655,CHI,2009,Friend,IBM,IBM,Industry,1000.0,assumed (CHI 2016–2026 schedule),https://chi2009.acm.org/sponsoring/OurSponsors.html,US,US
+656,CHI,2009,Friend,Nokia,Nokia,Industry,1000.0,assumed (CHI 2016–2026 schedule),https://chi2009.acm.org/sponsoring/OurSponsors.html,FI,FI
+657,CHI,2010,Champion,Google,Google,Industry,25000.0,assumed (CHI 2016–2026 schedule),http://chi2010.org/sponsors/sponsors.html,US,US
+658,CHI,2010,Champion,Microsoft,Microsoft,Industry,25000.0,assumed (CHI 2016–2026 schedule),http://chi2010.org/sponsors/sponsors.html,US,US
+659,CHI,2010,Champion,NSF,NSF,Government / foundation,25000.0,assumed (CHI 2016–2026 schedule),http://chi2010.org/sponsors/sponsors.html,US,US
+660,CHI,2010,Champion,Yahoo/Verizon Media,Yahoo/Verizon Media,Industry,25000.0,assumed (CHI 2016–2026 schedule),http://chi2010.org/sponsors/sponsors.html,US,US
+661,CHI,2010,Contributor,Autodesk,Autodesk,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://chi2010.org/sponsors/sponsors.html,US,US
+662,CHI,2010,Contributor,Bloomberg,Bloomberg,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://chi2010.org/sponsors/sponsors.html,US,US
+663,CHI,2010,Contributor,IBM,IBM,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://chi2010.org/sponsors/sponsors.html,US,US
+664,CHI,2010,Contributor,Intel,Intel,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://chi2010.org/sponsors/sponsors.html,US,US
+665,CHI,2010,Contributor,Nokia,Nokia,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://chi2010.org/sponsors/sponsors.html,FI,FI
+666,CHI,2010,Contributor,SAP,SAP,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://chi2010.org/sponsors/sponsors.html,DE,DE
+667,CHI,2010,Friend,EPSRC,EPSRC,Government / foundation,1000.0,assumed (CHI 2016–2026 schedule),http://chi2010.org/sponsors/sponsors.html,GB,GB
+668,CHI,2010,Friend,FXPAL,FXPAL,Industry,1000.0,assumed (CHI 2016–2026 schedule),http://chi2010.org/sponsors/sponsors.html,US,JP
+669,CHI,2010,Friend,Georgia Tech,Georgia Tech,University / academic,1000.0,assumed (CHI 2016–2026 schedule),http://chi2010.org/sponsors/sponsors.html,US,US
+670,CHI,2010,Friend,University of Michigan,University of Michigan,University / academic,1000.0,assumed (CHI 2016–2026 schedule),http://chi2010.org/sponsors/sponsors.html,US,US
+671,CHI,2011,Champion,Bloomberg,Bloomberg,Industry,25000.0,assumed (CHI 2016–2026 schedule),http://chi2011.org/sponsors/sponsors.html,US,US
+672,CHI,2011,Champion,eBay/PayPal,eBay/PayPal,Industry,25000.0,assumed (CHI 2016–2026 schedule),http://chi2011.org/sponsors/sponsors.html,US,US
+673,CHI,2011,Champion,Google,Google,Industry,25000.0,assumed (CHI 2016–2026 schedule),http://chi2011.org/sponsors/sponsors.html,US,US
+674,CHI,2011,Champion,Microsoft,Microsoft,Industry,25000.0,assumed (CHI 2016–2026 schedule),http://chi2011.org/sponsors/sponsors.html,US,US
+675,CHI,2011,Champion,NSF,NSF,Government / foundation,25000.0,assumed (CHI 2016–2026 schedule),http://chi2011.org/sponsors/sponsors.html,US,US
+676,CHI,2011,Champion,SAP,SAP,Industry,25000.0,assumed (CHI 2016–2026 schedule),http://chi2011.org/sponsors/sponsors.html,DE,DE
+677,CHI,2011,Contributor,Autodesk,Autodesk,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://chi2011.org/sponsors/sponsors.html,US,US
+678,CHI,2011,Contributor,Eventburn,Eventburn,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://chi2011.org/sponsors/sponsors.html,,
+679,CHI,2011,Contributor,GRAND NCE,GRAND NCE,Government / foundation,10000.0,assumed (CHI 2016–2026 schedule),http://chi2011.org/sponsors/sponsors.html,CA,CA
+680,CHI,2011,Contributor,IBM,IBM,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://chi2011.org/sponsors/sponsors.html,US,US
+681,CHI,2011,Contributor,Nokia,Nokia,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://chi2011.org/sponsors/sponsors.html,FI,FI
+682,CHI,2011,Friend,Adobe,Adobe,Industry,1000.0,assumed (CHI 2016–2026 schedule),http://chi2011.org/sponsors/sponsors.html,US,US
+683,CHI,2011,Friend,Disney Research,Disney Research,Industry,1000.0,assumed (CHI 2016–2026 schedule),http://chi2011.org/sponsors/sponsors.html,US,US
+684,CHI,2011,Friend,FXPAL,FXPAL,Industry,1000.0,assumed (CHI 2016–2026 schedule),http://chi2011.org/sponsors/sponsors.html,US,JP
+685,CHI,2011,Friend,University of Maryland,University of Maryland,University / academic,1000.0,assumed (CHI 2016–2026 schedule),http://chi2011.org/sponsors/sponsors.html,US,US
+686,CHI,2011,Friend,University of Michigan,University of Michigan,University / academic,1000.0,assumed (CHI 2016–2026 schedule),http://chi2011.org/sponsors/sponsors.html,US,US
+687,CHI,2011,Friend,Yahoo/Verizon Media,Yahoo/Verizon Media,Industry,1000.0,assumed (CHI 2016–2026 schedule),http://chi2011.org/sponsors/sponsors.html,US,US
+688,UbiComp,2014,Gold,Microsoft,Microsoft,Industry,12000.0,stated,https://www.ubicomp.org/ubicomp2014/sponsors.php,US,US
+689,UbiComp,2014,Gold,Google,Google,Industry,12000.0,stated,https://www.ubicomp.org/ubicomp2014/sponsors.php,US,US
+690,UbiComp,2014,Gold,Siemens,Siemens,Industry,12000.0,stated,https://www.ubicomp.org/ubicomp2014/sponsors.php,DE,DE
+691,UbiComp,2014,Silver,Intel ISTC-PC,Intel,Industry,8000.0,stated,https://www.ubicomp.org/ubicomp2014/sponsors.php,US,US
+692,UbiComp,2014,Silver,Yahoo Labs,Yahoo/Verizon Media,Industry,8000.0,stated,https://www.ubicomp.org/ubicomp2014/sponsors.php,US,US
+693,UbiComp,2014,Silver,Bell Labs,Nokia Bell Labs,Industry,8000.0,stated,https://www.ubicomp.org/ubicomp2014/sponsors.php,US,FI
+694,UbiComp,2014,Supporter,CRA-W,CRA-W,Government / foundation,,stated,https://www.ubicomp.org/ubicomp2014/sponsors.php,US,US
+695,UbiComp,2014,Supporter,University of Cambridge,University of Cambridge,University / academic,,stated,https://www.ubicomp.org/ubicomp2014/sponsors.php,GB,GB
+696,UbiComp,2014,Supporter,University of Toronto,University of Toronto,University / academic,,stated,https://www.ubicomp.org/ubicomp2014/sponsors.php,CA,CA
+697,UbiComp,2014,Supporter,User-Centric Networking (EU project),User-Centric Networking (EU project),Government / foundation,,stated,https://www.ubicomp.org/ubicomp2014/sponsors.php,EU,EU
+698,UbiComp,2014,Supporter,NSF,NSF,Government / foundation,,stated,https://www.ubicomp.org/ubicomp2014/sponsors.php,US,US
+699,UbiComp,2015,Platinum,Panasonic,Panasonic,Industry,15000.0,stated,https://ubicomp.org/ubicomp2015/sponsors.html,JP,JP
+700,UbiComp,2015,Gold,Bell Labs,Nokia Bell Labs,Industry,10000.0,stated,https://ubicomp.org/ubicomp2015/sponsors.html,US,FI
+701,UbiComp,2015,Gold,Microsoft,Microsoft,Industry,10000.0,stated,https://ubicomp.org/ubicomp2015/sponsors.html,US,US
+702,UbiComp,2015,Silver,Google,Google,Industry,5000.0,stated,https://ubicomp.org/ubicomp2015/sponsors.html,US,US
+703,UbiComp,2015,Silver,Yahoo Japan,Yahoo Japan,Industry,5000.0,stated,https://ubicomp.org/ubicomp2015/sponsors.html,JP,JP
+704,UbiComp,2015,Silver,KDDI,KDDI,Industry,5000.0,stated,https://ubicomp.org/ubicomp2015/sponsors.html,JP,JP
+705,UbiComp,2015,Silver,FXPAL,FXPAL,Industry,5000.0,stated,https://ubicomp.org/ubicomp2015/sponsors.html,US,JP
+706,UbiComp,2015,Silver,Rakuten,Rakuten,Industry,5000.0,stated,https://ubicomp.org/ubicomp2015/sponsors.html,JP,JP
+707,UbiComp,2015,Silver,Intel ISTC-PC,Intel,Industry,5000.0,stated,https://ubicomp.org/ubicomp2015/sponsors.html,US,US
+708,UbiComp,2015,Silver,NTT Docomo,NTT Docomo,Industry,5000.0,stated,https://ubicomp.org/ubicomp2015/sponsors.html,JP,JP
+709,UbiComp,2015,Bronze,Telefonica,Telefonica,Industry,3000.0,stated,https://ubicomp.org/ubicomp2015/sponsors.html,ES,ES
+710,UbiComp,2015,Supporter,ZAI,ZAI,Government / foundation,,stated,https://ubicomp.org/ubicomp2015/sponsors.html,JP,JP
+711,UbiComp,2015,Supporter,TAF (Telecommunications Advancement Foundation),TAF (Telecommunications Advancement Foundation),Government / foundation,,stated,https://ubicomp.org/ubicomp2015/sponsors.html,JP,JP
+712,UbiComp,2015,Supporter,SCAT,SCAT,Government / foundation,,stated,https://ubicomp.org/ubicomp2015/sponsors.html,JP,JP
+713,UbiComp,2015,Supporter,NICT,NICT,Government / foundation,,stated,https://ubicomp.org/ubicomp2015/sponsors.html,JP,JP
+714,UbiComp,2015,Supporter,Kayamori Foundation,Kayamori Foundation,Government / foundation,,stated,https://ubicomp.org/ubicomp2015/sponsors.html,JP,JP
+715,UbiComp,2015,Supporter,Osaka Convention & Tourism Bureau,Osaka Convention & Tourism Bureau,Government / foundation,,stated,https://ubicomp.org/ubicomp2015/sponsors.html,JP,JP
+716,UbiComp,2015,Supporter,IPSJ,IPSJ,Government / foundation,,stated,https://ubicomp.org/ubicomp2015/sponsors.html,JP,JP
+717,UbiComp,2015,Supporter,Kansai METI,Kansai METI,Government / foundation,,stated,https://ubicomp.org/ubicomp2015/sponsors.html,JP,JP
+718,UbiComp,2015,Supporter,MIC Kinki Bureau of Telecommunications,MIC Kinki Bureau of Telecommunications,Government / foundation,,stated,https://ubicomp.org/ubicomp2015/sponsors.html,JP,JP
+719,UbiComp,2015,Supporter,Telecom Engineering Center Kinki,Telecom Engineering Center Kinki,Government / foundation,,stated,https://ubicomp.org/ubicomp2015/sponsors.html,JP,JP
+720,UbiComp,2015,Supporter,Aruba Networks,Aruba Networks,Industry,,stated,https://ubicomp.org/ubicomp2015/sponsors.html,US,US
+721,UbiComp,2015,Supporter,CKP (Ubiquitous Forum),CKP (Ubiquitous Forum),Government / foundation,,stated,https://ubicomp.org/ubicomp2015/sponsors.html,JP,JP
+722,UbiComp,2015,Supporter,Human Interface Society,Human Interface Society,Government / foundation,,stated,https://ubicomp.org/ubicomp2015/sponsors.html,JP,JP
+723,UbiComp,2015,Supporter,VRSJ,VRSJ,Government / foundation,,stated,https://ubicomp.org/ubicomp2015/sponsors.html,JP,JP
+724,CHI,2006,Champion,Google,Google,Industry,25000.0,assumed (CHI 2016–2026 schedule),http://www.chi2006.org/sponsors.php,US,US
+725,CHI,2006,Champion,Intel,Intel,Industry,25000.0,assumed (CHI 2016–2026 schedule),http://www.chi2006.org/sponsors.php,US,US
+726,CHI,2006,Champion,Intuit,Intuit,Industry,25000.0,assumed (CHI 2016–2026 schedule),http://www.chi2006.org/sponsors.php,US,US
+727,CHI,2006,Champion,Microsoft,Microsoft,Industry,25000.0,assumed (CHI 2016–2026 schedule),http://www.chi2006.org/sponsors.php,US,US
+728,CHI,2006,Champion,NSF,NSF,Government / foundation,25000.0,assumed (CHI 2016–2026 schedule),http://www.chi2006.org/sponsors.php,US,US
+729,CHI,2006,Champion,SourceForge,SourceForge,Industry,25000.0,assumed (CHI 2016–2026 schedule),http://www.chi2006.org/sponsors.php,US,US
+730,CHI,2006,Champion,SAP,SAP,Industry,25000.0,assumed (CHI 2016–2026 schedule),http://www.chi2006.org/sponsors.php,DE,DE
+731,CHI,2006,Champion,Yahoo/Verizon Media,Yahoo/Verizon Media,Industry,25000.0,assumed (CHI 2016–2026 schedule),http://www.chi2006.org/sponsors.php,US,US
+732,CHI,2006,Contributor,Cisco,Cisco,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://www.chi2006.org/sponsors.php,US,US
+733,CHI,2006,Contributor,eBay/PayPal,eBay/PayPal,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://www.chi2006.org/sponsors.php,US,US
+734,CHI,2006,Contributor,IBM,IBM,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://www.chi2006.org/sponsors.php,US,US
+735,CHI,2006,Contributor,Nokia,Nokia,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://www.chi2006.org/sponsors.php,FI,FI
+736,CHI,2006,Contributor,Pitney Bowes,Pitney Bowes,Industry,10000.0,assumed (CHI 2016–2026 schedule),http://www.chi2006.org/sponsors.php,US,US
+737,CHI,2006,Friend,VMware,VMware,Industry,1000.0,assumed (CHI 2016–2026 schedule),http://www.chi2006.org/sponsors.php,US,US
+738,FAccT,2018,Unspecified,Knight Foundation,Knight Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2018/,US,US
+739,FAccT,2018,Unspecified,MacArthur Foundation,MacArthur Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2018/,US,US
+740,FAccT,2018,Unspecified,Google,Google,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2018/,US,US
+741,FAccT,2018,Unspecified,Meta/Facebook,Meta/Facebook,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2018/,US,US
+742,FAccT,2018,Unspecified,H2O.ai,H2O.ai,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2018/,US,US
+743,FAccT,2019,Unspecified,Google,Google,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2019/sponsors.html,US,US
+744,FAccT,2019,Unspecified,Microsoft,Microsoft,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2019/sponsors.html,US,US
+745,FAccT,2019,Unspecified,Spotify,Spotify,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2019/sponsors.html,SE,SE
+746,FAccT,2019,Unspecified,Twitter,Twitter,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2019/sponsors.html,US,US
+747,FAccT,2019,Unspecified,Ethics and Governance of AI Initiative,Ethics and Governance of AI Initiative,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2019/sponsors.html,US,US
+748,FAccT,2019,Unspecified,Ford Foundation,Ford Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2019/sponsors.html,US,US
+749,FAccT,2019,Unspecified,Luminate,Luminate,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2019/sponsors.html,GB,GB
+750,FAccT,2019,Unspecified,MacArthur Foundation,MacArthur Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2019/sponsors.html,US,US
+751,FAccT,2019,Unspecified,Open Society Foundations,Open Society Foundations,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2019/sponsors.html,US,US
+752,FAccT,2019,Unspecified,Schmidt Futures,Schmidt Futures,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2019/sponsors.html,US,US
+753,FAccT,2020,Unspecified,Meta/Facebook,Meta/Facebook,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2020/sponsorship.html,US,US
+754,FAccT,2020,Unspecified,Google,Google,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2020/sponsorship.html,US,US
+755,FAccT,2020,Unspecified,Sloan Foundation,Sloan Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2020/sponsorship.html,US,US
+756,FAccT,2020,Unspecified,Twitter,Twitter,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2020/sponsorship.html,US,US
+757,FAccT,2020,Unspecified,IBM,IBM,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2020/sponsorship.html,US,US
+758,FAccT,2020,Unspecified,MacArthur Foundation,MacArthur Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2020/sponsorship.html,US,US
+759,FAccT,2020,Unspecified,Ford Foundation,Ford Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2020/sponsorship.html,US,US
+760,FAccT,2020,Unspecified,Rockefeller Foundation,Rockefeller Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2020/sponsorship.html,US,US
+761,FAccT,2020,Unspecified,Luminate,Luminate,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2020/sponsorship.html,GB,GB
+762,FAccT,2021,Unspecified,Google,Google,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2021/sponsorship.html,US,US
+763,FAccT,2021,Unspecified,Meta/Facebook,Meta/Facebook,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2021/sponsorship.html,US,US
+764,FAccT,2021,Unspecified,Sloan Foundation,Sloan Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2021/sponsorship.html,US,US
+765,FAccT,2021,Unspecified,Twitter,Twitter,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2021/sponsorship.html,US,US
+766,FAccT,2021,Unspecified,IBM,IBM,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2021/sponsorship.html,US,US
+767,FAccT,2021,Unspecified,Microsoft,Microsoft,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2021/sponsorship.html,US,US
+768,FAccT,2021,Unspecified,Vector Institute,Vector Institute,University / academic,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2021/sponsorship.html,CA,CA
+769,FAccT,2021,Unspecified,MacArthur Foundation,MacArthur Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2021/sponsorship.html,US,US
+770,FAccT,2021,Unspecified,Ford Foundation,Ford Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2021/sponsorship.html,US,US
+771,FAccT,2021,Unspecified,OpenAI,OpenAI,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2021/sponsorship.html,US,US
+772,FAccT,2021,Unspecified,Luminate,Luminate,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2021/sponsorship.html,GB,GB
+773,FAccT,2022,Unspecified,Google,Google,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2022/sponsors.html,US,US
+774,FAccT,2022,Unspecified,Sony,Sony,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2022/sponsors.html,JP,JP
+775,FAccT,2022,Unspecified,Naver,Naver,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2022/sponsors.html,KR,KR
+776,FAccT,2022,Unspecified,LG,LG,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2022/sponsors.html,KR,KR
+777,FAccT,2022,Unspecified,Microsoft,Microsoft,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2022/sponsors.html,US,US
+778,FAccT,2022,Unspecified,Twitter,Twitter,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2022/sponsors.html,US,US
+779,FAccT,2022,Unspecified,MacArthur Foundation,MacArthur Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2022/sponsors.html,US,US
+780,FAccT,2022,Unspecified,Sloan Foundation,Sloan Foundation,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2022/sponsors.html,US,US
+781,FAccT,2022,Unspecified,Amazon,Amazon,Industry,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2022/sponsors.html,US,US
+782,FAccT,2022,Unspecified,Luminate,Luminate,Government / foundation,5000.0,assumed floor (lowest published tier $5k; tiers not shown),https://facctconference.org/2022/sponsors.html,GB,GB
+783,FAccT,2023,Unspecified,Luminate,Luminate,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2023/sponsors.html,GB,GB
+784,FAccT,2023,Unspecified,Google,Google,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2023/sponsors.html,US,US
+785,FAccT,2023,Unspecified,Apple,Apple,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2023/sponsors.html,US,US
+786,FAccT,2023,Unspecified,Microsoft,Microsoft,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2023/sponsors.html,US,US
+787,FAccT,2023,Unspecified,MacArthur Foundation,MacArthur Foundation,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2023/sponsors.html,US,US
+788,FAccT,2023,Unspecified,Sony,Sony,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2023/sponsors.html,JP,JP
+789,FAccT,2023,Unspecified,Schmidt Futures,Schmidt Futures,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2023/sponsors.html,US,US
+790,FAccT,2023,Unspecified,Ford Foundation,Ford Foundation,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2023/sponsors.html,US,US
+791,FAccT,2023,Unspecified,OpenAI,OpenAI,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2023/sponsors.html,US,US
+792,FAccT,2023,Unspecified,Holistic AI,Holistic AI,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2023/sponsors.html,GB,GB
+793,FAccT,2023,Unspecified,Amazon,Amazon,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2023/sponsors.html,US,US
+794,FAccT,2024,Unspecified,Survival and Flourishing Fund,Survival and Flourishing Fund,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2024/sponsors.html,US,US
+795,FAccT,2024,Unspecified,Amazon,Amazon,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2024/sponsors.html,US,US
+796,FAccT,2024,Unspecified,Google,Google,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2024/sponsors.html,US,US
+797,FAccT,2024,Unspecified,MacArthur Foundation,MacArthur Foundation,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2024/sponsors.html,US,US
+798,FAccT,2024,Unspecified,Sony,Sony,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2024/sponsors.html,JP,JP
+799,FAccT,2024,Unspecified,Schmidt Futures,Schmidt Futures,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2024/sponsors.html,US,US
+800,FAccT,2024,Unspecified,Ford Foundation,Ford Foundation,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2024/sponsors.html,US,US
+801,FAccT,2024,Unspecified,OpenAI,OpenAI,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2024/sponsors.html,US,US
+802,FAccT,2024,Unspecified,Microsoft,Microsoft,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2024/sponsors.html,US,US
+803,FAccT,2025,Unspecified,Amazon,Amazon,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2025/sponsors.html,US,US
+804,FAccT,2025,Unspecified,Google,Google,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2025/sponsors.html,US,US
+805,FAccT,2025,Unspecified,Silicon Valley Community Foundation,Silicon Valley Community Foundation,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2025/sponsors.html,US,US
+806,FAccT,2025,Unspecified,Meta/Facebook,Meta/Facebook,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2025/sponsors.html,US,US
+807,FAccT,2025,Unspecified,OpenAI,OpenAI,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2025/sponsors.html,US,US
+808,FAccT,2025,Unspecified,Schmidt Sciences,Schmidt Sciences,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2025/sponsors.html,US,US
+809,FAccT,2025,Unspecified,TikTok,TikTok,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2025/sponsors.html,SG,CN
+810,FAccT,2025,Unspecified,Microsoft,Microsoft,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2025/sponsors.html,US,US
+811,FAccT,2025,Unspecified,Sony,Sony,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2025/sponsors.html,JP,JP
+812,FAccT,2025,Unspecified,RC Trust,RC Trust,University / academic,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2025/sponsors.html,DE,DE
+813,FAccT,2025,Supporter (host),Archimedes (Athena RC),Archimedes (Athena RC),University / academic,,n/a,https://facctconference.org/2025/sponsors.html,GR,GR
+814,FAccT,2025,Supporter (host),Athena Research Center,Athena Research Center,Government / foundation,,n/a,https://facctconference.org/2025/sponsors.html,GR,GR
+815,FAccT,2026,Unspecified,Google,Google,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2026/sponsors.html,US,US
+816,FAccT,2026,Unspecified,MacArthur Foundation,MacArthur Foundation,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2026/sponsors.html,US,US
+817,FAccT,2026,Unspecified,TikTok,TikTok,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2026/sponsors.html,SG,CN
+818,FAccT,2026,Unspecified,OpenAI,OpenAI,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2026/sponsors.html,US,US
+819,FAccT,2026,Unspecified,Meta/Facebook,Meta/Facebook,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2026/sponsors.html,US,US
+820,FAccT,2026,Unspecified,Microsoft,Microsoft,Industry,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2026/sponsors.html,US,US
+821,FAccT,2026,Unspecified,Tourisme Montréal,Tourisme Montréal,Government / foundation,10000.0,assumed floor (lowest published tier $10k; tiers not shown),https://facctconference.org/2026/sponsors.html,CA,CA
+822,IUI,2015,Silver,Google,Google,Industry,2500.0,assumed (IUI 2016 schedule),https://iui.acm.org/2015/,US,US
+823,IUI,2015,Silver,Microsoft,Microsoft,Industry,2500.0,assumed (IUI 2016 schedule),https://iui.acm.org/2015/,US,US
+824,IUI,2015,Silver,Yahoo/Verizon Media,Yahoo/Verizon Media,Industry,2500.0,assumed (IUI 2016 schedule),https://iui.acm.org/2015/,US,US
+825,IUI,2015,Bronze,eBay/PayPal,eBay/PayPal,Industry,1000.0,assumed (IUI 2016 schedule),https://iui.acm.org/2015/,US,US
+826,IUI,2015,Bronze,Symantec,Symantec,Industry,1000.0,assumed (IUI 2016 schedule),https://iui.acm.org/2015/,US,US
+827,IUI,2015,Bronze,HPCC Systems (LexisNexis),HPCC Systems (LexisNexis),Industry,1000.0,assumed (IUI 2016 schedule),https://iui.acm.org/2015/,US,US
+828,IUI,2015,Special,GSG (Graphic Solutions Group),GSG (Graphic Solutions Group),Industry,,tier not listed,https://iui.acm.org/2015/,US,US
+829,IUI,2015,Special,Georgia Tech,Georgia Tech,University / academic,,tier not listed,https://iui.acm.org/2015/,US,US
+830,IUI,2016,Gold,Microsoft,Microsoft,Industry,5000.0,stated,https://iui.acm.org/2016/,US,US
+831,IUI,2016,Silver,Google,Google,Industry,2500.0,stated,https://iui.acm.org/2016/,US,US
+832,IUI,2016,Silver,IBM,IBM,Industry,2500.0,stated,https://iui.acm.org/2016/,US,US
+833,IUI,2016,Bronze,Tableau/Salesforce,Tableau/Salesforce,Industry,1000.0,stated,https://iui.acm.org/2016/,US,US
+834,IUI,2017,Unspecified,Google,Google,Industry,,tier not listed,https://iui.acm.org/2017/sponsors.html,US,US
+835,IUI,2017,Unspecified,Gesellschaft für Informatik (GI),Gesellschaft für Informatik (GI),Government / foundation,,tier not listed,https://iui.acm.org/2017/sponsors.html,DE,DE
+836,IUI,2017,Unspecified,Cyprus Tourism Organisation,Cyprus Tourism Organisation,Government / foundation,,tier not listed,https://iui.acm.org/2017/sponsors.html,CY,CY
+837,IUI,2017,Supporter (host),University of Cyprus,University of Cyprus,University / academic,,tier not listed,https://iui.acm.org/2017/sponsors.html,CY,CY
+838,IUI,2018,Silver,Adobe,Adobe,Industry,2500.0,stated,https://iui.acm.org/2018/,US,US
+839,IUI,2018,Silver,DAYPLA,DAYPLA,Industry,2500.0,stated,https://iui.acm.org/2018/,JP,JP
+840,IUI,2018,Silver,LIFULL,LIFULL,Industry,2500.0,stated,https://iui.acm.org/2018/,JP,JP
+841,IUI,2018,Silver,IBM,IBM,Industry,2500.0,stated,https://iui.acm.org/2018/,US,US
+842,IUI,2018,Silver,Google,Google,Industry,2500.0,stated,https://iui.acm.org/2018/,US,US
+843,IUI,2018,Bronze,Yahoo Japan,Yahoo Japan,Industry,1000.0,stated,https://iui.acm.org/2018/,JP,JP
+844,IUI,2018,Bronze,Rochester Institute of Technology,Rochester Institute of Technology,University / academic,1000.0,stated,https://iui.acm.org/2018/,US,US
+845,IUI,2019,Gold,IBM,IBM,Industry,5000.0,stated,https://iui.acm.org/2019/sponsors.html,US,US
+846,IUI,2019,Gold,Ruyi.ai,Ruyi.ai,Industry,5000.0,stated,https://iui.acm.org/2019/sponsors.html,CN,CN
+847,IUI,2019,Silver,Adobe,Adobe,Industry,2500.0,stated,https://iui.acm.org/2019/sponsors.html,US,US
+848,IUI,2019,Silver,FXPAL,FXPAL,Industry,2500.0,stated,https://iui.acm.org/2019/sponsors.html,US,JP
+849,IUI,2019,Silver,Google,Google,Industry,2500.0,stated,https://iui.acm.org/2019/sponsors.html,US,US
+850,IUI,2019,Bronze,Tableau/Salesforce,Tableau/Salesforce,Industry,1000.0,stated,https://iui.acm.org/2019/sponsors.html,US,US
+851,IUI,2019,Bronze,Instabase,Instabase,Industry,1000.0,stated,https://iui.acm.org/2019/sponsors.html,US,US
+852,IUI,2020,Silver,Microsoft,Microsoft,Industry,2500.0,stated,https://iui.acm.org/2020/sponsors.html,US,US
+853,IUI,2020,Silver,Google,Google,Industry,2500.0,stated,https://iui.acm.org/2020/sponsors.html,US,US
+854,IUI,2020,Bronze,Science Robotics (AAAS),Science Robotics (AAAS),Publisher,1000.0,stated,https://iui.acm.org/2020/sponsors.html,US,US
+855,IUI,2021,Platinum,Texas A&M University,Texas A&M University,University / academic,5000.0,stated,https://iui.acm.org/2021/sponsors.html,US,US
+856,IUI,2021,Gold,Google,Google,Industry,2500.0,stated,https://iui.acm.org/2021/sponsors.html,US,US
+857,IUI,2021,Gold,Microsoft,Microsoft,Industry,2500.0,stated,https://iui.acm.org/2021/sponsors.html,US,US
+858,IUI,2021,Silver,MDPI,MDPI,Publisher,1000.0,stated,https://iui.acm.org/2021/sponsors.html,CH,CH
+859,IUI,2021,Silver,Science Robotics (AAAS),Science Robotics (AAAS),Publisher,1000.0,stated,https://iui.acm.org/2021/sponsors.html,US,US
+860,IUI,2022,Platinum,Meta/Facebook,Meta/Facebook,Industry,10000.0,stated,https://iui.acm.org/2022/sponsorship.html,US,US
+861,IUI,2022,Gold,Google,Google,Industry,5000.0,stated,https://iui.acm.org/2022/sponsorship.html,US,US
+862,IUI,2022,Silver,Goldman Sachs,Goldman Sachs,Industry,2500.0,stated,https://iui.acm.org/2022/sponsorship.html,US,US
+863,IUI,2022,Silver,Nokia Bell Labs,Nokia Bell Labs,Industry,2500.0,stated,https://iui.acm.org/2022/sponsorship.html,US,FI
+864,IUI,2022,Silver,Toyota Research Institute,Toyota Research Institute,Industry,2500.0,stated,https://iui.acm.org/2022/sponsorship.html,US,JP
+865,IUI,2022,Bronze,Apple,Apple,Industry,1000.0,stated,https://iui.acm.org/2022/sponsorship.html,US,US
+866,IUI,2022,Bronze,NVIDIA,NVIDIA,Industry,1000.0,stated,https://iui.acm.org/2022/sponsorship.html,US,US
+867,IUI,2022,Bronze,Silo AI,Silo AI,Industry,1000.0,stated,https://iui.acm.org/2022/sponsorship.html,FI,FI
+868,IUI,2023,Platinum,NSF,NSF,Government / foundation,10000.0,stated,https://iui.acm.org/2023/sponsorship.html,US,US
+869,IUI,2023,Platinum,Business Events Sydney,Business Events Sydney,Government / foundation,10000.0,stated,https://iui.acm.org/2023/sponsorship.html,AU,AU
+870,IUI,2023,Gold,Google,Google,Industry,5000.0,stated,https://iui.acm.org/2023/sponsorship.html,US,US
+871,IUI,2023,Silver,CSIRO Data61,CSIRO Data61,Government / foundation,2500.0,stated,https://iui.acm.org/2023/sponsorship.html,AU,AU
+872,IUI,2023,Bronze,MDPI,MDPI,Publisher,1000.0,stated,https://iui.acm.org/2023/sponsorship.html,CH,CH
+873,IUI,2024,Platinum,NSF,NSF,Government / foundation,10000.0,stated,https://iui.acm.org/2024/sponsorship.html,US,US
+874,IUI,2024,Gold,Google,Google,Industry,5000.0,stated,https://iui.acm.org/2024/sponsorship.html,US,US
+875,IUI,2024,Bronze,Michelin,Michelin,Industry,1000.0,stated,https://iui.acm.org/2024/sponsorship.html,FR,FR
+876,IUI,2024,Bronze,Adobe,Adobe,Industry,1000.0,stated,https://iui.acm.org/2024/sponsorship.html,US,US
+877,IUI,2025,Platinum,NSF,NSF,Government / foundation,10000.0,stated,https://iui.acm.org/2025/sponsorship.html,US,US
+878,IUI,2025,Gold,MBZUAI,MBZUAI,University / academic,5000.0,stated,https://iui.acm.org/2025/sponsorship.html,AE,AE
+879,IUI,2025,Silver,AI Journal (AIJ),AI Journal (AIJ),Publisher,2500.0,stated,https://iui.acm.org/2025/sponsorship.html,US,US
+880,IUI,2025,Silver,MDPI,MDPI,Publisher,2500.0,stated,https://iui.acm.org/2025/sponsorship.html,CH,CH
+881,IUI,2025,Silver,Apple,Apple,Industry,2500.0,stated,https://iui.acm.org/2025/sponsorship.html,US,US
+882,IUI,2026,Platinum,Pienso,Pienso,Industry,10000.0,assumed (IUI 2025 schedule),https://iui.acm.org/2026/,US,US
+883,IUI,2026,Gold,MDPI,MDPI,Publisher,5000.0,assumed (IUI 2025 schedule),https://iui.acm.org/2026/,CH,CH
+884,IUI,2026,Gold,Gesellschaft für Informatik (GI),Gesellschaft für Informatik (GI),Government / foundation,5000.0,assumed (IUI 2025 schedule),https://iui.acm.org/2026/,DE,DE
+885,IUI,2026,Gold,NSF,NSF,Government / foundation,5000.0,assumed (IUI 2025 schedule),https://iui.acm.org/2026/,US,US
+886,IUI,2026,Supporter (host),University of Cyprus,University of Cyprus,University / academic,,tier not listed,https://iui.acm.org/2026/,CY,CY
+887,DIS,2016,Unspecified,Roames (Fugro),Roames (Fugro),Industry,,no price info,https://dis.acm.org/2016/,AU,NL
+888,DIS,2016,Unspecified,HFESA,HFESA,Government / foundation,,no price info,https://dis.acm.org/2016/,AU,AU
+889,DIS,2016,Unspecified,Brisbane BMW,Brisbane BMW,Industry,,no price info,https://dis.acm.org/2016/,AU,AU
+890,DIS,2016,Unspecified,Go Digi (Australia Post),Go Digi (Australia Post),Industry,,no price info,https://dis.acm.org/2016/,AU,AU
+891,DIS,2016,Unspecified,Uber,Uber,Industry,,no price info,https://dis.acm.org/2016/,US,US
+892,DIS,2016,Unspecified,Greater Springfield,Greater Springfield,Industry,,no price info,https://dis.acm.org/2016/,AU,AU
+893,DIS,2016,Unspecified,Australian Design Alliance,Australian Design Alliance,Government / foundation,,no price info,https://dis.acm.org/2016/,AU,AU
+894,DIS,2016,Unspecified,MIT Press,MIT Press,Publisher,,no price info,https://dis.acm.org/2016/,US,US
+895,DIS,2016,Unspecified,Morgan & Claypool,Morgan & Claypool,Publisher,,no price info,https://dis.acm.org/2016/,US,US
+896,DIS,2016,Unspecified,ANAT,ANAT,Government / foundation,,no price info,https://dis.acm.org/2016/,AU,AU
+897,DIS,2016,Unspecified,Media Architecture Biennale,Media Architecture Biennale,Government / foundation,,no price info,https://dis.acm.org/2016/,AU,AU
+898,DIS,2016,Unspecified,Airtrain,Airtrain,Industry,,no price info,https://dis.acm.org/2016/,AU,AU
+899,DIS,2016,Unspecified,Media Architecture Institute,Media Architecture Institute,Government / foundation,,no price info,https://dis.acm.org/2016/,AT,AT
+900,DIS,2016,Unspecified,Visit Brisbane,Visit Brisbane,Government / foundation,,no price info,https://dis.acm.org/2016/,AU,AU
+901,DIS,2016,Supporter (host),Queensland University of Technology,Queensland University of Technology,University / academic,,no price info,https://dis.acm.org/2016/,AU,AU
+902,DIS,2019,Silver,UC San Diego (Qualcomm Institute),UC San Diego (Qualcomm Institute),University / academic,5000.0,stated,https://dis2019.com/sponsor,US,US
+903,DIS,2019,Silver,Adobe,Adobe,Industry,5000.0,stated,https://dis2019.com/sponsor,US,US
+904,DIS,2019,Silver,Google,Google,Industry,5000.0,stated,https://dis2019.com/sponsor,US,US
+905,DIS,2019,Silver,UC San Diego,UC San Diego,University / academic,5000.0,stated,https://dis2019.com/sponsor,US,US
+906,DIS,2019,Silver,Virginia Tech,Virginia Tech,University / academic,5000.0,stated,https://dis2019.com/sponsor,US,US
+907,DIS,2019,Friend,Sketch,Sketch,Industry,1000.0,stated,https://dis2019.com/sponsor,US,US
+908,DIS,2022,Unspecified,Monash University,Monash University,University / academic,,no price info,https://dis.acm.org/2022/,AU,AU
+909,DIS,2022,Unspecified,Deakin University,Deakin University,University / academic,,no price info,https://dis.acm.org/2022/,AU,AU
+910,DIS,2024,Unspecified,Autodesk,Autodesk,Industry,,no price info,https://dis.acm.org/2024/,US,US
+911,DIS,2025,Unspecified,Adobe,Adobe,Industry,,no price info,https://dis.acm.org/2025/,US,US
+912,DIS,2025,Unspecified,Funchal City Council,Funchal City Council,Government / foundation,,no price info,https://dis.acm.org/2025/,PT,PT
+913,DIS,2025,Unspecified,Visit Madeira,Visit Madeira,Government / foundation,,no price info,https://dis.acm.org/2025/,PT,PT
+914,DIS,2025,Supporter (host),ITI / LARSyS,ITI / LARSyS,University / academic,,no price info,https://dis.acm.org/2025/,PT,PT
+915,DIS,2026,Unspecified,Adobe,Adobe,Industry,,no price info,https://dis.acm.org/2026/dis26-industry-events/,US,US
+916,DIS,2026,Unspecified,Apple,Apple,Industry,,no price info,https://dis.acm.org/2026/dis26-industry-events/,US,US
+917,DIS,2026,Unspecified,Grab,Grab,Industry,,no price info,https://dis.acm.org/2026/dis26-industry-events/,SG,SG
+918,DIS,2026,Unspecified,Singapore Exhibition & Convention Bureau,Singapore Exhibition & Convention Bureau,Government / foundation,,no price info,https://dis.acm.org/2026/dis26-industry-events/,SG,SG
+919,DIS,2026,Supporter (host),NUS Division of Industrial Design,NUS Division of Industrial Design,University / academic,,no price info,https://dis.acm.org/2026/dis26-industry-events/,SG,SG
+920,AIES,2018,Unspecified,Google,Google,Industry,,tier not listed,https://www.aies-conference.com/2018/sponsors/,US,US
+921,AIES,2018,Unspecified,IBM,IBM,Industry,,tier not listed,https://www.aies-conference.com/2018/sponsors/,US,US
+922,AIES,2018,Unspecified,Berkeley Existential Risk Initiative,Berkeley Existential Risk Initiative,Government / foundation,,tier not listed,https://www.aies-conference.com/2018/sponsors/,US,US
+923,AIES,2018,Unspecified,Future of Life Institute,Future of Life Institute,Government / foundation,,tier not listed,https://www.aies-conference.com/2018/sponsors/,US,US
+924,AIES,2018,Unspecified,PwC,PwC,Industry,,tier not listed,https://www.aies-conference.com/2018/sponsors/,GB,GB
+925,AIES,2018,Unspecified,Partnership on AI,Partnership on AI,Government / foundation,,tier not listed,https://www.aies-conference.com/2018/sponsors/,US,US
+926,AIES,2018,Supporter (host),Tulane University,Tulane University,University / academic,,tier not listed,https://www.aies-conference.com/2018/sponsors/,US,US
+927,AIES,2019,Unspecified,Berkeley Existential Risk Initiative,Berkeley Existential Risk Initiative,Government / foundation,,tier not listed,https://www.aies-conference.com/2019/sponsors/index.html,US,US
+928,AIES,2019,Unspecified,Google,Google,Industry,,tier not listed,https://www.aies-conference.com/2019/sponsors/index.html,US,US
+929,AIES,2019,Unspecified,NSF,NSF,Government / foundation,,tier not listed,https://www.aies-conference.com/2019/sponsors/index.html,US,US
+930,AIES,2019,Unspecified,IBM,IBM,Industry,,tier not listed,https://www.aies-conference.com/2019/sponsors/index.html,US,US
+931,AIES,2019,Unspecified,Meta/Facebook,Meta/Facebook,Industry,,tier not listed,https://www.aies-conference.com/2019/sponsors/index.html,US,US
+932,AIES,2019,Unspecified,Amazon,Amazon,Industry,,tier not listed,https://www.aies-conference.com/2019/sponsors/index.html,US,US
+933,AIES,2019,Unspecified,PwC,PwC,Industry,,tier not listed,https://www.aies-conference.com/2019/sponsors/index.html,GB,GB
+934,AIES,2019,Unspecified,Future of Life Institute,Future of Life Institute,Government / foundation,,tier not listed,https://www.aies-conference.com/2019/sponsors/index.html,US,US
+935,AIES,2019,Unspecified,Partnership on AI,Partnership on AI,Government / foundation,,tier not listed,https://www.aies-conference.com/2019/sponsors/index.html,US,US
+936,AIES,2019,Supporter (host),University of Hawaii at Mānoa,University of Hawaii at Mānoa,University / academic,,tier not listed,https://www.aies-conference.com/2019/sponsors/index.html,US,US
+937,AIES,2020,Gold,Google,Google,Industry,20000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2020/sponsors/index.html,US,US
+938,AIES,2020,Gold,Survival and Flourishing Fund,Survival and Flourishing Fund,Government / foundation,20000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2020/sponsors/index.html,US,US
+939,AIES,2020,Silver,Founders Pledge,Founders Pledge,Government / foundation,10000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2020/sponsors/index.html,GB,GB
+940,AIES,2020,Silver,New York University,New York University,University / academic,10000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2020/sponsors/index.html,US,US
+941,AIES,2020,Bronze,Amazon,Amazon,Industry,5000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2020/sponsors/index.html,US,US
+942,AIES,2020,Bronze,Data & Society,Data & Society,Government / foundation,5000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2020/sponsors/index.html,US,US
+943,AIES,2020,Bronze,Meta/Facebook,Meta/Facebook,Industry,5000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2020/sponsors/index.html,US,US
+944,AIES,2020,Bronze,Partnership on AI,Partnership on AI,Government / foundation,5000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2020/sponsors/index.html,US,US
+945,AIES,2021,Gold,Google,Google,Industry,20000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2021/sponsors/index.html,US,US
+946,AIES,2021,Gold,Founders Pledge,Founders Pledge,Government / foundation,20000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2021/sponsors/index.html,GB,GB
+947,AIES,2021,Bronze,Meta/Facebook,Meta/Facebook,Industry,5000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2021/sponsors/index.html,US,US
+948,AIES,2022,Platinum,Founders Pledge,Founders Pledge,Government / foundation,30000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2022/sponsors/index.html,GB,GB
+949,AIES,2022,Platinum,Google,Google,Industry,30000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2022/sponsors/index.html,US,US
+950,AIES,2022,Platinum,Sony,Sony,Industry,30000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2022/sponsors/index.html,JP,JP
+951,AIES,2022,Silver,NSF,NSF,Government / foundation,10000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2022/sponsors/index.html,US,US
+952,AIES,2022,Silver,IBM,IBM,Industry,10000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2022/sponsors/index.html,US,US
+953,AIES,2022,Bronze,Meta/Facebook,Meta/Facebook,Industry,5000.0,assumed (AIES 2023–2026 schedule),https://www.aies-conference.com/2022/sponsors/index.html,US,US
+954,AIES,2023,Platinum,Google,Google,Industry,30000.0,stated,https://www.aies-conference.com/2023/sponsors/,US,US
+955,AIES,2023,Platinum,PwC,PwC,Industry,30000.0,stated,https://www.aies-conference.com/2023/sponsors/,GB,GB
+956,AIES,2023,Platinum,Schmidt Futures,Schmidt Futures,Government / foundation,30000.0,stated,https://www.aies-conference.com/2023/sponsors/,US,US
+957,AIES,2023,Gold,Sony,Sony,Industry,20000.0,stated,https://www.aies-conference.com/2023/sponsors/,JP,JP
+958,AIES,2023,Gold,Future of Life Institute,Future of Life Institute,Government / foundation,20000.0,stated,https://www.aies-conference.com/2023/sponsors/,US,US
+959,AIES,2023,Silver,IBM,IBM,Industry,10000.0,stated,https://www.aies-conference.com/2023/sponsors/,US,US
+960,AIES,2023,Silver,JPMorgan Chase,JPMorgan Chase,Industry,10000.0,stated,https://www.aies-conference.com/2023/sponsors/,US,US
+961,AIES,2023,Silver,NSF,NSF,Government / foundation,10000.0,stated,https://www.aies-conference.com/2023/sponsors/,US,US
+962,AIES,2024,Platinum,Google,Google,Industry,30000.0,stated,https://www.aies-conference.com/2024/sponsorship-opportunities/,US,US
+963,AIES,2024,Platinum,Tableau/Salesforce,Tableau/Salesforce,Industry,30000.0,stated,https://www.aies-conference.com/2024/sponsorship-opportunities/,US,US
+964,AIES,2024,Silver,Sony,Sony,Industry,10000.0,stated,https://www.aies-conference.com/2024/sponsorship-opportunities/,JP,JP
+965,AIES,2024,Silver,IBM,IBM,Industry,10000.0,stated,https://www.aies-conference.com/2024/sponsorship-opportunities/,US,US
+966,AIES,2024,Bronze,eBay/PayPal,eBay/PayPal,Industry,5000.0,stated,https://www.aies-conference.com/2024/sponsorship-opportunities/,US,US
+967,AIES,2024,Bronze,JPMorgan Chase,JPMorgan Chase,Industry,5000.0,stated,https://www.aies-conference.com/2024/sponsorship-opportunities/,US,US
+968,AIES,2024,Bronze,NSF,NSF,Government / foundation,5000.0,stated,https://www.aies-conference.com/2024/sponsorship-opportunities/,US,US
+969,AIES,2024,Supporter (host),Markkula Center (Santa Clara University),Markkula Center (Santa Clara University),University / academic,,tier not listed,https://www.aies-conference.com/2024/sponsorship-opportunities/,US,US
+970,AIES,2025,Platinum,Google,Google,Industry,30000.0,stated,https://www.aies-conference.com/2025/sponsorship-opportunities/,US,US
+971,AIES,2025,Gold,Lenovo,Lenovo,Industry,20000.0,stated,https://www.aies-conference.com/2025/sponsorship-opportunities/,CN,CN
+972,AIES,2025,Silver,IBM,IBM,Industry,10000.0,stated,https://www.aies-conference.com/2025/sponsorship-opportunities/,US,US
+973,AIES,2025,Silver,Ericsson,Ericsson,Industry,10000.0,stated,https://www.aies-conference.com/2025/sponsorship-opportunities/,SE,SE
+974,AIES,2025,Bronze,AE Studio,AE Studio,Industry,5000.0,stated,https://www.aies-conference.com/2025/sponsorship-opportunities/,US,US
+975,AIES,2025,Bronze,AI Journal (AIJ),AI Journal (AIJ),Publisher,5000.0,stated,https://www.aies-conference.com/2025/sponsorship-opportunities/,US,US
+976,AIES,2025,Bronze,JPMorgan Chase,JPMorgan Chase,Industry,5000.0,stated,https://www.aies-conference.com/2025/sponsorship-opportunities/,US,US
+977,AIES,2025,Bronze,NSF,NSF,Government / foundation,5000.0,stated,https://www.aies-conference.com/2025/sponsorship-opportunities/,US,US
+978,AIES,2025,Supporter (host),IE University,IE University,University / academic,,tier not listed,https://www.aies-conference.com/2025/sponsorship-opportunities/,ES,ES
+979,AIES,2026,Gold,Google,Google,Industry,20000.0,stated,https://www.aies-conference.com/2026/sponsorship-opportunities/,US,US
+980,AIES,2026,Silver,IBM,IBM,Industry,10000.0,stated,https://www.aies-conference.com/2026/sponsorship-opportunities/,US,US
+981,AIES,2026,Bronze,AI Policy Lab (Umeå University),AI Policy Lab (Umeå University),University / academic,5000.0,stated,https://www.aies-conference.com/2026/sponsorship-opportunities/,SE,SE
+982,AIES,2026,Bronze,Tech Policy Lab,Tech Policy Lab,University / academic,5000.0,stated,https://www.aies-conference.com/2026/sponsorship-opportunities/,US,US
+983,AIES,2026,Bronze,Ericsson,Ericsson,Industry,5000.0,stated,https://www.aies-conference.com/2026/sponsorship-opportunities/,SE,SE
