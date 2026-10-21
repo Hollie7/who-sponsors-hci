@@ -1,140 +1,134 @@
-# 学术会议赞助商数据集：HCI（CHI / CSCW / UIST / UbiComp / DIS / IUI / FAccT / AIES）与 AI（NeurIPS / ICML / ICLR）
+# Who Sponsors HCI and AI-Ethics Conferences
 
-收集四个 ACM HCI 会议历年官网上公开的赞助商名单、赞助等级与公开价目，并做了整理、估算和可视化，用于讨论学术会议与产业界的关系。
+Sponsor lists, sponsorship tiers and published tier prices for academic conferences, compiled from their public websites, cleaned up, estimated and visualized. The aim is to give some data to the ongoing debate about industry's role in academic HCI.
 
-- **覆盖**：983 条赞助记录，298 家机构，105 个会议届次
-  - CHI：1996、1998、2006–2026
-  - CSCW：2013–2026
-  - UIST：2007–2025（缺 2008 年以前和少数年份）
-  - UbiComp / ISWC：2013–2025
-  - DIS：2016、2019、2022、2024–2026（2014、2017、2018 旧官网失效或域名被占用；2020–2021 线上会议未见赞助名单）
-  - IUI：2015–2026（缺 2013–2014）
-  - FAccT：2018–2026（官网只列名单、不分等级）
-  - AIES：2018–2026（2023 年起公开价目 $30k / $20k / $10k / $5k）
-- **数据整理时间**：2026 年 10 月
+- **HCI and AI ethics:** CHI, CSCW, UIST, UbiComp, DIS, IUI, FAccT, AIES. 983 sponsor listings, 298 organizations, 105 conference editions.
+- **AI:** NeurIPS, ICML, ICLR. 1,907 listings, 578 organizations, 33 editions.
+- **Compiled:** October 2026, by Holly Tianqi Song ([hollysong.site](https://hollysong.site)).
 
-## 目录
+## Repository layout
 
 ```
 data/
-  raw/sponsors_raw.csv        # 手工/半自动录入的原始记录：会议、年份、等级、机构名、来源网页
-  tier_prices.csv             # 官网/招商书上公开的赞助等级起步价
-  sponsor_listings.csv        # 清洗后的明细（build.py 生成）
-  per_conference_year.csv     # 每届汇总：赞助方数、企业数、估算金额、注册人数（build.py 生成）
-  top_sponsors.csv            # 机构排名（build.py 生成）
+  raw/sponsors_raw.csv          one row per sponsor as listed on the page: conference, year, tier, name, source URL
+  sponsor_listings.csv          cleaned listings (generated)
+  per_conference_year.csv       totals per edition: sponsors, companies, estimated amount, attendance (generated)
+  top_sponsors.csv              organizations ranked by editions sponsored (generated)
+  tier_prices.csv               published sponsorship tier prices
+  ai/raw/{neurips,icml,iclr}_raw.tsv  raw AI conference lists (EMPTY = no list found that year)
+  ai/ai_*.csv                   cleaned AI tables (generated)
 scripts/
-  build.py                    # 由 raw 数据生成上面三个文件
-  countries.py                # 机构 → 总部所在国家/地区、母公司国籍
-  make_standalone.py          # 生成可直接在浏览器打开的 dashboard/standalone.html
+  build.py, countries.py        build the HCI tables; organization → country
+  ai/build_ai.py, normalize.py, ai_meta.py   build the AI tables; name merging, sector, country
+  make_standalone.py            local preview of the dashboards (dashboard/**/standalone.html)
+  build_site.py                 build the public website into docs/
 dashboard/
-  index.html, flags.js        # 交互式 dashboard（原为 Claude Dashboard artifact 编写；英文 / 中文可切换，默认英文）
-  standalone.html             # 独立版本，可用 GitHub Pages 或本地 http 服务打开
+  index.html, flags.js          HCI and AI-ethics dashboard (English / Chinese)
+  ai/index.html                 AI conference dashboard
+docs/                           the public website (generated)
+site.config.json                author, links and analytics settings for the website
 ```
 
-## 重新生成
+## Rebuilding
 
 ```bash
 pip install pandas
-python scripts/build.py            # 重新生成 data/ 下的派生文件
-python scripts/make_standalone.py  # 重新生成 dashboard/standalone.html
-python -m http.server 8000         # 然后打开 http://localhost:8000/dashboard/standalone.html
+python scripts/build.py            # HCI tables in data/
+python scripts/ai/build_ai.py      # AI tables in data/ai/
+python scripts/build_site.py       # website in docs/
+python -m http.server 8000         # then open http://localhost:8000/docs/
 ```
 
-## 字段说明（`sponsor_listings.csv`）
+## Columns in `sponsor_listings.csv`
 
-| 字段 | 含义 |
+| Column | Meaning |
 |---|---|
-| `conference`, `year` | 会议与年份 |
-| `tier` | 官网上的赞助等级原名（Hero / Champion / Platinum / Gold / Friend / Supporter / Unspecified 等） |
-| `sponsor` | 官网上的机构名（或 logo 文件名推断出的名称） |
-| `org` | 归一化后的机构名（如 Facebook / Meta / Oculus → `Meta/Facebook`） |
-| `sector` | Industry / Government / foundation / University / academic / Publisher |
-| `est_usd` | 按该等级的公开起步价估算的最低金额；未知为空 |
-| `price_basis` | `stated`（当年公开价）或 `assumed (...)`（沿用相邻年份价目）等 |
-| `country` | 赞助实体自身总部所在地（ISO 代码；`EU` 为欧盟资助项目） |
-| `parent_country` | 母公司国籍（仅 TRI、FXPAL、MERL、Megagon Labs、Nokia Bell Labs 与 `country` 不同） |
-| `source` | 数据来源网页 |
+| `conference`, `year` | Conference and year |
+| `tier` | Tier name as shown on the site (Hero, Champion, Platinum, Gold, Friend, Supporter, Unspecified, …) |
+| `sponsor` | Name as shown on the site, or inferred from the logo's file name or link |
+| `org` | Merged organization name (e.g. Facebook / Meta / Oculus → `Meta/Facebook`) |
+| `sector` | Industry, Government / foundation, University / academic, Publisher |
+| `est_usd` | Lower-bound estimate from the tier's published floor price; empty when unknown |
+| `price_basis` | `stated` (that year's published price), `assumed (…)` (a nearby year's prices), or why there is none |
+| `country` | Headquarters of the sponsoring entity (ISO code; `EU` = an EU-funded project) |
+| `parent_country` | Country of the parent company, where it differs (e.g. Toyota Research Institute → JP) |
+| `source` | Page the listing came from |
 
-## 方法与口径
+## Method
 
-- **来源**：各届官网的赞助页、招商书（Invitation to Sponsor / Call for Sponsors）、SIGCHI 历史存档（注册人数）。部分站点禁止自动抓取，是用浏览器人工打开后读取的。
-- **机构名**：很多 logo 没有替代文字，机构名由图片文件名或链接推断；无法判断的保留原样或标为未知。
-- **金额是下限估算，不是会议实际收入**：每家赞助商按其等级的公开起步价计；不含主题赞助、展位、招聘、广告等额外付费；未公布价格的年份沿用相邻年份价目；Friend / Supporter 一律按 $1,000 计；CSCW 2023–2024 没有公开价目，按每家 $1,000 的假设计。
-- **每届估算只在至少一半赞助条目有价格时才给出**；UbiComp 2020–2024、CSCW 2014/2020、CHI 1996/1998 因等级缺失不给金额。
-- **非货币支持**（UbiComp 2015 的日本学会/政府 Supporter、UIST 2025 的 Special Support 等）计入名单，不计入金额。
-- **主办方不计为赞助商**：ACM、SIGCHI、SIGGRAPH、SIGMOBILE。
-- **Google DeepMind / DeepMind 计入 Google**：同一届两者都出现时只计一次。FAccT 和 AIES 的官网常把两个 logo 并列，录入时合并成一条 Google，因此这两个会议看不出哪一届是 DeepMind 出资（待补“子品牌”一列）。
-- **注册人数**：CHI 来自 SIGCHI 存档与 Wikipedia（2024、2025）；CSCW 仅到 2018，UIST、UbiComp 仅到 2019。
+**Sources.** Each edition's sponsor page, archived copies of it, and sponsor prospectuses. Some sites block automated access and were read by hand in a browser. Attendance comes from the SIGCHI conference history archive (Wikipedia for CHI 2024–2025), the NeurIPS fact sheet, ICML's statistics and Wikipedia for ICLR.
 
-### DIS / IUI / FAccT 的口径
+**Counting.**
+- An organization counts once per edition, whatever its tier.
+- Organizers are not sponsors: ACM, SIGCHI, SIGAI, SIGGRAPH, SIGMOBILE and AAAI are left out.
+- Host universities and local government or society supporters are listed (`Supporter (host)`, `Special`) but not counted in amounts.
+- Brands of one company are merged: Meta/Facebook/Oculus, Yahoo/Verizon Media/Oath, Tableau/Salesforce, Google with DeepMind. In the AI data also LinkedIn → Microsoft, Habana and Nervana → Intel, Xilinx → AMD, TikTok → ByteDance, Borealis AI → RBC, MosaicML → Databricks, TRI → Toyota.
+- FAccT and AIES often show Google and DeepMind logos side by side; these were entered as one Google listing, so for those two conferences the data cannot tell which editions DeepMind paid for.
 
-- **IUI** 每年公开等级价（2016：$8k / $5k / $2.5k / $1k；2018 年起：$10k / $5k / $2.5k / $1k；2021 线上：$5k / $2.5k / $1k；2017 为欧元价，按 1.13 折算）。
-- **DIS** 只有 2019 年公开价目（$10k / $5k / $1k），其他年份不估算金额。
-- **FAccT** 的赞助政策公开了 5 档价格（2021–2022：$5k–$75k；2023 年起：$10k–$75k），但赞助商页面不标等级，所以每家按当年最低一档估算，是“下限的下限”。2018–2020 年按 $5k 计。
-- 主办学会（ACM、SIGCHI、SIGAI）不计；承办高校标为 `Supporter (host)`，计入名单但不计金额。
+**Estimated amounts.**
+- Every amount is a lower bound: each sponsor counts at its tier's published floor price. Themed sponsorships, booths and recruiting fees are ignored. These are not what conferences actually received.
+- Years without published prices reuse the nearest year's prices (`price_basis` says which). Friend and Supporter tiers count as $1,000.
+- An edition gets an estimate only when at least half of its paying sponsors have a known price.
+- FAccT publishes tier prices but not who is in which tier, so every FAccT sponsor counts at the lowest tier ($5k before 2023, $10k from 2023).
+- For the AI conferences only two price lists were found (NeurIPS 2024, ICML 2026), so only NeurIPS 2023–2025 and ICML 2025–2026 are estimated. For reference, NeurIPS's budget statement reports $3.7M in sponsor income for 2019.
 
-## 已知缺口
+**Countries.** Two attributions: the sponsoring entity's headquarters, or its parent company. About 40 small companies (mostly in the AI data) could not be located.
 
-- CHI 1997、1999–2005；CHI 2012 的 Contributor 只以图片呈现，未收录。
-- CSCW 2012 年以前：早年官网已失效。
-- UbiComp 2025 的 One Ring、SUSTAIN、SparQi Lab 所属地未知。
+## Coverage and gaps
 
-## 主要发现（2013–2026）
+| Conference | Sponsor lists | Missing | Tier prices |
+|---|---|---|---|
+| CHI | 1996, 1998, 2006–2026 | 1997, 1999–2005; CHI 2012 Contributors (image only) | 2006–2026 (published 2016, 2021, 2024–2026) |
+| CSCW | 2013–2026 | before 2013 (sites gone) | published 2016, 2018, 2019, 2025, 2026; 2023–2024 assumed $1k each |
+| UIST | 2007–2025 | before 2007 | published 2007, 2008, 2011, 2012, 2015, 2017, 2020, 2022–2025 |
+| UbiComp | 2013–2025 | — | published 2014, 2015, 2017–2019, 2022–2023; 2020–2024 lists have no tiers |
+| DIS | 2016, 2019, 2022, 2024–2026 | 2014, 2017, 2018 (sites gone); 2020–2021 online, no sponsors shown | 2019 only |
+| IUI | 2015–2026 | 2013–2014 | every year (2017 in euros, ×1.13) |
+| FAccT | 2018–2026 | — | tiers published, not assigned (see above) |
+| AIES | 2018–2026 | — | published 2023–2026; 2018–2019 have no tiers |
+| NeurIPS | 2013–2026 | 2021 had no sponsorship | 2024 |
+| ICML | 2015–2026 | 2013–2014 | 2026 |
+| ICLR | 2017, 2020–2026 | 2013–2016, 2018–2019 | none found |
 
-1. **CSCW 的企业赞助大幅下滑**：估算赞助额从 2013–2017 年平均约 $61k/届降到 2023–2026 年约 $9k/届；Meta（2013–2022 年几乎每届最高等级）、Microsoft（2021 年后）、IBM（2019 年后）先后退出。
-2. **高度集中**：181 家赞助机构中 131 家只出现一届；Google、Microsoft、Meta、Adobe、Autodesk 占约 1/3 的“机构 × 届次”和约 41% 的估算金额。
-3. **CHI 规模扩大但赞助没跟上**：人均赞助从 2013–2019 年约 $70–94 降到 2020–2024 年约 $36–57。
-4. **赞助方换血**：IBM、Yahoo、Bloomberg 退出；Apple、Toyota Research Institute、Meta Reality Labs、Huawei 进入，偏向 XR / 硬件 / AI 产品方向。
-5. **以美国机构为主，非美国赞助多为东道主效应**：非美国的“机构 × 届次”约 40% 出现在会议恰好在该国举办的年份。
+## Findings
 
-### 补充：DIS / IUI / FAccT
+**CHI, CSCW, UIST and UbiComp, 2013–2026**
 
-- 三个会议的赞助规模都很小：IUI 每届估算约 $6k–$29k，通常 3–8 家；DIS 的名单常常只有 1–5 家，且很多是当地旅游局、市政府和承办高校。
-- **FAccT 的资金结构很特别**：约 40% 的赞助条目来自基金会（MacArthur 8 届、Ford、Sloan、Luminate、Schmidt、Rockefeller、Open Society 等），这在其他 HCI 会议里很少见；企业方面 Google（含 DeepMind）每届都在，Microsoft 7 届，OpenAI 从 2021 年起 5 届，近两年还有 TikTok。
-- **Google 是唯一在七个会议里都出现的企业**，并且是 IUI（10 届）和 FAccT（9 届）的头号赞助方。
-- **AIES 与 FAccT 对比**：两边约 58% 的条目来自企业，但构成不同。FAccT 的基金会以 MacArthur、Ford、Sloan、Luminate 等社会公正/公民社会方向为主；AIES 的基金会则是 Future of Life Institute、BERI、Founders Pledge、Survival and Flourishing Fund 等 AI 安全/长期主义方向。企业方面，FAccT 有 OpenAI、Microsoft；AIES 则更多是 IBM（7 届）、PwC、JPMorgan Chase（2023–2025）、Salesforce、Lenovo、Ericsson 这类卖企业服务或受监管的公司。AIES 的估算赞助在 2023 年达到约 $160k 后回落到 2026 年的约 $45k。
-- IUI 2023 年起企业赞助明显减少，NSF、MDPI、MBZUAI 等非企业机构成为主要支持方。
+1. **Corporate sponsorship of CSCW collapsed.** The estimate fell from about $61k per edition in 2013–2017 to about $9k in 2023–2026. Meta (top tier at almost every edition 2013–2022), Microsoft (after 2021) and IBM (after 2019) all left.
+2. **Highly concentrated.** Most sponsors appear only once. Google, Microsoft, Meta, Adobe and Autodesk account for about a third of all organization-editions and about 41% of the estimated money.
+3. **CHI grew faster than its sponsorship.** Sponsorship per attendee fell from about $70–94 in 2013–2019 to about $36–57 in 2020–2024.
+4. **Turnover in who pays.** IBM, Yahoo and Bloomberg left; Apple, Toyota Research Institute, Meta Reality Labs and Huawei arrived, leaning toward XR, hardware and AI products.
+5. **Mostly American, with host effects elsewhere.** About 40% of non-US sponsorship happens in years when the conference is held in that sponsor's country.
 
-## AI 会议部分（NeurIPS / ICML / ICLR，2013–2026）
+**DIS, IUI, FAccT and AIES**
 
-```
-data/ai/raw/{neurips,icml,iclr}_raw.tsv   # 原始名单：年份、举办地、等级、机构名、链接（EMPTY = 当年没取得名单）
-data/ai/ai_sponsor_listings.csv          # 清洗后明细（同一机构在一届只保留最高等级）
-data/ai/ai_per_conference_year.csv       # 每届汇总：赞助方数、金融机构数、估算金额、注册人数
-data/ai/ai_top_sponsors.csv              # 机构排名
-data/ai/ai_tier_prices.csv               # 找到的两份公开价目
-scripts/ai/build_ai.py                   # 由 raw 生成以上文件（python scripts/ai/build_ai.py）
-scripts/ai/normalize.py, ai_meta.py      # 机构名归一化；行业类型与国家归属
-dashboard/ai/                            # AI 会议 dashboard（含与 HCI 的对比）
-```
+- All four are small. IUI has about $6k–29k and 3–8 sponsors per edition; DIS often lists 1–5, many of them local tourism boards, city governments and host universities.
+- **FAccT is unusually foundation-funded.** About 40% of its listings are foundations (MacArthur in 8 editions, Ford, Sloan, Luminate, Schmidt, Rockefeller, Open Society). Google sponsored every edition, Microsoft seven, OpenAI five since 2021.
+- **AIES has a different mix.** Companies make up a similar share (about 58%), but its foundations are AI-safety and longtermist funders (Future of Life Institute, BERI, Founders Pledge, Survival and Flourishing Fund), and its companies lean toward enterprise and regulated firms: IBM (7 editions), PwC, JPMorgan Chase (2023–2025), Salesforce, Lenovo, Ericsson.
+- **Google is the only organization that sponsored all eight conferences.**
 
-- **覆盖**：1,907 条赞助记录，578 家机构，33 个会议届次。NeurIPS 2013–2026（2021 年没有设赞助）、ICML 2015–2026、ICLR 2017、2020–2026。
-- **来源**：2015 年起来自 neurips.cc / icml.cc / iclr.cc 的公开赞助接口 `/sponsors/api/sponsors/public/?year=Y`；NeurIPS 2013–2014 来自会议手册 PDF；ICML 2015–2016、ICLR 2017 来自旧官网存档；ICLR 2026 来自其赞助商列表页。
-- **缺口**：ICML 2013–2014、ICLR 2013–2016 与 2018–2019。
-- **机构合并**：DeepMind / Google Research / Kaggle → Google；LinkedIn → Microsoft；Habana、Nervana → Intel；Xilinx → AMD；TikTok → ByteDance；Borealis AI → RBC；MosaicML → Databricks；TRI → Toyota。
-- **行业类型**：科技及其他企业 / 金融·量化（对冲基金、做市商、银行、金融数据、VC）/ 政府·学术·非营利 / 出版社。
-- **金额**：只找到 NeurIPS 2024 与 ICML 2026 的公开价目，只给相邻年份（NeurIPS 2023–2025、ICML 2025–2026）估算；Silver Pavilion、Startup 等无价等级不计。参照：NeurIPS 官方预算说明中 2019 年赞助收入为 $3.7M。
-- **注册人数**：NeurIPS fact sheet、ICML 官方统计、ICLR 来自 Wikipedia。
-- **国家**：按赞助实体总部；约 40 家小公司无法确定，标为 `??`。
+**AI conferences compared with HCI**
 
-### 主要发现（与 HCI 对比）
+1. **An order of magnitude larger.** NeurIPS 2025 is estimated at $5.8M or more from 148 sponsors; CHI 2025 at about $0.43M from 21.
+2. **Finance is the second-largest group.** About 22% of AI listings and 28% of the estimated money come from trading and quant firms (Citadel, Jane Street, Jump, D. E. Shaw, Two Sigma, HRT, Optiver, G-Research). HCI conferences have almost none.
+3. **The same companies split differently.** Google, Microsoft and Meta sponsor both sides; Adobe and Autodesk mostly HCI; Amazon, Baidu and ByteDance almost only AI.
+4. **More Chinese sponsors.** About 9% of AI organization-editions are from mainland China, versus under 3% for HCI.
+5. **New entrants are AI infrastructure and data companies** (Lambda, Together AI, Nebius, Cerebras, Scale AI, Toloka, Turing, Handshake), mostly since 2023.
 
-1. **规模差一个数量级**：NeurIPS 2025 估算赞助下限约 $5.8M、148 家赞助方；同年 CHI 约 $0.43M、21 家。
-2. **金融/量化是第二大赞助群体**：约 22% 的赞助条目、约 28% 的可估算金额来自 Citadel、Jane Street、Jump、D. E. Shaw、Two Sigma、HRT、Optiver、G-Research 等，比例多年稳定；HCI 会议几乎没有。
-3. **同一批大厂两边分配不同**：Google、Microsoft、Meta 两边都长期赞助；Adobe、Autodesk 主要在 HCI；Amazon、Baidu、ByteDance 几乎只在 AI。
-4. **中国机构占比更高**：AI 会议约 9% 的“机构 × 届次”来自中国大陆（百度、字节、阿里、蚂蚁、腾讯、华为、宽德、明汯、聚宽等量化机构），HCI 不到 3%。
-5. **新进入者是 AI 基础设施与数据公司**：Lambda、Together AI、Nebius、Cerebras、Scale AI、Toloka、Turing、Handshake 等 2023 年后大量出现，一半以上机构只出现过一届。
+## Website
 
-## 公开网页（GitHub Pages）
+`docs/` is a static site: `docs/index.html` (HCI and AI ethics, English / Chinese) and `docs/ai/index.html` (AI conferences).
 
-`docs/` 是可直接发布的静态网站：`docs/index.html`（HCI 与 AI 伦理会议，英文/中文可切换）和 `docs/ai/index.html`（AI 会议）。
+1. Fill in `site.config.json`: `author`, `homepage`, `email` (optional), `github_repo`, `site_url` and `goatcounter` (optional).
+2. Run `python scripts/build_site.py`.
+3. Deploy: import the repository in Vercel (`vercel.json` already serves `docs/` with no build step), or use GitHub Pages, Netlify or Cloudflare Pages.
 
-1. 在 `site.config.json` 填写 `author`、`homepage`、`email`（可留空）、`github_repo`（`owner/repo`）、`site_url`（网站的公开地址）和 `goatcounter`（GoatCounter 站点代码，可留空）。
-2. 运行 `python scripts/build_site.py` 重新生成 `docs/`。
-3. 发布：用 Vercel 导入这个仓库即可（`vercel.json` 已设定直接发布 `docs/`，无需构建）；也可以用 GitHub Pages（Settings → Pages，分支 `main`、目录 `/docs`）或 Netlify / Cloudflare Pages。
+Page views are counted with [GoatCounter](https://www.goatcounter.com/), which uses no cookies. Tick "Allow adding visitor counts on your website" in its settings so the footer can show the count.
 
-浏览量统计用 [GoatCounter](https://www.goatcounter.com/)：注册后得到站点代码；需要在 GoatCounter 的 Settings 里勾选 “Allow adding visitor counts on your website”，页脚才能显示浏览次数。它不使用 cookie。
+## License and disclaimer
 
-## 许可
+The data in `data/` are released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) and the code under the MIT License (see `LICENSE` and `data/LICENSE`). You may reuse and adapt them, including commercially, with credit. Suggested citation:
 
-数据（`data/`）以 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 发布，代码以 MIT 许可发布（见 `LICENSE`、`data/LICENSE`）。数据整理自公开网页；各机构名称与 logo 归其所有者。本项目与 ACM、SIGCHI、AAAI 及各会议无关联。国旗图标来自 [flag-icons](https://github.com/lipis/flag-icons)（MIT）。
+> Holly Tianqi Song (2026). *Who Sponsors HCI and AI-Ethics Conferences*. https://github.com/Hollie7/who-sponsors-hci
+
+This is an independent project, not affiliated with or endorsed by ACM, SIGCHI, AAAI, any of the conferences or any organization listed. The lists were compiled by hand from public pages and may be incomplete or contain errors; corrections are welcome as GitHub issues. Organization names and logos belong to their owners. Flag icons are from [flag-icons](https://github.com/lipis/flag-icons) (MIT).
