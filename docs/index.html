@@ -189,6 +189,11 @@ window.dash = (() => {
 .hx .set-btn{font-size:13px;padding:5px 11px}
 .hx-toc a{font-size:13px;padding:5px 0 5px 12px}
 .hx h1,.hx h2{scroll-margin-top:8rem}
+.hx .tldr{margin-top:1.4rem;padding:1rem 1.25rem 1.1rem 1.25rem;border-left:3px solid var(--hx-c1);background:color-mix(in srgb, var(--hx-c1) 7%, transparent);border-radius:0 var(--cds-radius) var(--cds-radius) 0;max-width:44rem}
+.hx .tldr-k{margin:0 0 .5rem;font-size:12px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--hx-c1)}
+.hx .tldr ul{margin:0;padding-left:1.1rem;font-size:16px;line-height:1.7;color:var(--color-fg)}
+.hx .tldr li+li{margin-top:.4rem}
+.hx .tldr strong{font-weight:600}
 </style>
 
 <div class="hx-shell" data-lang="en">
@@ -223,9 +228,20 @@ window.dash = (() => {
     </div>
     <h1 id="top"><span lang="en">Who Sponsors HCI Conferences</span><span lang="zh">谁在赞助 HCI 会议</span></h1>
     <p class="note" style="margin:var(--cds-gap-xs) 0 0">CHI · CSCW · UIST · UbiComp · DIS · IUI · FAccT · AIES</p>
-    <p class="lede" id="takeaway" lang="en">Sponsorship is concentrated in a few big tech companies: across all years Google appears in <b data-source="kpis" data-field="value" data-where="metric=google" class="dash-skeleton">—</b> editions, Microsoft in <b data-source="kpis" data-field="value" data-where="metric=microsoft" class="dash-skeleton">—</b> and Meta in <b data-source="kpis" data-field="value" data-where="metric=meta" class="dash-skeleton">—</b>. Corporate sponsorship of CSCW has shrunk sharply: at published tier prices, the average per edition fell from about <b data-source="cscw_trend" data-field="value" data-where="period=2013%E2%80%932017" class="dash-skeleton">—</b> in 2013–2017 to about <b data-source="cscw_trend" data-field="value" data-where="period=2023%E2%80%932026" class="dash-skeleton">—</b> in 2023–2026.</p>
-    <p class="lede" lang="zh">赞助几乎集中在少数大科技公司：全部年份里 Google 出现 <b data-source="kpis" data-field="value" data-where="metric=google" class="dash-skeleton">—</b> 届、Microsoft <b data-source="kpis" data-field="value" data-where="metric=microsoft" class="dash-skeleton">—</b> 届、Meta <b data-source="kpis" data-field="value" data-where="metric=meta" class="dash-skeleton">—</b> 届。CSCW 的企业赞助明显萎缩——按公开等级价估算，2013–2017 年平均每届约 <b data-source="cscw_trend" data-field="value" data-where="period=2013%E2%80%932017" class="dash-skeleton">—</b>，2023–2026 年降到约 <b data-source="cscw_trend" data-field="value" data-where="period=2023%E2%80%932026" class="dash-skeleton">—</b>。</p>
-    <div class="ctrls" style="margin-top:var(--cds-gap-sm)" data-source="listings">
+    <aside class="tldr" id="takeaway" aria-label="Key findings">
+      <p class="tldr-k"><span lang="en">TL;DR</span><span lang="zh">要点</span></p>
+      <ul lang="en">
+        <li><strong>A few big tech companies dominate.</strong> Across all years and conferences, Google appears in <b data-source="kpis" data-field="value" data-where="metric=google" class="dash-skeleton">—</b> editions, Microsoft in <b data-source="kpis" data-field="value" data-where="metric=microsoft" class="dash-skeleton">—</b> and Meta in <b data-source="kpis" data-field="value" data-where="metric=meta" class="dash-skeleton">—</b>.</li>
+        <li><strong>CSCW’s corporate sponsorship collapsed.</strong> At published tier prices, the average per edition fell from about <b data-source="cscw_trend" data-field="value" data-where="period=2013%E2%80%932017" class="dash-skeleton">—</b> in 2013–2017 to about <b data-source="cscw_trend" data-field="value" data-where="period=2023%E2%80%932026" class="dash-skeleton">—</b> in 2023–2026.</li>
+        <li><strong>Who pays keeps changing.</strong> IBM, Yahoo and Bloomberg dropped out; Apple, Toyota Research Institute and Huawei moved in. FAccT and AIES lean heavily on foundations.</li>
+      </ul>
+      <ul lang="zh">
+        <li><strong>少数大科技公司占主导。</strong>所有年份和会议中，Google 出现 <b data-source="kpis" data-field="value" data-where="metric=google" class="dash-skeleton">—</b> 届，Microsoft <b data-source="kpis" data-field="value" data-where="metric=microsoft" class="dash-skeleton">—</b> 届，Meta <b data-source="kpis" data-field="value" data-where="metric=meta" class="dash-skeleton">—</b> 届。</li>
+        <li><strong>CSCW 的企业赞助大幅萎缩。</strong>按公开等级价估算，每届平均从 2013–2017 年的约 <b data-source="cscw_trend" data-field="value" data-where="period=2013%E2%80%932017" class="dash-skeleton">—</b> 降到 2023–2026 年的约 <b data-source="cscw_trend" data-field="value" data-where="period=2023%E2%80%932026" class="dash-skeleton">—</b>。</li>
+        <li><strong>赞助方不断更替。</strong>IBM、Yahoo、Bloomberg 先后退出，Apple、Toyota Research Institute、华为进入；FAccT 和 AIES 很大程度上依靠基金会。</li>
+      </ul>
+    </aside>
+    <div class="ctrls" style="margin-top:1.1rem" data-source="listings">
       <button class="xbtn" id="ex-btn" style="margin-left:0"><span lang="en">Export raw data (CSV)</span><span lang="zh">导出原始数据（CSV）</span></button>
       <span class="note" id="ex-status" role="status" style="margin:0"></span>
     </div>
