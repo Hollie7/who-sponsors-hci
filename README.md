@@ -129,9 +129,9 @@ dashboard/ai/                            # AI 会议 dashboard（含与 HCI 的�
 
 `docs/` 是可直接发布的静态网站：`docs/index.html`（HCI 与 AI 伦理会议，英文/中文可切换）和 `docs/ai/index.html`（AI 会议）。
 
-1. 在 `site.config.json` 填写 `author`、`homepage`、`email`（可留空）、`github_repo`（`owner/repo`）和 `goatcounter`（GoatCounter 站点代码，可留空）。
+1. 在 `site.config.json` 填写 `author`、`homepage`、`email`（可留空）、`github_repo`（`owner/repo`）、`site_url`（网站的公开地址）和 `goatcounter`（GoatCounter 站点代码，可留空）。
 2. 运行 `python scripts/build_site.py` 重新生成 `docs/`。
-3. 在 GitHub 仓库 Settings → Pages 中选择 “Deploy from a branch”，分支 `main`、目录 `/docs`。
+3. 发布：用 Vercel 导入这个仓库即可（`vercel.json` 已设定直接发布 `docs/`，无需构建）；也可以用 GitHub Pages（Settings → Pages，分支 `main`、目录 `/docs`）或 Netlify / Cloudflare Pages。
 
 浏览量统计用 [GoatCounter](https://www.goatcounter.com/)：注册后得到站点代码；需要在 GoatCounter 的 Settings 里勾选 “Allow adding visitor counts on your website”，页脚才能显示浏览次数。它不使用 cookie。
 

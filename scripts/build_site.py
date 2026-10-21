@@ -3,7 +3,7 @@
     python scripts/build_site.py
 
 Reads site.config.json (author, homepage, email, github_repo "owner/repo",
-goatcounter code) and writes:
+site_url where the site is published, goatcounter code) and writes:
     docs/index.html        HCI and AI-ethics conferences (English / 中文)
     docs/ai/index.html     NeurIPS / ICML / ICLR
     docs/data/...          the CSV files both pages load
@@ -18,7 +18,7 @@ cfg = json.load(open(os.path.join(ROOT, 'site.config.json'), encoding='utf-8'))
 e = lambda v: html.escape(v or '', quote=True)
 repo = cfg.get('github_repo') or ''
 owner, _, name = repo.partition('/')
-site_url = f'https://{owner}.github.io/{name}/' if owner and name else ''
+site_url = cfg.get('site_url') or ''   # e.g. https://whosponsorshci.vercel.app/
 year = datetime.date.today().year
 
 def footer(bilingual, page_rel_root):
