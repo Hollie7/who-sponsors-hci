@@ -86,6 +86,9 @@ PAGES = {
     '': ('HCI Conference Sponsorship', {'listings': '../data/sponsor_listings.csv', 'pcy': '../data/per_conference_year.csv', 'prices': '../data/tier_prices.csv'}),
     'ml': ('ML Conference Sponsorship', {'listings': '../../data/ai/ai_sponsor_listings.csv', 'pcy': '../../data/ai/ai_per_conference_year.csv',
             'prices': '../../data/ai/ai_tier_prices.csv', 'hci_listings': '../../data/sponsor_listings.csv', 'hci_pcy': '../../data/per_conference_year.csv'}),
+    'nlp': ('NLP Conference Sponsorship', {'listings': '../../data/nlp/nlp_sponsor_listings.csv', 'pcy': '../../data/nlp/nlp_per_conference_year.csv',
+            'prices': '../../data/nlp/nlp_tier_prices.csv', 'ml_listings': '../../data/ai/ai_sponsor_listings.csv', 'ml_pcy': '../../data/ai/ai_per_conference_year.csv',
+            'hci_listings': '../../data/sponsor_listings.csv', 'hci_pcy': '../../data/per_conference_year.csv'}),
 }
 
 if __name__ == '__main__':

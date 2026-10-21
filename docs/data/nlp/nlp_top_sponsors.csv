@@ -1,0 +1,235 @@
+org,sector,country,appearances,conferences,first,last,est_usd
+Google,Tech & other industry,US,34,"ACL, EMNLP, NAACL",2013,2026,585300.0
+Amazon,Tech & other industry,US,30,"ACL, EMNLP, NAACL",2013,2025,394100.0
+Bloomberg,Finance / quant,US,29,"ACL, EMNLP, NAACL",2014,2026,515300.0
+Meta/Facebook,Tech & other industry,US,29,"ACL, EMNLP, NAACL",2013,2026,474500.0
+Baidu,Tech & other industry,CN,29,"ACL, EMNLP, NAACL",2013,2026,419700.0
+Microsoft,Tech & other industry,US,25,"ACL, EMNLP, NAACL",2013,2025,204425.0
+Apple,Tech & other industry,US,24,"ACL, EMNLP, NAACL",2017,2026,587000.0
+IBM,Tech & other industry,US,24,"ACL, EMNLP, NAACL",2013,2025,166500.0
+Megagon Labs,Tech & other industry,US,22,"ACL, EMNLP, NAACL",2018,2026,410500.0
+Adobe,Tech & other industry,US,20,"ACL, EMNLP, NAACL",2016,2026,103900.0
+ByteDance,Tech & other industry,CN,19,"ACL, EMNLP, NAACL",2017,2025,316075.0
+Grammarly,Tech & other industry,US,18,"ACL, EMNLP, NAACL",2016,2024,143650.0
+Duolingo,Tech & other industry,US,15,"ACL, EMNLP, NAACL",2017,2023,60150.0
+Babelscape,Tech & other industry,IT,15,"ACL, EMNLP, NAACL",2019,2026,54550.0
+Huawei,Tech & other industry,CN,14,"ACL, EMNLP, NAACL",2013,2025,102350.0
+Nuance,Tech & other industry,US,13,"ACL, EMNLP, NAACL",2013,2018,11000.0
+Alibaba,Tech & other industry,CN,11,"ACL, EMNLP",2015,2026,201400.0
+NAVER,Tech & other industry,KR,11,"ACL, EMNLP",2017,2022,66400.0
+USC / ISI,Government / academic / non-profit,US,11,"ACL, EMNLP, NAACL",2013,2020,13045.0
+Cohere,Tech & other industry,CA,10,"ACL, EMNLP, NAACL",2022,2026,205000.0
+Tencent,Tech & other industry,CN,10,"ACL, EMNLP",2015,2026,181500.0
+Oracle,Tech & other industry,US,10,"ACL, EMNLP, NAACL",2016,2026,164500.0
+Translated,Tech & other industry,IT,10,"ACL, EMNLP, NAACL",2022,2026,54000.0
+eBay,Tech & other industry,US,10,"ACL, EMNLP, NAACL",2016,2019,23000.0
+Ant Group,Tech & other industry,CN,8,"ACL, EMNLP",2023,2026,160500.0
+JPMorgan Chase,Finance / quant,US,8,"ACL, EMNLP, NAACL",2023,2026,87000.0
+SAP,Tech & other industry,DE,8,"ACL, EMNLP, NAACL",2017,2026,42280.0
+Yandex,Tech & other industry,RU,8,"ACL, EMNLP",2013,2017,0.0
+Johns Hopkins University,Government / academic / non-profit,US,7,"ACL, EMNLP, NAACL",2013,2022,10380.0
+University of Washington,Government / academic / non-profit,US,7,"ACL, NAACL",2013,2026,2000.0
+Capital One,Finance / quant,US,6,"ACL, EMNLP, NAACL",2018,2026,149500.0
+ASAPP,Tech & other industry,US,6,"ACL, EMNLP, NAACL",2018,2022,90125.0
+G-Research,Finance / quant,GB,6,"ACL, EMNLP, NAACL",2019,2022,66300.0
+NEC,Tech & other industry,JP,6,"ACL, EMNLP",2017,2026,45000.0
+ServiceNow,Tech & other industry,US,6,"ACL, EMNLP, NAACL",2021,2023,34000.0
+VoiceBox,Tech & other industry,US,6,"ACL, EMNLP, NAACL",2015,2016,0.0
+Salesforce,Tech & other industry,US,5,"ACL, EMNLP",2018,2023,78125.0
+Appen,Tech & other industry,AU,5,"ACL, EMNLP, NAACL",2013,2026,53000.0
+Bosch,Tech & other industry,DE,5,ACL,2017,2023,42775.0
+Two Sigma,Finance / quant,US,5,"ACL, NAACL",2018,2024,42400.0
+PolyAI,Tech & other industry,GB,5,"ACL, EMNLP, NAACL",2018,2020,32300.0
+Maluuba,Tech & other industry,CA,5,"ACL, EMNLP, NAACL",2016,2017,0.0
+LivePerson,Tech & other industry,US,4,"ACL, EMNLP, NAACL",2022,2023,112500.0
+Toloka,Tech & other industry,NL,4,"ACL, EMNLP, NAACL",2024,2025,102500.0
+Xiaomi,Tech & other industry,CN,4,"ACL, EMNLP",2019,2025,89300.0
+DataOcean AI,Tech & other industry,CN,4,"ACL, EMNLP",2023,2026,36500.0
+Samsung,Tech & other industry,KR,4,ACL,2015,2019,31775.0
+CVTE,Tech & other industry,CN,4,"ACL, EMNLP",2017,2018,14800.0
+ETS,Tech & other industry,US,4,"ACL, NAACL",2013,2022,12050.0
+Sogou,Tech & other industry,CN,4,"ACL, EMNLP",2015,2018,6800.0
+Rakuten,Tech & other industry,JP,4,"ACL, EMNLP, NAACL",2013,2022,2250.0
+Brandeis University,Government / academic / non-profit,US,4,"ACL, EMNLP, NAACL",2014,2018,2050.0
+Yahoo,Tech & other industry,US,4,"ACL, NAACL",2013,2015,0.0
+Citadel,Finance / quant,US,3,"ACL, EMNLP",2016,2025,80000.0
+Meituan,Tech & other industry,CN,3,"ACL, EMNLP",2024,2026,75000.0
+Chen Institute,Government / academic / non-profit,US,3,ACL,2024,2026,50000.0
+Thomson Reuters,Tech & other industry,CA,3,"ACL, EMNLP, NAACL",2019,2026,44300.0
+JD.com,Tech & other industry,CN,3,"ACL, EMNLP",2018,2019,34700.0
+aiXplain,Tech & other industry,US,3,"ACL, EMNLP",2022,2023,15000.0
+Cisco,Tech & other industry,US,3,"ACL, EMNLP, NAACL",2019,2019,11000.0
+Shannon AI,Tech & other industry,CN,3,"ACL, EMNLP",2018,2019,8200.0
+LegalForce,Tech & other industry,JP,3,"ACL, EMNLP, NAACL",2021,2021,6250.0
+KPMG,Tech & other industry,GB,3,"ACL, EMNLP, NAACL",2017,2018,5200.0
+Baobab,Tech & other industry,JP,3,"ACL, EMNLP, NAACL",2015,2025,4500.0
+Elsevier,Publisher,NL,3,ACL,2016,2018,4400.0
+Textkernel,Tech & other industry,NL,3,"ACL, EMNLP",2016,2018,2050.0
+Recruit,Tech & other industry,JP,3,"ACL, EMNLP",2015,2017,0.0
+SDL,Tech & other industry,GB,3,"ACL, NAACL",2013,2015,0.0
+HPC-AI Tech,Tech & other industry,SG,2,EMNLP,2023,2025,70000.0
+Airbnb,Tech & other industry,US,2,EMNLP,2025,2026,62500.0
+Snowflake,Tech & other industry,US,2,ACL,2025,2026,62500.0
+Sony,Tech & other industry,JP,2,"ACL, EMNLP",2023,2024,57500.0
+GTCOM,Tech & other industry,CN,2,"ACL, EMNLP",2022,2023,50000.0
+SCAI,Tech & other industry,SA,2,EMNLP,2022,2024,47500.0
+Abaka AI,Tech & other industry,CN,2,"ACL, EMNLP",2025,2026,39500.0
+Ahrefs,Tech & other industry,SG,2,"ACL, EMNLP",2023,2024,35000.0
+Kensho,Finance / quant,US,2,NAACL,2022,2024,35000.0
+King Salman Global Academy for Arabic,Government / academic / non-profit,SA,2,EMNLP,2023,2025,34500.0
+TCEB,Government / academic / non-profit,TH,2,ACL,2021,2024,30000.0
+Relativity,Tech & other industry,US,2,"ACL, NAACL",2022,2022,17500.0
+DATAmundi,Tech & other industry,PL,2,"ACL, EMNLP",2026,2026,15000.0
+Verisk,Tech & other industry,US,2,"ACL, EMNLP",2019,2019,14800.0
+NatWest,Finance / quant,GB,2,ACL,2025,2026,12000.0
+Vanguard,Finance / quant,US,2,NAACL,2019,2021,10200.0
+Monash University,Government / academic / non-profit,AU,2,ACL,2018,2019,5680.0
+Raytheon BBN,Tech & other industry,US,2,"ACL, NAACL",2019,2019,3950.0
+Interactions,Tech & other industry,US,2,NAACL,2015,2019,2850.0
+NextAI,Government / academic / non-profit,CA,2,EMNLP,2017,2018,2050.0
+AIAT,Government / academic / non-profit,TH,2,ACL,2021,2024,2000.0
+NECTEC,Government / academic / non-profit,TH,2,ACL,2021,2024,2000.0
+Newsela,Tech & other industry,US,2,"ACL, NAACL",2016,2017,0.0
+Qatar Computing Research Institute,Government / academic / non-profit,QA,2,"ACL, EMNLP",2013,2014,0.0
+Snap,Tech & other industry,US,2,EMNLP,2017,2022,0.0
+Xerox,Tech & other industry,US,2,ACL,2013,2014,0.0
+LG,Tech & other industry,KR,1,ACL,2024,2024,40000.0
+MiroMind,Tech & other industry,CN,1,EMNLP,2025,2025,40000.0
+NewsBreak,Tech & other industry,US,1,ACL,2024,2024,40000.0
+GPTZero,Tech & other industry,US,1,EMNLP,2026,2026,35000.0
+Zhongguancun Academy,Government / academic / non-profit,CN,1,ACL,2026,2026,35000.0
+rednote,Tech & other industry,CN,1,EMNLP,2026,2026,35000.0
+MBZUAI,Government / academic / non-profit,AE,1,EMNLP,2022,2022,30000.0
+NYU Abu Dhabi,Government / academic / non-profit,AE,1,EMNLP,2022,2022,30000.0
+Intuit,Tech & other industry,US,1,EMNLP,2024,2024,27500.0
+SCB 10X,Finance / quant,TH,1,ACL,2024,2024,27500.0
+Sahara AI,Tech & other industry,US,1,EMNLP,2025,2025,27500.0
+Flitto,Tech & other industry,KR,1,ACL,2023,2023,20000.0
+KAUST,Government / academic / non-profit,SA,1,ACL,2023,2023,20000.0
+Otter.ai,Tech & other industry,US,1,NAACL,2024,2024,20000.0
+Speak,Tech & other industry,US,1,ACL,2026,2026,20000.0
+StepFun,Tech & other industry,CN,1,ACL,2026,2026,20000.0
+Tether,Finance / quant,SV,1,EMNLP,2026,2026,20000.0
+Tetrasoft,Tech & other industry,US,1,EMNLP,2022,2022,20000.0
+Exa,Tech & other industry,US,1,ACL,2024,2024,15000.0
+Kuaishou,Tech & other industry,CN,1,ACL,2025,2025,15000.0
+Millennium,Finance / quant,US,1,EMNLP,2024,2024,15000.0
+MiniMax,Tech & other industry,CN,1,EMNLP,2025,2025,15000.0
+Reveal Data,Tech & other industry,US,1,NAACL,2022,2022,15000.0
+Turing,Tech & other industry,US,1,EMNLP,2024,2024,15000.0
+Ubiquant,Finance / quant,CN,1,EMNLP,2025,2025,15000.0
+KU Leuven,Government / academic / non-profit,BE,1,EMNLP,2018,2018,12200.0
+Research Foundation Flanders,Government / academic / non-profit,BE,1,EMNLP,2018,2018,12200.0
+Visit Brussels,Government / academic / non-profit,BE,1,EMNLP,2018,2018,12200.0
+Beyond Limits,Tech & other industry,AE,1,EMNLP,2022,2022,10000.0
+Comcast,Tech & other industry,US,1,ACL,2023,2023,10000.0
+Technology Innovation Institute,Government / academic / non-profit,AE,1,EMNLP,2022,2022,10000.0
+HPLT Project,Government / academic / non-profit,FI,1,EMNLP,2025,2025,9000.0
+Nexdata,Tech & other industry,CN,1,ACL,2025,2025,9000.0
+DHCRC,Government / academic / non-profit,AU,1,ACL,2018,2018,8000.0
+DiDi,Tech & other industry,CN,1,ACL,2019,2019,8000.0
+ARC Document Solutions,Tech & other industry,US,1,ACL,2026,2026,7500.0
+Alice,Tech & other industry,IL,1,EMNLP,2026,2026,7500.0
+Booking.com,Tech & other industry,NL,1,EMNLP,2026,2026,7500.0
+Keenable,Tech & other industry,??,1,EMNLP,2026,2026,7500.0
+OpenAI,Tech & other industry,US,1,NAACL,2022,2022,7500.0
+Oruk,Tech & other industry,??,1,EMNLP,2026,2026,7500.0
+TIAA,Finance / quant,US,1,NAACL,2022,2022,7500.0
+Zeta Alpha,Tech & other industry,NL,1,EMNLP,2020,2020,7500.0
+Yitu,Tech & other industry,CN,1,EMNLP,2018,2018,6800.0
+Zhuiyi,Tech & other industry,CN,1,EMNLP,2019,2019,6800.0
+jenni.ai,Tech & other industry,US,1,EMNLP,2023,2023,6000.0
+Tulane University,Government / academic / non-profit,US,1,NAACL,2018,2018,5200.0
+Defined AI,Tech & other industry,GB,1,ACL,2025,2025,4500.0
+Figma,Tech & other industry,US,1,EMNLP,2024,2024,4500.0
+Florida International University,Government / academic / non-profit,US,1,EMNLP,2024,2024,4500.0
+Jane Street,Finance / quant,US,1,EMNLP,2024,2024,4500.0
+Josh Talks,Tech & other industry,IN,1,EMNLP,2025,2025,4500.0
+Keensight,Tech & other industry,??,1,EMNLP,2025,2025,4500.0
+Magic Data,Tech & other industry,CN,1,NAACL,2022,2022,4500.0
+Unix AI,Tech & other industry,??,1,EMNLP,2025,2025,4500.0
+neptune.ai,Tech & other industry,PL,1,EMNLP,2025,2025,4500.0
+BMW,Tech & other industry,DE,1,ACL,2019,2019,4400.0
+Intel,Tech & other industry,US,1,EMNLP,2021,2021,4000.0
+Hitachi,Tech & other industry,JP,1,EMNLP,2020,2020,3900.0
+AIS,Tech & other industry,TH,1,ACL,2021,2021,3000.0
+Backyard,Tech & other industry,TH,1,ACL,2021,2021,3000.0
+Krungthai Bank,Finance / quant,TH,1,ACL,2021,2021,3000.0
+Mercari,Tech & other industry,JP,1,EMNLP,2023,2023,3000.0
+ModelBest,Tech & other industry,CN,1,EMNLP,2023,2023,3000.0
+Nyonic,Tech & other industry,DE,1,EMNLP,2023,2023,3000.0
+Spotify,Tech & other industry,GB,1,ACL,2022,2022,3000.0
+Figure Eight,Tech & other industry,US,1,NAACL,2018,2018,2850.0
+Almawave,Tech & other industry,IT,1,ACL,2019,2019,2400.0
+DST Group,Government / academic / non-profit,AU,1,ACL,2018,2018,2400.0
+Expert System,Tech & other industry,IT,1,ACL,2019,2019,2400.0
+UC Santa Cruz,Government / academic / non-profit,US,1,NAACL,2022,2022,2250.0
+Hong Kong Tourism Board,Government / academic / non-profit,HK,1,EMNLP,2019,2019,2050.0
+Clinc,Tech & other industry,US,1,NAACL,2019,2019,1550.0
+iMerit,Tech & other industry,US,1,NAACL,2018,2018,1550.0
+City of Melbourne,Government / academic / non-profit,AU,1,ACL,2018,2018,1280.0
+Melbourne Convention Bureau,Government / academic / non-profit,AU,1,ACL,2018,2018,1280.0
+Roam Analytics,Tech & other industry,US,1,ACL,2018,2018,1280.0
+Sintelix,Tech & other industry,AU,1,ACL,2018,2018,1280.0
+Allen Institute for AI,Government / academic / non-profit,US,1,EMNLP,2018,2018,1090.0
+Text IQ,Tech & other industry,US,1,EMNLP,2018,2018,1090.0
+Capital Group,Finance / quant,US,1,NAACL,2019,2019,850.0
+3M,Tech & other industry,US,1,EMNLP,2016,2016,0.0
+AI Thailand,Government / academic / non-profit,TH,1,ACL,2024,2024,0.0
+Abu Dhabi Convention and Exhibition Bureau,Government / academic / non-profit,AE,1,EMNLP,2022,2022,0.0
+Bailu,Tech & other industry,??,1,EMNLP,2025,2025,0.0
+Bulgarian Academy of Sciences,Government / academic / non-profit,BG,1,ACL,2013,2013,0.0
+COLIPS,Government / academic / non-profit,SG,1,EMNLP,2023,2023,0.0
+CRA Computing Community Consortium,Government / academic / non-profit,US,1,NAACL,2018,2018,0.0
+CSIRO,Government / academic / non-profit,AU,1,ACL,2018,2018,0.0
+Cambridge University Press,Publisher,GB,1,ACL,2020,2020,0.0
+Carnegie Mellon University Qatar,Government / academic / non-profit,QA,1,EMNLP,2014,2014,0.0
+Chinese Information Processing Society of China,Government / academic / non-profit,CN,1,ACL,2015,2015,0.0
+Civis Analytics,Tech & other industry,US,1,NAACL,2016,2016,0.0
+Columbia University,Government / academic / non-profit,US,1,ACL,2017,2017,0.0
+CreditEase,Finance / quant,CN,1,ACL,2015,2015,0.0
+Deloitte,Tech & other industry,GB,1,EMNLP,2017,2017,0.0
+Digital Roots,Tech & other industry,US,1,NAACL,2015,2015,0.0
+DigitalGenius,Tech & other industry,GB,1,EMNLP,2015,2015,0.0
+ETDA,Government / academic / non-profit,TH,1,ACL,2024,2024,0.0
+Goldman Sachs,Finance / quant,US,1,NAACL,2015,2015,0.0
+IDEA Toscana,Government / academic / non-profit,IT,1,ACL,2019,2019,0.0
+INESC-ID,Government / academic / non-profit,PT,1,EMNLP,2015,2015,0.0
+Instituto Superior Técnico,Government / academic / non-profit,PT,1,EMNLP,2015,2015,0.0
+Instituto de Telecomunicações,Government / academic / non-profit,PT,1,EMNLP,2015,2015,0.0
+KBTG,Finance / quant,TH,1,ACL,2024,2024,0.0
+Lisbon City Council,Government / academic / non-profit,PT,1,EMNLP,2015,2015,0.0
+META-NET,Government / academic / non-profit,EU,1,ACL,2013,2013,0.0
+Machine Zone,Tech & other industry,US,1,NAACL,2015,2015,0.0
+Meeting Destination Vienna,Government / academic / non-profit,AT,1,ACL,2025,2025,0.0
+Morgan & Claypool,Publisher,US,1,EMNLP,2015,2015,0.0
+Morgan Stanley,Finance / quant,US,1,EMNLP,2021,2021,0.0
+Mtel,Tech & other industry,BG,1,ACL,2013,2013,0.0
+MultilingualWeb-LT (W3C),Government / academic / non-profit,EU,1,ACL,2013,2013,0.0
+NSF,Government / academic / non-profit,US,1,NAACL,2018,2018,0.0
+New York University,Government / academic / non-profit,US,1,ACL,2017,2017,0.0
+Ontotext,Tech & other industry,BG,1,ACL,2013,2013,0.0
+OpenTable,Tech & other industry,US,1,NAACL,2016,2016,0.0
+Optum 360,Tech & other industry,US,1,NAACL,2016,2016,0.0
+Priberam,Tech & other industry,PT,1,EMNLP,2015,2015,0.0
+Publicis MARC Group,Tech & other industry,BG,1,ACL,2013,2013,0.0
+Qatar National Research Fund,Government / academic / non-profit,QA,1,EMNLP,2014,2014,0.0
+RBC,Finance / quant,CA,1,EMNLP,2021,2021,0.0
+RIKEN AIP,Government / academic / non-profit,JP,1,EMNLP,2023,2023,0.0
+Singapore Exhibition & Convention Bureau,Government / academic / non-profit,SG,1,EMNLP,2023,2023,0.0
+SinoVoice,Tech & other industry,CN,1,ACL,2015,2015,0.0
+Siteimprove,Tech & other industry,DK,1,EMNLP,2017,2017,0.0
+Sofia Municipality,Government / academic / non-profit,BG,1,ACL,2013,2013,0.0
+Springer Nature,Publisher,DE,1,EMNLP,2015,2015,0.0
+TAP Air Portugal,Tech & other industry,PT,1,EMNLP,2015,2015,0.0
+TP-Link,Tech & other industry,CN,1,ACL,2015,2015,0.0
+Trustpilot,Tech & other industry,DK,1,EMNLP,2017,2017,0.0
+Turismo de Lisboa,Government / academic / non-profit,PT,1,EMNLP,2015,2015,0.0
+Unbabel,Tech & other industry,PT,1,EMNLP,2015,2015,0.0
+Unsilo,Tech & other industry,DK,1,EMNLP,2017,2017,0.0
+VocalIQ,Tech & other industry,GB,1,EMNLP,2015,2015,0.0
+Vulcan,Tech & other industry,US,1,EMNLP,2013,2013,0.0
+Wizkids,Tech & other industry,DK,1,EMNLP,2017,2017,0.0
+Zalando,Tech & other industry,DE,1,EMNLP,2017,2017,0.0
+iHorizons,Tech & other industry,QA,1,EMNLP,2014,2014,0.0
+inome,Tech & other industry,US,1,EMNLP,2013,2013,0.0

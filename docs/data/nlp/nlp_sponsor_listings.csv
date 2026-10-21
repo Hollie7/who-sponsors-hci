@@ -1,0 +1,837 @@
+id,conference,year,tier,sponsor,org,sector,country,parent_country,tier_level,est_usd,price_basis,source
+1,ACL,2013,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,,no price info,https://web.archive.org/web/201309/http://acl2013.org/site/
+2,ACL,2013,Platinum,Mtel,Mtel,Tech & other industry,BG,BG,top,,no price info,https://web.archive.org/web/201309/http://acl2013.org/site/
+3,ACL,2013,Gold,Google,Google,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201309/http://acl2013.org/site/
+4,ACL,2013,Gold,Microsoft Research,Microsoft,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201309/http://acl2013.org/site/
+5,ACL,2013,Gold,Ontotext,Ontotext,Tech & other industry,BG,BG,mid,,no price info,https://web.archive.org/web/201309/http://acl2013.org/site/
+6,ACL,2013,Silver,Huawei,Huawei,Tech & other industry,CN,CN,mid,,no price info,https://web.archive.org/web/201309/http://acl2013.org/site/
+7,ACL,2013,Silver,Qatar Computing Research Institute,Qatar Computing Research Institute,Government / academic / non-profit,QA,QA,mid,,no price info,https://web.archive.org/web/201309/http://acl2013.org/site/
+8,ACL,2013,Silver,Xerox Research Centre Europe,Xerox,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201309/http://acl2013.org/site/
+9,ACL,2013,Bronze,Appen Butler Hill,Appen,Tech & other industry,AU,AU,low,,no price info,https://web.archive.org/web/201309/http://acl2013.org/site/
+10,ACL,2013,Bronze,META-NET,META-NET,Government / academic / non-profit,EU,EU,low,,no price info,https://web.archive.org/web/201309/http://acl2013.org/site/
+11,ACL,2013,Bronze,MultilingualWeb-LT (W3C),MultilingualWeb-LT (W3C),Government / academic / non-profit,EU,EU,low,,no price info,https://web.archive.org/web/201309/http://acl2013.org/site/
+12,ACL,2013,Bronze,Rakuten,Rakuten,Tech & other industry,JP,JP,low,,no price info,https://web.archive.org/web/201309/http://acl2013.org/site/
+13,ACL,2013,Bronze,Yahoo Labs,Yahoo,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201309/http://acl2013.org/site/
+14,ACL,2013,Bronze,Yandex,Yandex,Tech & other industry,RU,RU,low,,no price info,https://web.archive.org/web/201309/http://acl2013.org/site/
+15,ACL,2013,Supporter,IBM Research,IBM,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201309/http://acl2013.org/site/
+16,ACL,2013,Supporter,Facebook,Meta/Facebook,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201309/http://acl2013.org/site/
+17,ACL,2013,Supporter,Publicis MARC Group,Publicis MARC Group,Tech & other industry,BG,BG,low,,no price info,https://web.archive.org/web/201309/http://acl2013.org/site/
+18,ACL,2013,Supporter,University of Washington,University of Washington,Government / academic / non-profit,US,US,low,,no price info,https://web.archive.org/web/201309/http://acl2013.org/site/
+19,ACL,2013,Special,Bulgarian Academy of Sciences,Bulgarian Academy of Sciences,Government / academic / non-profit,BG,BG,low,,no price info,https://web.archive.org/web/201309/http://acl2013.org/site/
+20,ACL,2013,Special,SDL,SDL,Tech & other industry,GB,GB,low,,no price info,https://web.archive.org/web/201309/http://acl2013.org/site/
+21,ACL,2013,Special,Sofia Municipality,Sofia Municipality,Government / academic / non-profit,BG,BG,low,,no price info,https://web.archive.org/web/201309/http://acl2013.org/site/
+22,ACL,2014,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,,no price info,https://web.archive.org/web/201409/http://acl2014.org/
+23,ACL,2014,Gold,Amazon,Amazon,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201409/http://acl2014.org/
+24,ACL,2014,Gold,Bloomberg,Bloomberg,Finance / quant,US,US,mid,,no price info,https://web.archive.org/web/201409/http://acl2014.org/
+25,ACL,2014,Gold,Google,Google,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201409/http://acl2014.org/
+26,ACL,2014,Gold,IBM Watson,IBM,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201409/http://acl2014.org/
+27,ACL,2014,Gold,Johns Hopkins University (CLSP),Johns Hopkins University,Government / academic / non-profit,US,US,mid,,no price info,https://web.archive.org/web/201409/http://acl2014.org/
+28,ACL,2014,Gold,Microsoft,Microsoft,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201409/http://acl2014.org/
+29,ACL,2014,Gold,Nuance,Nuance,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201409/http://acl2014.org/
+30,ACL,2014,Gold,Yahoo Labs,Yahoo,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201409/http://acl2014.org/
+31,ACL,2014,Silver,ISI,USC / ISI,Government / academic / non-profit,US,US,mid,,no price info,https://web.archive.org/web/201409/http://acl2014.org/
+32,ACL,2014,Silver,Xerox,Xerox,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201409/http://acl2014.org/
+33,ACL,2014,Bronze,Brandeis University,Brandeis University,Government / academic / non-profit,US,US,low,,no price info,https://web.archive.org/web/201409/http://acl2014.org/
+34,ACL,2014,Bronze,Facebook,Meta/Facebook,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201409/http://acl2014.org/
+35,ACL,2014,Bronze,Yandex,Yandex,Tech & other industry,RU,RU,low,,no price info,https://web.archive.org/web/201409/http://acl2014.org/
+36,ACL,2014,Supporter,University of Washington,University of Washington,Government / academic / non-profit,US,US,low,,no price info,https://web.archive.org/web/201409/http://acl2014.org/
+37,ACL,2015,Platinum,Alibaba,Alibaba,Tech & other industry,CN,CN,top,,no price info,https://web.archive.org/web/201509/http://acl2015.org/
+38,ACL,2015,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,,no price info,https://web.archive.org/web/201509/http://acl2015.org/
+39,ACL,2015,Platinum,CreditEase,CreditEase,Finance / quant,CN,CN,top,,no price info,https://web.archive.org/web/201509/http://acl2015.org/
+40,ACL,2015,Platinum,Microsoft Research,Microsoft,Tech & other industry,US,US,top,,no price info,https://web.archive.org/web/201509/http://acl2015.org/
+41,ACL,2015,Platinum,Samsung,Samsung,Tech & other industry,KR,KR,top,,no price info,https://web.archive.org/web/201509/http://acl2015.org/
+42,ACL,2015,Platinum,TP-Link,TP-Link,Tech & other industry,CN,CN,top,,no price info,https://web.archive.org/web/201509/http://acl2015.org/
+43,ACL,2015,Platinum,Tencent,Tencent,Tech & other industry,CN,CN,top,,no price info,https://web.archive.org/web/201509/http://acl2015.org/
+44,ACL,2015,Gold,Google,Google,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201509/http://acl2015.org/
+45,ACL,2015,Gold,Huawei,Huawei,Tech & other industry,CN,CN,mid,,no price info,https://web.archive.org/web/201509/http://acl2015.org/
+46,ACL,2015,Gold,Facebook,Meta/Facebook,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201509/http://acl2015.org/
+47,ACL,2015,Gold,SinoVoice,SinoVoice,Tech & other industry,CN,CN,mid,,no price info,https://web.archive.org/web/201509/http://acl2015.org/
+48,ACL,2015,Silver,Amazon,Amazon,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201509/http://acl2015.org/
+49,ACL,2015,Silver,Nuance,Nuance,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201509/http://acl2015.org/
+50,ACL,2015,Silver,Sogou,Sogou,Tech & other industry,CN,CN,mid,,no price info,https://web.archive.org/web/201509/http://acl2015.org/
+51,ACL,2015,Silver,VoiceBox,VoiceBox,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201509/http://acl2015.org/
+52,ACL,2015,Bronze,Yandex,Yandex,Tech & other industry,RU,RU,low,,no price info,https://web.archive.org/web/201509/http://acl2015.org/
+53,ACL,2015,Special,Baobab,Baobab,Tech & other industry,JP,JP,low,,no price info,https://web.archive.org/web/201509/http://acl2015.org/
+54,ACL,2015,Special,Chinese Information Processing Society of China,Chinese Information Processing Society of China,Government / academic / non-profit,CN,CN,low,,no price info,https://web.archive.org/web/201509/http://acl2015.org/
+55,ACL,2015,Special,IBM Research,IBM,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201509/http://acl2015.org/
+56,ACL,2016,Unspecified,Amazon,Amazon,Tech & other industry,US,US,unknown,,no price info,https://web.archive.org/web/201608/http://acl2016.org/
+57,ACL,2016,Unspecified,Baidu,Baidu,Tech & other industry,CN,CN,unknown,,no price info,https://web.archive.org/web/201608/http://acl2016.org/
+58,ACL,2016,Unspecified,Bloomberg,Bloomberg,Finance / quant,US,US,unknown,,no price info,https://web.archive.org/web/201608/http://acl2016.org/
+59,ACL,2016,Unspecified,Elsevier,Elsevier,Publisher,NL,NL,unknown,,no price info,https://web.archive.org/web/201608/http://acl2016.org/
+60,ACL,2016,Unspecified,Google,Google,Tech & other industry,US,US,unknown,,no price info,https://web.archive.org/web/201608/http://acl2016.org/
+61,ACL,2016,Unspecified,Grammarly,Grammarly,Tech & other industry,US,US,unknown,,no price info,https://web.archive.org/web/201608/http://acl2016.org/
+62,ACL,2016,Unspecified,Huawei,Huawei,Tech & other industry,CN,CN,unknown,,no price info,https://web.archive.org/web/201608/http://acl2016.org/
+63,ACL,2016,Unspecified,IBM Research,IBM,Tech & other industry,US,US,unknown,,no price info,https://web.archive.org/web/201608/http://acl2016.org/
+64,ACL,2016,Unspecified,Maluuba,Maluuba,Tech & other industry,CA,CA,unknown,,no price info,https://web.archive.org/web/201608/http://acl2016.org/
+65,ACL,2016,Unspecified,Facebook,Meta/Facebook,Tech & other industry,US,US,unknown,,no price info,https://web.archive.org/web/201608/http://acl2016.org/
+66,ACL,2016,Unspecified,Microsoft,Microsoft,Tech & other industry,US,US,unknown,,no price info,https://web.archive.org/web/201608/http://acl2016.org/
+67,ACL,2016,Unspecified,Nuance,Nuance,Tech & other industry,US,US,unknown,,no price info,https://web.archive.org/web/201608/http://acl2016.org/
+68,ACL,2016,Unspecified,Textkernel,Textkernel,Tech & other industry,NL,NL,unknown,,no price info,https://web.archive.org/web/201608/http://acl2016.org/
+69,ACL,2016,Unspecified,VoiceBox,VoiceBox,Tech & other industry,US,US,unknown,,no price info,https://web.archive.org/web/201608/http://acl2016.org/
+70,ACL,2016,Unspecified,Yandex,Yandex,Tech & other industry,RU,RU,unknown,,no price info,https://web.archive.org/web/201608/http://acl2016.org/
+71,ACL,2016,Unspecified,eBay,eBay,Tech & other industry,US,US,unknown,,no price info,https://web.archive.org/web/201608/http://acl2016.org/
+72,ACL,2017,Platinum,Alibaba,Alibaba,Tech & other industry,CN,CN,top,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+73,ACL,2017,Platinum,Amazon,Amazon,Tech & other industry,US,US,top,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+74,ACL,2017,Platinum,Apple,Apple,Tech & other industry,US,US,top,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+75,ACL,2017,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+76,ACL,2017,Platinum,Bloomberg,Bloomberg,Finance / quant,US,US,top,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+77,ACL,2017,Platinum,Google,Google,Tech & other industry,US,US,top,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+78,ACL,2017,Platinum,Facebook,Meta/Facebook,Tech & other industry,US,US,top,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+79,ACL,2017,Platinum,Samsung,Samsung,Tech & other industry,KR,KR,top,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+80,ACL,2017,Platinum,Tencent,Tencent,Tech & other industry,CN,CN,top,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+81,ACL,2017,Gold,Elsevier,Elsevier,Publisher,NL,NL,mid,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+82,ACL,2017,Gold,IBM Research,IBM,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+83,ACL,2017,Gold,KPMG,KPMG,Tech & other industry,GB,GB,mid,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+84,ACL,2017,Gold,Maluuba,Maluuba,Tech & other industry,CA,CA,mid,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+85,ACL,2017,Gold,Microsoft,Microsoft,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+86,ACL,2017,Gold,NAVER LINE,NAVER,Tech & other industry,KR,KR,mid,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+87,ACL,2017,Gold,NEC,NEC,Tech & other industry,JP,JP,mid,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+88,ACL,2017,Gold,Recruit Institute of Technology,Recruit,Tech & other industry,JP,JP,mid,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+89,ACL,2017,Gold,SAP,SAP,Tech & other industry,DE,DE,mid,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+90,ACL,2017,Gold,eBay,eBay,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+91,ACL,2017,Silver,Adobe,Adobe,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+92,ACL,2017,Silver,Bosch,Bosch,Tech & other industry,DE,DE,mid,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+93,ACL,2017,Silver,CVTE,CVTE,Tech & other industry,CN,CN,mid,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+94,ACL,2017,Silver,Duolingo,Duolingo,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+95,ACL,2017,Silver,Huawei,Huawei,Tech & other industry,CN,CN,mid,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+96,ACL,2017,Silver,Nuance,Nuance,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+97,ACL,2017,Silver,Oracle,Oracle,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+98,ACL,2017,Silver,Sogou,Sogou,Tech & other industry,CN,CN,mid,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+99,ACL,2017,Bronze,Toutiao,ByteDance,Tech & other industry,CN,CN,low,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+100,ACL,2017,Bronze,Grammarly,Grammarly,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+101,ACL,2017,Bronze,Yandex,Yandex,Tech & other industry,RU,RU,low,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+102,ACL,2017,Supporter,Brandeis University,Brandeis University,Government / academic / non-profit,US,US,low,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+103,ACL,2017,Supporter,Columbia University,Columbia University,Government / academic / non-profit,US,US,low,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+104,ACL,2017,Supporter,NYU,New York University,Government / academic / non-profit,US,US,low,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+105,ACL,2017,Supporter,Newsela,Newsela,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+106,ACL,2017,Supporter,University of Washington,University of Washington,Government / academic / non-profit,US,US,low,,no price info,https://web.archive.org/web/201709/http://acl2017.org/sponsors/overview/
+107,ACL,2018,Diamond,Apple,Apple,Tech & other industry,US,US,top,23775.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+108,ACL,2018,Diamond,Toutiao/ByteDance,ByteDance,Tech & other industry,CN,CN,top,23775.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+109,ACL,2018,Diamond,Google,Google,Tech & other industry,US,US,top,23775.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+110,ACL,2018,Diamond,Facebook,Meta/Facebook,Tech & other industry,US,US,top,23775.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+111,ACL,2018,Diamond,Samsung,Samsung,Tech & other industry,KR,KR,top,23775.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+112,ACL,2018,Platinum,Amazon,Amazon,Tech & other industry,US,US,top,14500.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+113,ACL,2018,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,14500.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+114,ACL,2018,Platinum,JD.com,JD.com,Tech & other industry,CN,CN,top,14500.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+115,ACL,2018,Platinum,Megagon Labs,Megagon Labs,Tech & other industry,US,JP,top,14500.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+116,ACL,2018,Platinum,Tencent,Tencent,Tech & other industry,CN,CN,top,14500.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+117,ACL,2018,Gold,CVTE,CVTE,Tech & other industry,CN,CN,mid,8000.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+118,ACL,2018,Gold,DHCRC,DHCRC,Government / academic / non-profit,AU,AU,mid,8000.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+119,ACL,2018,Gold,IBM Research,IBM,Tech & other industry,US,US,mid,8000.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+120,ACL,2018,Gold,Microsoft,Microsoft,Tech & other industry,US,US,mid,8000.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+121,ACL,2018,Gold,NAVER,NAVER,Tech & other industry,KR,KR,mid,8000.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+122,ACL,2018,Silver,Duolingo,Duolingo,Tech & other industry,US,US,mid,4400.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+123,ACL,2018,Silver,Elsevier,Elsevier,Publisher,NL,NL,mid,4400.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+124,ACL,2018,Silver,Huawei,Huawei,Tech & other industry,CN,CN,mid,4400.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+125,ACL,2018,Silver,Nuance,Nuance,Tech & other industry,US,US,mid,4400.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+126,ACL,2018,Bronze,DST Group,DST Group,Government / academic / non-profit,AU,AU,low,2400.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+127,ACL,2018,Bronze,ISI,USC / ISI,Government / academic / non-profit,US,US,low,2400.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+128,ACL,2018,Supporter,Visit Melbourne,City of Melbourne,Government / academic / non-profit,AU,AU,low,1280.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+129,ACL,2018,Supporter,Melbourne Convention Bureau,Melbourne Convention Bureau,Government / academic / non-profit,AU,AU,low,1280.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+130,ACL,2018,Supporter,Monash University,Monash University,Government / academic / non-profit,AU,AU,low,1280.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+131,ACL,2018,Supporter,Roam Analytics,Roam Analytics,Tech & other industry,US,US,low,1280.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+132,ACL,2018,Supporter,SAP,SAP,Tech & other industry,DE,DE,low,1280.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+133,ACL,2018,Supporter,Sintelix,Sintelix,Tech & other industry,AU,AU,low,1280.0,assumed (ACL 2019 schedule),https://web.archive.org/web/201809/https://acl2018.org/
+134,ACL,2018,Special,CSIRO Data61,CSIRO,Government / academic / non-profit,AU,AU,low,,tier not priced,https://web.archive.org/web/201809/https://acl2018.org/
+135,ACL,2019,Diamond,ASAPP,ASAPP,Tech & other industry,US,US,top,23775.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+136,ACL,2019,Diamond,Apple,Apple,Tech & other industry,US,US,top,23775.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+137,ACL,2019,Diamond,Bloomberg,Bloomberg,Finance / quant,US,US,top,23775.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+138,ACL,2019,Diamond,Bosch,Bosch,Tech & other industry,DE,DE,top,23775.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+139,ACL,2019,Diamond,Google,Google,Tech & other industry,US,US,top,23775.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+140,ACL,2019,Diamond,Facebook,Meta/Facebook,Tech & other industry,US,US,top,23775.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+141,ACL,2019,Diamond,Microsoft,Microsoft,Tech & other industry,US,US,top,23775.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+142,ACL,2019,Diamond,Salesforce,Salesforce,Tech & other industry,US,US,top,23775.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+143,ACL,2019,Platinum,Amazon,Amazon,Tech & other industry,US,US,top,14500.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+144,ACL,2019,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,14500.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+145,ACL,2019,Platinum,Grammarly,Grammarly,Tech & other industry,US,US,top,14500.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+146,ACL,2019,Platinum,Huawei,Huawei,Tech & other industry,CN,CN,top,14500.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+147,ACL,2019,Platinum,IBM,IBM,Tech & other industry,US,US,top,14500.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+148,ACL,2019,Platinum,Tencent,Tencent,Tech & other industry,CN,CN,top,14500.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+149,ACL,2019,Gold,ByteDance,ByteDance,Tech & other industry,CN,CN,mid,8000.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+150,ACL,2019,Gold,DiDi,DiDi,Tech & other industry,CN,CN,mid,8000.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+151,ACL,2019,Gold,JD.com,JD.com,Tech & other industry,CN,CN,mid,8000.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+152,ACL,2019,Gold,Megagon Labs,Megagon Labs,Tech & other industry,US,JP,mid,8000.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+153,ACL,2019,Gold,NAVER,NAVER,Tech & other industry,KR,KR,mid,8000.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+154,ACL,2019,Gold,PolyAI,PolyAI,Tech & other industry,GB,GB,mid,8000.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+155,ACL,2019,Gold,Samsung,Samsung,Tech & other industry,KR,KR,mid,8000.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+156,ACL,2019,Gold,Verisk,Verisk,Tech & other industry,US,US,mid,8000.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+157,ACL,2019,Silver,BMW,BMW,Tech & other industry,DE,DE,mid,4400.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+158,ACL,2019,Silver,Babelscape,Babelscape,Tech & other industry,IT,IT,mid,4400.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+159,ACL,2019,Silver,Cisco,Cisco,Tech & other industry,US,US,mid,4400.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+160,ACL,2019,Silver,Duolingo,Duolingo,Tech & other industry,US,US,mid,4400.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+161,ACL,2019,Silver,G-Research,G-Research,Finance / quant,GB,GB,mid,4400.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+162,ACL,2019,Silver,Monash University,Monash University,Government / academic / non-profit,AU,AU,mid,4400.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+163,ACL,2019,Silver,SAP,SAP,Tech & other industry,DE,DE,mid,4400.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+164,ACL,2019,Silver,eBay,eBay,Tech & other industry,US,US,mid,4400.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+165,ACL,2019,Bronze,Almawave,Almawave,Tech & other industry,IT,IT,low,2400.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+166,ACL,2019,Bronze,Expert System,Expert System,Tech & other industry,IT,IT,low,2400.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+167,ACL,2019,Bronze,Raytheon BBN,Raytheon BBN,Tech & other industry,US,US,low,2400.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+168,ACL,2019,Bronze,Shannon AI,Shannon AI,Tech & other industry,CN,CN,low,2400.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+169,ACL,2019,Bronze,ISI,USC / ISI,Government / academic / non-profit,US,US,low,2400.0,stated,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+170,ACL,2019,Special,IDEA Toscana,IDEA Toscana,Government / academic / non-profit,IT,IT,low,,tier not priced,https://web.archive.org/web/201907/http://www.acl2019.org/EN/exhibitors-sponsors.xhtml
+171,ACL,2020,Diamond,Amazon,Amazon,Tech & other industry,US,US,top,30000.0,stated,https://web.archive.org/web/202009/https://acl2020.org/sponsors/list/
+172,ACL,2020,Diamond,Apple,Apple,Tech & other industry,US,US,top,30000.0,stated,https://web.archive.org/web/202009/https://acl2020.org/sponsors/list/
+173,ACL,2020,Diamond,Bloomberg,Bloomberg,Finance / quant,US,US,top,30000.0,stated,https://web.archive.org/web/202009/https://acl2020.org/sponsors/list/
+174,ACL,2020,Diamond,Google,Google,Tech & other industry,US,US,top,30000.0,stated,https://web.archive.org/web/202009/https://acl2020.org/sponsors/list/
+175,ACL,2020,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,18800.0,stated,https://web.archive.org/web/202009/https://acl2020.org/sponsors/list/
+176,ACL,2020,Platinum,IBM,IBM,Tech & other industry,US,US,top,18800.0,stated,https://web.archive.org/web/202009/https://acl2020.org/sponsors/list/
+177,ACL,2020,Platinum,Megagon Labs,Megagon Labs,Tech & other industry,US,JP,top,18800.0,stated,https://web.archive.org/web/202009/https://acl2020.org/sponsors/list/
+178,ACL,2020,Platinum,Facebook,Meta/Facebook,Tech & other industry,US,US,top,18800.0,stated,https://web.archive.org/web/202009/https://acl2020.org/sponsors/list/
+179,ACL,2020,Gold,Alibaba,Alibaba,Tech & other industry,CN,CN,mid,10400.0,stated,https://web.archive.org/web/202009/https://acl2020.org/sponsors/list/
+180,ACL,2020,Gold,ByteDance,ByteDance,Tech & other industry,CN,CN,mid,10400.0,stated,https://web.archive.org/web/202009/https://acl2020.org/sponsors/list/
+181,ACL,2020,Gold,G-Research,G-Research,Finance / quant,GB,GB,mid,10400.0,stated,https://web.archive.org/web/202009/https://acl2020.org/sponsors/list/
+182,ACL,2020,Gold,Grammarly,Grammarly,Tech & other industry,US,US,mid,10400.0,stated,https://web.archive.org/web/202009/https://acl2020.org/sponsors/list/
+183,ACL,2020,Gold,Two Sigma,Two Sigma,Finance / quant,US,US,mid,10400.0,stated,https://web.archive.org/web/202009/https://acl2020.org/sponsors/list/
+184,ACL,2020,Silver,Adobe,Adobe,Tech & other industry,US,US,mid,5500.0,stated,https://web.archive.org/web/202009/https://acl2020.org/sponsors/list/
+185,ACL,2020,Silver,Babelscape,Babelscape,Tech & other industry,IT,IT,mid,5500.0,stated,https://web.archive.org/web/202009/https://acl2020.org/sponsors/list/
+186,ACL,2020,Silver,Naver Labs Europe,NAVER,Tech & other industry,KR,KR,mid,5500.0,stated,https://web.archive.org/web/202009/https://acl2020.org/sponsors/list/
+187,ACL,2020,Silver,PolyAI,PolyAI,Tech & other industry,GB,GB,mid,5500.0,stated,https://web.archive.org/web/202009/https://acl2020.org/sponsors/list/
+188,ACL,2020,Bronze,ISI,USC / ISI,Government / academic / non-profit,US,US,low,3015.0,stated,https://web.archive.org/web/202009/https://acl2020.org/sponsors/list/
+189,ACL,2020,Supporter,HLTCOE,Johns Hopkins University,Government / academic / non-profit,US,US,low,1880.0,stated,https://web.archive.org/web/202009/https://acl2020.org/sponsors/list/
+190,ACL,2020,D&I,Microsoft,Microsoft,Tech & other industry,US,US,low,,tier not priced,https://web.archive.org/web/202009/https://acl2020.org/sponsors/list/
+191,ACL,2020,Publisher,Cambridge University Press,Cambridge University Press,Publisher,GB,GB,low,,tier not priced,https://web.archive.org/web/202009/https://acl2020.org/sponsors/list/
+192,ACL,2021,Diamond,Apple,Apple,Tech & other industry,US,US,top,30000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+193,ACL,2021,Diamond,Bloomberg,Bloomberg,Finance / quant,US,US,top,30000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+194,ACL,2021,Diamond,Google,Google,Tech & other industry,US,US,top,30000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+195,ACL,2021,Diamond,Facebook,Meta/Facebook,Tech & other industry,US,US,top,30000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+196,ACL,2021,Diamond,TCEB,TCEB,Government / academic / non-profit,TH,TH,top,30000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+197,ACL,2021,Platinum,Amazon,Amazon,Tech & other industry,US,US,top,20000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+198,ACL,2021,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,20000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+199,ACL,2021,Platinum,ByteDance,ByteDance,Tech & other industry,CN,CN,top,20000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+200,ACL,2021,Platinum,G-Research,G-Research,Finance / quant,GB,GB,top,20000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+201,ACL,2021,Platinum,Megagon Labs,Megagon Labs,Tech & other industry,US,JP,top,20000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+202,ACL,2021,Platinum,Microsoft,Microsoft,Tech & other industry,US,US,top,20000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+203,ACL,2021,Platinum,Tencent,Tencent,Tech & other industry,CN,CN,top,20000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+204,ACL,2021,Gold,Alibaba,Alibaba,Tech & other industry,CN,CN,mid,10000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+205,ACL,2021,Gold,IBM,IBM,Tech & other industry,US,US,mid,10000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+206,ACL,2021,Silver,Duolingo,Duolingo,Tech & other industry,US,US,mid,6000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+207,ACL,2021,Silver,Naver Labs Europe,NAVER,Tech & other industry,KR,KR,mid,6000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+208,ACL,2021,Bronze,AIS,AIS,Tech & other industry,TH,TH,low,3000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+209,ACL,2021,Bronze,Adobe,Adobe,Tech & other industry,US,US,low,3000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+210,ACL,2021,Bronze,Babelscape,Babelscape,Tech & other industry,IT,IT,low,3000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+211,ACL,2021,Bronze,Backyard,Backyard,Tech & other industry,TH,TH,low,3000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+212,ACL,2021,Bronze,Bosch,Bosch,Tech & other industry,DE,DE,low,3000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+213,ACL,2021,Bronze,ETS,ETS,Tech & other industry,US,US,low,3000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+214,ACL,2021,Bronze,Krungthai Bank,Krungthai Bank,Finance / quant,TH,TH,low,3000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+215,ACL,2021,Bronze,LegalForce,LegalForce,Tech & other industry,JP,JP,low,3000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+216,ACL,2021,Supporter,AIAT,AIAT,Government / academic / non-profit,TH,TH,low,2000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+217,ACL,2021,Supporter,NECTEC,NECTEC,Government / academic / non-profit,TH,TH,low,2000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+218,ACL,2021,Supporter,ServiceNow,ServiceNow,Tech & other industry,US,US,low,2000.0,stated,https://web.archive.org/web/202109/https://2021.aclweb.org/sponsors/list
+219,ACL,2022,Diamond,Amazon,Amazon,Tech & other industry,US,US,top,30000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+220,ACL,2022,Diamond,Apple,Apple,Tech & other industry,US,US,top,30000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+221,ACL,2022,Diamond,Bloomberg,Bloomberg,Finance / quant,US,US,top,30000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+222,ACL,2022,Diamond,Google,Google,Tech & other industry,US,US,top,30000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+223,ACL,2022,Diamond,LivePerson,LivePerson,Tech & other industry,US,US,top,30000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+224,ACL,2022,Diamond,Meta,Meta/Facebook,Tech & other industry,US,US,top,30000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+225,ACL,2022,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,20000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+226,ACL,2022,Platinum,ByteDance,ByteDance,Tech & other industry,CN,CN,top,20000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+227,ACL,2022,Platinum,GTCOM,GTCOM,Tech & other industry,CN,CN,top,20000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+228,ACL,2022,Platinum,Grammarly,Grammarly,Tech & other industry,US,US,top,20000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+229,ACL,2022,Platinum,IBM,IBM,Tech & other industry,US,US,top,20000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+230,ACL,2022,Platinum,Megagon Labs,Megagon Labs,Tech & other industry,US,JP,top,20000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+231,ACL,2022,Platinum,Microsoft,Microsoft,Tech & other industry,US,US,top,20000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+232,ACL,2022,Gold,Alibaba,Alibaba,Tech & other industry,CN,CN,mid,10000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+233,ACL,2022,Gold,Bosch,Bosch,Tech & other industry,DE,DE,mid,10000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+234,ACL,2022,Gold,Cohere,Cohere,Tech & other industry,CA,CA,mid,10000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+235,ACL,2022,Gold,G-Research,G-Research,Finance / quant,GB,GB,mid,10000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+236,ACL,2022,Gold,Relativity,Relativity,Tech & other industry,US,US,mid,10000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+237,ACL,2022,Gold,ServiceNow,ServiceNow,Tech & other industry,US,US,mid,10000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+238,ACL,2022,Silver,ASAPP,ASAPP,Tech & other industry,US,US,mid,6000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+239,ACL,2022,Silver,Duolingo,Duolingo,Tech & other industry,US,US,mid,6000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+240,ACL,2022,Silver,NAVER,NAVER,Tech & other industry,KR,KR,mid,6000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+241,ACL,2022,Bronze,Adobe,Adobe,Tech & other industry,US,US,low,3000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+242,ACL,2022,Bronze,Babelscape,Babelscape,Tech & other industry,IT,IT,low,3000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+243,ACL,2022,Bronze,Spotify,Spotify,Tech & other industry,GB,GB,low,3000.0,stated,https://www.aclweb.org/adminwiki/index.php/2023Q1_Reports:_Sponsorship_Director
+244,ACL,2023,Diamond,Apple,Apple,Tech & other industry,US,US,top,30000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+245,ACL,2023,Diamond,Bloomberg,Bloomberg,Finance / quant,US,US,top,30000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+246,ACL,2023,Diamond,Cohere,Cohere,Tech & other industry,CA,CA,top,30000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+247,ACL,2023,Diamond,Google,Google,Tech & other industry,US,US,top,30000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+248,ACL,2023,Diamond,IBM,IBM,Tech & other industry,US,US,top,30000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+249,ACL,2023,Diamond,LivePerson,LivePerson,Tech & other industry,US,US,top,30000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+250,ACL,2023,Diamond,Meta,Meta/Facebook,Tech & other industry,US,US,top,30000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+251,ACL,2023,Diamond,Microsoft,Microsoft,Tech & other industry,US,US,top,30000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+252,ACL,2023,Platinum,Amazon,Amazon,Tech & other industry,US,US,top,20000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+253,ACL,2023,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,20000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+254,ACL,2023,Platinum,ByteDance,ByteDance,Tech & other industry,CN,CN,top,20000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+255,ACL,2023,Platinum,DataOcean AI,DataOcean AI,Tech & other industry,CN,CN,top,20000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+256,ACL,2023,Platinum,Flitto,Flitto,Tech & other industry,KR,KR,top,20000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+257,ACL,2023,Platinum,Grammarly,Grammarly,Tech & other industry,US,US,top,20000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+258,ACL,2023,Platinum,Huawei,Huawei,Tech & other industry,CN,CN,top,20000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+259,ACL,2023,Platinum,KAUST,KAUST,Government / academic / non-profit,SA,SA,top,20000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+260,ACL,2023,Platinum,Megagon Labs,Megagon Labs,Tech & other industry,US,JP,top,20000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+261,ACL,2023,Gold,Ant Group,Ant Group,Tech & other industry,CN,CN,mid,10000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+262,ACL,2023,Gold,Comcast,Comcast,Tech & other industry,US,US,mid,10000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+263,ACL,2023,Gold,J.P. Morgan,JPMorgan Chase,Finance / quant,US,US,mid,10000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+264,ACL,2023,Gold,NEC,NEC,Tech & other industry,JP,JP,mid,10000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+265,ACL,2023,Gold,Tencent,Tencent,Tech & other industry,CN,CN,mid,10000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+266,ACL,2023,Silver,Alibaba,Alibaba,Tech & other industry,CN,CN,mid,6000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+267,ACL,2023,Silver,Bosch,Bosch,Tech & other industry,DE,DE,mid,6000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+268,ACL,2023,Silver,Duolingo,Duolingo,Tech & other industry,US,US,mid,6000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+269,ACL,2023,Silver,Translated,Translated,Tech & other industry,IT,IT,mid,6000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+270,ACL,2023,Silver,aiXplain,aiXplain,Tech & other industry,US,US,mid,6000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+271,ACL,2023,Bronze,Adobe,Adobe,Tech & other industry,US,US,low,3000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+272,ACL,2023,Bronze,Babelscape,Babelscape,Tech & other industry,IT,IT,low,3000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+273,ACL,2023,Bronze,ServiceNow,ServiceNow,Tech & other industry,US,US,low,3000.0,stated,https://web.archive.org/web/202309/https://2023.aclweb.org/sponsors/
+274,ACL,2024,Diamond,Apple,Apple,Tech & other industry,US,US,top,40000.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+275,ACL,2024,Diamond,Google DeepMind,Google,Tech & other industry,US,US,top,40000.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+276,ACL,2024,Diamond,LG AI Research,LG,Tech & other industry,KR,KR,top,40000.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+277,ACL,2024,Diamond,Meta,Meta/Facebook,Tech & other industry,US,US,top,40000.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+278,ACL,2024,Diamond,NewsBreak,NewsBreak,Tech & other industry,US,US,top,40000.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+279,ACL,2024,Platinum,Alibaba Cloud,Alibaba,Tech & other industry,CN,CN,top,27500.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+280,ACL,2024,Platinum,Amazon,Amazon,Tech & other industry,US,US,top,27500.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+281,ACL,2024,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,27500.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+282,ACL,2024,Platinum,ByteDance,ByteDance,Tech & other industry,CN,CN,top,27500.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+283,ACL,2024,Platinum,IBM Research,IBM,Tech & other industry,US,US,top,27500.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+284,ACL,2024,Platinum,Megagon Labs,Megagon Labs,Tech & other industry,US,JP,top,27500.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+285,ACL,2024,Platinum,Meituan,Meituan,Tech & other industry,CN,CN,top,27500.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+286,ACL,2024,Platinum,Oracle,Oracle,Tech & other industry,US,US,top,27500.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+287,ACL,2024,Platinum,SCB 10X,SCB 10X,Finance / quant,TH,TH,top,27500.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+288,ACL,2024,Platinum,Sony,Sony,Tech & other industry,JP,JP,top,27500.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+289,ACL,2024,Gold,Ahrefs,Ahrefs,Tech & other industry,SG,SG,mid,15000.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+290,ACL,2024,Gold,Chen Institute,Chen Institute,Government / academic / non-profit,US,US,mid,15000.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+291,ACL,2024,Gold,Cohere,Cohere,Tech & other industry,CA,CA,mid,15000.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+292,ACL,2024,Gold,Exa,Exa,Tech & other industry,US,US,mid,15000.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+293,ACL,2024,Gold,Xiaomi,Xiaomi,Tech & other industry,CN,CN,mid,15000.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+294,ACL,2024,Silver,Ant Group,Ant Group,Tech & other industry,CN,CN,mid,9000.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+295,ACL,2024,Bronze,Adobe,Adobe,Tech & other industry,US,US,low,4500.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+296,ACL,2024,Bronze,Babelscape,Babelscape,Tech & other industry,IT,IT,low,4500.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+297,ACL,2024,Bronze,DataOcean AI,DataOcean AI,Tech & other industry,CN,CN,low,4500.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+298,ACL,2024,Bronze,Translated,Translated,Tech & other industry,IT,IT,low,4500.0,stated,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+299,ACL,2024,Special,AI Thailand,AI Thailand,Government / academic / non-profit,TH,TH,low,,tier not priced,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+300,ACL,2024,Special,AIAT,AIAT,Government / academic / non-profit,TH,TH,low,,tier not priced,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+301,ACL,2024,Special,ETDA,ETDA,Government / academic / non-profit,TH,TH,low,,tier not priced,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+302,ACL,2024,Special,KBTG,KBTG,Finance / quant,TH,TH,low,,tier not priced,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+303,ACL,2024,Special,NECTEC,NECTEC,Government / academic / non-profit,TH,TH,low,,tier not priced,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+304,ACL,2024,Special,TCEB,TCEB,Government / academic / non-profit,TH,TH,low,,tier not priced,https://web.archive.org/web/202409/https://2024.aclweb.org/sponsors
+305,ACL,2025,Diamond,Alibaba Cloud,Alibaba,Tech & other industry,CN,CN,top,40000.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+306,ACL,2025,Diamond,Ant Group,Ant Group,Tech & other industry,CN,CN,top,40000.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+307,ACL,2025,Diamond,Apple,Apple,Tech & other industry,US,US,top,40000.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+308,ACL,2025,Diamond,Bloomberg,Bloomberg,Finance / quant,US,US,top,40000.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+309,ACL,2025,Diamond,Citadel,Citadel,Finance / quant,US,US,top,40000.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+310,ACL,2025,Diamond,Cohere,Cohere,Tech & other industry,CA,CA,top,40000.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+311,ACL,2025,Diamond,Google,Google,Tech & other industry,US,US,top,40000.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+312,ACL,2025,Diamond,Meta,Meta/Facebook,Tech & other industry,US,US,top,40000.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+313,ACL,2025,Diamond,LinkedIn,Microsoft,Tech & other industry,US,US,top,40000.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+314,ACL,2025,Diamond,Xiaomi,Xiaomi,Tech & other industry,CN,CN,top,40000.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+315,ACL,2025,Platinum,Amazon,Amazon,Tech & other industry,US,US,top,27500.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+316,ACL,2025,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,27500.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+317,ACL,2025,Platinum,ByteDance,ByteDance,Tech & other industry,CN,CN,top,27500.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+318,ACL,2025,Platinum,Huawei,Huawei,Tech & other industry,CN,CN,top,27500.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+319,ACL,2025,Platinum,IBM Research,IBM,Tech & other industry,US,US,top,27500.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+320,ACL,2025,Platinum,Megagon Labs,Megagon Labs,Tech & other industry,US,JP,top,27500.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+321,ACL,2025,Platinum,Oracle,Oracle,Tech & other industry,US,US,top,27500.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+322,ACL,2025,Platinum,Snowflake,Snowflake,Tech & other industry,US,US,top,27500.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+323,ACL,2025,Platinum,Tencent,Tencent,Tech & other industry,CN,CN,top,27500.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+324,ACL,2025,Platinum,Toloka AI,Toloka,Tech & other industry,NL,NL,top,27500.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+325,ACL,2025,Gold,Chen Institute,Chen Institute,Government / academic / non-profit,US,US,mid,15000.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+326,ACL,2025,Gold,Kuaishou,Kuaishou,Tech & other industry,CN,CN,mid,15000.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+327,ACL,2025,Gold,Thomson Reuters,Thomson Reuters,Tech & other industry,CA,CA,mid,15000.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+328,ACL,2025,Silver,Adobe,Adobe,Tech & other industry,US,US,mid,9000.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+329,ACL,2025,Silver,Appen,Appen,Tech & other industry,AU,AU,mid,9000.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+330,ACL,2025,Silver,Nexdata,Nexdata,Tech & other industry,CN,CN,mid,9000.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+331,ACL,2025,Bronze,Babelscape,Babelscape,Tech & other industry,IT,IT,low,4500.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+332,ACL,2025,Bronze,DataOcean AI,DataOcean AI,Tech & other industry,CN,CN,low,4500.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+333,ACL,2025,Bronze,Defined AI,Defined AI,Tech & other industry,GB,GB,low,4500.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+334,ACL,2025,Bronze,JPMorgan Chase,JPMorgan Chase,Finance / quant,US,US,low,4500.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+335,ACL,2025,Bronze,NEC,NEC,Tech & other industry,JP,JP,low,4500.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+336,ACL,2025,Bronze,NatWest Group,NatWest,Finance / quant,GB,GB,low,4500.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+337,ACL,2025,Bronze,Translated,Translated,Tech & other industry,IT,IT,low,4500.0,stated,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+338,ACL,2025,Special,Meeting Destination Vienna,Meeting Destination Vienna,Government / academic / non-profit,AT,AT,low,,tier not priced,https://web.archive.org/web/202509/https://2025.aclweb.org/sponsors/
+339,ACL,2026,Diamond,Alibaba Cloud,Alibaba,Tech & other industry,CN,CN,top,50000.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+340,ACL,2026,Diamond,Bloomberg,Bloomberg,Finance / quant,US,US,top,50000.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+341,ACL,2026,Diamond,Capital One,Capital One,Finance / quant,US,US,top,50000.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+342,ACL,2026,Platinum,Abaka AI,Abaka AI,Tech & other industry,CN,CN,top,35000.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+343,ACL,2026,Platinum,Ant Group,Ant Group,Tech & other industry,CN,CN,top,35000.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+344,ACL,2026,Platinum,Appen,Appen,Tech & other industry,AU,AU,top,35000.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+345,ACL,2026,Platinum,Apple,Apple,Tech & other industry,US,US,top,35000.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+346,ACL,2026,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,35000.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+347,ACL,2026,Platinum,Google,Google,Tech & other industry,US,US,top,35000.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+348,ACL,2026,Platinum,Megagon Labs,Megagon Labs,Tech & other industry,US,JP,top,35000.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+349,ACL,2026,Platinum,Meta,Meta/Facebook,Tech & other industry,US,US,top,35000.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+350,ACL,2026,Platinum,Oracle,Oracle,Tech & other industry,US,US,top,35000.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+351,ACL,2026,Platinum,Snowflake,Snowflake,Tech & other industry,US,US,top,35000.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+352,ACL,2026,Platinum,Tencent,Tencent,Tech & other industry,CN,CN,top,35000.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+353,ACL,2026,Platinum,Zhongguancun Academy,Zhongguancun Academy,Government / academic / non-profit,CN,CN,top,35000.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+354,ACL,2026,Gold,Chen Institute,Chen Institute,Government / academic / non-profit,US,US,mid,20000.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+355,ACL,2026,Gold,JPMorgan Chase,JPMorgan Chase,Finance / quant,US,US,mid,20000.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+356,ACL,2026,Gold,Speak,Speak,Tech & other industry,US,US,mid,20000.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+357,ACL,2026,Gold,StepFun,StepFun,Tech & other industry,CN,CN,mid,20000.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+358,ACL,2026,Silver,Adobe,Adobe,Tech & other industry,US,US,mid,12000.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+359,ACL,2026,Bronze,ARC Document Solutions,ARC Document Solutions,Tech & other industry,US,US,low,7500.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+360,ACL,2026,Bronze,Babelscape,Babelscape,Tech & other industry,IT,IT,low,7500.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+361,ACL,2026,Bronze,DATAmundi,DATAmundi,Tech & other industry,PL,PL,low,7500.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+362,ACL,2026,Bronze,NEC,NEC,Tech & other industry,JP,JP,low,7500.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+363,ACL,2026,Bronze,NatWest Group,NatWest,Finance / quant,GB,GB,low,7500.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+364,ACL,2026,Bronze,Translated,Translated,Tech & other industry,IT,IT,low,7500.0,stated,https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+365,ACL,2026,Supporter,University of Washington,University of Washington,Government / academic / non-profit,US,US,low,2000.0,assumed (Supporter tier no longer listed),https://web.archive.org/web/202610/https://2026.aclweb.org/sponsors/
+366,EMNLP,2013,Platinum,Amazon,Amazon,Tech & other industry,US,US,top,,no price info,https://web.archive.org/web/201312/http://hum.csse.unimelb.edu.au/emnlp2013/
+367,EMNLP,2013,Gold,Google,Google,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201312/http://hum.csse.unimelb.edu.au/emnlp2013/
+368,EMNLP,2013,Gold,Microsoft,Microsoft,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201312/http://hum.csse.unimelb.edu.au/emnlp2013/
+369,EMNLP,2013,Gold,Nuance,Nuance,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201312/http://hum.csse.unimelb.edu.au/emnlp2013/
+370,EMNLP,2013,Gold,Vulcan,Vulcan,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201312/http://hum.csse.unimelb.edu.au/emnlp2013/
+371,EMNLP,2013,Bronze,IBM Watson,IBM,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201312/http://hum.csse.unimelb.edu.au/emnlp2013/
+372,EMNLP,2013,Bronze,inome,inome,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201312/http://hum.csse.unimelb.edu.au/emnlp2013/
+373,EMNLP,2013,Supporter,HLTCOE,Johns Hopkins University,Government / academic / non-profit,US,US,low,,no price info,https://web.archive.org/web/201312/http://hum.csse.unimelb.edu.au/emnlp2013/
+374,EMNLP,2014,Diamond,Qatar National Research Fund,Qatar National Research Fund,Government / academic / non-profit,QA,QA,top,,no price info,https://web.archive.org/web/201412/http://emnlp2014.org/
+375,EMNLP,2014,Platinum,Qatar Computing Research Institute,Qatar Computing Research Institute,Government / academic / non-profit,QA,QA,top,,no price info,https://web.archive.org/web/201412/http://emnlp2014.org/
+376,EMNLP,2014,Gold,Carnegie Mellon University Qatar,Carnegie Mellon University Qatar,Government / academic / non-profit,QA,QA,mid,,no price info,https://web.archive.org/web/201412/http://emnlp2014.org/
+377,EMNLP,2014,Silver,Facebook,Meta/Facebook,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201412/http://emnlp2014.org/
+378,EMNLP,2014,Silver,Yandex,Yandex,Tech & other industry,RU,RU,mid,,no price info,https://web.archive.org/web/201412/http://emnlp2014.org/
+379,EMNLP,2014,Bronze,iHorizons,iHorizons,Tech & other industry,QA,QA,low,,no price info,https://web.archive.org/web/201412/http://emnlp2014.org/
+380,EMNLP,2014,Supporter,IBM Research,IBM,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201412/http://emnlp2014.org/
+381,EMNLP,2014,Special,Google,Google,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201412/http://emnlp2014.org/
+382,EMNLP,2015,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+383,EMNLP,2015,Platinum,Bloomberg,Bloomberg,Finance / quant,US,US,top,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+384,EMNLP,2015,Gold,Google,Google,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+385,EMNLP,2015,Gold,Facebook,Meta/Facebook,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+386,EMNLP,2015,Gold,LinkedIn,Microsoft,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+387,EMNLP,2015,Silver,Amazon,Amazon,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+388,EMNLP,2015,Silver,DigitalGenius,DigitalGenius,Tech & other industry,GB,GB,mid,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+389,EMNLP,2015,Silver,Nuance,Nuance,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+390,EMNLP,2015,Silver,Recruit Technologies,Recruit,Tech & other industry,JP,JP,mid,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+391,EMNLP,2015,Silver,ISI,USC / ISI,Government / academic / non-profit,US,US,mid,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+392,EMNLP,2015,Silver,VoiceBox,VoiceBox,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+393,EMNLP,2015,Bronze,Priberam,Priberam,Tech & other industry,PT,PT,low,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+394,EMNLP,2015,Bronze,VocalIQ,VocalIQ,Tech & other industry,GB,GB,low,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+395,EMNLP,2015,Supporter,Rakuten Institute of Technology,Rakuten,Tech & other industry,JP,JP,low,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+396,EMNLP,2015,Supporter,Unbabel,Unbabel,Tech & other industry,PT,PT,low,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+397,EMNLP,2015,Exhibitor,Morgan & Claypool,Morgan & Claypool,Publisher,US,US,low,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+398,EMNLP,2015,Exhibitor,Springer,Springer Nature,Publisher,DE,DE,low,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+399,EMNLP,2015,Special,IBM Watson,IBM,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+400,EMNLP,2015,Special,INESC-ID,INESC-ID,Government / academic / non-profit,PT,PT,low,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+401,EMNLP,2015,Special,Instituto Superior Técnico,Instituto Superior Técnico,Government / academic / non-profit,PT,PT,low,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+402,EMNLP,2015,Special,Instituto de Telecomunicações,Instituto de Telecomunicações,Government / academic / non-profit,PT,PT,low,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+403,EMNLP,2015,Special,Lisbon City Council,Lisbon City Council,Government / academic / non-profit,PT,PT,low,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+404,EMNLP,2015,Special,TAP Air Portugal,TAP Air Portugal,Tech & other industry,PT,PT,low,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+405,EMNLP,2015,Special,Turismo de Lisboa,Turismo de Lisboa,Government / academic / non-profit,PT,PT,low,,no price info,https://web.archive.org/web/201512/http://www.emnlp2015.org/sponsors.html
+406,EMNLP,2016,Platinum,Amazon,Amazon,Tech & other industry,US,US,top,,no price info,https://web.archive.org/web/201612/http://www.emnlp2016.net/
+407,EMNLP,2016,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,,no price info,https://web.archive.org/web/201612/http://www.emnlp2016.net/
+408,EMNLP,2016,Platinum,Google,Google,Tech & other industry,US,US,top,,no price info,https://web.archive.org/web/201612/http://www.emnlp2016.net/
+409,EMNLP,2016,Platinum,Grammarly,Grammarly,Tech & other industry,US,US,top,,no price info,https://web.archive.org/web/201612/http://www.emnlp2016.net/
+410,EMNLP,2016,Gold,3M,3M,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201612/http://www.emnlp2016.net/
+411,EMNLP,2016,Gold,Bloomberg,Bloomberg,Finance / quant,US,US,mid,,no price info,https://web.archive.org/web/201612/http://www.emnlp2016.net/
+412,EMNLP,2016,Gold,Citadel,Citadel,Finance / quant,US,US,mid,,no price info,https://web.archive.org/web/201612/http://www.emnlp2016.net/
+413,EMNLP,2016,Gold,IBM Research,IBM,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201612/http://www.emnlp2016.net/
+414,EMNLP,2016,Gold,Maluuba,Maluuba,Tech & other industry,CA,CA,mid,,no price info,https://web.archive.org/web/201612/http://www.emnlp2016.net/
+415,EMNLP,2016,Gold,Facebook,Meta/Facebook,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201612/http://www.emnlp2016.net/
+416,EMNLP,2016,Gold,Microsoft,Microsoft,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201612/http://www.emnlp2016.net/
+417,EMNLP,2016,Gold,eBay,eBay,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201612/http://www.emnlp2016.net/
+418,EMNLP,2016,Silver,ISI,USC / ISI,Government / academic / non-profit,US,US,mid,,no price info,https://web.archive.org/web/201612/http://www.emnlp2016.net/
+419,EMNLP,2016,Bronze,Nuance,Nuance,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201612/http://www.emnlp2016.net/
+420,EMNLP,2016,Bronze,VoiceBox,VoiceBox,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201612/http://www.emnlp2016.net/
+421,EMNLP,2016,Bronze,Yandex,Yandex,Tech & other industry,RU,RU,low,,no price info,https://web.archive.org/web/201612/http://www.emnlp2016.net/
+422,EMNLP,2016,Special,Oracle,Oracle,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201612/http://www.emnlp2016.net/
+423,EMNLP,2017,Platinum,Amazon,Amazon,Tech & other industry,US,US,top,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+424,EMNLP,2017,Platinum,Apple,Apple,Tech & other industry,US,US,top,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+425,EMNLP,2017,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+426,EMNLP,2017,Platinum,Bloomberg,Bloomberg,Finance / quant,US,US,top,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+427,EMNLP,2017,Platinum,Google,Google,Tech & other industry,US,US,top,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+428,EMNLP,2017,Platinum,Facebook,Meta/Facebook,Tech & other industry,US,US,top,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+429,EMNLP,2017,Platinum,Siteimprove,Siteimprove,Tech & other industry,DK,DK,top,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+430,EMNLP,2017,Gold,Deloitte,Deloitte,Tech & other industry,GB,GB,mid,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+431,EMNLP,2017,Gold,IBM,IBM,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+432,EMNLP,2017,Gold,KPMG,KPMG,Tech & other industry,GB,GB,mid,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+433,EMNLP,2017,Gold,Maluuba,Maluuba,Tech & other industry,CA,CA,mid,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+434,EMNLP,2017,Gold,Microsoft,Microsoft,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+435,EMNLP,2017,Gold,Recruit Institute of Technology,Recruit,Tech & other industry,JP,JP,mid,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+436,EMNLP,2017,Gold,SAP,SAP,Tech & other industry,DE,DE,mid,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+437,EMNLP,2017,Gold,Textkernel,Textkernel,Tech & other industry,NL,NL,mid,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+438,EMNLP,2017,Gold,Zalando,Zalando,Tech & other industry,DE,DE,mid,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+439,EMNLP,2017,Gold,eBay,eBay,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+440,EMNLP,2017,Silver,CVTE,CVTE,Tech & other industry,CN,CN,mid,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+441,EMNLP,2017,Silver,Duolingo,Duolingo,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+442,EMNLP,2017,Silver,Huawei,Huawei,Tech & other industry,CN,CN,mid,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+443,EMNLP,2017,Silver,Nuance,Nuance,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+444,EMNLP,2017,Silver,Oracle,Oracle,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+445,EMNLP,2017,Silver,Snap,Snap,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+446,EMNLP,2017,Silver,Sogou,Sogou,Tech & other industry,CN,CN,mid,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+447,EMNLP,2017,Silver,Unsilo,Unsilo,Tech & other industry,DK,DK,mid,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+448,EMNLP,2017,Silver,Wizkids,Wizkids,Tech & other industry,DK,DK,mid,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+449,EMNLP,2017,Bronze,Grammarly,Grammarly,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+450,EMNLP,2017,Bronze,NextAI,NextAI,Government / academic / non-profit,CA,CA,low,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+451,EMNLP,2017,Bronze,Trustpilot,Trustpilot,Tech & other industry,DK,DK,low,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+452,EMNLP,2017,Bronze,Yandex,Yandex,Tech & other industry,RU,RU,low,,no price info,https://web.archive.org/web/201712/http://emnlp2017.net/
+453,EMNLP,2018,Diamond,ASAPP,ASAPP,Tech & other industry,US,US,top,20225.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+454,EMNLP,2018,Diamond,Apple,Apple,Tech & other industry,US,US,top,20225.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+455,EMNLP,2018,Diamond,Bloomberg,Bloomberg,Finance / quant,US,US,top,20225.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+456,EMNLP,2018,Diamond,Google,Google,Tech & other industry,US,US,top,20225.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+457,EMNLP,2018,Diamond,Facebook,Meta/Facebook,Tech & other industry,US,US,top,20225.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+458,EMNLP,2018,Diamond,Salesforce,Salesforce,Tech & other industry,US,US,top,20225.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+459,EMNLP,2018,Platinum,Amazon,Amazon,Tech & other industry,US,US,top,12200.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+460,EMNLP,2018,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,12200.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+461,EMNLP,2018,Platinum,Grammarly,Grammarly,Tech & other industry,US,US,top,12200.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+462,EMNLP,2018,Platinum,JD.com,JD.com,Tech & other industry,CN,CN,top,12200.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+463,EMNLP,2018,Platinum,KU Leuven,KU Leuven,Government / academic / non-profit,BE,BE,top,12200.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+464,EMNLP,2018,Platinum,Megagon Labs,Megagon Labs,Tech & other industry,US,JP,top,12200.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+465,EMNLP,2018,Platinum,Naver Labs Europe,NAVER,Tech & other industry,KR,KR,top,12200.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+466,EMNLP,2018,Platinum,Research Foundation Flanders,Research Foundation Flanders,Government / academic / non-profit,BE,BE,top,12200.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+467,EMNLP,2018,Platinum,Visit Brussels,Visit Brussels,Government / academic / non-profit,BE,BE,top,12200.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+468,EMNLP,2018,Gold,CVTE,CVTE,Tech & other industry,CN,CN,mid,6800.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+469,EMNLP,2018,Gold,Microsoft,Microsoft,Tech & other industry,US,US,mid,6800.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+470,EMNLP,2018,Gold,Oracle,Oracle,Tech & other industry,US,US,mid,6800.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+471,EMNLP,2018,Gold,PolyAI,PolyAI,Tech & other industry,GB,GB,mid,6800.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+472,EMNLP,2018,Gold,Sogou,Sogou,Tech & other industry,CN,CN,mid,6800.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+473,EMNLP,2018,Gold,Yitu,Yitu,Tech & other industry,CN,CN,mid,6800.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+474,EMNLP,2018,Gold,eBay,eBay,Tech & other industry,US,US,mid,6800.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+475,EMNLP,2018,Silver,Duolingo,Duolingo,Tech & other industry,US,US,mid,3750.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+476,EMNLP,2018,Silver,Huawei,Huawei,Tech & other industry,CN,CN,mid,3750.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+477,EMNLP,2018,Silver,Nuance,Nuance,Tech & other industry,US,US,mid,3750.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+478,EMNLP,2018,Silver,Shannon AI,Shannon AI,Tech & other industry,CN,CN,mid,3750.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+479,EMNLP,2018,Bronze,Brandeis University,Brandeis University,Government / academic / non-profit,US,US,low,2050.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+480,EMNLP,2018,Bronze,NextAI,NextAI,Government / academic / non-profit,CA,CA,low,2050.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+481,EMNLP,2018,Bronze,Textkernel,Textkernel,Tech & other industry,NL,NL,low,2050.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+482,EMNLP,2018,Supporter,AI2,Allen Institute for AI,Government / academic / non-profit,US,US,low,1090.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+483,EMNLP,2018,Supporter,Text IQ,Text IQ,Tech & other industry,US,US,low,1090.0,assumed (EMNLP 2019 schedule),https://web.archive.org/web/201812/https://emnlp2018.org/sponsors/list/
+484,EMNLP,2019,Diamond,ASAPP,ASAPP,Tech & other industry,US,US,top,20225.0,stated,https://web.archive.org/web/201912/https://www.emnlp-ijcnlp2019.org/sponsors/general/
+485,EMNLP,2019,Diamond,Apple,Apple,Tech & other industry,US,US,top,20225.0,stated,https://web.archive.org/web/201912/https://www.emnlp-ijcnlp2019.org/sponsors/general/
+486,EMNLP,2019,Diamond,Google,Google,Tech & other industry,US,US,top,20225.0,stated,https://web.archive.org/web/201912/https://www.emnlp-ijcnlp2019.org/sponsors/general/
+487,EMNLP,2019,Diamond,Facebook,Meta/Facebook,Tech & other industry,US,US,top,20225.0,stated,https://web.archive.org/web/201912/https://www.emnlp-ijcnlp2019.org/sponsors/general/
+488,EMNLP,2019,Diamond,Salesforce,Salesforce,Tech & other industry,US,US,top,20225.0,stated,https://web.archive.org/web/201912/https://www.emnlp-ijcnlp2019.org/sponsors/general/
+489,EMNLP,2019,Platinum,Amazon,Amazon,Tech & other industry,US,US,top,12200.0,stated,https://web.archive.org/web/201912/https://www.emnlp-ijcnlp2019.org/sponsors/general/
+490,EMNLP,2019,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,12200.0,stated,https://web.archive.org/web/201912/https://www.emnlp-ijcnlp2019.org/sponsors/general/
+491,EMNLP,2019,Platinum,Huawei,Huawei,Tech & other industry,CN,CN,top,12200.0,stated,https://web.archive.org/web/201912/https://www.emnlp-ijcnlp2019.org/sponsors/general/
+492,EMNLP,2019,Gold,ByteDance,ByteDance,Tech & other industry,CN,CN,mid,6800.0,stated,https://web.archive.org/web/201912/https://www.emnlp-ijcnlp2019.org/sponsors/general/
+493,EMNLP,2019,Gold,Megagon Labs,Megagon Labs,Tech & other industry,US,JP,mid,6800.0,stated,https://web.archive.org/web/201912/https://www.emnlp-ijcnlp2019.org/sponsors/general/
+494,EMNLP,2019,Gold,Naver Labs Europe,NAVER,Tech & other industry,KR,KR,mid,6800.0,stated,https://web.archive.org/web/201912/https://www.emnlp-ijcnlp2019.org/sponsors/general/
+495,EMNLP,2019,Gold,PolyAI,PolyAI,Tech & other industry,GB,GB,mid,6800.0,stated,https://web.archive.org/web/201912/https://www.emnlp-ijcnlp2019.org/sponsors/general/
+496,EMNLP,2019,Gold,Verisk,Verisk,Tech & other industry,US,US,mid,6800.0,stated,https://web.archive.org/web/201912/https://www.emnlp-ijcnlp2019.org/sponsors/general/
+497,EMNLP,2019,Gold,Xiaomi,Xiaomi,Tech & other industry,CN,CN,mid,6800.0,stated,https://web.archive.org/web/201912/https://www.emnlp-ijcnlp2019.org/sponsors/general/
+498,EMNLP,2019,Gold,Zhuiyi,Zhuiyi,Tech & other industry,CN,CN,mid,6800.0,stated,https://web.archive.org/web/201912/https://www.emnlp-ijcnlp2019.org/sponsors/general/
+499,EMNLP,2019,Silver,Babelscape,Babelscape,Tech & other industry,IT,IT,mid,3750.0,stated,https://web.archive.org/web/201912/https://www.emnlp-ijcnlp2019.org/sponsors/general/
+500,EMNLP,2019,Silver,Cisco,Cisco,Tech & other industry,US,US,mid,3750.0,stated,https://web.archive.org/web/201912/https://www.emnlp-ijcnlp2019.org/sponsors/general/
+501,EMNLP,2019,Silver,Duolingo,Duolingo,Tech & other industry,US,US,mid,3750.0,stated,https://web.archive.org/web/201912/https://www.emnlp-ijcnlp2019.org/sponsors/general/
+502,EMNLP,2019,Silver,SAP,SAP,Tech & other industry,DE,DE,mid,3750.0,stated,https://web.archive.org/web/201912/https://www.emnlp-ijcnlp2019.org/sponsors/general/
+503,EMNLP,2019,Silver,eBay,eBay,Tech & other industry,US,US,mid,3750.0,stated,https://web.archive.org/web/201912/https://www.emnlp-ijcnlp2019.org/sponsors/general/
+504,EMNLP,2019,Bronze,Hong Kong Tourism Board,Hong Kong Tourism Board,Government / academic / non-profit,HK,HK,low,2050.0,stated,https://web.archive.org/web/201912/https://www.emnlp-ijcnlp2019.org/sponsors/general/
+505,EMNLP,2019,Bronze,Shannon AI,Shannon AI,Tech & other industry,CN,CN,low,2050.0,stated,https://web.archive.org/web/201912/https://www.emnlp-ijcnlp2019.org/sponsors/general/
+506,EMNLP,2020,Diamond,Amazon,Amazon,Tech & other industry,US,US,top,22000.0,stated,https://web.archive.org/web/202012/https://2020.emnlp.org/sponsors
+507,EMNLP,2020,Diamond,Apple,Apple,Tech & other industry,US,US,top,22000.0,stated,https://web.archive.org/web/202012/https://2020.emnlp.org/sponsors
+508,EMNLP,2020,Diamond,Bloomberg,Bloomberg,Finance / quant,US,US,top,22000.0,stated,https://web.archive.org/web/202012/https://2020.emnlp.org/sponsors
+509,EMNLP,2020,Diamond,Google,Google,Tech & other industry,US,US,top,22000.0,stated,https://web.archive.org/web/202012/https://2020.emnlp.org/sponsors
+510,EMNLP,2020,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,13500.0,stated,https://web.archive.org/web/202012/https://2020.emnlp.org/sponsors
+511,EMNLP,2020,Platinum,Megagon Labs,Megagon Labs,Tech & other industry,US,JP,top,13500.0,stated,https://web.archive.org/web/202012/https://2020.emnlp.org/sponsors
+512,EMNLP,2020,Platinum,Facebook,Meta/Facebook,Tech & other industry,US,US,top,13500.0,stated,https://web.archive.org/web/202012/https://2020.emnlp.org/sponsors
+513,EMNLP,2020,Gold,ByteDance,ByteDance,Tech & other industry,CN,CN,mid,7500.0,stated,https://web.archive.org/web/202012/https://2020.emnlp.org/sponsors
+514,EMNLP,2020,Gold,Grammarly,Grammarly,Tech & other industry,US,US,mid,7500.0,stated,https://web.archive.org/web/202012/https://2020.emnlp.org/sponsors
+515,EMNLP,2020,Gold,Zeta Alpha,Zeta Alpha,Tech & other industry,NL,NL,mid,7500.0,stated,https://web.archive.org/web/202012/https://2020.emnlp.org/sponsors
+516,EMNLP,2020,Silver,Adobe,Adobe,Tech & other industry,US,US,mid,3900.0,stated,https://web.archive.org/web/202012/https://2020.emnlp.org/sponsors
+517,EMNLP,2020,Silver,Babelscape,Babelscape,Tech & other industry,IT,IT,mid,3900.0,stated,https://web.archive.org/web/202012/https://2020.emnlp.org/sponsors
+518,EMNLP,2020,Silver,Hitachi,Hitachi,Tech & other industry,JP,JP,mid,3900.0,stated,https://web.archive.org/web/202012/https://2020.emnlp.org/sponsors
+519,EMNLP,2020,Silver,Naver Labs Europe,NAVER,Tech & other industry,KR,KR,mid,3900.0,stated,https://web.archive.org/web/202012/https://2020.emnlp.org/sponsors
+520,EMNLP,2020,Silver,Salesforce,Salesforce,Tech & other industry,US,US,mid,3900.0,stated,https://web.archive.org/web/202012/https://2020.emnlp.org/sponsors
+521,EMNLP,2020,Bronze,ISI,USC / ISI,Government / academic / non-profit,US,US,low,2130.0,stated,https://web.archive.org/web/202012/https://2020.emnlp.org/sponsors
+522,EMNLP,2021,Diamond,Apple,Apple,Tech & other industry,US,US,top,22000.0,stated,https://web.archive.org/web/202112/https://2021.emnlp.org/sponsors
+523,EMNLP,2021,Diamond,Bloomberg,Bloomberg,Finance / quant,US,US,top,22000.0,stated,https://web.archive.org/web/202112/https://2021.emnlp.org/sponsors
+524,EMNLP,2021,Diamond,Google,Google,Tech & other industry,US,US,top,22000.0,stated,https://web.archive.org/web/202112/https://2021.emnlp.org/sponsors
+525,EMNLP,2021,Diamond,Facebook,Meta/Facebook,Tech & other industry,US,US,top,22000.0,stated,https://web.archive.org/web/202112/https://2021.emnlp.org/sponsors
+526,EMNLP,2021,Platinum,Amazon,Amazon,Tech & other industry,US,US,top,14000.0,stated,https://web.archive.org/web/202112/https://2021.emnlp.org/sponsors
+527,EMNLP,2021,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,14000.0,stated,https://web.archive.org/web/202112/https://2021.emnlp.org/sponsors
+528,EMNLP,2021,Platinum,ByteDance,ByteDance,Tech & other industry,CN,CN,top,14000.0,stated,https://web.archive.org/web/202112/https://2021.emnlp.org/sponsors
+529,EMNLP,2021,Platinum,G-Research,G-Research,Finance / quant,GB,GB,top,14000.0,stated,https://web.archive.org/web/202112/https://2021.emnlp.org/sponsors
+530,EMNLP,2021,Platinum,Megagon Labs,Megagon Labs,Tech & other industry,US,JP,top,14000.0,stated,https://web.archive.org/web/202112/https://2021.emnlp.org/sponsors
+531,EMNLP,2021,Gold,Grammarly,Grammarly,Tech & other industry,US,US,mid,8000.0,stated,https://web.archive.org/web/202112/https://2021.emnlp.org/sponsors
+532,EMNLP,2021,Gold,Microsoft,Microsoft,Tech & other industry,US,US,mid,8000.0,stated,https://web.archive.org/web/202112/https://2021.emnlp.org/sponsors
+533,EMNLP,2021,Silver,Duolingo,Duolingo,Tech & other industry,US,US,mid,4000.0,stated,https://web.archive.org/web/202112/https://2021.emnlp.org/sponsors
+534,EMNLP,2021,Silver,Intel,Intel,Tech & other industry,US,US,mid,4000.0,stated,https://web.archive.org/web/202112/https://2021.emnlp.org/sponsors
+535,EMNLP,2021,Silver,NAVER,NAVER,Tech & other industry,KR,KR,mid,4000.0,stated,https://web.archive.org/web/202112/https://2021.emnlp.org/sponsors
+536,EMNLP,2021,Bronze,Adobe,Adobe,Tech & other industry,US,US,low,2000.0,stated,https://web.archive.org/web/202112/https://2021.emnlp.org/sponsors
+537,EMNLP,2021,Bronze,Babelscape,Babelscape,Tech & other industry,IT,IT,low,2000.0,stated,https://web.archive.org/web/202112/https://2021.emnlp.org/sponsors
+538,EMNLP,2021,Bronze,HLTCOE,Johns Hopkins University,Government / academic / non-profit,US,US,low,2000.0,stated,https://web.archive.org/web/202112/https://2021.emnlp.org/sponsors
+539,EMNLP,2021,Bronze,LegalForce,LegalForce,Tech & other industry,JP,JP,low,2000.0,stated,https://web.archive.org/web/202112/https://2021.emnlp.org/sponsors
+540,EMNLP,2021,Supporter,ServiceNow,ServiceNow,Tech & other industry,US,US,low,1500.0,stated,https://web.archive.org/web/202112/https://2021.emnlp.org/sponsors
+541,EMNLP,2021,D&I,IBM,IBM,Tech & other industry,US,US,low,,tier not priced,https://web.archive.org/web/202112/https://2021.emnlp.org/sponsors
+542,EMNLP,2021,D&I,Morgan Stanley,Morgan Stanley,Finance / quant,US,US,low,,tier not priced,https://web.archive.org/web/202112/https://2021.emnlp.org/sponsors
+543,EMNLP,2021,D&I,Borealis AI,RBC,Finance / quant,CA,CA,low,,tier not priced,https://web.archive.org/web/202112/https://2021.emnlp.org/sponsors
+544,EMNLP,2022,Diamond,Amazon,Amazon,Tech & other industry,US,US,top,30000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+545,EMNLP,2022,Diamond,Apple,Apple,Tech & other industry,US,US,top,30000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+546,EMNLP,2022,Diamond,Bloomberg,Bloomberg,Finance / quant,US,US,top,30000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+547,EMNLP,2022,Diamond,Google,Google,Tech & other industry,US,US,top,30000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+548,EMNLP,2022,Diamond,Mohamed bin Zayed University of Artificial Intelligence,MBZUAI,Government / academic / non-profit,AE,AE,top,30000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+549,EMNLP,2022,Diamond,Meta,Meta/Facebook,Tech & other industry,US,US,top,30000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+550,EMNLP,2022,Diamond,New York University Abu Dhabi,NYU Abu Dhabi,Government / academic / non-profit,AE,AE,top,30000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+551,EMNLP,2022,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,20000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+552,EMNLP,2022,Platinum,ByteDance,ByteDance,Tech & other industry,CN,CN,top,20000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+553,EMNLP,2022,Platinum,Megagon Labs,Megagon Labs,Tech & other industry,US,JP,top,20000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+554,EMNLP,2022,Platinum,Microsoft,Microsoft,Tech & other industry,US,US,top,20000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+555,EMNLP,2022,Platinum,SCAI,SCAI,Tech & other industry,SA,SA,top,20000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+556,EMNLP,2022,Platinum,Tetrasoft,Tetrasoft,Tech & other industry,US,US,top,20000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+557,EMNLP,2022,Gold,Beyond Limits,Beyond Limits,Tech & other industry,AE,AE,mid,10000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+558,EMNLP,2022,Gold,Cohere,Cohere,Tech & other industry,CA,CA,mid,10000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+559,EMNLP,2022,Gold,Huawei,Huawei,Tech & other industry,CN,CN,mid,10000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+560,EMNLP,2022,Gold,ServiceNow,ServiceNow,Tech & other industry,US,US,mid,10000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+561,EMNLP,2022,Gold,Technology Innovation Institute,Technology Innovation Institute,Government / academic / non-profit,AE,AE,mid,10000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+562,EMNLP,2022,Silver,Duolingo,Duolingo,Tech & other industry,US,US,mid,6000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+563,EMNLP,2022,Silver,NAVER,NAVER,Tech & other industry,KR,KR,mid,6000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+564,EMNLP,2022,Silver,Translated,Translated,Tech & other industry,IT,IT,mid,6000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+565,EMNLP,2022,Bronze,Adobe,Adobe,Tech & other industry,US,US,low,3000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+566,EMNLP,2022,Bronze,Babelscape,Babelscape,Tech & other industry,IT,IT,low,3000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+567,EMNLP,2022,Bronze,Grammarly,Grammarly,Tech & other industry,US,US,low,3000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+568,EMNLP,2022,Bronze,HLTCOE,Johns Hopkins University,Government / academic / non-profit,US,US,low,3000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+569,EMNLP,2022,Bronze,NEC,NEC,Tech & other industry,JP,JP,low,3000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+570,EMNLP,2022,Bronze,aiXplain,aiXplain,Tech & other industry,US,US,low,3000.0,stated,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+571,EMNLP,2022,D&I,Snap,Snap,Tech & other industry,US,US,low,,tier not priced,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+572,EMNLP,2022,Special,Abu Dhabi Convention and Exhibition Bureau,Abu Dhabi Convention and Exhibition Bureau,Government / academic / non-profit,AE,AE,low,,tier not priced,https://web.archive.org/web/202212/https://2022.emnlp.org/sponsors/
+573,EMNLP,2023,Diamond,Apple,Apple,Tech & other industry,US,US,top,30000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+574,EMNLP,2023,Diamond,GTCOM,GTCOM,Tech & other industry,CN,CN,top,30000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+575,EMNLP,2023,Diamond,Google,Google,Tech & other industry,US,US,top,30000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+576,EMNLP,2023,Diamond,HPC-AI Tech,HPC-AI Tech,Tech & other industry,SG,SG,top,30000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+577,EMNLP,2023,Diamond,King Salman Global Academy for the Arabic Language,King Salman Global Academy for Arabic,Government / academic / non-profit,SA,SA,top,30000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+578,EMNLP,2023,Diamond,LivePerson,LivePerson,Tech & other industry,US,US,top,30000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+579,EMNLP,2023,Diamond,Sony,Sony,Tech & other industry,JP,JP,top,30000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+580,EMNLP,2023,Platinum,Ahrefs,Ahrefs,Tech & other industry,SG,SG,top,20000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+581,EMNLP,2023,Platinum,Alibaba,Alibaba,Tech & other industry,CN,CN,top,20000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+582,EMNLP,2023,Platinum,Amazon,Amazon,Tech & other industry,US,US,top,20000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+583,EMNLP,2023,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,20000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+584,EMNLP,2023,Platinum,ByteDance,ByteDance,Tech & other industry,CN,CN,top,20000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+585,EMNLP,2023,Platinum,Cohere,Cohere,Tech & other industry,CA,CA,top,20000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+586,EMNLP,2023,Platinum,Megagon Labs,Megagon Labs,Tech & other industry,US,JP,top,20000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+587,EMNLP,2023,Platinum,NEC,NEC,Tech & other industry,JP,JP,top,20000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+588,EMNLP,2023,Gold,Ant Group,Ant Group,Tech & other industry,CN,CN,mid,10000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+589,EMNLP,2023,Gold,Bloomberg,Bloomberg,Finance / quant,US,US,mid,10000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+590,EMNLP,2023,Gold,Huawei,Huawei,Tech & other industry,CN,CN,mid,10000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+591,EMNLP,2023,Gold,JPMorgan Chase,JPMorgan Chase,Finance / quant,US,US,mid,10000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+592,EMNLP,2023,Gold,SAP,SAP,Tech & other industry,DE,DE,mid,10000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+593,EMNLP,2023,Gold,Salesforce,Salesforce,Tech & other industry,US,US,mid,10000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+594,EMNLP,2023,Silver,Duolingo,Duolingo,Tech & other industry,US,US,mid,6000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+595,EMNLP,2023,Silver,Translated,Translated,Tech & other industry,IT,IT,mid,6000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+596,EMNLP,2023,Silver,aiXplain,aiXplain,Tech & other industry,US,US,mid,6000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+597,EMNLP,2023,Silver,jenni.ai,jenni.ai,Tech & other industry,US,US,mid,6000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+598,EMNLP,2023,Bronze,Adobe,Adobe,Tech & other industry,US,US,low,3000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+599,EMNLP,2023,Bronze,Babelscape,Babelscape,Tech & other industry,IT,IT,low,3000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+600,EMNLP,2023,Bronze,Mercari,Mercari,Tech & other industry,JP,JP,low,3000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+601,EMNLP,2023,Bronze,ModelBest,ModelBest,Tech & other industry,CN,CN,low,3000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+602,EMNLP,2023,Bronze,Nyonic,Nyonic,Tech & other industry,DE,DE,low,3000.0,stated,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+603,EMNLP,2023,D&I,COLIPS,COLIPS,Government / academic / non-profit,SG,SG,low,,tier not priced,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+604,EMNLP,2023,D&I,RIKEN AIP,RIKEN AIP,Government / academic / non-profit,JP,JP,low,,tier not priced,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+605,EMNLP,2023,Special,Singapore Exhibition & Convention Bureau,Singapore Exhibition & Convention Bureau,Government / academic / non-profit,SG,SG,low,,tier not priced,https://web.archive.org/web/202312/https://2023.emnlp.org/sponsors/
+606,EMNLP,2024,Diamond,Apple,Apple,Tech & other industry,US,US,top,40000.0,stated,https://web.archive.org/web/202412/https://2024.emnlp.org/sponsors/
+607,EMNLP,2024,Diamond,Bloomberg,Bloomberg,Finance / quant,US,US,top,40000.0,stated,https://web.archive.org/web/202412/https://2024.emnlp.org/sponsors/
+608,EMNLP,2024,Diamond,Citadel,Citadel,Finance / quant,US,US,top,40000.0,stated,https://web.archive.org/web/202412/https://2024.emnlp.org/sponsors/
+609,EMNLP,2024,Diamond,Google DeepMind,Google,Tech & other industry,US,US,top,40000.0,stated,https://web.archive.org/web/202412/https://2024.emnlp.org/sponsors/
+610,EMNLP,2024,Diamond,Meta,Meta/Facebook,Tech & other industry,US,US,top,40000.0,stated,https://web.archive.org/web/202412/https://2024.emnlp.org/sponsors/
+611,EMNLP,2024,Platinum,Amazon,Amazon,Tech & other industry,US,US,top,27500.0,stated,https://web.archive.org/web/202412/https://2024.emnlp.org/sponsors/
+612,EMNLP,2024,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,27500.0,stated,https://web.archive.org/web/202412/https://2024.emnlp.org/sponsors/
+613,EMNLP,2024,Platinum,ByteDance,ByteDance,Tech & other industry,CN,CN,top,27500.0,stated,https://web.archive.org/web/202412/https://2024.emnlp.org/sponsors/
+614,EMNLP,2024,Platinum,Cohere,Cohere,Tech & other industry,CA,CA,top,27500.0,stated,https://web.archive.org/web/202412/https://2024.emnlp.org/sponsors/
+615,EMNLP,2024,Platinum,Intuit,Intuit,Tech & other industry,US,US,top,27500.0,stated,https://web.archive.org/web/202412/https://2024.emnlp.org/sponsors/
+616,EMNLP,2024,Platinum,Megagon Labs,Megagon Labs,Tech & other industry,US,JP,top,27500.0,stated,https://web.archive.org/web/202412/https://2024.emnlp.org/sponsors/
+617,EMNLP,2024,Platinum,Oracle,Oracle,Tech & other industry,US,US,top,27500.0,stated,https://web.archive.org/web/202412/https://2024.emnlp.org/sponsors/
+618,EMNLP,2024,Platinum,SCAI,SCAI,Tech & other industry,SA,SA,top,27500.0,stated,https://web.archive.org/web/202412/https://2024.emnlp.org/sponsors/
+619,EMNLP,2024,Platinum,Toloka AI,Toloka,Tech & other industry,NL,NL,top,27500.0,stated,https://web.archive.org/web/202412/https://2024.emnlp.org/sponsors/
+620,EMNLP,2024,Gold,Millennium,Millennium,Finance / quant,US,US,mid,15000.0,stated,https://web.archive.org/web/202412/https://2024.emnlp.org/sponsors/
+621,EMNLP,2024,Gold,Turing,Turing,Tech & other industry,US,US,mid,15000.0,stated,https://web.archive.org/web/202412/https://2024.emnlp.org/sponsors/
+622,EMNLP,2024,Silver,Ant Group,Ant Group,Tech & other industry,CN,CN,mid,9000.0,stated,https://web.archive.org/web/202412/https://2024.emnlp.org/sponsors/
+623,EMNLP,2024,Bronze,Adobe,Adobe,Tech & other industry,US,US,low,4500.0,stated,https://web.archive.org/web/202412/https://2024.emnlp.org/sponsors/
+624,EMNLP,2024,Bronze,Figma,Figma,Tech & other industry,US,US,low,4500.0,stated,https://web.archive.org/web/202412/https://2024.emnlp.org/sponsors/
+625,EMNLP,2024,Bronze,Florida International University,Florida International University,Government / academic / non-profit,US,US,low,4500.0,stated,https://web.archive.org/web/202412/https://2024.emnlp.org/sponsors/
+626,EMNLP,2024,Bronze,JPMorgan Chase,JPMorgan Chase,Finance / quant,US,US,low,4500.0,stated,https://web.archive.org/web/202412/https://2024.emnlp.org/sponsors/
+627,EMNLP,2024,Bronze,Jane Street,Jane Street,Finance / quant,US,US,low,4500.0,stated,https://web.archive.org/web/202412/https://2024.emnlp.org/sponsors/
+628,EMNLP,2024,Bronze,Translated,Translated,Tech & other industry,IT,IT,low,4500.0,stated,https://web.archive.org/web/202412/https://2024.emnlp.org/sponsors/
+629,EMNLP,2025,Diamond,Apple,Apple,Tech & other industry,US,US,top,40000.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+630,EMNLP,2025,Diamond,HPC-AI Tech,HPC-AI Tech,Tech & other industry,SG,SG,top,40000.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+631,EMNLP,2025,Diamond,MiroMind,MiroMind,Tech & other industry,CN,CN,top,40000.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+632,EMNLP,2025,Diamond,Tencent,Tencent,Tech & other industry,CN,CN,top,40000.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+633,EMNLP,2025,Platinum,Airbnb,Airbnb,Tech & other industry,US,US,top,27500.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+634,EMNLP,2025,Platinum,Alibaba Cloud,Alibaba,Tech & other industry,CN,CN,top,27500.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+635,EMNLP,2025,Platinum,Ant Group,Ant Group,Tech & other industry,CN,CN,top,27500.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+636,EMNLP,2025,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,27500.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+637,EMNLP,2025,Platinum,ByteDance,ByteDance,Tech & other industry,CN,CN,top,27500.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+638,EMNLP,2025,Platinum,Meituan,Meituan,Tech & other industry,CN,CN,top,27500.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+639,EMNLP,2025,Platinum,Sahara AI,Sahara AI,Tech & other industry,US,US,top,27500.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+640,EMNLP,2025,Platinum,Toloka AI,Toloka,Tech & other industry,NL,NL,top,27500.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+641,EMNLP,2025,Platinum,Xiaomi,Xiaomi,Tech & other industry,CN,CN,top,27500.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+642,EMNLP,2025,Gold,Amazon,Amazon,Tech & other industry,US,US,mid,15000.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+643,EMNLP,2025,Gold,JPMorgan Chase,JPMorgan Chase,Finance / quant,US,US,mid,15000.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+644,EMNLP,2025,Gold,MiniMax,MiniMax,Tech & other industry,CN,CN,mid,15000.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+645,EMNLP,2025,Gold,Ubiquant,Ubiquant,Finance / quant,CN,CN,mid,15000.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+646,EMNLP,2025,Silver,Adobe,Adobe,Tech & other industry,US,US,mid,9000.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+647,EMNLP,2025,Silver,Appen,Appen,Tech & other industry,AU,AU,mid,9000.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+648,EMNLP,2025,Silver,Bloomberg,Bloomberg,Finance / quant,US,US,mid,9000.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+649,EMNLP,2025,Silver,HPLT Project,HPLT Project,Government / academic / non-profit,FI,FI,mid,9000.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+650,EMNLP,2025,Bronze,Abaka AI,Abaka AI,Tech & other industry,CN,CN,low,4500.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+651,EMNLP,2025,Bronze,Baobab,Baobab,Tech & other industry,JP,JP,low,4500.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+652,EMNLP,2025,Bronze,Josh Talks,Josh Talks,Tech & other industry,IN,IN,low,4500.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+653,EMNLP,2025,Bronze,Keensight,Keensight,Tech & other industry,??,??,low,4500.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+654,EMNLP,2025,Bronze,King Salman Global Academy for the Arabic Language,King Salman Global Academy for Arabic,Government / academic / non-profit,SA,SA,low,4500.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+655,EMNLP,2025,Bronze,Translated,Translated,Tech & other industry,IT,IT,low,4500.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+656,EMNLP,2025,Bronze,Unix AI,Unix AI,Tech & other industry,??,??,low,4500.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+657,EMNLP,2025,Bronze,neptune.ai,neptune.ai,Tech & other industry,PL,PL,low,4500.0,stated,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+658,EMNLP,2025,Unspecified,Bailu,Bailu,Tech & other industry,??,??,unknown,,tier not priced,https://web.archive.org/web/202512/https://2025.emnlp.org/sponsors/
+659,EMNLP,2026,Diamond,Bloomberg,Bloomberg,Finance / quant,US,US,top,50000.0,stated,https://2026.emnlp.org/sponsors/
+660,EMNLP,2026,Diamond,Google,Google,Tech & other industry,US,US,top,50000.0,stated,https://2026.emnlp.org/sponsors/
+661,EMNLP,2026,Platinum,Airbnb,Airbnb,Tech & other industry,US,US,top,35000.0,stated,https://2026.emnlp.org/sponsors/
+662,EMNLP,2026,Platinum,Apple,Apple,Tech & other industry,US,US,top,35000.0,stated,https://2026.emnlp.org/sponsors/
+663,EMNLP,2026,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,35000.0,stated,https://2026.emnlp.org/sponsors/
+664,EMNLP,2026,Platinum,Capital One,Capital One,Finance / quant,US,US,top,35000.0,stated,https://2026.emnlp.org/sponsors/
+665,EMNLP,2026,Platinum,Cohere,Cohere,Tech & other industry,CA,CA,top,35000.0,stated,https://2026.emnlp.org/sponsors/
+666,EMNLP,2026,Platinum,GPTZero,GPTZero,Tech & other industry,US,US,top,35000.0,stated,https://2026.emnlp.org/sponsors/
+667,EMNLP,2026,Platinum,Megagon Labs,Megagon Labs,Tech & other industry,US,JP,top,35000.0,stated,https://2026.emnlp.org/sponsors/
+668,EMNLP,2026,Platinum,Oracle,Oracle,Tech & other industry,US,US,top,35000.0,stated,https://2026.emnlp.org/sponsors/
+669,EMNLP,2026,Platinum,RedNote,rednote,Tech & other industry,CN,CN,top,35000.0,stated,https://2026.emnlp.org/sponsors/
+670,EMNLP,2026,Gold,Ant Group,Ant Group,Tech & other industry,CN,CN,mid,20000.0,stated,https://2026.emnlp.org/sponsors/
+671,EMNLP,2026,Gold,JPMorgan Chase,JPMorgan Chase,Finance / quant,US,US,mid,20000.0,stated,https://2026.emnlp.org/sponsors/
+672,EMNLP,2026,Gold,Meituan,Meituan,Tech & other industry,CN,CN,mid,20000.0,stated,https://2026.emnlp.org/sponsors/
+673,EMNLP,2026,Gold,SAP,SAP,Tech & other industry,DE,DE,mid,20000.0,stated,https://2026.emnlp.org/sponsors/
+674,EMNLP,2026,Gold,Tencent,Tencent,Tech & other industry,CN,CN,mid,20000.0,stated,https://2026.emnlp.org/sponsors/
+675,EMNLP,2026,Gold,Tether,Tether,Finance / quant,SV,SV,mid,20000.0,stated,https://2026.emnlp.org/sponsors/
+676,EMNLP,2026,Gold,Thomson Reuters,Thomson Reuters,Tech & other industry,CA,CA,mid,20000.0,stated,https://2026.emnlp.org/sponsors/
+677,EMNLP,2026,Silver,Adobe,Adobe,Tech & other industry,US,US,mid,12000.0,stated,https://2026.emnlp.org/sponsors/
+678,EMNLP,2026,Bronze,Alice,Alice,Tech & other industry,IL,IL,low,7500.0,stated,https://2026.emnlp.org/sponsors/
+679,EMNLP,2026,Bronze,Booking.com,Booking.com,Tech & other industry,NL,NL,low,7500.0,stated,https://2026.emnlp.org/sponsors/
+680,EMNLP,2026,Bronze,DATAmundi,DATAmundi,Tech & other industry,PL,PL,low,7500.0,stated,https://2026.emnlp.org/sponsors/
+681,EMNLP,2026,Bronze,DataOcean AI,DataOcean AI,Tech & other industry,CN,CN,low,7500.0,stated,https://2026.emnlp.org/sponsors/
+682,EMNLP,2026,Bronze,Keenable,Keenable,Tech & other industry,??,??,low,7500.0,stated,https://2026.emnlp.org/sponsors/
+683,EMNLP,2026,Bronze,Oruk,Oruk,Tech & other industry,??,??,low,7500.0,stated,https://2026.emnlp.org/sponsors/
+684,EMNLP,2026,Bronze,Translated,Translated,Tech & other industry,IT,IT,low,7500.0,stated,https://2026.emnlp.org/sponsors/
+685,NAACL,2013,Gold,Google,Google,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201307/http://naacl2013.naacl.org/
+686,NAACL,2013,Gold,Microsoft Research,Microsoft,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201307/http://naacl2013.naacl.org/
+687,NAACL,2013,Bronze,Appen Butler Hill,Appen,Tech & other industry,AU,AU,low,,no price info,https://web.archive.org/web/201307/http://naacl2013.naacl.org/
+688,NAACL,2013,Bronze,ETS,ETS,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201307/http://naacl2013.naacl.org/
+689,NAACL,2013,Bronze,Rakuten,Rakuten,Tech & other industry,JP,JP,low,,no price info,https://web.archive.org/web/201307/http://naacl2013.naacl.org/
+690,NAACL,2013,Bronze,Yahoo Labs,Yahoo,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201307/http://naacl2013.naacl.org/
+691,NAACL,2013,Supporter,University of Washington,University of Washington,Government / academic / non-profit,US,US,low,,no price info,https://web.archive.org/web/201307/http://naacl2013.naacl.org/
+692,NAACL,2013,Special,IBM Research,IBM,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201307/http://naacl2013.naacl.org/
+693,NAACL,2013,Special,SDL,SDL,Tech & other industry,GB,GB,low,,no price info,https://web.archive.org/web/201307/http://naacl2013.naacl.org/
+694,NAACL,2013,Special,USC,USC / ISI,Government / academic / non-profit,US,US,low,,no price info,https://web.archive.org/web/201307/http://naacl2013.naacl.org/
+695,NAACL,2015,Platinum,Bloomberg,Bloomberg,Finance / quant,US,US,top,,no price info,https://web.archive.org/web/201507/http://naacl.org/naacl-hlt-2015/sponsors.html
+696,NAACL,2015,Gold,A9.com,Amazon,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201507/http://naacl.org/naacl-hlt-2015/sponsors.html
+697,NAACL,2015,Gold,Goldman Sachs,Goldman Sachs,Finance / quant,US,US,mid,,no price info,https://web.archive.org/web/201507/http://naacl.org/naacl-hlt-2015/sponsors.html
+698,NAACL,2015,Gold,Google,Google,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201507/http://naacl.org/naacl-hlt-2015/sponsors.html
+699,NAACL,2015,Gold,IBM Watson,IBM,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201507/http://naacl.org/naacl-hlt-2015/sponsors.html
+700,NAACL,2015,Gold,Microsoft,Microsoft,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201507/http://naacl.org/naacl-hlt-2015/sponsors.html
+701,NAACL,2015,Silver,Nuance,Nuance,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201507/http://naacl.org/naacl-hlt-2015/sponsors.html
+702,NAACL,2015,Silver,SDL,SDL,Tech & other industry,GB,GB,mid,,no price info,https://web.archive.org/web/201507/http://naacl.org/naacl-hlt-2015/sponsors.html
+703,NAACL,2015,Silver,ISI,USC / ISI,Government / academic / non-profit,US,US,mid,,no price info,https://web.archive.org/web/201507/http://naacl.org/naacl-hlt-2015/sponsors.html
+704,NAACL,2015,Bronze,Interactions,Interactions,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201507/http://naacl.org/naacl-hlt-2015/sponsors.html
+705,NAACL,2015,Bronze,Yahoo Labs,Yahoo,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201507/http://naacl.org/naacl-hlt-2015/sponsors.html
+706,NAACL,2015,Supporter,Digital Roots,Digital Roots,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201507/http://naacl.org/naacl-hlt-2015/sponsors.html
+707,NAACL,2015,Supporter,University of Washington,University of Washington,Government / academic / non-profit,US,US,low,,no price info,https://web.archive.org/web/201507/http://naacl.org/naacl-hlt-2015/sponsors.html
+708,NAACL,2015,Supporter,VoiceBox,VoiceBox,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201507/http://naacl.org/naacl-hlt-2015/sponsors.html
+709,NAACL,2015,Special,Baobab,Baobab,Tech & other industry,JP,JP,low,,no price info,https://web.archive.org/web/201507/http://naacl.org/naacl-hlt-2015/sponsors.html
+710,NAACL,2015,Special,Machine Zone,Machine Zone,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201507/http://naacl.org/naacl-hlt-2015/sponsors.html
+711,NAACL,2016,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,,no price info,https://web.archive.org/web/201607/http://naacl.org/naacl-hlt-2016/sponsors.html
+712,NAACL,2016,Platinum,Google,Google,Tech & other industry,US,US,top,,no price info,https://web.archive.org/web/201607/http://naacl.org/naacl-hlt-2016/sponsors.html
+713,NAACL,2016,Gold,Amazon,Amazon,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201607/http://naacl.org/naacl-hlt-2016/sponsors.html
+714,NAACL,2016,Gold,Bloomberg,Bloomberg,Finance / quant,US,US,mid,,no price info,https://web.archive.org/web/201607/http://naacl.org/naacl-hlt-2016/sponsors.html
+715,NAACL,2016,Gold,IBM Research,IBM,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201607/http://naacl.org/naacl-hlt-2016/sponsors.html
+716,NAACL,2016,Gold,Maluuba,Maluuba,Tech & other industry,CA,CA,mid,,no price info,https://web.archive.org/web/201607/http://naacl.org/naacl-hlt-2016/sponsors.html
+717,NAACL,2016,Gold,Microsoft,Microsoft,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201607/http://naacl.org/naacl-hlt-2016/sponsors.html
+718,NAACL,2016,Gold,Optum 360,Optum 360,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201607/http://naacl.org/naacl-hlt-2016/sponsors.html
+719,NAACL,2016,Gold,eBay,eBay,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201607/http://naacl.org/naacl-hlt-2016/sponsors.html
+720,NAACL,2016,Silver,Huawei,Huawei,Tech & other industry,CN,CN,mid,,no price info,https://web.archive.org/web/201607/http://naacl.org/naacl-hlt-2016/sponsors.html
+721,NAACL,2016,Silver,OpenTable,OpenTable,Tech & other industry,US,US,mid,,no price info,https://web.archive.org/web/201607/http://naacl.org/naacl-hlt-2016/sponsors.html
+722,NAACL,2016,Bronze,Adobe,Adobe,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201607/http://naacl.org/naacl-hlt-2016/sponsors.html
+723,NAACL,2016,Bronze,Civis Analytics,Civis Analytics,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201607/http://naacl.org/naacl-hlt-2016/sponsors.html
+724,NAACL,2016,Bronze,Grammarly,Grammarly,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201607/http://naacl.org/naacl-hlt-2016/sponsors.html
+725,NAACL,2016,Bronze,Facebook,Meta/Facebook,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201607/http://naacl.org/naacl-hlt-2016/sponsors.html
+726,NAACL,2016,Bronze,Newsela,Newsela,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201607/http://naacl.org/naacl-hlt-2016/sponsors.html
+727,NAACL,2016,Bronze,Nuance,Nuance,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201607/http://naacl.org/naacl-hlt-2016/sponsors.html
+728,NAACL,2016,Bronze,VoiceBox,VoiceBox,Tech & other industry,US,US,low,,no price info,https://web.archive.org/web/201607/http://naacl.org/naacl-hlt-2016/sponsors.html
+729,NAACL,2016,Supporter,Brandeis University,Brandeis University,Government / academic / non-profit,US,US,low,,no price info,https://web.archive.org/web/201607/http://naacl.org/naacl-hlt-2016/sponsors.html
+730,NAACL,2016,Supporter,University of Washington,University of Washington,Government / academic / non-profit,US,US,low,,no price info,https://web.archive.org/web/201607/http://naacl.org/naacl-hlt-2016/sponsors.html
+731,NAACL,2018,Diamond,Bloomberg,Bloomberg,Finance / quant,US,US,top,15400.0,assumed (NAACL 2019 schedule),https://web.archive.org/web/201807/http://naacl2018.org/sponsor.html
+732,NAACL,2018,Diamond,Toutiao/ByteDance,ByteDance,Tech & other industry,CN,CN,top,15400.0,assumed (NAACL 2019 schedule),https://web.archive.org/web/201807/http://naacl2018.org/sponsor.html
+733,NAACL,2018,Diamond,Google,Google,Tech & other industry,US,US,top,15400.0,assumed (NAACL 2019 schedule),https://web.archive.org/web/201807/http://naacl2018.org/sponsor.html
+734,NAACL,2018,Platinum,Amazon,Amazon,Tech & other industry,US,US,top,9300.0,assumed (NAACL 2019 schedule),https://web.archive.org/web/201807/http://naacl2018.org/sponsor.html
+735,NAACL,2018,Platinum,Facebook,Meta/Facebook,Tech & other industry,US,US,top,9300.0,assumed (NAACL 2019 schedule),https://web.archive.org/web/201807/http://naacl2018.org/sponsor.html
+736,NAACL,2018,Gold,Capital One,Capital One,Finance / quant,US,US,mid,5200.0,assumed (NAACL 2019 schedule),https://web.archive.org/web/201807/http://naacl2018.org/sponsor.html
+737,NAACL,2018,Gold,Grammarly,Grammarly,Tech & other industry,US,US,mid,5200.0,assumed (NAACL 2019 schedule),https://web.archive.org/web/201807/http://naacl2018.org/sponsor.html
+738,NAACL,2018,Gold,IBM Research,IBM,Tech & other industry,US,US,mid,5200.0,assumed (NAACL 2019 schedule),https://web.archive.org/web/201807/http://naacl2018.org/sponsor.html
+739,NAACL,2018,Gold,KPMG,KPMG,Tech & other industry,GB,GB,mid,5200.0,assumed (NAACL 2019 schedule),https://web.archive.org/web/201807/http://naacl2018.org/sponsor.html
+740,NAACL,2018,Gold,Oracle,Oracle,Tech & other industry,US,US,mid,5200.0,assumed (NAACL 2019 schedule),https://web.archive.org/web/201807/http://naacl2018.org/sponsor.html
+741,NAACL,2018,Gold,PolyAI,PolyAI,Tech & other industry,GB,GB,mid,5200.0,assumed (NAACL 2019 schedule),https://web.archive.org/web/201807/http://naacl2018.org/sponsor.html
+742,NAACL,2018,Gold,Tulane University,Tulane University,Government / academic / non-profit,US,US,mid,5200.0,assumed (NAACL 2019 schedule),https://web.archive.org/web/201807/http://naacl2018.org/sponsor.html
+743,NAACL,2018,Gold,Two Sigma,Two Sigma,Finance / quant,US,US,mid,5200.0,assumed (NAACL 2019 schedule),https://web.archive.org/web/201807/http://naacl2018.org/sponsor.html
+744,NAACL,2018,Gold,eBay,eBay,Tech & other industry,US,US,mid,5200.0,assumed (NAACL 2019 schedule),https://web.archive.org/web/201807/http://naacl2018.org/sponsor.html
+745,NAACL,2018,Silver,Figure Eight,Figure Eight,Tech & other industry,US,US,mid,2850.0,assumed (NAACL 2019 schedule),https://web.archive.org/web/201807/http://naacl2018.org/sponsor.html
+746,NAACL,2018,Silver,Nuance,Nuance,Tech & other industry,US,US,mid,2850.0,assumed (NAACL 2019 schedule),https://web.archive.org/web/201807/http://naacl2018.org/sponsor.html
+747,NAACL,2018,Bronze,ISI,USC / ISI,Government / academic / non-profit,US,US,low,1550.0,assumed (NAACL 2019 schedule),https://web.archive.org/web/201807/http://naacl2018.org/sponsor.html
+748,NAACL,2018,Bronze,iMerit,iMerit,Tech & other industry,US,US,low,1550.0,assumed (NAACL 2019 schedule),https://web.archive.org/web/201807/http://naacl2018.org/sponsor.html
+749,NAACL,2018,Special,CRA Computing Community Consortium,CRA Computing Community Consortium,Government / academic / non-profit,US,US,low,,tier not priced,https://web.archive.org/web/201807/http://naacl2018.org/sponsor.html
+750,NAACL,2018,Special,NSF,NSF,Government / academic / non-profit,US,US,low,,tier not priced,https://web.archive.org/web/201807/http://naacl2018.org/sponsor.html
+751,NAACL,2019,Diamond,ASAPP,ASAPP,Tech & other industry,US,US,top,15400.0,stated,https://web.archive.org/web/201907/https://naacl2019.org/sponsors/list/
+752,NAACL,2019,Diamond,Amazon,Amazon,Tech & other industry,US,US,top,15400.0,stated,https://web.archive.org/web/201907/https://naacl2019.org/sponsors/list/
+753,NAACL,2019,Diamond,Bloomberg,Bloomberg,Finance / quant,US,US,top,15400.0,stated,https://web.archive.org/web/201907/https://naacl2019.org/sponsors/list/
+754,NAACL,2019,Diamond,Google,Google,Tech & other industry,US,US,top,15400.0,stated,https://web.archive.org/web/201907/https://naacl2019.org/sponsors/list/
+755,NAACL,2019,Diamond,Facebook,Meta/Facebook,Tech & other industry,US,US,top,15400.0,stated,https://web.archive.org/web/201907/https://naacl2019.org/sponsors/list/
+756,NAACL,2019,Platinum,Capital One,Capital One,Finance / quant,US,US,top,9300.0,stated,https://web.archive.org/web/201907/https://naacl2019.org/sponsors/list/
+757,NAACL,2019,Platinum,Thomson Reuters,Thomson Reuters,Tech & other industry,CA,CA,top,9300.0,stated,https://web.archive.org/web/201907/https://naacl2019.org/sponsors/list/
+758,NAACL,2019,Platinum,Two Sigma,Two Sigma,Finance / quant,US,US,top,9300.0,stated,https://web.archive.org/web/201907/https://naacl2019.org/sponsors/list/
+759,NAACL,2019,Gold,ByteDance,ByteDance,Tech & other industry,CN,CN,mid,5200.0,stated,https://web.archive.org/web/201907/https://naacl2019.org/sponsors/list/
+760,NAACL,2019,Gold,Megagon Labs,Megagon Labs,Tech & other industry,US,JP,mid,5200.0,stated,https://web.archive.org/web/201907/https://naacl2019.org/sponsors/list/
+761,NAACL,2019,Gold,Vanguard,Vanguard,Finance / quant,US,US,mid,5200.0,stated,https://web.archive.org/web/201907/https://naacl2019.org/sponsors/list/
+762,NAACL,2019,Silver,Cisco,Cisco,Tech & other industry,US,US,mid,2850.0,stated,https://web.archive.org/web/201907/https://naacl2019.org/sponsors/list/
+763,NAACL,2019,Silver,Duolingo,Duolingo,Tech & other industry,US,US,mid,2850.0,stated,https://web.archive.org/web/201907/https://naacl2019.org/sponsors/list/
+764,NAACL,2019,Silver,Grammarly,Grammarly,Tech & other industry,US,US,mid,2850.0,stated,https://web.archive.org/web/201907/https://naacl2019.org/sponsors/list/
+765,NAACL,2019,Silver,Interactions,Interactions,Tech & other industry,US,US,mid,2850.0,stated,https://web.archive.org/web/201907/https://naacl2019.org/sponsors/list/
+766,NAACL,2019,Silver,Microsoft,Microsoft,Tech & other industry,US,US,mid,2850.0,stated,https://web.archive.org/web/201907/https://naacl2019.org/sponsors/list/
+767,NAACL,2019,Silver,SAP,SAP,Tech & other industry,DE,DE,mid,2850.0,stated,https://web.archive.org/web/201907/https://naacl2019.org/sponsors/list/
+768,NAACL,2019,Silver,eBay,eBay,Tech & other industry,US,US,mid,2850.0,stated,https://web.archive.org/web/201907/https://naacl2019.org/sponsors/list/
+769,NAACL,2019,Bronze,Clinc,Clinc,Tech & other industry,US,US,low,1550.0,stated,https://web.archive.org/web/201907/https://naacl2019.org/sponsors/list/
+770,NAACL,2019,Bronze,ETS,ETS,Tech & other industry,US,US,low,1550.0,stated,https://web.archive.org/web/201907/https://naacl2019.org/sponsors/list/
+771,NAACL,2019,Bronze,Raytheon BBN,Raytheon BBN,Tech & other industry,US,US,low,1550.0,stated,https://web.archive.org/web/201907/https://naacl2019.org/sponsors/list/
+772,NAACL,2019,Bronze,ISI,USC / ISI,Government / academic / non-profit,US,US,low,1550.0,stated,https://web.archive.org/web/201907/https://naacl2019.org/sponsors/list/
+773,NAACL,2019,Supporter,Capital Group,Capital Group,Finance / quant,US,US,low,850.0,stated,https://web.archive.org/web/201907/https://naacl2019.org/sponsors/list/
+774,NAACL,2021,Diamond,Google,Google,Tech & other industry,US,US,top,15000.0,stated,https://web.archive.org/web/202107/https://2021.naacl.org/sponsors/
+775,NAACL,2021,Platinum,Amazon,Amazon,Tech & other industry,US,US,top,10000.0,stated,https://web.archive.org/web/202107/https://2021.naacl.org/sponsors/
+776,NAACL,2021,Platinum,Apple,Apple,Tech & other industry,US,US,top,10000.0,stated,https://web.archive.org/web/202107/https://2021.naacl.org/sponsors/
+777,NAACL,2021,Platinum,Megagon Labs,Megagon Labs,Tech & other industry,US,JP,top,10000.0,stated,https://web.archive.org/web/202107/https://2021.naacl.org/sponsors/
+778,NAACL,2021,Platinum,Facebook,Meta/Facebook,Tech & other industry,US,US,top,10000.0,stated,https://web.archive.org/web/202107/https://2021.naacl.org/sponsors/
+779,NAACL,2021,Platinum,Microsoft,Microsoft,Tech & other industry,US,US,top,10000.0,stated,https://web.archive.org/web/202107/https://2021.naacl.org/sponsors/
+780,NAACL,2021,Gold,Bloomberg,Bloomberg,Finance / quant,US,US,mid,5000.0,stated,https://web.archive.org/web/202107/https://2021.naacl.org/sponsors/
+781,NAACL,2021,Gold,Grammarly,Grammarly,Tech & other industry,US,US,mid,5000.0,stated,https://web.archive.org/web/202107/https://2021.naacl.org/sponsors/
+782,NAACL,2021,Gold,IBM,IBM,Tech & other industry,US,US,mid,5000.0,stated,https://web.archive.org/web/202107/https://2021.naacl.org/sponsors/
+783,NAACL,2021,Gold,Vanguard,Vanguard,Finance / quant,US,US,mid,5000.0,stated,https://web.archive.org/web/202107/https://2021.naacl.org/sponsors/
+784,NAACL,2021,Silver,Duolingo,Duolingo,Tech & other industry,US,US,mid,2500.0,stated,https://web.archive.org/web/202107/https://2021.naacl.org/sponsors/
+785,NAACL,2021,Bronze,Adobe,Adobe,Tech & other industry,US,US,low,1250.0,stated,https://web.archive.org/web/202107/https://2021.naacl.org/sponsors/
+786,NAACL,2021,Bronze,Babelscape,Babelscape,Tech & other industry,IT,IT,low,1250.0,stated,https://web.archive.org/web/202107/https://2021.naacl.org/sponsors/
+787,NAACL,2021,Bronze,HLTCOE,Johns Hopkins University,Government / academic / non-profit,US,US,low,1250.0,stated,https://web.archive.org/web/202107/https://2021.naacl.org/sponsors/
+788,NAACL,2021,Bronze,LegalForce,LegalForce,Tech & other industry,JP,JP,low,1250.0,stated,https://web.archive.org/web/202107/https://2021.naacl.org/sponsors/
+789,NAACL,2022,Diamond,Amazon,Amazon,Tech & other industry,US,US,top,22500.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+790,NAACL,2022,Diamond,Bloomberg,Bloomberg,Finance / quant,US,US,top,22500.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+791,NAACL,2022,Diamond,Google,Google,Tech & other industry,US,US,top,22500.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+792,NAACL,2022,Diamond,LivePerson,LivePerson,Tech & other industry,US,US,top,22500.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+793,NAACL,2022,Diamond,Meta,Meta/Facebook,Tech & other industry,US,US,top,22500.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+794,NAACL,2022,Platinum,Apple,Apple,Tech & other industry,US,US,top,15000.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+795,NAACL,2022,Platinum,ByteDance,ByteDance,Tech & other industry,CN,CN,top,15000.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+796,NAACL,2022,Platinum,Grammarly,Grammarly,Tech & other industry,US,US,top,15000.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+797,NAACL,2022,Platinum,Kensho,Kensho,Finance / quant,US,US,top,15000.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+798,NAACL,2022,Platinum,Megagon Labs,Megagon Labs,Tech & other industry,US,JP,top,15000.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+799,NAACL,2022,Platinum,Microsoft,Microsoft,Tech & other industry,US,US,top,15000.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+800,NAACL,2022,Platinum,Reveal Data,Reveal Data,Tech & other industry,US,US,top,15000.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+801,NAACL,2022,Gold,Cohere,Cohere,Tech & other industry,CA,CA,mid,7500.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+802,NAACL,2022,Gold,ETS,ETS,Tech & other industry,US,US,mid,7500.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+803,NAACL,2022,Gold,G-Research,G-Research,Finance / quant,GB,GB,mid,7500.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+804,NAACL,2022,Gold,OpenAI,OpenAI,Tech & other industry,US,US,mid,7500.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+805,NAACL,2022,Gold,Relativity,Relativity,Tech & other industry,US,US,mid,7500.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+806,NAACL,2022,Gold,ServiceNow,ServiceNow,Tech & other industry,US,US,mid,7500.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+807,NAACL,2022,Gold,TIAA,TIAA,Finance / quant,US,US,mid,7500.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+808,NAACL,2022,Gold,Two Sigma,Two Sigma,Finance / quant,US,US,mid,7500.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+809,NAACL,2022,Silver,ASAPP,ASAPP,Tech & other industry,US,US,mid,4500.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+810,NAACL,2022,Silver,Duolingo,Duolingo,Tech & other industry,US,US,mid,4500.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+811,NAACL,2022,Silver,Magic Data,Magic Data,Tech & other industry,CN,CN,mid,4500.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+812,NAACL,2022,Bronze,Adobe,Adobe,Tech & other industry,US,US,low,2250.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+813,NAACL,2022,Bronze,Babelscape,Babelscape,Tech & other industry,IT,IT,low,2250.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+814,NAACL,2022,Bronze,HLTCOE,Johns Hopkins University,Government / academic / non-profit,US,US,low,2250.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+815,NAACL,2022,Bronze,Rakuten,Rakuten,Tech & other industry,JP,JP,low,2250.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+816,NAACL,2022,Bronze,UC Santa Cruz,UC Santa Cruz,Government / academic / non-profit,US,US,low,2250.0,stated,https://web.archive.org/web/202207/https://2022.naacl.org/sponsors/
+817,NAACL,2024,Diamond,Capital One,Capital One,Finance / quant,US,US,top,30000.0,stated,https://web.archive.org/web/202407/https://2024.naacl.org/sponsors/
+818,NAACL,2024,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,20000.0,stated,https://web.archive.org/web/202407/https://2024.naacl.org/sponsors/
+819,NAACL,2024,Platinum,Grammarly,Grammarly,Tech & other industry,US,US,top,20000.0,stated,https://web.archive.org/web/202407/https://2024.naacl.org/sponsors/
+820,NAACL,2024,Platinum,Kensho,Kensho,Finance / quant,US,US,top,20000.0,stated,https://web.archive.org/web/202407/https://2024.naacl.org/sponsors/
+821,NAACL,2024,Platinum,Megagon Labs,Megagon Labs,Tech & other industry,US,JP,top,20000.0,stated,https://web.archive.org/web/202407/https://2024.naacl.org/sponsors/
+822,NAACL,2024,Platinum,Otter.ai,Otter.ai,Tech & other industry,US,US,top,20000.0,stated,https://web.archive.org/web/202407/https://2024.naacl.org/sponsors/
+823,NAACL,2024,Gold,Apple,Apple,Tech & other industry,US,US,mid,10000.0,stated,https://web.archive.org/web/202407/https://2024.naacl.org/sponsors/
+824,NAACL,2024,Gold,Bloomberg,Bloomberg,Finance / quant,US,US,mid,10000.0,stated,https://web.archive.org/web/202407/https://2024.naacl.org/sponsors/
+825,NAACL,2024,Gold,Cohere,Cohere,Tech & other industry,CA,CA,mid,10000.0,stated,https://web.archive.org/web/202407/https://2024.naacl.org/sponsors/
+826,NAACL,2024,Gold,Two Sigma,Two Sigma,Finance / quant,US,US,mid,10000.0,stated,https://web.archive.org/web/202407/https://2024.naacl.org/sponsors/
+827,NAACL,2024,Bronze,Adobe,Adobe,Tech & other industry,US,US,low,3000.0,stated,https://web.archive.org/web/202407/https://2024.naacl.org/sponsors/
+828,NAACL,2024,Bronze,JPMorgan Chase,JPMorgan Chase,Finance / quant,US,US,low,3000.0,stated,https://web.archive.org/web/202407/https://2024.naacl.org/sponsors/
+829,NAACL,2025,Platinum,Adobe,Adobe,Tech & other industry,US,US,top,20000.0,stated,https://web.archive.org/web/202507/https://2025.naacl.org/sponsors/
+830,NAACL,2025,Platinum,Baidu,Baidu,Tech & other industry,CN,CN,top,20000.0,stated,https://web.archive.org/web/202507/https://2025.naacl.org/sponsors/
+831,NAACL,2025,Platinum,Capital One,Capital One,Finance / quant,US,US,top,20000.0,stated,https://web.archive.org/web/202507/https://2025.naacl.org/sponsors/
+832,NAACL,2025,Platinum,Megagon Labs,Megagon Labs,Tech & other industry,US,JP,top,20000.0,stated,https://web.archive.org/web/202507/https://2025.naacl.org/sponsors/
+833,NAACL,2025,Platinum,Toloka AI,Toloka,Tech & other industry,NL,NL,top,20000.0,stated,https://web.archive.org/web/202507/https://2025.naacl.org/sponsors/
+834,NAACL,2025,Gold,Apple,Apple,Tech & other industry,US,US,mid,10000.0,stated,https://web.archive.org/web/202507/https://2025.naacl.org/sponsors/
+835,NAACL,2025,Gold,Bloomberg,Bloomberg,Finance / quant,US,US,mid,10000.0,stated,https://web.archive.org/web/202507/https://2025.naacl.org/sponsors/
+836,NAACL,2025,Bronze,Translated,Translated,Tech & other industry,IT,IT,low,3000.0,stated,https://web.archive.org/web/202507/https://2025.naacl.org/sponsors/

@@ -6,6 +6,7 @@ Reads site.config.json (author, homepage, email, github_repo "owner/repo",
 site_url where the site is published, goatcounter code) and writes:
     docs/index.html        HCI and AI-ethics conferences (English / 中文)
     docs/ml/index.html     NeurIPS / ICML / ICLR (docs/_redirects sends the old /ai/ there)
+    docs/nlp/index.html    ACL / EMNLP / NAACL
     docs/data/...          the CSV files both pages load
 Empty config fields are simply left out of the footer.
 """
@@ -21,15 +22,16 @@ owner, _, name = repo.partition('/')
 site_url = cfg.get('site_url') or ''   # e.g. https://whosponsorshci.vercel.app/
 year = datetime.date.today().year
 
-def footer(bilingual, page_rel_root):
+def footer(bilingual, page_rel_root, page_key=''):
     L = (lambda en, zh: f'<span lang="en">{en}</span><span lang="zh">{zh}</span>') if bilingual else (lambda en, zh: zh)
     who = []
     if cfg.get('author'): who.append(f'<b>{e(cfg["author"])}</b>')
     if cfg.get('homepage'): who.append(f'<a href="{e(cfg["homepage"])}" target="_blank" rel="noopener">{L("Homepage", "个人主页")}</a>')
     if cfg.get('email'): who.append(f'<span class="mail">{e(cfg["email"])}</span>')
     if repo: who.append(f'<a href="https://github.com/{e(repo)}" target="_blank" rel="noopener">{L("Source and data on GitHub", "GitHub 上的代码和数据")}</a>')
-    other = (f'<a href="{page_rel_root}ml/">{L("ML conferences (NeurIPS / ICML / ICLR)", "机器学习会议（NeurIPS / ICML / ICLR）")}</a>' if not page_rel_root
-             else f'<a href="{page_rel_root}">{L("HCI conferences", "HCI 会议")}</a>')
+    links = {'': L('HCI conferences', 'HCI 会议'), 'ml/': L('ML conferences', '机器学习会议'), 'nlp/': L('NLP conferences', 'NLP 会议')}
+    here = page_rel_root and page_key or ''
+    other = L('Also:', '另见：') + ' ' + ', '.join(f'<a href="{page_rel_root}{k}">{v}</a>' for k, v in links.items() if k != here)
     cite_who = e(cfg.get('author') or 'the author')
     cite = f'{cite_who} ({year}). <i>Who Sponsors HCI Conferences</i>.' + (f' {e(site_url)}' if site_url else '')
     issues = f'https://github.com/{e(repo)}/issues' if repo else ''
@@ -53,8 +55,8 @@ def footer(bilingual, page_rel_root):
 </script>'''
     lic = L('Data <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>, code MIT: free to reuse with credit.',
             '数据 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>，代码 MIT：注明出处即可转载使用。')
-    disc = L('Independent project, not affiliated with ACM, SIGCHI, AAAI or any organization listed. Compiled by hand from public pages; amounts are lower-bound estimates.',
-             '独立项目，与 ACM、SIGCHI、AAAI 及所列机构无关。名单根据公开网页手工整理，金额为估算下限。')
+    disc = L('Independent project, not affiliated with ACM, SIGCHI, AAAI, ACL or any organization listed. Compiled by hand from public pages; amounts are estimates from published tier prices.',
+             '独立项目，与 ACM、SIGCHI、AAAI、ACL 及所列机构无关。名单根据公开网页手工整理，金额按公开等级价估算。')
     fixl = (L(f'Spot an error? <a href="{issues}" target="_blank" rel="noopener">Open an issue</a>.', f'发现错误？欢迎<a href="{issues}" target="_blank" rel="noopener">提 issue</a>。') if issues else '')
     return f'''
 <footer class="site-foot">
@@ -80,6 +82,10 @@ PAGES = [
     ('dashboard/ml/index.html', 'ml/index.html', 'Who Sponsors ML Conferences',
      {'listings': '../data/ai/ai_sponsor_listings.csv', 'pcy': '../data/ai/ai_per_conference_year.csv', 'prices': '../data/ai/ai_tier_prices.csv',
       'hci_listings': '../data/sponsor_listings.csv', 'hci_pcy': '../data/per_conference_year.csv'}, True, '../'),
+    ('dashboard/nlp/index.html', 'nlp/index.html', 'Who Sponsors NLP Conferences',
+     {'listings': '../data/nlp/nlp_sponsor_listings.csv', 'pcy': '../data/nlp/nlp_per_conference_year.csv', 'prices': '../data/nlp/nlp_tier_prices.csv',
+      'ml_listings': '../data/ai/ai_sponsor_listings.csv', 'ml_pcy': '../data/ai/ai_per_conference_year.csv',
+      'hci_listings': '../data/sponsor_listings.csv', 'hci_pcy': '../data/per_conference_year.csv'}, True, '../'),
 ]
 
 if __name__ == '__main__':
@@ -90,7 +96,7 @@ if __name__ == '__main__':
     for src, out, title, files, bi, back in PAGES:
         body = open(os.path.join(ROOT, src), encoding='utf-8').read()
         body = re.sub(r'<script>(.*?)</script>', lambda m: '<script>(() => {' + m.group(1) + '})();</script>', body, flags=re.S)
-        foot = footer(bi, back)
+        foot = footer(bi, back, os.path.dirname(out) + '/' if back else '')
         anchor = '<div class="tip" id="tip"></div>'
         assert anchor in body, src
         body = body.replace(anchor, foot + '\n  ' + anchor, 1)

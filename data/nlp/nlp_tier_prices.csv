@@ -1,0 +1,117 @@
+id,conference,years,tier,min_usd,basis
+1,ACL,2019,Diamond,23775,stated · http://www.acl2019.org/medias/358-sponsorship-2019-booklet.pdf (archived)
+2,ACL,2019,Platinum,14500,stated · http://www.acl2019.org/medias/358-sponsorship-2019-booklet.pdf (archived)
+3,ACL,2019,Gold,8000,stated · http://www.acl2019.org/medias/358-sponsorship-2019-booklet.pdf (archived)
+4,ACL,2019,Silver,4400,stated · http://www.acl2019.org/medias/358-sponsorship-2019-booklet.pdf (archived)
+5,ACL,2019,Bronze,2400,stated · http://www.acl2019.org/medias/358-sponsorship-2019-booklet.pdf (archived)
+6,ACL,2019,Supporter,1280,stated · http://www.acl2019.org/medias/358-sponsorship-2019-booklet.pdf (archived)
+7,EMNLP,2019,Diamond,20225,stated · http://www.acl2019.org/medias/358-sponsorship-2019-booklet.pdf (archived)
+8,EMNLP,2019,Platinum,12200,stated · http://www.acl2019.org/medias/358-sponsorship-2019-booklet.pdf (archived)
+9,EMNLP,2019,Gold,6800,stated · http://www.acl2019.org/medias/358-sponsorship-2019-booklet.pdf (archived)
+10,EMNLP,2019,Silver,3750,stated · http://www.acl2019.org/medias/358-sponsorship-2019-booklet.pdf (archived)
+11,EMNLP,2019,Bronze,2050,stated · http://www.acl2019.org/medias/358-sponsorship-2019-booklet.pdf (archived)
+12,EMNLP,2019,Supporter,1090,stated · http://www.acl2019.org/medias/358-sponsorship-2019-booklet.pdf (archived)
+13,NAACL,2019,Diamond,15400,stated · http://www.acl2019.org/medias/358-sponsorship-2019-booklet.pdf (archived)
+14,NAACL,2019,Platinum,9300,stated · http://www.acl2019.org/medias/358-sponsorship-2019-booklet.pdf (archived)
+15,NAACL,2019,Gold,5200,stated · http://www.acl2019.org/medias/358-sponsorship-2019-booklet.pdf (archived)
+16,NAACL,2019,Silver,2850,stated · http://www.acl2019.org/medias/358-sponsorship-2019-booklet.pdf (archived)
+17,NAACL,2019,Bronze,1550,stated · http://www.acl2019.org/medias/358-sponsorship-2019-booklet.pdf (archived)
+18,NAACL,2019,Supporter,850,stated · http://www.acl2019.org/medias/358-sponsorship-2019-booklet.pdf (archived)
+19,ACL,2020,Diamond,30000,stated · https://acl2020.org/downloads/Sponsorship-2020-booklet.pdf
+20,ACL,2020,Platinum,18800,stated · https://acl2020.org/downloads/Sponsorship-2020-booklet.pdf
+21,ACL,2020,Gold,10400,stated · https://acl2020.org/downloads/Sponsorship-2020-booklet.pdf
+22,ACL,2020,Silver,5500,stated · https://acl2020.org/downloads/Sponsorship-2020-booklet.pdf
+23,ACL,2020,Bronze,3015,stated · https://acl2020.org/downloads/Sponsorship-2020-booklet.pdf
+24,ACL,2020,Supporter,1880,stated · https://acl2020.org/downloads/Sponsorship-2020-booklet.pdf
+25,EMNLP,2020,Diamond,22000,stated · https://acl2020.org/downloads/Sponsorship-2020-booklet.pdf
+26,EMNLP,2020,Platinum,13500,stated · https://acl2020.org/downloads/Sponsorship-2020-booklet.pdf
+27,EMNLP,2020,Gold,7500,stated · https://acl2020.org/downloads/Sponsorship-2020-booklet.pdf
+28,EMNLP,2020,Silver,3900,stated · https://acl2020.org/downloads/Sponsorship-2020-booklet.pdf
+29,EMNLP,2020,Bronze,2130,stated · https://acl2020.org/downloads/Sponsorship-2020-booklet.pdf
+30,EMNLP,2020,Supporter,1340,stated · https://acl2020.org/downloads/Sponsorship-2020-booklet.pdf
+31,ACL,2021,Diamond,30000,stated · https://2021.eacl.org/downloads/ACL-2021-Sponsorship-booklet.pdf
+32,ACL,2021,Platinum,20000,stated · https://2021.eacl.org/downloads/ACL-2021-Sponsorship-booklet.pdf
+33,ACL,2021,Gold,10000,stated · https://2021.eacl.org/downloads/ACL-2021-Sponsorship-booklet.pdf
+34,ACL,2021,Silver,6000,stated · https://2021.eacl.org/downloads/ACL-2021-Sponsorship-booklet.pdf
+35,ACL,2021,Bronze,3000,stated · https://2021.eacl.org/downloads/ACL-2021-Sponsorship-booklet.pdf
+36,ACL,2021,Supporter,2000,stated · https://2021.eacl.org/downloads/ACL-2021-Sponsorship-booklet.pdf
+37,EMNLP,2021,Diamond,22000,stated · https://2021.eacl.org/downloads/ACL-2021-Sponsorship-booklet.pdf
+38,EMNLP,2021,Platinum,14000,stated · https://2021.eacl.org/downloads/ACL-2021-Sponsorship-booklet.pdf
+39,EMNLP,2021,Gold,8000,stated · https://2021.eacl.org/downloads/ACL-2021-Sponsorship-booklet.pdf
+40,EMNLP,2021,Silver,4000,stated · https://2021.eacl.org/downloads/ACL-2021-Sponsorship-booklet.pdf
+41,EMNLP,2021,Bronze,2000,stated · https://2021.eacl.org/downloads/ACL-2021-Sponsorship-booklet.pdf
+42,EMNLP,2021,Supporter,1500,stated · https://2021.eacl.org/downloads/ACL-2021-Sponsorship-booklet.pdf
+43,NAACL,2021,Diamond,15000,stated · https://2021.eacl.org/downloads/ACL-2021-Sponsorship-booklet.pdf
+44,NAACL,2021,Platinum,10000,stated · https://2021.eacl.org/downloads/ACL-2021-Sponsorship-booklet.pdf
+45,NAACL,2021,Gold,5000,stated · https://2021.eacl.org/downloads/ACL-2021-Sponsorship-booklet.pdf
+46,NAACL,2021,Silver,2500,stated · https://2021.eacl.org/downloads/ACL-2021-Sponsorship-booklet.pdf
+47,NAACL,2021,Bronze,1250,stated · https://2021.eacl.org/downloads/ACL-2021-Sponsorship-booklet.pdf
+48,NAACL,2021,Supporter,850,stated · https://2021.eacl.org/downloads/ACL-2021-Sponsorship-booklet.pdf
+49,ACL,2022,Diamond,30000,stated · https://2022.naacl.org/downloads/Sponsorship-2022-booklet.pdf
+50,ACL,2022,Platinum,20000,stated · https://2022.naacl.org/downloads/Sponsorship-2022-booklet.pdf
+51,ACL,2022,Gold,10000,stated · https://2022.naacl.org/downloads/Sponsorship-2022-booklet.pdf
+52,ACL,2022,Silver,6000,stated · https://2022.naacl.org/downloads/Sponsorship-2022-booklet.pdf
+53,ACL,2022,Bronze,3000,stated · https://2022.naacl.org/downloads/Sponsorship-2022-booklet.pdf
+54,ACL,2022,Supporter,2000,stated · https://2022.naacl.org/downloads/Sponsorship-2022-booklet.pdf
+55,EMNLP,2022,Diamond,30000,stated · https://2022.naacl.org/downloads/Sponsorship-2022-booklet.pdf
+56,EMNLP,2022,Platinum,20000,stated · https://2022.naacl.org/downloads/Sponsorship-2022-booklet.pdf
+57,EMNLP,2022,Gold,10000,stated · https://2022.naacl.org/downloads/Sponsorship-2022-booklet.pdf
+58,EMNLP,2022,Silver,6000,stated · https://2022.naacl.org/downloads/Sponsorship-2022-booklet.pdf
+59,EMNLP,2022,Bronze,3000,stated · https://2022.naacl.org/downloads/Sponsorship-2022-booklet.pdf
+60,EMNLP,2022,Supporter,2000,stated · https://2022.naacl.org/downloads/Sponsorship-2022-booklet.pdf
+61,NAACL,2022,Diamond,22500,stated · https://2022.naacl.org/downloads/Sponsorship-2022-booklet.pdf
+62,NAACL,2022,Platinum,15000,stated · https://2022.naacl.org/downloads/Sponsorship-2022-booklet.pdf
+63,NAACL,2022,Gold,7500,stated · https://2022.naacl.org/downloads/Sponsorship-2022-booklet.pdf
+64,NAACL,2022,Silver,4500,stated · https://2022.naacl.org/downloads/Sponsorship-2022-booklet.pdf
+65,NAACL,2022,Bronze,2250,stated · https://2022.naacl.org/downloads/Sponsorship-2022-booklet.pdf
+66,NAACL,2022,Supporter,1500,stated · https://2022.naacl.org/downloads/Sponsorship-2022-booklet.pdf
+67,ACL,2023,Diamond,30000,stated · https://2023.aclweb.org/downloads/Sponsorship_Brochure-ACL2023-20230505.pdf
+68,ACL,2023,Platinum,20000,stated · https://2023.aclweb.org/downloads/Sponsorship_Brochure-ACL2023-20230505.pdf
+69,ACL,2023,Gold,10000,stated · https://2023.aclweb.org/downloads/Sponsorship_Brochure-ACL2023-20230505.pdf
+70,ACL,2023,Silver,6000,stated · https://2023.aclweb.org/downloads/Sponsorship_Brochure-ACL2023-20230505.pdf
+71,ACL,2023,Bronze,3000,stated · https://2023.aclweb.org/downloads/Sponsorship_Brochure-ACL2023-20230505.pdf
+72,EMNLP,2023,Diamond,30000,stated · https://2023.aclweb.org/downloads/Sponsorship_Brochure-ACL2023-20230505.pdf
+73,EMNLP,2023,Platinum,20000,stated · https://2023.aclweb.org/downloads/Sponsorship_Brochure-ACL2023-20230505.pdf
+74,EMNLP,2023,Gold,10000,stated · https://2023.aclweb.org/downloads/Sponsorship_Brochure-ACL2023-20230505.pdf
+75,EMNLP,2023,Silver,6000,stated · https://2023.aclweb.org/downloads/Sponsorship_Brochure-ACL2023-20230505.pdf
+76,EMNLP,2023,Bronze,3000,stated · https://2023.aclweb.org/downloads/Sponsorship_Brochure-ACL2023-20230505.pdf
+77,ACL,2024,Diamond,40000,stated · https://2024.eacl.org/downloads/Sponsorship-brochure-for-ACL-2024-conferences-2023-12-19.pdf
+78,ACL,2024,Platinum,27500,stated · https://2024.eacl.org/downloads/Sponsorship-brochure-for-ACL-2024-conferences-2023-12-19.pdf
+79,ACL,2024,Gold,15000,stated · https://2024.eacl.org/downloads/Sponsorship-brochure-for-ACL-2024-conferences-2023-12-19.pdf
+80,ACL,2024,Silver,9000,stated · https://2024.eacl.org/downloads/Sponsorship-brochure-for-ACL-2024-conferences-2023-12-19.pdf
+81,ACL,2024,Bronze,4500,stated · https://2024.eacl.org/downloads/Sponsorship-brochure-for-ACL-2024-conferences-2023-12-19.pdf
+82,EMNLP,2024,Diamond,40000,stated · https://2024.eacl.org/downloads/Sponsorship-brochure-for-ACL-2024-conferences-2023-12-19.pdf
+83,EMNLP,2024,Platinum,27500,stated · https://2024.eacl.org/downloads/Sponsorship-brochure-for-ACL-2024-conferences-2023-12-19.pdf
+84,EMNLP,2024,Gold,15000,stated · https://2024.eacl.org/downloads/Sponsorship-brochure-for-ACL-2024-conferences-2023-12-19.pdf
+85,EMNLP,2024,Silver,9000,stated · https://2024.eacl.org/downloads/Sponsorship-brochure-for-ACL-2024-conferences-2023-12-19.pdf
+86,EMNLP,2024,Bronze,4500,stated · https://2024.eacl.org/downloads/Sponsorship-brochure-for-ACL-2024-conferences-2023-12-19.pdf
+87,NAACL,2024,Diamond,30000,stated · https://2024.eacl.org/downloads/Sponsorship-brochure-for-ACL-2024-conferences-2023-12-19.pdf
+88,NAACL,2024,Platinum,20000,stated · https://2024.eacl.org/downloads/Sponsorship-brochure-for-ACL-2024-conferences-2023-12-19.pdf
+89,NAACL,2024,Gold,10000,stated · https://2024.eacl.org/downloads/Sponsorship-brochure-for-ACL-2024-conferences-2023-12-19.pdf
+90,NAACL,2024,Silver,6000,stated · https://2024.eacl.org/downloads/Sponsorship-brochure-for-ACL-2024-conferences-2023-12-19.pdf
+91,NAACL,2024,Bronze,3000,stated · https://2024.eacl.org/downloads/Sponsorship-brochure-for-ACL-2024-conferences-2023-12-19.pdf
+92,ACL,2025,Diamond,40000,stated · https://2025.aclweb.org/assets/Sponsorship brochure for ACL 2025 conferences - 2025-01-03.pdf
+93,ACL,2025,Platinum,27500,stated · https://2025.aclweb.org/assets/Sponsorship brochure for ACL 2025 conferences - 2025-01-03.pdf
+94,ACL,2025,Gold,15000,stated · https://2025.aclweb.org/assets/Sponsorship brochure for ACL 2025 conferences - 2025-01-03.pdf
+95,ACL,2025,Silver,9000,stated · https://2025.aclweb.org/assets/Sponsorship brochure for ACL 2025 conferences - 2025-01-03.pdf
+96,ACL,2025,Bronze,4500,stated · https://2025.aclweb.org/assets/Sponsorship brochure for ACL 2025 conferences - 2025-01-03.pdf
+97,EMNLP,2025,Diamond,40000,stated · https://2025.aclweb.org/assets/Sponsorship brochure for ACL 2025 conferences - 2025-01-03.pdf
+98,EMNLP,2025,Platinum,27500,stated · https://2025.aclweb.org/assets/Sponsorship brochure for ACL 2025 conferences - 2025-01-03.pdf
+99,EMNLP,2025,Gold,15000,stated · https://2025.aclweb.org/assets/Sponsorship brochure for ACL 2025 conferences - 2025-01-03.pdf
+100,EMNLP,2025,Silver,9000,stated · https://2025.aclweb.org/assets/Sponsorship brochure for ACL 2025 conferences - 2025-01-03.pdf
+101,EMNLP,2025,Bronze,4500,stated · https://2025.aclweb.org/assets/Sponsorship brochure for ACL 2025 conferences - 2025-01-03.pdf
+102,NAACL,2025,Diamond,30000,stated · https://2025.aclweb.org/assets/Sponsorship brochure for ACL 2025 conferences - 2025-01-03.pdf
+103,NAACL,2025,Platinum,20000,stated · https://2025.aclweb.org/assets/Sponsorship brochure for ACL 2025 conferences - 2025-01-03.pdf
+104,NAACL,2025,Gold,10000,stated · https://2025.aclweb.org/assets/Sponsorship brochure for ACL 2025 conferences - 2025-01-03.pdf
+105,NAACL,2025,Silver,6000,stated · https://2025.aclweb.org/assets/Sponsorship brochure for ACL 2025 conferences - 2025-01-03.pdf
+106,NAACL,2025,Bronze,3000,stated · https://2025.aclweb.org/assets/Sponsorship brochure for ACL 2025 conferences - 2025-01-03.pdf
+107,ACL,2026,Diamond,50000,stated · https://2026.aclweb.org/assets/Sponsorship brochure for ACL 2026 Conferences - 2026-04-23.pdf
+108,ACL,2026,Platinum,35000,stated · https://2026.aclweb.org/assets/Sponsorship brochure for ACL 2026 Conferences - 2026-04-23.pdf
+109,ACL,2026,Gold,20000,stated · https://2026.aclweb.org/assets/Sponsorship brochure for ACL 2026 Conferences - 2026-04-23.pdf
+110,ACL,2026,Silver,12000,stated · https://2026.aclweb.org/assets/Sponsorship brochure for ACL 2026 Conferences - 2026-04-23.pdf
+111,ACL,2026,Bronze,7500,stated · https://2026.aclweb.org/assets/Sponsorship brochure for ACL 2026 Conferences - 2026-04-23.pdf
+112,EMNLP,2026,Diamond,50000,stated · https://2026.aclweb.org/assets/Sponsorship brochure for ACL 2026 Conferences - 2026-04-23.pdf
+113,EMNLP,2026,Platinum,35000,stated · https://2026.aclweb.org/assets/Sponsorship brochure for ACL 2026 Conferences - 2026-04-23.pdf
+114,EMNLP,2026,Gold,20000,stated · https://2026.aclweb.org/assets/Sponsorship brochure for ACL 2026 Conferences - 2026-04-23.pdf
+115,EMNLP,2026,Silver,12000,stated · https://2026.aclweb.org/assets/Sponsorship brochure for ACL 2026 Conferences - 2026-04-23.pdf
+116,EMNLP,2026,Bronze,7500,stated · https://2026.aclweb.org/assets/Sponsorship brochure for ACL 2026 Conferences - 2026-04-23.pdf
