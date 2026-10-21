@@ -40,6 +40,10 @@
 .hx-shell[data-lang="en"] [lang="zh"],.hx-shell[data-lang="zh"] [lang="en"]{display:none!important}
 /* reading layout: one centered column; on wide screens a contents rail on the left */
 .hx-shell{font-family:var(--font-anthropic-sans);display:grid;grid-template-columns:minmax(0,52rem);justify-content:center;gap:var(--cds-gap-xl)}
+.hx-shell{--hx-c0:#5f7fa3;--hx-c1:#c27c5c;--hx-c2:#6f9a7c;--hx-c3:#c2a15e;--hx-c4:#a87d9b;--hx-c5:#6b9aa6;--hx-c6:#8a7fae;--hx-c7:#968b78;--hx-heat:#5c5348}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .hx-shell{--hx-c0:#8aa6c6;--hx-c1:#d99b7e;--hx-c2:#93b89d;--hx-c3:#d6bb7f;--hx-c4:#c49dba;--hx-c5:#8fbac4;--hx-c6:#a9a0cb;--hx-c7:#b5ab98;--hx-heat:#e6dccd}}
+:root[data-theme="dark"] .hx-shell{--hx-c0:#8aa6c6;--hx-c1:#d99b7e;--hx-c2:#93b89d;--hx-c3:#d6bb7f;--hx-c4:#c49dba;--hx-c5:#8fbac4;--hx-c6:#a9a0cb;--hx-c7:#b5ab98;--hx-heat:#e6dccd}
+.hx .hm{overflow-x:auto}
 .hx-toc{display:none}
 .hx h1,.hx h2{scroll-margin-top:7rem}
 @media (min-width:1100px){
@@ -60,8 +64,8 @@
     <p class="t"><span lang="en">Contents</span><span lang="zh">目录</span></p>
     <ol>
       <li><a href="#top" data-target="top"><span lang="en">Overview</span><span lang="zh">概览</span></a></li>
-      <li><a href="#by-conference" data-target="by-conference"><span lang="en">Top sponsors by conference</span><span lang="zh">各会议的 top sponsor</span></a></li>
       <li><a href="#timeline" data-target="timeline"><span lang="en">When sponsors joined and left</span><span lang="zh">赞助商的进出时间线</span></a></li>
+      <li><a href="#by-conference" data-target="by-conference"><span lang="en">Top sponsors by conference</span><span lang="zh">各会议的 top sponsor</span></a></li>
       <li><a href="#countries" data-target="countries"><span lang="en">By country or region</span><span lang="zh">按国家 / 地区</span></a></li>
       <li><a href="#top-sponsors" data-target="top-sponsors"><span lang="en">Top 15 overall</span><span lang="zh">合计 top 15</span></a></li>
       <li><a href="#sectors" data-target="sectors"><span lang="en">Who the sponsors are</span><span lang="zh">赞助方构成</span></a></li>
@@ -98,13 +102,6 @@
     <span class="rng" id="f-label"></span>
   </div>
 
-  <section class="card">
-    <h2 id="by-conference"><span lang="en">Top sponsors by conference</span><span lang="zh">各会议的 top sponsor</span></h2>
-    <p class="note"><span lang="en">For the selected years, the 10 organizations that sponsored each conference most often (one count per organization per edition). The label shows editions and the year span; hover for tiers and estimated totals.</span><span lang="zh">所选年份内，每个会议按赞助届数排序的前 10 名（同一机构在一届会议计 1 次）；右侧是届数和年份跨度。悬停查看各等级次数和估算金额。</span></p>
-    <div id="c-ct-chi" data-source="listings" style="min-height:290px"></div>
-    <div id="c-ct-rest" data-source="listings" style="min-height:290px;display:flex;flex-direction:column;gap:var(--cds-gap-lg);margin-top:var(--cds-gap-lg)"></div>
-  </section>
-
   <section class="card" id="timeline-card">
     <h2 id="timeline"><span lang="en">When sponsors joined and left</span><span lang="zh">赞助商的进出时间线</span></h2>
     <p class="note"><span lang="en">One row per organization, one column per year. A filled cell means the organization sponsored that year; darker means a higher tier (by tier floor price: ≥$20k / $5k–20k / &lt;$5k / price unknown). Grey columns are years with no sponsor list, so a blank there does not mean no sponsorship. Sorting by last appearance puts current sponsors at the top; further down stopped earlier.</span><span lang="zh">每行一家机构，每列一年；有色格子表示当年赞助，颜色越深等级越高（按等级起步价：≥$20k / $5k–20k / &lt;$5k / 价格未知）。灰色列是没拿到名单的年份——那里空着不代表没赞助。按“最后出现”排序时，最近仍在赞助的机构排在最上面，越往下停得越早。</span></p>
@@ -120,12 +117,20 @@
     <div class="tlbox"><div id="c-tl" data-source="listings" style="min-height:320px"></div></div>
   </section>
 
+  <section class="card">
+    <h2 id="by-conference"><span lang="en">Top sponsors by conference</span><span lang="zh">各会议的 top sponsor</span></h2>
+    <p class="note"><span lang="en">For the selected years, the 10 organizations that sponsored each conference most often (one count per organization per edition). The label shows editions and the year span; hover for tiers and estimated totals.</span><span lang="zh">所选年份内，每个会议按赞助届数排序的前 10 名（同一机构在一届会议计 1 次）；右侧是届数和年份跨度。悬停查看各等级次数和估算金额。</span></p>
+    <div id="c-ct-chi" data-source="listings" style="min-height:290px"></div>
+    <div id="c-ct-rest" data-source="listings" style="min-height:290px;display:flex;flex-direction:column;gap:var(--cds-gap-lg);margin-top:var(--cds-gap-lg)"></div>
+  </section>
+
+
   <section class="grid">
     <div class="card">
       <h2 id="countries"><span lang="en">By country or region</span><span lang="zh">按国家 / 地区</span></h2>
-      <p class="note"><span lang="en">Organization × edition counts for the selected years by country or region (switch between headquarters and parent company at the top), colored by conference. Japanese, Korean and German sponsors mostly appear when the conference is held in their country.</span><span lang="zh">所选年份内，按机构所属国家/地区（顶部可切换“总部所在地 / 母公司国籍”）统计的“机构 × 届次”数，按会议分色。日本、韩国、德国等的机构多在会议于本国举办时出现。</span></p>
+      <p class="note"><span lang="en">Each cell is the share of a conference’s sponsors (organization × edition, selected years) that come from that country; the number is the count. Darker means a larger share. Reading down a column shows host effects: Japanese sponsors cluster at UIST and UbiComp, Australian ones at DIS.</span><span lang="zh">每格是该会议（所选年份内的“机构 × 届次”）中来自该国家/地区的比例，格内数字是条数，颜色越深占比越高。顺着一列往下看能看到东道主效应：日本机构集中在 UIST 和 UbiComp，澳大利亚机构集中在 DIS。</span></p>
       <div class="legend" id="lg-cty"></div>
-      <div id="c-cty" data-source="listings" style="min-height:360px"></div>
+      <div class="hm"><div id="c-cty" data-source="listings" style="min-height:360px"></div></div>
     </div>
     <div class="card">
       <h2 id="top-sponsors"><span lang="en">Top 15 across all eight conferences</span><span lang="zh">八个会议合计 top 15</span></h2>
@@ -234,7 +239,7 @@ const CTY_EN0 = {US:'United States',JP:'Japan',KR:'South Korea',CA:'Canada',GB:'
 const SECT_EN0 = {'Industry':'Company','Government / foundation':'Government / foundation','University / academic':'University / academic','Publisher':'Publisher','Unknown':'Unidentified'};
 const CTY_ZH = new Proxy({}, {get: (_, k) => (state.lang === 'zh' ? CTY_ZH0 : CTY_EN0)[k]});
 const SECT_ZH = new Proxy({}, {get: (_, k) => (state.lang === 'zh' ? SECT_ZH0 : SECT_EN0)[k]});
-const cc = r => state.cmode === 'parent' ? (r.parent_country ?? r.country) : r.country;
+const cc = r => (state.cmode === 'parent' ? (r.parent_country || r.country) : r.country) || '';
 const redraws = [];
 const label = (org, cc) => org;
 const FW = 18, FH = 13.5, FPAD = 6;
@@ -242,7 +247,8 @@ const flagSrc = cc => (window.HX_FLAGS || {})[cc] || null;
 const flagSvg = (sel, cc, x, yMid) => { const s = flagSrc(cc); if (s) sel.append('image').attr('href', s).attr('x', x).attr('y', yMid - FH / 2).attr('width', FW).attr('height', FH).attr('preserveAspectRatio', 'none').append('title').text(CTY_ZH[cc] || cc); else sel.append('rect').attr('x', x).attr('y', yMid - FH / 2).attr('width', FW).attr('height', FH).attr('rx', 2).attr('fill', 'var(--cds-chart-grid)').append('title').text(T('Unknown', '未知')); };
 const flagGap = () => state.flags ? FW + FPAD : 0;
 const inRange = y => (state.from == null || +y >= state.from) && (state.to == null || +y <= state.to);
-window.HX = {T, cc, CONF, SECT, SECT_ZH, CTY_ZH, fmtUSD, fmtK, flag, state, redraws, label, inRange, flagSvg, flagGap, flagSrc, FW};
+const C = [0,1,2,3,4,5,6,7].map(i => `var(--hx-c${i})`);
+window.HX = {C, T, cc, CONF, SECT, SECT_ZH, CTY_ZH, fmtUSD, fmtK, flag, state, redraws, label, inRange, flagSvg, flagGap, flagSrc, FW};
 
 dash.calc('kpis', {
   inputs: ['listings'], title: 'Headline counts (all years)',
@@ -406,7 +412,7 @@ window.HX.on(() => {
     const h = document.createElement('div'); h.className = 'sub'; h.textContent = c; box.append(h);
     const inner = document.createElement('div'); box.append(inner);
     const items = H.aggregate(rows.filter(r => r.conference === c)).slice(0, 10).map(d => ({...d, right: H.T(`${d.n} editions · ${d.first}–${d.last}`, `${d.n} 届 · ${d.first}–${d.last}`)}));
-    H.rankBars(inner, items, dash.colors[ci], d => [['t', `${c} · ${d.org}`], ['', `${H.CTY_ZH[d.country] || d.country}`], ['', H.T(`${d.n} editions (${d.first}–${d.last})`, `赞助 ${d.n} 届（${d.first}–${d.last}）`)], ['', H.T(`Tiers: ${d.tiers}`, `等级：${d.tiers}`)], ['', H.T(`Estimated total (lower bound): ${H.fmtUSD(d.est)}`, `估算下限合计：${H.fmtUSD(d.est)}`)]]);
+    H.rankBars(inner, items, H.C[ci], d => [['t', `${c} · ${d.org}`], ['', `${H.CTY_ZH[d.country] || d.country}`], ['', H.T(`${d.n} editions (${d.first}–${d.last})`, `赞助 ${d.n} 届（${d.first}–${d.last}）`)], ['', H.T(`Tiers: ${d.tiers}`, `等级：${d.tiers}`)], ['', H.T(`Estimated total (lower bound): ${H.fmtUSD(d.est)}`, `估算下限合计：${H.fmtUSD(d.est)}`)]]);
   });
 });
 
@@ -416,44 +422,55 @@ window.HX.on(() => {
   const el = document.getElementById('c-top'); const st = dash.data('listings');
   if (H.failOrWait(el, st)) return;
   const items = H.aggregate(H.rows()).slice(0, 15).map(d => ({...d, right: String(d.n)}));
-  H.legend(document.getElementById('lg-top'), [[dash.colors[0], H.T('Company', '企业')], [dash.colors[1], H.T('Other organization', '非企业')]]);
-  H.rankBars(el, items, d => d.sector === 'Industry' ? dash.colors[0] : dash.colors[1],
+  H.legend(document.getElementById('lg-top'), [[H.C[0], H.T('Company', '企业')], [H.C[1], H.T('Other organization', '非企业')]]);
+  H.rankBars(el, items, d => d.sector === 'Industry' ? H.C[0] : H.C[1],
     d => [['t', d.org], ['', `${H.CTY_ZH[d.country] || d.country} · ${H.SECT_ZH[d.sector] || d.sector}`], ['', H.T(`${d.n} editions · ${d.first}–${d.last}`, `${d.n} 届 · ${d.first}–${d.last}`)], ['', H.T(`Conferences: ${d.confs}`, `会议：${d.confs}`)], ['', H.T(`Estimated total (lower bound): ${H.fmtUSD(d.est)}`, `估算下限合计：${H.fmtUSD(d.est)}`)]]);
 });
 
-// countries, stacked by conference
+// countries × conference heatmap (share of each conference's listings)
 window.HX.on(() => {
   const H = window.HX;
-  const el = document.getElementById('c-cty'); const st = dash.data('listings');
-  H.legend(document.getElementById('lg-cty'), H.CONF.map((c, i) => [dash.colors[i], c]));
-  if (H.failOrWait(el, st)) return;
+  const el = document.getElementById('c-cty'), lg = document.getElementById('lg-cty'); const st = dash.data('listings');
+  lg.replaceChildren(); if (H.failOrWait(el, st)) return;
   const rows = H.rows();
   const uniq = d3.rollups(rows, v => v[0], r => `${r.conference}|${r.year}|${r.org}`).map(([, r]) => r);
-  const by = d3.rollups(uniq, v => ({total: v.length, per: H.CONF.map(c => v.filter(r => r.conference === c).length)}), r => H.cc(r))
-    .map(([cc, o]) => ({cc, ...o})).sort((a, b) => b.total - a.total);
-  const top = by.slice(0, 14);
-  const W = el.clientWidth || 400, rowH = 24, Ht = top.length * rowH + 4;
-  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${Math.max(Ht, 20)}`);
-  if (!top.length) return;
-  const names = top.map(d => H.CTY_ZH[d.cc] || d.cc);
-  const lw = H.measure(svg, names, 12) + 10 + H.flagGap(), rw = H.measure(svg, top.map(d => `${d.total}（${d3.format('.0%')(d.total / uniq.length)}）`), 11) + 10;
-  const Wv = Math.max(W, lw + rw + 60); svg.attr('viewBox', `0 0 ${Wv} ${Math.max(Ht, 20)}`);
-  const x = d3.scaleLinear([0, d3.max(top, d => d.total)], [lw, Wv - rw]);
-  const y = d3.scaleBand(top.map(d => d.cc), [0, Ht - 4]).padding(0.28);
-  const g = svg.append('g').selectAll('g').data(top).join('g');
-  g.append('text').attr('x', lw - 8 - H.flagGap()).attr('y', d => y(d.cc) + y.bandwidth() / 2).attr('dy', '.35em').attr('text-anchor', 'end').attr('font-size', 12).attr('fill', 'var(--color-fg)').text((d, i) => names[i]);
-  if (H.state.flags) g.each(function (d) { H.flagSvg(d3.select(this), d.cc, lw - 6 - H.FW, y(d.cc) + y.bandwidth() / 2); });
-  g.each(function (d) {
-    let acc = 0; const s = d3.select(this);
-    d.per.forEach((n, i) => { if (!n) return; const x0 = x(acc); acc += n;
-      s.append('rect').attr('x', x0 + (acc - n > 0 ? 1 : 0)).attr('y', y(d.cc)).attr('height', y.bandwidth()).attr('width', Math.max(1, x(acc) - x0 - (acc - n > 0 ? 1 : 0))).attr('rx', 3).attr('fill', dash.colors[i]); });
+  const confs = H.CONF.filter(c => uniq.some(r => r.conference === c));
+  const cols = [...confs, 'ALL'];
+  const tot = new Map(cols.map(c => [c, c === 'ALL' ? uniq.length : uniq.filter(r => r.conference === c).length]));
+  const by = d3.rollups(uniq, v => v, r => H.cc(r)).map(([cc, v]) => ({cc, v, n: v.length})).sort((a, b) => b.n - a.n);
+  const top = by.slice(0, 16);
+  const W0 = el.parentElement.clientWidth || 600;
+  const svg = d3.select(el).append('svg');
+  if (!top.length) { svg.attr('width', '100%').attr('viewBox', '0 0 300 20'); svg.append('text').attr('y', 14).attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text(H.T('No records in the selected years', '所选年份内没有记录')); return; }
+  const names = top.map(d => H.CTY_ZH[d.cc] || d.cc || H.T('Unknown', '未知'));
+  const lw = H.measure(svg, names, 12) + 10 + H.flagGap();
+  const head = 34, rowH = 26, cw = Math.max(44, Math.min(78, Math.floor((W0 - lw - 8) / cols.length)));
+  const W = lw + cw * cols.length + 4, Ht = head + top.length * rowH + 4;
+  svg.attr('width', W > W0 ? W : '100%').attr('viewBox', `0 0 ${W} ${Ht}`);
+  const op = d3.scaleSqrt([0, 1], [0, 0.92]);
+  cols.forEach((c, j) => svg.append('text').attr('x', lw + j * cw + cw / 2).attr('y', head - 12).attr('text-anchor', 'middle').attr('font-size', 11)
+    .attr('font-weight', c === 'ALL' ? 600 : 400).attr('fill', 'var(--color-fg-muted)').text(c === 'ALL' ? H.T('All', '合计') : c));
+  svg.append('line').attr('x1', lw + (cols.length - 1) * cw).attr('x2', lw + (cols.length - 1) * cw).attr('y1', head - 4).attr('y2', Ht - 2).attr('stroke', 'var(--color-border-line)');
+  top.forEach((d, i) => {
+    const y = head + i * rowH, g = svg.append('g');
+    g.append('text').attr('x', lw - 8 - H.flagGap()).attr('y', y + rowH / 2).attr('dy', '.35em').attr('text-anchor', 'end').attr('font-size', 12).attr('fill', 'var(--color-fg)').text(names[i]);
+    if (H.state.flags) H.flagSvg(g, d.cc, lw - 6 - H.FW, y + rowH / 2);
+    cols.forEach((c, j) => {
+      const n = c === 'ALL' ? d.n : d.v.filter(r => r.conference === c).length, t = tot.get(c), share = t ? n / t : 0;
+      const x = lw + j * cw;
+      g.append('rect').attr('x', x + 1.5).attr('y', y + 1.5).attr('width', cw - 3).attr('height', rowH - 3).attr('rx', 3)
+        .attr('fill', n ? 'var(--hx-heat)' : 'var(--cds-chart-grid)').attr('fill-opacity', n ? Math.max(0.06, op(share)) : 0.35)
+        .on('mousemove', ev => {
+          const v = c === 'ALL' ? d.v : d.v.filter(r => r.conference === c);
+          const orgs = d3.rollups(v, a => a.length, r => r.org).sort((a, b) => b[1] - a[1]).slice(0, 5).map(([o, k]) => `${o} ${k}`).join(', ');
+          H.showTip(ev, [['t', `${names[i]} · ${c === 'ALL' ? H.T('All conferences', '全部会议') : c}`],
+            ['', H.T(`${n} of ${t} listings (${d3.format('.0%')(share)})`, `${t} 条中的 ${n} 条（${d3.format('.0%')(share)}）`)], ...(orgs ? [['', orgs]] : [])]);
+        }).on('mouseleave', H.hideTip);
+      if (n) g.append('text').attr('x', x + cw / 2).attr('y', y + rowH / 2).attr('dy', '.35em').attr('text-anchor', 'middle').attr('font-size', 11)
+        .attr('pointer-events', 'none').attr('fill', op(share) > 0.5 ? 'var(--color-bg)' : 'var(--color-fg)').text(n);
+    });
   });
-  g.append('text').attr('x', d => x(d.total) + 6).attr('y', d => y(d.cc) + y.bandwidth() / 2).attr('dy', '.35em').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(d => `${d.total}（${d3.format('.0%')(d.total / uniq.length)}）`);
-  g.append('rect').attr('x', 0).attr('width', Wv).attr('y', d => y(d.cc) - 2).attr('height', y.bandwidth() + 4).attr('fill', 'transparent')
-    .on('mousemove', (ev, d) => {
-      const orgs = d3.rollups(uniq.filter(r => H.cc(r) === d.cc), v => v.length, r => r.org).sort((a, b) => b[1] - a[1]).slice(0, 6).map(([o, n]) => `${o} ${n}`).join('、');
-      H.showTip(ev, [['t', H.CTY_ZH[d.cc] || d.cc], ...H.CONF.map((c, i) => ['', `${c}: ${d.per[i]}`]), ['', H.T(`Main: ${orgs}`, `主要：${orgs}`)]]);
-    }).on('mouseleave', H.hideTip);
+  if (by.length > top.length) { const p = document.createElement('div'); p.className = 'note'; p.style.marginTop = '6px'; p.textContent = H.T(`${by.length - top.length} more countries or regions with fewer listings are not shown.`, `另有 ${by.length - top.length} 个条数更少的国家/地区未显示。`); el.append(p); }
 });
 
 // sector mix
@@ -463,7 +480,7 @@ window.HX.on(() => {
   if (H.failOrWait(el, st)) return;
   const rows = H.rows();
   const present = H.SECT.filter(s => rows.some(r => r.sector === s));
-  const col = s => dash.colors[H.SECT.indexOf(s)];
+  const col = s => H.C[H.SECT.indexOf(s)];
   H.legend(document.getElementById('lg-sector'), present.map(s => [col(s), H.SECT_ZH[s]]));
   const W = el.clientWidth || 400, rowH = 34, Ht = H.CONF.length * rowH + 8, lw = 70;
   const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${Ht}`);
@@ -502,7 +519,7 @@ window.HX.on(() => {
     const step = Math.ceil(years.length / Math.max(2, Math.floor((W - m.l) / 34)));
     svg.append('g').attr('transform', `translate(0,${Ht - m.b})`).call(d3.axisBottom(x).tickSize(0).tickValues(years.filter((d, i) => i % step === 0)).tickFormat(d => "'" + String(d).slice(2))).attr('font-size', null).attr('font-family', null)
       .call(g => { g.select('.domain').attr('stroke', 'var(--cds-chart-axis)'); g.selectAll('text').attr('fill', 'var(--color-fg-muted)').attr('font-size', 10).attr('dy', '1em'); });
-    svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', d => x(d.y)).attr('width', x.bandwidth()).attr('y', d => y(d.v)).attr('height', d => Math.max(0, y(0) - y(d.v))).attr('rx', 3).attr('fill', dash.colors[ci])
+    svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', d => x(d.y)).attr('width', x.bandwidth()).attr('y', d => y(d.v)).attr('height', d => Math.max(0, y(0) - y(d.v))).attr('rx', 3).attr('fill', H.C[ci])
       .on('mousemove', (ev, d) => H.showTip(ev, [['t', `${c} ${d.year}`], ['', H.T(`Estimate (lower bound): ${H.fmtUSD(d.v)}`, `估算下限 ${H.fmtUSD(d.v)}`)], ['', H.T(`${d.n_sponsors} sponsors (${d.n_industry} companies)`, `${d.n_sponsors} 家赞助方（企业 ${d.n_industry}）`)], ['', d.attendance ? H.T(`${d3.format(',')(+d.attendance)} registrations`, `注册 ${d3.format(',')(+d.attendance)} 人`) : H.T('Registrations not published', '注册人数未公开')]]))
       .on('mouseleave', H.hideTip);
   });
@@ -515,7 +532,7 @@ window.HX.on(() => {
   lg.replaceChildren(); if (H.failOrWait(el, st)) return;
   const rows = st.data.filter(r => r.usd_per_attendee !== '' && +r.usd_per_attendee > 0 && H.inRange(r.year)).map(r => ({...r, y: +r.year, v: +r.usd_per_attendee}));
   const confs = H.CONF.filter(c => rows.some(r => r.conference === c));
-  H.legend(lg, confs.map(c => [dash.colors[H.CONF.indexOf(c)], c]));
+  H.legend(lg, confs.map(c => [H.C[H.CONF.indexOf(c)], c]));
   const W = el.clientWidth || 500, Ht = 240, m = {l: 44, r: 64, t: 10, b: 24};
   const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${Ht}`);
   if (!rows.length) { svg.append('text').attr('x', 0).attr('y', 14).attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text(H.T('No editions with both prices and attendance in the selected years', '所选年份内没有同时有价格和人数的届次')); return; }
@@ -528,7 +545,7 @@ window.HX.on(() => {
   svg.append('g').attr('transform', `translate(0,${Ht - m.b})`).call(d3.axisBottom(x).ticks(Math.min(8, Math.floor(W / 60))).tickFormat(d3.format('d')).tickSize(0)).attr('font-size', null).attr('font-family', null)
     .call(g => { g.select('.domain').attr('stroke', 'var(--cds-chart-axis)'); g.selectAll('text').attr('fill', 'var(--color-fg-muted)').attr('font-size', 10).attr('dy', '1em'); });
   confs.forEach(c => {
-    const col = dash.colors[H.CONF.indexOf(c)]; const s = rows.filter(r => r.conference === c).sort((a, b) => a.y - b.y);
+    const col = H.C[H.CONF.indexOf(c)]; const s = rows.filter(r => r.conference === c).sort((a, b) => a.y - b.y);
     svg.append('path').datum(s).attr('fill', 'none').attr('stroke', col).attr('stroke-width', 2).attr('stroke-linejoin', 'round').attr('stroke-linecap', 'round').attr('d', d3.line(d => x(d.y), d => y(d.v)));
     svg.append('g').selectAll('circle').data(s).join('circle').attr('cx', d => x(d.y)).attr('cy', d => y(d.v)).attr('r', 4).attr('fill', col).attr('stroke', 'var(--color-panel)').attr('stroke-width', 2)
       .on('mousemove', (ev, d) => H.showTip(ev, [['t', `${c} ${d.year}`], ['', H.T(`Per attendee: ${H.fmtUSD(d.v)}`, `人均 ${H.fmtUSD(d.v)}`)], ['', H.T(`Estimate ${H.fmtUSD(+d.est_usd)} ÷ ${d3.format(',')(+d.attendance)} attendees`, `估算 ${H.fmtUSD(+d.est_usd)} ÷ ${d3.format(',')(+d.attendance)} 人`)]]))
@@ -556,7 +573,7 @@ window.HX.on(() => {
   function draw() {
     const el = document.getElementById('c-tl'), lg = document.getElementById('lg-tl'); const st = dash.data('listings');
     lg.replaceChildren(); if (H.failOrWait(el, st)) return;
-    const ci = H.CONF.indexOf(conf), col = dash.colors[ci];
+    const ci = H.CONF.indexOf(conf), col = H.C[ci];
     const allConf = st.data.filter(r => r.conference === conf);
     const covered = new Set(allConf.map(r => +r.year));
     const rows = allConf.filter(r => H.inRange(r.year)).map(r => ({...r, year: +r.year, level: level(r)}));
