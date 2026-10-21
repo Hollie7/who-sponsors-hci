@@ -421,7 +421,19 @@ window.dash = (() => {
 <footer class="site-foot">
   <p><b>Holly Tianqi Song</b> · <a href="https://hollysong.site" target="_blank" rel="noopener"><span lang="en">Homepage</span><span lang="zh">个人主页</span></a> · <span class="mail">tianqi_song@u.nus.edu</span> · <a href="https://github.com/Hollie7/who-sponsors-hci" target="_blank" rel="noopener"><span lang="en">Source and data on GitHub</span><span lang="zh">GitHub 上的代码和数据</span></a> · <a href="../"><span lang="en">HCI conferences</span><span lang="zh">HCI 会议</span></a></p>
   <p><span lang="en">Data <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>, code MIT: free to reuse with credit.</span><span lang="zh">数据 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>，代码 MIT：注明出处即可转载使用。</span> <span lang="en">Independent project, not affiliated with ACM, SIGCHI, AAAI or any organization listed. Compiled by hand from public pages; amounts are lower-bound estimates.</span><span lang="zh">独立项目，与 ACM、SIGCHI、AAAI 及所列机构无关。名单根据公开网页手工整理，金额为估算下限。</span> <span lang="en">Spot an error? <a href="https://github.com/Hollie7/who-sponsors-hci/issues" target="_blank" rel="noopener">Open an issue</a>.</span><span lang="zh">发现错误？欢迎<a href="https://github.com/Hollie7/who-sponsors-hci/issues" target="_blank" rel="noopener">提 issue</a>。</span></p>
-  
+  <p class="views" id="views" hidden></p>
+<script>window.goatcounter = {path: p => location.host + p};</script>
+<script data-goatcounter="https://holly.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script>
+(() => {
+  const el = document.getElementById('views');
+  fetch('https://holly.goatcounter.com/counter/' + encodeURIComponent(location.host + location.pathname) + '.json')
+    .then(r => r.ok ? r.json() : null).then(d => { if (!d || !d.count) return;
+      const n = document.createElement('span'); n.textContent = d.count;
+      el.append(n, document.createTextNode(' ')); const t = document.createElement('span'); t.className = 'vt';
+      t.innerHTML = "<span lang=\"en\">views</span><span lang=\"zh\">\u6b21\u6d4f\u89c8</span>"; el.append(t); el.hidden = false; }).catch(() => {});
+})();
+</script>
 </footer>
   <div class="tip" id="tip"></div>
 </div>

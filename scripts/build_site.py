@@ -39,11 +39,12 @@ def footer(bilingual, page_rel_root):
     views = ''
     if gc:
         views = f'''<p class="views" id="views" hidden></p>
+<script>window.goatcounter = {{path: p => location.host + p}};</script>
 <script data-goatcounter="https://{e(gc)}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script>
 (() => {{
   const el = document.getElementById('views');
-  fetch('https://{e(gc)}.goatcounter.com/counter/' + encodeURIComponent(location.pathname) + '.json')
+  fetch('https://{e(gc)}.goatcounter.com/counter/' + encodeURIComponent(location.host + location.pathname) + '.json')
     .then(r => r.ok ? r.json() : null).then(d => {{ if (!d || !d.count) return;
       const n = document.createElement('span'); n.textContent = d.count;
       el.append(n, document.createTextNode(' ')); const t = document.createElement('span'); t.className = 'vt';
