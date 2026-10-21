@@ -509,7 +509,9 @@ window.HX.on(() => {
   const cols = [...confs, 'ALL'];
   const tot = new Map(cols.map(c => [c, c === 'ALL' ? uniq.length : uniq.filter(r => r.conference === c).length]));
   const by = d3.rollups(uniq, v => v, r => H.cc(r)).map(([cc, v]) => ({cc, v, n: v.length})).sort((a, b) => b.n - a.n);
-  const top = by.slice(0, 16);
+  const unknown = by.find(d => !d.cc);
+  const known = by.filter(d => d.cc);
+  const top = known.slice(0, 16);
   H.ctyTable = by.map(d => { const o = {country_code: d.cc, country: H.CTY_ZH[d.cc] || d.cc || H.T('Unknown', '未知')}; cols.forEach(c => { o[c === 'ALL' ? 'all' : c] = c === 'ALL' ? d.n : d.v.filter(r => r.conference === c).length; }); return o; });
   const W0 = el.parentElement.clientWidth || 600;
   const svg = d3.select(el).append('svg');
@@ -542,7 +544,10 @@ window.HX.on(() => {
         .attr('pointer-events', 'none').attr('fill', op(share) > 0.5 ? 'var(--color-bg)' : 'var(--color-fg)').text(n);
     });
   });
-  if (by.length > top.length) { const p = document.createElement('div'); p.className = 'note'; p.style.marginTop = '6px'; p.textContent = H.T(`${by.length - top.length} more countries or regions with fewer listings are not shown.`, `另有 ${by.length - top.length} 个条数更少的国家/地区未显示。`); el.append(p); }
+  const notes = [];
+  if (known.length > top.length) notes.push(H.T(`${known.length - top.length} more countries or regions with fewer listings are not shown.`, `另有 ${known.length - top.length} 个条数更少的国家/地区未显示。`));
+  if (unknown) notes.push(H.T(`${unknown.n} listings from organizations whose location could not be identified are left out of the rows but still count in each conference’s total.`, `另有 ${unknown.n} 条来自无法确定所在地的机构，不单列一行，但仍计入各会议的总数。`));
+  if (notes.length) { const p = document.createElement('div'); p.className = 'note'; p.style.marginTop = '6px'; p.textContent = notes.join(' '); el.append(p); }
 });
 
 // sector mix
