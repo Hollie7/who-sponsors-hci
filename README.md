@@ -1,6 +1,6 @@
 # Who Sponsors HCI and AI-Ethics Conferences
 
-**Live site:** https://who-sponsors-hci.tianqi-song.workers.dev/
+**Live site:** https://who-sponsors-hci.pages.dev/
 
 Sponsor lists, sponsorship tiers and published tier prices for academic conferences, compiled from their public websites, cleaned up, estimated and visualized. The aim is to give some data to the ongoing debate about industry's role in academic HCI.
 
@@ -123,7 +123,7 @@ python -m http.server 8000         # then open http://localhost:8000/docs/
 
 1. Fill in `site.config.json`: `author`, `homepage`, `email` (optional), `github_repo`, `site_url` and `goatcounter` (optional).
 2. Run `python scripts/build_site.py`.
-3. Deploy with Cloudflare Workers (`wrangler.jsonc` serves `docs/` as static assets; this is how the live site runs) or Pages (build output directory `docs`), or Vercel (`vercel.json` already serves `docs/`), GitHub Pages or Netlify.
+3. Deploy with Cloudflare Pages (`wrangler.jsonc` sets the output directory to `docs`; this is how the live site runs), or Vercel (`vercel.json` already serves `docs/`), GitHub Pages or Netlify.
 
 d3 is served from `docs/vendor/` (ISC license, see `vendor/D3-LICENSE`) so the pages do not depend on a third-party CDN.
 
@@ -133,6 +133,6 @@ Page views are counted with [GoatCounter](https://www.goatcounter.com/), which u
 
 The data in `data/` are released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) and the code under the MIT License (see `LICENSE` and `data/LICENSE`). You may reuse and adapt them, including commercially, with credit. Suggested citation:
 
-> Holly Tianqi Song (2026). *Who Sponsors HCI and AI-Ethics Conferences*. https://who-sponsors-hci.tianqi-song.workers.dev/
+> Holly Tianqi Song (2026). *Who Sponsors HCI and AI-Ethics Conferences*. https://who-sponsors-hci.pages.dev/
 
 This is an independent project, not affiliated with or endorsed by ACM, SIGCHI, AAAI, any of the conferences or any organization listed. The lists were compiled by hand from public pages and may be incomplete or contain errors; corrections are welcome as GitHub issues. Organization names and logos belong to their owners. Flag icons are from [flag-icons](https://github.com/lipis/flag-icons) (MIT).
