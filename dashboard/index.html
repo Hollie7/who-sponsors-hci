@@ -37,11 +37,42 @@
 .hx .chk,.hx .lbl{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted);display:inline-flex;align-items:center;gap:.35rem}
 .hx .tlbox{overflow-x:auto}
 .hx .bar{position:sticky;top:0;z-index:4;background:var(--color-bg);padding:var(--cds-pad-sm) 0;border-bottom:1px solid var(--color-border-line)}
-.hx[data-lang="en"] [lang="zh"],.hx[data-lang="zh"] [lang="en"]{display:none!important}
+.hx-shell[data-lang="en"] [lang="zh"],.hx-shell[data-lang="zh"] [lang="en"]{display:none!important}
+/* reading layout: one centered column; on wide screens a contents rail on the left */
+.hx-shell{font-family:var(--font-anthropic-sans);display:grid;grid-template-columns:minmax(0,52rem);justify-content:center;gap:var(--cds-gap-xl)}
+.hx-toc{display:none}
+.hx h1,.hx h2{scroll-margin-top:7rem}
+@media (min-width:1100px){
+  .hx-shell{grid-template-columns:13rem minmax(0,52rem)}
+  .hx-toc{display:block;position:sticky;top:var(--cds-gap-lg);align-self:start;max-height:calc(100vh - 3rem);overflow-y:auto;padding-top:.4rem}
+}
+.hx-toc .t{font-size:var(--cds-font-size-caption);text-transform:uppercase;letter-spacing:.06em;color:var(--color-fg-muted);margin:0 0 var(--cds-gap-sm)}
+.hx-toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px;border-left:1px solid var(--color-border-line)}
+.hx-toc a{display:block;padding:4px 0 4px 12px;margin-left:-1px;border-left:2px solid transparent;color:var(--color-fg-muted);text-decoration:none;font-size:var(--cds-font-size-caption);line-height:1.4}
+.hx-toc a:hover{color:var(--color-fg)}
+.hx-toc a:focus-visible{outline:2px solid var(--color-fg);outline-offset:2px}
+.hx-toc a[aria-current="true"]{color:var(--color-fg);border-left-color:var(--color-fg);font-weight:var(--cds-font-weight-medium)}
 .hx .bar .rng{font-size:var(--cds-font-size-caption);color:var(--color-fg)}
 </style>
 
-<div class="hx" data-lang="en">
+<div class="hx-shell" data-lang="en">
+  <nav class="hx-toc" aria-label="Contents">
+    <p class="t"><span lang="en">Contents</span><span lang="zh">目录</span></p>
+    <ol>
+      <li><a href="#top" data-target="top"><span lang="en">Overview</span><span lang="zh">概览</span></a></li>
+      <li><a href="#by-conference" data-target="by-conference"><span lang="en">Top sponsors by conference</span><span lang="zh">各会议的 top sponsor</span></a></li>
+      <li><a href="#timeline" data-target="timeline"><span lang="en">When sponsors joined and left</span><span lang="zh">赞助商的进出时间线</span></a></li>
+      <li><a href="#countries" data-target="countries"><span lang="en">By country or region</span><span lang="zh">按国家 / 地区</span></a></li>
+      <li><a href="#top-sponsors" data-target="top-sponsors"><span lang="en">Top 15 overall</span><span lang="zh">合计 top 15</span></a></li>
+      <li><a href="#sectors" data-target="sectors"><span lang="en">Who the sponsors are</span><span lang="zh">赞助方构成</span></a></li>
+      <li><a href="#per-attendee" data-target="per-attendee"><span lang="en">Per attendee</span><span lang="zh">人均赞助额</span></a></li>
+      <li><a href="#money" data-target="money"><span lang="en">Estimated sponsorship</span><span lang="zh">估算赞助额</span></a></li>
+      <li><a href="#listings" data-target="listings"><span lang="en">All listings</span><span lang="zh">全部赞助条目</span></a></li>
+      <li><a href="#prices" data-target="prices"><span lang="en">Tier prices</span><span lang="zh">等级价格</span></a></li>
+      <li><a href="#caveats" data-target="caveats"><span lang="en">Method and gaps</span><span lang="zh">口径与缺口</span></a></li>
+    </ol>
+  </nav>
+<div class="hx">
   <header>
     <h1 id="top"><span lang="en">Who Sponsors HCI and AI-Ethics Conferences</span><span lang="zh">HCI 与 AI 伦理会议赞助商版图</span></h1>
     <p class="note" style="margin:var(--cds-gap-xs) 0 0">CHI · CSCW · UIST · UbiComp · DIS · IUI · FAccT · AIES</p>
@@ -185,6 +216,7 @@
   </section>
   <div class="tip" id="tip"></div>
 </div>
+</div>
 
 <script src="flags.js"></script>
 
@@ -293,12 +325,31 @@ H.on = fn => { redraws.push(fn); dash.onData(fn); };
     else { fs.value = b.dataset.v; ts.value = ts.options[ts.options.length - 1].value; }
     fromSel();
   }));
-  const setLang = v => { state.lang = v; root.dataset.lang = v; document.documentElement.lang = v === 'zh' ? 'zh' : 'en';
+  const setLang = v => { state.lang = v; document.querySelector('.hx-shell').dataset.lang = v; document.documentElement.lang = v === 'zh' ? 'zh' : 'en';
     document.querySelectorAll('#f-lang button').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.v === v)));
     document.getElementById('q').placeholder = H.T('Search organization, conference, country, year…', '搜索机构、会议、国家、年份…'); apply(); };
   document.querySelectorAll('#f-lang button').forEach(b => b.addEventListener('click', () => setLang(b.dataset.v)));
   document.querySelectorAll('#f-cmode button').forEach(b => b.addEventListener('click', () => { state.cmode = b.dataset.v; document.querySelectorAll('#f-cmode button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); apply(); }));
   document.querySelectorAll('.flag-toggle').forEach(cb => cb.addEventListener('change', e => { state.flags = e.target.checked; document.querySelectorAll('.flag-toggle').forEach(o => { o.checked = state.flags; }); apply(); }));
+})();
+
+// contents rail: scroll to a section, and mark the one being read
+(() => {
+  const links = [...document.querySelectorAll('.hx-toc a')];
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  links.forEach(a => a.addEventListener('click', ev => {
+    const t = document.getElementById(a.dataset.target); if (!t) return;
+    ev.preventDefault(); t.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block: 'start'});
+  }));
+  const mark = id => links.forEach(a => a.setAttribute('aria-current', String(a.dataset.target === id)));
+  const heads = links.map(a => document.getElementById(a.dataset.target)).filter(Boolean);
+  let ticking = false;
+  const spy = () => { ticking = false; const y = 140; let cur = heads[0];
+    heads.forEach(h => { if (h.getBoundingClientRect().top <= y) cur = h; });
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) cur = heads[heads.length - 1];
+    if (cur) mark(cur.id); };
+  document.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(spy); } }, {passive: true, capture: true});
+  spy();
 })();
 
 // headline marks
