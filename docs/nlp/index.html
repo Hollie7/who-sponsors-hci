@@ -315,8 +315,6 @@ window.dash = (() => {
       <div><div class="legend" id="lg-cmp"></div><div id="c-cmp" data-source="pcy ml_pcy hci_pcy" style="min-height:260px"></div></div>
       <div><div class="legend" id="lg-cn"></div><div id="c-cn" data-source="listings ml_listings hci_listings" style="min-height:260px"></div></div>
     </div>
-    <p class="note" style="margin-top:2rem"><span lang="en">Companies that sponsor NLP and at least one of the other two fields, by the number of editions they sponsored in each (selected years). HCI counts CHI, CSCW, UIST and UbiComp.</span><span lang="zh">赞助 NLP 会议、并至少赞助过另外一个领域的企业，以及在所选年份内各领域赞助的届数。HCI 只计 CHI、CSCW、UIST、UbiComp。</span></p>
-    <div class="legend" id="lg-ov"></div><div id="c-ov" data-source="listings ml_listings hci_listings" style="min-height:420px"></div>
   </section>
 
   <section class="card" id="summary-card">
@@ -1000,46 +998,6 @@ window.HX.on(() => {
       .on('mousemove', (ev, d) => H.showTip(ev, [['t', `${s.f} ${d.y}`], ['', H.T(`${d.n} of ${d.t} listings (${d3.format('.0%')(d.v)})`, `${d.t} 条中的 ${d.n} 条（${d3.format('.0%')(d.v)}）`)]])).on('mouseleave', H.hideTip);
     const last = s.pts[s.pts.length - 1]; svg.append('text').attr('x', x(last.y) + 7).attr('y', y(last.v)).attr('dy', '.35em').attr('font-size', 10).attr('fill', 'var(--color-fg-muted)').text(s.f);
   });
-});
-
-// companies on more than one side
-window.HX.on(() => {
-  const H = window.HX;
-  const ALIAS = {'Commonwealth Bank of Australia':'Commonwealth Bank','Disney Research':'Disney','Naver':'NAVER','Nokia Bell Labs':'Nokia','Tableau/Salesforce':'Salesforce',
-    'Toyota Research Institute':'Toyota','Yahoo/Verizon Media':'Yahoo','eBay/PayPal':'eBay','Sony CSL':'Sony','NTT Docomo':'NTT','SK Planet':'SK Group','Recruit':'Recruit',
-    'Optum':'Optum 360','Bloomberg L.P.':'Bloomberg','JPMorgan':'JPMorgan Chase','J.P. Morgan':'JPMorgan Chase'};
-  const el = document.getElementById('c-ov'), lg = document.getElementById('lg-ov');
-  const sts = ['listings', 'ml_listings', 'hci_listings'].map(k => dash.data(k));
-  const st = sts.find(x => x.status !== 'ok') || sts[0]; lg.replaceChildren();
-  if (H.failOrWait(el, st)) return;
-  const biz = r => r.sector === 'Tech & other industry' || r.sector === 'Finance / quant' || r.sector === 'Industry';
-  const N = sts[0].data.filter(r => H.inRange(r.year) && biz(r));
-  const M = sts[1].data.filter(r => H.inRange(r.year) && biz(r));
-  const Hc = sts[2].data.filter(r => H.inRange(r.year) && biz(r) && H.HCONF.includes(r.conference)).map(r => ({...r, org: ALIAS[r.org] || r.org}));
-  const cnt = rows => d3.rollup(rows, v => new Set(v.map(r => r.conference + '-' + r.year)).size, r => r.org);
-  const cN = cnt(N), cM = cnt(M), cH = cnt(Hc);
-  const ctry = new Map(N.map(r => [r.org, H.cc(r)]));
-  const items = [...cN.keys()].filter(o => cM.has(o) || cH.has(o)).map(o => ({org: o, n: cN.get(o), m: cM.get(o) || 0, h: cH.get(o) || 0, country: ctry.get(o)}))
-    .sort((p, q) => (q.n + q.m + q.h) - (p.n + p.m + p.h) || p.org.localeCompare(q.org)).slice(0, 18);
-  const cols = [H.C[0], H.C[3], H.C[4]];
-  H.legend(lg, [[cols[0], H.T('NLP editions', 'NLP 会议届次')], [cols[1], H.T('ML editions', '机器学习会议届次')], [cols[2], H.T('HCI editions', 'HCI 会议届次')]]);
-  const W = el.clientWidth || 400, rowH = 30, Ht = items.length * rowH + 22;
-  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${Math.max(Ht, 30)}`);
-  if (!items.length) { svg.append('text').attr('y', 14).attr('font-size', 12).attr('fill', 'var(--color-fg-muted)').text(H.T('No company sponsored more than one field in the selected years', '所选年份内没有跨领域赞助的企业')); return; }
-  const lw = H.measure(svg, items.map(d => d.org), 12) + 10 + H.flagGap();
-  const x = d3.scaleLinear([0, d3.max(items, d => Math.max(d.n, d.m, d.h))], [lw, W - 28]);
-  const y = d3.scaleBand(items.map(d => d.org), [18, Ht]).padding(0.15);
-  svg.append('g').selectAll('text').data(x.ticks(5)).join('text').attr('x', d => x(d)).attr('y', 10).attr('text-anchor', 'middle').attr('font-size', 10).attr('fill', 'var(--color-fg-muted)').text(d => d);
-  const g = svg.append('g').selectAll('g').data(items).join('g');
-  g.append('text').attr('x', lw - 8 - H.flagGap()).attr('y', d => y(d.org) + y.bandwidth() / 2).attr('dy', '.35em').attr('text-anchor', 'end').attr('font-size', 12).attr('fill', 'var(--color-fg)').text(d => d.org);
-  if (H.state.flags) g.each(function (d) { H.flagSvg(d3.select(this), d.country, lw - 6 - H.FW, y(d.org) + y.bandwidth() / 2); });
-  const bh = (y.bandwidth() - 2) / 3;
-  ['n', 'm', 'h'].forEach((k, i) => {
-    g.append('rect').attr('x', lw).attr('y', d => y(d.org) + i * (bh + 1)).attr('height', bh).attr('width', d => Math.max(d[k] ? 1 : 0, x(d[k]) - lw)).attr('rx', 2).attr('fill', cols[i]);
-    g.append('text').attr('x', d => x(d[k]) + 4).attr('y', d => y(d.org) + i * (bh + 1) + bh / 2).attr('dy', '.35em').attr('font-size', 9).attr('fill', 'var(--color-fg-muted)').text(d => d[k] || '');
-  });
-  g.append('rect').attr('x', 0).attr('width', W).attr('y', d => y(d.org)).attr('height', y.bandwidth()).attr('fill', 'transparent')
-    .on('mousemove', (ev, d) => H.showTip(ev, [['t', d.org], ['', H.T(`NLP: ${d.n} editions`, `NLP：${d.n} 届`)], ['', H.T(`ML: ${d.m} editions`, `机器学习：${d.m} 届`)], ['', H.T(`HCI: ${d.h} editions`, `HCI：${d.h} 届`)]])).on('mouseleave', H.hideTip);
 });
 })();</script>
 
